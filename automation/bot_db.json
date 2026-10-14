@@ -1,0 +1,19 @@
+{
+  "counters": {
+    "cmd:contact": 1,
+    "cmd:events": 1,
+    "cmd:rsvp": 1,
+    "cmd:start": 1,
+    "messages": 4
+  },
+  "reminders": {},
+  "rsvps": {},
+  "users": {
+    "8454249259": {
+      "events": 0,
+      "joined": "2026-10-14",
+      "name": "Soheil Sabz",
+      "opt_in": true
+    }
+  }
+}
