@@ -157,6 +157,43 @@ def build_page(fname: str, theme: str) -> str:
     return build_index(inject_theme(src, theme))
 
 
+ASSET_IMG = re.compile(r"""(['"\()])assets/img/([a-z0-9\-]+)\.jpg\1""".replace("\\", "\\"))
+
+
+def build_preview_simple(fname: str, theme: str) -> str:
+    """Self-contained preview for a page that uses plain <img src="assets/img/x.jpg">
+    (marketing/events): inject theme, then inline every photo + the font as data URIs."""
+    from PIL import Image
+
+    with open(os.path.join(ROOT, "src", fname), encoding="utf-8") as fh:
+        src = inject_theme(fh.read(), theme)
+
+    cache: dict[str, str] = {}
+
+    def data_uri(name: str) -> str:
+        if name in cache:
+            return cache[name]
+        path = os.path.join(IMGDIR, name + ".jpg")
+        if not os.path.exists(path):
+            sys.exit("missing image: %s" % path)
+        im = Image.open(path).convert("RGB")
+        if im.width > PREVIEW_MAX_W:
+            im = im.resize((PREVIEW_MAX_W, round(im.height * PREVIEW_MAX_W / im.width)), Image.LANCZOS)
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=PREVIEW_QUALITY, optimize=True, progressive=True)
+        cache[name] = "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode("ascii")
+        return cache[name]
+
+    src = re.sub(r'(["\'])assets/img/([a-z0-9\-]+)\.jpg\1',
+                 lambda m: m.group(1) + data_uri(m.group(2)) + m.group(1), src)
+    src = FONT_PLACEHOLDER.sub(lambda m: "data:font/woff2;base64," +
+                               base64.b64encode(open(os.path.join(ROOT, "assets", "fonts", FONTS[m.group(1)]), "rb").read()).decode("ascii"), src)
+    if "assets/" in src:
+        left = sorted(set(re.findall(r"assets/[^\"')\s]+", src)))
+        sys.exit("preview %s still points at local files: %s" % (fname, left[:5]))
+    return src
+
+
 def main():
     theme = load_theme()
     outputs = []
@@ -164,7 +201,11 @@ def main():
     for src_name, out_name in PAGES:
         outputs.append((out_name, build_page(src_name, theme)))
 
-    # single-file preview (index only, images + font inlined)
+    # self-contained previews for the two new pages (kept out of git, see .gitignore)
+    for src_name, out_name in (("marketing.html", "preview-marketing.html"), ("events.html", "preview-events.html")):
+        outputs.append((out_name, build_preview_simple(src_name, theme)))
+
+    # single-file preview (index, images + font inlined)
     with open(os.path.join(ROOT, "src", "page.html"), encoding="utf-8") as fh:
         outputs.append(("preview.html", build_preview(inject_theme(fh.read(), theme))))
 
