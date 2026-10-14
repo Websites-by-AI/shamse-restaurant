@@ -35,6 +35,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import content  # noqa: E402
+import bot_skills as sk  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
@@ -334,6 +335,11 @@ def send_post(img, text, dry_run=False, chat=None):
     return False
 
 
+def typing(chat_id):
+    """نمایش «در حال نوشتن…» قبل از پاسخ (تجربهٔ کاربری بهتر)."""
+    return api("sendChatAction", {"chat_id": chat_id, "action": "typing"})
+
+
 def reply(chat_id, text, buttons=True, keyboard=False):
     payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True}
     if keyboard:
@@ -351,6 +357,96 @@ def send_welcome(chat_id):
     if r.get("ok"):
         return r
     return reply(chat_id, caption, buttons=False, keyboard=True)
+
+
+def handle_callback(upd, db):
+    """دکمه‌های شیشه‌ای: ثبت‌نام/لغو رویداد و فهرست ثبت‌نام‌های من."""
+    cq = upd.get("callback_query") or {}
+    data = (cq.get("data") or "").strip()
+    msg = cq.get("message") or {}
+    chat_id = ((msg.get("chat") or {}).get("id")) or ((cq.get("from") or {}).get("id"))
+    msg_id = msg.get("message_id")
+    user = cq.get("from") or {}
+    if not chat_id or not data:
+        return False
+
+    if data == "my":
+        keys = sk.user_rsvps(db, chat_id)
+        lines = ["📋 ثبت‌نام‌های شما:"]
+        for key in keys:
+            found = sk.find_occurrence(key)
+            if found:
+                day, ev, _k = found
+                lines.append("• %s — %s" % (ev.get("title", ""), sk.fa_date(day)))
+        if len(lines) == 1:
+            lines.append("هنوز در رویدادی ثبت‌نام نکرده‌اید. /rsvp را بفرستید.")
+        api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": "📋"})
+        reply(chat_id, "\n".join(lines), buttons=True)
+        return True
+
+    action, _, key = data.partition(":")
+    if action not in ("rsvp", "un"):
+        api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": "دستور نامشخص"})
+        return False
+
+    found = sk.find_occurrence(key)
+    if not found:
+        api("answerCallbackQuery", {"callback_query_id": cq.get("id"),
+                                    "text": "این رویداد به پایان رسیده است."})
+        return True
+    day, ev, _k = found
+    join = action == "rsvp"
+    res = sk.toggle_rsvp(db, chat_id, key, join)
+    if res["changed"]:
+        sk.touch_user(db, chat_id, user)
+    toast = ("✅ ثبت شد — %s نفر" % res["count"]) if join else "❌ لغو شد"
+    api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": toast})
+    if msg_id:
+        trans = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
+        text = ("🎫 <b>%s</b>\n🗓 %s — %s %s\n📍 %s\n💰 %s\n👥 ثبت‌نام‌شده: %s"
+                % (ev.get("title", ""), sk.WEEKDAYS[day.weekday()], sk.fa_date(day), ev.get("time", ""),
+                   ev.get("place", ""), ev.get("price", ""),
+                   str(res["count"]).translate(trans)))
+        buttons = {"inline_keyboard": [
+            ([{"text": "❌ لغو ثبت‌نام", "callback_data": "un:" + key}]
+             if join else [{"text": "🎫 ثبت‌نام می‌کنم", "callback_data": "rsvp:" + key}]),
+            [{"text": "📋 ثبت‌نام‌های من", "callback_data": "my"}]]}
+        api("editMessageText", {"chat_id": chat_id, "message_id": msg_id, "text": text,
+                                "parse_mode": "HTML", "reply_markup": buttons})
+    return True
+
+
+def skill_reply(cmd, text, chat_id, db):
+    """مهارت‌های ربات: ثبت‌نام، پروفایل، لغو اطلاع‌رسانی. None = مربوط به این‌ها نیست."""
+    if cmd == "rsvp":
+        body = sk.events_list_text(db)
+        r = reply(chat_id, body, buttons=False)
+        api("sendMessage", {"chat_id": chat_id, "text": "برای ثبت‌نام، رویداد را انتخاب کنید:",
+                            "reply_markup": sk.rsvp_keyboard(db)})
+        return r
+    if cmd == "my":
+        user = sk.touch_user(db, chat_id)
+        keys = sk.user_rsvps(db, chat_id)
+        lines = ["👤 <b>پروفایل شما</b>",
+                 "• نام: %s" % (user.get("name") or "—"),
+                 "• عضو از: %s" % sk.fa_date(__import__("datetime").date.fromisoformat(user["joined"])),
+                 "• رویدادهایی که ثبت‌نام کرده‌اید: %s" % str(user.get("events", 0)).translate(
+                     str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹"))]
+        if keys:
+            lines.append("")
+            for key in keys:
+                found = sk.find_occurrence(key)
+                if found:
+                    day, ev, _k = found
+                    lines.append("• %s — %s" % (ev.get("title", ""), sk.fa_date(day)))
+        lines += ["", "برای لغو اطلاع‌رسانی‌ها /stop و برای فعال‌سازی دوباره /start را بفرستید."]
+        return reply(chat_id, "\n".join(lines), buttons=True)
+    if cmd == "stop":
+        sk.touch_user(db, chat_id, opt_in=False)
+        return reply(chat_id, "🔕 اطلاع‌رسانی‌ها خاموش شد. هر وقت خواستید /start بفرستید تا دوباره روشن شود.",
+                     buttons=False)
+    return None
+
 
 
 MENTION = "@shamse_restaurant_bot"
@@ -409,9 +505,10 @@ def handle_updates(state, minutes=0, timeout=0):
         print("[poll] long-poll for %s min (timeout=%ss)" % (persian_numbers(str(minutes)), timeout))
     started = time.time()
     handled = 0
+    db = sk.load_db()
     while True:
         resp = api("getUpdates", {"offset": int(state.get("update_offset", 0)), "limit": 50,
-                                  "allowed_updates": ["message"], "timeout": timeout})
+                                  "allowed_updates": ["message", "callback_query"], "timeout": timeout})
         if not resp.get("ok"):
             print("[poll] getUpdates failed:", resp.get("description"))
             break
@@ -423,11 +520,28 @@ def handle_updates(state, minutes=0, timeout=0):
                 state["detected_chat_id"] = chan["id"]
                 state["detected_chat_title"] = chan.get("title")
 
+            if upd.get("callback_query"):
+                if handle_callback(upd, db):
+                    handled += 1
+                continue
+
             msg = upd.get("message") or {}
             chat = msg.get("chat") or {}
             chat_id, chat_type = chat.get("id"), chat.get("type", "private")
             raw_text = (msg.get("text") or "").strip()
-            if not chat_id or not raw_text:
+            if not chat_id:
+                continue
+            if not raw_text:
+                kind = next((k for k in ("voice", "photo", "sticker", "video", "document", "audio")
+                             if msg.get(k)), None)
+                if kind and should_reply("@", chat.get("type")) is False:
+                    continue
+                text_map = {"voice": "🎤 پیام صوتی", "photo": "🖼 عکس", "sticker": "🙂 استیکر",
+                            "video": "🎬 ویدیو", "document": "📄 فایل", "audio": "🎵 صدا"}
+                reply(chat_id, "دریافت شد: %s ✅\nمن فعلاً فقط متن را می‌فهمم — سؤالتان را تایپ کنید یا از دکمه‌های پایین استفاده کنید.\n"
+                               "☎️ برای هماهنگی سریع: %s" % (text_map.get(kind, "پیام"), content.PHONE), buttons=True)
+                sk.bump(db, "nontext")
+                handled += 1
                 continue
             if not should_reply(raw_text, chat_type):
                 continue
@@ -446,9 +560,21 @@ def handle_updates(state, minutes=0, timeout=0):
                 continue                       # ضداسپم
             rl[str(chat_id)] = now
 
+            sk.touch_user(db, chat_id, msg.get("from") or {}, opt_in=(None if cmd != "start" else True))
+            sk.bump(db, "messages")
+            if cmd:
+                sk.bump(db, "cmd:" + cmd)
+
+            payload = raw_text.split()[1:2]
+            if cmd == "start" and payload:
+                cmd = payload[0].split("@")[0].lower()   # دیپ‌لینک: t.me/...?start=rsvp
+
             if cmd == "start":
                 r = send_welcome(chat_id)
                 out = "(welcome)"
+            elif cmd in ("rsvp", "my", "stop"):
+                r = skill_reply(cmd, text, chat_id, db)
+                out = "/" + cmd
             elif cmd == "news":
                 r, out = reply(chat_id, news_reply()), "news"
             elif cmd in content.REPLIES:
@@ -457,9 +583,14 @@ def handle_updates(state, minutes=0, timeout=0):
             else:
                 out_text = kb_answer(text)
                 source = "kb"
-                if not out_text:
+                if out_text:
+                    sk.bump(db, "kb_answers")
+                else:
+                    typing(chat_id)
                     out_text = ai_answer(text)
                     source = "ai"
+                if source == "ai" and out_text:
+                    sk.bump(db, "ai_answers")
                 if not out_text:
                     out_text = content.FALLBACK
                     source = "fallback"
@@ -470,6 +601,10 @@ def handle_updates(state, minutes=0, timeout=0):
             handled += 1
         if not minutes or (time.time() - started) >= minutes * 60:
             break
+    try:
+        sk.save_db(db)
+    except OSError as exc:
+        print("[poll] could not save bot db:", exc)
     return handled
 
 
@@ -498,6 +633,9 @@ COMMANDS = [
     {"command": "contact", "description": "تماس، وب‌سایت و کانال"},
     {"command": "news", "description": "آخرین اخبار و فراخوان‌ها"},
     {"command": "start", "description": "شروع و دکمه‌های منو"},
+    {"command": "rsvp", "description": "ثبت‌نام در رویدادها"},
+    {"command": "my", "description": "پروفایل و ثبت‌نام‌های من"},
+    {"command": "stop", "description": "خاموش‌کردن اطلاع‌رسانی"},
     {"command": "help", "description": "راهنمای دستورها"},
 ]
 
@@ -572,6 +710,68 @@ def news_reply():
 
 
 
+def mode_remind():
+    """یادآور شب رویداد برای کسانی که فردا در رویدادی ثبت‌نام کرده‌اند."""
+    db = sk.load_db()
+    due = sk.reminders_due(db)
+    if not due:
+        print("[remind] یادآوری لازم نیست")
+        return 0
+    sent = 0
+    for item in due:
+        ev, day = item["event"], item["day"]
+        text = ("⏰ <b>یادآور رویداد</b>\nفردا %s: <b>%s</b> ساعت %s\n📍 %s\n💰 %s\n\n"
+                "منتظرتان هستیم! اگر نمی‌توانید بیایید، با دکمهٔ زیر لغو کنید."
+                % (sk.fa_date(day), ev.get("title", ""), ev.get("time", ""), ev.get("place", ""),
+                   ev.get("price", "")))
+        for uid in item["users"]:
+            r = api("sendMessage", {"chat_id": uid, "text": text, "parse_mode": "HTML",
+                                    "reply_markup": {"inline_keyboard": [
+                                        [{"text": "❌ لغو ثبت‌نام", "callback_data": "un:" + item["id"].rsplit("@", 1)[0]}]]}})
+            if r.get("ok"):
+                sent += 1
+        db["reminders"][item["id"]] = dt.date.today().isoformat()
+    sk.save_db(db)
+    print("[remind] %s یادآور ارسال شد" % persian_numbers(str(sent)))
+    return 0
+
+
+def mode_broadcast(args):
+    """ارسال پیام گروهی به کاربران (برای اطلاعیه‌های رستوران)."""
+    if not args.text:
+        print("متن پیام را با --text بدهید.")
+        return 2
+    db = sk.load_db()
+
+    def send(uid, text):
+        return api("sendMessage", {"chat_id": uid, "text": text, "parse_mode": "HTML",
+                                   "reply_markup": content.BUTTONS}).get("ok")
+
+    res = sk.broadcast(db, send, args.text, dry_run=args.dry_run)
+    sk.bump(db, "broadcasts")
+    if not args.dry_run:
+        sk.save_db(db)
+    print("[broadcast] %s=%s | ناموفق=%s | لغو‌شده=%s" % (
+        "گیرندگان" if args.dry_run else "ارسال‌شده",
+        persian_numbers(str(res["sent"])), persian_numbers(str(res["failed"])), persian_numbers(str(res["skipped"]))))
+    return 0
+
+
+def mode_report():
+    """گزارش وضعیت ربات: کاربران، ثبت‌نام‌ها، پرمصرف‌ترین دستورها."""
+    db = sk.load_db()
+    st = sk.stats(db)
+    trans = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
+    print("👥 کاربران: %s (فعال: %s)" % (str(st["users"]).translate(trans), str(st["opted_in"]).translate(trans)))
+    print("🎫 ثبت‌نام‌های فعال: %s" % str(st["rsvps"]).translate(trans))
+    print("📊 پرمصرف‌ترین‌ها:", ", ".join("%s=%s" % (k, v) for k, v in st["top_counters"]) or "—")
+    for key, entries in sorted(db["rsvps"].items()):
+        found = sk.find_occurrence(key)
+        title = found[1]["title"] if found else key
+        print("   • %s → %s نفر" % (title, str(len(entries)).translate(trans)))
+    return 0
+
+
 # ---------------------------------------------------------------- modes
 def mode_selftest():
     me = api("getMe")
@@ -642,17 +842,19 @@ def mode_post(args):
 def main():
     parser = argparse.ArgumentParser(description="اتوماسیون تلگرام رستوران شمسه")
     parser.add_argument("mode", nargs="?", default="selftest",
-                        choices=["post", "poll", "selftest", "discover", "brand"])
+                        choices=["post", "poll", "selftest", "discover", "brand", "remind", "broadcast", "report"])
     parser.add_argument("--dry-run", action="store_true", help="فقط نمایش، بدون ارسال")
     parser.add_argument("--force", action="store_true", help="نادیده گرفتن قاعدهٔ «یک پست در روز»")
     parser.add_argument("--topic", type=int, default=None, help="شمارهٔ موضوع برای تست")
     parser.add_argument("--loop", type=int, default=0, help="دقیقهٔ long-poll برای حالت poll (پاسخ آنی)")
+    parser.add_argument("--text", default="", help="متن پیام برای حالت broadcast")
     args = parser.parse_args()
 
     if args.mode != "selftest" and not TOKEN:
         print("ERROR: TELEGRAM_BOT_TOKEN is not set", file=sys.stderr)
         return 2
     return {"selftest": mode_selftest, "discover": mode_discover, "brand": mode_brand,
+            "remind": mode_remind, "report": mode_report, "broadcast": lambda: mode_broadcast(args),
             "poll": lambda: mode_poll(args.loop), "post": lambda: mode_post(args)}[args.mode]()
 
 

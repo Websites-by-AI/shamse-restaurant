@@ -30,8 +30,9 @@ ok(content.KEYBOARD["resize_keyboard"] is True, "keyboard resizes")
 ok(content.KEYBOARD["is_persistent"] is True, "keyboard is persistent")
 labels = [b["text"] for row in rows for b in row]
 ok(all(l in content.QUICK for l in labels), "every keyboard label maps to a command", labels)
-ok(all(v in content.REPLIES or v == "news" for v in content.QUICK.values()),
-   "every quick command is handled", list(content.QUICK.values()))
+SKILLS = {"news", "rsvp", "my", "stop"}
+ok(all(v in content.REPLIES or v in SKILLS for v in content.QUICK.values()),
+   "every quick command is handled (REPLIES or skills)", list(content.QUICK.values()))
 
 # ---------------------------------------------------------------- 2) normalisation / matching
 ok(tb._norm("ساعت‌کاری  شما") == "ساعت کاری شما", "ZWNJ + double spaces normalised", tb._norm("ساعت‌کاری  شما"))

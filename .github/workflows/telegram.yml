@@ -15,17 +15,22 @@ on:
     - cron: '*/15 * * * *'      # پاسخ به پیام‌ها (پنجرهٔ long-poll هر ۱۵ دقیقه)
     - cron: '0 9 * * 1,3,5'     # پست به کانال
     - cron: '15 */6 * * *'      # اخبار و فراخوان‌های مرتبط (هر ۶ ساعت)
+    - cron: '0 6 * * *'         # یادآور رویدادهای فردا (۰۹:۰۰ استانبول)
   workflow_dispatch:
     inputs:
       mode:
         description: 'حالت اجرا'
         type: choice
         default: post
-        options: [post, poll, selftest, discover, brand, news]
+        options: [post, poll, selftest, discover, brand, news, remind, report, broadcast]
       dry_run:
         description: 'بدون ارسال واقعی (فقط نمایش)'
         type: boolean
         default: false
+      text:
+        description: 'متن پیام گروهی (فقط برای حالت broadcast)'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -71,6 +76,26 @@ jobs:
         env: *bot_env
         run: python3 automation/telegram_bot.py brand
 
+      - name: یادآور رویدادهای فردا
+        if: (github.event_name == 'schedule' && github.event.schedule == '0 6 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'remind')
+        env: *bot_env
+        run: python3 automation/telegram_bot.py remind
+
+      - name: گزارش وضعیت ربات
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'report'
+        env: *bot_env
+        run: python3 automation/telegram_bot.py report
+
+      - name: پیام گروهی به کاربران
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'broadcast'
+        env: *bot_env
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 automation/telegram_bot.py broadcast --text "${{ inputs.text }}" --dry-run
+          else
+            python3 automation/telegram_bot.py broadcast --text "${{ inputs.text }}"
+          fi
+
       - name: اخبار و فراخوان‌های مرتبط (دیتابیس + هوش مصنوعی)
         if: (github.event_name == 'schedule' && github.event.schedule == '15 */6 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'news')
         env: *bot_env
@@ -101,7 +126,7 @@ jobs:
         run: |
           git config user.name "shamse-bot"
           git config user.email "shamse-bot@users.noreply.github.com"
-          git add automation/state.json automation/news_db.json 2>/dev/null || true
+          git add automation/state.json automation/news_db.json automation/bot_db.json 2>/dev/null || true
           git diff --cached --quiet && { echo "no state changes"; exit 0; }
           if git diff --cached --quiet; then
             echo "state unchanged"
