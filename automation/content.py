@@ -17,6 +17,8 @@ PHONE = "+90 501 325 24 52"
 WA = "https://wa.me/905013252452"
 IG = "https://www.instagram.com/shamse.resturan"
 CHANNEL_URL = "https://t.me/shamse_restaurant"
+BOT_URL = "https://t.me/shamse_restaurant_bot"
+RSVP_URL = BOT_URL + "?start=rsvp"
 OFFICIAL_SITE = "https://shamserestaurants.com/fa/home/"
 
 TAGS = "#رستوران_شمسه #استانبول #غذای_ایرانی #تکسیم #کوجاتپه #Shamse"
@@ -29,14 +31,15 @@ FOOTER = ("\n\n🌐 سایت: %s\n🤖 ربات: @shamse_restaurant_bot · 📣 
 GUIDE_POST = """📌 راهنمای رستوران شمسه
 
 🌐 وب‌سایت (منو، رویدادها، رزرو): %s
-🤖 ربات تلگرام: @shamse_restaurant_bot — دستورهای /menu /events /reserve /branches /contact
-📅 رویدادها و میتاپ‌های طبقهٔ دوم: %s
+🤖 ربات تلگرام: @shamse_restaurant_bot — /menu /events /rsvp /my /reserve /branches /contact
+🎫 ثبت‌نام یک‌ضربه‌ای رویدادها + یادآور خودکار: %s
+📅 تقویم کامل رویدادها: %s
 
 📍 شعبه ۱: خیابان استقلال پلاک ۱۷۹ (تکسیم)
 📍 شعبه ۲: عبدالحکیم حمیت ۱۷ (کوجاتپه)
 🕐 همه‌روزه ۱۲:۰۰ تا ۰۱:۳۰ — ☎️ %s
 
-🇮🇷 سایت برند: %s""" % (SITE_LABEL, EVENTS_URL, PHONE, OFFICIAL_SITE)
+🇮🇷 سایت برند: %s""" % (SITE_LABEL, RSVP_URL, EVENTS_URL, PHONE, OFFICIAL_SITE)
 
 # هر آیتم: (کلید عکس، متن قالب)
 TOPICS = [
@@ -205,7 +208,7 @@ FALLBACK = """تا اینجا با شما هستیم 🌟
 CHANNEL_BUTTONS = {
     "inline_keyboard": [
         [{"text": "🌐 وب‌سایت شمسه", "url": SITE}, {"text": "📅 رویدادها", "url": EVENTS_URL}],
-        [{"text": "🤖 ربات ما", "url": "https://t.me/shamse_restaurant_bot"}],
+        [{"text": "🤖 ربات ما", "url": BOT_URL}, {"text": "🎫 ثبت‌نام رویداد", "url": RSVP_URL}],
     ]
 }
 
@@ -291,6 +294,7 @@ FALLBACK = """متوجه شدم 🌟
 
 BUTTONS = {
     "inline_keyboard": [
+        [{"text": "🎫 ثبت‌نام در رویدادها", "url": RSVP_URL}],
         [{"text": "📖 منو", "url": MENU_URL}, {"text": "📅 رویدادها", "url": EVENTS_URL}],
         [{"text": "🪑 رزرو میز", "url": RESERVE_URL}, {"text": "💬 واتساپ", "url": WA}],
         [{"text": "📣 کانال رسمی شمسه", "url": CHANNEL_URL},

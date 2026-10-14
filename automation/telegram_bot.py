@@ -611,7 +611,8 @@ def handle_updates(state, minutes=0, timeout=0):
 CHANNEL_DESCRIPTION = (
     "🍽 رستوران ایرانی شمسه در استانبول — دو شعبه: تکسیم و کوجاتپه.\n"
     "طبقهٔ دوم شعبهٔ استقلال میزبان میتاپ و گردهمایی (ظرفیت ۶۰ نفر).\n"
-    "🌐 وب‌سایت: shamse-restaurant.pages.dev | 🤖 ربات: @shamse_restaurant_bot"
+    "🎫 ثبت‌نام رویدادها با ربات: @shamse_restaurant_bot\n"
+    "🌐 وب‌سایت: shamse-restaurant.pages.dev"
 )
 
 BOT_DESCRIPTION = (
