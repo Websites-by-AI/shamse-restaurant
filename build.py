@@ -18,6 +18,8 @@ IMGDIR = os.path.join(ROOT, "assets", "img")
 
 PREVIEW_MAX_W = 900      # resize width of photos embedded into preview.html
 PREVIEW_QUALITY = 62     # JPEG quality for the embedded copies
+FONT_PLACEHOLDER = re.compile(r"__FONT_([a-z0-9\-]+)__")
+
 TINY_GIF = ("data:image/gif;base64,"
             "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7")
 
@@ -32,10 +34,15 @@ def load_source() -> str:
 IMGREF = re.compile(r"IMGREF\('([a-z0-9\-]+)'\)")
 
 
+FONTS = {"vazirmatn": "Vazirmatn-Variable.woff2"}
+
+
 def build_index(src: str) -> str:
     """Normal build: point every placeholder at a real relative file path."""
     src = PLACEHOLDER.sub(lambda m: "assets/img/%s.jpg" % m.group(1), src)
-    return IMGREF.sub(lambda m: "'assets/img/%s.jpg'" % m.group(1), src)
+    src = IMGREF.sub(lambda m: "'assets/img/%s.jpg'" % m.group(1), src)
+    src = FONT_PLACEHOLDER.sub(lambda m: "assets/fonts/" + FONTS[m.group(1)], src)
+    return src
 
 
 def build_preview_js(src: str) -> str:
@@ -91,6 +98,16 @@ def build_preview(src: str) -> str:
     if PLACEHOLDER.search(src):
         left = set(PLACEHOLDER.findall(src))
         sys.exit("unhandled image placeholders: %s" % ", ".join(sorted(left)))
+
+    # 3b) fonts: inline as base64 so the single file works fully offline
+    def font_uri(name: str) -> str:
+        path = os.path.join(ROOT, "assets", "fonts", FONTS[name])
+        if not os.path.exists(path):
+            sys.exit("missing font: %s" % path)
+        b64 = base64.b64encode(open(path, "rb").read()).decode("ascii")
+        return "data:font/woff2;base64," + b64
+
+    src = FONT_PLACEHOLDER.sub(lambda m: font_uri(m.group(1)), src)
 
     # 4) embed the unique image map once, right before the inline-image bootstrap
     names = sorted(set(re.findall(r'data-img(?:-bg)?="([a-z0-9\-]+)"', src)) |
