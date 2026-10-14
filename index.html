@@ -122,11 +122,13 @@ h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.5;margin-top:8px
 .header.small .logo .mark{width:40px;height:40px}
 .logo b{display:block;font-size:1.22rem;line-height:1.4;letter-spacing:.01em}
 .logo span{display:block;font-size:.7rem;color:var(--gold);letter-spacing:.28em}
-.nav{display:flex;align-items:center;gap:4px}
+.nav{display:flex;align-items:center;gap:2px}
 .nav a{
-  color:#e9e1d2;font-weight:600;font-size:.98rem;padding:10px 13px;border-radius:10px;position:relative;transition:.25s;
+  color:#e9e1d2;font-weight:600;font-size:.95rem;padding:10px 11px;border-radius:10px;
+  position:relative;transition:.25s;white-space:nowrap;
 }
-.nav a::after{content:"";position:absolute;right:13px;left:13px;bottom:4px;height:1.5px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:.3s}
+.nav a::after{right:11px;left:11px}
+.nav a::after{content:"";position:absolute;bottom:4px;height:1.5px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:.3s}
 .nav a:hover{color:#fff}
 .nav a:hover::after,.nav a.active::after{transform:scaleX(1)}
 .nav a.active{color:var(--gold)}
@@ -142,7 +144,11 @@ h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.5;margin-top:8px
 .hero .bg{position:absolute;inset:0;z-index:-2;background:var(--hero) center/cover no-repeat;transform:scale(1.06);animation:kenburns 22s ease-in-out infinite alternate}
 @keyframes kenburns{to{transform:scale(1.14) translateY(-8px)}}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(14,11,8,.94) 0%,rgba(14,11,8,.78) 45%,rgba(14,11,8,.42) 100%)}
-.hero .wrap{padding-block:120px;text-align:right}
+.hero .wrap{padding-block:120px;text-align:center}
+.hero h1{margin-inline:auto}
+.hero p.lead{margin-inline:auto}
+.hero .cta{justify-content:center}
+.hero .facts{justify-content:center;text-align:center}
 .hero .kicker{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(212,175,55,.55);color:var(--gold-soft);background:rgba(212,175,55,.09);padding:8px 18px;border-radius:999px;font-size:.85rem;font-weight:700}
 .hero h1{font-size:clamp(2rem,5.4vw,4rem);line-height:1.45;margin:22px 0 0;font-weight:800;max-width:16em}
 .hero h1 em{font-style:normal;color:var(--gold);position:relative;white-space:nowrap}
@@ -183,10 +189,10 @@ h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.5;margin-top:8px
 /* --- menu --- */
 .tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:38px 0 30px}
 .tab{
-  border:1.5px solid rgba(212,175,55,.45);background:transparent;color:#cbbfa9;
+  border:1.5px solid rgba(212,175,55,.55);background:#fff;color:var(--muted);
   padding:11px 22px;border-radius:999px;font-weight:700;cursor:pointer;transition:.25s;font-size:.95rem;
 }
-.tab:hover{border-color:var(--gold);color:#fff}
+.tab:hover{border-color:var(--gold);color:var(--ink)}
 .tab.on{background:var(--gold);border-color:var(--gold);color:#241c05}
 .menu-grid{display:grid;grid-template-columns:380px 1fr;gap:40px;align-items:start}
 .menu-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid rgba(212,175,55,.25);position:sticky;top:110px}
@@ -227,15 +233,15 @@ h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.5;margin-top:8px
 
 /* --- branches (دو شعبه) --- */
 .branches{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:46px}
-.branch{background:var(--ink-2);border:1px solid rgba(212,175,55,.25);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-lg)}
+.branch{background:#fff;border:1px solid var(--cream-2);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 14px 34px rgba(20,16,13,.09)}
 .branch__img{position:relative;margin:0}
 .branch__img img{width:100%;aspect-ratio:16/9.4;object-fit:cover}
 .branch__img .pill{position:absolute;top:16px;right:16px;background:var(--gold);color:#241c05;font-weight:800;font-size:.82rem;padding:7px 16px;border-radius:999px}
 .branch__body{padding:28px 26px;display:flex;flex-direction:column;gap:18px;flex:1}
-.branch__body h3{color:#fff;font-size:1.25rem}
-.binfo{list-style:none;display:grid;gap:12px;color:#cbbfa9;font-size:.94rem}
+.branch__body h3{color:var(--ink);font-size:1.25rem}
+.binfo{list-style:none;display:grid;gap:12px;color:var(--muted);font-size:.94rem}
 .binfo li{display:flex;gap:10px;align-items:flex-start}
-.binfo a{color:var(--gold);font-weight:700}
+.binfo a{color:var(--gold-2);font-weight:700}
 .binfo a:hover{text-decoration:underline}
 .branch__cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
 .branch__cta .btn{padding:12px 22px;font-size:.94rem}
@@ -271,6 +277,32 @@ h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.5;margin-top:8px
 .mnote{margin-top:30px;background:#fff;border:1px dashed rgba(212,175,55,.55);border-radius:16px;padding:18px 22px;font-size:.92rem;color:var(--muted)}
 .mcta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
 
+/* --- blog / مقالات --- */
+.blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px}
+.post{background:#fff;border:1px solid var(--cream-2);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 26px rgba(20,16,13,.06);transition:.35s}
+.post:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.post img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.post__body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.post__cat{align-self:flex-start;font-size:.72rem;font-weight:800;background:rgba(212,175,55,.16);color:#8a6d12;padding:4px 12px;border-radius:999px}
+.post h3{font-size:1.02rem;line-height:1.6}
+.post p{font-size:.88rem;color:var(--muted)}
+.post__meta{font-size:.78rem;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap;margin-top:auto;padding-top:10px;border-top:1px dashed rgba(212,175,55,.45)}
+.post__link{font-weight:800;color:var(--gold-2);font-size:.9rem;margin-top:12px}
+.post__link:hover{text-decoration:underline}
+.post.extra{display:none}
+.post.extra.show{display:flex;animation:fade .5s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* --- article modal --- */
+.amodal{position:fixed;inset:0;background:rgba(10,8,6,.9);display:none;place-items:center;z-index:220;padding:22px}
+.amodal.on{display:grid}
+.amodal__box{background:var(--cream);width:min(780px,100%);max-height:88vh;overflow:auto;border-radius:22px;box-shadow:var(--shadow-lg)}
+.amodal__box img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.amodal__body{padding:30px 32px 38px}
+.amodal__body h3{font-size:1.4rem;margin-bottom:8px}
+.amodal__meta{font-size:.82rem;color:var(--muted);margin-bottom:18px}
+.amodal__body p{color:#4c4438;margin-bottom:14px}
+.amodal__close{position:absolute;top:22px;left:22px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(212,175,55,.5);background:rgba(20,16,13,.75);color:var(--gold);font-size:1.3rem;cursor:pointer}
+
 /* --- gallery --- */
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:16px;margin-top:44px}
 .gallery a{border-radius:16px;overflow:hidden;position:relative;display:block;box-shadow:var(--shadow)}
@@ -286,12 +318,12 @@ h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.5;margin-top:8px
 
 /* --- testimonials --- */
 .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
-.quote{background:var(--ink-2);border:1px solid rgba(212,175,55,.22);border-radius:var(--radius);padding:32px 28px;position:relative}
+.quote{background:#fff;border:1px solid var(--cream-2);border-radius:var(--radius);padding:32px 28px;position:relative;box-shadow:0 10px 26px rgba(20,16,13,.06)}
 .quote::before{content:"”";position:absolute;top:-6px;left:22px;font-size:5rem;color:rgba(212,175,55,.35);line-height:1;font-family:Georgia,serif}
-.quote p{color:#ded4c2;font-size:.98rem}
-.qhead{display:flex;align-items:center;gap:14px;margin-top:22px;border-top:1px solid rgba(255,255,255,.1);padding-top:18px}
+.quote p{color:#4c4438;font-size:.98rem}
+.qhead{display:flex;align-items:center;gap:14px;margin-top:22px;border-top:1px solid rgba(20,16,13,.1);padding-top:18px}
 .qhead .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#a67c12);display:grid;place-items:center;color:#241c05;font-weight:800}
-.qhead b{color:#fff;display:block;font-size:.98rem}
+.qhead b{color:var(--ink);display:block;font-size:.98rem}
 .stars{color:var(--gold);display:flex;gap:3px}
 .stars svg{width:15px;height:15px}
 
@@ -372,7 +404,8 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 
 /* --- responsive --- */
 @media (max-width:1080px){
-  .nav a{padding:10px 9px;font-size:.92rem}
+  .nav a{padding:9px 7px;font-size:.88rem}
+  .blog-grid{grid-template-columns:repeat(2,1fr)}
   .cards,.groups{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr)}
   .meetup-hero{grid-template-columns:1fr;gap:40px}
@@ -401,7 +434,8 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 }
 @media (max-width:640px){
   .section{padding:60px 0}
-  .cards,.platters,.quotes,.groups,.steps{grid-template-columns:1fr}
+  .cards,.platters,.quotes,.groups,.steps,.blog-grid{grid-template-columns:1fr}
+  .amodal__body{padding:22px 18px 28px}
   .stats{grid-template-columns:1fr}
   .grid2{grid-template-columns:1fr}
   .about-txt .list{grid-template-columns:1fr}
@@ -467,6 +501,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
       <a href="#menu">منو</a>
       <a href="#branches">شعبه‌ها</a>
       <a href="#meetup">میتاپ</a>
+      <a href="#blog">مقالات</a>
       <a href="#services">خدمات</a>
       <a href="#gallery">گالری</a>
       <a href="#reviews">نظرات</a>
@@ -482,7 +517,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
   <div class="bg" style="--hero:url('assets/img/hero-platter.jpg')"></div>
   <div class="wrap">
     <span class="kicker">🍽 بزرگ‌ترین رستوران ایرانی تکسیم — دو شعبه در استانبول</span>
-    <h1>رستوران شمسه؛ سفری به دل <em>طعم‌های اصیل ایران</em></h1>
+    <h1>رستوران شمسه؛ دو طبقه از <em>طعم و مهمان‌نوازی ایرانی</em> در قلب تکسیم</h1>
     <p class="lead">
       شمسه، رستوران معروف ایرانی در قلب استانبول، با <b>دو شعبه</b> میزبان شماست: شعبه اصلی در خیابان استقلال (تکسیم)
       و «شمسه سو کلاب» در کوجاتپه. عطر زعفران و زغال، دو طبقه سالن (طبقهٔ همکف رستوران + طبقهٔ اختصاصی میتاپ)، موسیقی زنده و مهمان‌نوازی ایرانی —
@@ -507,7 +542,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
   <div class="wrap split">
     <div class="about-txt rev">
       <span class="eyebrow">درباره رستوران شمسه</span>
-      <h2 class="sec-title">طعم ایران در قلب استانبول</h2>
+      <h2 class="sec-title">آشپزی ایرانی با دستورهای خانوادگی، از ۱۳۹۳ تا امروز</h2>
       <p>
         رستوران شمسه، رستوران معروف ایرانی در استانبول، جشنواره‌ای از طعم‌ها، فرهنگ و مهمان‌نوازی ایرانی است.
         شمسه امروز با <b>دو شعبه در منطقه بی‌اوغلو</b> میزبان مهمانان است: شعبه اصلی در قلب خیابان استقلال (تکسیم) و
@@ -541,11 +576,11 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 </section>
 
 <!-- ================= MENU ================= -->
-<section class="section section--dark pattern" id="menu">
+<section class="section section--soft" id="menu">
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">منوی رستوران شمسه</span>
-      <h2 class="sec-title">منوی متنوع غذای ایرانی در استانبول با طعمی ماندگار</h2>
+      <h2 class="sec-title">منوی شمسه؛ از خورش‌های خانگی تا کباب‌های زغالی</h2>
       <p class="sec-sub">از پیش‌غذاهای دودی و خورش‌های خانگی تا کباب‌های زغالی و دسرهای سنتی؛ دسته مورد علاقه‌تان را انتخاب کنید.</p>
       <div class="ornament"><svg viewBox="0 0 24 24" fill="#d4af37"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
     </div>
@@ -685,11 +720,11 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 </section>
 
 <!-- ================= PLATTERS ================= -->
-<section class="section section--soft" id="platters">
+<section class="section section--cream" id="platters">
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">سینی‌های خانوادگی</span>
-      <h2 class="sec-title">سینی‌های مخصوص شمسه؛ کباب‌های اصیل برای دورهمی</h2>
+      <h2 class="sec-title">سینی‌های دورهمی؛ پرس‌های خانوادگی برای ۲ تا ۶ نفر</h2>
       <p class="sec-sub">ترکیبی از کوبیده، جوجه، برگ و سبزیجات زغالی — مناسب ۲ تا ۶ نفر، همراه برنج زعفرانی و نوشیدنی.</p>
     </div>
     <div class="platters">
@@ -714,7 +749,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 </section>
 
 <!-- ================= SERVICES ================= -->
-<section class="section section--cream" id="services">
+<section class="section section--soft" id="services">
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">خدمات ما</span>
@@ -750,7 +785,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 </section>
 
 <!-- ================= BRANCHES (دو شعبه) ================= -->
-<section class="section section--dark pattern" id="branches">
+<section class="section section--cream" id="branches">
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">دو شعبه در استانبول</span>
@@ -779,7 +814,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
           </ul>
           <div class="branch__cta">
             <a class="btn btn--gold" href="#reserve" data-branch="taksim">رزرو در این شعبه</a>
-            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Shamse%20Restaurant%20Istiklal%20Caddesi%20No%3A179%20Beyoglu%20Istanbul" target="_blank" rel="noopener">مسیریابی در گوگل‌مپ</a>
+            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Shamse%20Restaurant%20Istiklal%20Caddesi%20No%3A179%20Beyoglu%20Istanbul" target="_blank" rel="noopener">مسیریابی در گوگل‌مپ</a>
           </div>
         </div>
       </article>
@@ -800,7 +835,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
           </ul>
           <div class="branch__cta">
             <a class="btn btn--gold" href="#reserve" data-branch="kocatepe">رزرو در این شعبه</a>
-            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Abd%C3%BClhak%20Hamit%20Cd.%20No%3A17%20Kocatepe%20Beyoglu%20Istanbul" target="_blank" rel="noopener">مسیریابی در گوگل‌مپ</a>
+            <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Abd%C3%BClhak%20Hamit%20Cd.%20No%3A17%20Kocatepe%20Beyoglu%20Istanbul" target="_blank" rel="noopener">مسیریابی در گوگل‌مپ</a>
           </div>
         </div>
       </article>
@@ -809,7 +844,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 </section>
 
 <!-- ================= MEETUP / COMMUNITY FLOOR ================= -->
-<section class="section section--cream" id="meetup">
+<section class="section section--soft" id="meetup">
   <div class="wrap meetup-hero">
     <div class="rev">
       <span class="eyebrow">میتاپ و گردهمایی‌ها</span>
@@ -932,7 +967,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 </section>
 
 <!-- ================= GALLERY ================= -->
-<section class="section section--soft" id="gallery">
+<section class="section section--cream" id="gallery">
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">گالری تصاویر</span>
@@ -956,33 +991,33 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 </section>
 
 <!-- ================= REVIEWS ================= -->
-<section class="section section--dark pattern" id="reviews">
+<section class="section section--soft" id="reviews">
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">نظرات مهمانان</span>
-      <h2 class="sec-title">مهمانان ما چه می‌گویند؟</h2>
+      <h2 class="sec-title">روایت مهمانانی که دوباره برگشتند</h2>
       <div class="ornament"><svg viewBox="0 0 24 24" fill="#d4af37"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
     </div>
     <div class="quotes">
       <blockquote class="quote rev">
-        <p>«طعم‌های شمسه فوراً مرا به دوران کودکی‌ام در تهران برد. از کباب گرفته تا ته‌چین، همه‌چیز اصیل و پر از احساس بود.»</p>
+        <p>«کوبیده‌شان همان طعمی را دارد که در بازار تجریش می‌خوردم؛ تهدیگ کره‌ای‌اش هم دیگر جای خودش را دارد.»</p>
         <div class="qhead">
-          <span class="av">ل</span>
-          <span><b>لیلا</b><span class="stars">★★★★★</span></span>
+          <span class="av">م</span>
+          <span><b>مهسا — مهمان از تهران</b><span class="stars">★★★★★</span></span>
         </div>
       </blockquote>
       <blockquote class="quote rev d1">
-        <p>«فضایی باورنکردنی و کارکنانی واقعاً مهمان‌نواز. شمسه حالا مکان مورد علاقه‌ی من در استانبول برای یک وعده‌ی گرم است.»</p>
+        <p>«طبقهٔ بالا را برای دورهمی ماهانهٔ تیم‌مان گرفتیم؛ پروژکتور و چیدمان آماده بود و حساب و کتاب هم شفاف.»</p>
         <div class="qhead">
-          <span class="av">د</span>
-          <span><b>داوود</b><span class="stars">★★★★★</span></span>
+          <span class="av">آ</span>
+          <span><b>آرش — برگزارکنندهٔ رویداد</b><span class="stars">★★★★★</span></span>
         </div>
       </blockquote>
       <blockquote class="quote rev d2">
-        <p>«شب موسیقی زنده در شمسه سو کلاب (شعبه کوجاتپه) فوق‌العاده بود؛ برنج و خورش‌های زعفرانی هم فراموش‌نشدنی.»</p>
+        <p>«دنبال جای حلال و گرم برای خانواده‌ام بودم؛ زرشک‌پلو با مرغ و دوغ سنتی‌شان بهترین انتخاب این سفر بود.»</p>
         <div class="qhead">
-          <span class="av">ز</span>
-          <span><b>زینب</b><span class="stars">★★★★★</span></span>
+          <span class="av">ا</span>
+          <span><b>الناز — مسافر از آنکارا</b><span class="stars">★★★★★</span></span>
         </div>
       </blockquote>
     </div>
@@ -994,7 +1029,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">رزرو میز</span>
-      <h2 class="sec-title">رزرو میز در رستوران شمسه؛ سریع و آسان</h2>
+      <h2 class="sec-title">میز خود را در شمسه رزرو کنید</h2>
       <p class="sec-sub">شعبه‌ی مورد نظر خود را انتخاب کنید (تکسیم یا کوجاتپه) و همین امروز میز خود را رزرو کنید.</p>
     </div>
     <div class="reserve" style="margin-top:44px">
@@ -1108,8 +1143,104 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
   </div>
 </section>
 
+<!-- ================= BLOG / مقالات ================= -->
+<section class="section section--soft" id="blog">
+  <div class="wrap">
+    <div class="center rev">
+      <span class="eyebrow">مقالات و راهنماها</span>
+      <h2 class="sec-title">تازه‌ها از آشپزخانه و شهر</h2>
+      <p class="sec-sub">نوشته‌های کوتاه دربارهٔ غذاهای ایرانی، محلهٔ استقلال و رویدادهای شمسه. روی هر کارت بزنید تا متن کامل باز شود.</p>
+    </div>
+
+    <div class="blog-grid">
+      <article class="post rev">
+        <img src="assets/img/dish-koobideh.jpg" alt="کباب کوبیده زغالی با برنج زعفرانی" loading="lazy">
+        <div class="post__body">
+          <span class="post__cat">آشپزخانه</span>
+          <h3>چرا کوبیدهٔ زغالی طعم دیگری دارد؟</h3>
+          <p>از نسبت چربی گوشت و راز پیاز آبگرفته تا دمای زغال بلوط؛ سه نکته‌ای که سرآشپز ما رعایت می‌کند.</p>
+          <div class="post__meta"><span>۲۲ مهر ۱۴۰۵</span><span>۴ دقیقه مطالعه</span></div>
+          <a class="post__link" href="#" data-article="a1">مطالعه بیشتر →</a>
+        </div>
+      </article>
+
+      <article class="post rev d1">
+        <img src="assets/img/interior.jpg" alt="سالن رستوران شمسه در خیابان استقلال" loading="lazy">
+        <div class="post__body">
+          <span class="post__cat">راهنمای شهر</span>
+          <h3>یک روز کامل در خیابان استقلال</h3>
+          <p>صبحانه‌های محلی، گالری‌های کوچک، کلیسای سن‌آنتوان و کجای مسیر برای ناهار توقف کنیم.</p>
+          <div class="post__meta"><span>۱۵ مهر ۱۴۰۵</span><span>۶ دقیقه مطالعه</span></div>
+          <a class="post__link" href="#" data-article="a2">مطالعه بیشتر →</a>
+        </div>
+      </article>
+
+      <article class="post rev d2">
+        <img src="assets/img/dish-mirza.jpg" alt="میرزا قاسمی و پیش‌غذاهای گیاهی ایرانی" loading="lazy">
+        <div class="post__body">
+          <span class="post__cat">گیاهی</span>
+          <h3>منوی ایرانی برای گیاهخواران؛ از کجا شروع کنیم؟</h3>
+          <p>کشک بادمجان، میرزا قاسمی، زیتون پرورده و پلوهای معطر؛ راهنمای سفارش بدون گوشت در شمسه.</p>
+          <div class="post__meta"><span>۸ مهر ۱۴۰۵</span><span>۵ دقیقه مطالعه</span></div>
+          <a class="post__link" href="#" data-article="a3">مطالعه بیشتر →</a>
+        </div>
+      </article>
+
+      <article class="post rev d3">
+        <img src="assets/img/interior2.jpg" alt="شب موسیقی زنده در شمسه سو کلاب" loading="lazy">
+        <div class="post__body">
+          <span class="post__cat">رویدادها</span>
+          <h3>شب موسیقی زنده در شمسه سو کلاب</h3>
+          <p>چه ساعتی برسیم، چه چیزی سفارش بدهیم و چطور میز نزدیک صحنه را بگیریم.</p>
+          <div class="post__meta"><span>۱ مهر ۱۴۰۵</span><span>۳ دقیقه مطالعه</span></div>
+          <a class="post__link" href="#" data-article="a4">مطالعه بیشتر →</a>
+        </div>
+      </article>
+
+      <article class="post extra rev">
+        <img src="assets/img/dish-zereshk.jpg" alt="زرشک‌پلو با مرغ" loading="lazy">
+        <div class="post__body">
+          <span class="post__cat">آشپزخانه</span>
+          <h3>زرشک‌پلو؛ تعادل ترش و شیرین</h3>
+          <p>چرا زرشک را در آخرین لحظه به کره اضافه می‌کنیم و زعفران چطور رنگ می‌دهد.</p>
+          <div class="post__meta"><span>۲۴ شهریور ۱۴۰۵</span><span>۴ دقیقه مطالعه</span></div>
+          <a class="post__link" href="#" data-article="a5">مطالعه بیشتر →</a>
+        </div>
+      </article>
+
+      <article class="post extra rev">
+        <img src="assets/img/meetup.jpg" alt="میتاپ گروه‌های ایرانی در طبقهٔ دوم شمسه" loading="lazy">
+        <div class="post__body">
+          <span class="post__cat">جامعه</span>
+          <h3>میزبانی یک میتاپ موفق در طبقهٔ دوم</h3>
+          <p>از انتخاب ساعت و چیدمان صندلی‌ها تا پذیرایی گروهی؛ چک‌لیست برگزارکننده‌ها.</p>
+          <div class="post__meta"><span>۱۷ شهریور ۱۴۰۵</span><span>۵ دقیقه مطالعه</span></div>
+          <a class="post__link" href="#" data-article="a6">مطالعه بیشتر →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="center" style="margin-top:38px">
+      <button class="btn btn--line" id="blogMore">مشاهده مقالات بیشتر</button>
+    </div>
+  </div>
+</section>
+
+<!-- article modal -->
+<div class="amodal" id="amodal" role="dialog" aria-modal="true" aria-label="متن مقاله">
+  <button class="amodal__close" id="amodalClose" aria-label="بستن">✕</button>
+  <div class="amodal__box">
+    <img id="amodalImg" src="" alt="">
+    <div class="amodal__body">
+      <h3 id="amodalTitle"></h3>
+      <div class="amodal__meta" id="amodalMeta"></div>
+      <div id="amodalText"></div>
+    </div>
+  </div>
+</div>
+
 <!-- ================= FAQ ================= -->
-<section class="section section--soft" id="faq">
+<section class="section section--cream" id="faq">
   <div class="wrap">
     <div class="center rev">
       <span class="eyebrow">سوالات متداول</span>
@@ -1117,17 +1248,17 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
     </div>
     <div class="faq">
       <details class="q rev" open>
-        <summary><span class="pl">+</span> رستوران شمسه چند شعبه دارد و کجا هستند؟</summary>
+        <summary><span class="pl">+</span> شمسه کجاها شعبه دارد؟</summary>
         <p>شمسه دو شعبه در منطقه بی‌اوغلو استانبول دارد: <b>شعبه ۱ — تکسیم، خیابان استقلال، پلاک ۱۷۹</b> (بعد از کلیسای سن‌آنتوان) و
         <b>شعبه ۲ — کوجاتپه، خیابان عبدالحق حمید، پلاک ۱۷</b> که به‌نام «شمسه سو کلاب» شناخته می‌شود و مناسب مراسم و شب‌های موسیقی زنده است.
         هر دو شعبه همه‌روزه از ۱۲ ظهر تا ۱:۳۰ بامداد باز هستند.</p>
       </details>
       <details class="q rev">
-        <summary><span class="pl">+</span> آیا نیاز به رزرو قبلی هست؟</summary>
+        <summary><span class="pl">+</span> برای شب‌های شلوغ باید از قبل میز بگیرم؟</summary>
         <p>برای آخر هفته‌ها و ایام شلوغ (تعطیلات و مناسبت‌ها) توصیه می‌کنیم حتماً رزرو کنید. رزرو از طریق فرم همین صفحه یا واتساپ انجام می‌شود؛ در فرم رزرو، شعبه‌ی دلخواه خود را انتخاب کنید.</p>
       </details>
       <details class="q rev">
-        <summary><span class="pl">+</span> آیا امکان برگزاری جشن و مراسم خصوصی وجود دارد؟</summary>
+        <summary><span class="pl">+</span> جشن تولد و مهمانی خصوصی هم برگزار می‌کنید؟</summary>
         <p>بله 🎉 شعبه کوجاتپه («شمسه سو کلاب») فضای مناسبی برای جشن تولد، سالگرد و مهمانی‌های خانوادگی دارد. ما می‌توانیم دکوراسیون، موسیقی زنده و منوی ویژه برای شما آماده کنیم.</p>
       </details>
       <details class="q rev">
@@ -1137,15 +1268,15 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
         برای هماهنگی، فرم رزرو (با انتخاب شعبهٔ تکسیم) یا واتساپ را استفاده کنید.</p>
       </details>
       <details class="q rev">
-        <summary><span class="pl">+</span> ساعات کاری رستوران چگونه است؟</summary>
+        <summary><span class="pl">+</span> چه ساعتی باز هستید و آشپزخانه تا کی سفارش می‌گیرد؟</summary>
         <p>هر دو شعبه همه‌روزه از ساعت ۱۲ ظهر تا ۱:۳۰ بامداد آماده پذیرایی هستند؛ آشپزخانه تا ۱۲:۳۰ شب سفارش می‌پذیرد.</p>
       </details>
       <details class="q rev">
-        <summary><span class="pl">+</span> آیا نوشیدنی‌های سنتی ایرانی هم سرو می‌کنید؟</summary>
+        <summary><span class="pl">+</span> نوشیدنی سنتی ایرانی، از دوغ تا شربت زعفران، دارید؟</summary>
         <p>بله 🍹 از دوغ سنتی گرفته تا شربت‌های ایرانی (زعفران، به‌لیمو و …) و چای ایرانی اصیل همراه با قلیان سنتی.</p>
       </details>
       <details class="q rev">
-        <summary><span class="pl">+</span> آیا غذای حلال و گزینه گیاهی دارید؟</summary>
+        <summary><span class="pl">+</span> گزینه‌های حلال و گیاهی در منو هست؟</summary>
         <p>تمامی گوشت‌ها حلال هستند. گزینه‌های گیاهی مثل کشک بادمجان، میرزا قاسمی، زیتون پرورده و انواع پلوها نیز در منو موجود است.</p>
       </details>
     </div>
@@ -1198,6 +1329,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
         <li><a href="#menu">منوی غذا</a></li>
         <li><a href="#branches">شعبه‌های ما (تکسیم و کوجاتپه)</a></li>
         <li><a href="#meetup">میتاپ و گردهمایی‌ها</a></li>
+        <li><a href="#blog">مقالات و راهنماها</a></li>
         <li><a href="#platters">سینی‌های مخصوص</a></li>
         <li><a href="#gallery">گالری تصاویر</a></li>
         <li><a href="#faq">سوالات متداول</a></li>
@@ -1383,6 +1515,58 @@ document.addEventListener('DOMContentLoaded', function(){
       show(t.dataset.cat);
     });
   });
+
+  /* ---- blog: load more + article modal ---- */
+  var ARTICLES={
+    a1:{t:'چرا کوبیدهٔ زغالی طعم دیگری دارد؟',m:'آشپزخانه · ۲۲ مهر ۱۴۰۵ · ۴ دقیقه مطالعه',img:'assets/img/dish-koobideh.jpg',
+      b:['زغال بلوط حرارت یکنواخت و طولانی‌تری می‌دهد و همین باعث می‌شود چربی گوشت آرام‌آرام آب شود و سطح کباب برشته بماند، بی‌آنکه داخلش خشک شود.',
+         'گوشت را با نسبت حدود ۷۰ به ۳۰ (گوشت کم‌چرب به چربی) ترکیب می‌کنیم، پیاز رنده‌شده را آب می‌گیریم تا خمیر شل نشود و نمک را دقیقاً پیش از سیخ‌گیری می‌زنیم.',
+         'نکتهٔ آخر به «استراحت» مربوط می‌شود: کباب را بعد از پخت یک دقیقه کنار می‌گذاریم تا آبش جمع شود؛ بعد با برنج زعفرانی و گوجهٔ زغالی سرو می‌کنیم.']},
+    a2:{t:'یک روز کامل در خیابان استقلال',m:'راهنمای شهر · ۱۵ مهر ۱۴۰۵ · ۶ دقیقه مطالعه',img:'assets/img/interior.jpg',
+      b:['صبح را با قهوهٔ ترک و شیرینی‌های محلی در کوچه‌های اطراف شروع کنید؛ خیابان تا حدود ۱۰ صبح آرام و عکاسی‌پذیر است.',
+         'در میانهٔ مسیر، کلیسای سن‌آنتوان، پاساژهای قدیمی و گالری‌های کوچک را ببینید. برای ناهار، مسیر شما از شمسه می‌گذرد: کوبیده و دوغ سنتی، دقیقاً همان چیزی که یک روز پیاده‌روی طولانی لازم دارد.',
+         'عصر به سمت میدان تکسیم بروید و شب را با موسیقی زنده در محله‌های اطراف تمام کنید. مسیر پیاده حدود ۱٬۴ کیلومتر است و چند دقیقه از ایستگاه مترو استقلال فاصله دارد.']},
+    a3:{t:'منوی ایرانی برای گیاهخواران؛ از کجا شروع کنیم؟',m:'گیاهی · ۸ مهر ۱۴۰۵ · ۵ دقیقه مطالعه',img:'assets/img/dish-mirza.jpg',
+      b:['پیش‌غذاهای ایرانی شاید بهترین نقطهٔ شروع باشند: کشک بادمجان، میرزا قاسمی، زیتون پرورده با گردو و سالاد شیرازی، همه بدون گوشت و پرطعم هستند.',
+         'برای غذای اصلی، پلوهای معطر را انتخاب کنید: زرشک‌پلو، شیرین‌پلو یا باقالی‌پلو همراه خورش‌های گیاهی. تهدیگ را هم فراموش نکنید.',
+         'اگر رژیم بدون گلوتن دارید، هنگام سفارش به کارکنان بگویید تا نان را کنار بگذارند و پلو با کره و زعفران سرو شود.']},
+    a4:{t:'شب موسیقی زنده در شمسه سو کلاب',m:'رویدادها · ۱ مهر ۱۴۰۵ · ۳ دقیقه مطالعه',img:'assets/img/interior2.jpg',
+      b:['برنامهٔ موسیقی معمولاً از ساعت ۲۱ شروع می‌شود؛ اگر میز نزدیک صحنه می‌خواهید، رزرو ساعت ۲۰:۳۰ بهترین انتخاب است.',
+         'منوی شب‌های موسیقی شامل سینی‌های دورهمی و نوشیدنی‌های سنتی است؛ سفارش سینی برای جمع‌های چهار نفره و بیشتر مقرون‌به‌صرفه‌تر است.',
+         'این شب‌ها در شعبهٔ کوجاتپه (شمسه سو کلاب) برگزار می‌شود؛ برای تولد و سالگرد، هماهنگی دکوراسیون هنگام رزرو انجام می‌گیرد.']},
+    a5:{t:'زرشک‌پلو؛ تعادل ترش و شیرین',m:'آشپزخانه · ۲۴ شهریور ۱۴۰۵ · ۴ دقیقه مطالعه',img:'assets/img/dish-zereshk.jpg',
+      b:['زرشک فقط چند ثانیه کره می‌خواهد؛ اگر بیشتر بماند می‌سوزد و تلخ می‌شود. ما آن را در آخرین لحظه، روی حرارت ملایم، براق می‌کنیم.',
+         'زعفران را جداگانه دم می‌کنیم و بخشی از برنج سفید را با آن رنگ می‌کنیم تا ظرف، همان ظاهر آشنای زرشک‌پلو را بگیرد.',
+         'ران مرغ با سس زعفرانی و کره سرو می‌شود؛ خلال پسته و بادام هم روی پلو می‌رود.']},
+    a6:{t:'میزبانی یک میتاپ موفق در طبقهٔ دوم',m:'جامعه · ۱۷ شهریور ۱۴۰۵ · ۵ دقیقه مطالعه',img:'assets/img/meetup.jpg',
+      b:['ساعت مناسب را جدی بگیرید: روزهای میانی هفته بین ۱۵ تا ۱۸ حس آرام‌تری دارند و برای گفت‌وگو و ارائه بهتر است.',
+         'چیدمان را بر اساس نوع رویداد بچینید؛ میز جمعی برای دورهمی، آرایش کلاسی برای ارائه و میزهای جزیره‌ای برای جلسات شبکه‌سازی.',
+         'پروژکتور، پرده، میکروفون و وای‌فای بدون هزینهٔ اضافه در اختیار شماست؛ منوی گروهی حلال و چای و شیرینی هم از قبل هماهنگ می‌شود.']}
+  };
+  var amodal=document.getElementById('amodal');
+  function openArticle(id){
+    var a=ARTICLES[id]; if(!a) return;
+    document.getElementById('amodalTitle').textContent=a.t;
+    document.getElementById('amodalMeta').textContent=a.m;
+    document.getElementById('amodalImg').src=a.img;
+    document.getElementById('amodalImg').alt=a.t;
+    document.getElementById('amodalText').innerHTML=a.b.map(function(p){return '<p>'+p+'</p>';}).join('');
+    amodal.classList.add('on');
+  }
+  function closeArticle(){amodal.classList.remove('on');}
+  document.querySelectorAll('[data-article]').forEach(function(el){
+    el.addEventListener('click',function(e){e.preventDefault();openArticle(el.getAttribute('data-article'));});
+  });
+  document.getElementById('amodalClose').addEventListener('click',closeArticle);
+  amodal.addEventListener('click',function(e){if(e.target===amodal)closeArticle();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeArticle();});
+  var blogMore=document.getElementById('blogMore');
+  if(blogMore){
+    blogMore.addEventListener('click',function(){
+      document.querySelectorAll('.post.extra').forEach(function(c){c.classList.add('show');});
+      blogMore.parentNode.style.display='none';
+    });
+  }
 
   /* ---- lightbox ---- */
   var lb=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg'), lbClose=document.getElementById('lbClose');

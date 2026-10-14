@@ -29,18 +29,23 @@ def load_source() -> str:
         return fh.read()
 
 
+IMGREF = re.compile(r"IMGREF\('([a-z0-9\-]+)'\)")
+
+
 def build_index(src: str) -> str:
     """Normal build: point every placeholder at a real relative file path."""
-    return PLACEHOLDER.sub(lambda m: "assets/img/%s.jpg" % m.group(1), src)
+    src = PLACEHOLDER.sub(lambda m: "assets/img/%s.jpg" % m.group(1), src)
+    return IMGREF.sub(lambda m: "'assets/img/%s.jpg'" % m.group(1), src)
 
 
 def build_preview_js(src: str) -> str:
-    """Single-file build: JS object literals `src:'__IMG_x__'` -> `src:IMG['x']`."""
-    return re.sub(
+    """Single-file build: JS object literals `src:'__IMG_x__'` / `IMGREF('x')` -> shared map."""
+    src = re.sub(
         r":'__IMG_([a-z0-9\-]+)__'",
         lambda m: ":IMG['%s']" % m.group(1),
         src,
     )
+    return IMGREF.sub(lambda m: "IMG['%s']" % m.group(1), src)
 
 
 def build_preview(src: str) -> str:
@@ -88,7 +93,8 @@ def build_preview(src: str) -> str:
         sys.exit("unhandled image placeholders: %s" % ", ".join(sorted(left)))
 
     # 4) embed the unique image map once, right before the inline-image bootstrap
-    names = sorted(set(re.findall(r'data-img(?:-bg)?="([a-z0-9\-]+)"', src)))
+    names = sorted(set(re.findall(r'data-img(?:-bg)?="([a-z0-9\-]+)"', src)) |
+                   set(re.findall(r"IMGREF\('([a-z0-9\-]+)'\)", src)))
     if not names:
         sys.exit("no image keys found — template layout changed?")
     img_map = ",\n".join('"%s":"%s"' % (n, data_uri(n)) for n in names)
