@@ -51,7 +51,9 @@
 
 ## 🤖 ربات و کانال تلگرام — @shamse_restaurant_bot
 
-ربات رسمی شمسه در تلگرام: <https://t.me/shamse_restaurant_bot>
+ربات رسمی: <https://t.me/shamse_restaurant_bot> · کانال رسمی: <https://t.me/shamse_restaurant>
+
+![نمای کانال تلگرام](docs/screenshot-channel.jpg)
 
 | قابلیت | توضیح |
 |---|---|
