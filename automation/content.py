@@ -141,6 +141,7 @@ REPLIES = {
 /menu — منوی غذا
 /events — رویدادهای هفته و میتاپ‌ها
 /reserve — رزرو میز و طبقهٔ میتاپ
+/news — آخرین اخبار و فراخوان‌های مرتبط
 /branches — آدرس و ساعت دو شعبه
 /contact — تماس و شبکه‌های اجتماعی""",
     "menu": f"""📖 منوی رستوران شمسه
@@ -198,6 +199,14 @@ REPLIES["help"] = REPLIES["start"] + "\n\n💡 متن پست‌های کانال
 FALLBACK = """تا اینجا با شما هستیم 🌟
 برای اینکه سریع‌تر کمکتان کنیم، این دستورها را امتحان کنید:
 /menu — منو | /events — رویدادها | /reserve — رزرو | /branches — شعبه‌ها | /contact — تماس"""
+
+# دکمه‌های «شمسه‌ای» زیر هر پست کانال
+CHANNEL_BUTTONS = {
+    "inline_keyboard": [
+        [{"text": "🌐 وب‌سایت شمسه", "url": SITE}, {"text": "📅 رویدادها", "url": EVENTS_URL}],
+        [{"text": "🤖 ربات ما", "url": "https://t.me/shamse_restaurant_bot"}],
+    ]
+}
 
 BUTTONS = {
     "inline_keyboard": [

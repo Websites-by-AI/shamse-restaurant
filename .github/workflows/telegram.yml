@@ -14,13 +14,14 @@ on:
   schedule:
     - cron: '*/30 * * * *'      # پاسخ به پیام‌ها
     - cron: '0 9 * * 1,3,5'     # پست به کانال
+    - cron: '15 */6 * * *'      # اخبار و فراخوان‌های مرتبط (هر ۶ ساعت)
   workflow_dispatch:
     inputs:
       mode:
         description: 'حالت اجرا'
         type: choice
         default: post
-        options: [post, poll, selftest, discover, brand]
+        options: [post, poll, selftest, discover, brand, news]
       dry_run:
         description: 'بدون ارسال واقعی (فقط نمایش)'
         type: boolean
@@ -70,6 +71,16 @@ jobs:
         env: *bot_env
         run: python3 automation/telegram_bot.py brand
 
+      - name: اخبار و فراخوان‌های مرتبط (دیتابیس + هوش مصنوعی)
+        if: (github.event_name == 'schedule' && github.event.schedule == '15 */6 * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'news')
+        env: *bot_env
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 automation/news.py --dry-run
+          else
+            python3 automation/news.py
+          fi
+
       - name: پاسخ به پیام‌های مستقیم
         if: (github.event_name == 'schedule' && github.event.schedule == '*/30 * * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'poll')
         env: *bot_env
@@ -88,10 +99,10 @@ jobs:
       - name: ثبت وضعیت ربات
         if: always()
         run: |
-          [ -f automation/state.json ] || { echo "no state file"; exit 0; }
           git config user.name "shamse-bot"
           git config user.email "shamse-bot@users.noreply.github.com"
-          git add automation/state.json
+          git add automation/state.json automation/news_db.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "no state changes"; exit 0; }
           if git diff --cached --quiet; then
             echo "state unchanged"
             exit 0

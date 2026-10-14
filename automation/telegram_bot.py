@@ -129,8 +129,10 @@ def _ai_candidates():
             provider = "openai"
         elif os.environ.get("GITHUB_TOKEN"):
             provider = "github"
+        elif os.environ.get("CLOUDFLARE_API_TOKEN") and os.environ.get("CLOUDFLARE_ACCOUNT_ID"):
+            provider = "cloudflare"
         else:
-            return out
+            provider = "pollinations"      # بدون کلید و رایگان
     account = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
     cf_token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
     names = [provider]
@@ -315,14 +317,16 @@ def send_post(img, text, dry_run=False, chat=None):
         print("             یا متغیر TELEGRAM_CHAT_ID را در تنظیمات مخزن ثبت کنید.")
         return False
 
-    payload = {"chat_id": chat, "caption": text[:1024], "parse_mode": "HTML"}
+    payload = {"chat_id": chat, "caption": text[:1024], "parse_mode": "HTML",
+               "reply_markup": content.CHANNEL_BUTTONS}
     if len(text) <= 1024:
         resp = api("sendPhoto", dict(payload, photo=photo))
         if resp.get("ok"):
             print("[telegram] photo post sent ✔ message_id=%s" % resp["result"]["message_id"])
             return True
         print("[telegram] sendPhoto failed: %s — trying text only" % resp.get("description"))
-    resp = api("sendMessage", {"chat_id": chat, "text": text, "disable_web_page_preview": False})
+    resp = api("sendMessage", {"chat_id": chat, "text": text, "disable_web_page_preview": False,
+                               "reply_markup": content.CHANNEL_BUTTONS})
     if resp.get("ok"):
         print("[telegram] text post sent ✔ message_id=%s" % resp["result"]["message_id"])
         return True
@@ -359,7 +363,9 @@ def handle_updates(state):
         if not chat_id or not text:
             continue
         cmd = text.split()[0].split("@")[0].lstrip("/").lower()
-        if cmd in content.REPLIES:
+        if cmd == "news":
+            out, buttons = news_reply(), True
+        elif cmd in content.REPLIES:
             out = content.REPLIES[cmd]
             buttons = cmd in ("start", "menu", "events", "reserve")
         else:
@@ -393,6 +399,7 @@ COMMANDS = [
     {"command": "reserve", "description": "رزرو میز و طبقهٔ میتاپ"},
     {"command": "branches", "description": "آدرس و ساعت دو شعبه"},
     {"command": "contact", "description": "تماس، وب‌سایت و کانال"},
+    {"command": "news", "description": "آخرین اخبار و فراخوان‌ها"},
     {"command": "help", "description": "راهنمای دستورها"},
 ]
 
@@ -408,6 +415,9 @@ def mode_brand():
     print("bot profile  :", api("setMyDescription", {"description": BOT_DESCRIPTION, "language_code": ""}).get("ok"),
           "|", api("setMyShortDescription", {"short_description": BOT_SHORT, "language_code": ""}).get("ok"),
           "| commands:", api("setMyCommands", {"commands": COMMANDS}).get("ok"))
+    menu = api("setChatMenuButton", {"menu_button": {"type": "web_app", "text": "وب‌سایت شمسه",
+                                                     "web_app": {"url": content.SITE + "/"}}})
+    print("menu button  :", menu.get("ok"), menu.get("description", ""))
 
     chat, src = resolve_chat()
     if not chat:
@@ -441,6 +451,27 @@ def mode_brand():
     pin = api("pinChatMessage", {"chat_id": chat, "message_id": mid, "disable_notification": False})
     print("guide post   : sent ✔ message_id=%s | pinned:" % mid, pin.get("ok"), pin.get("description", ""))
     return 0 if pin.get("ok") else 0
+
+
+def news_reply():
+    """آخرین خبرهای منتشرشده از دیتابیس اخبار (news_db.json)."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "news_db.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            db = json.load(fh)
+    except (OSError, ValueError):
+        db = {}
+    items = [x for x in (db.get("items") or {}).values() if x.get("posted")]
+    items.sort(key=lambda x: x.get("posted_at") or "", reverse=True)
+    if not items:
+        return ("📰 هنوز خبری منتشر نشده است.\nکانال ما را دنبال کنید: " + content.CHANNEL_URL +
+                "\n🌐 " + content.SITE_LABEL)
+    lines = ["📰 آخرین اخبار و فراخوان‌های مرتبط", ""]
+    for x in items[:5]:
+        lines.append("• %s\n  🔗 %s" % ((x.get("title_fa") or x.get("title") or "")[:90], x.get("link", "")))
+    lines += ["", "🌐 %s · 📣 %s" % (content.SITE_LABEL, content.CHANNEL_URL)]
+    return "\n".join(lines)
+
 
 
 # ---------------------------------------------------------------- modes

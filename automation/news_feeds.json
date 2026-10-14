@@ -1,0 +1,45 @@
+{
+  "min_score": 7,
+  "max_candidates_per_run": 12,
+  "max_posts_per_run": 3,
+  "max_age_days": 14,
+  "cover_image": "assets/img/interior.jpg",
+  "feeds": [
+    {
+      "name": "Google News — İstanbul restoran",
+      "url": "https://news.google.com/rss/search?q=%C4%B0stanbul%20restoran%20when%3A14d&hl=tr&gl=TR&ceid=TR:tr",
+      "cat": "رستوران و کافه در استانبول",
+      "lang": "tr"
+    },
+    {
+      "name": "Google News — İstanbul gastronomi",
+      "url": "https://news.google.com/rss/search?q=%C4%B0stanbul%20gastronomi%20OR%20festival%20when%3A30d&hl=tr&gl=TR&ceid=TR:tr",
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "lang": "tr"
+    },
+    {
+      "name": "Google News — Istanbul food",
+      "url": "https://news.google.com/rss/search?q=Istanbul%20restaurant%20OR%20food%20when%3A14d&hl=en-US&gl=US&ceid=US:en",
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "lang": "en"
+    },
+    {
+      "name": "Google News — رستوران ایرانی",
+      "url": "https://news.google.com/rss/search?q=%D8%B1%D8%B3%D8%AA%D9%88%D8%B1%D8%A7%D9%86%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C&hl=fa&gl=IR&ceid=IR:fa",
+      "cat": "رستوران‌های ایرانی در جهان",
+      "lang": "fa"
+    },
+    {
+      "name": "Google News — ایرانیان استانبول",
+      "url": "https://news.google.com/rss/search?q=%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C%D8%A7%D9%86%20%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%A8%D9%88%D9%84%20OR%20%DA%A9%D9%84%D8%AA%D9%88%D8%B1%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C&hl=fa&gl=IR&ceid=IR:fa",
+      "cat": "جامعهٔ ایرانی و رویدادهای فرهنگی",
+      "lang": "fa"
+    },
+    {
+      "name": "Yabangee Istanbul (رویدادها)",
+      "url": "https://yabangee.com/feed/",
+      "cat": "رویدادها و فراخوان‌های شهر استانبول",
+      "lang": "en"
+    }
+  ]
+}
