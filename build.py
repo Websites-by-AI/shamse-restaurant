@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Build script for the Somayyeh Restaurant website.
+Build script for the Shamse Restaurant website (multi-page).
 
-Input : src/page.html      (source template with __IMG_name__ placeholders)
-Output: index.html         (normal site — images loaded from assets/img/, ready for GitHub Pages)
+Input : src/theme.css   (shared theme, injected at the /*__THEME__*/ marker)
+        src/page.html   -> index.html
+        src/marketing.html -> marketing.html
+        src/events.html -> events.html
+Output: index.html / marketing.html / events.html  (relative asset paths, ready for Pages/CF/HF)
         preview.html       (single self-contained file — each photo embedded ONCE as base64
                             and shared through a small window.IMG map, so the file stays light)
 
@@ -107,6 +110,15 @@ def build_preview(src: str) -> str:
         b64 = base64.b64encode(open(path, "rb").read()).decode("ascii")
         return "data:font/woff2;base64," + b64
 
+    # collapse the two-hint src (same file twice) into ONE declaration before inlining,
+    # otherwise the 111 KB font would be embedded twice in the single-file preview
+    dual = re.compile(
+        r"src:url\('(__FONT_[a-z0-9\-]+__)'\) format\('woff2-variations'\),\s*"
+        r"url\('\1'\) format\('woff2'\);"
+    )
+    if not dual.search(src):
+        sys.exit("@font-face dual-src pattern not found — theme.css changed?")
+    src = dual.sub(lambda m: "src:url('%s') format('woff2');" % m.group(1), src)
     src = FONT_PLACEHOLDER.sub(lambda m: font_uri(m.group(1)), src)
 
     # 4) embed the unique image map once, right before the inline-image bootstrap
@@ -123,15 +135,46 @@ def build_preview(src: str) -> str:
     return src
 
 
-def main():
-    src = load_source()
-    index = build_index(src)
-    preview = build_preview(src)
+THEME = re.compile(r"/\*__THEME__\*/")
 
-    for name, html in (("index.html", index), ("preview.html", preview)):
+# main page -> output file
+PAGES = [("page.html", "index.html"), ("marketing.html", "marketing.html"), ("events.html", "events.html")]
+
+
+def load_theme() -> str:
+    with open(os.path.join(ROOT, "src", "theme.css"), encoding="utf-8") as fh:
+        return fh.read().strip()
+
+
+def inject_theme(html: str, theme: str) -> str:
+    return THEME.sub(lambda _m: theme, html)
+
+
+def build_page(fname: str, theme: str) -> str:
+    """Normal multi-page build: shared theme CSS injected first, then relative asset paths."""
+    with open(os.path.join(ROOT, "src", fname), encoding="utf-8") as fh:
+        src = fh.read()
+    return build_index(inject_theme(src, theme))
+
+
+def main():
+    theme = load_theme()
+    outputs = []
+
+    for src_name, out_name in PAGES:
+        outputs.append((out_name, build_page(src_name, theme)))
+
+    # single-file preview (index only, images + font inlined)
+    with open(os.path.join(ROOT, "src", "page.html"), encoding="utf-8") as fh:
+        outputs.append(("preview.html", build_preview(inject_theme(fh.read(), theme))))
+
+    for name, html in outputs:
+        left = set(re.findall(r"__[A-Z][A-Z0-9_]*__", html))
+        if left:
+            sys.exit("unsubstituted placeholders in %s: %s" % (name, ", ".join(sorted(left))))
         with open(os.path.join(ROOT, name), "w", encoding="utf-8") as fh:
             fh.write(html)
-        print("%-14s %7.1f KB" % (name, len(html.encode("utf-8")) / 1024))
+        print("%-15s %7.1f KB" % (name, len(html.encode("utf-8")) / 1024))
 
 
 if __name__ == "__main__":

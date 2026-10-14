@@ -19,7 +19,7 @@ jobs:
       - name: Prepare deploy folder
         run: |
           mkdir -p _site
-          cp index.html preview.html _site/
+          cp index.html marketing.html events.html preview.html _site/
           cp -r assets _site/
           printf '%s\n' \
             '/assets/*' \
@@ -54,7 +54,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           mkdir -p _space
-          cp index.html preview.html _space/
+          cp index.html marketing.html events.html preview.html _space/
           cp -r assets _space/
           cat > _space/README.md <<'EOF'
           ---

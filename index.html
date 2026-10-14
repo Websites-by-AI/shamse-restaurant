@@ -431,6 +431,13 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
 .rev.in{opacity:1;transform:none}
 .rev.d1{transition-delay:.12s}.rev.d2{transition-delay:.22s}.rev.d3{transition-delay:.32s}
 
+/* --- dense nav on mid screens (12 items when events/marketing pages added) --- */
+@media (min-width:901px) and (max-width:1360px){
+  .nav a{padding:10px 8px;font-size:.9rem}
+  .nav .na-opt{display:none}
+  .header .btn{padding:11px 18px;font-size:.88rem}
+}
+
 /* --- responsive --- */
 @media (max-width:1080px){
   .nav a{padding:9px 7px;font-size:.88rem}
@@ -508,6 +515,7 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
       </span>
     </div>
     <div class="grp">
+      <a href="events.html" class="hide-s" style="color:var(--copper);font-weight:700">تقویم رویدادها →</a>
       <span class="hide-s">دو شعبه: تکسیم · کوجاتپه</span>
       <span class="socials">
         <a href="https://www.instagram.com/shamse.resturan" target="_blank" rel="noopener" aria-label="اینستاگرام">
@@ -526,9 +534,9 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
   <div class="wrap">
     <a class="logo" href="#home" aria-label="رستوران شمسه">
       <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-        <circle cx="32" cy="32" r="30" fill="none" stroke="#d4af37" stroke-width="2"/>
-        <circle cx="32" cy="32" r="23" fill="none" stroke="#d4af37" stroke-width="1" opacity=".55"/>
-        <path d="M32 12l4.6 10.1 11 1.6-8 7.7 2 11-9.6-5.1L22.4 42.4l2-11-8-7.7 11-1.6z" fill="#d4af37"/>
+        <circle cx="32" cy="32" r="30" fill="none" stroke="#d29a5a" stroke-width="2"/>
+        <circle cx="32" cy="32" r="23" fill="none" stroke="#d29a5a" stroke-width="1" opacity=".55"/>
+        <path d="M32 12l4.6 10.1 11 1.6-8 7.7 2 11-9.6-5.1L22.4 42.4l2-11-8-7.7 11-1.6z" fill="#d29a5a"/>
         <circle cx="32" cy="30" r="4" fill="#14100d"/>
       </svg>
       <span>
@@ -542,10 +550,12 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
       <a href="#menu">منو</a>
       <a href="#branches">شعبه‌ها</a>
       <a href="#meetup">میتاپ</a>
+      <a href="events.html">رویدادها</a>
+      <a href="marketing.html">استراتژی</a>
       <a href="#blog">مقالات</a>
-      <a href="#services">خدمات</a>
-      <a href="#gallery">گالری</a>
-      <a href="#reviews">نظرات</a>
+      <a href="#services" class="na-opt">خدمات</a>
+      <a href="#gallery" class="na-opt">گالری</a>
+      <a href="#reviews" class="na-opt">نظرات</a>
       <a href="#contact">تماس با ما</a>
     </nav>
     <a href="#reserve" class="btn btn--gold desk">رزرو میز</a>
@@ -633,7 +643,7 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
       <span class="eyebrow">منوی رستوران شمسه</span>
       <h2 class="sec-title">منوی شمسه؛ از خورش‌های خانگی تا کباب‌های زغالی</h2>
       <p class="sec-sub">از پیش‌غذاهای دودی و خورش‌های خانگی تا کباب‌های زغالی و دسرهای سنتی؛ دسته مورد علاقه‌تان را انتخاب کنید.</p>
-      <div class="ornament"><svg viewBox="0 0 24 24" fill="#d4af37"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
+      <div class="ornament"><svg viewBox="0 0 24 24" fill="#d29a5a"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
     </div>
 
     <div class="tabs" role="tablist" id="tabs">
@@ -845,7 +855,7 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
         شمسه با دو شعبه در منطقه بی‌اوغلو میزبان شماست: شعبه اصلی در قلب خیابان استقلال (تکسیم)، بعد از کلیسای سن‌آنتوان،
         و شعبه دوم «شمسه سو کلاب» در کوجاتپه — مناسب مراسم، جشن‌ها و شب‌های موسیقی زنده.
       </p>
-      <div class="ornament"><svg viewBox="0 0 24 24" fill="#d4af37"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
+      <div class="ornament"><svg viewBox="0 0 24 24" fill="#d29a5a"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
     </div>
 
     <div class="branches">
@@ -1047,7 +1057,7 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
     <div class="center rev">
       <span class="eyebrow">نظرات مهمانان</span>
       <h2 class="sec-title">روایت مهمانانی که دوباره برگشتند</h2>
-      <div class="ornament"><svg viewBox="0 0 24 24" fill="#d4af37"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
+      <div class="ornament"><svg viewBox="0 0 24 24" fill="#d29a5a"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
     </div>
     <div class="quotes">
       <blockquote class="quote rev">
@@ -1354,8 +1364,8 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
     <div>
       <a class="logo" href="#home" style="margin-bottom:18px">
         <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-          <circle cx="32" cy="32" r="30" fill="none" stroke="#d4af37" stroke-width="2"/>
-          <path d="M32 12l4.6 10.1 11 1.6-8 7.7 2 11-9.6-5.1L22.4 42.4l2-11-8-7.7 11-1.6z" fill="#d4af37"/>
+          <circle cx="32" cy="32" r="30" fill="none" stroke="#d29a5a" stroke-width="2"/>
+          <path d="M32 12l4.6 10.1 11 1.6-8 7.7 2 11-9.6-5.1L22.4 42.4l2-11-8-7.7 11-1.6z" fill="#d29a5a"/>
         </svg>
         <span><b>رستوران شمسه</b><span>SHAMSE RESTAURANT</span></span>
       </a>
@@ -1380,6 +1390,8 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
         <li><a href="#menu">منوی غذا</a></li>
         <li><a href="#branches">شعبه‌های ما (تکسیم و کوجاتپه)</a></li>
         <li><a href="#meetup">میتاپ و گردهمایی‌ها</a></li>
+        <li><a href="events.html">رویدادها و گردهمایی‌ها</a></li>
+        <li><a href="marketing.html">استراتژی و مدل‌های درآمدی</a></li>
         <li><a href="#blog">مقالات و راهنماها</a></li>
         <li><a href="#platters">سینی‌های مخصوص</a></li>
         <li><a href="#gallery">گالری تصاویر</a></li>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>رویدادها و گردهمایی‌ها | رستوران شمسه استانبول</title>
+<meta name="description" content="تقویم رویدادهای رستوران شمسه در استانبول: تبادل زبان، شبکه‌سازی متخصصان، باشگاه کتاب، شب موسیقی، کارگاه آشپزی، بازی و رویدادهای شرکتی در طبقهٔ میتاپ شعبهٔ استقلال.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#13100c">
+<link rel="canonical" href="https://websites-by-ai.github.io/shamse-restaurant/events.html">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="رستوران شمسه">
+<meta property="og:title" content="رویدادها و گردهمایی‌ها | رستوران شمسه استانبول">
+<meta property="og:description" content="تقویم رویدادهای رستوران شمسه در استانبول: تبادل زبان، شبکه‌سازی متخصصان، باشگاه کتاب، شب موسیقی، کارگاه آشپزی، بازی و رویدادهای شرکتی در طبقهٔ میتاپ شعبهٔ استقلال.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2313100c'/%3E%3Cpath d='M32 8l5.6 12.2L50 22l-9 9 2.2 13.4L32 38.2 20.8 44.4 23 31l-9-9 12.4-1.8z' fill='%23d29a5a'/%3E%3C/svg%3E">
+<style>
+/*__THEME__*/
+
+/* --- events page (meetup-like) --- */
+.ehero{padding:96px 0 70px;background:linear-gradient(180deg,var(--ink-4),var(--ink));border-bottom:1px solid var(--line)}
+.ehero .wrap{text-align:center}
+.ehero h1{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:800;color:var(--cream);margin-top:14px}
+.ehero p.lead{max-width:720px;margin:16px auto 0;color:var(--text)}
+.estats{display:flex;justify-content:center;gap:44px;flex-wrap:wrap;margin-top:32px}
+.estats div{text-align:center}
+.estats b{display:block;color:var(--copper);font-size:1.6rem;font-weight:800}
+.estats span{font-size:.84rem;color:var(--muted)}
+.toolbar{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin:40px 0 8px}
+.search{flex:1;min-width:240px;position:relative}
+.search input{width:100%;background:var(--ink-3);border:1px solid var(--line);color:var(--cream);padding:14px 18px}
+.search input:focus{outline:none;border-color:var(--copper)}
+.sortsel{background:var(--ink-3);border:1px solid var(--line);color:var(--cream);padding:14px 16px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+.fchip{border:1px solid var(--line-copper);background:transparent;color:var(--text);padding:9px 18px;font-size:.86rem;cursor:pointer;font-weight:600}
+.fchip.on{background:var(--copper);border-color:var(--copper);color:var(--on-copper)}
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+.ev{background:var(--ink-3);border:1px solid var(--line);padding:0;display:flex;flex-direction:column;transition:.35s}
+.ev:hover{border-color:var(--line-copper);transform:translateY(-5px)}
+.ev__top{position:relative}
+.ev__top img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.ev__date{position:absolute;top:0;right:0;background:var(--copper);color:var(--on-copper);text-align:center;padding:10px 14px;min-width:74px}
+.ev__date b{display:block;font-size:1.5rem;line-height:1.1;font-weight:800}
+.ev__date span{font-size:.75rem}
+.ev__badge{position:absolute;bottom:0;left:0;background:rgba(19,16,12,.9);border:1px solid var(--line-copper);color:var(--copper);font-size:.72rem;padding:6px 12px}
+.ev__body{padding:22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.ev__cat{align-self:flex-start;font-size:.7rem;font-weight:700;color:var(--copper);border:1px solid var(--line-copper);padding:3px 10px}
+.ev h3{font-size:1.02rem;color:var(--cream);font-weight:700;line-height:1.6}
+.ev__meta{display:grid;gap:8px;font-size:.85rem;color:var(--muted)}
+.ev__meta b{color:var(--text)}
+.ev__host{display:flex;align-items:center;gap:10px;font-size:.84rem;color:var(--muted)}
+.ev__host .av{width:34px;height:34px;display:grid;place-items:center;background:var(--copper);color:var(--on-copper);font-weight:800;font-size:.8rem;flex:none}
+.ev__foot{margin-top:auto;border-top:1px solid var(--line);padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.att{display:flex;align-items:center;gap:10px;font-size:.82rem;color:var(--muted)}
+.rsvp{background:transparent;border:1px solid var(--copper);color:var(--copper);padding:10px 18px;font-weight:700;font-size:.86rem;cursor:pointer;transition:.25s}
+.rsvp:hover{background:var(--copper);color:var(--on-copper)}
+.rsvp.on{background:var(--copper);color:var(--on-copper)}
+.ev.hide{display:none}
+.host-form{background:var(--ink-3);border:1px solid var(--line);padding:38px;margin-top:44px}
+.host-form h3{color:var(--cream);font-size:1.2rem;margin-bottom:8px;font-weight:700}
+.host-form .hint{color:var(--muted);font-size:.88rem;margin-bottom:24px}
+.hf-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.hf-grid .full{grid-column:1/-1}
+.ev-created{border-color:var(--copper)!important;box-shadow:0 0 0 1px rgba(210,154,90,.35)}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-top:40px}
+.wday{background:var(--ink-3);border:1px solid var(--line);padding:16px 12px;text-align:center}
+.wday b{display:block;color:var(--cream);font-size:.9rem;margin-bottom:8px}
+.wday span{display:block;font-size:.78rem;color:var(--muted);margin-top:6px}
+.wday i{font-style:normal;color:var(--copper);font-size:.8rem;font-weight:700;display:block}
+@media (max-width:1080px){.events{grid-template-columns:repeat(2,1fr)}.week{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:640px){.events{grid-template-columns:1fr}.hf-grid{grid-template-columns:1fr}.week{grid-template-columns:repeat(2,1fr)}.host-form{padding:24px 18px}}
+
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <div class="grp">
+      <a href="tel:+905013252452"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.3-.3.7-.4 1.1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V19c0 .6-.4 1-1 1-8.3 0-15-6.7-15-15 0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1.1L6.6 10.8z"/></svg> <span dir="ltr">+90 501 325 24 52</span></a>
+      <span class="hide-s">شعبه ۱: خیابان استقلال پلاک ۱۷۹ · شعبه ۲: کوجاتپه</span>
+    </div>
+    <div class="grp">
+      <a href="events.html" style="color:var(--copper);font-weight:700">تقویم رویدادها →</a>
+      <span class="socials">
+        <a href="https://www.instagram.com/shamse.resturan" target="_blank" rel="noopener" aria-label="اینستاگرام"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.4A6.4 6.4 0 1018.4 12 6.4 6.4 0 0012 5.6zm0 10.6A4.2 4.2 0 1116.2 12 4.2 4.2 0 0112 16.2zm6.6-10.9a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5z"/></svg></a>
+        <a href="https://wa.me/905013252452" target="_blank" rel="noopener" aria-label="واتساپ"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.6-1.2-4.3-4-4.4-4.2-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.8c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.1 1.4 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.7.9c.5.2.5.4.5.6s-.2.6-.2.6z"/></svg></a>
+      </span>
+    </div>
+  </div>
+</div>
+<header class="header solid" id="siteHeader">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="رستوران شمسه">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="none" stroke="#d29a5a" stroke-width="2"/>
+        <circle cx="32" cy="32" r="23" fill="none" stroke="#d29a5a" stroke-width="1" opacity=".55"/>
+        <path d="M32 12l4.6 10.1 11 1.6-8 7.7 2 11-9.6-5.1L22.4 42.4l2-11-8-7.7 11-1.6z" fill="#d29a5a"/>
+        <circle cx="32" cy="30" r="4" fill="#13100c"/>
+      </svg>
+      <span><b>رستوران شمسه</b><span>SHAMSE RESTAURANT</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="فهرست اصلی">
+      <a href="index.html">خانه</a>
+      <a href="index.html#menu">منو</a>
+      <a href="index.html#branches">شعبه‌ها</a>
+      <a href="index.html#meetup">طبقهٔ میتاپ</a>
+      <a href="events.html" class="active">رویدادها</a>
+      <a href="marketing.html">استراتژی</a>
+      <a href="index.html#contact">تماس با ما</a>
+    </nav>
+    <a href="index.html#reserve" class="btn btn--gold desk">رزرو میز</a>
+    <button class="burger" id="burger" aria-label="باز و بست منو" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- ===== hero ===== -->
+<section class="ehero">
+  <div class="wrap">
+    <span class="eyebrow">تقویم رویدادها</span>
+    <h1>رویدادها و گردهمایی‌های شمسه</h1>
+    <p class="lead">
+      همهٔ میتاپ‌ها در <b>طبقهٔ دوم شعبهٔ خیابان استقلال</b> برگزار می‌شود — پروژکتور، میکروفون، وای‌فای و منوی گروهی حلال آماده است.
+      دکمهٔ «شرکت می‌کنم» را بزنید تا در شمارش همان رویداد ثبت شوید (شمارش روی همین مرورگر ذخیره می‌شود).
+    </p>
+    <div class="estats">
+      <div><b data-count="10">۰</b><span>رویداد پیش‌رو</span></div>
+      <div><b data-count="8">۰</b><span>گروه میزبان</span></div>
+      <div><b data-count="240">۰</b><span>شرکت‌کنندهٔ ثبت‌شده</span></div>
+      <div><b>۶۰</b><span>ظرفیت طبقه</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== events list ===== -->
+<section class="section section--soft" style="padding-top:60px">
+  <div class="wrap">
+    <div class="toolbar">
+      <label class="search"><span class="sr-only">جست‌وجوی رویداد</span>
+        <input id="evSearch" type="search" placeholder="جست‌وجو در رویدادها… (مثلاً: زبان، کتاب، موسیقی)">
+      </label>
+      <select id="evSort" class="sortsel" aria-label="ترتیب نمایش">
+        <option value="date">ترتیب: تاریخ</option>
+        <option value="popular">ترتیب: محبوب‌ترین</option>
+      </select>
+    </div>
+    <div class="filters" role="group" aria-label="دسته‌بندی رویدادها">
+      <button class="fchip on" data-cat="all">همه</button>
+      <button class="fchip" data-cat="lang">تبادل زبان</button>
+      <button class="fchip" data-cat="pro">شبکه‌سازی</button>
+      <button class="fchip" data-cat="book">کتاب</button>
+      <button class="fchip" data-cat="music">موسیقی و شعر</button>
+      <button class="fchip" data-cat="game">بازی</button>
+      <button class="fchip" data-cat="workshop">کارگاه</button>
+      <button class="fchip" data-cat="chef">میز سرآشپز</button>
+      <button class="fchip" data-cat="corp">شرکتی</button>
+      <button class="fchip" data-cat="work">کافه‌کار</button>
+      <button class="fchip" data-cat="popup">پاپ‌آپ</button>
+    </div>
+    <p style="color:var(--muted);font-size:.88rem;margin-top:10px"><b id="evCount">۱۰</b> رویداد نمایش داده می‌شود</p>
+
+    <div class="events" id="eventsGrid">
+      <article class="ev rev" data-i="0" data-cat="lang" data-title="تبادل زبان: فارسی، ترکی، انگلیسی" data-date="۲۸ مهر">
+        <div class="ev__top">
+          <img src="assets/img/dish-mirza.jpg" alt="تبادل زبان: فارسی، ترکی، انگلیسی" loading="lazy">
+          <span class="ev__date"><b>۲۸</b><span>مهر</span></span>
+          <span class="ev__badge">حداقل مصرف ۲۵۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">تبادل زبان</span>
+          <h3>تبادل زبان: فارسی، ترکی، انگلیسی</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>چهارشنبه ۲۸ مهر · ۱۹:۰۰ تا ۲۳:۰۰</b></span>
+            <span>📍 طبقهٔ دوم — شعبهٔ استقلال</span>
+          </div>
+          <div class="ev__host"><span class="av">ز</span> میزبان: گروه تبادل زبان شمسه</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>ز</i><i>+</i></span>
+              <span><b class="cnum" data-base="34">34</b> نفر شرکت می‌کنند · ظرفیت ۶۰</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="1" data-cat="music" data-title="شب موسیقی و شعر ایرانی" data-date="۲۹ مهر">
+        <div class="ev__top">
+          <img src="assets/img/interior.jpg" alt="شب موسیقی و شعر ایرانی" loading="lazy">
+          <span class="ev__date"><b>۲۹</b><span>مهر</span></span>
+          <span class="ev__badge">بلیت ۲۵۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">موسیقی و شعر</span>
+          <h3>شب موسیقی و شعر ایرانی</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>پنجشنبه ۲۹ مهر · ۲۰:۳۰ تا ۲۳:۳۰</b></span>
+            <span>📍 طبقهٔ دوم — صحنهٔ کوچک</span>
+          </div>
+          <div class="ev__host"><span class="av">م</span> میزبان: گروه فرهنگ شمسه</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>م</i><i>+</i></span>
+              <span><b class="cnum" data-base="48">48</b> نفر شرکت می‌کنند · ظرفیت ۶۰</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="2" data-cat="pro" data-title="نشست ماهانهٔ شبکهٔ متخصصان ایرانی" data-date="۳۰ مهر">
+        <div class="ev__top">
+          <img src="assets/img/dish-zereshk.jpg" alt="نشست ماهانهٔ شبکهٔ متخصصان ایرانی" loading="lazy">
+          <span class="ev__date"><b>۳۰</b><span>مهر</span></span>
+          <span class="ev__badge">بلیت ۱۵۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">شبکه‌سازی</span>
+          <h3>نشست ماهانهٔ شبکهٔ متخصصان ایرانی</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>جمعه ۳۰ مهر · ۱۹:۰۰ تا ۲۲:۰۰</b></span>
+            <span>📍 طبقهٔ دوم — سالن ارائه</span>
+          </div>
+          <div class="ev__host"><span class="av">ع</span> میزبان: شبکهٔ متخصصان شمسه</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>ع</i><i>+</i></span>
+              <span><b class="cnum" data-base="26">26</b> نفر شرکت می‌کنند · ظرفیت ۴۰</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="3" data-cat="game" data-title="شب بازی و مافیا (دو میز)" data-date="۳ آبان">
+        <div class="ev__top">
+          <img src="assets/img/dish-bastani.jpg" alt="شب بازی و مافیا (دو میز)" loading="lazy">
+          <span class="ev__date"><b>۳</b><span>آبان</span></span>
+          <span class="ev__badge">ورودی ۱۰۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">بازی</span>
+          <h3>شب بازی و مافیا (دو میز)</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>یکشنبه ۳ آبان · ۱۸:۰۰ تا ۲۲:۰۰</b></span>
+            <span>📍 طبقهٔ دوم — میزهای جزیره‌ای</span>
+          </div>
+          <div class="ev__host"><span class="av">ب</span> میزبان: گروه بازی شمسه</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>ب</i><i>+</i></span>
+              <span><b class="cnum" data-base="30">30</b> نفر شرکت می‌کنند · ظرفیت ۳۶</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="4" data-cat="work" data-title="کافه‌کار روزانه + ناهار روز" data-date="۴ آبان">
+        <div class="ev__top">
+          <img src="assets/img/drink-doogh.jpg" alt="کافه‌کار روزانه + ناهار روز" loading="lazy">
+          <span class="ev__date"><b>۴</b><span>آبان</span></span>
+          <span class="ev__badge">پاس ۳۵۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">کافه‌کار</span>
+          <h3>کافه‌کار روزانه + ناهار روز</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>دوشنبه ۴ آبان · ۱۰:۰۰ تا ۱۷:۰۰</b></span>
+            <span>📍 طبقهٔ دوم — میزهای کاری</span>
+          </div>
+          <div class="ev__host"><span class="av">ک</span> میزبان: شمسه</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>ک</i><i>+</i></span>
+              <span><b class="cnum" data-base="12">12</b> نفر شرکت می‌کنند · ظرفیت ۲۵</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="5" data-cat="book" data-title="باشگاه کتاب: «سووشون»" data-date="۵ آبان">
+        <div class="ev__top">
+          <img src="assets/img/dish-ghormeh.jpg" alt="باشگاه کتاب: «سووشون»" loading="lazy">
+          <span class="ev__date"><b>۵</b><span>آبان</span></span>
+          <span class="ev__badge">پکیج ۲۰۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">کتاب</span>
+          <h3>باشگاه کتاب: «سووشون»</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>سه‌شنبه ۵ آبان · ۱۸:۳۰ تا ۲۰:۳۰</b></span>
+            <span>📍 طبقهٔ دوم — گوشهٔ کتاب</span>
+          </div>
+          <div class="ev__host"><span class="av">ب</span> میزبان: باشگاه کتاب فارسی</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>ب</i><i>+</i></span>
+              <span><b class="cnum" data-base="18">18</b> نفر شرکت می‌کنند · ظرفیت ۲۴</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="6" data-cat="workshop" data-title="کارگاه آشپزی: قورمه سبزی و ته‌چین" data-date="۶ آبان">
+        <div class="ev__top">
+          <img src="assets/img/dish-koobideh.jpg" alt="کارگاه آشپزی: قورمه سبزی و ته‌چین" loading="lazy">
+          <span class="ev__date"><b>۶</b><span>آبان</span></span>
+          <span class="ev__badge">بلیت ۹۰۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">کارگاه</span>
+          <h3>کارگاه آشپزی: قورمه سبزی و ته‌چین</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>چهارشنبه ۶ آبان · ۱۱:۰۰ تا ۱۳:۰۰</b></span>
+            <span>📍 آشپزخانهٔ نمایشی</span>
+          </div>
+          <div class="ev__host"><span class="av">س</span> میزبان: سرآشپز شمسه</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>س</i><i>+</i></span>
+              <span><b class="cnum" data-base="10">10</b> نفر شرکت می‌کنند · ظرفیت ۱۲</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="7" data-cat="chef" data-title="میز سرآشپز: منوی ۵ دوره‌ای ایرانی" data-date="۷ آبان">
+        <div class="ev__top">
+          <img src="assets/img/dish-jujeh.jpg" alt="میز سرآشپز: منوی ۵ دوره‌ای ایرانی" loading="lazy">
+          <span class="ev__date"><b>۷</b><span>آبان</span></span>
+          <span class="ev__badge">بلند ۱٬۸۰۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">میز سرآشپز</span>
+          <h3>میز سرآشپز: منوی ۵ دوره‌ای ایرانی</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>پنجشنبه ۷ آبان · ۲۰:۰۰ تا ۲۳:۰۰</b></span>
+            <span>📍 میز بلند طبقهٔ دوم</span>
+          </div>
+          <div class="ev__host"><span class="av">س</span> میزبان: سرآشپز شمسه</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>س</i><i>+</i></span>
+              <span><b class="cnum" data-base="9">9</b> نفر شرکت می‌کنند · ظرفیت ۱۲</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="8" data-cat="corp" data-title="آف‌سایت شرکتی (رزرو خصوصی)" data-date="۸ آبان">
+        <div class="ev__top">
+          <img src="assets/img/interior2.jpg" alt="آف‌سایت شرکتی (رزرو خصوصی)" loading="lazy">
+          <span class="ev__date"><b>۸</b><span>آبان</span></span>
+          <span class="ev__badge">حداقل ۱۵٬۰۰۰ ₺</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">شرکتی</span>
+          <h3>آف‌سایت شرکتی (رزرو خصوصی)</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>جمعه ۸ آبان · ۱۰:۰۰ تا ۱۶:۰۰</b></span>
+            <span>📍 طبقهٔ دوم — رزرو کامل</span>
+          </div>
+          <div class="ev__host"><span class="av">ش</span> میزبان: تیم‌های شرکتی</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>ش</i><i>+</i></span>
+              <span><b class="cnum" data-base="22">22</b> نفر شرکت می‌کنند · ظرفیت ۶۰</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+      <article class="ev rev" data-i="9" data-cat="popup" data-title="پاپ‌آپ بازارچهٔ ایرانی" data-date="۱۰ آبان">
+        <div class="ev__top">
+          <img src="assets/img/meetup.jpg" alt="پاپ‌آپ بازارچهٔ ایرانی" loading="lazy">
+          <span class="ev__date"><b>۱۰</b><span>آبان</span></span>
+          <span class="ev__badge">ورود آزاد</span>
+        </div>
+        <div class="ev__body">
+          <span class="ev__cat">پاپ‌آپ</span>
+          <h3>پاپ‌آپ بازارچهٔ ایرانی</h3>
+          <div class="ev__meta">
+            <span>🕐 <b>یکشنبه ۱۰ آبان · ۱۲:۰۰ تا ۲۰:۰۰</b></span>
+            <span>📍 طبقهٔ دوم + تراس</span>
+          </div>
+          <div class="ev__host"><span class="av">پ</span> میزبان: برندهای کوچک ایرانی</div>
+          <div class="ev__foot">
+            <span class="att">
+              <span class="stack"><i>پ</i><i>+</i></span>
+              <span><b class="cnum" data-base="40">40</b> نفر شرکت می‌کنند · ظرفیت ۸۰</span>
+            </span>
+            <button class="rsvp" type="button">شرکت می‌کنم</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== weekly rhythm ===== -->
+<section class="section section--cream">
+  <div class="wrap">
+    <div class="center rev">
+      <span class="eyebrow">ریتم هفتگی</span>
+      <h2 class="sec-title">هر روز هفته یک برنامهٔ ثابت داریم</h2>
+      <p class="sec-sub">رویدادهای ثابت هفتگی، ستون فقرات طبقهٔ میتاپ هستند؛ رویدادهای ویژه روی همین ریتم سوار می‌شوند.</p>
+    </div>
+    <div class="week">
+        <div class="wday"><b>شنبه</b><span>کارگاه آشپزی</span><i>۱۱:۰۰</i><span>کافه‌کار ۱۰–۱۷</span></div>
+        <div class="wday"><b>یکشنبه</b><span>بازی و مافیا</span><i>۱۸:۰۰</i><span>پاپ‌آپ (هفتهٔ دوم)</span></div>
+        <div class="wday"><b>دوشنبه</b><span>شبکهٔ متخصصان</span><i>۱۹:۰۰</i><span>کافه‌کار ۱۰–۱۷</span></div>
+        <div class="wday"><b>سه‌شنبه</b><span>باشگاه کتاب</span><i>۱۸:۳۰</i><span>کافه‌کار ۱۰–۱۷</span></div>
+        <div class="wday"><b>چهارشنبه</b><span>تبادل زبان</span><i>۱۹:۰۰</i><span>کافه‌کار ۱۰–۱۷</span></div>
+        <div class="wday"><b>پنجشنبه</b><span>موسیقی و شعر</span><i>۲۰:۳۰</i><span>آماده‌سازی رویداد</span></div>
+        <div class="wday"><b>جمعه</b><span>میز سرآشپز (هفتهٔ اول و سوم)</span><i>۲۰:۰۰</i><span>رزرو خانوادگی</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== host your own ===== -->
+<section class="section section--soft" id="host">
+  <div class="wrap">
+    <div class="center rev">
+      <span class="eyebrow">مثل Meetup، ولی اینجا</span>
+      <h2 class="sec-title">رویداد خودت را در شمسه بساز</h2>
+      <p class="sec-sub">گروه، مکتب فکری، جمع دوستانه یا تیم کاری‌ات؟ مشخصات رویداد را بنویس؛ بعد از تأیید تیم، در همین تقویم منتشر می‌شود.</p>
+    </div>
+
+    <form class="host-form rev" id="hostForm" novalidate>
+      <h3>درخواست میزبانی رویداد</h3>
+      <p class="hint">این فرم نمایشی است و اطلاعات را فقط در همین مرورگر ثبت می‌کند؛ برای هماهنگی نهایی از واتساپ استفاده کنید.</p>
+      <div class="hf-grid">
+        <div class="field">
+          <label for="hName">نام رویداد *</label>
+          <input id="hName" type="text" placeholder="مثلاً: شب شعر معاصر فارسی">
+          <span class="err">نام رویداد را وارد کنید.</span>
+        </div>
+        <div class="field">
+          <label for="hGroup">نام گروه یا میزبان *</label>
+          <input id="hGroup" type="text" placeholder="مثلاً: باشگاه ادبی استانبول">
+          <span class="err">نام گروه را وارد کنید.</span>
+        </div>
+        <div class="field">
+          <label for="hCat">دسته‌بندی</label>
+          <select id="hCat">
+            <option value="lang">تبادل زبان</option>
+            <option value="pro">شبکه‌سازی</option>
+            <option value="book">کتاب</option>
+            <option value="music">موسیقی و شعر</option>
+            <option value="game">بازی</option>
+            <option value="workshop">کارگاه</option>
+            <option value="corp">شرکتی</option>
+            <option value="other">اجتماعی</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="hGuests">تعداد مهمان تقریبی</label>
+          <select id="hGuests">
+            <option>۱۰ تا ۲۰ نفر</option>
+            <option>۲۰ تا ۴۰ نفر</option>
+            <option>۴۰ تا ۶۰ نفر</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="hDate">تاریخ * <span style="color:var(--muted);font-weight:400;font-size:.78rem">(میلادی)</span></label>
+          <input id="hDate" type="date">
+          <span class="err">تاریخ را انتخاب کنید.</span>
+        </div>
+        <div class="field">
+          <label for="hTime">ساعت شروع *</label>
+          <select id="hTime">
+            <option value="">انتخاب ساعت…</option>
+            <option>۱۰:۰۰</option><option>۱۱:۰۰</option><option>۱۴:۰۰</option><option>۱۵:۰۰</option>
+            <option>۱۷:۰۰</option><option>۱۸:۰۰</option><option>۱۸:۳۰</option><option>۱۹:۰۰</option>
+            <option>۲۰:۰۰</option><option>۲۰:۳۰</option><option>۲۱:۰۰</option>
+          </select>
+          <span class="err">ساعت را انتخاب کنید.</span>
+        </div>
+        <div class="field full">
+          <label for="hNote">توضیح کوتاه رویداد</label>
+          <textarea id="hNote" rows="3" placeholder="مثلاً: ۹۰ دقیقه گفت‌وگو + ۳۰ دقیقه پذیرایی؛ پروژکتور لازم داریم."></textarea>
+        </div>
+      </div>
+      <button class="btn btn--gold" type="submit" style="width:100%">ثبت درخواست میزبانی</button>
+      <div class="ok" id="hostOk"></div>
+    </form>
+
+    <div class="mcta rev">
+      <a class="btn btn--dark" href="marketing.html">مدل‌های پیشنهادی و استراتژی</a>
+      <a class="btn btn--line" href="index.html#meetup">دربارهٔ طبقهٔ میتاپ</a>
+      <a class="btn btn--line" href="https://wa.me/905013252452?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D9%85%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%87%D9%85%20%D8%B1%D9%88%DB%8C%D8%AF%D8%A7%D8%AF%DB%8C%20%D8%AF%D8%B1%20%D8%B4%D9%85%D8%B3%D9%87%20%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%20%DA%A9%D9%86%D9%85" target="_blank" rel="noopener">هماهنگی سریع در واتساپ</a>
+    </div>
+
+    <div class="faq" style="margin-top:56px">
+      <details class="q rev" open>
+        <summary><span class="pl">+</span> شرایط میزبانی چیست؟</summary>
+        <p>استفاده از پروژکتور، پرده، میکروفون و وای‌فای بدون هزینهٔ اضافه است. حداقل مصرف یا اجارهٔ ساعت هنگام تأیید نهایی تعیین می‌شود؛ روزهای میانی هفته (۱۵:۰۰ تا ۱۸:۰۰) نرخ ملایم‌تری دارند.</p>
+      </details>
+      <details class="q rev">
+        <summary><span class="pl">+</span> رویداد رایگان هم می‌توانیم بگذاریم؟</summary>
+        <p>بله. مدل‌های جامعه‌محور (تبادل زبان، باشگاه کتاب، بازی) رایگان برگزار می‌شوند و درآمد از طریق حداقل مصرف یا پکیج پذیرایی تأمین می‌شود.</p>
+      </details>
+      <details class="q rev">
+        <summary><span class="pl">+</span> حداکثر ظرفیت چقدر است؟</summary>
+        <p>طبقهٔ دوم برای ۶۰ مهمان در حالت نشسته و تا ۸۰ نفر در حالت ایستاده مناسب است؛ برای بیش از این ظرفیت، هماهنگی با شعبهٔ کوجاتپه را پیشنهاد می‌کنیم.</p>
+      </details>
+    </div>
+  </div>
+</section>
+<a class="floatwa" href="https://wa.me/905013252452" target="_blank" rel="noopener" aria-label="گفت‌وگو در واتساپ"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.6-1.2-4.3-4-4.4-4.2-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.8c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.1 1.4 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.7.9c.5.2.5.4.5.6s-.2.6-.2.6z"/></svg></a>
+<button class="totop" id="toTop" aria-label="بازگشت به بالا"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z"/></svg></button>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var header=document.getElementById('siteHeader'), toTop=document.getElementById('toTop');
+  function onScroll(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    header.classList.toggle('solid', y>60);
+    toTop.classList.toggle('on', y>600);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+  var burger=document.getElementById('burger'), nav=document.getElementById('nav');
+  burger.addEventListener('click', function(){
+    var open=nav.classList.toggle('open'); burger.classList.toggle('x', open);
+    burger.setAttribute('aria-expanded', open?'true':'false');
+  });
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');burger.classList.remove('x');});});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.rev').forEach(function(el){io.observe(el);});
+  var fa=function(n){return String(n).replace(/[0-9]/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[d];});};
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting) return; var el=e.target,t=parseInt(el.dataset.count,10),t0=null;
+    function step(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/1000,1);
+      el.textContent=fa(Math.round(t*(1-Math.pow(1-p,3))))+(p===1?'+':'');
+      if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step); cio.unobserve(el);});},{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el);});
+
+  /* ---------- events: filter + search + sort ---------- */
+  var grid=document.getElementById('eventsGrid');
+  var cards=[].slice.call(grid.querySelectorAll('.ev'));
+  var activeCat='all';
+  function applyFilters(){
+    var q=(document.getElementById('evSearch').value||'').trim().toLowerCase();
+    var sort=document.getElementById('evSort').value;
+    var shown=cards.filter(function(c){
+      var okCat = activeCat==='all' || c.dataset.cat===activeCat;
+      var okQ = !q || (c.dataset.title+' '+c.textContent).toLowerCase().indexOf(q)>-1;
+      c.classList.toggle('hide', !(okCat&&okQ));
+      return okCat&&okQ;
+    });
+    var vis=cards.filter(function(c){return !c.classList.contains('hide');});
+    vis.forEach(function(c){grid.appendChild(c);});
+    document.getElementById('evCount').textContent = vis.length.toString().replace(/[0-9]/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[d];});
+  }
+  document.querySelectorAll('.fchip').forEach(function(ch){
+    ch.addEventListener('click',function(){
+      document.querySelectorAll('.fchip').forEach(function(x){x.classList.remove('on');});
+      ch.classList.add('on'); activeCat=ch.dataset.cat; applyFilters();
+    });
+  });
+  document.getElementById('evSearch').addEventListener('input', applyFilters);
+  document.getElementById('evSort').addEventListener('change', function(){
+    var v=this.value;
+    cards.sort(function(a,b){
+      var na=parseInt(a.querySelector('.cnum').dataset.base,10), nb=parseInt(b.querySelector('.cnum').dataset.base,10);
+      if(v==='popular') return nb-na;
+      return (+a.dataset.i||0)-(+b.dataset.i||0);
+    });
+    cards.forEach(function(c){grid.appendChild(c);});
+    applyFilters();
+  });
+
+  /* ---------- RSVP (stored locally, demo) ---------- */
+  function faNum(n){return String(n).replace(/[0-9]/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[d];});}
+  cards.forEach(function(card,i){
+    var key='shamse_rsvp_'+encodeURIComponent(card.dataset.title||String(i));
+    var btn=card.querySelector('.rsvp'), num=card.querySelector('.cnum');
+    var base=parseInt(num.dataset.base,10);
+    function render(on){
+      num.textContent=faNum(on? base+1 : base);
+      btn.classList.toggle('on', on);
+      btn.textContent = on ? '✓ ثبت شد — لغو' : 'شرکت می‌کنم';
+    }
+    var saved=false;
+    try{ saved = localStorage.getItem(key)==='1'; }catch(e){}
+    render(saved);
+    btn.addEventListener('click',function(){
+      var on=btn.classList.contains('on');
+      try{ localStorage.setItem(key, on?'0':'1'); }catch(e){}
+      render(!on);
+    });
+  });
+
+  /* ---------- host form: add your own meetup ---------- */
+  var hf=document.getElementById('hostForm');
+  hf.addEventListener('submit', function(e){
+    e.preventDefault();
+    var bad=false;
+    [['hName',function(v){return v.trim().length>2;}],
+     ['hGroup',function(v){return v.trim().length>1;}],
+     ['hDate',function(v){return !!v;}],
+     ['hTime',function(v){return !!v;}]].forEach(function(p){
+      var el=document.getElementById(p[0]), f=el.closest('.field'), ok=p[1](el.value);
+      f.classList.toggle('bad', !ok); if(!ok) bad=true;
+    });
+    if(bad) return;
+    var name=hf.querySelector('#hName').value.trim();
+    var group=hf.querySelector('#hGroup').value.trim();
+    var date=hf.querySelector('#hDate').value;
+    var time=hf.querySelector('#hTime').value;
+    var cat=hf.querySelector('#hCat').value;
+    var guests=hf.querySelector('#hGuests').value || '—';
+    var note=hf.querySelector('#hNote').value.trim();
+    var cats={lang:'تبادل زبان',pro:'شبکه‌سازی',book:'کتاب',music:'موسیقی و شعر',game:'بازی',workshop:'کارگاه',corp:'شرکتی',other:'اجتماعی'};
+    var d=new Date(date);
+    var months=['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+    var jday=d.getDate(), jmonth=months[(d.getMonth()+9)%12];
+    var card=document.createElement('article');
+    card.className='ev rev in ev-created';
+    card.dataset.cat=cat; card.dataset.title=name;
+    card.innerHTML='<div class="ev__top"><img src="assets/img/meetup.jpg" alt=""><span class="ev__date"><b>'+jday+'</b><span>'+jmonth+'</span></span><span class="ev__badge">در انتظار تأیید</span></div>'+
+      '<div class="ev__body"><span class="ev__cat">'+(cats[cat]||'اجتماعی')+'</span><h3>'+name+'</h3>'+
+      '<div class="ev__meta"><span>🕐 <b>'+time+'</b></span><span>📍 طبقهٔ دوم — شعبهٔ استقلال</span><span>👥 مهمان تقریبی: '+guests+'</span></div>'+
+      '<div class="ev__host"><span class="av">'+(group.charAt(0)||'گ')+'</span> میزبان: '+group+'</div>'+
+      '<div class="ev__foot"><span class="att"><span class="stack"><i>'+(group.charAt(0)||'گ')+'</i><i>+</i></span><span><b class="cnum" data-base="1">۱</b> نفر شرکت می‌کنند · ظرفیت ۶۰</span></span>'+
+      '<button class="rsvp" type="button">شرکت می‌کنم</button></div></div>';
+    grid.insertBefore(card, grid.firstChild);
+    cards.push(card);
+    card.querySelector('.rsvp').addEventListener('click',function(){
+      var on=this.classList.contains('on'); this.classList.toggle('on',!on);
+      this.textContent = !on ? '✓ ثبت شد — لغو' : 'شرکت می‌کنم';
+      card.querySelector('.cnum').textContent=faNum(on?1:2);
+    });
+    var ok=document.getElementById('hostOk');
+    ok.classList.add('on');
+    ok.innerHTML='✅ <b>درخواست شما ثبت شد:</b> «'+name+'» برای '+time+' روز '+jday+' '+jmonth+' به تقویم اضافه شد (نمایشی). '+
+      (note? 'یادداشت شما: '+note+' ' : '') +
+      'برای نهایی‌شدن، تیم شمسه در واتساپ با شما هماهنگ می‌کند.';
+    hf.reset();
+    ok.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  hf.querySelectorAll('input,select,textarea').forEach(function(el){
+    el.addEventListener('input',function(){el.closest('.field').classList.remove('bad');});
+  });
+  var d8=new Date(); d8.setDate(d8.getDate()+1);
+  document.getElementById('hDate').min=d8.toISOString().split('T')[0];
+  applyFilters();
+
+});
+</script>
+</body>
+</html>
