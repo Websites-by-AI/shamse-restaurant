@@ -172,9 +172,12 @@ FALLBACK = """تا اینجا با شما هستیم 🌟
 برای اینکه سریع‌تر کمکتان کنیم، این دستورها را امتحان کنید:
 /menu — منو | /events — رویدادها | /reserve — رزرو | /branches — شعبه‌ها | /contact — تماس"""
 
+CHANNEL_URL = "https://t.me/shamse_restaurant"
+
 BUTTONS = {
     "inline_keyboard": [
         [{"text": "📖 منو", "url": MENU_URL}, {"text": "📅 رویدادها", "url": EVENTS_URL}],
         [{"text": "🪑 رزرو میز", "url": RESERVE_URL}, {"text": "💬 واتساپ", "url": WA}],
+        [{"text": "📣 کانال رسمی شمسه", "url": CHANNEL_URL}],
     ]
 }

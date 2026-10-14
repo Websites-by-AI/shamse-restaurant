@@ -110,50 +110,82 @@ def ai_enabled():
     return bool(os.environ.get("AI_API_KEY") or os.environ.get("GITHUB_TOKEN"))
 
 
-def call_ai(prompt, system):
-    """تولید متن با سرویس سازگار OpenAI. در صورت شکست یا خروجی نامعتبر → None."""
+AI_ENDPOINTS = {
+    # نام سرویس → (آدرس، مدل پیش‌فرض، استفاده از توکن مخزن)
+    "github": ("https://models.github.ai/inference", "openai/gpt-4o-mini", True),
+    "github-legacy": ("https://models.inference.ai.azure.com", "gpt-4o-mini", True),
+    "openrouter": ("https://openrouter.ai/api/v1", "meta-llama/llama-3.3-70b-instruct:free", False),
+    "openai": ("https://api.openai.com/v1", "gpt-4o-mini", False),
+    "custom": ("", "gpt-4o-mini", False),
+}
+
+
+def _ai_candidates():
+    """فهرست سرویس‌هایی که به‌ترتیب امتحان می‌شوند."""
     provider = (os.environ.get("AI_PROVIDER") or "").strip().lower()
     key = (os.environ.get("AI_API_KEY") or "").strip()
-    if provider == "github" or (not provider and not key and os.environ.get("GITHUB_TOKEN")):
-        base = os.environ.get("AI_BASE_URL") or "https://models.github.ai/inference"
-        key = key or os.environ.get("GITHUB_TOKEN", "")
-        model = os.environ.get("AI_MODEL") or "openai/gpt-4o-mini"
-    else:
-        base = os.environ.get("AI_BASE_URL") or "https://api.openai.com/v1"
-        model = os.environ.get("AI_MODEL") or "openai/gpt-4o-mini"
-    if not key:
-        print("[ai] no key — template mode")
-        return None
+    out = []
+    if provider in ("", "auto"):
+        if key:
+            provider = "openai"
+        elif os.environ.get("GITHUB_TOKEN"):
+            provider = "github"
+        else:
+            return out
+    names = [provider]
+    if provider == "github":                      # اگر مدل‌های گیت‌هاب جواب نداد، درگاه قدیمی
+        names.append("github-legacy")
+    for name in names:
+        base, model, use_repo_token = AI_ENDPOINTS.get(name, ("", "gpt-4o-mini", False))
+        base = os.environ.get("AI_BASE_URL") or base
+        model = os.environ.get("AI_MODEL") or model
+        k = (os.environ.get("GITHUB_TOKEN") if use_repo_token else key) or ""
+        if base and k:
+            out.append((name, base, model, k))
+    return out
 
+
+def _ai_request(name, base, model, key, prompt, system):
     body = json.dumps({
         "model": model,
         "messages": [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
         "temperature": 0.8,
         "max_tokens": 600,
     }).encode("utf-8")
-    req = urllib.request.Request(base.rstrip("/") + "/chat/completions", data=body, headers={
-        "Authorization": "Bearer " + key,
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "X-GitHub-Api-Version": "2022-11-28",
-    })
-    try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            raw = resp.read().decode("utf-8")
-            data = json.loads(raw)
-            text = (data.get("choices") or [{}])[0].get("message", {}).get("content", "").strip()
-    except urllib.error.HTTPError as exc:
-        print("[ai] HTTP %s — %s" % (exc.code, exc.read().decode("utf-8", "replace")[:180]))
-        return None
-    except Exception as exc:  # noqa: BLE001
-        print("[ai] unavailable (%s) — template fallback" % exc)
-        return None
+    headers = {"Authorization": "Bearer " + key, "Content-Type": "application/json",
+               "Accept": "application/json"}
+    if name.startswith("github"):
+        headers["X-GitHub-Api-Version"] = "2022-11-28"
+    req = urllib.request.Request(base.rstrip("/") + "/chat/completions", data=body, headers=headers)
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        raw = resp.read().decode("utf-8")
+    data = json.loads(raw)                        # متن غیر-JSON ⇒ خطا برای امتحان سرویس بعدی
+    return ((data.get("choices") or [{}])[0].get("message", {}) or {}).get("content", "").strip()
 
-    # اعتبارسنجی خروجی: حداقل ۱۲۰ کاراکتر، اکثراً فارسی، بدون توکن‌های عجیب
-    if len(text) < 120 or len(re.findall(r"[\u0600-\u06FF]", text)) < 80:
-        print("[ai] response rejected (not usable Persian text): %r" % text[:60])
+
+def call_ai(prompt, system):
+    """تولید متن با اولین سرویس سالم. در صورت شکست یا خروجی نامعتبر → None (قالب آماده)."""
+    candidates = _ai_candidates()
+    if not candidates:
+        print("[ai] no provider configured — template mode")
         return None
-    return text
+    for name, base, model, key in candidates:
+        print("[ai] trying %s (%s / %s)" % (name, base, model))
+        try:
+            text = _ai_request(name, base, model, key, prompt, system)
+        except urllib.error.HTTPError as exc:
+            print("[ai] %s HTTP %s — %s" % (name, exc.code, exc.read().decode("utf-8", "replace")[:160]))
+            continue
+        except Exception as exc:  # noqa: BLE001
+            print("[ai] %s unavailable (%s)" % (name, exc))
+            continue
+        if len(text) < 120 or len(re.findall(r"[\u0600-\u06FF]", text)) < 80:
+            print("[ai] %s response rejected (not usable Persian): %r" % (name, text[:60]))
+            continue
+        print("[ai] %s accepted (%d chars)" % (name, len(text)))
+        return text
+    print("[ai] all endpoints failed — template fallback")
+    return None
 
 
 SYSTEM = (
@@ -176,9 +208,9 @@ def compose(force_topic=None):
     else:
         idx = today.toordinal() % min(14, len(topics))
     img, template = topics[idx]
-    text = template.format(phone=persian_numbers(content.PHONE), menu=content.MENU_URL,
+    # شمارهٔ تلفن با ارقام لاتین (قابل کپی/تماس) و بقیهٔ متن فارسی
+    text = template.format(phone=content.PHONE, menu=content.MENU_URL,
                            reserve=content.RESERVE_URL, events=content.EVENTS_URL)
-    text = persian_numbers(text) if False else text
     text = text.rstrip() + "\n\n" + content.TAGS
 
     if ai_enabled():
