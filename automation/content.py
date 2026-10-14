@@ -7,15 +7,36 @@ TOPICS  : بانک ۱۴ پست چرخشی (قالب فارسی، بدون ادع
 REPLIES : پاسخ دستورهای /menu /events /reserve /branches /contact /start
 """
 
-SITE = "https://websites-by-ai.github.io/shamse-restaurant"
+# دامنهٔ کوتاه و خوانا برای تلگرام (همان سایت؛ روی Cloudflare Pages)
+SITE = "https://shamse-restaurant.pages.dev"
+SITE_LABEL = "shamse-restaurant.pages.dev"
 EVENTS_URL = SITE + "/events.html"
 RESERVE_URL = SITE + "/index.html#reserve"
 MENU_URL = SITE + "/index.html#menu"
 PHONE = "+90 501 325 24 52"
 WA = "https://wa.me/905013252452"
 IG = "https://www.instagram.com/shamse.resturan"
+CHANNEL_URL = "https://t.me/shamse_restaurant"
+OFFICIAL_SITE = "https://shamserestaurants.com/fa/home/"
 
 TAGS = "#رستوران_شمسه #استانبول #غذای_ایرانی #تکسیم #کوجاتپه #Shamse"
+
+# امضای ثابت پایان همهٔ پست‌های خودکار — سایت، ربات، کانال و تلفن
+FOOTER = ("\n\n🌐 سایت: %s\n🤖 ربات: @shamse_restaurant_bot · 📣 کانال: @shamse_restaurant\n"
+          "☎️ %s" % (SITE_LABEL, PHONE))
+
+# پست راهنما که در کانال سنجاق می‌شود (لینک ربات + سایت + هر دو شعبه)
+GUIDE_POST = """📌 راهنمای رستوران شمسه
+
+🌐 وب‌سایت (منو، رویدادها، رزرو): %s
+🤖 ربات تلگرام: @shamse_restaurant_bot — دستورهای /menu /events /reserve /branches /contact
+📅 رویدادها و میتاپ‌های طبقهٔ دوم: %s
+
+📍 شعبه ۱: خیابان استقلال پلاک ۱۷۹ (تکسیم)
+📍 شعبه ۲: عبدالحکیم حمیت ۱۷ (کوجاتپه)
+🕐 همه‌روزه ۱۲:۰۰ تا ۰۱:۳۰ — ☎️ %s
+
+🇮🇷 سایت برند: %s""" % (SITE_LABEL, EVENTS_URL, PHONE, OFFICIAL_SITE)
 
 # هر آیتم: (کلید عکس، متن قالب)
 TOPICS = [
@@ -114,7 +135,8 @@ TOPICS = [
 REPLIES = {
     "start": f"""🌟 به ربات رستوران شمسه خوش آمدید!
 
-اینجا می‌توانید منو، رویدادها و راهنمای رزرو را ببینید.
+🌐 وب‌سایت: {SITE_LABEL}
+📣 کانال ما: @shamse_restaurant — پست‌های روزانهٔ منو و رویدادها
 دستورها:
 /menu — منوی غذا
 /events — رویدادهای هفته و میتاپ‌ها
@@ -158,8 +180,11 @@ REPLIES = {
 سالن بزرگ برای مراسم و جشن.
 
 🕐 همه‌روزه ۱۲:۰۰ تا ۰۱:۳۰ — ☎️ {PHONE}""",
-    "contact": f"""📞 تماس با رستوران شمسه
+    "contact": f"""📞 تماس و راه‌های ارتباطی شمسه
 
+• وب‌سایت: {SITE_LABEL}
+• کانال تلگرام: @shamse_restaurant · ربات: @shamse_restaurant_bot
+• سایت برند: {OFFICIAL_SITE}
 • تلفن و واتساپ: {PHONE}
 • واتساپ: {WA}
 • اینستاگرام: @shamse.resturan ({IG})
@@ -174,12 +199,11 @@ FALLBACK = """تا اینجا با شما هستیم 🌟
 برای اینکه سریع‌تر کمکتان کنیم، این دستورها را امتحان کنید:
 /menu — منو | /events — رویدادها | /reserve — رزرو | /branches — شعبه‌ها | /contact — تماس"""
 
-CHANNEL_URL = "https://t.me/shamse_restaurant"
-
 BUTTONS = {
     "inline_keyboard": [
         [{"text": "📖 منو", "url": MENU_URL}, {"text": "📅 رویدادها", "url": EVENTS_URL}],
         [{"text": "🪑 رزرو میز", "url": RESERVE_URL}, {"text": "💬 واتساپ", "url": WA}],
-        [{"text": "📣 کانال رسمی شمسه", "url": CHANNEL_URL}],
+        [{"text": "📣 کانال رسمی شمسه", "url": CHANNEL_URL},
+         {"text": "🌐 وب‌سایت", "url": SITE}],
     ]
 }

@@ -20,7 +20,7 @@ on:
         description: 'حالت اجرا'
         type: choice
         default: post
-        options: [post, poll, selftest, discover]
+        options: [post, poll, selftest, discover, brand]
       dry_run:
         description: 'بدون ارسال واقعی (فقط نمایش)'
         type: boolean
@@ -64,6 +64,11 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'discover'
         env: *bot_env
         run: python3 automation/telegram_bot.py discover
+
+      - name: برندینگ کانال (عنوان، توضیحات، پست راهنمای سنجاق‌شده)
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'brand'
+        env: *bot_env
+        run: python3 automation/telegram_bot.py brand
 
       - name: پاسخ به پیام‌های مستقیم
         if: (github.event_name == 'schedule' && github.event.schedule == '*/30 * * * *') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'poll')

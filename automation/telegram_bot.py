@@ -243,10 +243,28 @@ def compose(force_topic=None):
         if ai_text:
             if content.TAGS.split()[0] not in ai_text:
                 ai_text = ai_text.rstrip() + "\n\n" + content.TAGS
+            if content.FOOTER.strip() not in ai_text:
+                ai_text = ai_text.rstrip() + content.FOOTER
             print("[ai] using AI-generated text")
-            return img, ai_text
+            return img, fit_caption(ai_text)
         print("[ai] falling back to curated template")
-    return img, text
+    return img, fit_caption(text + content.FOOTER)
+
+
+CAPTION_MAX = 1024
+
+
+def fit_caption(text):
+    """کپشن عکس حداکثر ۱۰۲۴ کاراکتر است؛ متن را طوری کوتاه کن که امضا (FOOTER) حفظ شود."""
+    if len(text) <= CAPTION_MAX:
+        return text
+    footer = content.FOOTER.strip()
+    tail = ""
+    if footer and footer in text:
+        text, tail = text.split(footer, 1)
+        tail = footer + tail
+    room = CAPTION_MAX - len(tail) - 3
+    return text[:max(room, 0)].rstrip() + "…" + tail
 
 
 # ---------------------------------------------------------------- Telegram actions
@@ -352,6 +370,79 @@ def handle_updates(state):
     return handled
 
 
+CHANNEL_DESCRIPTION = (
+    "🍽 رستوران ایرانی شمسه در استانبول — دو شعبه: تکسیم و کوجاتپه.\n"
+    "طبقهٔ دوم شعبهٔ استقلال میزبان میتاپ و گردهمایی (ظرفیت ۶۰ نفر).\n"
+    "🌐 وب‌سایت: shamse-restaurant.pages.dev | 🤖 ربات: @shamse_restaurant_bot"
+)
+
+BOT_DESCRIPTION = (
+    "رستوران شمسه؛ رستوران ایرانی در استانبول با دو شعبه: تکسیم (خیابان استقلال ۱۷۹، دو طبقه) "
+    "و کوجاتپه (عبدالحکیم حمیت ۱۷).\n"
+    "طبقهٔ دوم شعبهٔ استقلال میزبان میتاپ‌ها و گردهمایی‌های شماست (ظرفیت ۶۰ نفر).\n\n"
+    "🌐 وب‌سایت: shamse-restaurant.pages.dev\n"
+    "📣 کانال رسمی: @shamse_restaurant\n"
+    "☎️ +90 501 325 24 52 — همه‌روزه ۱۲:۰۰ تا ۰۱:۳۰"
+)
+
+BOT_SHORT = "رستوران ایرانی شمسه در استانبول — منو، رویدادها و رزرو. کانال: @shamse_restaurant"
+
+COMMANDS = [
+    {"command": "menu", "description": "منوی غذا"},
+    {"command": "events", "description": "تقویم رویدادها و میتاپ‌ها"},
+    {"command": "reserve", "description": "رزرو میز و طبقهٔ میتاپ"},
+    {"command": "branches", "description": "آدرس و ساعت دو شعبه"},
+    {"command": "contact", "description": "تماس، وب‌سایت و کانال"},
+    {"command": "help", "description": "راهنمای دستورها"},
+]
+
+GUIDE_MARKER = "راهنمای رستوران شمسه"
+
+
+def mode_brand():
+    """یک‌بار اجرا: پروفایل ربات + عنوان و توضیح کانال + پست راهنما (سنجاق‌شده)."""
+    me = api("getMe")
+    if not me.get("ok"):
+        print("token problem:", me.get("description"))
+        return 2
+    print("bot profile  :", api("setMyDescription", {"description": BOT_DESCRIPTION, "language_code": ""}).get("ok"),
+          "|", api("setMyShortDescription", {"short_description": BOT_SHORT, "language_code": ""}).get("ok"),
+          "| commands:", api("setMyCommands", {"commands": COMMANDS}).get("ok"))
+
+    chat, src = resolve_chat()
+    if not chat:
+        print(NEED_SETUP + ": هیچ کانالی پیدا نشد — ربات را ادمین کانال کنید.")
+        return 2
+    info = api("getChat", {"chat_id": chat})
+    cur_title = (info.get("result") or {}).get("title") or ""
+    print("channel      :", cur_title, "| source:", src)
+
+    if cur_title != "رستوران شمسه | Shamse Restaurant":
+        r = api("setChatTitle", {"chat_id": chat, "title": "رستوران شمسه | Shamse Restaurant"})
+        print("setChatTitle :", r.get("ok"), r.get("description", ""))
+
+    r = api("setChatDescription", {"chat_id": chat, "description": CHANNEL_DESCRIPTION})
+    print("setChatDescription:", r.get("ok"), r.get("description", ""), "| len:", len(CHANNEL_DESCRIPTION))
+    if not r.get("ok"):
+        print("   ↳ اگر باز هم نشد، ربات باید اجازهٔ «تغییر اطلاعات کانال» (can_change_info) داشته باشد.")
+
+    pinned = ((info.get("result") or {}).get("pinned_message") or {})
+    pinned_text = pinned.get("text") or pinned.get("caption") or ""
+    if GUIDE_MARKER in pinned_text:
+        print("pinned guide : already pinned ✔ (message_id=%s)" % pinned.get("message_id"))
+        return 0
+
+    sent = api("sendMessage", {"chat_id": chat, "text": content.GUIDE_POST,
+                               "disable_web_page_preview": False, "reply_markup": content.BUTTONS})
+    if not sent.get("ok"):
+        print("send guide   : FAILED —", sent.get("description"))
+        return 2
+    mid = sent["result"]["message_id"]
+    pin = api("pinChatMessage", {"chat_id": chat, "message_id": mid, "disable_notification": False})
+    print("guide post   : sent ✔ message_id=%s | pinned:" % mid, pin.get("ok"), pin.get("description", ""))
+    return 0 if pin.get("ok") else 0
+
+
 # ---------------------------------------------------------------- modes
 def mode_selftest():
     me = api("getMe")
@@ -422,7 +513,7 @@ def mode_post(args):
 def main():
     parser = argparse.ArgumentParser(description="اتوماسیون تلگرام رستوران شمسه")
     parser.add_argument("mode", nargs="?", default="selftest",
-                        choices=["post", "poll", "selftest", "discover"])
+                        choices=["post", "poll", "selftest", "discover", "brand"])
     parser.add_argument("--dry-run", action="store_true", help="فقط نمایش، بدون ارسال")
     parser.add_argument("--force", action="store_true", help="نادیده گرفتن قاعدهٔ «یک پست در روز»")
     parser.add_argument("--topic", type=int, default=None, help="شمارهٔ موضوع برای تست")
@@ -431,7 +522,7 @@ def main():
     if args.mode != "selftest" and not TOKEN:
         print("ERROR: TELEGRAM_BOT_TOKEN is not set", file=sys.stderr)
         return 2
-    return {"selftest": mode_selftest, "discover": mode_discover,
+    return {"selftest": mode_selftest, "discover": mode_discover, "brand": mode_brand,
             "poll": mode_poll, "post": lambda: mode_post(args)}[args.mode]()
 
 
