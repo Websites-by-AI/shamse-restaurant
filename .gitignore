@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# dependencies (این پروژه به هیچ پکیجی نیاز ندارد)
+node_modules/
