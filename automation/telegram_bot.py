@@ -334,45 +334,142 @@ def send_post(img, text, dry_run=False, chat=None):
     return False
 
 
-def reply(chat_id, text, buttons=True):
+def reply(chat_id, text, buttons=True, keyboard=False):
     payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True}
-    if buttons:
+    if keyboard:
+        payload["reply_markup"] = content.KEYBOARD
+    elif buttons:
         payload["reply_markup"] = content.BUTTONS
     return api("sendMessage", payload)
 
 
-def handle_updates(state):
-    """پاسخ به پیام‌های مستقیم و دستورها (بدون هوش مصنوعی — پاسخ‌های آمادهٔ دقیق)."""
-    offset = int(state.get("update_offset", 0))
-    resp = api("getUpdates", {"offset": offset, "limit": 50, "allowed_updates": ["message"],
-                              "timeout": 0})
-    if not resp.get("ok"):
-        print("[poll] getUpdates failed:", resp.get("description"))
-        return 0
-    handled = 0
-    for upd in resp.get("result") or []:
-        state["update_offset"] = upd["update_id"] + 1
-        chan = ((upd.get("channel_post") or {}).get("chat")
-                or ((upd.get("my_chat_member") or {}).get("chat")) or {})
-        if chan.get("type") == "channel" and chan.get("id"):
-            state["detected_chat_id"] = chan["id"]
-            state["detected_chat_title"] = chan.get("title")
-        msg = upd.get("message") or {}
-        chat_id = (msg.get("chat") or {}).get("id")
-        text = (msg.get("text") or "").strip()
-        if not chat_id or not text:
+def send_welcome(chat_id):
+    """خوش‌آمد با عکس + کیبورد ثابت؛ اگر عکس ناموفق بود، متن ساده."""
+    caption = content.REPLIES["start"]
+    r = api("sendPhoto", {"chat_id": chat_id, "photo": content.SITE + "/assets/img/interior.jpg",
+                          "caption": caption[:1024], "reply_markup": content.KEYBOARD})
+    if r.get("ok"):
+        return r
+    return reply(chat_id, caption, buttons=False, keyboard=True)
+
+
+MENTION = "@shamse_restaurant_bot"
+RL_SECONDS = 2.5          # ضداسپم: حداقل فاصلهٔ پاسخ به هر چت
+
+
+def _norm(text):
+    """نرمال‌سازی متن فارسی: حذف نیم‌فاصله، فاصله‌های اضافی و یکسان‌سازی."""
+    return re.sub(r"\s+", " ", (text or "").replace("\u200c", " ").replace("ي", "ی")).strip().lower()
+
+
+def should_reply(text, chat_type):
+    """در چت خصوصی همیشه؛ در گروه فقط برای دستور یا منشن."""
+    if chat_type == "private":
+        return True
+    if (text or "").lstrip().startswith("/"):
+        return True
+    return MENTION.lower() in (text or "").lower()
+
+
+def clean_text(text):
+    """حذف منشن ربات از متن گروه + اصلاح فاصله‌های باقی‌مانده."""
+    return re.sub(r"\s+", " ", re.sub(r"@?shamse_restaurant_bot", " ", text or "", flags=re.I)).strip()
+
+
+def kb_answer(text):
+    """پاسخ آمادهٔ دقیق برای سؤالات پرتکرار (بدون هوش مصنوعی)."""
+    n = _norm(text)
+    for keywords, answer in content.KB:
+        if any(k in n for k in keywords):
+            return answer.replace("**", "")
+    return None
+
+
+def ai_answer(question):
+    """پاسخ آزاد با هوش مصنوعی، فقط بر اساس اطلاعات رسمی رستوران."""
+    system = ("تو پشتیبان رسمی رستوران شمسه در تلگرام هستی. فقط بر اساس اطلاعات زیر پاسخ بده؛ "
+              "از خودت قیمت، آدرس یا وعدهٔ تازه نساز. پاسخ کوتاه (حداکثر ۳ خط)، مودب و فارسی با یک ایموجی.\n\n"
+              + content.AI_FACTS)
+    for name, base, model, key in _ai_candidates():
+        try:
+            raw = _ai_request(name, base, model, key, question, system)
+        except Exception:  # noqa: BLE001 — موتور بعدی
             continue
-        cmd = text.split()[0].split("@")[0].lstrip("/").lower()
-        if cmd == "news":
-            out, buttons = news_reply(), True
-        elif cmd in content.REPLIES:
-            out = content.REPLIES[cmd]
-            buttons = cmd in ("start", "menu", "events", "reserve")
-        else:
-            out, buttons = content.FALLBACK, True
-        r = reply(chat_id, out, buttons)
-        print("[poll] %s from %s -> %s" % (text[:24] or "?", chat_id, "ok" if r.get("ok") else r.get("description")))
-        handled += 1
+        text = (raw or "").strip()
+        if len(text) >= 30 and len(re.findall(r"[\u0600-\u06FF]", text)) >= 15:
+            print("[poll] answered by %s (%d chars)" % (name, len(text)))
+            return text[:700]
+    return None
+
+
+def handle_updates(state, minutes=0, timeout=0):
+    """پاسخ به پیام‌ها. minutes>0 یعنی long-poll تا آن مدت (پاسخ آنی)."""
+    if minutes:
+        timeout = 25
+        print("[poll] long-poll for %s min (timeout=%ss)" % (persian_numbers(str(minutes)), timeout))
+    started = time.time()
+    handled = 0
+    while True:
+        resp = api("getUpdates", {"offset": int(state.get("update_offset", 0)), "limit": 50,
+                                  "allowed_updates": ["message"], "timeout": timeout})
+        if not resp.get("ok"):
+            print("[poll] getUpdates failed:", resp.get("description"))
+            break
+        for upd in resp.get("result") or []:
+            state["update_offset"] = upd["update_id"] + 1
+            chan = ((upd.get("channel_post") or {}).get("chat")
+                    or ((upd.get("my_chat_member") or {}).get("chat")) or {})
+            if chan.get("type") == "channel" and chan.get("id"):
+                state["detected_chat_id"] = chan["id"]
+                state["detected_chat_title"] = chan.get("title")
+
+            msg = upd.get("message") or {}
+            chat = msg.get("chat") or {}
+            chat_id, chat_type = chat.get("id"), chat.get("type", "private")
+            raw_text = (msg.get("text") or "").strip()
+            if not chat_id or not raw_text:
+                continue
+            if not should_reply(raw_text, chat_type):
+                continue
+
+            text = clean_text(raw_text)
+            label = content.QUICK.get(raw_text) or content.QUICK.get(text)
+            cmd = None
+            if raw_text.startswith("/"):
+                cmd = raw_text.split()[0].split("@")[0].lstrip("/").lower()
+            elif label:
+                cmd = label
+
+            now = time.time()
+            rl = state.setdefault("rl", {})
+            if now - float(rl.get(str(chat_id), 0)) < RL_SECONDS:
+                continue                       # ضداسپم
+            rl[str(chat_id)] = now
+
+            if cmd == "start":
+                r = send_welcome(chat_id)
+                out = "(welcome)"
+            elif cmd == "news":
+                r, out = reply(chat_id, news_reply()), "news"
+            elif cmd in content.REPLIES:
+                r = reply(chat_id, content.REPLIES[cmd], buttons=cmd in ("menu", "events", "reserve", "branches", "contact"))
+                out = "/" + cmd
+            else:
+                out_text = kb_answer(text)
+                source = "kb"
+                if not out_text:
+                    out_text = ai_answer(text)
+                    source = "ai"
+                if not out_text:
+                    out_text = content.FALLBACK
+                    source = "fallback"
+                r = reply(chat_id, out_text, buttons=True)
+                out = source
+            print("[poll] %s [%s] %s -> %s" % (chat_type, out, text[:36].replace("\n", " ") or "?",
+                                               "ok" if r.get("ok") else r.get("description")))
+            handled += 1
+        if not minutes or (time.time() - started) >= minutes * 60:
+            break
     return handled
 
 
@@ -400,6 +497,7 @@ COMMANDS = [
     {"command": "branches", "description": "آدرس و ساعت دو شعبه"},
     {"command": "contact", "description": "تماس، وب‌سایت و کانال"},
     {"command": "news", "description": "آخرین اخبار و فراخوان‌ها"},
+    {"command": "start", "description": "شروع و دکمه‌های منو"},
     {"command": "help", "description": "راهنمای دستورها"},
 ]
 
@@ -510,11 +608,11 @@ def mode_discover():
     return 0
 
 
-def mode_poll():
+def mode_poll(minutes=0):
     state = load_state()
-    handled = handle_updates(state)
+    handled = handle_updates(state, minutes=minutes)
+    save_state(state)                      # rl/offset هم ذخیره می‌شود
     if handled:
-        save_state(state)
         print("[poll] %s پیام پاسخ داده شد" % persian_numbers(str(handled)))
     else:
         print("[poll] پیام جدیدی نبود")
@@ -548,13 +646,14 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="فقط نمایش، بدون ارسال")
     parser.add_argument("--force", action="store_true", help="نادیده گرفتن قاعدهٔ «یک پست در روز»")
     parser.add_argument("--topic", type=int, default=None, help="شمارهٔ موضوع برای تست")
+    parser.add_argument("--loop", type=int, default=0, help="دقیقهٔ long-poll برای حالت poll (پاسخ آنی)")
     args = parser.parse_args()
 
     if args.mode != "selftest" and not TOKEN:
         print("ERROR: TELEGRAM_BOT_TOKEN is not set", file=sys.stderr)
         return 2
     return {"selftest": mode_selftest, "discover": mode_discover, "brand": mode_brand,
-            "poll": mode_poll, "post": lambda: mode_post(args)}[args.mode]()
+            "poll": lambda: mode_poll(args.loop), "post": lambda: mode_post(args)}[args.mode]()
 
 
 if __name__ == "__main__":
