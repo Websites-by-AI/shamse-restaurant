@@ -102,21 +102,20 @@ def persian_numbers(text):
 
 # ---------------------------------------------------------------- AI writing (با جایگزین خودکار)
 def ai_enabled():
-    provider = (os.environ.get("AI_PROVIDER") or "").strip().lower()
-    if provider in ("none", "off", "0"):
-        return False
-    if provider in ("github", "openai", "custom"):
-        return True
-    return bool(os.environ.get("AI_API_KEY") or os.environ.get("GITHUB_TOKEN"))
+    """pollinations بدون کلید است، پس AI همیشه در دسترس است مگر صریحاً خاموش شود."""
+    return (os.environ.get("AI_PROVIDER") or "").strip().lower() not in ("none", "off", "0")
 
 
 AI_ENDPOINTS = {
-    # نام سرویس → (آدرس، مدل پیش‌فرض، استفاده از توکن مخزن)
-    "github": ("https://models.github.ai/inference", "openai/gpt-4o-mini", True),
-    "github-legacy": ("https://models.inference.ai.azure.com", "gpt-4o-mini", True),
-    "openrouter": ("https://openrouter.ai/api/v1", "meta-llama/llama-3.3-70b-instruct:free", False),
-    "openai": ("https://api.openai.com/v1", "gpt-4o-mini", False),
-    "custom": ("", "gpt-4o-mini", False),
+    # نام سرویس → (آدرس، مدل پیش‌فرض، نوع کلید: repo | user | none=بدون کلید)
+    "cloudflare": ("https://api.cloudflare.com/client/v4/accounts/{account}/ai/v1",
+                   "@cf/meta/llama-3.3-70b-instruct-fp8-fast", "cf"),   # Workers AI — پلن رایگان
+    "github": ("https://models.github.ai/inference", "openai/gpt-4o-mini", "repo"),
+    "github-legacy": ("https://models.inference.ai.azure.com", "gpt-4o-mini", "repo"),
+    "pollinations": ("https://text.pollinations.ai/openai", "openai", "none"),  # رایگان و بدون کلید
+    "openrouter": ("https://openrouter.ai/api/v1", "meta-llama/llama-3.3-70b-instruct:free", "user"),
+    "openai": ("https://api.openai.com/v1", "gpt-4o-mini", "user"),
+    "custom": ("", "gpt-4o-mini", "user"),
 }
 
 
@@ -132,16 +131,32 @@ def _ai_candidates():
             provider = "github"
         else:
             return out
+    account = os.environ.get("CLOUDFLARE_ACCOUNT_ID", "")
+    cf_token = os.environ.get("CLOUDFLARE_API_TOKEN", "")
     names = [provider]
+    if provider == "cloudflare":
+        pass
     if provider == "github":                      # اگر مدل‌های گیت‌هاب جواب نداد، درگاه قدیمی
         names.append("github-legacy")
+    if cf_token and account and "cloudflare" not in names:
+        names.append("cloudflare")                # Workers AI روی حساب خودمان — اولویت بالا
+    if "pollinations" not in names:
+        names.append("pollinations")              # رایگان و بدون کلید — پشتیبان همیشگی
+    if key and "openai" not in names:
+        names.append("openai")
     for name in names:
-        base, model, use_repo_token = AI_ENDPOINTS.get(name, ("", "gpt-4o-mini", False))
+        base, model, kind = AI_ENDPOINTS.get(name, ("", "openai", "user"))
         base = os.environ.get("AI_BASE_URL") or base
         model = os.environ.get("AI_MODEL") or model
-        k = (os.environ.get("GITHUB_TOKEN") if use_repo_token else key) or ""
-        if base and k:
-            out.append((name, base, model, k))
+        k = {"repo": os.environ.get("GITHUB_TOKEN", ""), "user": key,
+             "cf": cf_token, "none": ""}[kind]
+        if not base or (not k and kind != "none"):
+            continue
+        try:
+            base = base.format(account=account)
+        except (KeyError, IndexError):
+            continue
+        out.append((name, base, model, k))
     return out
 
 
@@ -152,8 +167,9 @@ def _ai_request(name, base, model, key, prompt, system):
         "temperature": 0.8,
         "max_tokens": 600,
     }).encode("utf-8")
-    headers = {"Authorization": "Bearer " + key, "Content-Type": "application/json",
-               "Accept": "application/json"}
+    headers = {"Content-Type": "application/json", "Accept": "application/json"}
+    if key:                                        # pollinations بدون کلید کار می‌کند
+        headers["Authorization"] = "Bearer " + key
     if name.startswith("github"):
         headers["X-GitHub-Api-Version"] = "2022-11-28"
     req = urllib.request.Request(base.rstrip("/") + "/chat/completions", data=body, headers=headers)
@@ -193,6 +209,7 @@ SYSTEM = (
     "تکسیم (خیابان استقلال پلاک ۱۷۹، دو طبقه) و کوجاتپه (عبدالحکیم حمیت ۱۷)، تلفن +90 501 325 24 52، "
     "ساعات ۱۲:۰۰ تا ۰۱:۳۰، طبقهٔ دوم شعبهٔ استقلال ظرفیت ۶۰ نفر برای میتاپ. "
     "یک پست کوتاه فارسی برای کانال تلگرام بنویس: ۳ تا ۵ خط، ۲ تا ۴ ایموجی، پایان با ۱ تا ۲ هشتگ. "
+    "هزینه‌ها و ساعات را دقیقاً همان‌طور که در متن پایه آمده نگه دار و شمارهٔ تلفن +90 501 325 24 52 را یک بار ذکر کن. "
     "فقط متن پست را بنویس؛ هیچ قیمت، تخفیف یا وعدهٔ جدیدی که به تو گفته نشده از خودت نساز."
 )
 
@@ -353,7 +370,8 @@ def mode_selftest():
             print("channel      :", "cannot access %s — %s" % (chat, info.get("description")))
     else:
         print("channel      :", NEED_SETUP + " — ربات هنوز در هیچ کانالی ادمین نیست.")
-    print("ai           :", "enabled (provider=%s)" % (os.environ.get("AI_PROVIDER") or "auto") if ai_enabled()
+    chain = _ai_candidates() if ai_enabled() else []
+    print("ai           :", ("enabled — chain: " + " → ".join(n for n, *_ in chain)) if chain
           else "disabled — قالب‌های آماده استفاده می‌شود")
     print("state        : update_offset=%s last_post=%s" % (state.get("update_offset", 0),
                                                             state.get("last_post_date", "—")))
