@@ -1,5 +1,39 @@
 {
   "items": {
+    "0593b805d7d6208a": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "0593b805d7d6208a",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOM0R4dndYMlRXNkJTWXdJQS1RLWMwVldpbHBaMDhDbGJhRHp2Nk10NVJsVmxPdTdmdktkWGprSHlqRE9Kem1CTldfcDlpX2lkUnFhVmdXX01pWkpJMnRYeGpkRzluMTVLOW9xN3FRa3pCS3RQUEh6WkxoSHM4aVlWUnpjaFdNRHBEckRURDNRV0pPcjN6MEVoaEJHby1EN21BYmc?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T09:52:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "اتاق بازرگانی توریید",
+      "title": "Etiket: Turizm Restoran Yatırımcıları ve Gastronomi İşletmeleri Derneği (TURYİD) - Haber 1",
+      "title_fa": "توریید"
+    },
+    "1609ea2fa7c7c38c": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "1609ea2fa7c7c38c",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMXhnaVlIUm1GalV2MzVHRHpIbXRIWmZxZ3B1aXhBeWxiaEliUHpGUDRLR2dUYmxKMUlILVdnS3B4SmFSbjBhMlVab3pVVE9ieDhEX0drTUk3LWFaaDNmQzc5TFFpa2F5Vkcxb1ktazZ6UDg2TXFKM1JnVDJhSFBOTzlBelkzdEpK?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T15:43:35+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "4. Uluslararası Digital Film Festival İstanbul başlıyor - Kadıköy Life",
+      "title_fa": ""
+    },
     "2aa0ffb8503cd14e": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
@@ -16,6 +50,23 @@
       "summary_fa": "",
       "title": "TAB Gida Advances Multi-Year Share Buyback Program on Borsa Istanbul - TipRanks",
       "title_fa": ""
+    },
+    "3007c5a054a0db7f": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "3007c5a054a0db7f",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZExSaldXSDE5bThPc2ZOYWpkQ1FKODBGaklzQ1AtbnBpMmdpV1R4MzJMaGUtZ3lXTEFndTlGWlotMi1JZkMyYll0NldtSjFXVnFYM0RZeHdVVHdMZUxmRG14NmZzUl9XeGZSRExYVVVYZnVDaHN0M0R2TS1FMURLbmtnSlNyQzY2VThjQVhHbVBlS0pxb2xPOS1OWThHcTRUVnFGdlFWTld0RURIWl9VS2w1X2hsSnczaGFHVUt3?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-10T11:15:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "برگزاری ترکو و جشن یورسلبزت در آشیرت رستوران",
+      "title": "Mardin’de Aşiret Restaurant’ta Türkü ve Yöresel Lezzet Buluşması - Kenthaber27",
+      "title_fa": "برگزاری ترکو در رستوران"
     },
     "30e991e5917f72d6": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -34,6 +85,40 @@
       "title": "Muğla’nın bereketli toprakları İstanbul’da vitrine çıktı: Gastronomi dünyası bu lezzetleri konuştu - Havadis",
       "title_fa": "جشنواره غذا در استانبول"
     },
+    "3440377fc9936cc7": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "3440377fc9936cc7",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPc1BVV1VrYmZnd0FLYlc3RGNRV0NNT2xwMDI0U29EblZYVXE3MGRwYU1YbDd4V1l2VzI1Wm1JWXBETUdMZnZFN19Jb1VUdl9jbVR2eXFrZklMTDZRYjltUERpQ1pyMUE4dlY5YmVKazhUX25kS0RfbHFWSS1Rd3ZoWWgxNUhvOEd2RlFKTGgwZUlNdw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-10T03:39:51+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "رستورانی ایتالیایی که از استادانش敬ت می‌کند",
+      "title": "An Italian restaurant that respects its masters - Hürriyet Daily News",
+      "title_fa": "رستوران ایتالیایی"
+    },
+    "3c56c5192edc9844": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "3c56c5192edc9844",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPX0FOZExxekgtZnZtQkZVcWdUZDBRdW4zVGYzbnRVNWQtQ1RuQnV3bGIwckQ1ZjNBVDlJN1pSV28xMlZZV2U0VzBjeGtJWDA2QXVTbDZwRXJxX0N6TG56ZzlpZktMVkhfeURJcVFMako3TDZXeWdyWHlOam1yNmRYT241bw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "İstanbul Watch Festival 2026: Markalar, Tarih ve Tüm Detaylar - Oggusto",
+      "title_fa": ""
+    },
     "418ac76a7b3a4b97": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -50,6 +135,23 @@
       "summary_fa": "فهرستی از بهترین رستوران‌های کارタル",
       "title": "Kartal’da En İyi Restoranlar: Sahil, Balık, Et ve Kebap - Kartal 24",
       "title_fa": "رستوران‌های کارタル"
+    },
+    "47ee7e2f38903bcb": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "47ee7e2f38903bcb",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMzFNSHdrNTlWWmhRalNhOGI4SFFMaDhpbHRMLWhVaUxXLXJoQzZ2YUZZdEdYeWFjY0h5dWxXUW1PSnJRblhOcy1SNC1iM0lMMWtpZmZuRl9zV2lKNTN4R3BpSXl5ZDBNSG1uRERRUHRPZ2lYX1piN2tGMGZBLUVEcVpEaWVCdzVta0htbGlseGhfb3FqTlMwZWZCRzVQc0U1Mm1IUE1Kb3o4SHdWeHF1ZmhuU3JwV28xQmQzQXBLY0h1czI0X1NFSg?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-13T18:30:17+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "در مورد کارهای مرتبط با غزه نگرانی وجود دارد",
+      "title": "UN experts urge food agency to uphold human rights amid concerns about Gaza-related work - Anadolu Ajansı",
+      "title_fa": "تأکید کارشناسان سازمان ملل"
     },
     "556e660b90774e21": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -119,6 +221,23 @@
       "title": "Heavy rain and flooding in Istanbul forces closure of schools - CT Insider",
       "title_fa": ""
     },
+    "64b3fd1c1a95dcee": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "64b3fd1c1a95dcee",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbUdwRVotb2thNXVZcWFzVk5qRWJETlNqeWFFNDdkU1poWWhGb19Gb08ySVBydndIMjZybHE3NTl4V0paNWZPMkVQeG1yeUlqNWpqcGpiOEEwdGlXeDRGaDNaT05wb29jSG9KX2R4TElmcWMxVnI3Q3Q4SzVyNWNIWmZFVThRazlnSFcyNHNJSjdtNnRKeUhXNy1OVWdKQmZaZk1yNFhwNmxROW53V1FB0gGsAUFVX3lxTE5rQlI1Zjk1WjB5Ukdtdnh2S1FWLWU2ZUJvaFFPQU43Rk5PWFc2WkRMUnpJRUxUcy0yTUJzbGNjVkFmMmxhMmVyZGd5UDFib0sxM2d1eTczZlpXMmd0QVNHS3A3MWFORFJsSjVNSTNoMlNuUDNFU2RXWFlQaHdzRVZjYUR5N2ZlYVdYOEFhQTh0SGJDd1BZMHhQV05SdUFYbndId2c3cm5iWnlCZmU?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T15:59:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "رستوران‌های برتر استانبول ۳ دسامبر اعلام می‌شوند",
+      "title": "Michelin'in gözü bu kez 81 ilde: Restoranlar 3 Aralık’ta belli olacak - Turizm Ajansı",
+      "title_fa": "انتخاب رستوران‌های استانبول"
+    },
     "66b55d811dd41eaf": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -134,6 +253,23 @@
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "4. Uluslararası Digital Film Festival İstanbul 16 Ekim'de başlıyor - Muhalif",
+      "title_fa": ""
+    },
+    "767bf98b49b5282f": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "767bf98b49b5282f",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1Fc0NlajYxT0JvcE5TOG51VHc3bVNvMUNuSnpmS1I5bE1iVWhOUDZOT0NiMm5jT2I1NXFyMkFiaENfbHZtMkFUUURpcVdiSl9hMVJXTU1sN214U1VkYi1GZHRfWQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Paris Restoran Rehberi: En İyi Restoranlar ve Lezzet Durakları - Oggusto",
       "title_fa": ""
     },
     "80642f3a19aa45f4": {
@@ -186,6 +322,23 @@
       "summary_fa": "",
       "title": "Safranbolu’nun Değerleri İstanbul’da Uluslararası Turizme Tanıtıldı - Karabük Postası",
       "title_fa": ""
+    },
+    "9884785a7b63140d": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "9884785a7b63140d",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcTljNV9JVEJXRVFWSW15LXhQX0N6Qm1ZY1ZpVUJERkZMenhOdy1yUnZnejhtVWR1UHpLLWZzcllzUGZHelgtY1k4WGZVSFpFTVBsdzVtaTZFRlVNMHlDMXZ1WDl4dEtIMEpEYWgzWk5UVGd0aDRya0VkWHVtSzhDMzAxOHhVY1o0VEJYQ2JnZkRFLUF5RFFKLWFn?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-11T15:25:33+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "استانبول به عنوان یکی از شهرهای برتر اروپا در زمینه گاسترونومی شناخته شده است",
+      "title": "İstanbul, Avrupa’nın gastronomi rotalarında öne çıkıyor - Türkiye Turizm",
+      "title_fa": "استانبول در صدر گاسترونومی اروپا"
     },
     "9a0c55c664e068bc": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -254,6 +407,23 @@
       "summary_fa": "رستوران‌های برگر خوب در کارتال استانبول",
       "title": "Kartal’da En İyi Burger Restoranları: Hamburger Nerede Yenir? - Kartal 24",
       "title_fa": "رستوران‌های برگر در کارتال"
+    },
+    "a9279f0bf4359e72": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "a9279f0bf4359e72",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNS1NmZkRTOXJiNkNVWXdmZFQ0cmc3dERiSzZHVEM4amkycW5zSkdrSDdxUlVGdEdHaVdqZDRmajhLemExNHNZVGwzTzhFcWlZZnhNU3pLLWV4blZJaFFPZzVfdjduUkhNZ1g3ZkRUbGs0eUpNd2JLNi1OVDE1YkRraFh6RVJDQm9oSnpfUW80dW1BUDJCMXc?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T04:09:00+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Bolton restaurant in historic former school loses bid to keep extension - The Bolton News",
+      "title_fa": ""
     },
     "a9e726b551251b40": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -442,6 +612,23 @@
       "title": "ENKA Vakfı ve İstanbul Tiyatro Festivali İş Birliğinde 20. Yıl: Festival Lacrima ile Açılıyor - Fuar Dergisi",
       "title_fa": "فستيوال Lacrima"
     },
+    "fce07e3bb79a8786": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "fce07e3bb79a8786",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOY3B2ajEtajZVazV5bXg5MktTY2dNLUtIM1pSUF9ZVXJsR0hwU3J2TTdnNV9tc0RpSHBHdXhJN3FtNVJMY3NUSTdpZ3RyZ1c0Szg4WFh0SEU2WlhqMzduTjNPcU1uaTlobFlVb1Q5MmEyT3lRZFhwOGtEcGZ0V1ptNlNoSndVMHFYNkVuc2ZMbUZxVmVGM3Q3WW1PbkFoZw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T12:20:16+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Uluslararası Digital Film Festival İstanbul 16 Ekim’de başlıyor - Euronews.com",
+      "title_fa": ""
+    },
     "fd0dcd2c5e3f3e75": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
@@ -457,6 +644,23 @@
       "source": "Google News — Istanbul food",
       "summary_fa": "",
       "title": "Heavy Rain hits Istanbul - Anadolu Ajansı",
+      "title_fa": ""
+    },
+    "fec6a64ba5f64a82": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-14T20:16:01.571166+00:00",
+      "id": "fec6a64ba5f64a82",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYW9KMno3NmNweHpOTG9TYVh3bTV1UmdaTjJIcXlGSTFHYVNHWmhvRXhuLXQxN0FSZzJNbGNPemhZeWxPcG44a3piYkp3ZFVQdndEdDQxMTN5R1pmRFNtSXVqTmpnWk5aUFBvS3VGeldySkUtZ0xBZGZvN0czakluSU1fazFXNlZ3WXRVTmJxZHE?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-12T06:01:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "یک بulaشیکچی در استانبول به یک مilyarder رستوران تبدیل شد، اما اکنون با مشکلات مواجه است",
+      "title": "Bulaşıkçıydı restoran milyarderi oldu. Şimdi başı belada - Nefes Gazetesi",
       "title_fa": ""
     }
   },
@@ -478,6 +682,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 3
+    },
+    {
+      "at": "2026-10-14T20:16:01.571166+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 0
     }
   ]
 }
