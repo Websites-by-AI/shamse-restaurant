@@ -1,0 +1,95 @@
+name: Deploy website (Cloudflare Pages + Hugging Face Space)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # ---------------------------------------------------------------- Cloudflare
+  cloudflare-pages:
+    name: 🌩 Cloudflare Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare deploy folder
+        run: |
+          mkdir -p _site
+          cp index.html preview.html _site/
+          cp -r assets _site/
+          printf '%s\n' \
+            '/assets/*' \
+            '  Cache-Control: public, max-age=31536000, immutable' \
+            '/*' \
+            '  X-Content-Type-Options: nosniff' \
+            '  Referrer-Policy: strict-origin-when-cross-origin' > _site/_headers
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=shamse-restaurant --branch=main
+
+  # ------------------------------------------------------------- Hugging Face
+  huggingface-space:
+    name: 🤗 Hugging Face Space
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uploader
+        run: pip install -q "huggingface_hub>=0.27" hf_xet
+
+      - name: Publish to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          mkdir -p _space/assets/img
+          cp index.html preview.html _space/
+          cp assets/img/* _space/assets/img/
+          cat > _space/README.md <<'EOF'
+          ---
+          title: رستوران شمسه استانبول | Shamse Restaurant
+          emoji: 🍽️
+          colorFrom: yellow
+          colorTo: gray
+          sdk: static
+          pinned: false
+          license: mit
+          short_description: وب‌سایت دو شعبه‌ای رستوران شمسه استانبول (تکسیم و کوجاتپه)
+          ---
+
+          # 🌟 وب‌سایت رستوران شمسه | Shamse Restaurant Istanbul
+
+          سایت تک‌صفحه‌ای فارسی (RTL) رستوران شمسه — رستوران معروف ایرانی در استانبول با دو شعبه:
+          تکسیم (خیابان استقلال) و کوجاتپه (شمسه سو کلاب).
+
+          - 🐙 GitHub: https://github.com/Websites-by-AI/shamse-restaurant
+          - 🌐 GitHub Pages: https://websites-by-ai.github.io/shamse-restaurant/
+          - 🌩 Cloudflare Pages: https://shamse-restaurant.pages.dev
+          - 🤗 Hugging Face: https://huggingface.co/spaces/Sosa654321/shamse-restaurant
+
+          فایل اصلی: `index.html` · تصاویر: `assets/img/` · نسخهٔ تک‌فایل: `preview.html`
+          EOF
+          python - <<'PY'
+          import os
+          from huggingface_hub import HfApi
+          api = HfApi()
+          info = api.upload_folder(
+              repo_id="Sosa654321/shamse-restaurant",
+              repo_type="space",
+              folder_path="_space",
+              token=os.environ["HF_TOKEN"],
+              commit_message="chore: auto-deploy از GitHub Actions",
+          )
+          print("uploaded ->", info)
+          PY

@@ -4,8 +4,21 @@
 
 > 🎨 **طراحی و کدنویسی ۱۰۰٪ با هوش مصنوعی** — پروژه‌ی `shamse-restaurant` در سازمان [Websites-by-AI](https://github.com/Websites-by-AI)
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-d4af37?style=for-the-badge)](https://websites-by-ai.github.io/shamse-restaurant/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-d4af37?style=for-the-badge&logo=githubpages&logoColor=white)](https://websites-by-ai.github.io/shamse-restaurant/)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-Live-F38020?style=for-the-badge&logo=cloudflarepages&logoColor=white)](https://shamse-restaurant.pages.dev)
+[![Hugging Face Space](https://img.shields.io/badge/Hugging_Face-Space-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/spaces/Sosa654321/shamse-restaurant)
 [![Made with AI](https://img.shields.io/badge/Made_with-AI_🤖-9b2c2c?style=for-the-badge)](#)
+
+## 🚀 سه پلتفرم، یک سایت (همه از همین مخزن به‌روز می‌شوند)
+
+| پلتفرم | نشانی زنده | استقرار |
+|---|---|---|
+| 🐙 **GitHub Pages** | https://websites-by-ai.github.io/shamse-restaurant/ | خودکار (از برنچ `main`) |
+| 🌩 **Cloudflare Pages** | https://shamse-restaurant.pages.dev | خودکار با GitHub Actions |
+| 🤗 **Hugging Face Space** | https://huggingface.co/spaces/Sosa654321/shamse-restaurant | خودکار با GitHub Actions |
+
+> هر بار که روی برنچ `main` پوش می‌کنید، فایل `.github/workflows/deploy.yml` سایت را به‌صورت خودکار روی **Cloudflare Pages** و **Hugging Face Space** منتشر می‌کند.
+> برای اجرای دستی: GitHub → Actions → «Deploy website» → Run workflow.
 
 ---
 
@@ -74,6 +87,7 @@ shamse-restaurant/
 ├── index.html            ← سایت نهایی (GitHub Pages)
 ├── preview.html          ← نسخهٔ تک‌فایلِ خودبسنده (تصاویر base64 درون فایل)
 ├── build.py              ← اسکریپت ساخت (سایت عادی + نسخهٔ تک‌فایل)
+├── .github/workflows/    ← انتشار خودکار روی Cloudflare Pages و Hugging Face
 ├── src/
 │   └── page.html         ← سورس قالب (منبع ویرایش)
 ├── assets/
@@ -97,10 +111,21 @@ start index.html      # ویندوز
 open  index.html      # مک
 ```
 
-**انتشار:** مخزن با نام `Websites-by-AI/shamse-restaurant` در سازمان قرار دارد و GitHub Pages آن فعال است:
-🔗 **https://websites-by-ai.github.io/shamse-restaurant/**
+**انتشار خودکار:** با هر پوش روی `main`، ورک‌فلوی `.github/workflows/deploy.yml` این کارها را انجام می‌دهد:
 
-(برای مخزن شخصی: Settings → Pages → Deploy from a branch → `main` / `(root)`)
+1. **Cloudflare Pages** → پروژهٔ `shamse-restaurant` (آدرس: https://shamse-restaurant.pages.dev) با هدرهای کش و امنیتی (`_headers`)
+2. **Hugging Face Space** → اسپیس استاتیک `Sosa654321/shamse-restaurant` (آپلود با `huggingface_hub` + Xet)
+
+سه سکرت لازم در مخزن (Settings → Secrets and variables → Actions):
+
+| Secret | توضیح |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | توکن با دسترسی *Cloudflare Pages: Edit* |
+| `CLOUDFLARE_ACCOUNT_ID` | شناسهٔ اکانت کلادفلر |
+| `HF_TOKEN` | توکن Hugging Face با دسترسی *Write* |
+
+> ⚠️ اگر توکن‌ها را Revoke/Roll کنید، مقدار سکرت‌ها را هم در همین صفحه به‌روز کنید وگرنه انتشار خودکار خطا می‌دهد.
+> (GitHub Pages جدا از این‌هاست و از تنظیمات خود مخزن منتشر می‌شود.)
 
 ---
 
