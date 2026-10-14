@@ -18,6 +18,7 @@ BASE = (sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8080/").rstrip("
 WIDTHS = [1440, 1280, 1024, 901, 768, 390, 320]
 PAGES = ["index.html", "marketing.html", "events.html"]
 TG = "https://t.me/shamse_restaurant_bot"
+CH = "https://t.me/shamse_restaurant"
 report, fails = [], []
 
 
@@ -90,6 +91,8 @@ with sync_playwright() as pw:
         ok(pg.locator("footer.footer").count() == 1, "%s has footer" % pn)
         tg = pg.evaluate("(u) => document.querySelectorAll('a[href=\"' + u + '\"]').length", TG)
         ok(tg >= 2, "%s has >=2 telegram links" % pn, tg)
+        ch = pg.evaluate("(u) => document.querySelectorAll('a[href=\"' + u + '\"]').length", CH)
+        ok(ch >= 1, "%s links the public channel" % pn, ch)
         pg.close()
 
     for pn, want in (("events.html", ["index.html", "marketing.html"]),

@@ -68,7 +68,7 @@ jobs:
         run: python3 automation/telegram_bot.py poll
 
       - name: پست خودکار به کانال
-        if: (github.event_name == 'schedule' && github.event.schedule == '0 9 * * 1,3,5') || (github.event_name == 'workflow_dispatch' && (inputs.mode == 'post' || inputs.mode == 'selftest'))
+        if: (github.event_name == 'schedule' && github.event.schedule == '0 9 * * 1,3,5') || (github.event_name == 'workflow_dispatch' && inputs.mode == 'post')
         env: *bot_env
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
@@ -86,7 +86,13 @@ jobs:
           git add automation/state.json
           if git diff --cached --quiet; then
             echo "state unchanged"
-          else
-            git commit -m "chore(bot): update state [skip ci]"
-            git push
+            exit 0
           fi
+          git commit -m "chore(bot): update state [skip ci]"
+          # other bot runs may have pushed in the meantime -> rebase and retry
+          for i in 1 2 3; do
+            if git push; then echo "state pushed"; exit 0; fi
+            echo "push rejected — rebasing (attempt $i)"
+            git pull --rebase --autostash origin main || true
+          done
+          echo "could not push state (non-fatal)"; exit 0

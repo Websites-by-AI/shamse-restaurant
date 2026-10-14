@@ -3,10 +3,14 @@ name: Deploy website (Cloudflare Pages + Hugging Face Space)
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - 'automation/**'
-      - 'README.md'
-      - 'docs/**'
+    paths:
+      - 'index.html'
+      - 'marketing.html'
+      - 'events.html'
+      - 'preview.html'
+      - 'assets/**'
+      - 'src/**'
+      - 'build.py'
   workflow_dispatch:
 
 permissions:
