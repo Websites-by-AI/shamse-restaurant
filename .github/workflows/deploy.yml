@@ -53,9 +53,9 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          mkdir -p _space/assets/img
+          mkdir -p _space
           cp index.html preview.html _space/
-          cp assets/img/* _space/assets/img/
+          cp -r assets _space/
           cat > _space/README.md <<'EOF'
           ---
           title: رستوران شمسه استانبول | Shamse Restaurant
