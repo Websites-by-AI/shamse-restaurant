@@ -2,9 +2,9 @@
 
 وب‌سایت تک‌صفحه‌ای (One-Page) مدرن، راست‌به‌چپ و کاملاً واکنش‌گرا برای **رستوران شمسه** — رستوران معروف ایرانی در استانبول با **دو شعبه**: تکسیم (خیابان استقلال) و کوجاتپه (شمسه سو کلاب). ساخته‌شده با HTML/CSS/JavaScript خالص و **بدون هیچ کتابخانه‌ی بیرونی** (بدون jQuery، بدون Bootstrap، بدون CDN).
 
-> 🎨 **طراحی و کدنویسی ۱۰۰٪ با هوش مصنوعی** — پروژه‌ی `website-by_ai` در سازمان [Websites-by-AI](https://github.com/Websites-by-AI)
+> 🎨 **طراحی و کدنویسی ۱۰۰٪ با هوش مصنوعی** — پروژه‌ی `shamse-restaurant` در سازمان [Websites-by-AI](https://github.com/Websites-by-AI)
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-d4af37?style=for-the-badge)](https://websites-by-ai.github.io/website-by_ai/)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-d4af37?style=for-the-badge)](https://websites-by-ai.github.io/shamse-restaurant/)
 [![Made with AI](https://img.shields.io/badge/Made_with-AI_🤖-9b2c2c?style=for-the-badge)](#)
 
 ---
@@ -70,7 +70,7 @@
 ## 📂 ساختار پروژه
 
 ```
-website-by_ai/
+shamse-restaurant/
 ├── index.html            ← سایت نهایی (GitHub Pages)
 ├── preview.html          ← نسخهٔ تک‌فایلِ خودبسنده (تصاویر base64 درون فایل)
 ├── build.py              ← اسکریپت ساخت (سایت عادی + نسخهٔ تک‌فایل)
@@ -97,8 +97,8 @@ start index.html      # ویندوز
 open  index.html      # مک
 ```
 
-**انتشار:** مخزن در سازمان `Websites-by-AI` قرار دارد و GitHub Pages آن فعال است:
-🔗 **https://websites-by-ai.github.io/website-by_ai/**
+**انتشار:** مخزن با نام `Websites-by-AI/shamse-restaurant` در سازمان قرار دارد و GitHub Pages آن فعال است:
+🔗 **https://websites-by-ai.github.io/shamse-restaurant/**
 
 (برای مخزن شخصی: Settings → Pages → Deploy from a branch → `main` / `(root)`)
 
