@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>رستوران شمسه در استانبول | دو شعبه تکسیم و کوجاتپه – غذای ایرانی شمسه</title>
-<meta name="description" content="رستوران شمسه، رستوران معروف ایرانی در استانبول با دو شعبه: تکسیم (خیابان استقلال) و کوجاتپه. کباب‌های زغالی، خورش‌های اصیل، برنج زعفرانی، موسیقی زنده — همه‌روزه ۱۲ ظهر تا ۱:۳۰ بامداد.">
+<meta name="description" content="رستوران شمسه، رستوران معروف ایرانی در استانبول با دو شعبه: تکسیم (خیابان استقلال) و کوجاتپه. کباب‌های زغالی، خورش‌های اصیل، موسیقی زنده و طبقهٔ اختصاصی میتاپ و رویدادهای گروه‌های ایرانی — همه‌روزه ۱۲ ظهر تا ۱:۳۰ بامداد.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#14100d">
 <meta name="author" content="Shamse Restaurants">
@@ -240,6 +240,37 @@ h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.5;margin-top:8px
 .branch__cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
 .branch__cta .btn{padding:12px 22px;font-size:.94rem}
 
+/* --- meetup / community floor --- */
+.meetup-hero{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+.meetup-photo{position:relative;border-radius:26px;overflow:hidden;box-shadow:var(--shadow-lg);z-index:0;isolation:isolate}
+.meetup-photo img{width:100%;aspect-ratio:4/3.1;object-fit:cover}
+.meetup-photo .tag{position:absolute;top:16px;right:16px;background:var(--gold);color:#241c05;font-weight:800;font-size:.82rem;padding:8px 16px;border-radius:999px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--cream-2);border-radius:999px;padding:9px 16px;font-size:.86rem;font-weight:600;color:var(--ink-2);box-shadow:0 6px 14px rgba(20,16,13,.05)}
+.groups{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+.group-card{background:#fff;border:1px solid var(--cream-2);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 26px rgba(20,16,13,.06);transition:.35s}
+.group-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.ghead{display:flex;gap:14px;align-items:center}
+.gav{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;font-size:1.5rem;background:linear-gradient(135deg,rgba(212,175,55,.22),rgba(31,122,140,.16));flex:none}
+.group-card h3{font-size:1.02rem;line-height:1.5}
+.gsub{font-size:.8rem;color:var(--muted)}
+.gtags{display:flex;flex-wrap:wrap;gap:6px}
+.gtags span{font-size:.72rem;font-weight:700;background:rgba(31,122,140,.1);color:var(--turq);padding:3px 10px;border-radius:999px}
+.gmeta{display:grid;gap:7px;font-size:.85rem;color:var(--muted);border-top:1px dashed rgba(212,175,55,.45);padding-top:13px;margin-top:auto}
+.gmeta b{color:var(--ink-2)}
+.gmeta .people{display:flex;align-items:center;gap:8px}
+.stack{display:flex}
+.stack i{width:22px;height:22px;border-radius:50%;border:2px solid #fff;margin-left:-8px;display:grid;place-items:center;font-size:.62rem;font-style:normal;font-weight:800;color:#241c05;background:linear-gradient(135deg,var(--gold-soft),var(--gold))}
+.stack i:first-child{margin-left:0}
+.group-card .btn{align-self:flex-start;padding:10px 18px;font-size:.88rem;margin-top:4px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
+.step{background:#fff;border:1px solid var(--cream-2);border-radius:18px;padding:26px 22px;box-shadow:0 10px 26px rgba(20,16,13,.06)}
+.step b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--gold);color:#241c05;font-size:1rem;margin-bottom:14px}
+.step h3{font-size:1rem;margin-bottom:6px}
+.step p{font-size:.88rem;color:var(--muted)}
+.mnote{margin-top:30px;background:#fff;border:1px dashed rgba(212,175,55,.55);border-radius:16px;padding:18px 22px;font-size:.92rem;color:var(--muted)}
+.mcta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+
 /* --- gallery --- */
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:16px;margin-top:44px}
 .gallery a{border-radius:16px;overflow:hidden;position:relative;display:block;box-shadow:var(--shadow)}
@@ -341,7 +372,10 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 
 /* --- responsive --- */
 @media (max-width:1080px){
-  .cards{grid-template-columns:repeat(2,1fr)}
+  .nav a{padding:10px 9px;font-size:.92rem}
+  .cards,.groups{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .meetup-hero{grid-template-columns:1fr;gap:40px}
   .menu-grid{grid-template-columns:1fr}
   .menu-photo{position:static;max-width:520px}
   .fgrid{grid-template-columns:1fr 1fr}
@@ -367,7 +401,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
 }
 @media (max-width:640px){
   .section{padding:60px 0}
-  .cards,.platters,.quotes{grid-template-columns:1fr}
+  .cards,.platters,.quotes,.groups,.steps{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr}
   .grid2{grid-template-columns:1fr}
   .about-txt .list{grid-template-columns:1fr}
@@ -432,6 +466,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
       <a href="#about">درباره ما</a>
       <a href="#menu">منو</a>
       <a href="#branches">شعبه‌ها</a>
+      <a href="#meetup">میتاپ</a>
       <a href="#services">خدمات</a>
       <a href="#gallery">گالری</a>
       <a href="#reviews">نظرات</a>
@@ -450,7 +485,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
     <h1>رستوران شمسه؛ سفری به دل <em>طعم‌های اصیل ایران</em></h1>
     <p class="lead">
       شمسه، رستوران معروف ایرانی در قلب استانبول، با <b>دو شعبه</b> میزبان شماست: شعبه اصلی در خیابان استقلال (تکسیم)
-      و «شمسه سو کلاب» در کوجاتپه. عطر زعفران و زغال، سه طبقه سالن دل‌نشین، موسیقی زنده و مهمان‌نوازی ایرانی —
+      و «شمسه سو کلاب» در کوجاتپه. عطر زعفران و زغال، دو طبقه سالن (طبقهٔ همکف رستوران + طبقهٔ اختصاصی میتاپ)، موسیقی زنده و مهمان‌نوازی ایرانی —
       همه‌روزه از ۱۲ ظهر تا ۱:۳۰ بامداد.
     </p>
     <div class="cta">
@@ -480,7 +515,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
       </p>
       <p>
         منوی ما از خورش‌های معطری مانند قورمه سبزی و فسنجان تا کباب‌های آبدار زغالی و برنج زعفرانی
-        تازه‌دم‌شده را در بر می‌گیرد. شعبه تکسیم سه طبقه سالن مجزا، تراس و موسیقی زنده دارد و دسرهای سنتی،
+        تازه‌دم‌شده را در بر می‌گیرد. شعبه تکسیم دو طبقه دارد — طبقهٔ همکف سالن اصلی رستوران و طبقهٔ دوم میزبان میتاپ‌ها و گردهمایی‌های گروه‌های ایرانی — به‌همراه تراس و موسیقی زنده. دسرهای سنتی،
         چای ایرانی و قلیان سنتی تجربه‌ی شما را کامل می‌کنند.
       </p>
       <div class="list">
@@ -692,8 +727,8 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
     <div class="cards">
       <div class="card rev">
         <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3v8a4 4 0 004 4v6h2V3H8v6H6V3H4zm12 0v18h2v-6h2V9c0-2.2-.9-4.3-2.4-6H16z"/></svg></span>
-        <h3>سالن‌های سه‌طبقه و تراس</h3>
-        <p>شعبه تکسیم با سه طبقه سالن مجزا، کاشی‌کاری ایرانی و تراس رو به خیابان استقلال.</p>
+        <h3>سالن دو طبقه و تراس</h3>
+        <p>طبقهٔ همکف سالن اصلی رستوران، طبقهٔ دوم مخصوص میتاپ و رویدادها، و تراس رو به خیابان استقلال.</p>
       </div>
       <div class="card rev d1">
         <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6h-2V4a2 2 0 00-2-2H9a2 2 0 00-2 2v2H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V9a3 3 0 00-3-3zM9 4h6v2H9V4z"/></svg></span>
@@ -739,7 +774,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
             <li><span>📍</span><span>İstiklal Cd. No:179, Tomtom, 34440 Beyoğlu/İstanbul — بعد از کلیسای سن‌آنتوان و فروشگاه زارا، جنب بانک یاپی‌کردی</span></li>
             <li><span>🕐</span><span>همه‌روزه ۱۲:۰۰ ظهر تا ۰۱:۳۰ بامداد</span></li>
             <li><span>☎️</span><span dir="ltr"><a href="tel:+905013252452">+90 501 325 24 52</a></span></li>
-            <li><span>🏛</span><span>سه طبقه سالن مجزا + تراس، موسیقی زنده ایرانی، ظرفیت بالا برای گروه‌ها</span></li>
+            <li><span>🏛</span><span>دو طبقه: همکف سالن اصلی رستوران + <b>طبقهٔ دوم اختصاصی میتاپ و رویدادهای گروهی</b>؛ همچنین تراس و موسیقی زنده</span></li>
             <li><span>🚶</span><span>۷ دقیقه با ماشین از میدان تکسیم؛ دسترسی پیاده از ایستگاه مترو استقلال</span></li>
           </ul>
           <div class="branch__cta">
@@ -773,6 +808,129 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
   </div>
 </section>
 
+<!-- ================= MEETUP / COMMUNITY FLOOR ================= -->
+<section class="section section--cream" id="meetup">
+  <div class="wrap meetup-hero">
+    <div class="rev">
+      <span class="eyebrow">میتاپ و گردهمایی‌ها</span>
+      <h2 class="sec-title">طبقهٔ دوم شعبهٔ استقلال؛ خانهٔ میتاپ‌های جامعهٔ ایرانی</h2>
+      <p style="margin-top:16px;color:#4c4438">
+        شعبهٔ ما در خیابان استقلال <b>دو طبقه</b> دارد: طبقهٔ همکف، سالن اصلی رستوران است و
+        <b>طبقهٔ دوم مخصوص میتاپ‌ها، گردهمایی‌ها و رویدادهای گروه‌های ایرانی</b>. اگر گروهی دارید —
+        دورهمی دوستان، تبادل زبان، کافه‌کتاب، شبکهٔ متخصصان یا شب موسیقی — گروه خود را در
+        <a href="https://www.meetup.com/topics/iranian/" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:700">میتاپ</a>
+        بسازید و میزبان‌تان باشیم: ما فضا، چیدمان، پذیرایی و تجهیزات را آماده می‌کنیم.
+      </p>
+      <div class="chips">
+        <span class="chip">👥 ظرفیت تا ۶۰ نفر</span>
+        <span class="chip">📽 ویدئوپروژکتور و پرده</span>
+        <span class="chip">🎤 میکروفون و سیستم صوتی</span>
+        <span class="chip">📶 وای‌فای پرسرعت</span>
+        <span class="chip">🍽 منوی گروهی حلال</span>
+        <span class="chip">🫖 چای و شیرینی ایرانی</span>
+        <span class="chip">🚇 چند دقیقه از مترو استقلال</span>
+      </div>
+    </div>
+    <figure class="meetup-photo rev d2">
+      <img src="assets/img/meetup.jpg" alt="طبقهٔ دوم شعبهٔ استقلال شمسه در حال برگزاری یک میتاپ" loading="lazy">
+      <span class="tag">طبقهٔ میتاپ · شعبه استقلال</span>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="center rev" style="margin-top:70px">
+      <span class="eyebrow">جوامعی که اینجا گرد هم می‌آیند</span>
+      <h2 class="sec-title">مناسب برای این نوع میتاپ‌ها — به سبک Meetup</h2>
+      <p class="sec-sub">نمونه‌هایی از گروه‌هایی که می‌توانند طبقهٔ میتاپ شمسه را رزرو کنند؛ برای دیدن گروه‌های فعال، لینک‌های میتاپ هر کارت را باز کنید.</p>
+    </div>
+
+    <div class="groups">
+      <article class="group-card rev">
+        <div class="ghead"><span class="gav">🗣</span><span><h3>تبادل زبان و مکالمه</h3><span class="gsub">فارسی · ترکی · انگلیسی</span></span></div>
+        <div class="gtags"><span>زبان‌آموزی</span><span>بین‌المللی</span><span>هفتگی</span></div>
+        <div class="gmeta">
+          <span class="people"><span class="stack"><i>س</i><i>م</i><i>آ</i><i>+</i></span> گروه‌های فعال استانبول</span>
+          <span><b>زمان پیشنهادی:</b> چهارشنبه‌ها ۱۹:۰۰</span>
+        </div>
+        <a class="btn btn--line" href="https://www.meetup.com/speakeasy-istanbul/" target="_blank" rel="noopener">مشاهده در میتاپ ↗</a>
+      </article>
+
+      <article class="group-card rev d1">
+        <div class="ghead"><span class="gav">🤝</span><span><h3>دورهمی و شبکه‌سازی ایرانیان</h3><span class="gsub">جامعهٔ ایرانی استانبول</span></span></div>
+        <div class="gtags"><span>دوستیابی</span><span>شبکه‌سازی</span><span>غیررسمی</span></div>
+        <div class="gmeta">
+          <span class="people"><span class="stack"><i>ن</i><i>ر</i><i>پ</i><i>+</i></span> ۱۷٬۶۰۰+ عضو در ۲۸ گروه</span>
+          <span><b>زمان پیشنهادی:</b> جمعه‌ها ۱۷:۰۰</span>
+        </div>
+        <a class="btn btn--line" href="https://www.meetup.com/topics/iranian/" target="_blank" rel="noopener">گروه‌های ایرانی ↗</a>
+      </article>
+
+      <article class="group-card rev d2">
+        <div class="ghead"><span class="gav">📚</span><span><h3>کافه‌کتاب و ادبیات پارسی</h3><span class="gsub">حافظ‌خوانی · مولانا · داستان</span></span></div>
+        <div class="gtags"><span>کتاب‌خوانی</span><span>ادبیات</span><span>ماهانه</span></div>
+        <div class="gmeta">
+          <span class="people"><span class="stack"><i>ب</i><i>ه</i><i>ش</i><i>+</i></span> گروه‌های علاقه‌مند</span>
+          <span><b>زمان پیشنهادی:</b> سه‌شنبه‌ها ۱۸:۳۰</span>
+        </div>
+        <a class="btn btn--line" href="https://www.meetup.com/topics/iranians-get-together/" target="_blank" rel="noopener">فرهنگ ایرانی ↗</a>
+      </article>
+
+      <article class="group-card rev">
+        <div class="ghead"><span class="gav">🎶</span><span><h3>شب موسیقی و شعر</h3><span class="gsub">اجرای زنده · شب شعر</span></span></div>
+        <div class="gtags"><span>موسیقی</span><span>شعر</span><span>ماهانه</span></div>
+        <div class="gmeta">
+          <span class="people"><span class="stack"><i>م</i><i>ت</i><i>ک</i><i>+</i></span> همکاری با گروه‌های فرهنگی</span>
+          <span><b>زمان پیشنهادی:</b> پنجشنبه‌ها ۲۰:۰۰</span>
+        </div>
+        <a class="btn btn--line" href="https://www.meetup.com/topics/iranians-get-together/" target="_blank" rel="noopener">رویدادهای فرهنگی ↗</a>
+      </article>
+
+      <article class="group-card rev d1">
+        <div class="ghead"><span class="gav">💼</span><span><h3>شبکهٔ متخصصان و کارآفرینان</h3><span class="gsub">استارتاپ · کار · مهاجرت کاری</span></span></div>
+        <div class="gtags"><span>حرفه‌ای</span><span>کارآفرینی</span><span>ماهانه</span></div>
+        <div class="gmeta">
+          <span class="people"><span class="stack"><i>ع</i><i>ف</i><i>ر</i><i>+</i></span> با پروژکتور و ارائه</span>
+          <span><b>زمان پیشنهادی:</b> دوشنبه‌ها ۱۹:۰۰</span>
+        </div>
+        <a class="btn btn--line" href="https://www.meetup.com/topics/persians/" target="_blank" rel="noopener">دوستان پارسی ↗</a>
+      </article>
+
+      <article class="group-card rev d2">
+        <div class="ghead"><span class="gav">🌍</span><span><h3>تمرین زبان فارسی برای غیرفارسی‌زبان‌ها</h3><span class="gsub">برای علاقه‌مندان ترک و بین‌المللی</span></span></div>
+        <div class="gtags"><span>آموزش زبان</span><span>میان‌فرهنگی</span><span>هفتگی</span></div>
+        <div class="gmeta">
+          <span class="people"><span class="stack"><i>L</i><i>F</i><i>+</i></span> جلسات گفت‌وگوی سطح‌بندی‌شده</span>
+          <span><b>زمان پیشنهادی:</b> شنبه‌ها ۱۶:۰۰</span>
+        </div>
+        <a class="btn btn--line" href="https://www.meetup.com/topics/farsi/" target="_blank" rel="noopener">گروه‌های فارسی ↗</a>
+      </article>
+    </div>
+
+    <div class="center rev" style="margin-top:70px">
+      <span class="eyebrow">چطور میزبان شویم؟</span>
+      <h2 class="sec-title">میزبانی گروه شما در ۴ قدم</h2>
+    </div>
+    <div class="steps">
+      <div class="step rev"><b>۱</b><h3>گروه را انتخاب کنید</h3><p>گروه خود را در میتاپ بسازید یا از میان گروه‌های فعال دعوت بگیرید.</p></div>
+      <div class="step rev d1"><b>۲</b><h3>تاریخ بگیرید</h3><p>فرم رزرو یا واتساپ؛ روزهای میانی هفته (۱۵:۰۰ تا ۱۸:۰۰) برای میتاپ سبک‌تر و آرام‌تر است.</p></div>
+      <div class="step rev d2"><b>۳</b><h3>هماهنگی نهایی</h3><p>چیدمان میزها، پروژکتور، میکروفون و منوی گروهی را با هم تنظیم می‌کنیم.</p></div>
+      <div class="step rev d3"><b>۴</b><h3>برگزار کنید</h3><p>طبقهٔ دوم در اختیار شماست؛ پذیرایی اختصاصی و اپراتور صدا هم قابل افزودن است.</p></div>
+    </div>
+
+    <p class="mnote rev">
+      🤝 شرایط میزبانی (ساعت، ظرفیت و منوی گروهی) هنگام رزرو هماهنگ می‌شود؛ برای جلسات با ارائه و نمایش اسلاید، پروژکتور و پرده بدون هزینهٔ اضافه در اختیار شماست.
+      <br>🔎 برای دیدن گروه‌های فعال استانبول: <a href="https://www.meetup.com/find/tr--istanbul/language-exchange/" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:700">تبادل زبان در استانبول</a> ·
+      <a href="https://www.meetup.com/find/tr--istanbul/international-friends/" target="_blank" rel="noopener" style="color:var(--gold-2);font-weight:700">رویدادهای بین‌المللی استانبول</a>
+    </p>
+
+    <div class="mcta rev">
+      <a class="btn btn--gold" href="#reserve" data-branch="taksim">رزرو طبقهٔ میتاپ (شعبه استقلال)</a>
+      <a class="btn btn--dark" href="https://wa.me/905013252452?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%DB%8C%D8%B2%D8%A8%D8%A7%D9%86%DB%8C%20%D9%85%DB%8C%D8%AA%D8%A7%D9%BE%20%D8%AF%D8%B1%20%D8%B7%D8%A8%D9%82%D9%87%20%D8%AF%D9%88%D9%85%20%D8%B4%D8%B9%D8%A8%D9%87%20%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84" target="_blank" rel="noopener">گفت‌وگو در واتساپ</a>
+      <a class="btn btn--line" href="https://www.meetup.com/topics/iranian/" target="_blank" rel="noopener">گروه‌های ایرانی در میتاپ</a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= GALLERY ================= -->
 <section class="section section--soft" id="gallery">
   <div class="wrap">
@@ -792,6 +950,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
       <a href="assets/img/dish-bastani.jpg"><img src="assets/img/dish-bastani.jpg" alt="بستنی سنتی زعفرانی" loading="lazy"></a>
       <a href="assets/img/drink-doogh.jpg"><img src="assets/img/drink-doogh.jpg" alt="دوغ سنتی با نعنا" loading="lazy"></a>
       <a href="assets/img/interior2.jpg"><img src="assets/img/interior2.jpg" alt="سالن شمسه سو کلاب، شعبه کوجاتپه" loading="lazy"></a>
+      <a href="assets/img/meetup.jpg"><img src="assets/img/meetup.jpg" alt="میتاپ گروه‌های ایرانی در طبقهٔ دوم شعبه استقلال" loading="lazy"></a>
     </div>
   </div>
 </section>
@@ -972,6 +1131,12 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
         <p>بله 🎉 شعبه کوجاتپه («شمسه سو کلاب») فضای مناسبی برای جشن تولد، سالگرد و مهمانی‌های خانوادگی دارد. ما می‌توانیم دکوراسیون، موسیقی زنده و منوی ویژه برای شما آماده کنیم.</p>
       </details>
       <details class="q rev">
+        <summary><span class="pl">+</span> آیا می‌توانیم گروه میتاپ خود را در شمسه برگزار کنیم؟</summary>
+        <p>بله 🤝 شعبهٔ خیابان استقلال دو طبقه دارد و <b>طبقهٔ دوم مخصوص میتاپ‌ها و گردهمایی‌های گروه‌های ایرانی</b> است؛ با ظرفیت تا ۶۰ نفر،
+        ویدئوپروژکتور، پرده، میکروفون، وای‌فای و منوی گروهی حلال. گروه‌هایی مثل تبادل زبان، کافه‌کتاب، شبکهٔ متخصصان و شب موسیقی از این فضا استفاده می‌کنند.
+        برای هماهنگی، فرم رزرو (با انتخاب شعبهٔ تکسیم) یا واتساپ را استفاده کنید.</p>
+      </details>
+      <details class="q rev">
         <summary><span class="pl">+</span> ساعات کاری رستوران چگونه است؟</summary>
         <p>هر دو شعبه همه‌روزه از ساعت ۱۲ ظهر تا ۱:۳۰ بامداد آماده پذیرایی هستند؛ آشپزخانه تا ۱۲:۳۰ شب سفارش می‌پذیرد.</p>
       </details>
@@ -1032,6 +1197,7 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
         <li><a href="#about">درباره ما</a></li>
         <li><a href="#menu">منوی غذا</a></li>
         <li><a href="#branches">شعبه‌های ما (تکسیم و کوجاتپه)</a></li>
+        <li><a href="#meetup">میتاپ و گردهمایی‌ها</a></li>
         <li><a href="#platters">سینی‌های مخصوص</a></li>
         <li><a href="#gallery">گالری تصاویر</a></li>
         <li><a href="#faq">سوالات متداول</a></li>
@@ -1110,6 +1276,23 @@ details.q p{color:var(--muted);padding:0 44px 20px 0}
       "acceptsReservations":"True",
       "sameAs":["https://www.instagram.com/shamse.resturan","https://youtube.com/@shamse.resturan"],
       "image":"assets/img/interior2.jpg"
+    },
+    {
+      "@type":"EventVenue",
+      "@id":"https://shamserestaurants.com/#meetup-floor",
+      "name":"طبقهٔ میتاپ شمسه — شعبه استقلال",
+      "description":"طبقهٔ دوم شعبه خیابان استقلال رستوران شمسه؛ میزبان میتاپ‌ها، گردهمایی گروه‌های ایرانی و رویدادهای اجتماعی و حرفه‌ای.",
+      "maximumAttendeeCapacity":60,
+      "publicAccess":true,
+      "address":{"@type":"PostalAddress","streetAddress":"İstiklal Caddesi No:179, Tomtom","addressLocality":"Beyoğlu","addressRegion":"Istanbul","postalCode":"34440","addressCountry":"TR"},
+      "containedInPlace":{"@id":"https://shamserestaurants.com/#branch-taksim"},
+      "amenityFeature":[
+        {"@type":"LocationFeatureSpecification","name":"ویدئوپروژکتور و پرده نمایش","value":true},
+        {"@type":"LocationFeatureSpecification","name":"سیستم صوتی و میکروفون","value":true},
+        {"@type":"LocationFeatureSpecification","name":"وای‌فای پرسرعت","value":true},
+        {"@type":"LocationFeatureSpecification","name":"منوی گروهی حلال","value":true},
+        {"@type":"LocationFeatureSpecification","name":"چای و قهوه ایرانی","value":true}
+      ]
     }
   ]
 }
