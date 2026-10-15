@@ -1,5 +1,22 @@
 {
   "items": {
+    "00468e2f2c9253d4": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "00468e2f2c9253d4",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPbGcxNWVjUUVNZkNQSldsOWVqWTd3Tzl3dGRCdzZFeDRsRnQycDBzS0ZXcm52OTdobm51VkpmdFI0Z1k1MnZLZ0x2b2JpMXFMUzJNV0FuS2g3ZVpFX0tHZGdhcUVOczg2Y2trY1hTLW1aLXhCNnRUUmVUd3JmNnJEcEhTVFUzeC1BZm5yR29ZVWtaZUdkdkljQXczRFNVSl83Tk9BRzI0TGR2VkNaOXVieDJmekJtV01HQzNKMDJtS01xbUYydE9hd09vdEV0c3JwN1ZxN1lPdG5SYU44?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T06:30:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "سوال از وضعیت سرویس‌های غذا پس از محدودیت‌های جدید",
+      "title": "İstanbul’da Getir çalışıyor mu, Yemeksepeti motokurye yasağından etkilendi mi, market siparişleri verilebiliyor mu? - Güneydoğu Ekspres",
+      "title_fa": "حالت سرویس‌های غذا در استانبول"
+    },
     "0593b805d7d6208a": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -34,6 +51,23 @@
       "title": "Atıktan Sanata projesi gastronomi manifestosuyla yeni bir boyut kazandı - Para Dergi",
       "title_fa": "جشنوارهٔ غذا در استانبول"
     },
+    "10ca18ca872afd6f": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "10ca18ca872afd6f",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYkxwbnZDd1U3elBVdlNnYXJWQ0FzR1c3bnNoZmdyMmpqVlBLRnl5XzNJVmFKb3RHLXJza2xOVVZxWnlyVko1SG5RLTZVcC0xUk54YTBqNm9ENmNPaG5hU1RONzhmN3Z4OUZGXy1TVUlOT2dIeW00UW9DeldXUTFZWFczNVZOWnNkSGlTdjN4WUZnaXJFamlmU0xvbmQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T08:08:33+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "غذاهای آفریقایی به اندازة فکر شده به ذائقة ترک نزدیک نیست",
+      "title": "Afrika yemekleri Türk damak tadına sanıldığı kadar uzak değil - Canlı Gaste",
+      "title_fa": "غذاهای آفریقایی"
+    },
     "1609ea2fa7c7c38c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -50,6 +84,23 @@
       "summary_fa": "",
       "title": "4. Uluslararası Digital Film Festival İstanbul başlıyor - Kadıköy Life",
       "title_fa": ""
+    },
+    "1813eb1112625f6e": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "1813eb1112625f6e",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcDhuVjBjU1h5UU1aZk9nSlpjdjJUVVpMbkd3djB4V3RvRlBiTWIxd0paQjdwdTlscW9VaVRMTDdBSGk3MXU3OG40LWhIdmJvVjVldWRIQm1MT2JPb0xmRFFlcmE2UnZqWW5KZkxvSDRwdUFoLVl0QzdwVHpiQ29FOG1Ob3BwTlAtRmEwRjFLLXU?oc=5",
+      "message_id": 14,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-15T11:31:38.638209+00:00",
+      "published": "2026-10-06T00:12:27+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "فستیوال غذایی در استانبول با ۴ صحنه مختلف",
+      "title": "Dört ayrı sahnede festival buluşması - www.milliyetsanat.com",
+      "title_fa": "فستیوال غذایی"
     },
     "19e55ee5af25eca9": {
       "cat": "رستوران و کافه در استانبول",
@@ -170,6 +221,23 @@
       "title": "Muğla’nın bereketli toprakları İstanbul’da vitrine çıktı: Gastronomi dünyası bu lezzetleri konuştu - Havadis",
       "title_fa": "جشنواره غذا در استانبول"
     },
+    "328d1965dae97c50": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "328d1965dae97c50",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcnQ2TkhBOWVTcU9vbUtjd0ZRQWlJckRBWHFHOENlZTc2TG9Db0VlN3F6Q3NHSmNqTHZTekVYMFRwQ3N2WlRWREdyLXM4ZUdaQVJERXpmSVMyS0d1QmlQZ01GYWRLZDNTaTZmeVNuUkJSRnRLVV94VV9NNXlBakJubUtPeWRDaWtTOWRqN0FuejRoRldvSFE?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T05:40:25+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Ünlü isimlerden 'İstanbul Watch Festival'e ziyaret - Habertürk",
+      "title_fa": ""
+    },
     "3440377fc9936cc7": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -186,6 +254,23 @@
       "summary_fa": "رستورانی ایتالیایی که از استادانش敬ت می‌کند",
       "title": "An Italian restaurant that respects its masters - Hürriyet Daily News",
       "title_fa": "رستوران ایتالیایی"
+    },
+    "38e087921a9cf275": {
+      "cat": "رویدادها و فراخوان‌های شهر استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "38e087921a9cf275",
+      "link": "https://yabangee.com/language-no-broblem-alan-kadikoy/",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-05T13:35:03+00:00",
+      "score": 2,
+      "source": "Yabangee Istanbul (رویدادها)",
+      "summary_fa": "اجرای نمایش زبان: بدون مشکل با رقصنده فلسطینی ماراه حاج حسین در استانبول",
+      "title": "(Nov 28-29) Language: No Broblem @ Alan Kadıköy",
+      "title_fa": "نمایش زبان: بدون مشکل"
     },
     "3c56c5192edc9844": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -221,6 +306,23 @@
       "title": "Kartal’da En İyi Restoranlar: Sahil, Balık, Et ve Kebap - Kartal 24",
       "title_fa": "رستوران‌های کارタル"
     },
+    "455d699c52f545f1": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "455d699c52f545f1",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQW10SVhzSzRfY2gtQnRIMDZBM29ILUlFX2paNVB1S3Q4c1gxMWF0TExMUmpxOUJpV25SN2JDeUtQSVpoWVM3elFYSlVfbDRMZHpXNDIwd3h0bmttX3dlOC1LdWxqcExoZVJDc29QaVVjZzdUVk1ybjgxRXNkOUV3SFM4RDhENVJ2N3ZQZjlYeTFmdmU4WURVRFN4b29FVHNnYkNsNXlMZkZXNm9RenFTRzY4cVlzcU13?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T07:10:08+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "ممنوعیت کوریه در استانبول و وضعیت کار یخد ماتordered",
+      "title": "15 Ekim Yemeksepeti çalışıyor mu, Trendyol Yemek, Getir sipariş alıyor mu? İstanbul kurye yasağı ne zaman bitecek? - KARAR",
+      "title_fa": "کدخداچی در استانبول"
+    },
     "47ee7e2f38903bcb": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -237,6 +339,23 @@
       "summary_fa": "در مورد کارهای مرتبط با غزه نگرانی وجود دارد",
       "title": "UN experts urge food agency to uphold human rights amid concerns about Gaza-related work - Anadolu Ajansı",
       "title_fa": "تأکید کارشناسان سازمان ملل"
+    },
+    "50fd7cf780c68075": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "50fd7cf780c68075",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNXlFOFJKUGk3V1B2MmE5TjdjcERQVTZaaHFlMHA5cUxjelB4c0t2bXlNcTVCWFFOZUNnUXhqQUVBUWZmUzAzSjZoTHptX2FsOVM4Q0JXd0U3TjBiM1pkbG9KNXZBR01WNVI5YTZpYnZnTElLNEZLMGVjQUZ0c19maHllQXAtanExLTZVU3Q2Ny1ROTNyMGR4S1dnT2pSOWdkU2tIVzdwS2g?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-10T10:08:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "در کافه‌ها و رستوران‌های الانیا سیگار کشیدن ممنوع شد.",
+      "title": "Alanya’daki kafe ve restoranlarda o alanlarda sigara tamamen yasaklanıyor! - Alanya Postası",
+      "title_fa": "الانیا: سیگار در کافه‌ها ممنوع"
     },
     "537dd1fe1af160fb": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -442,6 +561,23 @@
       "title": "Paris Restoran Rehberi: En İyi Restoranlar ve Lezzet Durakları - Oggusto",
       "title_fa": ""
     },
+    "7692692da9a9ba55": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "7692692da9a9ba55",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOb1hwaTZZZ3N4RWdEcEVRWmV5OE5Kd1RkRk1qUE9NaUhBTVhzUXIzVkFPTzM3YkxDbHBfZVR3dl9LWTB1T21yY1A0TzNIeUhzQ1UyaTNFRVNqXzF6eko4czJ0RGc1M3ZmMGlOR05oQkcxeGVINlNra1BEbnVEWDEwSjBDdlF2bXlvVEJNS1JsTVkyMzJPMGpxOFRzMFUwOXVBdG1UV3BJcFlHTnBJS3FhTUJGb3doc1I1eXc?oc=5",
+      "message_id": 14,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-15T11:31:38.638209+00:00",
+      "published": "2026-10-06T13:28:17+00:00",
+      "score": 8,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "جشنواره گاستروآنتپ در غازی عینتاب برگزار شد و عاشقان غذا را جذب کرد",
+      "title": "Smoke, sweets and crowds fill Gaziantep as GastroAntep draws food lovers - Türkiye Today",
+      "title_fa": "جشنواره گاستروآنتپ"
+    },
     "7790be7e360209fd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -526,6 +662,23 @@
       "summary_fa": "رستورانی در استانبول دچار آتش‌سوزی شد",
       "title": "Arnavutköy'de korku dolu anlar: Restoran alevlere teslim oldu - Muhalif",
       "title_fa": "آتش‌سوزی در رستورانی"
+    },
+    "92603e373b080318": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "92603e373b080318",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR1RFTG42RkR6ZVBaRGFwWUFNdlI1cm0xT1A4X1Q2UjhRWjRRX1lXSzNtV1dtdG44eTJKUTZBWmpNRVpFTXRuZl8tVWg1UEFXaTdiY3ExT1pkV3ZzUlFSY0VQV05XUHlXQ2hySUlJUk9xSE84Qno3Q25PZHh5bUhHNnNlQks0RVQ4TjVYeG5fSEhVZ2J6bnlzdHBkaEY0ZFVaVFQza2RBVjZmSFRrMHBkcQ?oc=5",
+      "message_id": 14,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-15T11:31:38.638209+00:00",
+      "published": "2026-10-06T23:20:18+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "فستیوال جاز استانبول در حال برگزاری است",
+      "title": "'Şehrin Caz Hâli' İstanbul’u kuşattı: Festival devam ediyor - Türkiye Gazetesi",
+      "title_fa": "فستیوال جاز استانبول"
     },
     "93de7437e2a93173": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -782,6 +935,23 @@
       "title": "İstanbul Watch Festival: Saat Dünyasına Yakından Bakmak İçin İki Gün - theMagger",
       "title_fa": ""
     },
+    "b91075efd0262007": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "b91075efd0262007",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQ1ktd2xMVHhaRE00emo2RzQ3SWF6RXBGQlA2QzZCS1gzdzZmcWJqRE9yUXFCcHQ5bkhNSW1NS3EtemNKZ3BNWWY5TzVWcldWVE9FT3dUYTlKTXZPZEs0ZTdfRG1vd3EtcEVaTkhpUF9XeGR5UmgwRHRKZGFHdTVWMS13?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-06T07:00:00+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "رستوران زولا باگرفود در لندن شعبه دوم خود را باز می‌کند",
+      "title": "Hyped burger restaurant Zula is finally opening a second location in London - Time Out Worldwide",
+      "title_fa": "رستوران زولا"
+    },
     "bc99ea7626013705": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -867,6 +1037,23 @@
       "title": "Kastamonu İstanbul'a taşınıyor: 5 gün sürecek festival başlıyor - Taşköprü Postası",
       "title_fa": "فستیوال ۵ روزه"
     },
+    "c9eb6c9f3e3a59ce": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "c9eb6c9f3e3a59ce",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9xTjYxMVJ1Q015UG1YUE0xZUxSWXh2ZE9DYjZrRVExLVJQX0I4V21LLVd0cVluc29qcWstZ3h5Sml0Y3B3UDFwaENzdEgzN19VWkxkT244cVNEWkthY3h4NGM0Z3pZdnRUZXlHZzV1VXN1Q2xYVE9HM0VBbXYtUQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-13T22:27:17+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "شعبه‌ای از رستوران یک سرآشپرد در استانبول بستن موقت",
+      "title": "Champion chef is temporarily closing his restaurant: The reason moved those who heard it - Haberler.com",
+      "title_fa": "بستن موقت رستوران"
+    },
     "ceb1690c68af6c41": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -917,6 +1104,23 @@
       "summary_fa": "ارдоغان امنیت غذایی را مهم می‌داند",
       "title": "Erdoğan says access to safe food is matter of national security - Hürriyet Daily News",
       "title_fa": "غذا و امنیت ملی"
+    },
+    "d98674accb4f6e2c": {
+      "cat": "رویدادها و فراخوان‌های شهر استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-15T11:31:38.638209+00:00",
+      "id": "d98674accb4f6e2c",
+      "link": "https://yabangee.com/30th-istanbul-theatre-festival/",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-05T13:57:45+00:00",
+      "score": 2,
+      "source": "Yabangee Istanbul (رویدادها)",
+      "summary_fa": "جشنواره‌ای با برنامه‌های متنوع تئاتر و رقص در استانبول برگزار می‌شود.",
+      "title": "(Nov 22- Sept 2) 30th Istanbul Theatre Festival",
+      "title_fa": "سی‌امین جشنواره تئاتر استانبول"
     },
     "dd1519940301ed20": {
       "cat": "رستوران و کافه در استانبول",
@@ -1105,6 +1309,12 @@
     },
     {
       "at": "2026-10-15T04:41:44.199454+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-15T11:31:38.638209+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
