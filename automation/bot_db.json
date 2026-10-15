@@ -5,8 +5,8 @@
     "cmd:events": 1,
     "cmd:menu": 1,
     "cmd:rsvp": 1,
-    "cmd:start": 3,
-    "messages": 7
+    "cmd:start": 4,
+    "messages": 8
   },
   "reminders": {},
   "rsvps": {},
