@@ -17,6 +17,23 @@
       "title": "İstanbul’da Getir çalışıyor mu, Yemeksepeti motokurye yasağından etkilendi mi, market siparişleri verilebiliyor mu? - Güneydoğu Ekspres",
       "title_fa": "حالت سرویس‌های غذا در استانبول"
     },
+    "0189eb12a83edbf3": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "0189eb12a83edbf3",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1FRkh0VnEzWWd1VGJuYVMwNzZIT0luQ3FJV0Joa0dZRl9VS0g5Rm5paTkwdHFsV2k2MjJjczRodEh6MkczLU9XSDh6SmZzTlFXb2pGTjJMZzRGSklKNU54eGZHeDdzei13c3NoQ3ExOGxKdWZLUjV5TVJ4OE9ZQQ?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-14T09:09:06+00:00",
+      "score": 8,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "دنیای پنهانی پشت بازار بزرگ استانبول وجود دارد که قرن‌ها تغییر نکرده است",
+      "title": "There’s a hidden world behind Istanbul’s Grand Bazaar that hasn’t changed in centuries - CNN",
+      "title_fa": "دنیای پنهان بازار بزرگ استانبول"
+    },
     "0390b64c5a353509": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -108,10 +125,10 @@
       "first_seen": "2026-10-15T04:41:44.199454+00:00",
       "id": "0cecce9f297d8ce8",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNQzhUSlJsSXlXVnhEVjJoQ1NUWGlpYkxZSUV4azNKS2o3YU0weHo4YlhseEpNQWpSNXl5TVVvNW5ab2h2b2x3VmpYdzBqd1l3MUJieGtxZFJmSG1ZTXFuT0xCck50TlRWdXhkdkhoaHhmcE5HN1JUWmdMSVBROFluQ3ZtcURCUUsxSGw1OVJnVHpRVHVNbEpjYnJrQk9DZlVYdnRzM1ZlWDhJeWlTdVg3NWJwekZuVnVJdTg0bWdEQdIBxAFBVV95cUxPaE5tUUZFdE85SGk1Vkl4Zm16d2p4TGt6MkhiTDY5T3hlY0hlemN3U3lFem1wY01DaG0tVFlXWFZvRy1iMDBzcHlfYXBhSG16QnRXSHFnVndQNndxb29CbXdhRlQxakk1T3BSajFTSEZzaGVHUHRVZWxDQVdKQmc4MFpSZjJwS24tTzU1YWZjS0tvUGMzRmlhWWFjNUNmRjBUQzkxNGpGREhTbDRCUlQ2bkVCOXJ6eEZjdUxWa1BZX3ZFVkJJ?oc=5",
-      "message_id": null,
+      "message_id": 25,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-17T20:45:01.972726+00:00",
       "published": "2026-10-07T07:38:58+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -374,6 +391,23 @@
       "title": "İstanbul'da aşçılar ve tedarikçiler buluşma gerçekleştiriyor - Alparslan Diyarı",
       "title_fa": "همایش آشپزها در استانبول"
     },
+    "1a84c99d27eee96b": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "1a84c99d27eee96b",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNFdIeVBPTFZsUnhVSzRDZWZ6Z2pSQS1OeGxiS1ZKS1dRWVVXRjZISkJKc1l6bWMtc2xqSHpHS1NHVjhURU5pOTRwMHZtbmNSdXVVaWNqOWlUWFpwa3N0a2Y5SzA5UFh4UGlORGJ3M0RsUWdWbHBpMms4d2ZpQ0Y2Y1lvcWdGamxxeFg3NFo4c0JMTEl1MFV2NGpFX3c0MmpsT1dCd2lwMDlOMTR1NzdJOVFGY192dlE?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T07:51:22+00:00",
+      "score": 8,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "استانبول ۲۵.۶ درصد از هزینه‌های خانوار ترکیه را به خود اختصاص داده است.",
+      "title": "Istanbul accounts for 25.6% of Türkiye’s household consumption spending - İlke Haber Ajansı",
+      "title_fa": "25.6% هزینه‌های خانوار ترکیه در استانبول"
+    },
     "1b8abedacef46b7f": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -424,6 +458,23 @@
       "summary_fa": "رستورانی در استانبول دچار آتش‌سوزی شد",
       "title": "Arnavutköy’de restoran alevlere teslim oldu: Mahsur kalanlar kendini dışarı attı - TRHaber",
       "title_fa": "آتش‌سوزی در رستوران"
+    },
+    "2a6d3c15cd46bf48": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "2a6d3c15cd46bf48",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQX2VmZjN2LTRiVkRzVmdIMWR0aTlNMUdVdmYtNk1BcXkyX1did2d6b3ZVTDlfNkx5aUJROFNxbGNpQ0xkQXVsdnpVa0F2VXd3dk9RS2pORE5JcVliTC1nWGk0c0ZUX3JTX25rMnk4NU9yUW1XclhsOHZjeHZGMU0zNmd3?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-14T01:26:47+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "این خبر به استانبول یا رستوران‌های ایرانی در استانبول اشاره‌ای ندارد.",
+      "title": "İnovasyon Tavuk Dünyası’nı uçurdu - Antalya Son Haber",
+      "title_fa": "تاووک دنیاسی"
     },
     "2aa0ffb8503cd14e": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -782,6 +833,23 @@
       "title": "Food Review: Sorena In Bandra Goes From Classic Comfort Food To Playful Cocktails Inspired By Five Cities - Free Press Journal",
       "title_fa": "مرور غذا"
     },
+    "4b348dadd12b0a8e": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "4b348dadd12b0a8e",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5NdXFaOTQwXy1FekdFa3M4OUYzc0JJU3F6VXljc29Oa3pMSmV0WDdqNXlFVHpHanppekdTdm96dzAyTDNoUVBrMDBpZlpXMjRaSmlBWks1UQ?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-14T21:00:00+00:00",
+      "score": 8,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "نمایشگاه محصولات K-Halal در استانبول برای اروپا، خاورمیانه و آفریقای شمالی برگزار شد.",
+      "title": "KITA holds Istanbul K-Halal product showcase targeting Europe, Middle East and North Africa - 헤럴드경제",
+      "title_fa": "نمایشگاه محصولات K-Halal"
+    },
     "4bb18171359a16b2": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -798,6 +866,23 @@
       "summary_fa": "رستوران‌های جعلی در استانبول فاش شد. ۹ رستوران جعلی در استانبول شناسایی شدند.",
       "title": "9 restoranı varmış gibi farklı farklı siparişler aldı! Sahte restoran zinciri deşifre oldu - Haber 7",
       "title_fa": "رستوران‌های جعلی در استانبول"
+    },
+    "4cf36ba7310b783f": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "4cf36ba7310b783f",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcm5KZGhvVVBHbnk5bS1nNGRlT0pndEFzUDNXZVo0c1ZsMkVjT1A3eUhFdk1pWjF6TlBNN2hScldVYWNiVVhqSnZRekx2UVM4UVlrUHJuM0ZYaFpoenBfcXE0cHg0NHQ1SE9YY055eW93dXFKWXVKMElTVXN6UFJLVXNrY3NhcUpwVE1sZTZ0d3RKY3MweUYwMGV3N21nSmM?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T09:02:01+00:00",
+      "score": 8,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "۶ شهر که بازارهایشانเหมือน موزه هستند",
+      "title": "6 cities where the market is the real museum - Getaway Magazine",
+      "title_fa": "۶ شهر با بازارهای جذاب"
     },
     "4e91694f5fd7e5aa": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -934,6 +1019,23 @@
       "summary_fa": "",
       "title": "Türkiye’nin ilk saat festivali İstanbul Watch Festival saat meraklılarını buluşturdu - Haberizlenim",
       "title_fa": ""
+    },
+    "5842b6ea51cde5ff": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "5842b6ea51cde5ff",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE80MXQwcHNFSF8zUUZadmtVdTdfZnVtbDNjOC1mbW5rQmNBc2xRbWNxTnI4YUJkOVY2QjRDVzZZbEdqUDRBQU5ianFYUDBwdw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T07:43:59+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "هیئت‌های بازرگانی کره به استانبول اعزام شدند",
+      "title": "The Korea Imports Association announced on the 16th that it has dispatched import delegations to Ist.. - 매일경제",
+      "title_fa": "فرستادن هیئت‌های بازرگانی"
     },
     "5a6fa1c43dd6fbe1": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -1088,6 +1190,23 @@
       "title": "Gastronomi dünyasının yıldızları sekizinci kez aynı sofrada buluştu - Havadis",
       "title_fa": "جشنواره گاسترونومی استانبول"
     },
+    "640163b97ed6a6b2": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "640163b97ed6a6b2",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZTItYUROblZxdVhQY2pHRVU3X3RmZ1pON290N0lwem4wdjZEc2x2NEhuZzd1OTBOX2xaZE5iUV9UMW1VRXcteEttdVM5TmNnUHRSTU5IcS1xRl9mRk15ZTNCaUxIZ21CUmJhbkpMdmhXakRCZjExQmtrLVExUXZ6NGY2elczbjZqSFRWa1Zzbm5OMnNGSURVb1BBaHhJc21QMTI5Q0cxd05VRHVXU0N1SEI3RDZfNWZsbFV6NEZIT2gxN1J3aGlEZndmZFkzS1B0TkxzMzVTNzVtaE5VQ25XNWxIOA?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T13:31:22+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "TAB Gida برنامه خرید سهام چند ساله خود را در بورس استانبول پیش برد.",
+      "title": "TAB Gida Advances Multi-Year Share Buyback Program on Borsa Istanbul - The Globe and Mail",
+      "title_fa": "برنامه خرید سهام TAB Gida"
+    },
     "64b3fd1c1a95dcee": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -1156,6 +1275,23 @@
       "title": "İstanbul Watch Festival: Saat Dünyasına Yakından Bakmak İçin İki Gün - theMagger",
       "title_fa": ""
     },
+    "67b5010012b2657c": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "67b5010012b2657c",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOWd3UjhKM3E0T3ppVDFKektWTnFyQ3dUclZfeGVTdGZGZk1hQXQ3XzdEZzVJSkNOZ0thdzM4VXRZWkt6SVFIR0daZVFpME05RmhfZlZBU2t6MmVkLWVWSnVjYkNmaG5yU1NIT3h4OUpCMXpxU2dJb0J4dnAtVDBXZDhhQUUwWTdOM3ctLVdVZjlEMGVxN3ZwM1NVY2plSW02MGdzMEhUSXRqb3ZpU0tkMHhWc9IBwwFBVV95cUxNY1VuWHRKUHRvRmYtMDFaVlh0TkFlUmNCNEdxaDFGbjJNRWdrRmFGYm9kRWc2d1VaTDBxTTZleTJEWmczOFc2dk5hb3B4RFh5NWJMXzNMVmV4emV0cjNVc1FCWm5zZHVMRzNXZFFYcTE5OTRaeGo0SEhxVkFaeG51bm5ic084NkNWRGtNNXpvUVhnX04xd1AtQjVXbmY4QjU3eVJHMXdUeGVpTEV6SGVRelhjQ2NPb3hDZ0ZvZEctMkZqNnc?oc=5",
+      "message_id": 25,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-17T20:45:01.972726+00:00",
+      "published": "2026-10-05T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "جشنواره غذای استانبول با حضور رستوران‌های ترکیه برگزار می‌شود.",
+      "title": "Niğde’nin Lezzetleri Ve Tabal Gastronomi Evi İstanbul’da Vitrine Çıktı - Karaman Habercisi",
+      "title_fa": "جشنواره غذای استانبول"
+    },
     "6a1481d946e98b05": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "pollinations",
@@ -1189,6 +1325,23 @@
       "summary_fa": "میشلین ترکیه نقشهٔ لذت خود را بزرگ می‌کند",
       "title": "MİCHELİN TÜRKİYE’NİN LEZZET HARİTASINI BÜYÜTÜYOR - Türkiye Turizm",
       "title_fa": "لذت ترکیه بزرگ می‌شود"
+    },
+    "715487630beacd7d": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "715487630beacd7d",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVTBFSmVQT0pvNDMtbnd1TU9Ib1lsenYwS1k5ZHo1VW45OGtYLVA0RFNBM3dpc3lXSkRabzRRMjROdXltRlhHT3hzV2RkN2pjb0dVWWJhQzNYQXR2Mm1uMm5iMlR1amRHWkwyRFVwRVJ2UklnYU1iOUU1NWZlQ2R6X3h6Z0xXVWJWaUpVal8yVVUzbWdkbEQ2V2R2X2pQRE5PWmpPeTdKZUFSTlFZSk43ekNZSHo4MTlIYjBOTVFwTzF0bVpUSEE?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T09:26:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "۲ 瑞典 از شروع یک رستوران در Köy",
+      "title": "İsveç’ten gelip Çorum’un köyünde açtılar: Şakayla karışık başladı, çok büyüdü - Milliyet",
+      "title_fa": "رستورانی در Köy"
     },
     "71ca77c0df13476e": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -1240,6 +1393,23 @@
       "summary_fa": "",
       "title": "Paris Restoran Rehberi: En İyi Restoranlar ve Lezzet Durakları - Oggusto",
       "title_fa": ""
+    },
+    "767c101967491928": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "767c101967491928",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0wNHdmVVlGT3RLU1lSRTBiZTJQZFFGb2RJXzBtMjhvSXpydm9DNW1pOWI3NXpEaTNaMHNIckZtb19qTVN1dXFBeUlleUgzVkVQU3A4RVlCNmFJRndZUXp3?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T00:10:18+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "ساعت کار مراکز خرید استانبول در سال ۲۰۲۶",
+      "title": "Ritim İstanbul AVM Mağazaları 2026: Çalışma Saatleri ve Watsons - Kartal 24",
+      "title_fa": "ساعت کار مراکز خرید استانبول"
     },
     "767f2f62cbe69ae7": {
       "cat": "رستوران و کافه در استانبول",
@@ -1444,6 +1614,23 @@
       "summary_fa": "رستورانی در استانبول دچار آتش‌سوزی شد",
       "title": "Arnavutköy'de korku dolu anlar: Restoran alevlere teslim oldu - Muhalif",
       "title_fa": "آتش‌سوزی در رستورانی"
+    },
+    "89e94cb69a2cc714": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "89e94cb69a2cc714",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQR0RMbWh3VVNfeVNoa0lwNm5sVlUyOGxTSm5ZU0V5TG1UT0RBQll3bTlQdVhsY3BJNXFab0lUc2UwakZaTVh5bE5HeUlGSW0wVlBoaUR6ZnAxNTlrRjZVNEUxM2piSjBXdEtlb0d4cHBvRDlVYkx6czBraVZOYUh1dFRwVWg0U1dESGF5Z1JaQ05NUEFiYl9QWjh5QlhHZnY2N2ZPOTVOYTZ3RUFXTGVBQy1R?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T17:53:38+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "سلامت غذاهای زیر آب پس از سیل",
+      "title": "Sel sonrası salgın tehlikesi; Sular altına kalan gıdalar ne kadar güvenli? - Gıda Bülteni",
+      "title_fa": "غذای زیر آب"
     },
     "92603e373b080318": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -2114,10 +2301,10 @@
       "first_seen": "2026-10-17T15:36:59.605473+00:00",
       "id": "c46fd609446413c1",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSU5Gb1l2NTNEbUM3TVF4Uk01bkxfNDdLbmYteEpJQlZhMzVOdzlTcV8tOVN6V0tHUXNialo2VlBQWk85UlpiRzRWUERTSkNFVzNlVHg2a1M4UEhxTXREWXJTTk01dml3dFlLbVEwUWl2ZjZMb2tCTndfanBJM0hMWFh3cElXM0tRc3U2cHFCei1vRDJlMzNv?oc=5",
-      "message_id": null,
+      "message_id": 25,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-17T20:45:01.972726+00:00",
       "published": "2026-10-06T14:22:00+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -2226,6 +2413,23 @@
       "summary_fa": "آتش‌سوزی در یک رستوران استانبول رخ داد و یک کارمند زخمی شد",
       "title": "Esenyurt'ta restoran yangını: Müdahale sırasında bir çalışan yaralandı - Muhalif",
       "title_fa": "آتش‌سوزی در رستوران"
+    },
+    "d1e3d687ee4f8e67": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-17T20:45:01.972726+00:00",
+      "id": "d1e3d687ee4f8e67",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaHU0RWJ3bTAya3RSd0JzaE9WYUtfeDZQWDhkYzVFenVvUEd5VzdpQkxaNkUwY3VHUXdDQ0lVQkdDR2ppTXlnaEktYlk5ZlVkdXRXeG5sQS1Wbko4YWo3ekk1dTJNdUE1YXRZUGhNYnlPdTEtb054dGJXRGVsbjBrZzFGWUhtMzBsVUpGTTBxYkdyYUgyQkdULXloNFJqXzJMSFVodzZESGc?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T10:21:22+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Three dead as Istanbul sees heaviest rainfall in 80 years - France 24",
+      "title_fa": ""
     },
     "d339ed8395f9dba7": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2746,6 +2950,12 @@
     },
     {
       "at": "2026-10-17T15:36:59.605473+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-17T20:45:01.972726+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
