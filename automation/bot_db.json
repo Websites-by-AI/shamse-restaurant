@@ -2,11 +2,11 @@
   "counters": {
     "broadcasts": 1,
     "cmd:contact": 1,
-    "cmd:events": 1,
+    "cmd:events": 2,
     "cmd:menu": 1,
     "cmd:rsvp": 1,
     "cmd:start": 4,
-    "messages": 8
+    "messages": 9
   },
   "reminders": {},
   "rsvps": {},
