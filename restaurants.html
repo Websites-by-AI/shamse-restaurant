@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>راهنمای رستوران‌های ایرانی و افغانستانی در استانبول | آدرس، منو و نقشه</title>
+<meta name="description" content="فهرست کامل ۱۹ رستوران معتبر ایرانی، فارسی و افغانستانی در استانبول با آدرس دقیق، موقعیت روی نقشه گوگل، شماره تلفن، وب‌سایت و منو در تکسیم، زیتین‌بورنو، اسنیورت، شیشلی، فاتیح و بخش آسیایی.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#13100c">
+<link rel="canonical" href="https://websites-by-ai.github.io/shamse-restaurant/restaurants.html">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="راهنمای رستوران‌های استانبول">
+<meta property="og:title" content="راهنمای رستوران‌های ایرانی و افغانستانی در استانبول">
+<meta property="og:description" content="۱۹ رستوران منتخب ایرانی و افغانستانی با آدرس، شماره تلفن، منو و مسیریابی گوگل مپ.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2313100c'/%3E%3Cpath d='M32 8l5.6 12.2L50 22l-9 9 2.2 13.4L32 38.2 20.8 44.4 23 31l-9-9 12.4-1.8z' fill='%23d29a5a'/%3E%3C/svg%3E">
+<style>
+@font-face{
+  font-family:"Vazirmatn";
+  src:url('assets/fonts/Vazirmatn-Variable.woff2') format('woff2-variations'),
+      url('assets/fonts/Vazirmatn-Variable.woff2') format('woff2');
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+  unicode-range:U+0000-00FF,U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F,U+2010-2011,U+0640,U+0651;
+}
+:root{
+  --ink:#13100c;
+  --ink-2:#1a1511;
+  --ink-3:#221b15;
+  --ink-4:#0f0c09;
+  --copper:#d29a5a;
+  --copper-2:#daa760;
+  --copper-soft:#e6c08c;
+  --cream:#f8f8f8;
+  --text:#d1c8bb;
+  --muted:#a89d8e;
+  --line:rgba(255,255,255,.085);
+  --line-copper:rgba(210,154,90,.3);
+  --on-copper:#101e22;
+  --font:"Vazirmatn","IRANSansX","IRANSans","Segoe UI",Tahoma,system-ui,sans-serif;
+  --max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--ink);
+  color:var(--text);
+  font-size:16px;
+  line-height:1.9;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select{font-family:inherit;font-size:1rem}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:22px}
+.center{text-align:center}
+
+/* header */
+.header{
+  position:sticky;top:0;z-index:90;background:rgba(15,12,9,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  padding:16px 0;
+}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.35rem;font-weight:900;color:var(--cream);display:flex;align-items:center;gap:12px}
+.logo b{color:var(--copper)}
+.nav{display:flex;align-items:center;gap:24px;font-size:.92rem;font-weight:600}
+.nav a{color:var(--text);transition:.25s;padding:6px 0;position:relative}
+.nav a:hover,.nav a.active{color:var(--copper)}
+.nav a.active::after{content:"";position:absolute;bottom:-4px;right:0;left:0;height:2px;background:var(--copper)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px 24px;font-weight:700;font-size:.92rem;cursor:pointer;
+  transition:.3s;background:var(--copper);color:var(--on-copper);border:1px solid var(--copper);
+}
+.btn:hover{background:var(--copper-2)}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line-copper);background:transparent;cursor:pointer;padding:12px;flex-direction:column;justify-content:space-between}
+.burger i{display:block;height:2px;background:var(--copper);transition:.3s}
+
+/* hero */
+.rhero{
+  padding:90px 0 60px;
+  background:linear-gradient(180deg,var(--ink-4),var(--ink));
+  border-bottom:1px solid var(--line);
+  text-align:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-size:.92rem;font-weight:700;color:var(--copper);
+}
+.eyebrow::before,.eyebrow::after{content:"";width:30px;height:1px;background:var(--copper)}
+.rhero h1{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:800;color:var(--cream);margin-top:14px;line-height:1.5}
+.rhero h1 em{font-style:normal;color:var(--copper)}
+.rhero p.lead{max-width:760px;margin:16px auto 0;color:var(--text);font-size:1.05rem}
+.rstats{display:flex;justify-content:center;gap:36px;flex-wrap:wrap;margin-top:36px}
+.rstat{text-align:center;background:var(--ink-3);border:1px solid var(--line);padding:18px 24px;min-width:140px}
+.rstat b{display:block;color:var(--copper);font-size:1.8rem;font-weight:800;line-height:1.2}
+.rstat span{font-size:.82rem;color:var(--muted)}
+
+/* toolbar & filters */
+.toolbar-section{padding:40px 0 20px}
+.search-bar{position:relative;margin-bottom:20px}
+.search-bar input{
+  width:100%;background:var(--ink-3);border:1px solid var(--line-copper);
+  color:var(--cream);padding:16px 20px 16px 48px;font-size:1.02rem;
+}
+.search-bar input:focus{outline:none;border-color:var(--copper);box-shadow:0 0 0 2px rgba(210,154,90,.2)}
+.search-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--copper);font-size:1.2rem;pointer-events:none}
+
+.filter-group{margin-bottom:16px}
+.filter-label{font-size:.85rem;color:var(--muted);margin-bottom:8px;font-weight:700;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  background:var(--ink-3);border:1px solid var(--line);color:var(--text);
+  padding:8px 16px;font-size:.86rem;font-weight:600;cursor:pointer;transition:.25s;
+}
+.chip:hover{border-color:var(--copper)}
+.chip.active{background:var(--copper);color:var(--on-copper);border-color:var(--copper)}
+
+.results-meta{
+  display:flex;justify-content:space-between;align-items:center;
+  margin:24px 0 16px;padding-bottom:12px;border-bottom:1px solid var(--line);
+  font-size:.9rem;color:var(--muted);
+}
+.results-meta b{color:var(--copper)}
+
+/* grid of cards */
+.cards-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:80px;
+}
+.rcard{
+  background:var(--ink-3);border:1px solid var(--line);
+  display:flex;flex-direction:column;transition:.3s;
+}
+.rcard:hover{border-color:var(--line-copper);transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.rcard.hidden{display:none!important}
+
+.rcard__head{padding:20px 22px 14px;border-bottom:1px solid var(--line)}
+.rcard__badges{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.badge{
+  font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:1px;
+}
+.cat-iran{background:rgba(210,154,90,.18);color:var(--copper);border:1px solid var(--line-copper)}
+.cat-afghan{background:rgba(46,125,50,.22);color:#81c784;border:1px solid rgba(129,199,132,.4)}
+.badge-area{background:rgba(255,255,255,.05);color:var(--cream);border:1px solid var(--line)}
+
+.rcard__title{font-size:1.15rem;font-weight:800;color:var(--cream);line-height:1.5}
+.rcard__en{display:block;font-size:.8rem;color:var(--muted);font-weight:500;margin-top:2px}
+
+.rcard__body{padding:18px 22px;display:flex;flex-direction:column;gap:14px;flex:1}
+.rcard__addr{font-size:.86rem;line-height:1.7}
+.addr-fa{color:var(--text);font-weight:600}
+.addr-tr{color:var(--muted);font-size:.8rem;margin-top:4px}
+
+.rcard__specs{font-size:.82rem}
+.specs-title{color:var(--copper);font-weight:700;display:block;margin-bottom:6px}
+.specs-list{display:flex;flex-wrap:wrap;gap:6px}
+.spec-pill{
+  background:rgba(255,255,255,.04);border:1px solid var(--line);
+  color:var(--text);padding:2px 8px;font-size:.75rem;
+}
+.rcard__notes{font-size:.84rem;color:var(--muted);line-height:1.7;margin-top:auto}
+
+.rcard__foot{padding:14px 22px;border-top:1px solid var(--line);background:rgba(0,0,0,.15)}
+.rcard__actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rcard__actions .btn-tel{grid-column:1/-1}
+.btn-card{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:9px 12px;font-size:.8rem;font-weight:700;text-align:center;
+  border:1px solid var(--line-copper);color:var(--copper);transition:.25s;
+}
+.btn-card:hover{background:var(--copper);color:var(--on-copper)}
+.btn-card.btn-tel{border-color:var(--line);color:var(--cream);background:rgba(255,255,255,.03)}
+.btn-card.btn-tel:hover{border-color:var(--copper);color:var(--copper);background:transparent}
+
+/* telegram callout */
+.tg-callout{
+  background:linear-gradient(90deg,var(--ink-4),var(--ink-2));
+  border:1px solid var(--line-copper);padding:40px;margin-bottom:90px;
+  display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;
+}
+.tg-callout__text h3{font-size:1.35rem;color:var(--cream);margin-bottom:8px;font-weight:800}
+.tg-callout__text p{color:var(--text);max-width:620px;font-size:.95rem}
+
+/* footer styling matching events.html */
+.footer{background:var(--ink-4);color:var(--muted);padding:80px 0 0;border-top:1px solid var(--line)}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px}
+.footer h4{color:var(--cream);font-size:1.02rem;margin-bottom:20px;position:relative;padding-bottom:12px;font-weight:700}
+.footer h4::after{content:"";position:absolute;bottom:0;right:0;width:40px;height:1px;background:var(--copper)}
+.footer p{font-size:.92rem}
+.flist{list-style:none;display:grid;gap:12px;font-size:.92rem}
+.flist a:hover{color:var(--copper);padding-inline-start:5px;transition:.25s}
+.fbottom{margin-top:60px;border-top:1px solid var(--line);padding:24px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.84rem}
+.fbottom b{color:var(--copper)}
+
+@media (max-width:1080px){
+  .cards-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .nav{
+    position:fixed;inset:76px 0 auto;background:rgba(15,12,9,.98);
+    flex-direction:column;align-items:stretch;padding:18px 24px;border-bottom:1px solid var(--line-copper);
+    transform:translateY(-130%);transition:.4s;max-height:80vh;overflow:auto;
+  }
+  .nav.open{transform:none}
+  .nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .burger{display:flex}
+  .header .btn.desk{display:none}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .cards-grid{grid-template-columns:1fr}
+  .rhero h1{font-size:1.75rem}
+  .rstats{gap:14px}
+  .rstat{flex:1;min-width:120px;padding:12px 14px}
+  .fgrid{grid-template-columns:1fr}
+  .tg-callout{padding:24px}
+}
+</style>
+</head>
+<body>
+
+
+
+<main id="main">
+  <section class="rhero">
+    <div class="wrap">
+      <div class="eyebrow">راهنمای جامع فارسی‌زبانان و گردشگران استانبول</div>
+      <h1>رستوران‌های <em>ایرانی، فارسی و افغانستانی</em> در استانبول</h1>
+      <p class="lead">فهرست ۱۹ غذاخوری اصیل و منتخب در سراسر استانبول با آدرس دقیق، موقعیت روی نقشهٔ گوگل، شماره تماس، لینک وب‌سایت/منو و غذاهای شاخص.</p>
+      
+      <div class="rstats">
+        <div class="rstat">
+          <b>۱۹</b>
+          <span>رستوران معتبر</span>
+        </div>
+        <div class="rstat">
+          <b>۱۲</b>
+          <span>ایرانی و فارسی</span>
+        </div>
+        <div class="rstat">
+          <b>۷</b>
+          <span>افغانستانی</span>
+        </div>
+        <div class="rstat">
+          <b>۷</b>
+          <span>منطقهٔ استانبول</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="toolbar-section">
+    <div class="wrap">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="جستجو بر اساس نام رستوران، محله، خیابان یا غذا (مثال: تکسیم، قابلی، منتو، کوبیده، زیتین‌بورنو...)" autocomplete="off">
+        <span class="search-icon">🔍</span>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">دسته‌بندی غذا:</span>
+        <div class="chips" id="catChips">
+          <button class="chip active" data-cat="all">همه رستوران‌ها (۱۹)</button>
+          <button class="chip" data-cat="iranian">🍽 رستوران‌های ایرانی و فارسی (۱۲)</button>
+          <button class="chip" data-cat="afghan">🇦🇫 رستوران‌های افغانستانی (۷)</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">منطقه / محله:</span>
+        <div class="chips" id="areaChips">
+          <button class="chip active" data-area="all">همه مناطق استانبول</button>
+          <button class="chip" data-area="taksim">تکسیم و بی‌اوغلو (۶)</button>
+          <button class="chip" data-area="zeytinburnu">زیتین‌بورنو (۴)</button>
+          <button class="chip" data-area="esenyurt">اسنیورت (۳)</button>
+          <button class="chip" data-area="sisli">شیشلی (۱)</button>
+          <button class="chip" data-area="fatih">فاتیح و آکسارای (۲)</button>
+          <button class="chip" data-area="beylikduzu">بیلیک‌دوزو (۱)</button>
+          <button class="chip" data-area="asian">بخش آسیایی (۲)</button>
+        </div>
+      </div>
+
+      <div class="results-meta">
+        <span>نمایش <b id="visibleCount">۱۹</b> رستوران</span>
+        <span id="activeFilterDesc">همهٔ رستوران‌ها</span>
+      </div>
+
+      <div class="cards-grid" id="cardsGrid">
+      <article class="rcard" data-id="farsi-taksim" data-cat="iranian" data-area="taksim" data-search="رستوران فارسی farsi iranian restaurant ایرانی و فارسی تکسیم / بی‌اوغلو استانبول، تکسیم، خیابان استقلال، کوچه آکارسو، پلاک ۶ tomtom mah. i̇stiklal cad. akarsu sk. no:6, 34433 beyoğlu/i̇stanbul +90 537 268 03 85 چلو کباب کوبیده کباب برگ زرشک‌پلو با مرغ نان داغ سنتی از نام‌آشناترین رستوران‌های ایرانی استقلال در قلب تکسیم با محیط دنج و منوی اصیل فارسی.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 تکسیم / بی‌اوغلو</span>
+          </div>
+          <h3 class="rcard__title">رستوران فارسی <small class="rcard__en">Farsi Iranian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، تکسیم، خیابان استقلال، کوچه آکارسو، پلاک ۶</p>
+            <p class="addr-tr">🇹🇷 <i>Tomtom Mah. İstiklal Cad. Akarsu Sk. No:6, 34433 Beyoğlu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">چلو کباب کوبیده</span><span class="spec-pill">کباب برگ</span><span class="spec-pill">زرشک‌پلو با مرغ</span><span class="spec-pill">نان داغ سنتی</span></div>
+          </div>
+          <p class="rcard__notes">از نام‌آشناترین رستوران‌های ایرانی استقلال در قلب تکسیم با محیط دنج و منوی اصیل فارسی.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://restaurantfarsi.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Tomtom+Mah+Istiklal+Cad+Akarsu+Sk+No+6+Beyoglu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905372680385" class="btn-card btn-tel">☎️ +90 537 268 03 85</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="reyhun-taksim" data-cat="iranian" data-area="taksim" data-search="رستوران ریحون reyhun persian restaurant ایرانی و فارسی تکسیم / گالاتاسرای استانبول، بی‌اوغلو، گالاتاسرای، خیابان ینی چارشی، پلاک ۲۶ tomtom mah. yeni çarşı cad. no:26/1, galatasaray, beyoğlu/i̇stanbul +90 212 245 15 00 کباب شیشلیک باقالی‌پلو با ماهیچه فسنجان کشک بادمجان رستوران سنتی لوکس با دکوراسیون ایرانی و مواد اولیهٔ وارداتی از ایران؛ از ۲۰۱۴ در تکسیم.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 تکسیم / گالاتاسرای</span>
+          </div>
+          <h3 class="rcard__title">رستوران ریحون <small class="rcard__en">Reyhun Persian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، بی‌اوغلو، گالاتاسرای، خیابان ینی چارشی، پلاک ۲۶</p>
+            <p class="addr-tr">🇹🇷 <i>Tomtom Mah. Yeni Çarşı Cad. No:26/1, Galatasaray, Beyoğlu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">کباب شیشلیک</span><span class="spec-pill">باقالی‌پلو با ماهیچه</span><span class="spec-pill">فسنجان</span><span class="spec-pill">کشک بادمجان</span></div>
+          </div>
+          <p class="rcard__notes">رستوران سنتی لوکس با دکوراسیون ایرانی و مواد اولیهٔ وارداتی از ایران؛ از ۲۰۱۴ در تکسیم.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://www.reyhun.net" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Yeni+Carsi+Cad+No+26+Galatasaray+Beyoglu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902122451500" class="btn-card btn-tel">☎️ +90 212 245 15 00</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="safir-sisli" data-cat="iranian" data-area="sisli" data-search="رستوران سفیر (شعبه شیشلی) safir iranian restaurant (şişli) ایرانی و فارسی شیشلی استانبول، شیشلی، خیابان آبیده حریت، پلاک ۱۷۱/a merkez mah. abide-i hürriyet cad. no:171/a, şişli/i̇stanbul +90 212 234 10 10 چلو کباب سلطانی ماهیچه زعفرانی ته‌چین مرغ دسر سنتی تجربهٔ ۵ ستاره با نظارت سرآشپز جلیل نظری، سالن مجلل و دسترسی نزدیک به متروی شیشلی.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 شیشلی</span>
+          </div>
+          <h3 class="rcard__title">رستوران سفیر (شعبه شیشلی) <small class="rcard__en">Safir Iranian Restaurant (Şişli)</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، شیشلی، خیابان آبیده حریت، پلاک ۱۷۱/A</p>
+            <p class="addr-tr">🇹🇷 <i>Merkez Mah. Abide-i Hürriyet Cad. No:171/A, Şişli/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">چلو کباب سلطانی</span><span class="spec-pill">ماهیچه زعفرانی</span><span class="spec-pill">ته‌چین مرغ</span><span class="spec-pill">دسر سنتی</span></div>
+          </div>
+          <p class="rcard__notes">تجربهٔ ۵ ستاره با نظارت سرآشپز جلیل نظری، سالن مجلل و دسترسی نزدیک به متروی شیشلی.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://safiriranianrestaurant.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Abide-i+Hurriyet+Cad+171+Sisli+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902122341010" class="btn-card btn-tel">☎️ +90 212 234 10 10</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="safir-aksaray" data-cat="iranian" data-area="fatih" data-search="رستوران سفیر (شعبه آکسارای) safir iranian restaurant (aksaray) ایرانی و فارسی فاتیح / آکسارای استانبول، فاتیح، آکسارای، خیابان نامیک کمال، پلاک ۲۳ aksaray mah. namık kemal cad. no:23, fatih/i̇stanbul +90 212 234 10 10 کباب کوبیده مخصوص خورش قورمه‌سبزی میرزاقاسمی جوجه حلزونی شعبه دوم سفیر در منطقهٔ تاریخی و پرتردد آکسارای با فضای صمیمی و کیفیت ممتاز.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 فاتیح / آکسارای</span>
+          </div>
+          <h3 class="rcard__title">رستوران سفیر (شعبه آکسارای) <small class="rcard__en">Safir Iranian Restaurant (Aksaray)</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، فاتیح، آکسارای، خیابان نامیک کمال، پلاک ۲۳</p>
+            <p class="addr-tr">🇹🇷 <i>Aksaray Mah. Namık Kemal Cad. No:23, Fatih/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">کباب کوبیده مخصوص</span><span class="spec-pill">خورش قورمه‌سبزی</span><span class="spec-pill">میرزاقاسمی</span><span class="spec-pill">جوجه حلزونی</span></div>
+          </div>
+          <p class="rcard__notes">شعبه دوم سفیر در منطقهٔ تاریخی و پرتردد آکسارای با فضای صمیمی و کیفیت ممتاز.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://safiriranianrestaurant.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Namik+Kemal+Cad+No+23+Aksaray+Fatih+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902122341010" class="btn-card btn-tel">☎️ +90 212 234 10 10</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="shamse-taksim" data-cat="iranian" data-area="taksim" data-search="رستوران شمسه (شعبه استقلال) shamse restaurant (taksim branch) ایرانی و فارسی تکسیم / خیابان استقلال استانبول، خیابان استقلال، پلاک ۱۷۹ (بعد از کلیسای سنت آنتوان) şehit muhtar mah. i̇stiklal cad. no:179, beyoğlu/i̇stanbul +90 501 325 24 52 قورمه‌سبزی خانگی کباب کوبیده جوجه زعفرانی باقالی‌پلو با گوشت دو طبقه در استقلال؛ طبقه دوم میزبان میتاپ‌ها، شعرخوانی، مافیا و رویدادهای ایرانیان (ظرفیت ۶۰ نفر).">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 تکسیم / خیابان استقلال</span>
+          </div>
+          <h3 class="rcard__title">رستوران شمسه (شعبه استقلال) <small class="rcard__en">Shamse Restaurant (Taksim Branch)</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، خیابان استقلال، پلاک ۱۷۹ (بعد از کلیسای سنت آنتوان)</p>
+            <p class="addr-tr">🇹🇷 <i>Şehit Muhtar Mah. İstiklal Cad. No:179, Beyoğlu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">قورمه‌سبزی خانگی</span><span class="spec-pill">کباب کوبیده</span><span class="spec-pill">جوجه زعفرانی</span><span class="spec-pill">باقالی‌پلو با گوشت</span></div>
+          </div>
+          <p class="rcard__notes">دو طبقه در استقلال؛ طبقه دوم میزبان میتاپ‌ها، شعرخوانی، مافیا و رویدادهای ایرانیان (ظرفیت ۶۰ نفر).</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://shamse-restaurant.pages.dev" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905013252452" class="btn-card btn-tel">☎️ +90 501 325 24 52</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="shamse-kocatepe" data-cat="iranian" data-area="taksim" data-search="رستوران شمسه (شعبه کوجاتپه) shamse restaurant (kocatepe branch) ایرانی و فارسی تکسیم / کوجاتپه استانبول، تکسیم، محله کوجاتپه، خیابان عبدالحکیم حمیت، پلاک ۱۷ kocatepe mah. abdülhak hamit cad. no:17, beyoğlu/i̇stanbul +90 501 325 24 52 کباب بختیاری کشک بادمجان دیزی سنتی سوپ جو سالن بزرگ و خانوادگی نزدیک هتل‌های میدان تکسیم؛ مناسب مراسم و جمع‌های صمیمی.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 تکسیم / کوجاتپه</span>
+          </div>
+          <h3 class="rcard__title">رستوران شمسه (شعبه کوجاتپه) <small class="rcard__en">Shamse Restaurant (Kocatepe Branch)</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، تکسیم، محله کوجاتپه، خیابان عبدالحکیم حمیت، پلاک ۱۷</p>
+            <p class="addr-tr">🇹🇷 <i>Kocatepe Mah. Abdülhak Hamit Cad. No:17, Beyoğlu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">کباب بختیاری</span><span class="spec-pill">کشک بادمجان</span><span class="spec-pill">دیزی سنتی</span><span class="spec-pill">سوپ جو</span></div>
+          </div>
+          <p class="rcard__notes">سالن بزرگ و خانوادگی نزدیک هتل‌های میدان تکسیم؛ مناسب مراسم و جمع‌های صمیمی.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://shamse-restaurant.pages.dev" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905013252452" class="btn-card btn-tel">☎️ +90 501 325 24 52</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="sudi-atasehir" data-cat="iranian" data-area="asian" data-search="رستوران سودی sudi iranian restaurant ایرانی و فارسی بخش آسیایی / آتاشهیر استانبول، بخش آسیایی، آتاشهیر، خیابان آتاپارک، مجتمع ترندیست، پلاک ۳/pa atatürk mah. atapark cad. trendist dükkan b11 blok no: 3/pa, ataşehir/i̇stanbul +90 216 266 60 36 کباب لقمه زعفرانی ته‌چین مرغ و بادمجان فسنجان رولت و نان خامه‌ای رستوران و کافه شیرینی مطرح ایرانی در بخش آسیایی؛ محیط بسیار شیک و مدرن با پارکینگ آسان.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 بخش آسیایی / آتاشهیر</span>
+          </div>
+          <h3 class="rcard__title">رستوران سودی <small class="rcard__en">Sudi Iranian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، بخش آسیایی، آتاشهیر، خیابان آتاپارک، مجتمع ترندیست، پلاک ۳/PA</p>
+            <p class="addr-tr">🇹🇷 <i>Atatürk Mah. Atapark Cad. Trendist Dükkan B11 Blok No: 3/PA, Ataşehir/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">کباب لقمه زعفرانی</span><span class="spec-pill">ته‌چین مرغ و بادمجان</span><span class="spec-pill">فسنجان</span><span class="spec-pill">رولت و نان خامه‌ای</span></div>
+          </div>
+          <p class="rcard__notes">رستوران و کافه شیرینی مطرح ایرانی در بخش آسیایی؛ محیط بسیار شیک و مدرن با پارکینگ آسان.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://www.sudirestoran.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Trendist+Atasehir+Sudi+Restoran+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902162666036" class="btn-card btn-tel">☎️ +90 216 266 60 36</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="asuman-fatih" data-cat="iranian" data-area="fatih" data-search="رستوران آسمان asuman iranian restaurant ایرانی و فارسی فاتیح / آکسارای استانبول، فاتیح، محله کمال پاشا، زیرگذر هاشم ایشجان، پلاک ۴۲ b kemal paşa mah. haşim i̇şcan geçidi no:42 b, fatih/i̇stanbul +90 212 511 27 37 دیزی سنگی اصیل چلو گردن گوسفندی زرشک‌پلو با مرغ دوغ محلی از باسابقه‌ترین غذاخوری‌های ایرانی در فاتیح؛ دیزی‌های معروف و طعم کاملاً سنتی خانگی.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 فاتیح / آکسارای</span>
+          </div>
+          <h3 class="rcard__title">رستوران آسمان <small class="rcard__en">Asuman Iranian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، فاتیح، محله کمال پاشا، زیرگذر هاشم ایشجان، پلاک ۴۲ B</p>
+            <p class="addr-tr">🇹🇷 <i>Kemal Paşa Mah. Haşim İşcan Geçidi No:42 B, Fatih/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">دیزی سنگی اصیل</span><span class="spec-pill">چلو گردن گوسفندی</span><span class="spec-pill">زرشک‌پلو با مرغ</span><span class="spec-pill">دوغ محلی</span></div>
+          </div>
+          <p class="rcard__notes">از باسابقه‌ترین غذاخوری‌های ایرانی در فاتیح؛ دیزی‌های معروف و طعم کاملاً سنتی خانگی.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://yummyistanbul.com/international-restaurants-istanbul/" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Hasim+Iscan+Gecidi+No+42B+Fatih+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902125112737" class="btn-card btn-tel">☎️ +90 212 511 27 37</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="mojgan-taksim" data-cat="iranian" data-area="taksim" data-search="رستوران مژگان mojgan persian restaurant ایرانی و فارسی تکسیم / کوجاتپه استانبول، تکسیم، محله کوجاتپه، خیابان عبدالحکیم حمیت، پلاک ۱۹a kocatepe mah. abdülhak hamit cad. no:19a, beyoğlu/i̇stanbul +90 541 386 17 06 موسیقی زنده شبانه کباب شیشلیک کوبیده و برگ میرزاقاسمی فضایی پرشور با اجرای هر شب موسیقی زنده و سرو غذاهای خوش‌عطر ایرانی در چند قدمی تکسیم.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 تکسیم / کوجاتپه</span>
+          </div>
+          <h3 class="rcard__title">رستوران مژگان <small class="rcard__en">Mojgan Persian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، تکسیم، محله کوجاتپه، خیابان عبدالحکیم حمیت، پلاک ۱۹A</p>
+            <p class="addr-tr">🇹🇷 <i>Kocatepe Mah. Abdülhak Hamit Cad. No:19A, Beyoğlu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">موسیقی زنده شبانه</span><span class="spec-pill">کباب شیشلیک</span><span class="spec-pill">کوبیده و برگ</span><span class="spec-pill">میرزاقاسمی</span></div>
+          </div>
+          <p class="rcard__notes">فضایی پرشور با اجرای هر شب موسیقی زنده و سرو غذاهای خوش‌عطر ایرانی در چند قدمی تکسیم.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g293974-d13146430-Reviews-Mojgan_Persian_Restaurant-Istanbul.html" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Abdulhak+Hamit+Cad+No+19A+Beyoglu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905413861706" class="btn-card btn-tel">☎️ +90 541 386 17 06</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="shandiz-maltepe" data-cat="iranian" data-area="asian" data-search="رستوران شاندیز shandiz iranian restaurant ایرانی و فارسی بخش آسیایی / مال‌تپه استانبول، بخش آسیایی، مال‌تپه، ساحل ایده‌آل‌تپه، بلوار تورگوت اوزال، پلاک ۱۳۳ i̇dealtepe mah. turgut özal blv. no:133, maltepe/i̇stanbul +90 532 280 02 46 شیشلیک مخصوص شاندیز کباب برگ سلطانی باقالی‌پلو با ماهیچه آبگوشت چشم‌انداز دیدنی به ساحل دریای مرمره، شیشلیک اصیل مشهدی و سالن مناسب مجالس.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 بخش آسیایی / مال‌تپه</span>
+          </div>
+          <h3 class="rcard__title">رستوران شاندیز <small class="rcard__en">Shandiz Iranian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، بخش آسیایی، مال‌تپه، ساحل ایده‌آل‌تپه، بلوار تورگوت اوزال، پلاک ۱۳۳</p>
+            <p class="addr-tr">🇹🇷 <i>İdealtepe Mah. Turgut Özal Blv. No:133, Maltepe/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">شیشلیک مخصوص شاندیز</span><span class="spec-pill">کباب برگ سلطانی</span><span class="spec-pill">باقالی‌پلو با ماهیچه</span><span class="spec-pill">آبگوشت</span></div>
+          </div>
+          <p class="rcard__notes">چشم‌انداز دیدنی به ساحل دریای مرمره، شیشلیک اصیل مشهدی و سالن مناسب مجالس.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://www.instagram.com/shandiz.istanbul/" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Turgut+Ozal+Blv+No+133+Idealtepe+Maltepe+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905322800246" class="btn-card btn-tel">☎️ +90 532 280 02 46</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="nayeb-taksim" data-cat="iranian" data-area="taksim" data-search="رستوران نایب nayeb iranian restaurant ایرانی و فارسی تکسیم / خیابان استقلال استانبول، خیابان استقلال، محله توم‌توم، کوچه آکارسو، پلاک ۴ tomtom mah. i̇stiklal cad. akarsu sk. no:4, beyoğlu/i̇stanbul +90 212 587 68 46 کباب کوبیده زعفرانی جوجه کباب با استخوان چلو ماهیچه سوپ روز ادامه‌دهندهٔ سبک معروف چلوکبابی‌های نایب با کیفیت گوشت تازه در قلب توریستی استقلال.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 تکسیم / خیابان استقلال</span>
+          </div>
+          <h3 class="rcard__title">رستوران نایب <small class="rcard__en">Nayeb Iranian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، خیابان استقلال، محله توم‌توم، کوچه آکارسو، پلاک ۴</p>
+            <p class="addr-tr">🇹🇷 <i>Tomtom Mah. İstiklal Cad. Akarsu Sk. No:4, Beyoğlu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">کباب کوبیده زعفرانی</span><span class="spec-pill">جوجه کباب با استخوان</span><span class="spec-pill">چلو ماهیچه</span><span class="spec-pill">سوپ روز</span></div>
+          </div>
+          <p class="rcard__notes">ادامه‌دهندهٔ سبک معروف چلوکبابی‌های نایب با کیفیت گوشت تازه در قلب توریستی استقلال.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://persianrestaurant.net/location/istanbul/" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Akarsu+Sokak+No+4+Beyoglu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902125876846" class="btn-card btn-tel">☎️ +90 212 587 68 46</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="keyvan-esenyurt" data-cat="iranian" data-area="esenyurt" data-search="رستوران کیوان keyvan iranian restaurant ایرانی و فارسی اسنیورت / بیلیک‌دوزو استانبول، اسنیورت، محله جمهوریت، بلوار ناظم حکمت، کوچه ۱۹۸۳ cumhuriyet mah. nazım hikmet blv. 1983. sk., esenyurt/i̇stanbul +90 535 717 68 23 کباب تابه‌ای خانگی قیمه بادمجان آش رشته قورمه‌سبزی غذاهای خانگی تازه و قیمت مناسب برای ساکنان غرب استانبول و محله‌های ایرانی‌نشین.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-iran">🍽 ایرانی و فارسی</span>
+            <span class="badge badge-area">📍 اسنیورت / بیلیک‌دوزو</span>
+          </div>
+          <h3 class="rcard__title">رستوران کیوان <small class="rcard__en">Keyvan Iranian Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، اسنیورت، محله جمهوریت، بلوار ناظم حکمت، کوچه ۱۹۸۳</p>
+            <p class="addr-tr">🇹🇷 <i>Cumhuriyet Mah. Nazım Hikmet Blv. 1983. Sk., Esenyurt/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">کباب تابه‌ای خانگی</span><span class="spec-pill">قیمه بادمجان</span><span class="spec-pill">آش رشته</span><span class="spec-pill">قورمه‌سبزی</span></div>
+          </div>
+          <p class="rcard__notes">غذاهای خانگی تازه و قیمت مناسب برای ساکنان غرب استانبول و محله‌های ایرانی‌نشین.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://turanik.net/service-category/iranian-food/" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Nazim+Hikmet+Blv+1983+Sokak+Esenyurt+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905357176823" class="btn-card btn-tel">☎️ +90 535 717 68 23</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="bahar-afghan" data-cat="afghan" data-area="zeytinburnu" data-search="رستوران بهار افغان bahar afghan restaurant افغانستانی زیتین‌بورنو استانبول، زیتین‌بورنو، محله نوری‌پاشا، خیابان ۵۸ بولوار، پلاک ۱۳۶/b nuripaşa mah. 58. bulvar cad. no:136/b, 34025 zeytinburnu/i̇stanbul +90 212 664 10 14 قابلی پلو ازبکی با گوشت بره منتو بخارپز با سس مخصوص بولانی کچالو کباب تیکه معروف‌ترین و پرامتیازترین رستوران افغانستانی استانبول در مرکز زیتین‌بورنو؛ طعم‌های ناب هرات و کابل.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-afghan">🇦🇫 افغانستانی</span>
+            <span class="badge badge-area">📍 زیتین‌بورنو</span>
+          </div>
+          <h3 class="rcard__title">رستوران بهار افغان <small class="rcard__en">Bahar Afghan Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، زیتین‌بورنو، محله نوری‌پاشا، خیابان ۵۸ بولوار، پلاک ۱۳۶/B</p>
+            <p class="addr-tr">🇹🇷 <i>Nuripaşa Mah. 58. Bulvar Cad. No:136/B, 34025 Zeytinburnu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">قابلی پلو ازبکی با گوشت بره</span><span class="spec-pill">منتو بخارپز با سس مخصوص</span><span class="spec-pill">بولانی کچالو</span><span class="spec-pill">کباب تیکه</span></div>
+          </div>
+          <p class="rcard__notes">معروف‌ترین و پرامتیازترین رستوران افغانستانی استانبول در مرکز زیتین‌بورنو؛ طعم‌های ناب هرات و کابل.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://baharrestaurants.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=58+Bulvar+Cad+No+136+Zeytinburnu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902126641014" class="btn-card btn-tel">☎️ +90 212 664 10 14</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="afgan-kebap" data-cat="afghan" data-area="esenyurt" data-search="رستوران افغان کباب afgan kebap restaurant افغانستانی اسنیورت / بیلیک‌دوزو استانبول، اسنیورت، محله جمهوریت، بلوار ناظم حکمت، کوچه ۲۰۶۶، پلاک ۱۷/a cumhuriyet mah. nazım hikmet blv. 2066. sk. no:17/a, 34515 esenyurt/i̇stanbul +90 555 080 46 40 رز بخاری با مرغ و گوشت قابلی پلو اصیل کباب چوپان آشاک خانگی چای قند پارسی اولین رستوران بزرگ افغانستانی در غرب استانبول با فضای شیک خانوادگی، مواد اولیه تازه و پیک آنلاین.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-afghan">🇦🇫 افغانستانی</span>
+            <span class="badge badge-area">📍 اسنیورت / بیلیک‌دوزو</span>
+          </div>
+          <h3 class="rcard__title">رستوران افغان کباب <small class="rcard__en">Afgan Kebap Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، اسنیورت، محله جمهوریت، بلوار ناظم حکمت، کوچه ۲۰۶۶، پلاک ۱۷/A</p>
+            <p class="addr-tr">🇹🇷 <i>Cumhuriyet Mah. Nazım Hikmet Blv. 2066. Sk. No:17/A, 34515 Esenyurt/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">رز بخاری با مرغ و گوشت</span><span class="spec-pill">قابلی پلو اصیل</span><span class="spec-pill">کباب چوپان</span><span class="spec-pill">آشاک خانگی</span><span class="spec-pill">چای قند پارسی</span></div>
+          </div>
+          <p class="rcard__notes">اولین رستوران بزرگ افغانستانی در غرب استانبول با فضای شیک خانوادگی، مواد اولیه تازه و پیک آنلاین.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://www.afgankebap.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Nazim+Hikmet+Blv+2066+Sk+No+17A+Esenyurt+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905550804640" class="btn-card btn-tel">☎️ +90 555 080 46 40</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="arya-istanbul" data-cat="afghan" data-area="beylikduzu" data-search="کافه رستوران آریا استانبول arya istanbul afghan restaurant &amp;amp; cafe افغانستانی بیلیک‌دوزو استانبول، بیلیک‌دوزو، محله عدنان قهوه‌چی، خیابان اروپا، پلاک ۱۰۶ adnan kahveci mah. avrupa cad. no:106, 34528 beylikdüzü/i̇stanbul +90 531 841 43 43 منتو ویژه آریا قابلی پلو مجلسی با خلال پسته و بادام جلبی داغ کباب شاهی محیطی لوکس و مدرن برای خانواده‌ها در غرب استانبول همراه با بخش کافه و قلیان سنتی.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-afghan">🇦🇫 افغانستانی</span>
+            <span class="badge badge-area">📍 بیلیک‌دوزو</span>
+          </div>
+          <h3 class="rcard__title">کافه رستوران آریا استانبول <small class="rcard__en">Arya Istanbul Afghan Restaurant &amp; Cafe</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، بیلیک‌دوزو، محله عدنان قهوه‌چی، خیابان اروپا، پلاک ۱۰۶</p>
+            <p class="addr-tr">🇹🇷 <i>Adnan Kahveci Mah. Avrupa Cad. No:106, 34528 Beylikdüzü/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">منتو ویژه آریا</span><span class="spec-pill">قابلی پلو مجلسی با خلال پسته و بادام</span><span class="spec-pill">جلبی داغ</span><span class="spec-pill">کباب شاهی</span></div>
+          </div>
+          <p class="rcard__notes">محیطی لوکس و مدرن برای خانواده‌ها در غرب استانبول همراه با بخش کافه و قلیان سنتی.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="http://www.arya-istanbul.com" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Avrupa+Cad+No+106+Beylikduzu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905318414343" class="btn-card btn-tel">☎️ +90 531 841 43 43</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="afghan-restaurant-58" data-cat="afghan" data-area="zeytinburnu" data-search="رستوران افغان (سفرهٔ افغان) afghan restaurant (58 bulvar) افغانستانی زیتین‌بورنو استانبول، زیتین‌بورنو، خیابان ۵۸ بولوار، پلاک ۱۱۰، طبقه ۳ (ایستگاه دپو) nuripaşa mah. 58. bulvar cad. no:110, kat:3, zeytinburnu/i̇stanbul +90 212 546 00 65 بولانی تند گندنه چلو گوشت افغانی قورمه کوفته فرنی زعفرانی دو طبقه با سالن اختصاصی خانوادگی، دستپخت هراتی و کابلی و ادویه‌های اصیل افغانستانی.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-afghan">🇦🇫 افغانستانی</span>
+            <span class="badge badge-area">📍 زیتین‌بورنو</span>
+          </div>
+          <h3 class="rcard__title">رستوران افغان (سفرهٔ افغان) <small class="rcard__en">Afghan Restaurant (58 Bulvar)</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، زیتین‌بورنو، خیابان ۵۸ بولوار، پلاک ۱۱۰، طبقه ۳ (ایستگاه دپو)</p>
+            <p class="addr-tr">🇹🇷 <i>Nuripaşa Mah. 58. Bulvar Cad. No:110, Kat:3, Zeytinburnu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">بولانی تند گندنه</span><span class="spec-pill">چلو گوشت افغانی</span><span class="spec-pill">قورمه کوفته</span><span class="spec-pill">فرنی زعفرانی</span></div>
+          </div>
+          <p class="rcard__notes">دو طبقه با سالن اختصاصی خانوادگی، دستپخت هراتی و کابلی و ادویه‌های اصیل افغانستانی.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://www.facebook.com/AFGHANRESTAURANT1/" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=58+Bulvar+Cad+No+110+Zeytinburnu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+902125460065" class="btn-card btn-tel">☎️ +90 212 546 00 65</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="afghan-turk" data-cat="afghan" data-area="zeytinburnu" data-search="رستوران افغان ترک afghan turk restaurant افغانستانی زیتین‌بورنو استانبول، زیتین‌بورنو، محله نوری‌پاشا، کوچه عیسی یوسف آلپ‌تکین، پلاک ۳ nuripaşa mah. i̇sa yusuf alptekin sk. no:3, zeytinburnu/i̇stanbul +90 535 371 80 85 قابلی پلو خوش‌عطر کباب تکه شامی شوربای داغ نان تنوری تازه تلفیق خوشمزهٔ غذاهای سنتی افغانستان و ترکیه در فاصله‌ای کوتاه از ایستگاه تراموا زیتین‌بورنو.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-afghan">🇦🇫 افغانستانی</span>
+            <span class="badge badge-area">📍 زیتین‌بورنو</span>
+          </div>
+          <h3 class="rcard__title">رستوران افغان ترک <small class="rcard__en">Afghan Turk Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، زیتین‌بورنو، محله نوری‌پاشا، کوچه عیسی یوسف آلپ‌تکین، پلاک ۳</p>
+            <p class="addr-tr">🇹🇷 <i>Nuripaşa Mah. İsa Yusuf Alptekin Sk. No:3, Zeytinburnu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">قابلی پلو خوش‌عطر</span><span class="spec-pill">کباب تکه شامی</span><span class="spec-pill">شوربای داغ</span><span class="spec-pill">نان تنوری تازه</span></div>
+          </div>
+          <p class="rcard__notes">تلفیق خوشمزهٔ غذاهای سنتی افغانستان و ترکیه در فاصله‌ای کوتاه از ایستگاه تراموا زیتین‌بورنو.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://restaurantguru.com/Afghan-Restaurant-Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Isa+Yusuf+Alptekin+Sk+No+3+Zeytinburnu+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905353718085" class="btn-card btn-tel">☎️ +90 535 371 80 85</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="manan-kabil" data-cat="afghan" data-area="zeytinburnu" data-search="رستوران منان کابل manan kabil afghan restaurant افغانستانی زیتین‌بورنو / فیشک‌خانه استانبول، زیتین‌بورنو، خیابان ۴۸، پلاک ۱۰۸ (نزدیک فیشک‌خانه) kazlıçeşme mah. 48. sokak no:108, zeytinburnu/i̇stanbul +90 538 706 25 25 کباب چپلی اصیل کابل منتو خانگی قابلی پلو با زیره کوهی دوغ وطنی مرجع کباب چپلی اصیل پایتخت افغانستان، محیط خودمانی و گوشت تازهٔ گوسفندی.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-afghan">🇦🇫 افغانستانی</span>
+            <span class="badge badge-area">📍 زیتین‌بورنو / فیشک‌خانه</span>
+          </div>
+          <h3 class="rcard__title">رستوران منان کابل <small class="rcard__en">Manan Kabil Afghan Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، زیتین‌بورنو، خیابان ۴۸، پلاک ۱۰۸ (نزدیک فیشک‌خانه)</p>
+            <p class="addr-tr">🇹🇷 <i>Kazlıçeşme Mah. 48. Sokak No:108, Zeytinburnu/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">کباب چپلی اصیل کابل</span><span class="spec-pill">منتو خانگی</span><span class="spec-pill">قابلی پلو با زیره کوهی</span><span class="spec-pill">دوغ وطنی</span></div>
+          </div>
+          <p class="rcard__notes">مرجع کباب چپلی اصیل پایتخت افغانستان، محیط خودمانی و گوشت تازهٔ گوسفندی.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://yandex.com/maps/org/manan_kabil_restoran_best_afghan_restaurant_in_istanbul/97884943347/" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=Zeytinburnu+48+Sokak+108+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905387062525" class="btn-card btn-tel">☎️ +90 538 706 25 25</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard" data-id="afghan-bek" data-cat="afghan" data-area="esenyurt" data-search="رستوران افغان بیک afghan bek restaurant افغانستانی اسنیورت استانبول، اسنیورت، محله پیری رئیس، کوچه ۱۹۹۷، پلاک ۱۲ piri reis mah. 1997. sokak no:12, esenyurt/i̇stanbul +90 534 366 06 29 قابلی پلو مجلسی کباب دیگی بولانی سبزیجات شیرپیره هراتی مهمان‌نوازی اصیل افغانستانی، سالن مرتب و دسترسی خوب برای ساکنان غرب استانبول.">
+        <div class="rcard__head">
+          <div class="rcard__badges">
+            <span class="badge cat-afghan">🇦🇫 افغانستانی</span>
+            <span class="badge badge-area">📍 اسنیورت</span>
+          </div>
+          <h3 class="rcard__title">رستوران افغان بیک <small class="rcard__en">Afghan Bek Restaurant</small></h3>
+        </div>
+        <div class="rcard__body">
+          <div class="rcard__addr">
+            <p class="addr-fa">🏠 استانبول، اسنیورت، محله پیری رئیس، کوچه ۱۹۹۷، پلاک ۱۲</p>
+            <p class="addr-tr">🇹🇷 <i>Piri Reis Mah. 1997. Sokak No:12, Esenyurt/İstanbul</i></p>
+          </div>
+          <div class="rcard__specs">
+            <span class="specs-title">غذاهای شاخص:</span>
+            <div class="specs-list"><span class="spec-pill">قابلی پلو مجلسی</span><span class="spec-pill">کباب دیگی</span><span class="spec-pill">بولانی سبزیجات</span><span class="spec-pill">شیرپیره هراتی</span></div>
+          </div>
+          <p class="rcard__notes">مهمان‌نوازی اصیل افغانستانی، سالن مرتب و دسترسی خوب برای ساکنان غرب استانبول.</p>
+        </div>
+        <div class="rcard__foot">
+          <div class="rcard__actions">
+            <a href="https://www.facebook.com/navoimehmansarayi/" target="_blank" rel="noopener noreferrer" class="btn-card btn-web">🌐 وب‌سایت / منو</a>
+            <a href="https://maps.google.com/?q=1997+Sokak+No+12+Esenyurt+Istanbul" target="_blank" rel="noopener noreferrer" class="btn-card btn-map">🗺 مسیریابی گوگل مپ</a>
+            <a href="tel:+905343660629" class="btn-card btn-tel">☎️ +90 534 366 06 29</a>
+          </div>
+        </div>
+      </article>
+      </div>
+
+      <div class="tg-callout">
+        <div class="tg-callout__text">
+          <h3>🤖 همین راهنما را در ربات تلگرام همراه داشته باشید</h3>
+          <p>امکان جستجوی سریع رستوران‌ها بر اساس محله یا نام غذا، دریافت موقعیت نقشه، مشاهده منوها و ثبت‌نام در رویدادها و میتاپ‌های جامعهٔ فارسی‌زبان استانبول.</p>
+        </div>
+        <a href="https://t.me/shamse_restaurant_bot" target="_blank" rel="noopener noreferrer" class="btn">ورود به ربات تلگرام</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap fgrid">
+    <div>
+      <a class="logo" href="index.html" style="margin-bottom:18px">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="none" stroke="#d29a5a" stroke-width="2"/>
+          <circle cx="32" cy="32" r="23" fill="none" stroke="#d29a5a" stroke-width="1" opacity=".55"/>
+          <path d="M32 12l4.6 10.1 11 1.6-8 7.7 2 11-9.6-5.1L22.4 42.4l2-11-8-7.7 11-1.6z" fill="#d29a5a"/>
+          <circle cx="32" cy="30" r="4" fill="#13100c"/>
+        </svg>
+        <span><b>رستوران شمسه</b><span>SHAMSE RESTAURANT</span></span>
+      </a>
+      <p>رستوران شمسه؛ رستوران معروف ایرانی در استانبول با <b>دو شعبه</b> (تکسیم و کوجاتپه) و طبقهٔ اختصاصی میتاپ در شعبهٔ استقلال.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/shamse.resturan" target="_blank" rel="noopener" aria-label="اینستاگرام"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.4A6.4 6.4 0 1018.4 12 6.4 6.4 0 0012 5.6zm0 10.6A4.2 4.2 0 1116.2 12 4.2 4.2 0 0112 16.2zm6.6-10.9a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5z"/></svg></a>
+        <a href="https://t.me/shamse_restaurant_bot" target="_blank" rel="noopener" aria-label="تلگرام"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3l-3 14.1c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.4 2.7 11c-1-.3-1-1 .2-1.5l17.5-6.8c.8-.3 1.6.2 1.5 1.6z"/></svg></a>
+        <a href="https://wa.me/905013252452" target="_blank" rel="noopener" aria-label="واتساپ"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.6-1.2-4.3-4-4.4-4.2-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.8c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.1 1.4 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.7.9c.5.2.5.4.5.6s-.2.6-.2.6z"/></svg></a>
+        <a href="https://youtube.com/@shamse.resturan" target="_blank" rel="noopener" aria-label="یوتیوب"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C16.2 4.1 12 4.1 12 4.1s-4.2 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.6-.8 2-.8 2S2.2 8.8 2.2 10.5v1.6c0 1.6.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.8.8 2.2.9 1.6.1 6.6.2 6.6.2s4.2 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.3v-1.6c0-1.6-.2-3.3-.2-3.3zM10 14.6V8.9l5.3 2.9z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>صفحات</h4>
+      <ul class="flist">
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="index.html#meetup">طبقهٔ میتاپ</a></li>
+        <li><a href="events.html">رویدادها و گردهمایی‌ها</a></li>
+        <li><a href="marketing.html">استراتژی و مدل‌های درآمدی</a></li>
+        <li><a href="index.html#blog">مقالات</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>شعبه‌ها</h4>
+      <ul class="flist">
+        <li>شعبه ۱: İstiklal Cd. No:179, Beyoğlu</li>
+        <li>شعبه ۲: Abdülhak Hamit Cd. No:17, Kocatepe</li>
+        <li><a href="tel:+905013252452" dir="ltr">+90 501 325 24 52</a></li>
+        <li>همه‌روزه ۱۲:۰۰ – ۰۱:۳۰</li>
+        <li><a href="https://t.me/shamse_restaurant_bot" target="_blank" rel="noopener" dir="ltr">@shamse_restaurant_bot</a> (تلگرام)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>میزبانی رویداد</h4>
+      <p style="font-size:.9rem">گروه دارید؟ طبقهٔ دوم شعبهٔ استقلال برای میتاپ و گردهمایی آماده است.</p>
+      <a class="btn btn--gold" href="index.html#reserve" style="margin-top:16px;padding:12px 22px;font-size:.92rem">رزرو طبقهٔ میتاپ</a>
+    </div>
+  </div>
+  <div class="wrap fbottom">
+    <span>© ۲۰۲۶ <b>رستوران شمسه</b> — تمامی حقوق محفوظ است.</span>
+    <span>طراحی و کدنویسی با ✨ <b>هوش مصنوعی</b> (Arena.ai) | پروژه‌ی <b>shamse-restaurant</b></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var searchInput = document.getElementById("searchInput");
+  var catChips = document.querySelectorAll("#catChips .chip");
+  var areaChips = document.querySelectorAll("#areaChips .chip");
+  var cards = document.querySelectorAll(".rcard");
+  var countEl = document.getElementById("visibleCount");
+  var descEl = document.getElementById("activeFilterDesc");
+  var burger = document.querySelector(".burger");
+  var nav = document.querySelector(".nav");
+
+  if (burger && nav) {
+    burger.addEventListener("click", function(){
+      nav.classList.toggle("open");
+      burger.classList.toggle("x");
+    });
+  }
+
+  var activeCat = "all";
+  var activeArea = "all";
+  var searchQuery = "";
+
+  function filterCards() {
+    var visible = 0;
+    var q = searchQuery.trim().toLowerCase();
+
+    cards.forEach(function(card){
+      var cat = card.getAttribute("data-cat");
+      var area = card.getAttribute("data-area");
+      var blob = card.getAttribute("data-search") || "";
+
+      var matchCat = (activeCat === "all" || cat === activeCat);
+      var matchArea = (activeArea === "all" || area === activeArea);
+      var matchSearch = (!q || blob.indexOf(q) !== -1);
+
+      if (matchCat && matchArea && matchSearch) {
+        card.classList.remove("hidden");
+        visible++;
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+
+    if (countEl) countEl.textContent = visible;
+
+    var parts = [];
+    if (activeCat === "iranian") parts.push("ایرانی و فارسی");
+    else if (activeCat === "afghan") parts.push("افغانستانی");
+    if (activeArea !== "all") {
+      var aBtn = document.querySelector('#areaChips [data-area="' + activeArea + '"]');
+      if (aBtn) parts.push(aBtn.textContent.split("(")[0].trim());
+    }
+    if (q) parts.push("جستجو: «" + q + "»");
+    if (descEl) descEl.textContent = parts.length ? parts.join(" · ") : "همهٔ رستوران‌ها";
+  }
+
+  catChips.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      catChips.forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      activeCat = btn.getAttribute("data-cat");
+      filterCards();
+    });
+  });
+
+  areaChips.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      areaChips.forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      activeArea = btn.getAttribute("data-area");
+      filterCards();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function(e){
+      searchQuery = e.target.value;
+      filterCards();
+    });
+  }
+
+  // Hash handling (e.g. #iranian or #afghan)
+  if (location.hash === "#iranian") {
+    var b = document.querySelector('#catChips [data-cat="iranian"]');
+    if (b) b.click();
+  } else if (location.hash === "#afghan") {
+    var b = document.querySelector('#catChips [data-cat="afghan"]');
+    if (b) b.click();
+  }
+})();
+</script>
+</body>
+</html>

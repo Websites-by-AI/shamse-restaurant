@@ -47,9 +47,9 @@ ok(up[1][2] == "cooking-class@2026-10-17", "next is Saturday cooking class", up[
 ids = [ev["id"] for _d, ev, _k in sk.upcoming(limit=20, today=today, weeks=1)]
 ok("game-night" in ids and "pro-night" in ids and "music-poetry" in ids,
    "weekly ids present in upcoming", ids)
-found = sk.find_occurrence(first_key)
+found = sk.find_occurrence(first_key, today=today)
 ok(found and found[2] == first_key, "find_occurrence round-trips")
-ok(sk.find_occurrence("nope@2020-01-01") is None, "unknown occurrence -> None")
+ok(sk.find_occurrence("nope@2020-01-01", today=today) is None, "unknown occurrence -> None")
 
 # weekly rollover: today is the event day -> next week
 roll = [x for x in sk.upcoming(limit=20, today=dt.date(2026, 10, 17), weeks=1) if x[1]["id"] == "game-night"]

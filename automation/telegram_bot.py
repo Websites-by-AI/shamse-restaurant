@@ -370,6 +370,30 @@ def handle_callback(upd, db):
     if not chat_id or not data:
         return False
 
+    if data == "areas":
+        api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": "📍 انتخاب محله"})
+        api("sendMessage", {"chat_id": chat_id, "text": "یک محله را انتخاب کنید:",
+                            "reply_markup": rl.area_keyboard()})
+        return True
+
+    if data.startswith("area:"):
+        aid = data.partition(":")[2]
+        items = rl.filter_restaurants(area_id=aid)
+        area_title = next((fa for a, fa, _ in rl.AREAS if a == aid), aid)
+        body = rl.format_list_compact(items, title="رستوران‌های منطقهٔ " + area_title)
+        api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": area_title})
+        reply(chat_id, body, buttons=True)
+        return True
+
+    if data.startswith("cat:"):
+        cat = data.partition(":")[2]
+        items = rl.filter_restaurants(category=cat)
+        cat_title = "رستوران‌های ایرانی و فارسی استانبول" if cat == "iranian" else "رستوران‌های افغانستانی استانبول"
+        body = rl.format_list_compact(items, title=cat_title)
+        api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": cat_title})
+        reply(chat_id, body, buttons=True)
+        return True
+
     if data == "my":
         keys = sk.user_rsvps(db, chat_id)
         lines = ["📋 ثبت‌نام‌های شما:"]
@@ -577,8 +601,25 @@ def handle_updates(state, minutes=0, timeout=0):
                 out = "/" + cmd
             elif cmd == "news":
                 r, out = reply(chat_id, news_reply()), "news"
+            elif cmd == "areas":
+                r = reply(chat_id, content.REPLIES["areas"], buttons=False)
+                api("sendMessage", {"chat_id": chat_id, "text": "منطقهٔ مورد نظر را انتخاب کنید:",
+                                    "reply_markup": rl.area_keyboard()})
+                out = "/areas"
+            elif cmd == "search":
+                q = " ".join(raw_text.split()[1:]) if len(raw_text.split()) > 1 else ""
+                if q:
+                    results = rl.filter_restaurants(query=q)
+                    if results:
+                        out_msg = rl.format_list_compact(results, title="نتایج جستجو برای «%s»" % q)
+                    else:
+                        out_msg = "رستورانی برای «%s» پیدا نشد. برای دیدن همه، /restaurants را بزنید." % q
+                    r = reply(chat_id, out_msg, buttons=True)
+                else:
+                    r = reply(chat_id, content.REPLIES["search"], buttons=True)
+                out = "/search"
             elif cmd in content.REPLIES:
-                r = reply(chat_id, content.REPLIES[cmd], buttons=cmd in ("menu", "events", "reserve", "branches", "contact"))
+                r = reply(chat_id, content.REPLIES[cmd], buttons=True)
                 out = "/" + cmd
             else:
                 out_text = kb_answer(text)
@@ -616,28 +657,31 @@ CHANNEL_DESCRIPTION = (
 )
 
 BOT_DESCRIPTION = (
-    "رستوران شمسه؛ رستوران ایرانی در استانبول با دو شعبه: تکسیم (خیابان استقلال ۱۷۹، دو طبقه) "
-    "و کوجاتپه (عبدالحکیم حمیت ۱۷).\n"
-    "طبقهٔ دوم شعبهٔ استقلال میزبان میتاپ‌ها و گردهمایی‌های شماست (ظرفیت ۶۰ نفر).\n\n"
-    "🌐 وب‌سایت: shamse-restaurant.pages.dev\n"
-    "📣 کانال رسمی: @shamse_restaurant\n"
-    "☎️ +90 501 325 24 52 — همه‌روزه ۱۲:۰۰ تا ۰۱:۳۰"
+    "راهنمای رستوران‌های ایرانی، فارسی و افغانستانی در استانبول.\n\n"
+    "فهرست ۱۹ رستوران معتبر با آدرس دقیق، موقعیت نقشه، شماره تماس، وب‌سایت و منو "
+    "(تکسیم، زیتین‌بورنو، اسنیورت، بیلیک‌دوزو، شیشلی، فاتیح و بخش آسیایی):\n"
+    "• ۱۲ رستوران ایرانی و فارسی (فارسی، ریحون، سفیر، شمسه، سودی، آسمان، مژگان، شاندیز، نایب، کیوان)\n"
+    "• ۷ رستوران افغانستانی (بهار افغان، افغان کباب، آریا، سفره افغان، افغان ترک، منان کابل، افغان بیک)\n\n"
+    "🌐 سایت: shamse-restaurant.pages.dev/restaurants.html\n"
+    "📣 کانال: @shamse_restaurant"
 )
 
-BOT_SHORT = "رستوران ایرانی شمسه در استانبول — منو، رویدادها و رزرو. کانال: @shamse_restaurant"
+BOT_SHORT = "راهنمای رستوران‌های ایرانی و افغانستانی استانبول با آدرس، منو، نقشه و لینک"
 
 COMMANDS = [
-    {"command": "menu", "description": "منوی غذا"},
-    {"command": "events", "description": "تقویم رویدادها و میتاپ‌ها"},
-    {"command": "reserve", "description": "رزرو میز و طبقهٔ میتاپ"},
-    {"command": "branches", "description": "آدرس و ساعت دو شعبه"},
-    {"command": "contact", "description": "تماس، وب‌سایت و کانال"},
-    {"command": "news", "description": "آخرین اخبار و فراخوان‌ها"},
-    {"command": "start", "description": "شروع و دکمه‌های منو"},
-    {"command": "rsvp", "description": "ثبت‌نام در رویدادها"},
-    {"command": "my", "description": "پروفایل و ثبت‌نام‌های من"},
+    {"command": "restaurants", "description": "فهرست ۱۹ رستوران ایرانی و افغان"},
+    {"command": "iranian", "description": "۱۲ رستوران ایرانی و فارسی با آدرس و منو"},
+    {"command": "afghan", "description": "۷ رستوران افغانستانی با آدرس و منو"},
+    {"command": "areas", "description": "جستجو بر اساس محله‌های استانبول"},
+    {"command": "search", "description": "جستجوی رستوران یا غذا"},
+    {"command": "rsvp", "description": "ثبت‌نام رویدادها و میتاپ‌ها"},
+    {"command": "events", "description": "تقویم رویدادها"},
+    {"command": "my", "description": "پروفایل من"},
+    {"command": "news", "description": "اخبار و فراخوان‌ها"},
+    {"command": "start", "description": "شروع و منوی اصلی"},
+    {"command": "contact", "description": "تماس و ثبت رستوران"},
+    {"command": "help", "description": "راهنمای کامل"},
     {"command": "stop", "description": "خاموش‌کردن اطلاع‌رسانی"},
-    {"command": "help", "description": "راهنمای دستورها"},
 ]
 
 GUIDE_MARKER = "راهنمای رستوران شمسه"
@@ -649,11 +693,13 @@ def mode_brand():
     if not me.get("ok"):
         print("token problem:", me.get("description"))
         return 2
+    name_res = api("setMyName", {"name": "رستوران‌های ایرانی و افغان استانبول"})
+    print("bot name     :", name_res.get("ok"))
     print("bot profile  :", api("setMyDescription", {"description": BOT_DESCRIPTION, "language_code": ""}).get("ok"),
           "|", api("setMyShortDescription", {"short_description": BOT_SHORT, "language_code": ""}).get("ok"),
           "| commands:", api("setMyCommands", {"commands": COMMANDS}).get("ok"))
-    menu = api("setChatMenuButton", {"menu_button": {"type": "web_app", "text": "وب‌سایت شمسه",
-                                                     "web_app": {"url": content.SITE + "/"}}})
+    menu = api("setChatMenuButton", {"menu_button": {"type": "web_app", "text": "رستوران‌های استانبول",
+                                                     "web_app": {"url": content.SITE + "/restaurants.html"}}})
     print("menu button  :", menu.get("ok"), menu.get("description", ""))
 
     chat, src = resolve_chat()
