@@ -366,3 +366,28 @@ GLOBAL_BENCHMARKS = [
         "key_takeaway": "مدل جامعه‌محور برای خارجی‌های استانبول که به طور پایدار سالن‌های رستوران‌ها را در روزهای وسط هفته پر می‌کند."
     }
 ]
+
+
+# ---------------------------------------------------------------- ۷) تحلیل عمیق تک‌تک رستوران‌ها بر اساس کامنت‌های گوگل مپ و یاندکس
+REVIEWS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "restaurants_reviews.json")
+_REVIEWS_CACHE = None
+
+
+def load_restaurants_reviews():
+    """بارگذاری تحلیل نظرات واقعی گوگل مپ و یاندکس برای تک‌تک رستوران‌ها."""
+    global _REVIEWS_CACHE
+    if _REVIEWS_CACHE is None:
+        if os.path.exists(REVIEWS_FILE):
+            with open(REVIEWS_FILE, "r", encoding="utf-8") as f:
+                _REVIEWS_CACHE = json.load(f)
+        else:
+            _REVIEWS_CACHE = {}
+    return _REVIEWS_CACHE
+
+
+def get_restaurant_review_analysis(rid=None):
+    """دریافت تحلیل یک رستوران یا همه رستوران‌ها بر اساس کامنت‌ها."""
+    data = load_restaurants_reviews()
+    if rid:
+        return data.get(rid)
+    return data

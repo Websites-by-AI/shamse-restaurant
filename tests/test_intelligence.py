@@ -89,6 +89,20 @@ ok(len(dir_data.get("persian_and_afghan", [])) == 19, "19 core restaurants inclu
 ok(len(dir_data.get("atikova_hospitality_network", [])) >= 10, "Atikova hospitality network included")
 ok(len(dir_data.get("istanbul_landmarks", [])) >= 4, "Istanbul landmarks included")
 
+# 8) تحلیل نظرات تک‌تک رستوران‌ها بر اساس کامنت‌های گوگل مپ و یاندکس
+rev_data = il.load_restaurants_reviews()
+ok(len(rev_data) >= 7, "review analyses cover at least 7 major restaurants", len(rev_data))
+for rkey, rinfo in rev_data.items():
+    ok(rinfo.get("google_rating", 0) > 4.0, f"{rkey} google rating > 4.0", rinfo.get("google_rating"))
+    ok(rinfo.get("google_reviews_count", 0) > 200, f"{rkey} reviews count > 200", rinfo.get("google_reviews_count"))
+    ok(len(rinfo.get("top_praises", [])) >= 3, f"{rkey} top praises count", len(rinfo.get("top_praises", [])))
+    ok(len(rinfo.get("top_complaints", [])) >= 1, f"{rkey} top complaints identified", len(rinfo.get("top_complaints", [])))
+    ok(len(rinfo.get("best_dishes", [])) >= 3, f"{rkey} best dishes identified", len(rinfo.get("best_dishes", [])))
+    ok(bool(rinfo.get("ai_takeaway")), f"{rkey} has ai takeaway")
+
+single = il.get_restaurant_review_analysis("shamse-taksim")
+ok(single and any("قورمه" in d for d in single.get("best_dishes", [])), "single restaurant review analysis lookup works")
+
 print("\n".join(checks))
 print("\n===== %d checks, %d failures =====" % (len(checks), len(fails)))
 if fails:
