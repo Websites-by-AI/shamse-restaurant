@@ -255,6 +255,23 @@
       "title": "Somer Şef'ten yeni restoran hamlesi: Bu kez kebapçı açtı - Taşköprü Postası",
       "title_fa": "رستوران جدید کبابی در استانبول"
     },
+    "154099f4d0a9ec48": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "154099f4d0a9ec48",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLWFkXzZmQm1xN01CdTJIcFJfcUFaekhVaVZHclUySEQ3a05Jb2hJWGhDSWFMWGJreVNTQmN1cll1Ql8zOWVZSGhIOHRhcXdHai0tUUR6OVBvZGxJMFlOSU9rLXM0VVlOdnlCeVpSTElQU0JiQ2lGMTNBamNDY1VPX1lTSnNwT2ZYeFJ5TGRnSF9JdExXRDlz?oc=5",
+      "message_id": 27,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-18T11:08:10.148926+00:00",
+      "published": "2026-10-07T00:13:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "آتش‌سوزی در رستورانی در آرناووت‌کوی کنترل شد",
+      "title": "Arnavutköy'deki restoran yangını kontrol altına alındı - Habererk.com",
+      "title_fa": "آتش‌سوزی رستوران استانبول"
+    },
     "1609ea2fa7c7c38c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -305,6 +322,23 @@
       "summary_fa": "فستیوال غذایی در استانبول با ۴ صحنه مختلف",
       "title": "Dört ayrı sahnede festival buluşması - www.milliyetsanat.com",
       "title_fa": "فستیوال غذایی"
+    },
+    "182edc8a5821d80f": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "182edc8a5821d80f",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUE42RUxpOWVZRnZab2luY09hWXRaZnIzMXFuX2RSZlZHT0ZtQzJzV2NLWHpmOGlyNGlnSDA2SXFVRzRzeGVjUk00b3VrVU9qeU5naEkyWExnS2lDLUR2VHlJMC1nN2NyX01rdVNoUHVBTnl0T1VSZ2hzUWsxNktuSTBEek1RUHFIVUZ0Q3lYaW5BWWs1THB0UHRR?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T17:13:17+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "شэф ترکیه و اطلاعات شخصی",
+      "title": "Hataylı şef Maksut Aşkar kimdir? Eşi, kızı, yaşı ve restoranı - Hatay Ekspres",
+      "title_fa": "شэф ترکیه"
     },
     "183dd2187951ce40": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -441,6 +475,23 @@
       "summary_fa": "انجمن واردکنندگان کره برای گسترش صادرات به ترکیه و فرانسه تلاش می‌کند",
       "title": "Korea Importers Association Seeks to Diversify Import Sources in Türkiye and France - 아시아경제",
       "title_fa": "ایجاد تنوع در صادرات"
+    },
+    "20bcb41486bcc2de": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "20bcb41486bcc2de",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObUJVclREYkRXN0o4OU9GTVpxSEtYSnhDYXROTFk5N0NsNUNnQ2llazdxT3NLNDFBbHRLMkgyUjY5UUFiMVFQNkpRcXlhQTdsUUJBN3MzTTY4ek5pLXZZX0JjTmZRNnpZczlJS1Q1eVk0ZmpEUXpQY1paTkJ1d2QydGoydjhVMFhsSVI1V2Y5VTJjTXJ6Y19aU3U4cldpRXphem9sN3kwR2owUVRtMHc?oc=5",
+      "message_id": 27,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-18T11:08:10.148926+00:00",
+      "published": "2026-10-05T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "۲۰۰ نقطهٔ خوشمزه در استانبول توسط شеф‌های معروف تایید شد",
+      "title": "İstanbulda 200 lezzet noktası ünlü şefler tarafından tescillendi - Kültür Sanat Haberleri - CNN Türk",
+      "title_fa": "۲۰۰ نقطهٔ خوشمزه استانبول"
     },
     "2268f2ba4e12da73": {
       "cat": "رستوران و کافه در استانبول",
@@ -679,6 +730,40 @@
       "summary_fa": "اجرای نمایش زبان: بدون مشکل با رقصنده فلسطینی ماراه حاج حسین در استانبول",
       "title": "(Nov 28-29) Language: No Broblem @ Alan Kadıköy",
       "title_fa": "نمایش زبان: بدون مشکل"
+    },
+    "3b296471fb284baf": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "3b296471fb284baf",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbDNZbHNqblhHRFNGTEpxUjlZLXYzNmIxWm5VS3JhazN3UWcxOWxoMC10RFNYN09tbnRXWlhWYmtoT1NjS25Pb3ZsZU5nSGJXQ1dqT3BMcjV2M2dyNUZDWGRhc2pISDhUdVZrbnJZWFcwbC1ucVloWjFEcXU0MzY4UEl4ZEJ5eFhKOE02OFVHOHhzdVJ2?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-17T22:00:18+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Mersin’de fuhuş operasyonu: 6 şüpheli tutuklandı - herkesduysun.com",
+      "title_fa": ""
+    },
+    "3c449df9cc882d6f": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "3c449df9cc882d6f",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8yMXJPbEU1WFJlX3lSR3hkWWVrNFZhb2Iwakw1RV9BekxoYUtORGt2dk95VDhKME9FSVNlTmE4Rm93Ty1xUGxLbEVra1JCVnBLOWdEeVJqRG42UHZoazltNVZCMGwzUElNT3NvTUVLUHlJZFJ1TlhNb29ZVQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T12:03:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "در استانبول یک کافه رستوران جدید باز شده",
+      "title": "Düziçi’nde Alaca Gold Restoran Cafe Açıldı - Sabır Gazetesi",
+      "title_fa": "بازشدن کافه رستوران"
     },
     "3c56c5192edc9844": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -1070,6 +1155,23 @@
       "summary_fa": "",
       "title": "Staten Islander takes reins of progressive non-profit founded by Van Jones - SILive.com",
       "title_fa": ""
+    },
+    "559870be9af26497": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "559870be9af26497",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcGRXLS1hd1V2Q0pucUF6aUVPY0RGa0dDeEdlT1g3ZW5BNTZKM2FRTl9OeklNdkxudkxTdG43RUdxbDZFa1BmeWpRUm5XOFBVb3pTWEo0M1NLT2MtS2tNNHFJRXR4TGJMVjVYRjJLUFBweXpoYjA4aDRfbnJYREJWeXJDNkFBeHFXOUlqVXIyN0NYMmdNellsVG1JcUN1TThi?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T19:24:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "پیشنهاد شبکهٔ پیک برای رستوران‌ها در استانبول",
+      "title": "Taner Himmetoğlu, restoran esnafına kurye ağı projesi sundu - Haberhergün",
+      "title_fa": "پیشنهاد شبکهٔ پیک برای رستوران‌ها"
     },
     "56b1a82c4cf58f69": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -1683,6 +1785,23 @@
       "title": "Gastroshow 2026: Gastronomi Turizminin Davos Zirvesi İstanbul'da Başladı - A24.com.tr",
       "title_fa": "جشنواره گاسترونومی"
     },
+    "83d888f21f1fef6c": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "83d888f21f1fef6c",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZVMtR0x6aGlvekNHNWprMV9IZ200SmlUVDVsdU5CaUxHcEoxa1J3eEY0R2R5UHcyS2IxWExUWnRqNjJIM0FSbjhiM2trOGI3eS1RczM3OWdnN19UOXExazU5aTQ0VERLMTQzS19JX1JyQnFOQ1pydUZLZmkxc3I4TURVQWVYOFNtSENCZGVveXV0X0pDYUs1cEVVZDBoUmhLOFA4UA?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-17T09:16:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Zeynep Değirmencioğlu Kimdir, Kaç Yaşında? Ayşecik'in Hayatı ve Oynadığı Filmler - ede TV",
+      "title_fa": ""
+    },
     "857b98dfd5c2b6d2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2089,6 +2208,40 @@
       "source": "Google News — Istanbul food",
       "summary_fa": "",
       "title": "Istanbul: Islamic extremists disrupt Japanese manga festival - AsiaNews",
+      "title_fa": ""
+    },
+    "b213b2d03aecfdf6": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "b213b2d03aecfdf6",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRlE3OUxkaVM2WFNLMEJfdUZOMW1NZHFFSGVUUDRhdHRkQmMyeHhWUjRSTVU0ck5EV1ZCS1FGU1pHRVNoN3BTa2NvSGhUVEFkX21vTjN3ejBPemNmdkxRbmV2aTMxaWJ2MV9NLXNDOUNGVExDT1RHdGNrR01ZdmNfbzBac25jWGxpQWVkbHE1ZGZrcmZFMVRCbUVBTS1qSm5KdGIydHZtVXYyeUJlckdNd0MtNA?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-18T08:49:36+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Fuhuş operasyonunda mahkeme kararını verdi: İş yerlerine ruhsat iptali - Hürriyet",
+      "title_fa": ""
+    },
+    "b2d4f696a9bbb151": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "b2d4f696a9bbb151",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNWtCLV9PUnZsUjM5UVR6UkVZX2owaHVxcEc0dGZxa0VCMHBOYkVrUWwwSTdfRzYtaUlrUnpUMlJtakU1RU1lRVNnc1ZrYUhmRFBjN0xjbnFmYXZXcUdwSWYyQXV6T0U1Z0hhVC13QkpDNm5oRGpQRDFFMEFCYW0yUVktSFZRaWJKYlBfdjBiVnVXQ0ZwRWFkb2VqbDhFUlNscUtZc2hkck4?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T16:08:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul Maratonu’nda Halk Koşusu kayıtları 21 Ekim’de başlıyor - Gazete Pencere",
       "title_fa": ""
     },
     "b35107d956b55b59": {
@@ -2652,6 +2805,23 @@
       "title": "MykOrini İstanbul birinci yaşını gastronomi ve sanat dolu bir davetle kutladı - Yeni Birlik",
       "title_fa": "جشن یک سالگی MykOrini"
     },
+    "d63ac9c01c8cf058": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "d63ac9c01c8cf058",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeHJGMXVvVXZVZ05lY3BBaVlhcWk4cGFIYUpnU3ZMWFV3VHFHU0NONzkzbDRSamN1RVFFdGVucHdWQjdCdjZsd3k0N2F6XzJZUUZTTmF4WnZwUGMyTE9zNnBCU0JMTDR3bTlmMVQ0Vk9VVTBnY2ZFVUVoMlhEVTIwdEdkNk82SWZlaWoteg?oc=5",
+      "message_id": 27,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-18T11:08:10.148926+00:00",
+      "published": "2026-10-06T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "رستورانی در استانبول دچار آتش‌سوزی شد",
+      "title": "Restoran alevlere teslim oldu: İçeridekiler son anda çıktı - Yeni Alanya",
+      "title_fa": "آتش‌سوزی در رستورانی"
+    },
     "d652bcb8fd0602ff": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2702,6 +2872,23 @@
       "summary_fa": "",
       "title": "Mehmet Akdağ’ın Lezzet Rotaları & 7 Mehmet İstanbul - Oggusto",
       "title_fa": "رستوران‌های استانبول"
+    },
+    "d85c86a5257b66d7": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "d85c86a5257b66d7",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBTTmxYUVozc1FlLUw4U1l4clNPUVFPVFVHaF85OG90MU10N1JFOFF5OGVMZ3R2SVY3Mmd6WWVuUEJTS2I3Q2ZxSnZBSWZpaHNhRWNrcmVjeG5jNl81NlhfRmptcDc0OUR0T293STBMSjl6UQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T07:00:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Ankara’nın En İyi Restoranları 2026: Ne Yenir, Nereye Gidilir? - Oggusto",
+      "title_fa": ""
     },
     "d93c728178b2a842": {
       "cat": "رستوران و کافه در استانبول",
@@ -2787,6 +2974,23 @@
       "summary_fa": "استانبول در هزینه‌های رستوران و هتل‌های ترکیه پیشتاز است",
       "title": "Türkiye’nin restoran ve otel harcamalarında bir şehir öne çıktı - Turizm Ajansı",
       "title_fa": "برترین شهر ترکیه در هزینه‌های رستوران"
+    },
+    "e5764ae0585b0aba": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-18T11:08:10.148926+00:00",
+      "id": "e5764ae0585b0aba",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMkg1Zlh6Ry15aC15YVJDaUEwWEdwRWUyeDZJYjVCZjM2bFpkRWxEZjJyS202R0tLQ09mdGtqeVBIYS1kZWszZmFwY0pLcnYyU0FRUmtQLVZJSnFjMmY2dm41SjF6cWsycVFIaDIwYWFrSThZR3NhU3dDd3V1X2Rfanc1cjdxblE5TnhGWUtfX2l6cW1WUW1MeXFtdHlIZ2FL?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-16T20:05:21+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "رستورانی در استانبول هدف سرمایه‌گذاری در هر دو طرف شهر را دارد",
+      "title": "\"İstanbul'un her iki yakasında yatırım yapmayı hedefliyoruz\" - Platin Dergisi",
+      "title_fa": "هدف سرمایه‌گذاری"
     },
     "e711231a5932616e": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -3166,6 +3370,12 @@
     },
     {
       "at": "2026-10-18T04:36:05.248214+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-18T11:08:10.148926+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
