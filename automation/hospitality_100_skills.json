@@ -1,0 +1,1068 @@
+{
+  "version": "1.0.0",
+  "total_skills": 100,
+  "clusters": [
+    {
+      "id": "c1",
+      "title_fa": "۱. گیت‌وی‌ها و تجمیع داده‌های چندکاناله (Omnichannel Gateways)",
+      "title_en": "Omnichannel Ingestion & Gateways",
+      "description": "اتصال مستقیم، وب‌هوک و دریافت لحظه‌ای نظرات از گوگل مپ، یاندکس، اینستاگرام، فیسبوک، تریپ‌ادوایزر و سایت اختصاصی."
+    },
+    {
+      "id": "c2",
+      "title_fa": "۲. پردازش زبان طبیعی و احساسات ۴ زبانه (Multilingual NLP)",
+      "title_en": "Multilingual NLP & Sentiment Engine",
+      "description": "تحلیل عمیق متون به زبان‌های فارسی، ترکی، انگلیسی و عربی با تشخیص طعنه، جنبه‌های کیفی و اعتبارسنجی نقدها."
+    },
+    {
+      "id": "c3",
+      "title_fa": "۳. سیستم پاسخ‌دهی خودکار و هوشمند (AI Smart Auto-Responder)",
+      "title_en": "AI Smart Auto-Responder",
+      "description": "پاسخ‌گویی اختصاصی به تمجیدها، نقدها، معطلی صف، کامنت‌های شبکه‌های اجتماعی و تزریق کلیدواژه‌های سئو."
+    },
+    {
+      "id": "c4",
+      "title_fa": "۴. مدیریت بحران، هشدارهای فوری و SLA (Reputation Crisis)",
+      "title_en": "Crisis Management & SLA Protection",
+      "description": "شناسایی زودهنگام مسمومیت، هجمه‌های فیک، تخلفات بهداشتی، هشدار به سرآشپز و جبران خسارت مهمان."
+    },
+    {
+      "id": "c5",
+      "title_fa": "۵. مهندسی منو و تحلیل خوراک بر اساس بازخوردها (Menu Engineering)",
+      "title_en": "Menu Engineering & Dish Insights",
+      "description": "پایش محبوبیت غذاها، افت کیفیت دستورپخت، رضایت از حجم به قیمت، تحلیل دلیوری و ماتریس BCG اقلام منو."
+    },
+    {
+      "id": "c6",
+      "title_fa": "۶. پایش شبکه‌های اجتماعی و اینستاگرام (Instagram & Social Listening)",
+      "title_en": "Instagram & Social Media Listening",
+      "description": "رصد ریلزها، ارزیابی اینفلوئنسرها، بازنشر محتوای تولیدی مهمانان (UGC)، تبدیل دایرکت به رزرو و رصد رقبا."
+    },
+    {
+      "id": "c7",
+      "title_fa": "۷. سئوی محلی و صدرنشینی در گوگل مپ (Local SEO & 3-Pack)",
+      "title_en": "Local SEO & Google Maps Ranking",
+      "description": "ردیابی رتبه در Local 3-Pack، تراکم کلمات کلیدی، آپلود عکس‌های ژئوتگ‌شده، پست‌های هفتگی و بهینه‌سازی Near Me."
+    },
+    {
+      "id": "c8",
+      "title_fa": "۸. هوش رقابتی و بنچ‌مارک بازار استانبول (Competitive Intelligence)",
+      "title_en": "Competitive Intelligence & Benchmarking",
+      "description": "مقایسه درصد رضایت و قیمت‌ها با ریحون، فارسی و سفیر، ردیابی ضعف‌های رقیب، سهم صدا و جابجایی سرآشپزها."
+    },
+    {
+      "id": "c9",
+      "title_fa": "۹. درآمدزایی از فضای خالی و رویدادها (Yield Management)",
+      "title_en": "Yield Management & Space Monetization",
+      "description": "مونتایز ساعات خلوت ۱۴:۳۰ تا ۱۸:۳۰، قیمت‌گذاری تیکت‌های مافیا و شعر، پکیج کار اشتراکی و پیش‌فاکتور ضیافت‌های شرکتی."
+    },
+    {
+      "id": "c10",
+      "title_fa": "۱۰. وفادارسازی، باشگاه مشتریان و CRM (Guest Retention & CRM)",
+      "title_en": "Guest Retention & CRM Automation",
+      "description": "درخواست ثبت نظر بعد از پرداخت، پروفایل علایق VIP، یادآور سالگرد و تولد، بازگرداندن مشتریان دورشده و سنجش LTV."
+    }
+  ],
+  "skills": [
+    {
+      "id": "SKILL-001",
+      "cluster_id": "c1",
+      "name_fa": "اتصال وب‌هوک گوگل بیزینس (GBP Realtime Webhook)",
+      "name_en": "Google Business Profile Real-time Webhook",
+      "description": "دریافت لحظه‌ای نوتیفیکیشن ثبت نظر جدید در گوگل مپ از طریق Google Cloud Pub/Sub بدون نیاز به پولینگ دوره‌ای.",
+      "engine_tool": "Google Cloud Pub/Sub + GBP API v4",
+      "trigger": "زمان دریافت نظر جدید در گوگل مپ",
+      "action": "بررسی بلافاصله امتیاز، ایجاد تیکت بررسی و محاسبه SLA پاسخ"
+    },
+    {
+      "id": "SKILL-002",
+      "cluster_id": "c1",
+      "name_fa": "همگام‌سازی دوره‌ای Google Places API v1",
+      "name_en": "Google Places API v1 Batch Ingestion",
+      "description": "فراخوانی منظم Place Details برای استخراج نظرات جدید، امتیاز میانگین و آمار کل بررسی‌ها در صورت قطعی وب‌هوک.",
+      "engine_tool": "Google Places API v1 / New Place Details",
+      "trigger": "اجرای خودکار هر ۶ ساعت",
+      "action": "تطبیق دیتابیس داخلی و شناسایی نظرات ویرایش‌شده یا حذف‌شده"
+    },
+    {
+      "id": "SKILL-003",
+      "cluster_id": "c1",
+      "name_fa": "گیت‌وی پایش و استخراج نظرات یاندکس (Yandex Sprav)",
+      "name_en": "Yandex Maps & Sprav Review Harvester",
+      "description": "اتصال به کارتابل کسب‌وکار یاندکس (Yandex Sprav) و موتور جستجوی نقشه‌های یاندکس برای تجمیع نظرات روس‌زبانان و ترک‌ها.",
+      "engine_tool": "Yandex Sprav API + Org Harvester",
+      "trigger": "هر ۴ ساعت یک‌بار",
+      "action": "استخراج متن نظر، پاسخ‌های رسمی صاحب کسب‌وکار و امتیاز ستاره‌ای"
+    },
+    {
+      "id": "SKILL-004",
+      "cluster_id": "c1",
+      "name_fa": "گیت‌وی کامنت‌های اینستاگرام (Instagram Graph API)",
+      "name_en": "Instagram Graph API Comments & Media",
+      "description": "شنود تمامی کامنت‌ها، رپلای‌ها و زیرکامنت‌های پست‌ها و ریلزهای رستوران از طریق توکن تجاری اینستاگرام.",
+      "engine_tool": "Meta Graph API v20 /instagram_business_account",
+      "trigger": "وب‌هوک زنده وب‌هوک Meta",
+      "action": "ثبت متن کامنت، نام کاربری و استخراج حس اولیه"
+    },
+    {
+      "id": "SKILL-005",
+      "cluster_id": "c1",
+      "name_fa": "رصد منشن‌ها و تگ‌های اینستاگرام (Mention & Tag Listening)",
+      "name_en": "Instagram Mention & Tag Ingestion",
+      "description": "رهگیری زمان‌هایی که بلاگرها، اینفلوئنسرها و مهمانان آیدی رستوران را در کپشن یا استوری خود تگ یا منشن می‌کنند.",
+      "engine_tool": "Instagram Graph API /mentioned_comment & /tags",
+      "trigger": "اعلان رویداد Mention در اینستاگرام",
+      "action": "تحلیل محتوای استوری یا پست و ارسال پیام تشکر یا بازنشر"
+    },
+    {
+      "id": "SKILL-006",
+      "cluster_id": "c1",
+      "name_fa": "گیت‌وی رتبه‌بندی و نظرات فیسبوک (Facebook Page Reviews)",
+      "name_en": "Facebook Page Ratings & Recommendations",
+      "description": "دریافت سیستم پیشنهادها (Recommendations) و نقدهای تفصیلی توریست‌های بین‌المللی در صفحه رسمی فیسبوک.",
+      "engine_tool": "Facebook Graph API /{page-id}/ratings",
+      "trigger": "وب‌هوک Ratings فیسبوک",
+      "action": "ارزیابی توصیه (Recommended/Not Recommended) و ایجاد پیش‌نویس پاسخ"
+    },
+    {
+      "id": "SKILL-007",
+      "cluster_id": "c1",
+      "name_fa": "گیت‌وی نظرات تریپ‌ادوایزر (Tripadvisor Content API)",
+      "name_en": "Tripadvisor Review Harvester",
+      "description": "استخراج نقدها، امتیازات غذا/سرویس/ارزش و زبان نظرات از سامانه رسمی تریپ‌ادوایزر برای رصد بازار گردشگری.",
+      "engine_tool": "Tripadvisor Partner API /location/{id}/reviews",
+      "trigger": "پولینگ روزانه",
+      "action": "بررسی جایگاه رستوران در رتبه‌بندی Beyoglu / Istanbul"
+    },
+    {
+      "id": "SKILL-008",
+      "cluster_id": "c1",
+      "name_fa": "گیت‌وی نظرات پلتفرم‌های دلیوری ترکی (Yemeksepeti & Trendyol)",
+      "name_en": "Turkish Delivery Portals Review Ingestion",
+      "description": "پایش بازخوردهای سفارشات بیرون‌بر، نظرات بسته‌بندی، سرعت پیک و کیفیت غذای تحویلی در یمک‌سپتی و ترند‌یول یمک.",
+      "engine_tool": "Merchant Portal Ingestion Gateway",
+      "trigger": "هر ۲ ساعت در شیفت کاری",
+      "action": "هشدار فوری در صورت نشت غذا، سردی یا جا افتادن نان و سالاد"
+    },
+    {
+      "id": "SKILL-009",
+      "cluster_id": "c1",
+      "name_fa": "گیت‌وی نظرسنجی کیوآرکد روی میز و سایت (QR & Direct Web)",
+      "name_en": "In-Venue QR & Direct Website Review Gateway",
+      "description": "فرم نظرسنجی فوری سر میز از طریق اسکن QR کد با امکان تفکیک شماره میز و سالن قبل از ثبت نهایی در شبکه‌های عمومی.",
+      "engine_tool": "FastAPI Webhook /api/feedback/qr",
+      "trigger": "اسکن فوری کیوآرکد حین پرداخت یا انتظار",
+      "action": "فیلتر نارضایتی سر میز و حل مشکل توسط مدیر سالن قبل از خروج"
+    },
+    {
+      "id": "SKILL-010",
+      "cluster_id": "c1",
+      "name_fa": "شناسایی و یکپارچه‌سازی هویت مهمان در چند کانال (Unified Guest ID)",
+      "name_en": "Cross-Platform Guest De-anonymization & Matching",
+      "description": "اتصال هویت کاربری که در اینستاگرام کامنت گذاشته با شماره تلفن ثبت‌شده در رزرو تلگرام یا گوگل مپ.",
+      "engine_tool": "Entity Matching & Phone/Handle Graph",
+      "trigger": "هنگام دریافت هر پیام از هر کانال",
+      "action": "تشکیل پرونده ۳۶۰ درجه تجربه مهمان در دیتابیس CRM"
+    },
+    {
+      "id": "SKILL-011",
+      "cluster_id": "c2",
+      "name_fa": "تحلیل احساسات زبان عامیانه و اصطلاحات فارسی (Persian Slang NLP)",
+      "name_en": "Persian Colloquial Dining Sentiment NLP",
+      "description": "شناسایی دقیق عبارات خودمانی ایرانی مانند «دست‌مریزاد»، «ترکوندید»، «تعریفی نداشت»، «بیات بود» و رتبه‌بندی شدت حس.",
+      "engine_tool": "Persian Rule-based & Transformer Embeddings",
+      "trigger": "دریافت متن فارسی از گوگل مپ/اینستا",
+      "action": "امتیازدهی احساسی از ۱- (بسیار منفی) تا ۱+ (بسیار مثبت)"
+    },
+    {
+      "id": "SKILL-012",
+      "cluster_id": "c2",
+      "name_fa": "پردازش واژگان رستورانی ترکی استانبولی (Turkish Gastronomy NLP)",
+      "name_en": "Turkish Dining Sentiment & Food Tagger",
+      "description": "تحلیل عبارات ترکی مانند «ellerinize sağlık»، «harika lezzet»، «porsiyon küçük»، «servis yavaş» و تفکیک ابعاد آن.",
+      "engine_tool": "Turkish BERT / Lexicon Matcher",
+      "trigger": "نظرات با کد زبان tr در گوگل و یاندکس",
+      "action": "استخراج تم‌های رضایت ترک‌زبانان مقیم استانبول"
+    },
+    {
+      "id": "SKILL-013",
+      "cluster_id": "c2",
+      "name_fa": "تحلیل بازخورد گردشگران بین‌المللی انگلیسی‌زبان (English Tourist NLP)",
+      "name_en": "English Tourist Sentiment Classifier",
+      "description": "ارزیابی تجربه توریست‌های اروپایی و آمریکایی با تمرکز بر اصطلاحات فرهنگی مانند authentic saffron, hospitality, cozy.",
+      "engine_tool": "VADER / Transformer NLP",
+      "trigger": "نظرات به زبان انگلیسی در گوگل و تریپ‌ادوایزر",
+      "action": "سنجش درک گردشگران خارجی از سنت‌های غذاخوری ایرانی"
+    },
+    {
+      "id": "SKILL-014",
+      "cluster_id": "c2",
+      "name_fa": "پردازش نظرات مهمانان عرب‌زبان (Arabic Review Parser)",
+      "name_en": "Arabic Gulf & Levantine Sentiment Parser",
+      "description": "شناسایی اصطلاحات عربی مانند «أكل لذيذ»، «شاي بالزعفران»، «الخدمة ممتازة»، «السعر مرتفع» در توریسم خاورمیانه.",
+      "engine_tool": "Arabic NLP Tokenizer",
+      "trigger": "نظرات با کد زبان ar",
+      "action": "دسته‌بندی انتظارات گردشگران عرب از طعم برنج و گوشت حلال"
+    },
+    {
+      "id": "SKILL-015",
+      "cluster_id": "c2",
+      "name_fa": "تحلیل احساسات تفکیکی جنبه‌های رستوران (Aspect-Based Sentiment)",
+      "name_en": "Aspect-Based Sentiment Analysis (ABSA)",
+      "description": "تفکیک یک نظر ترکیبی به ۵ بعد مستقل: کیفیت غذا، سرعت سرویس، قیمت و ارزش، بهداشت و دکوراسیون محیطی.",
+      "engine_tool": "Multi-Label Classification Pipeline",
+      "trigger": "تمام نظرات بلندتر از ۱۵ کلمه",
+      "action": "تولید ماتریس راداری نمرات ۵ گانه برای هر شیفت کاری"
+    },
+    {
+      "id": "SKILL-016",
+      "cluster_id": "c2",
+      "name_fa": "استخراج احساسات به تفکیک آیتم‌های منو (Dish-Level Sentiment)",
+      "name_en": "Dish-Specific Sentiment Extraction",
+      "description": "اتصال خودکار نظرات به اقلام موجود در منو (مثلاً قورمه‌سبزی عالی ولی کباب کوبیده شور بود).",
+      "engine_tool": "Fuzzy Dish Entity Linker",
+      "trigger": "متن‌های حاوی اسامی خوراک‌ها",
+      "action": "به‌روزرسانی امتیاز لحظه‌ای هر بشقاب غذا در سیستم آشپزخانه"
+    },
+    {
+      "id": "SKILL-017",
+      "cluster_id": "c2",
+      "name_fa": "تشخیص هوشمند کنایه، طعنه و تمسخر (Sarcasm & Irony Detector)",
+      "name_en": "Sarcasm & Irony Detection in Reviews",
+      "description": "تشخیص نظراتی که با واژگان مثبت نوشته شده اما معنای منفی شدید دارند (مثلاً: «ممنون که ۲ ساعت ما رو معطل کردید!»).",
+      "engine_tool": "Contextual Contrast & Punctuation Classifier",
+      "trigger": "نظرات با تضاد معنایی بین امتیاز و متن",
+      "action": "اصلاح برچسب احساسی و جلوگیری از ارسال پیام تشکر اشتباه"
+    },
+    {
+      "id": "SKILL-018",
+      "cluster_id": "c2",
+      "name_fa": "شناسایی نقدها و کامنت‌های فیک و رباتی (Fake Review Detector)",
+      "name_en": "Fake Review & Bot Pattern Detector",
+      "description": "ارزیابی الگوهای مشکوک، حساب‌های کاربری بدون تصویر با ۱ نظر و فاصله‌های زمانی غیرعادی جهت کشف نقدهای رقیب.",
+      "engine_tool": "Profile Age & Linguistic Entropy Model",
+      "trigger": "نظرات ۱ ستاره یا ۵ ستاره بدون جزئیات",
+      "action": "علامت‌گذاری جهت ثبت گزارش تخلف در گوگل یا ریپورت به مدیر"
+    },
+    {
+      "id": "SKILL-019",
+      "cluster_id": "c2",
+      "name_fa": "تحلیل احساسی و اعتبارسنجی تصاویر ارسالی مشتریان (Photo Review Vision)",
+      "name_en": "Review Photo Computer Vision Sentiment",
+      "description": "ارزیابی عکس‌های همراه با نظر در گوگل مپ جهت تشخیص کیفیت چیدمان غذا، سوختگی کباب، تمیزی میز و ظروف مسی.",
+      "engine_tool": "Image Recognition & Object Detection",
+      "trigger": "نظرات حاوی عکس آپلودشده",
+      "action": "تطبیق ادعای مشتری در متن با واقعیت بصری عکس ارسالی"
+    },
+    {
+      "id": "SKILL-020",
+      "cluster_id": "c2",
+      "name_fa": "محاسبه‌گر لحظه‌ای شاخص ترویج‌کنندگان (Net Promoter Score Estimator)",
+      "name_en": "Real-time NPS & CSAT Estimator",
+      "description": "تبدیل جریان پیوسته نظرات به شاخص‌های استاندارد صنعت مهمان‌نوازی (Promoter, Passive, Detractor).",
+      "engine_tool": "NPS Mathematical Aggregator",
+      "trigger": "پایان هر روز کاری و هفتگی",
+      "action": "محاسبه درصد خالص NPS برای ارائه به مدیران و سرمایه‌گذاران"
+    },
+    {
+      "id": "SKILL-021",
+      "cluster_id": "c3",
+      "name_fa": "مولد پاسخ تشکر اختصاصی به نظرات ۵ ستاره (5-Star Gratitude Generator)",
+      "name_en": "Personalized 5-Star Gratitude Generator",
+      "description": "تولید پاسخ‌های گرم، صمیمی، غیرتکراری و همراه با اشاره به غذای محبوب مشتری به زبان خودش.",
+      "engine_tool": "GPT Generative Persona with Brand Voice",
+      "trigger": "ثبت نظر ۵ ستاره با متن",
+      "action": "ارسال پاسخ در کمتر از ۱۵ دقیقه با امضای مدیر سالن"
+    },
+    {
+      "id": "SKILL-022",
+      "cluster_id": "c3",
+      "name_fa": "پروتکل همدلی و عذرخواهی برای نقدهای ۱ تا ۳ ستاره (Empathy Protocol)",
+      "name_en": "1-to-3 Star Empathy & De-escalation Protocol",
+      "description": "پاسخ به دور از موضع تدافعی، با پذیرش مسئولیت، ابراز تأسف صادقانه و دعوت به گفتگوی مستقیم برای جبران.",
+      "engine_tool": "Non-Defensive Empathy Script Engine",
+      "trigger": "ثبت نظر ۱ یا ۲ یا ۳ ستاره",
+      "action": "انتشار پاسخ آرام‌بخش و پیشنهاد پیگیری در کانال خصوصی"
+    },
+    {
+      "id": "SKILL-023",
+      "cluster_id": "c3",
+      "name_fa": "پاسخ هوشمند به شکایات معطلی و صف شلوغی (Peak-Hour Queue Responder)",
+      "name_en": "Peak-Hour Waiting & Queue Empathy Responder",
+      "description": "توضیح شرایط ساعات اوج پیاده‌راه تکسیم و ارائه راهکار رزرو مستقیم آنلاین یا معرفی ربات تلگرام.",
+      "engine_tool": "Context-Aware Wait Mitigation Template",
+      "trigger": "نظرات حاوی کلمات «صف»، «معطلی»، «انتظار»",
+      "action": "هدایت مخاطب به دستور /reserve در ربات تلگرام جهت رزرو دفعه بعد"
+    },
+    {
+      "id": "SKILL-024",
+      "cluster_id": "c3",
+      "name_fa": "تطبیق لحن فرهنگی و زبانی پاسخ‌ها (Multilingual Tone Adapter)",
+      "name_en": "Multilingual Cultural Tone Adapter",
+      "description": "تغییر لحن از صمیمانه و خودمانی برای ایرانیان به لحن رسمی و مهمان‌نوازانه برای گردشگران اروپایی و عرب.",
+      "engine_tool": "Cultural Tone Policy Matrix",
+      "trigger": "تمام پاسخ‌های تولیدی هوش مصنوعی",
+      "action": "رعایت آداب و رسوم زبانی و القاب محترمانه در زبان مقصد"
+    },
+    {
+      "id": "SKILL-025",
+      "cluster_id": "c3",
+      "name_fa": "هدایت هوشمند گفتگوی حل اختلاف به کانال خصوصی (Off-Platform Router)",
+      "name_en": "Off-Platform Resolution Router",
+      "description": "ارائه شماره تماس مستقیم مدیر یا لینک چت واتساپ برای جلوگیری از ادامه بحث و تبادل پیام در محیط عمومی گوگل.",
+      "engine_tool": "Private Channel Escalation Linker",
+      "trigger": "نظرات با اعتراض شدید مالی یا کیفی",
+      "action": "ارائه شماره مستقیم واتساپ با کد پیگیری اختصاصی"
+    },
+    {
+      "id": "SKILL-026",
+      "cluster_id": "c3",
+      "name_fa": "تزریق ارگانیک کلمات کلیدی سئو در پاسخ‌ها (SEO Review Responder)",
+      "name_en": "SEO-Optimized Review Response Generator",
+      "description": "گنجاندن هوشمندانه عبارات کلیدی جستجوی محلی (مانند چلوکباب ایرانی تکسیم، قورمه‌سبزی استانبول) در متن پاسخ.",
+      "engine_tool": "Local SEO Entity Injector",
+      "trigger": "پاسخ‌های نظرات مثبت گوگل مپ",
+      "action": "ارتقای رتبه رستوران در الگوریتم‌های رتبه‌بندی نقشه گوگل"
+    },
+    {
+      "id": "SKILL-027",
+      "cluster_id": "c3",
+      "name_fa": "پروموت آیتم‌های جدید منو و رویدادها در پاسخ (Menu Upsell in Replies)",
+      "name_en": "Seasonal Special & Event Upsell in Replies",
+      "description": "دعوت از مشتریان راضی برای تجربه دسر جدید یا شرکت در شب شعر و مافیا کلاب پنجشنبه‌ها در طبقه دوم.",
+      "engine_tool": "Event & Dish Cross-Selling Engine",
+      "trigger": "نظرات ۵ ستاره مشتریان محلی مقیم استانبول",
+      "action": "افزایش مراجعه مجدد برای ایونت‌های فرهنگی آتی"
+    },
+    {
+      "id": "SKILL-028",
+      "cluster_id": "c3",
+      "name_fa": "پاسخ‌گویی خودکار به کامنت‌های اینستاگرام (Instagram Comment Auto-Replier)",
+      "name_en": "Instagram Comment AI Auto-Replier",
+      "description": "ارسال پاسخ متناسب به کامنت‌های حاوی اموجی قلب، سوالات آدرس و قیمت در زیر پست‌ها در کمتر از ۱ دقیقه.",
+      "engine_tool": "Social Graph Comment Dispatcher",
+      "trigger": "کامنت جدید زیر پست‌ها یا ریلزهای پیج",
+      "action": "پاسخ عمومی + ارسال پیام دایرکت با منو و لینک لوکیشن"
+    },
+    {
+      "id": "SKILL-029",
+      "cluster_id": "c3",
+      "name_fa": "صدور هوشمند بن تخفیف و ووچر جبرانی (Comp Voucher Generator)",
+      "name_en": "Dynamic Recovery Voucher Generator",
+      "description": "تولید کد تخفیف اختصاصی یک‌بار مصرف برای مشتریان ناراضی جهت جبران تجربه منفی و ترغیب به بازگشت.",
+      "engine_tool": "Promo Code Engine with CRM Validation",
+      "trigger": "تأیید نارضایتی مشتری توسط مدیر",
+      "action": "ارسال کد تخفیف ۲۰٪ به همراه پیام عذرخواهی اختصاصی"
+    },
+    {
+      "id": "SKILL-030",
+      "cluster_id": "c3",
+      "name_fa": "پایشگر مهلت پاسخ‌گویی به نظرات طبق SLA (Response Time Monitor)",
+      "name_en": "Automated Response SLA Compliance Monitor",
+      "description": "هشدار به تیم بازاریابی در صورتی که نظری بیش از ۱ ساعت بدون پاسخ در گوگل مپ یا اینستاگرام باقی مانده باشد.",
+      "engine_tool": "SLA Timer & Telegram Alert Bot",
+      "trigger": "گذشت ۵۰ دقیقه از ثبت نظر بی‌پاسخ",
+      "action": "ارسال پیامک یا نوتیفیکیشن تلگرام فوری به مدیر داخلی"
+    },
+    {
+      "id": "SKILL-031",
+      "cluster_id": "c4",
+      "name_fa": "سیستم هشدار فوری مسمومیت و بهداشت (Food Safety Early Warning)",
+      "name_en": "Food Safety & Hygiene Early-Warning Trigger",
+      "description": "رهگیری کلمات بحرانی نظیر «دل‌درد»، «مسمومیت»، «حالت تهوع»، «موی در غذا» و ایجاد آلارم قرمز در کمتر از ۳۰ ثانیه.",
+      "engine_tool": "High-Severity Regex & NLP Alerting",
+      "trigger": "ثبت هر نظری با کلمات بهداشتی/مسمومیت",
+      "action": "آژیر هشدار در تلگرام مدیر، مسدودسازی موقت مواد اولیه و تماس فوری"
+    },
+    {
+      "id": "SKILL-032",
+      "cluster_id": "c4",
+      "name_fa": "هشدار رفتار نامناسب پرسنل و سوءتفاهم (Staff Conduct Flare-up Alert)",
+      "name_en": "Staff Behavior & Rude Service Alert",
+      "description": "شناسایی نام گارسون یا پرسنل سالن در کامنت‌های منفی و ثبت گزارش جهت بازآموزی پرسنل سالن.",
+      "engine_tool": "Staff Entity Extractor & Audit Logger",
+      "trigger": "نقد منفی حاوی اشاره به رفتار پرسنل",
+      "action": "تخصیص بازآموزی به سرپرست سالن و تماس دلجویی با مشتری"
+    },
+    {
+      "id": "SKILL-033",
+      "cluster_id": "c4",
+      "name_fa": "پیش‌بینی احتمال وایرال شدن نقد منفی (Virality Risk Predictor)",
+      "name_en": "Viral Negative Review Predictor",
+      "description": "سنجش تعداد فالوورهای کاربر، لحن تند و اشتراک‌گذاری در توییتر/تیک‌تاک برای مهار حاشیه قبل از انتشار گسترده.",
+      "engine_tool": "Influence Scoring & Social Virality Model",
+      "trigger": "نقد منفی با پروفایل‌های با نفوذ بالا",
+      "action": "فعال‌سازی پروتکل ارتباطات بحران و تماس تلفنی مستقیم"
+    },
+    {
+      "id": "SKILL-034",
+      "cluster_id": "c4",
+      "name_fa": "سیستم دفاع در برابر حملات فیک سازمان‌یافته (Smear Campaign Defense)",
+      "name_en": "Review Bombing & Smear Attack Defense",
+      "description": "تشخیص هجوم ۱۰ها نظر ۱ ستاره از اکانت‌های ناشناس در مدت کوتاه و آماده‌سازی پکیج شواهد برای گزارش به گوگل.",
+      "engine_tool": "Spike Anomaly Detection & Geolocation Audit",
+      "trigger": "افزایش ناگهانی نرخ نظرات ۱ ستاره در ۱ ساعت",
+      "action": "مستندسازی حملات و ارسال درخواست رسمی حذف گروهی به پشتیبانی گوگل"
+    },
+    {
+      "id": "SKILL-035",
+      "cluster_id": "c4",
+      "name_fa": "ارجاع خودکار مشکلات پخت به سرآشپز (Head Chef Escalation)",
+      "name_en": "Head Chef Quality Escalation Workflow",
+      "description": "ارسال بازخوردهای مربوط به شوری، چربی زیاد یا سوختگی کباب به تلگرام سرآشپز برای تست کنترل کیفیت در همان شیفت.",
+      "engine_tool": "Kitchen Display System (KDS) Dispatcher",
+      "trigger": "نقد منفی متمرکز بر دستور پخت مشخص",
+      "action": "چاپ رسید هشدار در آشپزخانه جهت بررسی فورس‌ماژور مواد غذایی"
+    },
+    {
+      "id": "SKILL-036",
+      "cluster_id": "c4",
+      "name_fa": "اتوماسیون گزارش نقض قوانین به گوگل (Google Policy Flagging)",
+      "name_en": "Google Review Policy Violation Automation",
+      "description": "ارزیابی متن‌های حاوی فحاشی، تهدید، تبلیغ رقبا یا افترا و ایجاد تیکت حذف خودکار طبق ضوابط گوگل.",
+      "engine_tool": "Google Review Policy Compliance Engine",
+      "trigger": "شناسایی کلمات رکیک یا تبلیغ نامربوط",
+      "action": "ثبت درخواست Flag as Inappropriate در پنل بیزینس"
+    },
+    {
+      "id": "SKILL-037",
+      "cluster_id": "c4",
+      "name_fa": "فرایند احیا و بازگشت مشتری آسیب‌دیده (Guest Recovery Follow-up)",
+      "name_en": "Post-Incident Guest Recovery Workflow",
+      "description": "ثبت تاریخچه رفع مشکل، تماس مجدد پس از ۳ روز و پرسش از رضایت مهمان پس از ارسال هدیه یا پذیرایی تکمیلی.",
+      "engine_tool": "CRM Recovery Pipeline",
+      "trigger": "پس از حل مشکل مهمان معترض",
+      "action": "پیگیری نهایی و در صورت تمایل مهمان، درخواست آپدیت نقد در گوگل"
+    },
+    {
+      "id": "SKILL-038",
+      "cluster_id": "c4",
+      "name_fa": "پروتکل بحران غذای حلال و آلرژی غذایی (Halal & Allergy Protocol)",
+      "name_en": "Dietary & Halal Emergency Protocol",
+      "description": "پاسخگویی مستند با ارائه گواهی‌های حلال و اعلام دقیق محتویات آلرژن (بادام زمینی، گلوتن، لبنیات) به سوالات حساس.",
+      "engine_tool": "Halal & Allergen Certified Knowledge Base",
+      "trigger": "سوال یا نقد درباره حلال بودن یا حساسیت",
+      "action": "ارائه مستندات تأییدشده ذبح اسلامی و اعلام عدم وجود گوشت غیرحلال"
+    },
+    {
+      "id": "SKILL-039",
+      "cluster_id": "c4",
+      "name_fa": "رسیدگی سریع به ابهام فاکتور و صورت‌حساب (Bill Dispute Resolution)",
+      "name_en": "Overcharging & Bill Dispute Resolution",
+      "description": "تطبیق ادعای مشتری در مورد قیمت اضافه یا کرایه میز با فاکتور صادرشده در سیستم فروشگاهی POS.",
+      "engine_tool": "POS System Receipt Cross-Matcher",
+      "trigger": "کامنت منفی حاوی ادعای گران‌فروشی/خطای فاکتور",
+      "action": "بررسی لاگ فاکتور و در صورت اثبات خطا، استرداد سریع وجه اضافی"
+    },
+    {
+      "id": "SKILL-040",
+      "cluster_id": "c4",
+      "name_fa": "تدوین‌گر بیانیه روابط عمومی در بحران‌های عمومی (PR Statement Drafter)",
+      "name_en": "Reputation Crisis Public Relations Drafter",
+      "description": "تولید بیانیه شفاف، مسئولانه و حرفه‌ای برای رسانه‌ها و استوری رسمی در شرایط پیش‌بینی‌نشده.",
+      "engine_tool": "Executive PR Policy Engine",
+      "trigger": "بحران‌های گسترده در سطح شبکه‌های اجتماعی",
+      "action": "تولید نسخه سه‌زبانه بیانیه با نظارت مدیریت عامل"
+    },
+    {
+      "id": "SKILL-041",
+      "cluster_id": "c5",
+      "name_fa": "شاخص فراوانی نام غذاها در دیدگاه‌ها (Dish Mention Indexer)",
+      "name_en": "Dish Mention Frequency & Popularity Indexer",
+      "description": "استخراج آمار ماهانه پرتکرارترین غذاهای تحسین‌شده در مقایسه با غذاهای بدون بازخورد در فضای مجازی.",
+      "engine_tool": "Entity Frequency Aggregator",
+      "trigger": "پایان هر ماه میلادی",
+      "action": "رتبه‌بندی محبوبیت غذاها و کشف اقلامی که نیاز به پروموت دارند"
+    },
+    {
+      "id": "SKILL-042",
+      "cluster_id": "c5",
+      "name_fa": "تحلیل تناسب حجم غذا با قیمت پرداختی (Portion vs Price Analytics)",
+      "name_en": "Portion Size vs Price Perception Analytics",
+      "description": "محاسبه درصد مشتریانی که حجم پرس را ناکافی یا برعکس سیرکننده و دست‌ودلبازانه دانسته‌اند.",
+      "engine_tool": "Portion-to-Price Sentiment Correlator",
+      "trigger": "نظرات حاوی کلمات «حجم»، «سیر نشدیم»، «زیاد بود»",
+      "action": "تنظیم گرم گوشت یا برنج در دستورالعمل استاندارد سرآشپز"
+    },
+    {
+      "id": "SKILL-043",
+      "cluster_id": "c5",
+      "name_fa": "ردیابی تغییر کیفیت پخت با تغییر آشپز (Recipe Quality Drift)",
+      "name_en": "Recipe Quality Drift & Cook Consistency Radar",
+      "description": "شناسایی افت یا نوسان امتیاز غذا در روزهایی که سرآشپز دوم یا شیفت عصر در آشپزخانه حضور داشته است.",
+      "engine_tool": "Shift-to-Rating Correlation Model",
+      "trigger": "تحلیل تغییرات امتیاز هفتگی به تفکیک شیفت",
+      "action": "برگزاری تست کور طعم (Blind Taste Test) برای هماهنگی دستور پخت"
+    },
+    {
+      "id": "SKILL-044",
+      "cluster_id": "c5",
+      "name_fa": "پایش دمای غذا و ماندگاری در دلیوری (Delivery Temperature Monitor)",
+      "name_en": "Delivery Freshness & Temperature Tracker",
+      "description": "تحلیل نظرات بسته‌های ارسالی یمک‌سپتی و ترند‌یول از نظر گرم بودن، خمیر نشدن برنج و تازه بودن نان.",
+      "engine_tool": "Delivery Feedback Keyword Extractor",
+      "trigger": "نظرات مربوط به سفارشات آنلاین بیرون‌بر",
+      "action": "ارتقای ظروف آلومینیومی حرارتی و عایق‌بندی باکس‌های پیک"
+    },
+    {
+      "id": "SKILL-045",
+      "cluster_id": "c5",
+      "name_fa": "پیگیری عدم تطابق سفارش و اقلام فراموش‌شده (Missing Item Tracker)",
+      "name_en": "Missing Item & Packaging Error Tracker",
+      "description": "شناسایی مواردی که دوغ، لیمو، سماق یا نان اضافه در سفارش دلیوری ارسال نشده است.",
+      "engine_tool": "Order Accuracy Incident Log",
+      "trigger": "نظرات با مضمون فراموشی قلم غذایی",
+      "action": "افزایش دقت چک‌لیست بسته‌بندی نهایی قبل از تحویل به پیک"
+    },
+    {
+      "id": "SKILL-046",
+      "cluster_id": "c5",
+      "name_fa": "دسته‌بندی اقلام منو بر اساس ماتریس BCG (BCG Menu Engineering)",
+      "name_en": "BCG Menu Matrix Classifier",
+      "description": "تقسیم خوراک‌ها به ۴ گروه: ستاره‌ها (محبوب و پر سود)، اسب‌های کاری (محبوب با سود کمتر)، معماها و سگ‌ها.",
+      "engine_tool": "BCG Matrix Calculation (Volume x Margin)",
+      "trigger": "بازبینی فصلی منو",
+      "action": "تغییر جایگاه بصری ستاره‌ها در صفحه اول منوی فیزیکی و سایت"
+    },
+    {
+      "id": "SKILL-047",
+      "cluster_id": "c5",
+      "name_fa": "همبستگی بهای تمام‌شده غذا با امتیاز رضایت (Food Cost vs Rating)",
+      "name_en": "Food Cost vs Review Rating Correlation",
+      "description": "شناسایی غذاهایی که با وجود هزینه مواد اولیه بالا امتیاز پایینی می‌گیرند یا غذاهای ارزان با رضایت حداکثری.",
+      "engine_tool": "Cost-Benefit Regression Analytics",
+      "trigger": "تحلیل داده‌های حسابداری صنعتی و کامنت‌ها",
+      "action": "کاهش هزینه آیتم‌های پرتنش و افزایش تنوع پیش‌غذاهای پرسود"
+    },
+    {
+      "id": "SKILL-048",
+      "cluster_id": "c5",
+      "name_fa": "بنچ‌مارک طعم چلوکباب با برترین رقبای استانبول (Signature Dish Benchmark)",
+      "name_en": "Signature Dish Taste & Price Benchmarking",
+      "description": "مقایسه امتیاز کوبیده و شیشلیک شمسه با ریحون، فارسی و کباب‌سراهای معروف ترکی نظیر نصرت.",
+      "engine_tool": "Competitive Dish Sentiment Scraper",
+      "trigger": "ماهیانه بر اساس کامنت‌های تطبیقی رقبا",
+      "action": "بهینه‌سازی درصد چربی قلوه‌گاه و ادویه‌جات بر اساس سلیقه بازار"
+    },
+    {
+      "id": "SKILL-049",
+      "cluster_id": "c5",
+      "name_fa": "پیش‌بینی تقاضای غذاهای گیاهی و رژیمی (Plant-Based Demand Radar)",
+      "name_en": "Vegan & Vegetarian Demand Forecaster",
+      "description": "استخراج تعداد درخواست‌های کشک‌بادمجان بدون گوشت، میرزاقاسمی، سالاد شیرازی و منوی وجترین.",
+      "engine_tool": "Dietary Trend Keyword Scraper",
+      "trigger": "کامنت‌ها و سوالات در گوگل مپ و اینستاگرام",
+      "action": "طراحی بخش ویژه گیاه‌خواری در منو برای جذب توریست‌های غربی"
+    },
+    {
+      "id": "SKILL-050",
+      "cluster_id": "c5",
+      "name_fa": "موتور پیشنهاد حذف یا اصلاح آیتم‌های ضعیف (Menu Pruning Engine)",
+      "name_en": "Menu Pruning & Optimization Recommender",
+      "description": "ارائه گزارش اقلامی که کمترین سفارش و بیشترین انتقاد را طی ۹۰ روز گذشته در شبکه‌های اجتماعی داشته‌اند.",
+      "engine_tool": "Underperforming Menu Item Detector",
+      "trigger": "پایان هر فصل کاری",
+      "action": "پیشنهاد رسمی به مدیر رستوران برای جایگزینی خوراک ضعیف"
+    },
+    {
+      "id": "SKILL-051",
+      "cluster_id": "c6",
+      "name_fa": "تحلیل احساسات ویدیوها و ریلزهای اینستاگرام (Instagram Reel Sentiment)",
+      "name_en": "Instagram Reel & Short Video Sentiment Harvester",
+      "description": "استخراج کامنت‌های ریلزهای پربازدید و سنجش میزان اشتیاق مخاطبان به موسیقی زنده، کباب زدن و محیط سالن.",
+      "engine_tool": "Instagram Media Insights & Comments NLP",
+      "trigger": "پس از انتشار هر ریلز ویدئویی",
+      "action": "شناسایی پلان‌های جذاب ویدیو برای تکرار در کمپین‌های بعدی"
+    },
+    {
+      "id": "SKILL-052",
+      "cluster_id": "c6",
+      "name_fa": "ارزیابی بازدهی واقعی فودبلاگرها (Influencer ROI Evaluator)",
+      "name_en": "Food Influencer Campaign ROI Tracker",
+      "description": "سنجش افزایش بازدید گوگل مپ، افزایش جستجوی برند و ثبت سفارشات در ۲۴ تا ۷۲ ساعت پس از انتشار پست بلاگر.",
+      "engine_tool": "Spike Attribution Analytics",
+      "trigger": "انتشار استوری یا پست تبلیغاتی توسط بلاگر",
+      "action": "محاسبه هزینه به ازای هر مشتری جذب‌شده (CPA) و رتبه‌بندی بلاگرها"
+    },
+    {
+      "id": "SKILL-053",
+      "cluster_id": "c6",
+      "name_fa": "درخواست خودکار مجوز بازنشر عکس‌های مهمانان (UGC Rights Requester)",
+      "name_en": "User-Generated Content Rights Automation",
+      "description": "ارسال پیام خودکار زیر عکس‌های استثنایی گرفته‌شده توسط مهمانان در رستوران و درخواست مجوز بازنشر.",
+      "engine_tool": "Automated UGC Rights Commenter",
+      "trigger": "تشخیص عکس باکیفیت مهمان با تگ لوکیشن رستوران",
+      "action": "ذخیره عکس‌های دارای مجوز در آرشیو و بازنشر با ذکر نام عکاس"
+    },
+    {
+      "id": "SKILL-054",
+      "cluster_id": "c6",
+      "name_fa": "رصد هشتگ‌ها و ساندترک‌های ترند غذا در استانبول (Viral Trend Tracker)",
+      "name_en": "Trending Food Hashtag & Audio Tracker",
+      "description": "شناسایی موزیک‌های ترند اینستاگرام و هشتگ‌های فعال مانند #istanbuldiyet, #persianfoodistanbul برای ساخت محتوا.",
+      "engine_tool": "Trend Discovery & Audio Scraper",
+      "trigger": "هفتگی روزهای دوشنبه",
+      "action": "ارائه ۳ ایده ساخت محتوای ترند به تیم رسانه‌ای رستوران"
+    },
+    {
+      "id": "SKILL-055",
+      "cluster_id": "c6",
+      "name_fa": "بنچ‌مارک نرخ تعامل شبکه‌های اجتماعی رقبا (Social Engagement Benchmark)",
+      "name_en": "Competitor Social Engagement Benchmark",
+      "description": "مقایسه تعداد لایک، کامنت، ویو ریلز و نرخ تعامل پیج اینستاگرام با سایر رستوران‌های ایرانی و ترکی منطقه.",
+      "engine_tool": "Social Analytics Scraping Engine",
+      "trigger": "هفتگی",
+      "action": "محاسبه رتبه تعاملی (Engagement Rank) و تعیین استراتژی محتوا"
+    },
+    {
+      "id": "SKILL-056",
+      "cluster_id": "c6",
+      "name_fa": "پاسخ سریع و بازنشر منشن‌های استوری (Story Mention Auto-Thanker)",
+      "name_en": "Instagram Story Mention Auto-Thanker",
+      "description": "ارسال دایرکت فوری تشکر برای هر کاربری که در استوری خود پیج رستوران را تگ کرده و بازنشر در استوری شمسه.",
+      "engine_tool": "Meta Webhook /story_insights & Direct API",
+      "trigger": "لحظه انتشار استوری توسط مشتری",
+      "action": "ارسال پیام محبت‌آمیز + بازنشر استوری برای افزایش تعامل"
+    },
+    {
+      "id": "SKILL-057",
+      "cluster_id": "c6",
+      "name_fa": "امتیازدهی به جذابیت بصری تزیین بشقاب با هوش مصنوعی (Plating Aesthetic Score)",
+      "name_en": "Food Plating Aesthetic AI Scorer",
+      "description": "بررسی عکس‌های غذاهای ارسالی از دید تناسب رنگ زعفران، سماق، سبزی و ته‌دیگ طلایی با هوش مصنوعی تصویر.",
+      "engine_tool": "Computer Vision Aesthetic Quality Assessor",
+      "trigger": "عکس‌های بارگذاری شده در شبکه‌های اجتماعی",
+      "action": "ارائه بازخورد به آشپزخانه برای چیدمان زیباتر و فتوژنیک بشقاب"
+    },
+    {
+      "id": "SKILL-058",
+      "cluster_id": "c6",
+      "name_fa": "فیلتر کامنت‌های منفی در کمپین‌های پولی اینستاگرام (Ad Comment Negative Shield)",
+      "name_en": "Paid Ads Negative Comment Shield",
+      "description": "مخفی‌سازی یا پاسخ فوری به کامنت‌های اسپم و مخرب در زیر پست‌های اسپانسرشده اینستاگرام قبل از تخریب بودجه تبلیغاتی.",
+      "engine_tool": "Real-time Ad Comments Moderation Bot",
+      "trigger": "کمپین‌های فعال Meta Ads",
+      "action": "پایش ۲۴ ساعته تبلیغات و هدایت سوالات به دایرکت"
+    },
+    {
+      "id": "SKILL-059",
+      "cluster_id": "c6",
+      "name_fa": "تبدیل دایرکت به رزرو قطعی با ربات فروش هوشمند (DM to Booking Converter)",
+      "name_en": "Instagram DM to Reservation Converter",
+      "description": "پاسخ آنی در دایرکت به سوالات «قیمت کباب چنده؟»، «برای تولد جا دارید؟» و هدایت به ثبت آنلاین رزرو.",
+      "engine_tool": "Conversational AI Sales Bot for Instagram DM",
+      "trigger": "دریافت دایرکت با قصد خرید/رزرو",
+      "action": "بررسی تقویم ظرفیت خالی و اخذ بیعانه یا ثبت نام مهمان"
+    },
+    {
+      "id": "SKILL-060",
+      "cluster_id": "c6",
+      "name_fa": "موتور دعوت از میکرو-اینفلوئنسرهای هدفمند (Micro-Influencer Outreach)",
+      "name_en": "Micro-Influencer Tasting Outreach Engine",
+      "description": "شناسایی فودبلاگرهای ۵ تا ۵۰ هزار فالوور در استانبول و ارسال خودکار دعوت‌نامه به صرف دیزی یا کباب زعفرانی.",
+      "engine_tool": "Creator Search & DM Outreach Pipeline",
+      "trigger": "ماهیانه بر اساس معیارهای تعامل",
+      "action": "تولید جریان مستمر محتوای ارگانیک و عکس‌های جدید بدون هزینه سنگین"
+    },
+    {
+      "id": "SKILL-061",
+      "cluster_id": "c7",
+      "name_fa": "ردیابی رتبه در پک ۳تایی محلی گوگل (Google 3-Pack Position Tracker)",
+      "name_en": "Google 3-Pack Local Ranking Tracker",
+      "description": "پایش رتبه نمایش رستوران در کلمات «Persian Restaurant Istanbul»، «Iranian Food Taksim» از نقاط مختلف شهر.",
+      "engine_tool": "Geo-located SERP Rank Tracker",
+      "trigger": "روزانه از ۵ مختصات جغرافیایی مختلف استانبول",
+      "action": "ثبت موقعیت در نقشه و هشدار در صورت افت رتبه"
+    },
+    {
+      "id": "SKILL-062",
+      "cluster_id": "c7",
+      "name_fa": "سرعت و شتاب کلمات کلیدی در نظرات کاربران (Keyword Velocity in Reviews)",
+      "name_en": "Keyword Velocity in Customer Reviews",
+      "description": "شمارش میزان استفاده مشتریان از واژگان سئومحور در کامنت‌هایشان که فاکتور کلیدی رتبه‌بندی نقشه گوگل است.",
+      "engine_tool": "NLP Keyword Frequency Tracker",
+      "trigger": "ماهیانه بر اساس کامنت‌های جدید",
+      "action": "تشویق هوشمند مهمانان به نام بردن از غذای اختصاصی در نظرات"
+    },
+    {
+      "id": "SKILL-063",
+      "cluster_id": "c7",
+      "name_fa": "بهینه‌ساز دسته‌بندی و ویژگی‌های پروفایل بیزینس (GBP Attributes Optimizer)",
+      "name_en": "Google Business Profile Category & Attribute Optimizer",
+      "description": "تکمیل مداوم ویژگی‌های جدید گوگل مپ (مثل Outdoor seating, Halal food, Vegetarian options, Good for groups).",
+      "engine_tool": "GBP Attributes API Syncer",
+      "trigger": "ماهیانه با معرفی قابلیت‌های جدید گوگل",
+      "action": "بهینه‌سازی کامل پروفایل و افزایش شانس دیده‌شدن در فیلترها"
+    },
+    {
+      "id": "SKILL-064",
+      "cluster_id": "c7",
+      "name_fa": "اتوماسیون بارگذاری عکس‌های ژئوتگ‌شده (Geotagged Photo Uploader)",
+      "name_en": "Geotagged High-Res Photo Upload Automation",
+      "description": "تزریق متادیتای EXIF شامل مختصات جغرافیایی دقیق رستوران به عکس‌های غذا و دکور قبل از آپلود در گوگل مپ.",
+      "engine_tool": "EXIF Geotagging & GBP Media API",
+      "trigger": "هفتگی ۲ تصویر حرفه‌ای جدید",
+      "action": "افزایش اعتبار سئوی محلی تصاویر در موتور جستجوی گوگل ایمیج"
+    },
+    {
+      "id": "SKILL-065",
+      "cluster_id": "c7",
+      "name_fa": "ممیزی یکپارچگی اطلاعات آدرس و تلفن در کل وب (NAP Consistency Audit)",
+      "name_en": "NAP (Name, Address, Phone) Consistency Auditor",
+      "description": "بررسی یکسان بودن نام، آدرس ترکی، شماره تلفن و کد پستی در گوگل، یاندکس، اینستا، فیسبوک، تریپ‌ادوایزر و سایت.",
+      "engine_tool": "Web Citation Scraper & Validator",
+      "trigger": "ماهیانه",
+      "action": "کشف و اصلاح مغایرت‌های آدرس که باعث تضعیف رتبه سئو می‌شوند"
+    },
+    {
+      "id": "SKILL-066",
+      "cluster_id": "c7",
+      "name_fa": "انتشار خودکار پست‌ها و رویدادهای هفتگی در گوگل مپ (GBP Posts Automation)",
+      "name_en": "Google Business Profile Updates Automation",
+      "description": "پست منظم اطلاعیه شب شعر، مافیا، تخفیف ناهار و منوی فصلی در تب Updates گوگل با دکمه Call Now و Book.",
+      "engine_tool": "GBP LocalPost API Scheduler",
+      "trigger": "دوشنبه و پنجشنبه هر هفته",
+      "action": "ایجاد سیگنال پویایی به الگوریتم گوگل و جذب کلیک کاربران نقشه"
+    },
+    {
+      "id": "SKILL-067",
+      "cluster_id": "c7",
+      "name_fa": "ردیابی سرعت رشد نظرات رقبا (Review Velocity Tracker)",
+      "name_en": "Competitor Review Velocity & Momentum Tracker",
+      "description": "مقایسه تعداد نظرات هفتگی جدید شمسه در مقایسه با ریحون، فارسی، سفیر و کشف کمپین‌های رقیب.",
+      "engine_tool": "Review Count Delta Scraper",
+      "trigger": "هفتگی",
+      "action": "هشدار در صورتی که سرعت دریافت نظر رقیب ۲ برابر میانگین شود"
+    },
+    {
+      "id": "SKILL-068",
+      "cluster_id": "c7",
+      "name_fa": "بهینه‌سازی برای جستجوهای اضطراری نزدیک من (Near Me Query Optimizer)",
+      "name_en": "Near Me Local Intent Optimization Engine",
+      "description": "تنظیم سیگنال‌های مکانی برای جذب مسافرانی که در خیابان استقلال یا تکسیم عبارت «Food Near Me» را سرچ می‌کنند.",
+      "engine_tool": "Local Proximity SEO Tuner",
+      "trigger": "پیوسته بر اساس لاگ جستجوها",
+      "action": "بالا آمدن نام رستوران در سرچ‌های لحظه‌ای مسافران گرسنه"
+    },
+    {
+      "id": "SKILL-069",
+      "cluster_id": "c7",
+      "name_fa": "پایش درخواست‌های مسیریابی در یاندکس و گوگل (Direction Request Tracker)",
+      "name_en": "Direction Requests & Footfall Intent Tracker",
+      "description": "محاسبه تعداد دفعاتی که کاربران دکمه Directions یا تماس تلفنی را در نقشه‌های گوگل و یاندکس فشرده‌اند.",
+      "engine_tool": "GBP & Yandex Insights Performance API",
+      "trigger": "هفتگی",
+      "action": "تخمین دقیق تعداد مهمانان حضوری ورودی حاصل از تبلیغات نقشه"
+    },
+    {
+      "id": "SKILL-070",
+      "cluster_id": "c7",
+      "name_fa": "ثبت در راهنماهای آنلاین و بلاگ‌های گردشگری استانبول (Tourism Directory Infiltration)",
+      "name_en": "Tourism Guide & Local Directory Infiltration",
+      "description": "ردیابی و پیشنهاد ثبت نام رستوران در مقالات وبلاگی «بهترین رستوران‌های ایرانی استانبول» و سایت‌های گردشگری.",
+      "engine_tool": "Backlink & Brand Mention Crawler",
+      "trigger": "ماهیانه",
+      "action": "ارتباط با نویسندگان بلاگ‌های سفر جهت اضافه کردن لینک و معرفی منو"
+    },
+    {
+      "id": "SKILL-071",
+      "cluster_id": "c8",
+      "name_fa": "محاسبه تفاضل درصد رضایت با رقبا (Competitor Sentiment Differential)",
+      "name_en": "Competitor Net Sentiment Differential",
+      "description": "ارائه نمودار مقایسه‌ای لحظه‌ای از فاصله رضایت شمسه (۸۸٪) با ریحون (۸۳٪)، سفیر (۸۶٪) و فارسی (۷۹٪).",
+      "engine_tool": "Multi-Venue Sentiment Diff Calculator",
+      "trigger": "هفتگی",
+      "action": "مشخص کردن دستاوردهای برند برای استفاده در تبلیغات بنری و کمپین‌ها"
+    },
+    {
+      "id": "SKILL-072",
+      "cluster_id": "c8",
+      "name_fa": "ردیابی افزایش قیمت منوی رقبا (Competitor Menu Price Tracker)",
+      "name_en": "Competitor Menu Price Inflation Tracker",
+      "description": "رصد قیمت چلوکباب، شیشلیک و پیش‌غذاها در منوی عکس‌برداری‌شده رقبا و سنجش تورم قیمت در منطقه بیواوغلو.",
+      "engine_tool": "Menu OCR & Price Delta Scraper",
+      "trigger": "ماهیانه",
+      "action": "تصمیم‌گیری آگاهانه برای تغییر قیمت منو بدون از دست دادن مزیت رقابتی"
+    },
+    {
+      "id": "SKILL-073",
+      "cluster_id": "c8",
+      "name_fa": "بهره‌برداری تبلیغاتی از نقاط ضعف رقیب (Competitor Flaw Exploitation)",
+      "name_en": "Competitor Weakness Counter-Marketing Engine",
+      "description": "شناسایی اعتراضات پرشمار رقبای استقلال به صف طولانی و شلوغی و اجرای تبلیغات با شعار «رزرو بدون معطلی در شمسه».",
+      "engine_tool": "Competitive Vulnerability NLP Miner",
+      "trigger": "هنگام افزایش نارضایتی از صف رقیب",
+      "action": "فعال‌سازی تبلیغات هدفمند اینستاگرام در محدوده ۵۰۰ متری رقیب"
+    },
+    {
+      "id": "SKILL-074",
+      "cluster_id": "c8",
+      "name_fa": "سهم صدای برند در فضای آنلاین استانبول (Share of Voice - SOV)",
+      "name_en": "Online Share of Voice (SOV) Analytics",
+      "description": "سنجش درصد کل گفتگوها و پست‌های مرتبط با غذای ایرانی و افغانستانی در استانبول که متعلق به شمسه است.",
+      "engine_tool": "Social & Search Volume Aggregator",
+      "trigger": "ماهیانه",
+      "action": "ارزیابی نفوذ نام برند در میان مهاجران و گردشگران ایرانی"
+    },
+    {
+      "id": "SKILL-075",
+      "cluster_id": "c8",
+      "name_fa": "تحلیل کشش قیمتی بین محله‌های استانبول (Cross-Neighborhood Price Elasticity)",
+      "name_en": "Cross-Neighborhood Price Elasticity Analytics",
+      "description": "مقایسه حساسیت قیمتی مشتریان تکسیم در برابر زیتین‌بورنو و اسنیورت بر اساس نقدهای رضایت از قیمت.",
+      "engine_tool": "Econometric Sentiment Elasticity Model",
+      "trigger": "فصلی",
+      "action": "تعیین استراتژی قیمت‌گذاری شعب مرکزی در برابر مناطق مسکونی"
+    },
+    {
+      "id": "SKILL-076",
+      "cluster_id": "c8",
+      "name_fa": "رادار جابجایی سرآشپزها و پرسنل کلیدی (Staff & Chef Turnover Radar)",
+      "name_en": "Competitor Chef & Key Staff Turnover Radar",
+      "description": "ردیابی استخدام‌ها و تغییرات آشپزهای ماهر رستوران‌های شاخص از طریق لینکدین، اینستاگرام و بازخوردهای تغییر طعم.",
+      "engine_tool": "HR & Social Mention Tracker",
+      "trigger": "ماهیانه",
+      "action": "شناسایی استعدادهای برتر برای جذب و استخدام در آشپزخانه شمسه"
+    },
+    {
+      "id": "SKILL-077",
+      "cluster_id": "c8",
+      "name_fa": "مقایسه شعاع پوشش و زمان دلیوری (Delivery Radius Comparison)",
+      "name_en": "Delivery Radius & Courier Speed Benchmarking",
+      "description": "بررسی محدوده ارسال سفارشات آنلاین رقبا و کشف مناطق خالی از غذای ایرانی باکیفیت در شیشلی و بشیکتاش.",
+      "engine_tool": "Yemeksepeti / Trendyol Coverage Mapper",
+      "trigger": "فصلی",
+      "action": "گسترش شعاع ارسال غذا و بهینه‌سازی مسیر پیک‌های موتوری"
+    },
+    {
+      "id": "SKILL-078",
+      "cluster_id": "c8",
+      "name_fa": "تحلیل نسبت توریست به مشتری بومی (Tourist vs Local Demographic Ratio)",
+      "name_en": "Tourist-to-Local Customer Demographic Ratio",
+      "description": "تخمین درصد مشتریان گردشگر هتل‌های منطقه در برابر ایرانیان مقیم بر اساس زبان و تاریخچه پروفایل منتقدان.",
+      "engine_tool": "Reviewer Profile Demographics Estimator",
+      "trigger": "ماهیانه",
+      "action": "تنظیم بودجه تبلیغات برای فصول پرتردد گردشگری و ایام نوروز"
+    },
+    {
+      "id": "SKILL-079",
+      "cluster_id": "c8",
+      "name_fa": "نقشه حرارتی ساعات اوج شلوغی رقبا (Peak Hours Heatmap Benchmark)",
+      "name_en": "Peak Hours & Capacity Heatmap Benchmark",
+      "description": "مقایسه زمان‌های اوج تردد و خلوتی رقبای خیابان استقلال بر اساس داده‌های زنده Google Popular Times.",
+      "engine_tool": "Google Popular Times Scraper",
+      "trigger": "هفتگی",
+      "action": "تنظیم ساعت رویدادهای کلاب برای زمان‌هایی که رقبا ظرفیت پذیرش ندارند"
+    },
+    {
+      "id": "SKILL-080",
+      "cluster_id": "c8",
+      "name_fa": "شناسایی زودهنگام رستوران‌ها و کیچن‌های ابری جدید (New Entrant Early Detector)",
+      "name_en": "New Competitor & Cloud Kitchen Early Detector",
+      "description": "رصد ثبت نام‌های تجاری جدید، تغییرات مجوز در شهرداری منطقه و پیج‌های نوظهور غذای ایرانی در استانبول.",
+      "engine_tool": "Entity Registration & Social Radar",
+      "trigger": "پیوسته",
+      "action": "اتخاذ راهبردهای پیشگیرانه بازاریابی قبل از تثبیت رقبای تازه‌وارد"
+    },
+    {
+      "id": "SKILL-081",
+      "cluster_id": "c9",
+      "name_fa": "شناسایی ظرفیت‌های صندلی مرده و ساعات خلوت (Dead-Hour Capacity Auditor)",
+      "name_en": "Dead-Hour Capacity & Lost Revenue Auditor",
+      "description": "محاسبه ساعت-صندلی‌های خالی روزانه بین ساعت ۱۴:۳۰ تا ۱۸:۳۰ به همراه ارزش ریالی و دلاری از دست رفته.",
+      "engine_tool": "POS Footfall & Seating Analytics",
+      "trigger": "روزانه پس از اتمام شیفت ناهار",
+      "action": "گزارش تعداد دقیق صندلی‌های در دسترس جهت برنامه‌ریزی ایونت"
+    },
+    {
+      "id": "SKILL-082",
+      "cluster_id": "c9",
+      "name_fa": "محاسبه‌گر حداقل سفارش دورهمی‌های اختصاصی (Minimum Spend Estimator)",
+      "name_en": "Dynamic Minimum Spend & Buyout Calculator",
+      "description": "تعیین کف سفارش غذا و نوشیدنی به جای دریافت کرایه خام سالن برای ترغیب مهمانان به رزرو طبقه دوم.",
+      "engine_tool": "Yield Management Margin Calculator",
+      "trigger": "درخواست سالن دربست برای تولد یا جشن",
+      "action": "تولید رقم حداقل سفارش بهینه که سود ناخالص را تضمین کند"
+    },
+    {
+      "id": "SKILL-083",
+      "cluster_id": "c9",
+      "name_fa": "قیمت‌گذاری هوشمند بلیت میتاپ‌های مافیا و شعر (Meetup Ticket Dynamic Pricing)",
+      "name_en": "Club Meetup Dynamic Ticket Pricing",
+      "description": "تنظیم قیمت بلیت دورهمی‌ها (مثلاً ۲۵۰ تا ۳۵۰ لیر) بر اساس تعداد صندلی‌های باقی‌مانده و سرعت تکمیل ظرفیت.",
+      "engine_tool": "Dynamic Capacity Pricing Engine",
+      "trigger": "لحظه ثبت‌نام در ربات تلگرام",
+      "action": "ارائه تخفیف ثبت‌نام زودهنگام (Early Bird) جهت تکمیل سریع ظرفیت"
+    },
+    {
+      "id": "SKILL-084",
+      "cluster_id": "c9",
+      "name_fa": "پکیج کار اشتراکی و جلسات فریلنسری بعدازظهر (Coworking & Coffee Package)",
+      "name_en": "Coworking & Remote Worker Afternoon Engine",
+      "description": "ارائه اشتراک روزانه (قهوه دمی، اینترنت پرسرعت، پذیرایی عصرانه) برای پر کردن میزها در ساعات آرام بعدازظهر.",
+      "engine_tool": "Off-Peak Workspace Offer Generator",
+      "trigger": "روزهای دوشنبه تا چهارشنبه",
+      "action": "افزایش جریان نقدی در ساعاتی که آشپزخانه سفارش سنگین ندارد"
+    },
+    {
+      "id": "SKILL-085",
+      "cluster_id": "c9",
+      "name_fa": "جذب لیدهای ضیافت شرکتی و B2B (Corporate Dining Lead Ingestion)",
+      "name_en": "Corporate B2B Private Dining Lead Ingestion",
+      "description": "فیلتر و مدیریت تقاضاهای شرکت‌های بین‌المللی و هلدینگ‌های شبکه Atikova برای ناهار کاری و جلسات سالانه.",
+      "engine_tool": "B2B Inquiry Funnel & Web Form",
+      "trigger": "دریافت فرم در intelligence.html",
+      "action": "ارجاع به مدیر فروش تشریفات و ارسال بروشور سه‌زبانه"
+    },
+    {
+      "id": "SKILL-086",
+      "cluster_id": "c9",
+      "name_fa": "تولید خودکار پیش‌فاکتور رسمی رویداد در ۶۰ ثانیه (Instant Event Proposal)",
+      "name_en": "RestauRent / Tripleseat Style Event Proposal Generator",
+      "description": "صدور پیش‌فاکتور شیک با لوگو، منوی انتخابی، شرایط کنسلی و مبلغ بیعانه به صورت PDF یا پیام آماده ارسال.",
+      "engine_tool": "Automated PDF & HTML Quote Builder",
+      "trigger": "تکمیل درخواست در فرم رزرو رویداد",
+      "action": "ارسال سریع به متقاضی که نرخ عقد قرارداد را تا ۷ برابر افزایش می‌دهد"
+    },
+    {
+      "id": "SKILL-087",
+      "cluster_id": "c9",
+      "name_fa": "برنامه‌ریزی صفر-ضایعات در کترینگ ضیافت‌ها (Zero-Waste Banquet Planning)",
+      "name_en": "Banquet Food-Cost & Waste Minimization Planner",
+      "description": "تطبیق مواد اولیه مورد نیاز با استاندارد اقتصاد چرخشی پروژه Atikova جهت صفر کردن دورریز غذا در مهمانی‌ها.",
+      "engine_tool": "Atikova Zero-Waste Recipe & Portion Algorithm",
+      "trigger": "پذیرش سفارشات بالای ۲۰ نفر",
+      "action": "محاسبه دقیق گرم برنج و گوشت و اهدای باقی‌مانده‌های بهداشتی"
+    },
+    {
+      "id": "SKILL-088",
+      "cluster_id": "c9",
+      "name_fa": "پروموت بوفه برانچ و شیفت‌های کم‌فروش آخر هفته (Weekend Brunch Promo)",
+      "name_en": "Weekend Brunch & Off-Peak Shift Promotion",
+      "description": "تبلیغ صبحانه سنتی ایرانی (سرسیر، خامه عسل سرعین، نان داغ و املت) برای ساعات ۹ تا ۱۲ صبح جمعه و یکشنبه.",
+      "engine_tool": "Breakfast Footfall Generator",
+      "trigger": "پنجشنبه‌ها و جمعه‌ها در کانال‌های اجتماعی",
+      "action": "ایجاد شیفت درآمدی جدید قبل از آغاز سرویس ناهار"
+    },
+    {
+      "id": "SKILL-089",
+      "cluster_id": "c9",
+      "name_fa": "فروش خدمات جانبی پروژکتور، صوتی و فیلم‌برداری (AV Add-on Upselling)",
+      "name_en": "Audio/Visual & Event Add-on Upselling",
+      "description": "پیشنهاد خدمات تکمیلی پروژکتور، میکروفون بیسیم، کیک تولد خانگی و عکاسی اختصاصی در کنار رزرو سالن.",
+      "engine_tool": "Add-on Recommendation Matrix",
+      "trigger": "حین تکمیل فرم رزرو رویداد",
+      "action": "افزایش میانگین سبد خرید هر مراسم تا ۴۰٪"
+    },
+    {
+      "id": "SKILL-090",
+      "cluster_id": "c9",
+      "name_fa": "مدیریت بیعانه و قوانین کنسلی هوشمند (Deposit & Cancellation Policy)",
+      "name_en": "Event Deposit & No-Show Mitigation",
+      "description": "دریافت لینک پرداخت بیعانه آنلاین و ارسال یادآور خودکار جهت کاهش نرخ کنسلی ناگهانی (No-Show) به زیر ۲٪.",
+      "engine_tool": "Payment Gateway / Secure Escrow Notifier",
+      "trigger": "ثبت اولیه رزرو بالای ۶ نفر",
+      "action": "تثبیت تاریخ و جلوگیری از رزروهای غیرواقعی"
+    },
+    {
+      "id": "SKILL-091",
+      "cluster_id": "c10",
+      "name_fa": "درخواست هوشمند ثبت نظر بعد از غذا (Post-Dining Review Request)",
+      "name_en": "Post-Dining Automated Review Request via Telegram/SMS",
+      "description": "ارسال پیام تشکر و لینک ثبت نظر در گوگل مپ برای مهمانانی که رزرو را از طریق ربات تلگرام یا سایت انجام داده‌اند.",
+      "engine_tool": "Post-Visit Trigger & Link Generator",
+      "trigger": "۲ ساعت پس از پایان ساعت رزرو مهمان",
+      "action": "افزایش نرخ تبدیل مشتری راضی به نقد ۵ ستاره در گوگل مپ"
+    },
+    {
+      "id": "SKILL-092",
+      "cluster_id": "c10",
+      "name_fa": "ثبت ترجیحات و علایق اختصاصی مشتریان VIP (VIP Preference Memory)",
+      "name_en": "VIP Diner Profile & Preference Memory",
+      "description": "یادداشت سلیقه مهمان (میز گوشه، چای پررنگ، برنج بدون کره، پیاز اضافه) و یادآوری به گارسون در ویزیت‌های بعدی.",
+      "engine_tool": "CRM Guest Attributes Store",
+      "trigger": "هنگام پذیرش و سفارش‌گیری مهمان",
+      "action": "خلق تجربه غافلگیرکننده و احساس احترام فوق‌العاده برای مهمان"
+    },
+    {
+      "id": "SKILL-093",
+      "cluster_id": "c10",
+      "name_fa": "یادآور سالگرد ازدواج و تولد با هدیه (Birthday & Anniversary Reminders)",
+      "name_en": "Birthday & Milestone Dining Reminders",
+      "description": "ارسال پیام تبریک خودکار ۷ روز قبل از تاریخ تولد یا سالگرد مهمان به همراه دعوت به صرف دسر و چای رایگان.",
+      "engine_tool": "Calendar Milestone Scheduler",
+      "trigger": "روزانه ساعت ۱۰ صبح برای مناسبت‌های هفته آینده",
+      "action": "تبدیل رستوران به انتخاب اول جشن‌های خانوادگی"
+    },
+    {
+      "id": "SKILL-094",
+      "cluster_id": "c10",
+      "name_fa": "شناسایی مهمانان وفادار در معرض ریزش (Churn Risk Diner Detector)",
+      "name_en": "Churn Risk Diner Identification",
+      "description": "هشدار در صورتی که مشتری ثابتی که ماهانه ۲ بار مراجعه می‌کرده، بیش از ۶۰ روز است سفارشی ثبت نکرده است.",
+      "engine_tool": "RFM (Recency, Frequency, Monetary) Engine",
+      "trigger": "تحلیل ماهیانه تاریخچه خرید",
+      "action": "ارسال پیام دلتنگی شخصی‌سازی‌شده و انگیزاننده بازگشت"
+    },
+    {
+      "id": "SKILL-095",
+      "cluster_id": "c10",
+      "name_fa": "سیستم امتیازدهی و ارتقای سطح باشگاه مشتریان (Gamified Loyalty Tiers)",
+      "name_en": "Gamified Loyalty Points & Tier Progression",
+      "description": "اختصاص امتیاز به ازای هر لیر خرید و اعطای نشان‌های مس، نقره و طلا با تخفیف‌های دائمی در ربات تلگرام.",
+      "engine_tool": "Loyalty Tier Ledger & Gamification",
+      "trigger": "ثبت فاکتور در ربات یا سیستم پوز",
+      "action": "افزایش بازگشت دوره‌ای مشتریان تا ۳۵٪"
+    },
+    {
+      "id": "SKILL-096",
+      "cluster_id": "c10",
+      "name_fa": "پاداش ویژه هماهنگ‌کنندگان رویدادهای شرکتی (Corporate Planner Rewards)",
+      "name_en": "Corporate Secretary & Planner Reward Program",
+      "description": "اعطای اعتبار هدیه یا پکیج شام خانوادگی رایگان به مدیرانی که ضیافت‌های شرکتی را در شمسه رزرو می‌کنند.",
+      "engine_tool": "B2B Referral & Incentive Tracker",
+      "trigger": "تسویه فاکتور رویداد شرکتی",
+      "action": "وفادارسازی برنامه‌ریزان رویداد و تضمین تکرار سالانه"
+    },
+    {
+      "id": "SKILL-097",
+      "cluster_id": "c10",
+      "name_fa": "کمپین بازگشت مشتریان از دست رفته (Lost-Guest Win-Back Campaign)",
+      "name_en": "Automated Lost-Guest Win-Back Campaign",
+      "description": "ارسال پیام محبت‌آمیز به همراه کوپن تست خورش قورمه‌سبزی جدید برای مهمانانی که تجربه قبلی متوسطی داشته‌اند.",
+      "engine_tool": "Reactivation Funnel Dispatcher",
+      "trigger": "فصلی برای لیست مخاطبان غیرفعال",
+      "action": "احیای ۱۵٪ تا ۲۰٪ از مشتریان غیرفعال بدون هزینه تبلیغاتی جدید"
+    },
+    {
+      "id": "SKILL-098",
+      "cluster_id": "c10",
+      "name_fa": "پرونده یکپارچه ۳۶۰ درجه تعاملات مهمان (Omnichannel Interaction Log)",
+      "name_en": "Omnichannel Guest Interaction Timeline",
+      "description": "ثبت تاریخچه کامل شامل: رزروهای تلگرام، کامنت‌های اینستا، نقد گوگل مپ، فاکتورهای پرداختی در یک صفحه واحد.",
+      "engine_tool": "Guest Timeline Aggregator",
+      "trigger": "پیوسته بر روی شناسه مشترک مهمان",
+      "action": "تسلط کامل مدیر رستوران بر سوابق هر مهمان قبل از حضور سر میز"
+    },
+    {
+      "id": "SKILL-099",
+      "cluster_id": "c10",
+      "name_fa": "ردیابی بازگشت مشتری پس از پاسخ به نقد منفی (Reviewer Recovery Tracker)",
+      "name_en": "Reviewer-to-Diner Conversion Tracking",
+      "description": "اندازه‌گیری موفقیت پاسخ‌های عذرخواهی هوش مصنوعی در بازگرداندن مشتریانی که قبلاً نقد ۱ یا ۲ ستاره داده بودند.",
+      "engine_tool": "Sentiment Recovery Cohort Analytics",
+      "trigger": "هر ۶ ماه یک‌بار",
+      "action": "اثبات بازگشت سرمایه (ROI) پاسخ‌گویی به نقدها و نجات مشتری"
+    },
+    {
+      "id": "SKILL-100",
+      "cluster_id": "c10",
+      "name_fa": "پیش‌بینی ارزش مادام‌العمر مهمان و تریاژ VIP (Customer Lifetime Value - LTV)",
+      "name_en": "Guest Lifetime Value (LTV) Prediction & VIP Triage",
+      "description": "محاسبه پتانسیل درآمدزایی آینده هر مهمان و هدایت بهترین میزها و خدمات به مشتریان با بالاترین وفاداری.",
+      "engine_tool": "Predictive LTV Machine Learning Model",
+      "trigger": "هنگام پردازش رزرو در سیستم",
+      "action": "اختصاص بهترین پرسنل و هدایای ویژه سرآشپز به مهمانان کلیدی"
+    }
+  ]
+}

@@ -36,6 +36,9 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import content  # noqa: E402
 import bot_skills as sk  # noqa: E402
+import intelligence_lib as il  # noqa: E402
+import reputation_skills as rep  # noqa: E402
+import restaurants_lib as rl  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
@@ -626,6 +629,23 @@ def handle_updates(state, minutes=0, timeout=0):
                 out_msg = camp.get("telegram", "") + "\n" + "\n".join(ros_lines)
                 r = reply(chat_id, out_msg, buttons=True)
                 out = "/campaign"
+            elif cmd == "skills":
+                parts = raw_text.split(maxsplit=1)
+                if len(parts) > 1 and parts[1].strip():
+                    q = parts[1].strip()
+                    matched = rep.search_skills(q)[:4]
+                    if matched:
+                        lines = [f"⚡ <b>نتایج جستجوی مهارت برای «{q}»:</b>\n"]
+                        for m in matched:
+                            lines.append(f"• <b>{m['id']}: {m['name_fa']}</b>\n  <i>ابزار:</i> {m['engine_tool']}\n  <i>اقدام:</i> {m['action']}\n")
+                        lines.append(f"🌐 مشاهده ۱۰۰ مهارت کامل در سایت:\n{content.SITE}/intelligence.html#mod-gateways")
+                        out_msg = "\n".join(lines)
+                    else:
+                        out_msg = f"مهارتی با عبارت «{q}» یافت نشد.\n\n" + content.REPLIES.get("skills", "")
+                else:
+                    out_msg = content.REPLIES.get("skills", "")
+                r = reply(chat_id, out_msg, buttons=True)
+                out = "/skills"
             elif cmd in content.REPLIES:
                 r = reply(chat_id, content.REPLIES[cmd], buttons=True)
                 out = "/" + cmd
@@ -683,6 +703,7 @@ COMMANDS = [
     {"command": "areas", "description": "جستجو بر اساس محله‌های استانبول"},
     {"command": "search", "description": "جستجوی رستوران یا غذا"},
     {"command": "campaign", "description": "تولید تبلیغ دورهمی و کلاب با AI"},
+    {"command": "skills", "description": "⚡ ۱۰۰ مهارت هوش تجاری و گیت‌وی‌ها"},
     {"command": "intel", "description": "تحلیل رقبا و حاشیه سود منو"},
     {"command": "space", "description": "تحلیل درآمد فضای خالی رستوران"},
     {"command": "rsvp", "description": "ثبت‌نام رویدادها و میتاپ‌ها"},
