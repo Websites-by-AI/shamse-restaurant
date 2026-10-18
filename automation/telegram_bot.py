@@ -36,6 +36,7 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import content  # noqa: E402
 import bot_skills as sk  # noqa: E402
+import franchise_lib as fl  # noqa: E402
 import intelligence_lib as il  # noqa: E402
 import reputation_skills as rep  # noqa: E402
 import restaurants_lib as rl  # noqa: E402
@@ -646,6 +647,9 @@ def handle_updates(state, minutes=0, timeout=0):
                     out_msg = content.REPLIES.get("skills", "")
                 r = reply(chat_id, out_msg, buttons=True)
                 out = "/skills"
+            elif cmd == "franchise":
+                r = reply(chat_id, content.REPLIES["franchise"], buttons=True)
+                out = "/franchise"
             elif cmd in content.REPLIES:
                 r = reply(chat_id, content.REPLIES[cmd], buttons=True)
                 out = "/" + cmd
@@ -704,6 +708,7 @@ COMMANDS = [
     {"command": "search", "description": "جستجوی رستوران یا غذا"},
     {"command": "campaign", "description": "تولید تبلیغ دورهمی و کلاب با AI"},
     {"command": "skills", "description": "⚡ ۱۰۰ مهارت هوش تجاری و گیت‌وی‌ها"},
+    {"command": "franchise", "description": "🏢 هوش فرانچایز و تحلیل شعب"},
     {"command": "intel", "description": "تحلیل رقبا و حاشیه سود منو"},
     {"command": "space", "description": "تحلیل درآمد فضای خالی رستوران"},
     {"command": "rsvp", "description": "ثبت‌نام رویدادها و میتاپ‌ها"},

@@ -310,6 +310,38 @@ table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
 .trig-badge{background:rgba(46,204,113,0.12);border:1px solid rgba(46,204,113,0.3);color:#2ecc71;font-size:.75rem;padding:2px 6px;border-radius:2px}
 .sim-reply-box{background:var(--ink-2);border:1px solid var(--line);padding:12px;font-size:.85rem;line-height:1.8;color:var(--text)}
 
+
+/* MODULE 8: Smart Franchise & Multi-Unit AI */
+.franchise-expo-box{background:rgba(210,154,90,0.06);border:1px solid var(--line-copper);padding:22px;margin:18px 0}
+.expo-badge{background:var(--copper);color:#0a0908;font-size:.78rem;font-weight:900;padding:3px 10px;border-radius:3px;display:inline-block;margin-bottom:8px}
+.rumors-grid{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0}
+.rumor-card{background:var(--ink-2);border:1px solid var(--line);padding:18px;border-right:4px solid #e74c3c}
+.rumor-card.fact-checked{border-right-color:#2ecc71}
+.rumor-card h4{font-size:.98rem;color:var(--cream);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.rumor-tag-bad{background:rgba(231,76,60,0.15);color:#e74c3c;font-size:.72rem;padding:2px 8px;border-radius:2px}
+.rumor-tag-good{background:rgba(46,204,113,0.15);color:#2ecc71;font-size:.72rem;padding:2px 8px;border-radius:2px}
+.rumor-desc{font-size:.84rem;color:#ff7675;line-height:1.7;margin-bottom:8px}
+.reality-desc{font-size:.84rem;color:#55efc4;line-height:1.7;background:rgba(46,204,113,0.05);padding:10px;border-radius:2px}
+
+.models-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0}
+@media(max-width:950px){.models-grid{grid-template-columns:1fr}}
+.fmodel-card{background:var(--ink-2);border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:10px}
+.fmodel-card:hover{border-color:var(--copper)}
+.fmodel-card.active{border-color:var(--copper);background:rgba(210,154,90,0.05)}
+.fmodel-title{font-size:1.1rem;color:var(--cream);font-weight:700}
+.fmodel-inv{font-size:1.6rem;font-weight:900;color:var(--copper);margin:4px 0}
+.fmodel-inv small{font-size:.85rem;color:var(--muted);font-weight:400}
+.fmodel-list{list-style:none;padding:0;margin:0;font-size:.82rem;line-height:1.8;color:var(--text)}
+.fmodel-list li{position:relative;padding-right:16px}
+.fmodel-list li::before{content:"•";position:absolute;right:0;color:var(--copper)}
+
+.fcalc-box{background:var(--ink-2);border:1px solid var(--line-copper);padding:24px;margin-top:24px}
+.fcalc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+@media(max-width:850px){.fcalc-grid{grid-template-columns:1fr}}
+.cost-bar-row{display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:4px}
+.cost-track{height:8px;background:var(--ink-1);border-radius:4px;overflow:hidden;margin-bottom:10px}
+.cost-fill{height:100%;border-radius:4px}
+
 /* Atikova Banner */
 .atikova-banner{
   background:linear-gradient(90deg,rgba(210,154,90,.15),rgba(15,12,9,.9));
@@ -377,6 +409,7 @@ table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
         <button class="mod-pill" onclick="scrollToSection('mod-space')">⏳ درآمدزایی از فضای خالی</button>
         <button class="mod-pill" onclick="scrollToSection('mod-benchmark')">🌐 بنچ‌مارک پلتفرم‌های جهانی</button>
         <button class="mod-pill" onclick="scrollToSection('mod-gateways')">⚡ گیت‌وی‌ها و ۱۰۰ مهارت</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-franchise')">🏢 هوش فرانچایز و شعب</button>
       </nav>
     </div>
   </section>
@@ -794,6 +827,397 @@ table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </section>
 
+    <!-- MODULE 7: Omnichannel Gateways & 100 Hospitality Intelligence Skills -->
+    <section class="mod-card" id="mod-gateways">
+      <h2 class="sec-title">⚡ ۷. مرکز گیت‌وی‌های چندکاناله و سامانه ۱۰۰ مهارت هوش تجاری</h2>
+      <p class="sec-sub">اتصال یکپارچه به ۸ گیت‌وی پایش نظرات (گوگل مپ، یاندکس، اینستاگرام، فیسبوک، تریپ‌ادوایزر، دلیوری ترکیه و سایت مستقیم) مجهز به ۱۰۰ مهارت هوشمند اجرایی در ۱۰ خوشه تخصصی.</p>
+
+      <!-- 8 Active Gateways -->
+      <h3 style="font-size:1.1rem;color:var(--cream);margin-bottom:8px">📡 وضعیت گیت‌وی‌های دریافت داده نظرات و شبکه‌های اجتماعی:</h3>
+      <div class="gw-grid">
+        <div class="gw-card">
+          <span class="gw-badge badge-webhook">Google Cloud Pub/Sub Webhook</span>
+          <h4>گوگل مپ و بیزینس پروفایل</h4>
+          <p>دریافت آنی نظرات جدید، امتیازها، عکس‌ها و پاسخ رسمی ۲ طرفه در Google Maps و Local Pack.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">Google Maps</span>
+            <span class="gw-ch-tag">Local 3-Pack</span>
+            <span class="gw-ch-tag">پاسخ ۲ طرفه</span>
+          </div>
+        </div>
+
+        <div class="gw-card">
+          <span class="gw-badge badge-api">Yandex Maps API & Sprav</span>
+          <h4>یاندکس مپ و ناویگاتور</h4>
+          <p>پایش نظرات روس‌زبانان، توریست‌های شرق اروپا و ترک‌زبانان با پوشش مسیرهای خودرویی یاندکس.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">Yandex Maps</span>
+            <span class="gw-ch-tag">Yandex Sprav</span>
+            <span class="gw-ch-tag">توریست‌های روس</span>
+          </div>
+        </div>
+
+        <div class="gw-card">
+          <span class="gw-badge badge-graph">Meta Graph API v20.0</span>
+          <h4>اینستاگرام (کامنت، منشن و ریلز)</h4>
+          <p>شنود تمامی نظرات زیر ریلزها، منشن‌های استوری بلاگرها و تبدیل دایرکت به رزرو قطعی میز.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">Instagram Reels</span>
+            <span class="gw-ch-tag">Story Mentions</span>
+            <span class="gw-ch-tag">DM Sales</span>
+          </div>
+        </div>
+
+        <div class="gw-card">
+          <span class="gw-badge badge-graph">Meta Page Reviews</span>
+          <h4>صفحه رسمی فیسبوک</h4>
+          <p>دریافت سیستم توصیه مهمانان بین‌المللی (Recommendations) و پاسخ به نقدها و کامنت‌ها.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">FB Recommendations</span>
+            <span class="gw-ch-tag">Page Feed</span>
+            <span class="gw-ch-tag">توریست‌های اروپا</span>
+          </div>
+        </div>
+
+        <div class="gw-card">
+          <span class="gw-badge badge-api">Partner Content API</span>
+          <h4>تریپ‌ادوایزر (Tripadvisor)</h4>
+          <p>استخراج رتبه‌بندی، زبان و نظرات مسافران برای رصد جایگاه رستوران در رنکینگ محله بیواوغلو.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">Tripadvisor</span>
+            <span class="gw-ch-tag">رنکینگ بیواوغلو</span>
+            <span class="gw-ch-tag">توریسم خارجی</span>
+          </div>
+        </div>
+
+        <div class="gw-card">
+          <span class="gw-badge badge-api">Merchant Partner Webhook</span>
+          <h4>پلتفرم‌های دلیوری ترکی</h4>
+          <p>پایش بازخوردهای بیرون‌بر Yemeksepeti و Trendyol Yemek در خصوص سرعت پیک، دما و بسته‌بندی.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">Yemeksepeti</span>
+            <span class="gw-ch-tag">Trendyol Yemek</span>
+            <span class="gw-ch-tag">کیفیت دلیوری</span>
+          </div>
+        </div>
+
+        <div class="gw-card">
+          <span class="gw-badge badge-webhook">Direct In-Venue Push</span>
+          <h4>کیوآرکد سر میز و فرم سایت</h4>
+          <p>نظرسنجی فوری سر میز حین پرداخت با QR کد جهت کشف و حل نارضایتی قبل از خروج مهمان از سالن.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">Table QR Code</span>
+            <span class="gw-ch-tag">فرم سایت مستقیم</span>
+            <span class="gw-ch-tag">حل فوری در سالن</span>
+          </div>
+        </div>
+
+        <div class="gw-card">
+          <span class="gw-badge badge-webhook">Telegram Bot CRM API</span>
+          <h4>ربات جامع تلگرام (@shamse_bot)</h4>
+          <p>ارسال خودکار نظرسنجی و درخواست ثبت نقد در گوگل مپ ۲ ساعت بعد از صرف غذا برای مشتریان رزروشده.</p>
+          <div class="gw-channels">
+            <span class="gw-ch-tag">Post-Dining Survey</span>
+            <span class="gw-ch-tag">تقاضای نقد گوگل</span>
+            <span class="gw-ch-tag">باشگاه مشتریان</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 100 Skills Interactive Explorer -->
+      <div class="skills-wrapper">
+        <div class="skills-controls">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+            <h3 style="font-size:1.15rem;color:var(--copper-light);margin:0">📚 مرورگر تعاملی ۱۰۰ مهارت هوش تجاری و شهرت آنلاین</h3>
+            <span id="skillsCountBadge" style="font-size:.82rem;background:rgba(210,154,90,0.15);border:1px solid var(--line-copper);color:var(--copper);padding:3px 10px;border-radius:3px">نمایش ۱۰۰ از ۱۰۰ مهارت</span>
+          </div>
+
+          <div class="skills-search-bar">
+            <input type="text" id="skillSearchInput" class="skills-search-input" placeholder="جستجو میان ۱۰۰ مهارت (مثال: سئو، مسمومیت، اینستاگرام، کوبیده، تخفیف، مافیا...)" oninput="filterSkills()">
+          </div>
+
+          <div class="cluster-chips">
+            <button class="c-chip active" onclick="setClusterFilter('all')">همه ۱۰۰ مهارت</button>
+            <button class="c-chip" onclick="setClusterFilter('c1')">۱. گیت‌وی‌ها و تجمیع</button>
+            <button class="c-chip" onclick="setClusterFilter('c2')">۲. پردازش ۴ زبانه</button>
+            <button class="c-chip" onclick="setClusterFilter('c3')">۳. پاسخ‌دهی خودکار</button>
+            <button class="c-chip" onclick="setClusterFilter('c4')">۴. مدیریت بحران و SLA</button>
+            <button class="c-chip" onclick="setClusterFilter('c5')">۵. مهندسی منو و غذا</button>
+            <button class="c-chip" onclick="setClusterFilter('c6')">۶. اینستاگرام و سوشال</button>
+            <button class="c-chip" onclick="setClusterFilter('c7')">۷. سئوی محلی گوگل</button>
+            <button class="c-chip" onclick="setClusterFilter('c8')">۸. هوش رقابتی</button>
+            <button class="c-chip" onclick="setClusterFilter('c9')">۹. درآمد فضای خالی</button>
+            <button class="c-chip" onclick="setClusterFilter('c10')">۱۰. وفادارسازی و CRM</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skillsGridContainer">
+          <!-- Dynamic Skill Cards inserted by JS -->
+        </div>
+      </div>
+
+      <!-- Live Omnichannel Simulator -->
+      <div class="sim-grid">
+        <div>
+          <h3 style="font-size:1.05rem;color:var(--cream);margin-bottom:8px">🧪 آزمایشگاه شبیه‌سازی زنده خط‌لوله نظرات (Pipeline Simulator)</h3>
+          <p style="font-size:.83rem;color:var(--muted);margin-bottom:14px">یک نظر نمونه انتخاب یا تایپ کنید تا نحوه عملکرد گیت‌وی، پردازش زبان، استخراج مهارت‌ها و تولید پاسخ هوشمند را مشاهده نمایید:</p>
+
+          <div class="sim-presets">
+            <button class="sim-preset-btn" onclick="loadSimPreset('pos_food')">🌟 ۵★ قورمه‌سبزی و کباب (گوگل مپ)</button>
+            <button class="sim-preset-btn" onclick="loadSimPreset('crisis')">🚨 ۱★ هشدار مسمومیت و بهداشت</button>
+            <button class="sim-preset-btn" onclick="loadSimPreset('queue')">⏳ ۳★ معطلی در صف استقلال</button>
+            <button class="sim-preset-btn" onclick="loadSimPreset('turkish')">🇹🇷 ۵★ ترکی استانبولی (اینستاگرام)</button>
+            <button class="sim-preset-btn" onclick="loadSimPreset('price')">📱 ۲★ کیوآرکد سر میز و اعتراض قیمت</button>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div class="sim-input-group">
+              <label for="simChannel">کانال / گیت‌وی ورودی:</label>
+              <select id="simChannel" class="sim-select">
+                <option value="Google Maps">Google Maps (Google Cloud Pub/Sub)</option>
+                <option value="Instagram">Instagram (Meta Graph API)</option>
+                <option value="Yandex Maps">Yandex Maps & Sprav</option>
+                <option value="Facebook">Facebook Recommendations</option>
+                <option value="In-Venue QR">کیوآرکد سر میز (Table QR)</option>
+              </select>
+            </div>
+
+            <div class="sim-input-group">
+              <label for="simRating">امتیاز (ستاره):</label>
+              <select id="simRating" class="sim-select">
+                <option value="5">۵ ستاره (عالی)</option>
+                <option value="4">۴ ستاره (خوب)</option>
+                <option value="3">۳ ستاره (متوسط)</option>
+                <option value="2">۲ ستاره (ضعیف)</option>
+                <option value="1">۱ ستاره (ناراضی / بحرانی)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="sim-input-group">
+            <label for="simAuthor">نام مشتری یا اکانت:</label>
+            <input type="text" id="simAuthor" class="sim-select" value="سارا امینی">
+          </div>
+
+          <div class="sim-input-group">
+            <label for="simText">متن نظر یا بازخورد:</label>
+            <textarea id="simText" class="sim-text">خورش قورمه‌سبزی شمسه بی‌نظیر بود! طعم اصیل لیمو عمانی و سبزی قورمه کاملاً یادآور دستپخت خانگی در ایران بود. میزبانی و چای رایگان آخر غذا هم عالی بود.</textarea>
+          </div>
+
+          <button class="btn" style="width:100%" onclick="runSimulator()">🚀 اجرای شبیه‌ساز پایپ‌لاین و فعال‌سازی مهارت‌ها</button>
+        </div>
+
+        <div>
+          <h3 style="font-size:1.05rem;color:var(--cream);margin-bottom:8px">📊 خروجی پردازش هوش تجاری و پاسخ خودکار:</h3>
+          <div class="sim-out-card">
+            <div class="sim-out-header">
+              <span style="font-size:.86rem;color:var(--muted)">زبان شناسایی‌شده: <b id="simOutLang" style="color:var(--cream)">فارسی (fa)</b></span>
+              <span style="font-size:.86rem;color:var(--muted)">شاخص احساس: <b id="simOutSent" style="color:#2ecc71">+۰.۸۵ (بسیار مثبت)</b></span>
+              <span id="simOutCrisisBadge" style="font-size:.76rem;background:rgba(46,204,113,0.15);color:#2ecc71;padding:2px 8px;border-radius:2px">وضعیت عادی</span>
+            </div>
+
+            <div>
+              <div style="font-size:.82rem;color:var(--copper-light);font-weight:700;margin-bottom:4px">مهارت‌های فعال‌شده از مخزن ۱۰۰ مهارت:</div>
+              <div class="sim-triggered-box" id="simTriggeredContainer">
+                <span class="trig-badge">SKILL-001: وب‌هوک گوگل مپ</span>
+                <span class="trig-badge">SKILL-011: پردازش عامیانه فارسی</span>
+                <span class="trig-badge">SKILL-016: تحلیل طعم قورمه‌سبزی</span>
+                <span class="trig-badge">SKILL-021: پاسخ تشکر ۵ ستاره</span>
+                <span class="trig-badge">SKILL-026: سئوی محلی در پاسخ</span>
+                <span class="trig-badge">SKILL-091: درخواست ارجاع نظر</span>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:.82rem;color:var(--copper-light);font-weight:700;margin-bottom:4px">متن پاسخ هوشمند تولیدی (AI Generated Response):</div>
+              <div class="sim-reply-box" id="simReplyBox">
+                از لطف، نگاه پرمهر و انرژی فوق‌العاده شما در Google Maps بسیار سپاسگزاریم سارا امینی گرامی! طعم اصیل ایرانی و میزبانی شایسته از شما افتخار همیشگی تیم ما در قلب استانبول است. مشتاقانه منتظر دیدار دوباره شما در رویدادها و دورهمی‌های پنجشنبه‌های شمسه هستیم. 🌸
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:.82rem;color:var(--copper-light);font-weight:700;margin-bottom:4px">دستور کار و هشدار داخلی رستوران (Internal SLA & Action):</div>
+              <div id="simActionBox" style="font-size:.82rem;color:var(--muted);line-height:1.7;background:rgba(210,154,90,0.08);border-right:3px solid var(--copper);padding:8px 12px">
+                ✅ ثبت در لیست مروجان (Promoter) و ارسال دعوت به ایونت‌های طبقه دوم.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MODULE 8: Smart Franchise & Multi-Unit AI Suite -->
+    <section class="mod-card" id="mod-franchise">
+      <h2 class="sec-title">🏢 ۸. هوش فرانچایز، تحلیل داده‌های چندشعبه‌ای و آنالیز نمایشگاه ینی‌کاپی</h2>
+      <p class="sec-sub">تحلیل دستاوردهای بیست و چهارمین نمایشگاه فرانچایز استانبول (Bayim Olur musun? در ینی‌کاپی، ۱۵ تا ۱۸ اکتبر ۲۰۲۶)، کالبدشکافی شایعات پلتفرم‌ها و ماشین‌حساب ضد فریب سودآوری شعب.</p>
+
+      <!-- Yenikapi Expo Card -->
+      <div class="franchise-expo-box">
+        <span class="expo-badge">نمایشگاه بین‌المللی فرانچایز ینی‌کاپی | ۱۵ تا ۱۸ اکتبر ۲۰۲۶</span>
+        <h3 style="font-size:1.2rem;color:var(--cream);margin-bottom:6px">24. Bayim Olur musun? Franchising ve Markalı Bayilik Fuarı</h3>
+        <p style="font-size:.86rem;color:var(--text);line-height:1.8">
+          <b>محل برگزاری:</b> مرکز همایش و نمایشگاه اوراسیا ینی‌کاپی (Yenikapı Avrasya Fuar Merkezi)<br>
+          <b>برگزارکننده و اسپانسر اصلی:</b> شرکت Medyafors Fuarcılık و هلدینگ Standards and Partners با محوریت «Smart Franchise» و پل سرمایه‌گذاری ترکیه-امارات (BAE).<br>
+          <b>ابعاد بازار:</b> بیش از ۳۰۰ برند معتبر، ۱۵,۰۰۰ سرمایه‌گذار و پتانسیل بیش از ۱۰۰ میلیارد لیر سرمایه‌گذاری برای زنجیره‌ای‌سازی کسب‌وکارهای موفق محلی.
+        </p>
+      </div>
+
+      <!-- Rumors vs Reality Section -->
+      <h3 style="font-size:1.1rem;color:var(--copper-light);margin:24px 0 10px">🔍 کالبدشکافی شایعات راهروهای نمایشگاه ینی‌کاپی در برابر واقعیت شفاف:</h3>
+      <div class="rumors-grid">
+        <div class="rumor-card fact-checked">
+          <h4>
+            <span>۱. شایعه هوش مصنوعی صوری (AI Washing) در نرم‌افزارهای رستوران</span>
+            <span class="rumor-tag-bad">شایعه و ادعای پوچ</span>
+          </h4>
+          <div class="rumor-desc"><b>شایعه در نمایشگاه:</b> پلتفرم‌هایی که ادعا می‌کنند فروش را ۳ برابر می‌کنند ولی در عمل فرم‌های ساده اکسل با هزینه لایسنس ابری ۳۰ تا ۵۰ هزار لیر در ماه هستند.</div>
+          <div class="reality-desc"><b>حقایق و راه‌حل شمسه:</b> سیستم هوش تجاری ما متن‌باز، بدون هزینه دلاری و متصل به موتور واقعی NLP ۴ زبانه (فارسی، ترکی، انگلیسی، عربی) و مهندسی منو است.</div>
+        </div>
+
+        <div class="rumor-card fact-checked">
+          <h4>
+            <span>۲. شایعه کارمزدهای پنهان در تأمین گوشت و برنج (Supply Chain Kickbacks)</span>
+            <span class="rumor-tag-bad">شایعه انحصار مواد اولیه</span>
+          </h4>
+          <div class="rumor-desc"><b>شایعه در نمایشگاه:</b> شرکت‌های مادر به بهانه استانداردسازی، مواد اولیه را ۲۰٪ تا ۲۵٪ بالاتر از بازار عمده‌فروشی رامی (Rami) به شعب می‌فروشند.</div>
+          <div class="reality-desc"><b>حقایق و راه‌حل شمسه:</b> مدل کاملاً شفاف با شاخص Food Cost ثابت (۲۸٪ تا ۳۲٪) و خرید آزاد از تأمین‌کنندگان تأییدشده با نظارت کیفی بدون واسطه‌گری گران.</div>
+        </div>
+
+        <div class="rumor-card fact-checked">
+          <h4>
+            <span>۳. شایعه سرقت و فروش داده‌های مشتریان شعب به رقبا (Customer Data Poaching)</span>
+            <span class="rumor-tag-bad">شایعه درز اطلاعات</span>
+          </h4>
+          <div class="rumor-desc"><b>شایعه در نمایشگاه:</b> نرم‌افزارهای ابری فرانچایز دیتای مشتریان وفادار هر شعبه را جمع‌آوری کرده و به پلتفرم‌های دلیوری رقیب می‌فروشند.</div>
+          <div class="reality-desc"><b>حقایق و راه‌حل شمسه:</b> رعایت استانداردهای حریم خصوصی KVKK ترکیه و ذخیره‌سازی داده‌ها بر سرور امن مستقل به نام خود شعبه.</div>
+        </div>
+
+        <div class="rumor-card fact-checked">
+          <h4>
+            <span>۴. شایعه بازگشت سرمایه تخیلی زیر ۶ ماه (Phantom ROI & Inflation Trap)</span>
+            <span class="rumor-tag-bad">شایعه ارقام غیرواقعی</span>
+          </h4>
+          <div class="rumor-desc"><b>شایعه در نمایشگاه:</b> ادعای بازگشت کل سرمایه در ۴ ماه بدون در نظر گرفتن تورم سنگین لیر و جهش اجاره‌بها در مناطق پرتردد استانبول.</div>
+          <div class="reality-desc"><b>حقایق و راه‌حل شمسه:</b> ماشین‌حساب واقع‌بینانه مالی با محاسبه نرخ تورم ۳۵٪ و بازگشت سرمایه مستند بین ۱۰ تا ۱۴ ماه.</div>
+        </div>
+
+        <div class="rumor-card fact-checked">
+          <h4>
+            <span>۵. شایعه قفل نرم‌افزاری و وابستگی اجباری (Vendor Lock-in)</span>
+            <span class="rumor-tag-bad">شایعه جریمه‌های فسخ</span>
+          </h4>
+          <div class="rumor-desc"><b>شایعه در نمایشگاه:</b> شعب اجازه استفاده از ابزارهای بازاریابی محلی، ربات اختصاصی یا درگاه پرداخت مستقل را ندارند.</div>
+          <div class="reality-desc"><b>حقایق و راه‌حل شمسه:</b> معماری باز مبتنی بر API و Webhook با قابلیت اتصال به ربات تلگرام، واتساپ، اینستاگرام و سیستم پوز دلخواه.</div>
+        </div>
+      </div>
+
+      <!-- 3 Franchise Models -->
+      <h3 style="font-size:1.1rem;color:var(--cream);margin:28px 0 10px">💼 مدل‌های سرمایه‌گذاری فرانچایز شمسه در استانبول:</h3>
+      <div class="models-grid">
+        <div class="fmodel-card" id="fcard-express" onclick="selectFranchiseModel('express')">
+          <div class="fmodel-title">۱. شمسه اکسپرس (Express & Delivery)</div>
+          <div class="fmodel-inv">۱,۴۵۰,۰۰۰ <small>لیر سرمایه اولیه</small></div>
+          <ul class="fmodel-list">
+            <li><b>متراژ:</b> ۵۰ تا ۸۰ متر مربع</li>
+            <li><b>لوکیشن ایده‌آل:</b> شیشلی، اسنیورت، کادیکوی، باقرکوی</li>
+            <li><b>حق امتیاز فرانچایز:</b> ۳۵۰,۰۰۰ لیر</li>
+            <li><b>رویالتی ماهانه:</b> ۴.۰٪ از فروش</li>
+            <li><b>سود خالص ماهانه:</b> ≈ ۱۵۰,۰۰۰ لیر</li>
+            <li><b>دوره بازگشت سرمایه:</b> ۱۱.۸ ماه</li>
+          </ul>
+        </div>
+
+        <div class="fmodel-card active" id="fcard-full_dining" onclick="selectFranchiseModel('full_dining')">
+          <div class="fmodel-title">۲. رستوران سنتی لوکس با سالن رویدادها</div>
+          <div class="fmodel-inv">۳,۸۰۰,۰۰۰ <small>لیر سرمایه اولیه</small></div>
+          <ul class="fmodel-list">
+            <li><b>متراژ:</b> ۱۸۰ تا ۳۰۰ متر مربع (۲ طبقه با سالن کلاب)</li>
+            <li><b>لوکیشن ایده‌آل:</b> تکسیم، استقلال، فاتح، آتاشهیر</li>
+            <li><b>حق امتیاز فرانچایز:</b> ۷۵۰,۰۰۰ لیر</li>
+            <li><b>رویالتی ماهانه:</b> ۵.۰٪ از فروش</li>
+            <li><b>سود خالص ماهانه:</b> ≈ ۴۲۵,۰۰۰ لیر</li>
+            <li><b>دوره بازگشت سرمایه:</b> ۱۰.۷ ماه</li>
+          </ul>
+        </div>
+
+        <div class="fmodel-card" id="fcard-lounge_cafe" onclick="selectFranchiseModel('lounge_cafe')">
+          <div class="fmodel-title">۳. پرشین لانژ و کافه قنادی سنتی</div>
+          <div class="fmodel-inv">۲,۶۰۰,۰۰۰ <small>لیر سرمایه اولیه</small></div>
+          <ul class="fmodel-list">
+            <li><b>متراژ:</b> ۱۲۰ تا ۱۶۰ متر مربع با تراس باز</li>
+            <li><b>لوکیشن ایده‌آل:</b> بلوارهای ساحلی، بشیکتاش، مالتپه</li>
+            <li><b>حق امتیاز فرانچایز:</b> ۵۰۰,۰۰۰ لیر</li>
+            <li><b>رویالتی ماهانه:</b> ۴.۵٪ از فروش</li>
+            <li><b>سود خالص ماهانه:</b> ≈ ۲۷۶,۰۰۰ لیر</li>
+            <li><b>دوره بازگشت سرمایه:</b> ۱۱.۲ ماه</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Anti-Phantom ROI Calculator -->
+      <div class="fcalc-box">
+        <h3 style="font-size:1.15rem;color:var(--copper-light);margin-bottom:8px">🧮 ماشین‌حساب مالی شفاف و ضد فریب فرانچایز (Anti-Phantom ROI)</h3>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:18px">محاسبه دقیق سود و دوره استرداد سرمایه با کسر واقعی مواد اولیه، پرسنل، اجاره و تعدیل تورم لیر ترکیه:</p>
+
+        <div class="fcalc-grid">
+          <div>
+            <div class="slider-group">
+              <label for="fGrossSlider">
+                <span>پیش‌بینی فروش ناخالص ماهانه شعبه:</span>
+                <b id="fGrossVal" style="color:var(--copper)">۱,۸۵۰,۰۰۰ لیر</b>
+              </label>
+              <input type="range" id="fGrossSlider" min="500000" max="4000000" step="50000" value="1850000" oninput="updateFranchiseCalc()">
+            </div>
+
+            <div class="slider-group" style="margin-top:14px">
+              <label for="fInflationSlider">
+                <span>پیش‌بینی نرخ تورم سالانه لیر ترکیه:</span>
+                <b id="fInflationVal" style="color:var(--copper)">۳۵٪ در سال</b>
+              </label>
+              <input type="range" id="fInflationSlider" min="10" max="60" step="5" value="35" oninput="updateFranchiseCalc()">
+            </div>
+
+            <div style="margin-top:18px">
+              <div style="font-size:.85rem;color:var(--cream);font-weight:700;margin-bottom:8px">تفکیک ساختار هزینه‌های ماهانه شعبه:</div>
+              <div>
+                <div class="cost-bar-row"><span>هزینه مواد اولیه غذا (Food Cost - ۳۰٪)</span><span id="fcFoodVal">۵۵۵,۰۰۰ لیر</span></div>
+                <div class="cost-track"><div class="cost-fill" style="width:30%;background:#e67e22"></div></div>
+              </div>
+              <div>
+                <div class="cost-bar-row"><span>دستمزد و بیمه پرسنل (Labor Cost - ۲۲٪)</span><span id="fcLaborVal">۴۰۷,۰۰۰ لیر</span></div>
+                <div class="cost-track"><div class="cost-fill" style="width:22%;background:#3498db"></div></div>
+              </div>
+              <div>
+                <div class="cost-bar-row"><span>اجاره سالن و قبوض تجاری (۱۴٪)</span><span id="fcRentVal">۲۵۹,۰۰۰ لیر</span></div>
+                <div class="cost-track"><div class="cost-fill" style="width:14%;background:#9b59b6"></div></div>
+              </div>
+              <div>
+                <div class="cost-bar-row"><span>رویالتی و مارکتینگ دفتر مرکزی (۷٪)</span><span id="fcRoyaltyVal">۱۲۹,۵۰۰ لیر</span></div>
+                <div class="cost-track"><div class="cost-fill" style="width:7%;background:#d29a5a"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--ink-1);border:1px solid var(--line-copper);padding:24px;text-align:center">
+            <span style="font-size:.82rem;color:var(--muted)">سود خالص پیش‌بینی‌شده ماهانه</span>
+            <div class="calc-val" id="fNetProfitVal" style="font-size:2.4rem;color:var(--copper)">۴۲۵,۵۰۰ <small>لیر / ماه</small></div>
+            <div style="font-size:.9rem;color:var(--cream);margin-top:4px" id="fNetUsdVal">≈ $13,090 دلار در ماه</div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;text-align:right;font-size:.8rem;color:var(--muted)">
+              <div>حاشیه سود خالص: <b id="fMarginVal" style="color:#2ecc71;display:block;font-size:1rem">۲۳.۰٪</b></div>
+              <div>بازگشت سرمایه اسمی: <b id="fPaybackVal" style="color:var(--copper);display:block;font-size:1rem">۱۰.۷ ماه</b></div>
+              <div>بازگشت با تعدیل تورم: <b id="fRealPaybackVal" style="color:#f1c40f;display:block;font-size:1rem">۱۲.۶ ماه</b></div>
+              <div>نشان سلامت مالی: <b style="color:#2ecc71;display:block;font-size:.9rem">A+ (ممیزی‌شده)</b></div>
+            </div>
+
+            <a href="https://t.me/shamse_restaurant_bot?start=franchise" target="_blank" rel="noopener" class="btn" style="width:100%;margin-top:18px">درخواست نمایندگی در ربات تلگرام</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- ATIKOVA INTEGRATION BANNER -->
     <div class="atikova-banner">
       <div class="atikova-text">
@@ -1034,6 +1458,66 @@ function updateYieldCalc() {
 }
 
 
+
+
+// Franchise Calculator & Model Switcher
+var currentFranchiseModel = 'full_dining';
+var franchiseModelsData = {
+  express: { inv: 1800000, defaultGross: 620000, royaltyPct: 5.5 },
+  full_dining: { inv: 4550000, defaultGross: 1850000, royaltyPct: 7.0 },
+  lounge_cafe: { inv: 3100000, defaultGross: 1150000, royaltyPct: 6.0 }
+};
+
+function selectFranchiseModel(mid) {
+  currentFranchiseModel = mid;
+  document.querySelectorAll(".models-grid .fmodel-card").forEach(function(c){
+    c.classList.remove("active");
+  });
+  var el = document.getElementById("fcard-" + mid);
+  if (el) el.classList.add("active");
+
+  var d = franchiseModelsData[mid];
+  if (d) {
+    document.getElementById("fGrossSlider").value = d.defaultGross;
+    updateFranchiseCalc();
+  }
+}
+
+function updateFranchiseCalc() {
+  var gross = parseInt(document.getElementById("fGrossSlider").value, 10);
+  var inflation = parseInt(document.getElementById("fInflationSlider").value, 10);
+
+  document.getElementById("fGrossVal").textContent = gross.toLocaleString("fa-IR") + " لیر";
+  document.getElementById("fInflationVal").textContent = inflation + "٪ در سال";
+
+  var m = franchiseModelsData[currentFranchiseModel] || franchiseModelsData['full_dining'];
+
+  var food = Math.round(gross * 0.30);
+  var labor = Math.round(gross * 0.22);
+  var rent = Math.round(gross * 0.14);
+  var royalty = Math.round(gross * (m.royaltyPct / 100.0));
+  var misc = Math.round(gross * 0.04);
+
+  document.getElementById("fcFoodVal").textContent = food.toLocaleString("fa-IR") + " لیر";
+  document.getElementById("fcLaborVal").textContent = labor.toLocaleString("fa-IR") + " لیر";
+  document.getElementById("fcRentVal").textContent = rent.toLocaleString("fa-IR") + " لیر";
+  document.getElementById("fcRoyaltyVal").textContent = royalty.toLocaleString("fa-IR") + " لیر";
+
+  var totalCost = food + labor + rent + royalty + misc;
+  var net = gross - totalCost;
+  var netUsd = Math.round(net / 32.5);
+  var margin = ((net / gross) * 100).toFixed(1);
+
+  var nominalPayback = (m.inv / net).toFixed(1);
+  var realMonthly = net / (1 + (inflation / 200.0));
+  var realPayback = (m.inv / realMonthly).toFixed(1);
+
+  document.getElementById("fNetProfitVal").innerHTML = net.toLocaleString("fa-IR") + " <small>لیر / ماه</small>";
+  document.getElementById("fNetUsdVal").textContent = "≈ $" + netUsd.toLocaleString() + " دلار در ماه";
+  document.getElementById("fMarginVal").textContent = margin + "٪";
+  document.getElementById("fPaybackVal").textContent = nominalPayback + " ماه";
+  document.getElementById("fRealPaybackVal").textContent = realPayback + " ماه";
+}
 
 // 100 Skills Data & Interactive Simulator
 var skillsRepository = {
