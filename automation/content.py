@@ -17,6 +17,7 @@ SITE = "https://shamse-restaurant.pages.dev"
 SITE_LABEL = "shamse-restaurant.pages.dev"
 EVENTS_URL = SITE + "/events.html"
 RESTAURANTS_URL = SITE + "/restaurants.html"
+INTELLIGENCE_URL = SITE + "/intelligence.html"
 RESERVE_URL = SITE + "/index.html#reserve"
 MENU_URL = SITE + "/index.html#menu"
 PHONE = "+90 501 325 24 52"
@@ -142,6 +143,31 @@ TOPICS = [
 
 # پاسخ دستورها
 REPLIES = {
+    "campaign": f"""🎯 <b>استودیو هوش مصنوعی تبلیغات و دورهمی‌های کلاب:</b>
+
+برای دریافت سناریوی تبلیغاتی، متن تلگرام، کپشن اینستاگرام و زمان‌بندی رویداد، نوع رویداد را بفرستید:
+• <code>/campaign mafia</code> — شب بازی و مافیا کلاب
+• <code>/campaign tech</code> — میتاپ برنامه‌نویسان و استارتاپ‌ها
+• <code>/campaign poetry</code> — شب شعر، حافظ‌خوانی و موسیقی سنتی
+
+🌐 نسخهٔ تحت وب با قابلیت تنظیم فضا و محاسبه سود:
+{SITE}/intelligence.html#mod-campaign""",
+    "intel": f"""📊 <b>سامانه هوش رقبا و تحلیل منو در استانبول:</b>
+
+• مقایسه ۸ رستوران شاخص خاورمیانه‌ای در استانبول (قیمت، ظرفیت، سالن اختصاصی، امتیاز گوگل)
+• مهندسی منو (BCG Matrix): قورمه‌سبزی (۷۴٪ سود)، پیش‌غذاها (۸۲٪ سود)، کوبیده (۶۸٪ سود)
+• مزیت رقابتی شمسه: طبقه اختصاصی میتاپ با پروژکتور (ظرفیت ۶۰ نفر)
+
+🌐 داشبورد کامل تحلیل رقبا و هزینه‌ها:
+{SITE}/intelligence.html#mod-competitors""",
+    "space": f"""⏳ <b>تحلیل فضای خالی و درآمدزایی ساعات کم‌تردد (Yield Management):</b>
+
+• ساعات مرده روزانه (۱۴:۳۰ تا ۱۸:۳۰): ۷۲٪ صندلی‌ها خالی است.
+• پتانسیل درآمد ماهانه از دورهمی‌های کلاب، کوورکینگ و رویدادهای B2B: <b>۱۷۰,۰۰۰ لیر (≈ $5,230)</b>
+• بنچ‌مارک پلتفرم‌های جهانی: RestauRent و Tagvenue
+
+🌐 ماشین‌حساب آنلاین فضای خالی و افزایش سود:
+{SITE}/intelligence.html#mod-space""",
     "restaurants": f"""🍽 <b>راهنمای رستوران‌های فارسی، ایرانی و افغانستانی استانبول</b>
 
 استانبول میزبان ۱۹ رستوران اصیل ایرانی و افغانستانی است:

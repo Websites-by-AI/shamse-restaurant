@@ -618,6 +618,14 @@ def handle_updates(state, minutes=0, timeout=0):
                 else:
                     r = reply(chat_id, content.REPLIES["search"], buttons=True)
                 out = "/search"
+            elif cmd == "campaign":
+                parts = raw_text.split()
+                etype = parts[1].lower() if len(parts) > 1 else "mafia"
+                camp = il.generate_campaign(etype)
+                ros_lines = ["\n📋 <b>برنامه زمان‌بندی:</b>"] + ["• %s: %s" % (t, d) for t, d in camp.get("run_of_show", [])]
+                out_msg = camp.get("telegram", "") + "\n" + "\n".join(ros_lines)
+                r = reply(chat_id, out_msg, buttons=True)
+                out = "/campaign"
             elif cmd in content.REPLIES:
                 r = reply(chat_id, content.REPLIES[cmd], buttons=True)
                 out = "/" + cmd
@@ -674,6 +682,9 @@ COMMANDS = [
     {"command": "afghan", "description": "۷ رستوران افغانستانی با آدرس و منو"},
     {"command": "areas", "description": "جستجو بر اساس محله‌های استانبول"},
     {"command": "search", "description": "جستجوی رستوران یا غذا"},
+    {"command": "campaign", "description": "تولید تبلیغ دورهمی و کلاب با AI"},
+    {"command": "intel", "description": "تحلیل رقبا و حاشیه سود منو"},
+    {"command": "space", "description": "تحلیل درآمد فضای خالی رستوران"},
     {"command": "rsvp", "description": "ثبت‌نام رویدادها و میتاپ‌ها"},
     {"command": "events", "description": "تقویم رویدادها"},
     {"command": "my", "description": "پروفایل من"},

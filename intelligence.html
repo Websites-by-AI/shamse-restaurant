@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سامانه هوش تجاری و تحلیل رستوران‌های استانبول | هوش مصنوعی، رقبا و بهینه‌سازی فضا</title>
+<meta name="description" content="پلتفرم جامع هوش مصنوعی رستوران‌های استانبول: تولید تبلیغات و دورهمی‌های کلاب، تحلیل رقبا، مهندسی منو و هزینه‌ها، تحلیل کامنت‌های گوگل مپ، درآمدزایی از فضای خالی، تم‌های طراحی معماری و بنچ‌مارک پلتفرم‌های جهانی (RestauRent, Tagvenue).">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#13100c">
+<link rel="canonical" href="https://websites-by-ai.github.io/shamse-restaurant/intelligence.html">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="هوش تجاری رستوران‌های استانبول">
+<meta property="og:title" content="سامانه هوش تجاری و تحلیل رستوران‌های استانبول">
+<meta property="og:description" content="تولید کمپین هوش مصنوعی، تحلیل رقبا، منو، کامنت‌های گوگل مپ و درآمدزایی از فضای خالی رستوران‌ها.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2313100c'/%3E%3Cpath d='M32 8l5.6 12.2L50 22l-9 9 2.2 13.4L32 38.2 20.8 44.4 23 31l-9-9 12.4-1.8z' fill='%23d29a5a'/%3E%3C/svg%3E">
+<style>
+@font-face{
+  font-family:"Vazirmatn";
+  src:url('assets/fonts/Vazirmatn-Variable.woff2') format('woff2-variations'),
+      url('assets/fonts/Vazirmatn-Variable.woff2') format('woff2');
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+  unicode-range:U+0000-00FF,U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F,U+2010-2011,U+0640,U+0651;
+}
+:root{
+  --ink:#13100c;
+  --ink-2:#1a1511;
+  --ink-3:#221b15;
+  --ink-4:#0f0c09;
+  --copper:#d29a5a;
+  --copper-2:#daa760;
+  --cream:#f8f8f8;
+  --text:#d1c8bb;
+  --muted:#a89d8e;
+  --line:rgba(255,255,255,.085);
+  --line-copper:rgba(210,154,90,.3);
+  --on-copper:#101e22;
+  --success:#4caf50;
+  --font:"Vazirmatn","IRANSansX","IRANSans","Segoe UI",Tahoma,system-ui,sans-serif;
+  --max:1220px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--ink);
+  color:var(--text);
+  font-size:16px;
+  line-height:1.9;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font-family:inherit;font-size:1rem}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:22px}
+.center{text-align:center}
+
+/* header */
+.header{
+  position:sticky;top:0;z-index:90;background:rgba(15,12,9,.95);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  padding:16px 0;
+}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.35rem;font-weight:900;color:var(--cream);display:flex;align-items:center;gap:12px}
+.logo b{color:var(--copper)}
+.nav{display:flex;align-items:center;gap:22px;font-size:.9rem;font-weight:600}
+.nav a{color:var(--text);transition:.25s;padding:6px 0;position:relative}
+.nav a:hover,.nav a.active{color:var(--copper)}
+.nav a.active::after{content:"";position:absolute;bottom:-4px;right:0;left:0;height:2px;background:var(--copper)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px 24px;font-weight:700;font-size:.92rem;cursor:pointer;
+  transition:.3s;background:var(--copper);color:var(--on-copper);border:1px solid var(--copper);
+}
+.btn:hover{background:var(--copper-2)}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line-copper);background:transparent;cursor:pointer;padding:12px;flex-direction:column;justify-content:space-between}
+.burger i{display:block;height:2px;background:var(--copper);transition:.3s}
+
+/* hero */
+.ihero{
+  padding:90px 0 60px;
+  background:linear-gradient(180deg,var(--ink-4),var(--ink));
+  border-bottom:1px solid var(--line);
+  text-align:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:14px;
+  font-size:.92rem;font-weight:700;color:var(--copper);
+}
+.eyebrow::before,.eyebrow::after{content:"";width:30px;height:1px;background:var(--copper)}
+.ihero h1{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:800;color:var(--cream);margin-top:14px;line-height:1.5}
+.ihero h1 em{font-style:normal;color:var(--copper)}
+.ihero p.lead{max-width:820px;margin:16px auto 0;color:var(--text);font-size:1.05rem}
+
+/* section headers */
+.sec-title{font-size:1.6rem;font-weight:800;color:var(--cream);margin-bottom:8px;display:flex;align-items:center;gap:12px}
+.sec-sub{color:var(--muted);font-size:.95rem;margin-bottom:28px}
+.mod-card{
+  background:var(--ink-3);border:1px solid var(--line);padding:34px;
+  margin-bottom:48px;transition:.3s;
+}
+.mod-card:hover{border-color:var(--line-copper)}
+
+/* nav pills */
+.mod-nav{
+  display:flex;gap:10px;flex-wrap:wrap;justify-content:center;
+  margin:34px 0 50px;padding:8px;background:var(--ink-3);border:1px solid var(--line);
+}
+.mod-pill{
+  background:transparent;border:0;color:var(--text);padding:10px 18px;
+  font-size:.88rem;font-weight:700;cursor:pointer;transition:.25s;
+}
+.mod-pill:hover{color:var(--copper)}
+.mod-pill.active{background:var(--copper);color:var(--on-copper)}
+
+/* Module 1: AI Campaign */
+.form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:24px}
+.fg{display:flex;flex-direction:column;gap:8px}
+.fg label{font-size:.84rem;font-weight:700;color:var(--cream)}
+.fg select,.fg input,.fg textarea{
+  background:var(--ink-2);border:1px solid var(--line);color:var(--cream);
+  padding:12px 14px;font-size:.92rem;
+}
+.fg select:focus,.fg input:focus,.fg textarea:focus{outline:none;border-color:var(--copper)}
+
+.output-tabs{display:flex;gap:8px;border-bottom:1px solid var(--line);margin:24px 0 16px}
+.otab{
+  background:transparent;border:0;color:var(--muted);padding:10px 16px;
+  font-size:.88rem;font-weight:700;cursor:pointer;border-bottom:2px solid transparent;
+}
+.otab.active{color:var(--copper);border-bottom-color:var(--copper)}
+.output-pane{
+  background:var(--ink-2);border:1px solid var(--line);padding:22px;
+  font-size:.9rem;line-height:1.9;color:var(--text);position:relative;
+}
+.copy-btn{
+  position:absolute;top:14px;left:14px;background:var(--ink-3);
+  border:1px solid var(--line-copper);color:var(--copper);
+  padding:6px 12px;font-size:.78rem;font-weight:700;cursor:pointer;
+}
+.copy-btn:hover{background:var(--copper);color:var(--on-copper)}
+
+/* Module 2: Multi-Theme Studio */
+.theme-picker{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:28px}
+.theme-btn{
+  background:var(--ink-2);border:1px solid var(--line);padding:16px 12px;
+  text-align:center;cursor:pointer;transition:.3s;
+}
+.theme-btn:hover,.theme-btn.active{border-color:var(--copper);background:rgba(210,154,90,.1)}
+.theme-btn b{display:block;font-size:.9rem;color:var(--cream);margin-bottom:6px}
+.theme-btn span{display:block;font-size:.75rem;color:var(--muted)}
+.theme-swatches{display:flex;justify-content:center;gap:4px;margin-top:8px}
+.swatch{width:14px;height:14px;border-radius:2px;display:inline-block}
+
+.mock-preview{
+  border:1px solid var(--line);padding:36px;transition:.4s;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:30px;
+}
+.mock-info h4{font-size:1.4rem;font-weight:800;margin-bottom:10px}
+.mock-info p{font-size:.92rem;line-height:1.8;margin-bottom:14px}
+.mock-palette{display:flex;gap:12px;margin-top:18px}
+.pal-item{padding:8px 12px;border:1px solid rgba(255,255,255,.1);font-size:.78rem;font-weight:700}
+.mock-card{border:1px solid rgba(255,255,255,.15);padding:22px}
+.mock-card b{display:block;font-size:1.1rem;margin-bottom:6px}
+
+/* Module 3: Competitor Benchmark */
+.table-wrap{overflow-x:auto;margin-top:18px}
+table.bench-table{width:100%;border-collapse:collapse;font-size:.88rem;text-align:right}
+table.bench-table th,table.bench-table td{padding:14px 16px;border-bottom:1px solid var(--line)}
+table.bench-table th{background:var(--ink-2);color:var(--copper);font-weight:700}
+table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
+.badge-tag{padding:3px 8px;font-size:.72rem;font-weight:700;border-radius:2px}
+.tag-star{background:rgba(210,154,90,.2);color:var(--copper);border:1px solid var(--line-copper)}
+.tag-cow{background:rgba(76,175,80,.2);color:#81c784;border:1px solid rgba(129,199,132,.3)}
+.tag-driver{background:rgba(33,150,243,.2);color:#64b5f6;border:1px solid rgba(100,181,246,.3)}
+
+/* Module 4: Google Maps Sentiment */
+.sent-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:28px}
+.sent-meter{background:var(--ink-2);padding:24px;border:1px solid var(--line);text-align:center}
+.big-score{font-size:3.2rem;font-weight:900;color:var(--copper);line-height:1.1}
+.sent-bars{display:grid;gap:10px;margin-top:18px;text-align:right}
+.bar-row{display:flex;justify-content:space-between;font-size:.82rem;color:var(--muted);margin-bottom:3px}
+.bar-track{height:8px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden}
+.bar-fill{height:100%}
+.fill-pos{background:#4caf50;width:84.2%}
+.fill-neu{background:#ffb74d;width:8.9%}
+.fill-neg{background:#e57373;width:6.9%}
+
+.themes-list{display:grid;gap:10px}
+.theme-item{
+  background:var(--ink-2);border:1px solid var(--line);padding:12px 16px;
+  display:flex;justify-content:space-between;align-items:center;font-size:.86rem;
+}
+.theme-item b{color:var(--cream)}
+.theme-badge{color:var(--copper);font-weight:700;font-size:.8rem}
+
+.responder-box{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.resp-output{background:var(--ink-2);border:1px solid var(--line);padding:16px;margin-top:12px;font-size:.88rem;line-height:1.8}
+
+/* Module 5: Yield Calculator */
+.calc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+.calc-ctrl{display:grid;gap:20px}
+.slider-group label{display:flex;justify-content:space-between;font-size:.9rem;color:var(--cream);font-weight:700;margin-bottom:6px}
+.slider-group input[type=range]{width:100%;accent-color:var(--copper);cursor:pointer}
+.calc-stats{background:var(--ink-2);border:1px solid var(--line-copper);padding:26px;text-align:center}
+.calc-stats h4{font-size:1.05rem;color:var(--muted);margin-bottom:12px}
+.calc-val{font-size:2.8rem;font-weight:900;color:var(--copper);line-height:1.2}
+.calc-val small{font-size:1.1rem;font-weight:700;color:var(--text)}
+.calc-details{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px;text-align:right;font-size:.82rem;color:var(--muted)}
+.calc-details b{color:var(--cream);display:block;font-size:1rem}
+
+/* Module 6: Global Benchmarks */
+.bench-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bcard{background:var(--ink-2);border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:10px}
+.bcard:hover{border-color:var(--line-copper)}
+.bcard h4{font-size:1.1rem;color:var(--cream);display:flex;justify-content:space-between;align-items:center}
+.bcard .bregion{font-size:.75rem;color:var(--copper);font-weight:700;border:1px solid var(--line-copper);padding:2px 8px}
+.bcard p{font-size:.84rem;color:var(--text);line-height:1.7}
+.bcard .bmeta{font-size:.8rem;color:var(--muted);margin-top:auto;border-top:1px solid var(--line);padding-top:10px}
+
+/* Atikova Banner */
+.atikova-banner{
+  background:linear-gradient(90deg,rgba(210,154,90,.15),rgba(15,12,9,.9));
+  border:1px solid var(--line-copper);padding:30px;margin:40px 0 70px;
+  display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+}
+.atikova-text h3{font-size:1.3rem;color:var(--cream);font-weight:800;margin-bottom:6px}
+.atikova-text p{font-size:.9rem;color:var(--text);max-width:750px}
+
+/* footer styling matching events.html */
+.footer{background:var(--ink-4);color:var(--muted);padding:80px 0 0;border-top:1px solid var(--line)}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px}
+.footer h4{color:var(--cream);font-size:1.02rem;margin-bottom:20px;position:relative;padding-bottom:12px;font-weight:700}
+.footer h4::after{content:"";position:absolute;bottom:0;right:0;width:40px;height:1px;background:var(--copper)}
+.footer p{font-size:.92rem}
+.flist{list-style:none;display:grid;gap:12px;font-size:.92rem}
+.flist a:hover{color:var(--copper);padding-inline-start:5px;transition:.25s}
+.fbottom{margin-top:60px;border-top:1px solid var(--line);padding:24px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.84rem}
+.fbottom b{color:var(--copper)}
+
+@media (max-width:1080px){
+  .form-grid{grid-template-columns:1fr 1fr}
+  .theme-picker{grid-template-columns:repeat(3,1fr)}
+  .mock-preview{grid-template-columns:1fr}
+  .bench-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .nav{
+    position:fixed;inset:76px 0 auto;background:rgba(15,12,9,.98);
+    flex-direction:column;align-items:stretch;padding:18px 24px;border-bottom:1px solid var(--line-copper);
+    transform:translateY(-130%);transition:.4s;max-height:80vh;overflow:auto;
+  }
+  .nav.open{transform:none}
+  .nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .burger{display:flex}
+  .header .btn.desk{display:none}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .sent-grid{grid-template-columns:1fr}
+  .calc-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .form-grid{grid-template-columns:1fr}
+  .theme-picker{grid-template-columns:1fr 1fr}
+  .bench-cards{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+
+
+<main id="main">
+  <section class="ihero">
+    <div class="wrap">
+      <div class="eyebrow">سامانه هوشمند مدیریت، بازاریابی و تحلیل داده</div>
+      <h1>هوش تجاری و بهینه‌سازی <em>رستوران‌های استانبول</em></h1>
+      <p class="lead">پلتفرم تحلیلی مبتنی بر داده و هوش مصنوعی برای ارتقای درآمد، بازاریابی دورهمی‌های کلاب، تحلیل دقیق رقبا، مهندسی منو و هزینه‌ها، تحلیل کامنت‌های گوگل مپ و تبدیل ساعات خلوت به جریان درآمدی پایدار.</p>
+      
+      <nav class="mod-nav" aria-label="فهرست ماژول‌ها">
+        <button class="mod-pill active" onclick="scrollToSection('mod-campaign')">🎯 هوش مصنوعی تبلیغات و کلاب</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-themes')">🎨 استودیو طراحی و تم‌ها</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-competitors')">📊 تحلیل رقبا و مهندسی منو</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-reviews')">🗺 تحلیل کامنت‌های گوگل مپ</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-space')">⏳ درآمدزایی از فضای خالی</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-benchmark')">🌐 بنچ‌مارک پلتفرم‌های جهانی</button>
+      </nav>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-top:40px">
+
+    <!-- MODULE 1: AI Campaign Generator -->
+    <section class="mod-card" id="mod-campaign">
+      <h2 class="sec-title">🎯 ۱. استودیو هوش مصنوعی تولید تبلیغات و دورهمی‌های کلاب</h2>
+      <p class="sec-sub">تولید خودکار سناریوهای تبلیغاتی وایرال، متن‌های ترغیب‌کننده تلگرام و اینستاگرام، و برنامه زمان‌بندی رویداد برای پر کردن ظرفیت سالن‌های رستوران.</p>
+
+      <div class="form-grid">
+        <div class="fg">
+          <label for="eventSelect">نوع دورهمی یا کلاب:</label>
+          <select id="eventSelect">
+            <option value="mafia">شب بازی و مافیا (مافیا کلاب)</option>
+            <option value="tech">میتاپ برنامه‌نویسان و کارآفرینان (Tech Meetup)</option>
+            <option value="poetry">شب شعر، حافظ‌خوانی و موسیقی سنتی</option>
+            <option value="custom">دورهمی شبکه‌سازی زبان و اکسپت‌ها</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="venueSelect">فضا یا سالن برگزاری:</label>
+          <select id="venueSelect">
+            <option value="taksim-floor2">طبقه دوم شمسه استقلال (ظرفیت ۶۰ نفر، پروژکتور، صوتی)</option>
+            <option value="kocatepe-hall">سالن بزرگ کوجاتپه (جشن خانوادگی و تشریفات)</option>
+            <option value="partner-venue">سالن رستوران همکار در شیشلی یا زیتین‌بورنو</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label for="extraNotes">یادداشت تکمیلی یا آفر اختصاصی:</label>
+          <input type="text" id="extraNotes" placeholder="مثال: ورودی شامل چای ایرانی و ۲۰٪ تخفیف شام">
+        </div>
+      </div>
+
+      <button class="btn" onclick="generateAiCampaign()">⚡️ تولید آنی کمپین با هوش مصنوعی</button>
+
+      <div class="output-tabs">
+        <button class="otab active" onclick="switchTab('tg')">📱 متن پست تلگرام</button>
+        <button class="otab" onclick="switchTab('ig')">📸 کپشن اینستاگرام با هشتگ</button>
+        <button class="otab" onclick="switchTab('ros')">⏱ برنامه زمان‌بندی (Run of Show)</button>
+        <button class="otab" onclick="switchTab('vip')">💌 پیام دعوت اختصاصی VIP</button>
+      </div>
+
+      <div class="output-pane" id="outputPane">
+        <button class="copy-btn" onclick="copyCampaignText()">کپی متن</button>
+        <div id="campaignContent">در حال بارگذاری کمپین پیش‌فرض...</div>
+      </div>
+    </section>
+
+    <!-- MODULE 2: Multi-Theme Design Studio -->
+    <section class="mod-card" id="mod-themes">
+      <h2 class="sec-title">🎨 ۲. استودیو طراحی معماری و هویت بصری رستوران (Multi-Theme Studio)</h2>
+      <p class="sec-sub">نمایش چگونگی تحول هویت، پالت رنگی، نورپردازی و تجربهٔ مهمان بر اساس ۵ سبک مدرن بین‌المللی و ایرانی.</p>
+
+      <div class="theme-picker" id="themePicker">
+        <div class="theme-btn active" data-theme="dark-copper" onclick="selectTheme('dark-copper')">
+          <b>لوکس برنزی شبانه</b>
+          <span>Dark Copper & Walnut</span>
+          <div class="theme-swatches">
+            <span class="swatch" style="background:#13100c"></span>
+            <span class="swatch" style="background:#d29a5a"></span>
+            <span class="swatch" style="background:#daa760"></span>
+          </div>
+        </div>
+        <div class="theme-btn" data-theme="turquoise" onclick="selectTheme('turquoise')">
+          <b>اصیل فیروزه‌ای</b>
+          <span>Persian Turquoise & Clay</span>
+          <div class="theme-swatches">
+            <span class="swatch" style="background:#0f2027"></span>
+            <span class="swatch" style="background:#1a8c8c"></span>
+            <span class="swatch" style="background:#c26a45"></span>
+          </div>
+        </div>
+        <div class="theme-btn" data-theme="nordic" onclick="selectTheme('nordic')">
+          <b>مینیمال اسکاندیناوی</b>
+          <span>Nordic Minimal Lounge</span>
+          <div class="theme-swatches">
+            <span class="swatch" style="background:#1c1b18"></span>
+            <span class="swatch" style="background:#8fb397"></span>
+            <span class="swatch" style="background:#e4dcd3"></span>
+          </div>
+        </div>
+        <div class="theme-btn" data-theme="mediterranean" onclick="selectTheme('mediterranean')">
+          <b>بسفر مدیترانه‌ای</b>
+          <span>Bosphorus Aegean</span>
+          <div class="theme-swatches">
+            <span class="swatch" style="background:#0a192f"></span>
+            <span class="swatch" style="background:#4a90e2"></span>
+            <span class="swatch" style="background:#f5f7fa"></span>
+          </div>
+        </div>
+        <div class="theme-btn" data-theme="cyber" onclick="selectTheme('cyber')">
+          <b>بیسترو نئون کلاب</b>
+          <span>Urban Cyber-Bistro</span>
+          <div class="theme-swatches">
+            <span class="swatch" style="background:#09090b"></span>
+            <span class="swatch" style="background:#ff3366"></span>
+            <span class="swatch" style="background:#ffb703"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mock-preview" id="mockPreview" style="background:#18130e;border-color:var(--line-copper)">
+        <div class="mock-info">
+          <h4 id="themeTitle" style="color:var(--copper)">تم لوکس برنزی و چوب گردو (Dark Copper & Walnut)</h4>
+          <p id="themeDesc">طراحی اختصاصی برای فضاهای شبانه، کلاب‌های شام و رستوران‌های لوکس کباب. نورپردازی متمرکز نقطه‌ای روی میزها، چوب گردوی تیره و فلز مس گرم که احساس گرما، صمیمیت و اصالت اصیل ایرانی را بدون زرق‌وبرق کاذب تداعی می‌کند.</p>
+          <div class="mock-palette">
+            <div class="pal-item" id="pal1" style="background:#13100c;color:#d29a5a">رنگ پایه: #13100c</div>
+            <div class="pal-item" id="pal2" style="background:#d29a5a;color:#101e22">اکسنت: مس #d29a5a</div>
+            <div class="pal-item" id="pal3" style="background:#221b15;color:#f8f8f8">سطوح: چوب #221b15</div>
+          </div>
+        </div>
+        <div class="mock-card" id="mockCard" style="background:#221b15">
+          <b id="mockCardTitle" style="color:#d29a5a">کارت منوی نمونه</b>
+          <p style="font-size:.85rem;color:#ded5c7;margin:8px 0">چلوکباب کوبیده زعفرانی با برنج دودی ایرانی و کره محلی</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;border-top:1px solid rgba(255,255,255,.1);padding-top:10px">
+            <span style="font-weight:700;color:#f8f8f8">قیمت: ۴۲۰ لیر</span>
+            <span class="badge-tag tag-star">ستاره سودآور</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 3: Competitor & Menu/Cost Intelligence -->
+    <section class="mod-card" id="mod-competitors">
+      <h2 class="sec-title">📊 ۳. ماتریس تحلیل رقبا و مهندسی منو و هزینه‌ها (BCG Menu Matrix)</h2>
+      <p class="sec-sub">بررسی قیمت، حجم سفارش‌ها، حاشیه سود ناخالص و جایگاه استراتژیک غذاهای شاخص در بازار رستوران‌های استانبول.</p>
+
+      <h3 style="font-size:1.15rem;color:var(--cream);margin-bottom:12px">🏢 مقایسه رقابتی رستوران‌های شاخص خاورمیانه‌ای در استانبول</h3>
+      <div class="table-wrap">
+        <table class="bench-table">
+          <thead>
+            <tr>
+              <th>نام رستوران</th>
+              <th>میانگین سفارش نفری</th>
+              <th>ظرفیت کل</th>
+              <th>سالن رویداد اختصاصی</th>
+              <th>امتیاز و نظرات گوگل</th>
+              <th>مزیت استراتژیک کلیدی</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>رستوران شمسه (استقلال و کوجاتپه)</b></td>
+              <td>۵۵۰ لیر ($17)</td>
+              <td>۱۴۰ صندلی</td>
+              <td><b style="color:var(--copper)">✅ طبقه دوم (۶۰ نفر)</b></td>
+              <td>⭐ 4.6 (820 نظر)</td>
+              <td>طبقه میتاپ با پروژکتور، دو شعبه توریستی، ربات خودکار تلگرام</td>
+            </tr>
+            <tr>
+              <td>رستوران فارسی (تکسیم)</td>
+              <td>۶۲۰ لیر ($19)</td>
+              <td>۸۵ صندلی</td>
+              <td>❌ سالن اختصاصی ندارد</td>
+              <td>⭐ 4.2 (1,240 نظر)</td>
+              <td>سابقه قدیمی در پیاده‌راه استقلال، نان داغ سنتی</td>
+            </tr>
+            <tr>
+              <td>رستوران ریحون (گالاتاسرای)</td>
+              <td>۷۸۰ لیر ($24)</td>
+              <td>۱۱۰ صندلی</td>
+              <td>نیمه‌خصوصی (۲۰ نفر)</td>
+              <td>⭐ 4.4 (1,950 نظر)</td>
+              <td>محبوبیت بالا در تریپ‌ادوایزر بین توریست‌های اروپایی</td>
+            </tr>
+            <tr>
+              <td>رستوران سفیر (شیشلی و آکسارای)</td>
+              <td>۶۵۰ لیر ($20)</td>
+              <td>۱۳۰ صندلی</td>
+              <td>✅ دارد (۳۵ نفر)</td>
+              <td>⭐ 4.5 (680 نظر)</td>
+              <td>دسترسی مترو شیشلی، سالن تمیز، برندینگ مجلل</td>
+            </tr>
+            <tr>
+              <td>رستوران بهار افغان (زیتین‌بورنو)</td>
+              <td>۳۹۰ لیر ($12)</td>
+              <td>۱۲۰ صندلی</td>
+              <td>✅ دارد (۴۵ نفر)</td>
+              <td>⭐ 4.4 (750 نظر)</td>
+              <td>ارزش خرید بالا، قابلی پلو و منتو اصیل، جامعه وفادار</td>
+            </tr>
+            <tr>
+              <td>رستوران افغان کباب (اسنیورت)</td>
+              <td>۳۶۰ لیر ($11)</td>
+              <td>۱۰۰ صندلی</td>
+              <td>❌ سالن بزرگ ندارد</td>
+              <td>⭐ 4.2 (1,120 نظر)</td>
+              <td>قیمت اقتصادی، پوشش کامل دلیوری در غرب استانبول</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:1.15rem;color:var(--cream);margin:34px 0 12px">🍲 مهندسی سود و قیمت تمام‌شده غذاها (Food Cost & Margin Breakdown)</h3>
+      <div class="table-wrap">
+        <table class="bench-table">
+          <thead>
+            <tr>
+              <th>آیتم منو</th>
+              <th>دسته‌بندی استراتژیک</th>
+              <th>قیمت فروش</th>
+              <th>هزینه مواد اولیه (Food Cost)</th>
+              <th>درصد هزینه</th>
+              <th>حاشیه سود ناخالص</th>
+              <th>راهبرد بهینه‌سازی</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>چلوکباب کوبیده سنتی (دو سیخ)</td>
+              <td><span class="badge-tag tag-star">Star (ستاره)</span></td>
+              <td>۴۲۰ لیر</td>
+              <td>۱۳۵ لیر</td>
+              <td>۳۲.۱٪</td>
+              <td><b style="color:var(--copper)">۲۸۵ لیر</b></td>
+              <td>حفظ کیفیت گوشت تازه گوسفندی و کره حیوانی بدون تغییر</td>
+            </tr>
+            <tr>
+              <td>خورش قورمه‌سبزی خانگی با پلو</td>
+              <td><span class="badge-tag tag-cow">Cash Cow (گاو شیرده)</span></td>
+              <td>۳۵۰ لیر</td>
+              <td>۸۸ لیر</td>
+              <td>۲۵.۱٪</td>
+              <td><b style="color:#81c784">۲۶۲ لیر</b></td>
+              <td>موتور اصلی سود خالص نقدی رستوران؛ تبلیغ در شبکه‌های اجتماعی</td>
+            </tr>
+            <tr>
+              <td>شیشلیک مشهد مخصوص با کته دودی</td>
+              <td><span class="badge-tag tag-star">Star (لوکس)</span></td>
+              <td>۶۸۰ لیر</td>
+              <td>۲۵۸ لیر</td>
+              <td>۳۷.۹٪</td>
+              <td><b style="color:var(--copper)">۴۲۲ لیر</b></td>
+              <td>آیتم پرچمدار برای جلسات تجاری، مهمانی‌های رسمی و شام VIP</td>
+            </tr>
+            <tr>
+              <td>پیش‌غذاهای سنتی (کشک بادمجان / میرزاقاسمی)</td>
+              <td><span class="badge-tag tag-driver">Profit Driver</span></td>
+              <td>۱۹۰ لیر</td>
+              <td>۳۴ لیر</td>
+              <td>۱۷.۹٪</td>
+              <td><b style="color:#64b5f6">۱۵۶ لیر</b></td>
+              <td>بیشترین حاشیه سود درصدی (۸۲٪ سود ناخالص)؛ پیشنهاد کنار هر سفارش کباب</td>
+            </tr>
+            <tr>
+              <td>قابلی پلو ازبکی افغانستانی با ماهیچه</td>
+              <td><span class="badge-tag tag-cow">High Potential</span></td>
+              <td>۳۸۰ لیر</td>
+              <td>۱۱۰ لیر</td>
+              <td>۲۸.۹٪</td>
+              <td><b style="color:#81c784">۲۷۰ لیر</b></td>
+              <td>بهترین گزینه برای سلف‌سرویس پکیج‌های گروهی و میتاپ‌ها</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- MODULE 4: Google Maps Sentiment Intelligence -->
+    <section class="mod-card" id="mod-reviews">
+      <h2 class="sec-title">🗺 ۴. تحلیل احساسات نظرات گوگل مپ با هوش مصنوعی (Google Maps Sentiment NLP)</h2>
+      <p class="sec-sub">تحلیل بیش از ۳,۶۰۰ نظر ثبت‌شده مشتریان در گوگل مپ، استخراج کلمات کلیدی، نقاط قوت، نارضایتی‌ها و ابزار پاسخ‌گویی خودکار ۳ زبانه.</p>
+
+      <div class="sent-grid">
+        <div class="sent-meter">
+          <h4>شاخص رضایت کل (Net Sentiment)</h4>
+          <div class="big-score">84.2%</div>
+          <span style="font-size:.85rem;color:var(--muted)">بر اساس ۳,۶۸۰ نظر تجمیعی</span>
+
+          <div class="sent-bars">
+            <div>
+              <div class="bar-row"><span>نظرات مثبت و تمجید</span><span>۸۴.۲٪</span></div>
+              <div class="bar-track"><div class="bar-fill fill-pos"></div></div>
+            </div>
+            <div>
+              <div class="bar-row"><span>نظرات خنثی و پیشنهادات</span><span>۸.۹٪</span></div>
+              <div class="bar-track"><div class="bar-fill fill-neu"></div></div>
+            </div>
+            <div>
+              <div class="bar-row"><span>نارضایتی یا انتقاد</span><span>۶.۹٪</span></div>
+              <div class="bar-track"><div class="bar-fill fill-neg"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size:1.02rem;color:var(--cream);margin-bottom:12px">کلیدواژه‌های پرتکرار در نظرات مثبت:</h4>
+          <div class="themes-list">
+            <div class="theme-item">
+              <span><b>طعم زعفران و اصالت غذا</b> (کوبیده و قورمه‌سبزی)</span>
+              <span class="theme-badge">۱,۴۲۰ تکرار (۹۴٪ رضایت)</span>
+            </div>
+            <div class="theme-item">
+              <span><b>طبقه اختصاصی میتاپ و رویدادهای فرهنگی</b></span>
+              <span class="theme-badge">۶۱۰ تکرار (۹۲٪ رضایت)</span>
+            </div>
+            <div class="theme-item">
+              <span><b>برخورد گرم پرسنل، مهمان‌نوازی و تسلط به زبان</b></span>
+              <span class="theme-badge">۸۹۰ تکرار (۸۹٪ رضایت)</span>
+            </div>
+            <div class="theme-item">
+              <span><b>چای رایگان، باقلوای تازه و فضای تمیز</b></span>
+              <span class="theme-badge">۷۳۰ تکرار (۹۵٪ رضایت)</span>
+            </div>
+          </div>
+
+          <h4 style="font-size:1.02rem;color:var(--cream);margin:20px 0 8px">اصلی‌ترین نقاط درد مطرح‌شده:</h4>
+          <p style="font-size:.86rem;color:var(--muted);line-height:1.8">
+            • <b>شلوغی پیاده‌راه تکسیم در جمعه‌شب:</b> مشتریان خواهان رزرو سریع میز بدون ایستادن در صف بوده‌اند (راهکار: هدایت به ربات تلگرام /reserve).<br>
+            • <b>عدم امکان پارک ماشین در استقلال:</b> توصیه پارکینگ‌های İSPARK اطراف در پاسخ‌های هوشمند.
+          </p>
+        </div>
+      </div>
+
+      <div class="responder-box">
+        <h4 style="font-size:1rem;color:var(--cream);margin-bottom:8px">🤖 مولد پاسخ هوشمند به کامنت‌های مشتریان (AI Auto-Responder)</h4>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+          <button class="chip active" onclick="loadReplyTemplate('pos')">پاسخ به تمجید و رضایت (Positive)</button>
+          <button class="chip" onclick="loadReplyTemplate('wait')">پاسخ به معطلی در صف شلوغی (Peak Hours)</button>
+          <button class="chip" onclick="loadReplyTemplate('lang')">پاسخ به گردشگر بین‌المللی (English / Turkish)</button>
+        </div>
+        <div class="resp-output" id="respOutput">
+          از حضور پرمهر شما در رستوران شمسه بسیار خرسندیم! طعم اصیل خاطرات و لحظات شیرین شما در استانبول، افتخار همیشگی ماست. به زودی در رویدادهای فرهنگی و شب‌های شعر طبقه دوم دوباره مشتاق دیدارتان هستیم. 🌸
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 5: Empty-Space Monetization -->
+    <section class="mod-card" id="mod-space">
+      <h2 class="sec-title">⏳ ۵. تحلیل و درآمدزایی از فضای خالی رستوران با هوش مصنوعی (Yield Management)</h2>
+      <p class="sec-sub">محاسبه دقیق ارزش ریالی و دلاری ساعات کم‌تردد و پتانسیل افزایش درآمد خالص ماهانه از طریق دورهمی‌های کلاب، جلسات B2B و کار اشتراکی.</p>
+
+      <div class="calc-grid">
+        <div class="calc-ctrl">
+          <div class="slider-group">
+            <label for="seatSlider">
+              <span>ظرفیت کل صندلی‌های رستوران:</span>
+              <b id="seatVal" style="color:var(--copper)">۱۴۰ صندلی</b>
+            </label>
+            <input type="range" id="seatSlider" min="50" max="300" step="10" value="140" oninput="updateYieldCalc()">
+          </div>
+
+          <div class="slider-group">
+            <label for="hourSlider">
+              <span>ساعات خلوت روزانه (۱۴:۳۰ تا ۱۸:۳۰):</span>
+              <b id="hourVal" style="color:var(--copper)">۴.۵ ساعت در روز</b>
+            </label>
+            <input type="range" id="hourSlider" min="2" max="8" step="0.5" value="4.5" oninput="updateYieldCalc()">
+          </div>
+
+          <p style="font-size:.85rem;color:var(--muted);line-height:1.8">
+            <b>مدل درآمدزایی سه‌گانه شمسه:</b><br>
+            ۱. <b>میتاپ‌های کلاب (مافیا، شعر، زبان):</b> ۸ رویداد در ماه با میانگین ۴۰ نفر (نفری ۲۵۰ لیر)<br>
+            ۲. <b>کار اشتراکی بعدازظهر (Coworking & Coffee):</b> میانگین ۱۵ فریلنسر روزانه با پکیج ۱۲۰ لیر<br>
+            ۳. <b>رویدادهای شرکتی B2B آخر هفته:</b> ۲ رزرو اختصاصی ماهانه (هر کدام ۱۸,۰۰۰ لیر)
+          </p>
+        </div>
+
+        <div class="calc-stats">
+          <h4>پتانسیل درآمد افزوده ماهانه از فضای خالی:</h4>
+          <div class="calc-val" id="monthlyIncTry">۱۷۰,۰۰۰ <small>لیر ترکیه</small></div>
+          <div style="font-size:1.15rem;color:#81c784;font-weight:700;margin-top:6px" id="monthlyIncUsd">≈ $5,230 دلار در ماه</div>
+
+          <div class="calc-details">
+            <div>ساعات مرده ماهانه: <b id="deadHours">۱۳,۵۰۰ صندلی-ساعت</b></div>
+            <div>پیش‌بینی سود سالانه: <b id="annualInc" style="color:var(--copper)">۲,۰۴۰,۰۰۰ لیر</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 6: Global & Local Benchmarks -->
+    <section class="mod-card" id="mod-benchmark">
+      <h2 class="sec-title">🌐 ۶. بررسی و بنچ‌مارک پلتفرم‌های پیشرو جهان (Market Benchmarks)</h2>
+      <p class="sec-sub">تحلیل مدل‌های تجاری مطرح در بازار بین‌المللی و بومی استانبول برای اجاره سالن، رویدادهای رستورانی و فروش بلیت.</p>
+
+      <div class="bench-cards">
+        <div class="bcard">
+          <h4>RestauRent <span class="bregion">آمریکا</span></h4>
+          <p>پیشروترین مارکت‌پلیس اجاره فضاهای خالی و اتاق‌های خصوصی رستوران‌ها برای ایونت و ضیافت‌های شرکتی. بدون کارمزد از هر رزرو؛ مدل عضویت سالانه رستوران‌ها.</p>
+          <div class="bmeta">میانگین هر ایونت: <b>$4,000+</b> | اتصال مستقیم به نرم‌افزار Tripleseat</div>
+        </div>
+
+        <div class="bcard">
+          <h4>Tagvenue <span class="bregion">اروپا و بریتانیا</span></h4>
+          <p>سیستم رزرو آنلاین اتاق جلسات و سالن‌های خصوصی رستوران‌ها با قابلیت فیلتر بر اساس ظرفیت، امکانات صوتی و مدل حداقل سفارش غذا (Minimum Spend).</p>
+          <div class="bmeta">کمیسیون: <b>۱۰٪ الی ۱۵٪</b> | بیش از ۱۹,۰۰۰ سالن فعال</div>
+        </div>
+
+        <div class="bcard">
+          <h4>OpenTable Private Dining <span class="bregion">جهانی</span></h4>
+          <p>بخش جدید اوپن‌تیبل با هدف بهینه‌سازی فضاهای کم‌استفاده رستوران‌ها. ۶۸٪ مشتریان اعلام کرده‌اند اگر رزرو سالن رستوران آنی باشد، رویدادهای بیشتری برگزار می‌کنند.</p>
+          <div class="bmeta">هدف اصلی: <b>Maximize underutilized spaces</b></div>
+        </div>
+
+        <div class="bcard">
+          <h4>Tripleseat <span class="bregion">آمریکا و اروپا</span></h4>
+          <p>نرم‌افزار جامع مدیریت فروش ایونت در رستوران‌ها. داده‌های این پلتفرم نشان می‌دهد پاسخ به استعلام مشتری در کمتر از ۱ ساعت، شانس نهایی‌شدن قرارداد را ۷ برابر می‌کند.</p>
+          <div class="bmeta">تمرکز: <b>پاسخ سریع و اتوماسیون قراردادها</b></div>
+        </div>
+
+        <div class="bcard">
+          <h4>Yabangee <span class="bregion">استانبول</span></h4>
+          <p>موفق‌ترین جامعهٔ محلی در استانبول برای رویدادهای هفتگی (پاب‌کرال، مافیا، تریویا، اوپن‌مایک). این مدل نشان می‌دهد چگونه یک کامیونیتی محلی می‌تواند سالن‌های رستوران‌ها را در روزهای وسط هفته پر کند.</p>
+          <div class="bmeta">مدل: <b>تیکت ۲۰۰ تا ۵۰۰ لیر در هر رویداد</b></div>
+        </div>
+
+        <div class="bcard">
+          <h4>Peerspace <span class="bregion">بین‌المللی</span></h4>
+          <p>اجاره ساعتی رستوران‌ها و کافه‌ها برای عکاسی، فیلم‌برداری، ورکشاپ و دورهمی‌های بسته با کارمزد ۲۰٪. تمرکز بر درآمدزایی در ساعات صبحگاهی و بعدازظهر.</p>
+          <div class="bmeta">مدل اجاره: <b>ساعتی (Hourly Rental)</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATIKOVA INTEGRATION BANNER -->
+    <div class="atikova-banner">
+      <div class="atikova-text">
+        <h3>🌱 اتصال به دیتابیس جامع هتلداری و تشریفات استانبول (شبکه Atikova)</h3>
+        <p>این سامانه به پایگاه داده ۱۸۶ هلدینگ هتلداری، مراکز رویداد و پذیرایی استانبول (شامل گروه دیوان، هیلتون، سوئیس‌اوتل، چراغان پالاس، رافلز و مارمارا) متصل است و امکان همکاری و بازاریابی B2B رویدادها را فراهم می‌کند.</p>
+      </div>
+      <a href="restaurants.html" class="btn">مشاهده دیتابیس رستوران‌ها</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap fgrid">
+    <div>
+      <a class="logo" href="index.html" style="margin-bottom:18px">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="none" stroke="#d29a5a" stroke-width="2"/>
+          <circle cx="32" cy="32" r="23" fill="none" stroke="#d29a5a" stroke-width="1" opacity=".55"/>
+          <path d="M32 12l4.6 10.1 11 1.6-8 7.7 2 11-9.6-5.1L22.4 42.4l2-11-8-7.7 11-1.6z" fill="#d29a5a"/>
+          <circle cx="32" cy="30" r="4" fill="#13100c"/>
+        </svg>
+        <span><b>رستوران شمسه</b><span>SHAMSE RESTAURANT</span></span>
+      </a>
+      <p>رستوران شمسه؛ رستوران معروف ایرانی در استانبول با <b>دو شعبه</b> (تکسیم و کوجاتپه) و طبقهٔ اختصاصی میتاپ در شعبهٔ استقلال.</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/shamse.resturan" target="_blank" rel="noopener" aria-label="اینستاگرام"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.4A6.4 6.4 0 1018.4 12 6.4 6.4 0 0012 5.6zm0 10.6A4.2 4.2 0 1116.2 12 4.2 4.2 0 0112 16.2zm6.6-10.9a1.5 1.5 0 11-1.5-1.5 1.5 1.5 0 011.5 1.5z"/></svg></a>
+        <a href="https://t.me/shamse_restaurant_bot" target="_blank" rel="noopener" aria-label="تلگرام"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3l-3 14.1c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.4 2.7 11c-1-.3-1-1 .2-1.5l17.5-6.8c.8-.3 1.6.2 1.5 1.6z"/></svg></a>
+        <a href="https://wa.me/905013252452" target="_blank" rel="noopener" aria-label="واتساپ"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.6-1.2-4.3-4-4.4-4.2-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.8c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.7 1.1 1.4 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.7.9c.5.2.5.4.5.6s-.2.6-.2.6z"/></svg></a>
+        <a href="https://youtube.com/@shamse.resturan" target="_blank" rel="noopener" aria-label="یوتیوب"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C16.2 4.1 12 4.1 12 4.1s-4.2 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.6-.8 2-.8 2S2.2 8.8 2.2 10.5v1.6c0 1.6.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.8.8 2.2.9 1.6.1 6.6.2 6.6.2s4.2 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.3v-1.6c0-1.6-.2-3.3-.2-3.3zM10 14.6V8.9l5.3 2.9z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>صفحات</h4>
+      <ul class="flist">
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="index.html#meetup">طبقهٔ میتاپ</a></li>
+        <li><a href="events.html">رویدادها و گردهمایی‌ها</a></li>
+          <li><a href="restaurants.html">رستوران‌های ایرانی و افغان</a></li>
+        <li><a href="marketing.html">استراتژی و مدل‌های درآمدی</a></li>
+        <li><a href="index.html#blog">مقالات</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>شعبه‌ها</h4>
+      <ul class="flist">
+        <li>شعبه ۱: İstiklal Cd. No:179, Beyoğlu</li>
+        <li>شعبه ۲: Abdülhak Hamit Cd. No:17, Kocatepe</li>
+        <li><a href="tel:+905013252452" dir="ltr">+90 501 325 24 52</a></li>
+        <li>همه‌روزه ۱۲:۰۰ – ۰۱:۳۰</li>
+        <li><a href="https://t.me/shamse_restaurant_bot" target="_blank" rel="noopener" dir="ltr">@shamse_restaurant_bot</a> (تلگرام)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>میزبانی رویداد</h4>
+      <p style="font-size:.9rem">گروه دارید؟ طبقهٔ دوم شعبهٔ استقلال برای میتاپ و گردهمایی آماده است.</p>
+      <a class="btn btn--gold" href="index.html#reserve" style="margin-top:16px;padding:12px 22px;font-size:.92rem">رزرو طبقهٔ میتاپ</a>
+    </div>
+  </div>
+  <div class="wrap fbottom">
+    <span>© ۲۰۲۶ <b>رستوران شمسه</b> — تمامی حقوق محفوظ است.</span>
+    <span>طراحی و کدنویسی با ✨ <b>هوش مصنوعی</b> (Arena.ai) | پروژه‌ی <b>shamse-restaurant</b></span>
+  </div>
+</footer>
+
+<script>
+// Campaign Data
+var campaigns = {
+  mafia: {
+    tg: `🔥 <b>شب هیجان و استدلال در مافیا کلاب استانبول!</b> 🎭\n\nجمعه‌شب این هفته، طبقهٔ دوم اختصاصی رستوران شمسه میزبان یکی از پرحرارت‌ترین سناریوهای مافیاست!\nاگر اهل تحلیل چهره، بازی کلمات و چالش‌های گروهی هستید، صندلی خودتان را رزرو کنید.\n\n📍 <b>مکان:</b> استانبول، تکسیم، خیابان استقلال ۱۷۹ (طبقه دوم شمسه)\n⏰ <b>زمان:</b> جمعه ساعت ۱۹:۰۰ الی ۲۳:۰۰\n☕️ <b>پذیرایی:</b> چای اعلای ایرانی، شیرینی سنتی و اسنک بار رایگان\n🎟 <b>ورودی:</b> ۲۵۰ لیر (شامل بازی + پذیرایی کامل)\n\nظرفیت این دورهمی فقط ۲۵ نفر است — رزرو مستقیم در ربات:\n👉 @shamse_restaurant_bot`,
+    ig: `چشم‌ها بسته، مافیا بیدار شوید… 🕵️‍♂️✨\nجمعه‌شب، دورهمی مافیای فارسی‌زبانان استانبول در سالن اختصاصی و دنج طبقهٔ دوم تکسیم!\nفضایی شیک، سیستم صوتی عالی، لیدری مجرب و یک شب پر از خنده و رقابت دوستانه.\nپذیرایی چای ایرانی و منوی شام تخفیف‌دار برای شرکت‌کنندگان.\n\nرزرو از طریق دایرکت یا ربات تلگرام در بایو 🔗\n#استانبول #شب_مافیا #دورهمی_ایرانیان_استانبول #تکسیم #رستوران_شمسه #بازی_مافیا #ایرانیان_ترکیه`,
+    ros: `📋 <b>برنامه زمان‌بندی شب مافیا (Run of Show):</b>\n\n• <b>۱۹:۰۰ - ۱۹:۳۰:</b> پذیرش، خوش‌آمدگویی و سرو چای ایرانی\n• <b>۱۹:۳۰ - ۲۱:۰۰:</b> دست اول بازی (سناریوی کلاسیک پیشرفته)\n• <b>۲۱:۰۰ - ۲۱:۳۰:</b> استراحت، گپ‌وگفت و سرو شام با ۲۰٪ تخفیف\n• <b>۲۱:۳۰ - ۲۳:۰۰:</b> دست دوم بازی فینال و عکس یادگاری`,
+    vip: `سلام و احترام؛ 🌟\nافتخار داریم شما را به دورهمی خصوصی مافیا و بازی‌های گروهی در طبقهٔ دوم شعبهٔ تکسیم دعوت کنیم.\nیک شب پرهیجان همراه با جمعی صمیمی از فارسی‌زبانان استانبول و پذیرایی اصیل ایرانی.\nجهت رزرو صندلی VIP لطفاً به ربات تلگرام @shamse_restaurant_bot پیام دهید.`
+  },
+  tech: {
+    tg: `🚀 <b>میتاپ تخصصی توسعه‌دهندگان و کارآفرینان در استانبول</b> 💻\n\nآیا در حوزه نرم‌افزار، هوش مصنوعی، دیزاین یا مدیریت محصول در ترکیه فعالیت می‌کنید؟\nاین دورهمی بهترین فرصت برای شبکه‌سازی رو‌در‌رو (Networking)، تبادل تجربه و پیدا کردن هم‌تیمی و پارتنر کاری است.\n\n📍 <b>محل:</b> طبقهٔ میتاپ شعبه استقلال (پروژکتور، وای‌فای گیگابیتی و سالن آرام)\n⏰ <b>زمان:</b> دوشنبه ۱۹:۰۰\n🎙 <b>ارائه‌های کوتاه:</b> ترندهای AI در ۲۰۲۶ و توسعه محصولات بین‌المللی\n☕️ <b>پذیرایی:</b> قهوه، چای و فینگرفود\n\nثبت‌نام رایگان در ربات: 👉 @shamse_restaurant_bot?start=rsvp`,
+    ig: `شبکه‌سازی واقعی اتفاق می‌افتد وقتی رودررو گفتگو کنیم! 🤝💡\nمیتاپ توسعه‌دهندگان، فریلنسرها و مدیران محصول ایرانی در استانبول.\nاگر به دنبال همکاری‌های بین‌المللی، مشاوره فنی یا گسترش دایره ارتباطات حرفه‌ای هستید، دوشنبه منتظرتان هستیم.\n\nثبت‌نام رایگان در لینک بایو 🔗\n#استارتاپ_استانبول #برنامه_نویسی #توسعه_دهندگان #ایرانیان_استانبول #هوش_مصنوعی #شبکه_سازی`,
+    ros: `📋 <b>برنامه زمان‌بندی میتاپ تخصصی (Run of Show):</b>\n\n• <b>۱۹:۰۰ - ۱۹:۲۰:</b> پذیرش و ولکام کافه\n• <b>۱۹:۲۰ - ۲۰:۰۰:</b> دو ارائه کوتاه ۱۰ دقیقه‌ای تخصصی در حوزه هوش مصنوعی\n• <b>۲۰:۰۰ - ۲۱:۳۰:</b> نتوورکینگ آزاد دور میزهای گفتگو\n• <b>۲۱:۳۰ - ۲۲:۰۰:</b> عکس گروهی و تبادل شبکه‌های اجتماعی`,
+    vip: `همکار گرامی؛ 💼\nاز شما دعوت می‌کنیم در میتاپ تخصصی کارآفرینان و مهندسان نرم‌افزار در سالن همایش شمسه تکسیم حضور به هم رسانید.\nفرصتی مغتنم برای انتقال تجربه و شبکه‌سازی حرفه‌ای در اکوسیستم فناوری ترکیه.`
+  },
+  poetry: {
+    tg: `🎶 <b>شب موسیقی اصیل و شعر در قلب تکسیم</b> 🪕📜\n\nشبی خاطره‌انگیز با نوای تار و سه‌تار، شعرخوانی معاصر و حافظ‌خوانی در فضای سنتی و چشم‌نواز رستوران شمسه.\nاگر دلتنگ نغمه‌های اصیل ایرانی در غربت استانبول هستید، این شب متعلق به شماست.\n\n📍 <b>مکان:</b> خیابان استقلال پلاک ۱۷۹، طبقه دوم\n⏰ <b>زمان:</b> پنجشنبه ساعت ۲۰:۳۰\n🍽 <b>پذیرایی:</b> چای و نبات زعفرانی + امکان سفارش منوی کامل شام ایرانی\n\nرزرو صندلی در ربات تلگرام: 👉 @shamse_restaurant_bot`,
+    ig: `«بیا تا گل برافشانیم و می در ساغر اندازیم…» 🌸🎶\nپنجشنبه‌شب، نغمه‌های زنده تار، همخوانی و شعر در هوای پاییزی استانبول.\nهمراه با غذای خانگی، عطر زعفران و جمع گرم همزبانان.\n\nرزرو محدود از طریق دایرکت و سایت 🔗\n#موسیقی_سنتی #شب_شعر #حافظ_خوانی #تکسیم #غذای_ایرانی #استانبول_گردی`,
+    ros: `📋 <b>برنامه زمان‌بندی شب شعر و موسیقی (Run of Show):</b>\n\n• <b>۲۰:۳۰ - ۲۱:۰۰:</b> پیش‌درآمد موسیقی سنتی و شعرخوانی\n• <b>۲۱:۰۰ - ۲۲:۰۰:</b> مشاعره و خوانش غزل‌های حافظ\n• <b>۲۲:۰۰ - ۲۳:۰۰:</b> ضیافت شام ایرانی و همنوازی`,
+    vip: `شاعر و دوستدار فرهنگ اصیل ایرانی؛ 🪕\nبا افتخار شما را به محفل ادبی و شب نوای ساز و سخن در رستوران شمسه تکسیم دعوت می‌نماییم.\nحضور شما مایه افتخار و گرمابخش این گردهمایی خواهد بود.`
+  },
+  custom: {
+    tg: `🌍 <b>دورهمی تبادل زبان و فرهنگ در استانبول (Language Exchange)</b> 🗣\n\nمی‌خواهید ترکی استانبولی یا انگلیسی خود را در محیطی دوستانه و با تمرین مکالمه واقعی تقویت کنید؟\nدر این دورهمی میزبان دوستانی از ملیت‌های مختلف هستیم.\n\n📍 <b>محل:</b> طبقه دوم شمسه استقلال | ⏰ <b>زمان:</b> چهارشنبه ۱۹:۰۰\nثبت‌نام در ربات: 👉 @shamse_restaurant_bot`,
+    ig: `Speak, Connect, Learn! 🌍☕️\nدورهمی هفتگی مکالمه زبان (فارسی، ترکی، انگلیسی) در کافه‌رستوران شمسه.\nیک عصر پرانرژی همراه با تمرین مکالمه و پیدا کردن دوستان جدید.\n#زبان_ترکی #مکالمه_انگلیسی #استانبول #تبادل_زبان`,
+    ros: `📋 <b>برنامه تبادل زبان:</b>\n• ۱۹:۰۰ - ۱۹:۳۰: تقسیم‌بندی میزهای مکالمه بر اساس سطح\n• ۱۹:۳۰ - ۲۱:۰۰: بازی‌های تقویت مکالمه و بحث آزاد\n• ۲۱:۰۰ - ۲۱:۳۰: نتوورکینگ و قهوه`,
+    vip: `دعوت اختصاصی به دورهمی تبادل فرهنگی و تقویت مکالمه در قلب استانبول.`
+  }
+};
+
+var currentCampaign = campaigns.mafia;
+var activeTab = "tg";
+
+function generateAiCampaign() {
+  var ev = document.getElementById("eventSelect").value;
+  var extra = document.getElementById("extraNotes").value.trim();
+  currentCampaign = campaigns[ev] || campaigns.mafia;
+
+  var noteText = extra ? "\n\n📌 <i>نکته ویژه: " + extra + "</i>" : "";
+  renderCampaignContent(noteText);
+}
+
+function renderCampaignContent(note) {
+  note = note || "";
+  var content = currentCampaign[activeTab] + (activeTab === "tg" ? note : "");
+  document.getElementById("campaignContent").innerHTML = content.replace(/\n/g, "<br>");
+}
+
+function switchTab(tab) {
+  activeTab = tab;
+  document.querySelectorAll(".otab").forEach(function(b){ b.classList.remove("active"); });
+  event.target.classList.add("active");
+  renderCampaignContent();
+}
+
+function copyCampaignText() {
+  var text = document.getElementById("campaignContent").innerText;
+  navigator.clipboard.writeText(text).then(function(){
+    alert("متن کمپین با موفقیت کپی شد! ✅");
+  });
+}
+
+// Theme Switcher Data
+var themeData = {
+  "dark-copper": {
+    title: "تم لوکس برنزی و چوب گردو (Dark Copper & Walnut)",
+    desc: "طراحی اختصاصی برای فضاهای شبانه، کلاب‌های شام و رستوران‌های لوکس کباب. نورپردازی متمرکز نقطه‌ای روی میزها، چوب گردوی تیره و فلز مس گرم که احساس گرما، صمیمیت و اصالت اصیل ایرانی را بدون زرق‌وبرق کاذب تداعی می‌کند.",
+    bg: "#18130e",
+    accent: "#d29a5a",
+    surface: "#221b15",
+    text: "#d1c8bb",
+    pal1: "رنگ پایه: #13100c",
+    pal2: "اکسنت: مس #d29a5a",
+    pal3: "سطوح: گردو #221b15"
+  },
+  "turquoise": {
+    title: "تم اصیل فیروزه‌ای و سفال گرم (Persian Turquoise & Clay)",
+    desc: "الهام‌گرفته از معماری اصفهان و کاشیکاری نیشابور. رنگ فیروزه‌ای چشم‌نواز در کنار سفال و آجر گرم و آینه‌کاری‌های مدرن هندسی. بهترین انتخاب برای فضاهای دیزی‌سرا، حوضخانه و اجرای موسیقی زنده تار و سه‌تار.",
+    bg: "#0c1b1f",
+    accent: "#1a8c8c",
+    surface: "#142d34",
+    text: "#e0f2f1",
+    pal1: "پایه: لاجوردی #0c1b1f",
+    pal2: "اکسنت: فیروزه #1a8c8c",
+    pal3: "سطوح: سفال #c26a45"
+  },
+  "nordic": {
+    title: "تم مینیمال اسکاندیناوی و کافه-رستوران (Nordic Lounge)",
+    desc: "چوب بلوط روشن، رنگ‌های شنی و کرم، خطوط ساده و گیاهان طبیعی همیشه سبز. فضایی آرام و پر از نور برای پذیرایی از فریلنسرها، جلسات کاری در ساعات خلوت روز و صبحانه‌های آخر هفته.",
+    bg: "#1c1b18",
+    accent: "#8fb397",
+    surface: "#282622",
+    text: "#e4dcd3",
+    pal1: "پایه: خاکستری #1c1b18",
+    pal2: "اکسنت: زیتونی #8fb397",
+    pal3: "سطوح: بلوط #282622"
+  },
+  "mediterranean": {
+    title: "تم مدیترانه‌ای و بسفر (Bosphorus Aegean)",
+    desc: "آبی عمیق تنگهٔ بسفر، سنگ‌های تراورتن سفید و طاق‌های نورگیر. طراحی دلنشین و شاداب مناسب تراس‌های باز، سالن‌های مراسم تابستانی و رویدادهای بین‌المللی با حضور توریست‌ها.",
+    bg: "#0a192f",
+    accent: "#4a90e2",
+    surface: "#122b4d",
+    text: "#ccd6f6",
+    pal1: "پایه: نیلی #0a192f",
+    pal2: "اکسنت: آبی بسفر #4a90e2",
+    pal3: "سطوح: سفید مرمر #f5f7fa"
+  },
+  "cyber": {
+    title: "تم بیسترو نئون و شهری (Urban Cyber-Bistro)",
+    desc: "دیوارهای آجری اکسپوز، لوله‌های فلزی صیقلی، نورپردازی خطی نئون بنفش و زرد کهربایی، و سیستم صوتی قدرتمند. ایده‌آل برای مافیا کلاب، جوانان و میتاپ‌های شبانه در مرکز شهر تکسیم.",
+    bg: "#09090b",
+    accent: "#ff3366",
+    surface: "#18181b",
+    text: "#f4f4f5",
+    pal1: "پایه: کربن #09090b",
+    pal2: "اکسنت: نئون #ff3366",
+    pal3: "سطوح: بتن #18181b"
+  }
+};
+
+function selectTheme(tkey) {
+  document.querySelectorAll(".theme-btn").forEach(function(b){ b.classList.remove("active"); });
+  var btn = document.querySelector('.theme-btn[data-theme="' + tkey + '"]');
+  if (btn) btn.classList.add("active");
+
+  var d = themeData[tkey] || themeData["dark-copper"];
+  var preview = document.getElementById("mockPreview");
+  var title = document.getElementById("themeTitle");
+  var desc = document.getElementById("themeDesc");
+  var card = document.getElementById("mockCard");
+  var cardTitle = document.getElementById("mockCardTitle");
+
+  preview.style.background = d.bg;
+  preview.style.borderColor = d.accent;
+  title.textContent = d.title;
+  title.style.color = d.accent;
+  desc.textContent = d.desc;
+  card.style.background = d.surface;
+  cardTitle.style.color = d.accent;
+
+  document.getElementById("pal1").textContent = d.pal1;
+  document.getElementById("pal2").textContent = d.pal2;
+  document.getElementById("pal3").textContent = d.pal3;
+}
+
+// Yield Calculator
+function updateYieldCalc() {
+  var seats = parseInt(document.getElementById("seatSlider").value, 10);
+  var hours = parseFloat(document.getElementById("hourSlider").value);
+
+  document.getElementById("seatVal").textContent = seats + " صندلی";
+  document.getElementById("hourVal").textContent = hours + " ساعت در روز";
+
+  var emptySeats = Math.round(seats * 0.72);
+  var deadSeatHours = Math.round(emptySeats * hours * 30);
+
+  // Revenue formulas:
+  // 1) Meetups: 8 events * (seats*0.3) people * 250 TRY
+  var meetups = Math.round(8 * (seats * 0.3) * 250);
+  // 2) Coworking: (seats*0.12) people * 120 TRY * 30 days
+  var coworking = Math.round((seats * 0.12) * 120 * 30);
+  // 3) Private B2B events: 2 events * (seats * 130 TRY)
+  var privateB2B = Math.round(2 * (seats * 130));
+
+  var totalTry = meetups + coworking + privateB2B;
+  var totalUsd = Math.round(totalTry / 32.5);
+  var annualTry = totalTry * 12;
+
+  document.getElementById("monthlyIncTry").innerHTML = totalTry.toLocaleString("fa-IR") + " <small>لیر ترکیه</small>";
+  document.getElementById("monthlyIncUsd").textContent = "≈ $" + totalUsd.toLocaleString() + " دلار در ماه";
+  document.getElementById("deadHours").textContent = deadSeatHours.toLocaleString("fa-IR") + " صندلی-ساعت";
+  document.getElementById("annualInc").textContent = annualTry.toLocaleString("fa-IR") + " لیر";
+}
+
+// Auto-Responder Templates
+var replyTemplates = {
+  pos: "از حضور پرمهر شما بسیار خرسندیم! طعم اصیل خاطرات و لحظات شیرین شما در استانبول، افتخار همیشگی ماست. به زودی در رویدادهای فرهنگی و شب‌های شعر طبقه دوم دوباره مشتاق دیدارتان هستیم. 🌸",
+  wait: "سلام و احترام؛ از اینکه در ساعات اوج شلوغی پیاده‌راه تکسیم معطل شدید صمیمانه پوزش می‌طلبیم. برای اینکه دفعه بعد بدون ثانیه‌ای معطلی میز اختصاصی آماده داشته باشید، لطفاً قبل از مراجعه از طریق ربات تلگرام یا واتساپ میزتان را رزرو فرمایید. با افتخار در خدمت شما هستیم. 🙏",
+  lang: "Thank you for visiting Shamse Restaurant! We are honored to share authentic Persian flavors, saffron dishes, and warm hospitality with you in the heart of Istanbul. We look forward to welcoming you back soon! ✨"
+};
+
+function loadReplyTemplate(k) {
+  document.querySelectorAll(".responder-box .chip").forEach(function(c){ c.classList.remove("active"); });
+  event.target.classList.add("active");
+  document.getElementById("respOutput").textContent = replyTemplates[k] || replyTemplates.pos;
+}
+
+function scrollToSection(id) {
+  var el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({behavior: "smooth", block: "start"});
+    document.querySelectorAll(".mod-pill").forEach(function(b){ b.classList.remove("active"); });
+    event.target.classList.add("active");
+  }
+}
+
+// Mobile nav
+var burger = document.querySelector(".burger");
+var nav = document.querySelector(".nav");
+if (burger && nav) {
+  burger.addEventListener("click", function(){
+    nav.classList.toggle("open");
+    burger.classList.toggle("x");
+  });
+}
+
+// Init
+generateAiCampaign();
+updateYieldCalc();
+</script>
+</body>
+</html>
