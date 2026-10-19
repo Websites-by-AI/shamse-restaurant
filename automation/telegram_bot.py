@@ -682,14 +682,14 @@ def handle_updates(state, minutes=0, timeout=0):
 
 
 CHANNEL_DESCRIPTION = (
-    "🍽 رستوران ایرانی شمسه در استانبول — دو شعبه: تکسیم و کوجاتپه.\n"
-    "طبقهٔ دوم شعبهٔ استقلال میزبان میتاپ و گردهمایی (ظرفیت ۶۰ نفر).\n"
+    "🌟 میزبان استانبول (Mizban Istanbul) — پلتفرم رستوران‌های ایرانی و افغانستانی در استانبول.\n"
+    "راهنمای ۱۹ رستوران اصیل، رویدادها، هوش تجاری و فرانچایز.\n"
     "🎫 ثبت‌نام رویدادها با ربات: @shamse_restaurant_bot\n"
     "🌐 وب‌سایت: shamse-restaurant.pages.dev"
 )
 
 BOT_DESCRIPTION = (
-    "راهنمای رستوران‌های ایرانی، فارسی و افغانستانی در استانبول.\n\n"
+    "میزبان استانبول (Mizban Istanbul) — راهنمای رستوران‌های ایرانی، فارسی و افغانستانی در استانبول.\n\n"
     "فهرست ۱۹ رستوران معتبر با آدرس دقیق، موقعیت نقشه، شماره تماس، وب‌سایت و منو "
     "(تکسیم، زیتین‌بورنو، اسنیورت، بیلیک‌دوزو، شیشلی، فاتیح و بخش آسیایی):\n"
     "• ۱۲ رستوران ایرانی و فارسی (فارسی، ریحون، سفیر، شمسه، سودی، آسمان، مژگان، شاندیز، نایب، کیوان)\n"
@@ -698,7 +698,7 @@ BOT_DESCRIPTION = (
     "📣 کانال: @shamse_restaurant"
 )
 
-BOT_SHORT = "راهنمای رستوران‌های ایرانی و افغانستانی استانبول با آدرس، منو، نقشه و لینک"
+BOT_SHORT = "میزبان استانبول: راهنمای رستوران‌های ایرانی و افغانستانی استانبول"
 
 COMMANDS = [
     {"command": "restaurants", "description": "فهرست ۱۹ رستوران ایرانی و افغان"},
@@ -721,7 +721,7 @@ COMMANDS = [
     {"command": "stop", "description": "خاموش‌کردن اطلاع‌رسانی"},
 ]
 
-GUIDE_MARKER = "راهنمای رستوران شمسه"
+GUIDE_MARKER = "راهنمای جامع میزبان استانبول"
 
 
 def mode_brand():
@@ -730,7 +730,7 @@ def mode_brand():
     if not me.get("ok"):
         print("token problem:", me.get("description"))
         return 2
-    name_res = api("setMyName", {"name": "رستوران‌های ایرانی و افغان استانبول"})
+    name_res = api("setMyName", {"name": "میزبان استانبول | رستوران‌های ایرانی و افغان"})
     print("bot name     :", name_res.get("ok"))
     print("bot profile  :", api("setMyDescription", {"description": BOT_DESCRIPTION, "language_code": ""}).get("ok"),
           "|", api("setMyShortDescription", {"short_description": BOT_SHORT, "language_code": ""}).get("ok"),
@@ -747,8 +747,8 @@ def mode_brand():
     cur_title = (info.get("result") or {}).get("title") or ""
     print("channel      :", cur_title, "| source:", src)
 
-    if cur_title != "رستوران شمسه | Shamse Restaurant":
-        r = api("setChatTitle", {"chat_id": chat, "title": "رستوران شمسه | Shamse Restaurant"})
+    if cur_title != "میزبان استانبول | Mizban Istanbul":
+        r = api("setChatTitle", {"chat_id": chat, "title": "میزبان استانبول | Mizban Istanbul"})
         print("setChatTitle :", r.get("ok"), r.get("description", ""))
 
     r = api("setChatDescription", {"chat_id": chat, "description": CHANNEL_DESCRIPTION})

@@ -1,7 +1,8 @@
-# 🌟 وب‌سایت رستوران شمسه | Shamse Restaurants Website
+# 🌟 میزبان استانبول | Mizban Istanbul (mizbanistanbul.com)
 
-وب‌سایت تک‌صفحه‌ای (One-Page) مدرن، راست‌به‌چپ و کاملاً واکنش‌گرا برای **رستوران شمسه** — رستوران معروف ایرانی در استانبول با **دو شعبه**: تکسیم (خیابان استقلال) و کوجاتپه (شمسه سو کلاب). ساخته‌شده با HTML/CSS/JavaScript خالص و **بدون هیچ کتابخانه‌ی بیرونی** (بدون jQuery، بدون Bootstrap، بدون CDN).
+پلتفرم جامع معرفی رستوران‌های ایرانی، فارسی و افغانستانی در استانبول، هوش تجاری گاسترونومی، مدیریت رویدادهای کلاب و فرانچایز. پلتفرم آنلاین شامل راهنمای ۱۹ رستوران اصیل استانبول (با حفظ برند شریک شاخص: **رستوران شمسه** با دو شعبهٔ تکسیم و کوجاتپه). ساخته‌شده با HTML/CSS/JavaScript خالص و **بدون هیچ کتابخانه‌ی بیرونی** (بدون jQuery، بدون Bootstrap، بدون CDN).
 
+> 🌐 **دامنهٔ پیشنهادی و آزاد:** `mizbanistanbul.com` (تأییدشده در ثبت مرکزی Verisign RDAP)
 > 🎨 **طراحی و کدنویسی ۱۰۰٪ با هوش مصنوعی** — پروژه‌ی `shamse-restaurant` در سازمان [Websites-by-AI](https://github.com/Websites-by-AI)
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-d4af37?style=for-the-badge&logo=githubpages&logoColor=white)](https://websites-by-ai.github.io/shamse-restaurant/)
