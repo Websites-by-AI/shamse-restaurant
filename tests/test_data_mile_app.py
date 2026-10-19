@@ -79,3 +79,27 @@ def test_html_infographic_and_app_presence():
     assert 'ABSA' in intel_html
     assert 'RevPASH' in intel_html
     assert 'BCG' in intel_html
+
+
+def test_data_mile_multiplatform_tripadvisor_yandex():
+    gsum = dme.get_google_maps_summary()
+    assert gsum["total_google_reviews"] == 27510
+    assert gsum["total_tripadvisor_reviews"] > 2500
+    assert gsum["total_yandex_reviews"] > 1800
+    assert gsum["grand_total_reviews"] > 31000
+    assert "tripadvisor" in gsum["platform_breakdown"]
+    assert "yandex_maps" in gsum["platform_breakdown"]
+    assert gsum["platform_breakdown"]["tripadvisor"]["avg_rating"] >= 4.4
+    assert gsum["platform_breakdown"]["yandex_maps"]["avg_rating"] >= 4.4
+
+    with open("index.html", "r", encoding="utf-8") as f:
+        idx_html = f.read()
+    assert "TripAdvisor" in idx_html
+    assert "Yandex Maps" in idx_html
+    assert "۳۲,۲۷۰" in idx_html
+
+    with open("intelligence.html", "r", encoding="utf-8") as f:
+        intel_html = f.read()
+    assert "TripAdvisor" in intel_html
+    assert "Yandex Maps" in intel_html
+    assert "۳۲,۲۷۰" in intel_html
