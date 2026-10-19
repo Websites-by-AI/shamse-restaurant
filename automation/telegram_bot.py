@@ -344,20 +344,34 @@ def typing(chat_id):
     return api("sendChatAction", {"chat_id": chat_id, "action": "typing"})
 
 
-def reply(chat_id, text, buttons=True, keyboard=False):
-    payload = {"chat_id": chat_id, "text": text, "disable_web_page_preview": True}
-    if keyboard:
+def reply(chat_id, text, buttons=True, keyboard=False, inline_markup=None):
+    payload = {
+        "chat_id": chat_id,
+        "text": text,
+        "disable_web_page_preview": True,
+        "parse_mode": "HTML"
+    }
+    if inline_markup:
+        payload["reply_markup"] = inline_markup
+    elif keyboard:
         payload["reply_markup"] = content.KEYBOARD
     elif buttons:
         payload["reply_markup"] = content.BUTTONS
-    return api("sendMessage", payload)
+    
+    resp = api("sendMessage", payload)
+    if not resp.get("ok"):
+        desc = (resp.get("description") or "").lower()
+        if "can't parse entities" in desc or "bad request" in desc:
+            payload.pop("parse_mode", None)
+            resp = api("sendMessage", payload)
+    return resp
 
 
 def send_welcome(chat_id):
     """خوش‌آمد با عکس + کیبورد ثابت؛ اگر عکس ناموفق بود، متن ساده."""
     caption = content.REPLIES["start"]
     r = api("sendPhoto", {"chat_id": chat_id, "photo": content.SITE + "/assets/img/interior.jpg",
-                          "caption": caption[:1024], "reply_markup": content.KEYBOARD})
+                          "caption": caption[:1024], "parse_mode": "HTML", "reply_markup": content.KEYBOARD})
     if r.get("ok"):
         return r
     return reply(chat_id, caption, buttons=False, keyboard=True)
@@ -396,6 +410,74 @@ def handle_callback(upd, db):
         body = rl.format_list_compact(items, title=cat_title)
         api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": cat_title})
         reply(chat_id, body, buttons=True)
+        return True
+
+    if data.startswith("cmd:"):
+        cmd_name = data.partition(":")[2]
+        api("answerCallbackQuery", {"callback_query_id": cq.get("id"), "text": "⚡ اجرای دستور..."})
+        if cmd_name == "rsvp":
+            skill_reply("rsvp", "", chat_id, db)
+            return True
+        elif cmd_name == "events":
+            ev_markup = {"inline_keyboard": [
+                [{"text": "🎫 ثبت‌نام در رویدادها", "callback_data": "cmd:rsvp"},
+                 {"text": "📋 ثبت‌نام‌های من", "callback_data": "my"}],
+                [{"text": "🌐 تقویم کامل در وب‌سایت", "url": content.EVENTS_URL}]
+            ]}
+            reply(chat_id, content.REPLIES["events"], inline_markup=ev_markup)
+            return True
+        elif cmd_name == "skills":
+            sk_markup = {"inline_keyboard": [
+                [{"text": "🏢 مدل‌های فرانچایز", "callback_data": "cmd:franchise"},
+                 {"text": "🎯 استودیو کلاب", "callback_data": "cmd:campaign"}],
+                [{"text": "🌐 سامانه ۱۰۰ مهارت در سایت", "url": content.SITE + "/intelligence.html#mod-gateways"}]
+            ]}
+            reply(chat_id, content.REPLIES["skills"], inline_markup=sk_markup)
+            return True
+        elif cmd_name == "franchise":
+            fr_markup = {"inline_keyboard": [
+                [{"text": "⚡ ۱۰۰ مهارت هوش تجاری", "callback_data": "cmd:skills"},
+                 {"text": "📞 تماس با مدیریت", "callback_data": "cmd:contact"}],
+                [{"text": "🌐 تحلیل فرانچایز در سایت", "url": content.SITE + "/intelligence.html#mod-franchise"}]
+            ]}
+            reply(chat_id, content.REPLIES["franchise"], inline_markup=fr_markup)
+            return True
+        elif cmd_name == "menu":
+            menu_markup = {"inline_keyboard": [
+                [{"text": "🪑 رزرو میز", "callback_data": "cmd:reserve"},
+                 {"text": "📍 نشانی شعب", "callback_data": "cmd:branches"}],
+                [{"text": "🌐 مشاهده منوی تصویری در سایت", "url": content.MENU_URL}]
+            ]}
+            reply(chat_id, content.REPLIES["menu"], inline_markup=menu_markup)
+            return True
+        elif cmd_name == "reserve":
+            res_markup = {"inline_keyboard": [
+                [{"text": "💬 گفت‌وگو در واتساپ", "url": content.WA},
+                 {"text": "📖 منوی غذاها", "callback_data": "cmd:menu"}],
+                [{"text": "🌐 فرم آنلاین در وب‌سایت", "url": content.RESERVE_URL}]
+            ]}
+            reply(chat_id, content.REPLIES["reserve"], inline_markup=res_markup)
+            return True
+        elif cmd_name == "branches":
+            br_markup = {"inline_keyboard": [
+                [{"text": "🗺 نقشه شعبه تکسیم", "url": "https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul"},
+                 {"text": "🗺 نقشه شعبه کوجاتپه", "url": "https://maps.google.com/?q=Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul"}],
+                [{"text": "🪑 رزرو میز", "callback_data": "cmd:reserve"},
+                 {"text": "📞 تماس با ما", "callback_data": "cmd:contact"}]
+            ]}
+            reply(chat_id, content.REPLIES["branches"], inline_markup=br_markup)
+            return True
+        elif cmd_name == "contact":
+            co_markup = {"inline_keyboard": [
+                [{"text": "💬 پیام در واتساپ", "url": content.WA},
+                 {"text": "📣 کانال رسمی", "url": content.CHANNEL_URL}],
+                [{"text": "🌐 وب‌سایت رسمی", "url": content.SITE}]
+            ]}
+            reply(chat_id, content.REPLIES["contact"], inline_markup=co_markup)
+            return True
+        elif cmd_name in content.REPLIES:
+            reply(chat_id, content.REPLIES[cmd_name], buttons=True)
+            return True
         return True
 
     if data == "my":
@@ -607,9 +689,80 @@ def handle_updates(state, minutes=0, timeout=0):
                 r, out = reply(chat_id, news_reply()), "news"
             elif cmd == "areas":
                 r = reply(chat_id, content.REPLIES["areas"], buttons=False)
-                api("sendMessage", {"chat_id": chat_id, "text": "منطقهٔ مورد نظر را انتخاب کنید:",
-                                    "reply_markup": rl.area_keyboard()})
+                api("sendMessage", {"chat_id": chat_id, "text": "<b>منطقهٔ مورد نظر را انتخاب کنید:</b>",
+                                    "parse_mode": "HTML", "reply_markup": rl.area_keyboard()})
                 out = "/areas"
+            elif cmd == "menu":
+                menu_markup = {"inline_keyboard": [
+                    [{"text": "🪑 رزرو میز", "callback_data": "cmd:reserve"},
+                     {"text": "📍 نشانی شعب", "callback_data": "cmd:branches"}],
+                    [{"text": "🌐 مشاهده منوی کامل در سایت", "url": content.MENU_URL}]
+                ]}
+                r, out = reply(chat_id, content.REPLIES["menu"], inline_markup=menu_markup), "/menu"
+            elif cmd == "events":
+                ev_markup = {"inline_keyboard": [
+                    [{"text": "🎫 ثبت‌نام در رویدادها", "callback_data": "cmd:rsvp"},
+                     {"text": "📋 ثبت‌نام‌های من", "callback_data": "my"}],
+                    [{"text": "🌐 تقویم کامل در سایت", "url": content.EVENTS_URL}]
+                ]}
+                r, out = reply(chat_id, content.REPLIES["events"], inline_markup=ev_markup), "/events"
+            elif cmd == "reserve":
+                res_markup = {"inline_keyboard": [
+                    [{"text": "💬 گفت‌وگو در واتساپ", "url": content.WA},
+                     {"text": "📖 منوی غذاها", "callback_data": "cmd:menu"}],
+                    [{"text": "🌐 فرم رزرو آنلاین در سایت", "url": content.RESERVE_URL}]
+                ]}
+                r, out = reply(chat_id, content.REPLIES["reserve"], inline_markup=res_markup), "/reserve"
+            elif cmd == "branches":
+                br_markup = {"inline_keyboard": [
+                    [{"text": "🗺 نقشه تکسیم", "url": "https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul"},
+                     {"text": "🗺 نقشه کوجاتپه", "url": "https://maps.google.com/?q=Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul"}],
+                    [{"text": "🪑 رزرو میز", "callback_data": "cmd:reserve"},
+                     {"text": "📞 تماس با ما", "callback_data": "cmd:contact"}]
+                ]}
+                r, out = reply(chat_id, content.REPLIES["branches"], inline_markup=br_markup), "/branches"
+            elif cmd == "contact":
+                co_markup = {"inline_keyboard": [
+                    [{"text": "💬 پیام در واتساپ", "url": content.WA},
+                     {"text": "📣 کانال رسمی", "url": content.CHANNEL_URL}],
+                    [{"text": "🌐 وب‌سایت رسمی", "url": content.SITE}]
+                ]}
+                r, out = reply(chat_id, content.REPLIES["contact"], inline_markup=co_markup), "/contact"
+            elif cmd == "iranian":
+                ir_markup = {"inline_keyboard": [
+                    [{"text": "🇦🇫 رستوران‌های افغانستانی", "callback_data": "cat:afghan"},
+                     {"text": "📍 فیلتر بر اساس محله", "callback_data": "areas"}],
+                    [{"text": "🌐 مشاهده نقشه در وب‌سایت", "url": content.RESTAURANTS_URL}]
+                ]}
+                r, out = reply(chat_id, content.REPLIES["iranian"], inline_markup=ir_markup), "/iranian"
+            elif cmd == "afghan":
+                af_markup = {"inline_keyboard": [
+                    [{"text": "🍽 رستوران‌های ایرانی", "callback_data": "cat:iranian"},
+                     {"text": "📍 فیلتر بر اساس محله", "callback_data": "areas"}],
+                    [{"text": "🌐 مشاهده نقشه در وب‌سایت", "url": content.RESTAURANTS_URL}]
+                ]}
+                r, out = reply(chat_id, content.REPLIES["afghan"], inline_markup=af_markup), "/afghan"
+            elif cmd == "skills":
+                sk_markup = {"inline_keyboard": [
+                    [{"text": "🏢 مدل‌های فرانچایز", "callback_data": "cmd:franchise"},
+                     {"text": "🎯 استودیو کلاب", "callback_data": "cmd:campaign"}],
+                    [{"text": "🌐 سامانه ۱۰۰ مهارت در سایت", "url": content.SITE + "/intelligence.html#mod-gateways"}]
+                ]}
+                parts = raw_text.split(maxsplit=1)
+                if len(parts) > 1 and parts[1].strip():
+                    q = parts[1].strip()
+                    matched = rep.search_skills(q)[:4]
+                    if matched:
+                        lines = [f"⚡ <b>نتایج جستجوی مهارت برای «{q}»:</b>\n"]
+                        for m in matched:
+                            lines.append(f"• <b>{m['id']}: {m['name_fa']}</b>\n  <i>ابزار:</i> {m['engine_tool']}\n  <i>اقدام:</i> {m['action']}\n")
+                        lines.append(f"🌐 مشاهده ۱۰۰ مهارت کامل در سایت:\n{content.SITE}/intelligence.html#mod-gateways")
+                        out_msg = "\n".join(lines)
+                    else:
+                        out_msg = f"مهارتی با عبارت «{q}» یافت نشد.\n\n" + content.REPLIES.get("skills", "")
+                else:
+                    out_msg = content.REPLIES.get("skills", "")
+                r, out = reply(chat_id, out_msg, inline_markup=sk_markup), "/skills"
             elif cmd == "search":
                 q = " ".join(raw_text.split()[1:]) if len(raw_text.split()) > 1 else ""
                 if q:
@@ -630,23 +783,7 @@ def handle_updates(state, minutes=0, timeout=0):
                 out_msg = camp.get("telegram", "") + "\n" + "\n".join(ros_lines)
                 r = reply(chat_id, out_msg, buttons=True)
                 out = "/campaign"
-            elif cmd == "skills":
-                parts = raw_text.split(maxsplit=1)
-                if len(parts) > 1 and parts[1].strip():
-                    q = parts[1].strip()
-                    matched = rep.search_skills(q)[:4]
-                    if matched:
-                        lines = [f"⚡ <b>نتایج جستجوی مهارت برای «{q}»:</b>\n"]
-                        for m in matched:
-                            lines.append(f"• <b>{m['id']}: {m['name_fa']}</b>\n  <i>ابزار:</i> {m['engine_tool']}\n  <i>اقدام:</i> {m['action']}\n")
-                        lines.append(f"🌐 مشاهده ۱۰۰ مهارت کامل در سایت:\n{content.SITE}/intelligence.html#mod-gateways")
-                        out_msg = "\n".join(lines)
-                    else:
-                        out_msg = f"مهارتی با عبارت «{q}» یافت نشد.\n\n" + content.REPLIES.get("skills", "")
-                else:
-                    out_msg = content.REPLIES.get("skills", "")
-                r = reply(chat_id, out_msg, buttons=True)
-                out = "/skills"
+
             elif cmd == "franchise":
                 r = reply(chat_id, content.REPLIES["franchise"], buttons=True)
                 out = "/franchise"
