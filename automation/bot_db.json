@@ -3,11 +3,11 @@
     "broadcasts": 1,
     "cmd:contact": 1,
     "cmd:events": 2,
-    "cmd:iranian": 1,
+    "cmd:iranian": 2,
     "cmd:menu": 1,
     "cmd:rsvp": 1,
     "cmd:start": 4,
-    "messages": 10
+    "messages": 11
   },
   "reminders": {},
   "rsvps": {},
