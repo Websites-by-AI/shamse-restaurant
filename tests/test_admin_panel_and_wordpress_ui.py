@@ -73,3 +73,35 @@ def test_telegram_bot_file_and_channel_verification():
     assert "shamse_restaurant_bot" in code or "shamse_restaurant" in code
     assert "inline_keyboard" in code, "Bot must use inline keyboards"
     assert "area_keyboard" in code, "Bot must support area keyboards"
+
+def test_amazon_conversion_skills_in_index():
+    with open(INDEX_HTML, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # Amazon 5-star to 1-star histogram breakdown
+    assert "amazon-reviews-box" in html, "Must contain Amazon rating breakdown box"
+    assert "amz-hist-row" in html, "Must contain rating histogram rows"
+    assert "۸۲٪" in html or "82%" in html, "5-star percentage must be shown"
+    assert "amz-rating-left" in html, "Must show aggregate rating summary"
+    assert "amz-keywords-cloud" in html, "Must show customer sentiment keywords"
+
+    # Amazon Frequently Paired Together Bundle
+    assert "amz-bundle-card" in html, "Must contain Amazon signature bundle card"
+    assert "amz-bundle-plus" in html, "Must show plus signs connecting bundled items"
+    assert "Frequently Paired Together" in html, "Must reference Amazon bundle pattern"
+
+def test_opentable_conversion_skills_in_index():
+    with open(INDEX_HTML, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    # OpenTable 1-click interactive time-slot pills
+    assert "ot-slot-pills" in html, "Must contain OpenTable time slot pills"
+    assert "ot-pill" in html, "Must contain time slot buttons"
+    assert "selectOtTimeSlot" in html, "Must contain JavaScript time selection function"
+
+    # OpenTable seating preference & real-time urgency banner
+    assert "ot-seating-pills" in html, "Must contain seating preference selector"
+    assert "ot-urgency-banner" in html, "Must contain real-time booking urgency banner"
+    assert "تقاضای بالا در تکسیم" in html, "Must display hot booking urgency tag"
+
+
