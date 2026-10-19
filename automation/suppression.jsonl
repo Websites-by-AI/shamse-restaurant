@@ -3,3 +3,4 @@
 {"email": "spam-trap@example.com", "reason": "bounce", "timestamp": "2026-10-19T10:00:00Z", "entity_id": "TEST-00"}
 {"email": "optout-user@shamse-test.com", "reason": "unsubscribe", "timestamp": "2026-10-19T19:16:16.504084Z", "entity_id": ""}
 {"email": "optout-f5be3f25@shamse-test.com", "reason": "unsubscribe", "timestamp": "2026-10-19T19:19:15.662102Z", "entity_id": ""}
+{"email": "optout-eb515c46@shamse-test.com", "reason": "unsubscribe", "timestamp": "2026-10-19T19:40:47.150035Z", "entity_id": ""}
