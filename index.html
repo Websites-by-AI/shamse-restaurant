@@ -551,6 +551,7 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
       <a href="#meetup">میتاپ</a>
       <a href="events.html">رویدادها</a>
       <a href="restaurants.html">رستوران‌های استانبول</a>
+      <a href="#ai-live-studio" style="color:var(--copper);font-weight:700">⚡ تست زنده هوش مصنوعی</a>
       <a href="intelligence.html">هوش تجاری و AI</a>
       <a href="marketing.html">استراتژی</a>
       <a href="#blog">مقالات</a>
@@ -578,6 +579,7 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
     <p class="hero-name">رستوران شمسه</p>
     <div class="cta">
       <a href="#menu" class="btn btn--gold">مشاهده منو</a>
+      <a href="#ai-live-studio" class="btn btn--line" style="border-color:var(--copper);color:var(--copper)">⚡ تست زنده هوش مصنوعی</a>
       <a href="#reserve" class="btn btn--ghost">رزرو میز</a>
     </div>
     <div class="facts">
@@ -1105,6 +1107,364 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
         <a href="intelligence.html#mod-gmaps-outreach" class="btn btn--dark">📍 ورود به پنل ادمین و CRM</a>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ================= LIVE INTERACTIVE AI STUDIO & TEST SHOWCASE ================= -->
+<section class="section section--dark" id="ai-live-studio">
+  <div class="wrap">
+    <div class="center rev">
+      <span class="eyebrow" style="color:var(--copper);display:inline-flex;align-items:center;gap:8px">
+        <span class="ai-live-pulse"></span>
+        آزمایشگاه زنده و بلادرنگ هوش مصنوعی در سایت اصلی
+      </span>
+      <h2 class="sec-title" style="color:var(--cream);margin-top:8px">استودیوی تعاملی و بررسی زنده هوش مصنوعی میزبان استانبول</h2>
+      <p class="sec-sub" style="max-width:850px;margin:0 auto">روی هر یک از تصاویر تست سالن، غذاهای منو، نقدهای ۴ زبانه گوگل مپ یا سناریوهای ساعات خلوت کلیک کنید تا تحلیل فوری، پارامترهای معماری، حاشیه سود و پاسخ‌های آنی هوش مصنوعی را با سرعت بالا مشاهده نمایید.</p>
+    </div>
+
+    <!-- AI Module Switcher Tabs -->
+    <div class="rev ai-tab-nav">
+      <button class="ai-tab-btn active" onclick="switchAiTab('interior', this)">
+        <span>🏛 ۱. استودیو طراحی معماری و سالن</span>
+      </button>
+      <button class="ai-tab-btn" onclick="switchAiTab('menu', this)">
+        <span>🍲 ۲. مهندسی منو و حاشیه سود غذا</span>
+      </button>
+      <button class="ai-tab-btn" onclick="switchAiTab('sentiment', this)">
+        <span>💬 ۳. پردازش احساسات و پاسخ ۴ زبانه</span>
+      </button>
+      <button class="ai-tab-btn" onclick="switchAiTab('space', this)">
+        <span>⚡ ۴. درآمدزایی ساعات خلوت و کلاب</span>
+      </button>
+    </div>
+
+    <!-- TAB 1: INTERIOR DESIGN & SERVICESCAPE VISUALIZER -->
+    <div id="aiTab-interior" class="ai-tab-panel active rev">
+      <div style="margin-bottom:12px;color:var(--muted);font-size:.84rem">👇 یک سبک معماری را انتخاب کنید تا تصاویر و متغیرهای طراحی Servicescape بلافاصله پردازش و نمایش یابند:</div>
+      
+      <div class="ai-thumb-grid" id="interiorThumbGrid">
+        <div class="ai-thumb-card active" onclick="selectAiInterior('copper-walnut', this)">
+          <img src="assets/img/interior.jpg" class="ai-thumb-img" alt="مس و گردوی مدرن">
+          <div class="ai-thumb-title">مس تیره و گردوی مدرن</div>
+          <div class="ai-thumb-sub">شعبه استقلال | پالت گرم ایرانی</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiInterior('isfahan-azure', this)">
+          <img src="assets/img/interior-isfahan.jpg" class="ai-thumb-img" alt="لاجورد و مقرنس اصفهان">
+          <div class="ai-thumb-title">لاجورد، فیروزه و مقرنس</div>
+          <div class="ai-thumb-sub">معماری اصیل صفوی و آیینه‌کاری</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiInterior('ottoman-neoclassic', this)">
+          <img src="assets/img/interior2.jpg" class="ai-thumb-img" alt="نئوکلاسیک عثمانی">
+          <div class="ai-thumb-title">نئوکلاسیک عثمانی و چرم</div>
+          <div class="ai-thumb-sub">شعبه کوکاتیپه | سبک دیپلماتیک</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiInterior('meetup-community', this)">
+          <img src="assets/img/meetup.jpg" class="ai-thumb-img" alt="سالن میتاپ و دورهمی">
+          <div class="ai-thumb-title">سالن میتاپ و اتاق مافیا</div>
+          <div class="ai-thumb-sub">طبقه اختصاصی دورهمی‌های کلاب</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiInterior('cyber-speakeasy', this)">
+          <img src="assets/img/interior-speakeasy.jpg" class="ai-thumb-img" alt="کلاب اسپیک‌ایزی">
+          <div class="ai-thumb-title">لانژ اسپیک‌ایزی شبانه</div>
+          <div class="ai-thumb-sub">ایونت‌های موسیقی و شعر معاصر</div>
+        </div>
+      </div>
+
+      <!-- Live Stage Output -->
+      <div class="ai-stage" id="interiorStage">
+        <div class="ai-stage-media">
+          <img id="intImg" src="assets/img/interior.jpg" alt="نمای منتخب طراحی سالن">
+          <div class="ai-stage-top-badge" id="intBadge">⚡ تحلیل آنی AI فعال</div>
+          <div class="ai-stage-tag" id="intTag">📍 شعبه استقلال — فضای رستوران مدرن</div>
+        </div>
+
+        <div class="ai-stage-info">
+          <div class="ai-stage-head">
+            <h3 class="ai-stage-title" id="intTitle">مس تیره و گردوی دست‌ساز (شعبه استقلال)</h3>
+            <div class="ai-stage-sub" id="intSub">سبک مدرن ایرانی با هارمونی مس اکسیدنشده و گردوی آمریکایی</div>
+          </div>
+
+          <div class="ai-metric-table">
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">🎨 نمره هارمونی بصری Bitner Servicescape:</span>
+              <span class="ai-metric-val" id="intBitnerScore" style="color:#2ecc71">۹۶ / ۱۰۰</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">💡 دمای نور و پالت کلوین:</span>
+              <span class="ai-metric-val" id="intLight">۲۷۰۰K (نور ملایم طلایی آرامش‌بخش)</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">⏳ میانگین توقف مهمان (Dwell Time):</span>
+              <span class="ai-metric-val" id="intDwell">۸۵ دقیقه (+۳۵٪ افزایش سفارش چای و دسر)</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">🔊 عایق‌بندی و آکوستیک صدا:</span>
+              <span class="ai-metric-val" id="intAcoustic">۶۲ دسی‌بل (پنل‌های چوبی جاذب صدا)</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">🏛 متریال اصلی دکوراسیون:</span>
+              <span class="ai-metric-val" id="intMaterials">ورق مس چکش‌خورده، گردوی دست‌ساز، بازالت</span>
+            </div>
+          </div>
+
+          <div class="ai-hf-banner">
+            <span>مدل استنتاج هاگینگ‌فیس:</span>
+            <span class="ai-hf-tag" id="intHfModel">🤗 Bitner Servicescape Aesthetic Scorer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: MENU ENGINEERING & BCG PROFITABILITY -->
+    <div id="aiTab-menu" class="ai-tab-panel rev">
+      <div style="margin-bottom:12px;color:var(--muted);font-size:.84rem">👇 یک خوراک را انتخاب کنید تا محاسبه بهای تمام‌شده، ماتریس سودآوری BCG و عطر زعفران بلافاصله پلات شوند:</div>
+      
+      <div class="ai-thumb-grid" id="menuThumbGrid">
+        <div class="ai-thumb-card active" onclick="selectAiDish('koobideh', this)">
+          <img src="assets/img/dish-koobideh.jpg" class="ai-thumb-img" alt="کباب کوبیده مخصوص">
+          <div class="ai-thumb-title">چلو کباب کوبیده مخصوص</div>
+          <div class="ai-thumb-sub">کباب ذغالی زعفرانی</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiDish('hero-platter', this)">
+          <img src="assets/img/hero-platter.jpg" class="ai-thumb-img" alt="سینی پلاتر ضیافت">
+          <div class="ai-thumb-title">سینی ضیافت مجلل شمسه</div>
+          <div class="ai-thumb-sub">پلاتر شاهانه مهمانی</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiDish('ghormeh', this)">
+          <img src="assets/img/dish-ghormeh.jpg" class="ai-thumb-img" alt="خورشت قورمه‌سبزی">
+          <div class="ai-thumb-title">خورشت قورمه‌سبزی جاافتاده</div>
+          <div class="ai-thumb-sub">خورشت سنتی دم‌کشیده</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiDish('zereshk', this)">
+          <img src="assets/img/dish-zereshk.jpg" class="ai-thumb-img" alt="زرشک‌پلو با مرغ">
+          <div class="ai-thumb-title">زرشک‌پلو با مرغ زعفرانی</div>
+          <div class="ai-thumb-sub">پلوی مجلسی ایرانی</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiDish('jujeh', this)">
+          <img src="assets/img/dish-jujeh.jpg" class="ai-thumb-img" alt="جوجه‌کباب با استخوان">
+          <div class="ai-thumb-title">جوجه‌کباب با استخوان</div>
+          <div class="ai-thumb-sub">مرینیت زعفران ممتاز</div>
+        </div>
+      </div>
+
+      <!-- Live Stage Output for Menu -->
+      <div class="ai-stage" id="menuStage">
+        <div class="ai-stage-media">
+          <img id="dishImg" src="assets/img/dish-koobideh.jpg" alt="تصویر خوراک منتخب">
+          <div class="ai-stage-top-badge" id="dishBcgBadge" style="background:var(--copper);color:#0f0c09">⭐️ ربع ستاره BCG (Star)</div>
+          <div class="ai-stage-tag" id="dishTag">💰 حاشیه سود ناخالص: ۷۱٫۸٪</div>
+        </div>
+
+        <div class="ai-stage-info">
+          <div class="ai-stage-head">
+            <h3 class="ai-stage-title" id="dishTitle">چلو کباب کوبیده زعفرانی مخصوص</h3>
+            <div class="ai-stage-sub" id="dishSub">پرفروش‌ترین کباب سنتی با گوشت تازه گوسفندی و کره حیوانی</div>
+          </div>
+
+          <div class="ai-metric-table">
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">💵 قیمت فروش منو / بهای تمام‌شده:</span>
+              <span class="ai-metric-val" id="dishPrices">۳۹۰ لیر / ۱۱۰ لیر مواد اولیه</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">📈 سود ناخالص هر سفارش (Contribution):</span>
+              <span class="ai-metric-val" id="dishMargin" style="color:#2ecc71">+۲۸۰ لیر به ازای هر پرس</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">📊 سهم از سفارش‌های رستوران (Menu Mix):</span>
+              <span class="ai-metric-val" id="dishMix">۳۴٪ از کل فاکتورهای ناهار و شام</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">✨ شاخص عطر زعفران قائنات و برنج طارم:</span>
+              <span class="ai-metric-val" id="dishSaffron">۹٫۹ از ۱۰ (زعفران ممتاز سرگل)</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">⏱ زمان آماده‌سازی و سرو:</span>
+              <span class="ai-metric-val" id="dishPrepTime">۱۴ دقیقه روی منقل زغال طبیعی</span>
+            </div>
+          </div>
+
+          <div style="background:rgba(46,204,113,0.08);border:1px solid rgba(46,204,113,0.3);padding:10px 14px;border-radius:2px;font-size:.82rem;line-height:1.6;color:#55efc4" id="dishRecommendation">
+            💡 <b>توصیه الگوریتم Kasavana & Smith:</b> پیشنهاد باندل با دوغ نعنایی و زیتون پرورده شمسه (+۴۵ لیر به سود ناخالص هر فاکتور اضافه می‌کند).
+          </div>
+
+          <div class="ai-hf-banner">
+            <span>مدل تحلیلی:</span>
+            <span class="ai-hf-tag">Kasavana & Smith BCG Classifier (Paper-02)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SENTIMENT NLP & MULTI-LINGUAL AUTO-RESPONDER -->
+    <div id="aiTab-sentiment" class="ai-tab-panel rev">
+      <div style="margin-bottom:12px;color:var(--muted);font-size:.84rem">👇 یک نظر نمونه واقعی از گردشگران را انتخاب کنید تا موتور هوش مصنوعی احساسات و پاسخ دیپلماتیک را در کمتر از ۰٫۱ ثانیه تولید نماید:</div>
+      
+      <div class="ai-thumb-grid" id="reviewThumbGrid" style="grid-template-columns:repeat(auto-fill,minmax(210px,1fr))">
+        <div class="ai-thumb-card active" onclick="selectAiReview('review-fa', this)">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:1.1rem">🇮🇷</span>
+            <span style="color:#ffd21e;font-size:.8rem">★★★★★</span>
+          </div>
+          <div class="ai-thumb-title">نظر ۵ ستاره فارسی</div>
+          <div class="ai-thumb-sub">کیفیت کباب و مهمان‌نوازی شعبه تکسیم</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiReview('review-tr', this)">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:1.1rem">🇹🇷</span>
+            <span style="color:#ffd21e;font-size:.8rem">★★★★★</span>
+          </div>
+          <div class="ai-thumb-title">نظر ۵ ستاره ترکی استانبولی</div>
+          <div class="ai-thumb-sub">Lezzetli kebaplar ve sakin atmosfer</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiReview('review-en', this)">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:1.1rem">🇬🇧</span>
+            <span style="color:#ffd21e;font-size:.8rem">★★★★★</span>
+          </div>
+          <div class="ai-thumb-title">نظر ۵ ستاره انگلیسی توریست</div>
+          <div class="ai-thumb-sub">Best Persian saffron rice in Taksim</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiReview('review-triage', this)">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:1.1rem">🚨</span>
+            <span style="color:#e74c3c;font-size:.8rem">★★☆☆☆</span>
+          </div>
+          <div class="ai-thumb-title">نقد ۲ ستاره اعتراضی (تریاژ)</div>
+          <div class="ai-thumb-sub">معطلی صف ورود در جمعه‌شب</div>
+        </div>
+      </div>
+
+      <!-- Live Stage Output for Sentiment -->
+      <div class="ai-stage" id="sentimentStage" style="grid-template-columns:1.05fr 1fr">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="background:var(--ink-2);border:1px solid var(--line);padding:14px;border-radius:2px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <span id="revAuthor" style="font-weight:700;color:var(--cream);font-size:.9rem">مهندس آرش کمالی (مقیم تکسیم)</span>
+              <span id="revStars" style="color:#ffd21e;font-size:.85rem">★★★★★</span>
+            </div>
+            <p id="revText" style="font-size:.85rem;color:var(--text);line-height:1.7">«دیشب به همراه مهمانان ترک‌زبانم رفتیم شعبه استقلال شمسه. واقعاً کوبیده و شیشلیک با کیفیت تهران بود و مهمان‌های ما از بوی زعفران قفقازی و رفتار صمیمی مدیر شگفت‌زده شدند. فضای طبقه بالا هم دنج و عالی بود.»</p>
+          </div>
+
+          <div class="ai-metric-table">
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">🎯 نمره قطبیت احساسات (Sentiment Polarity):</span>
+              <span class="ai-metric-val" id="revPolarity" style="color:#2ecc71">+۹۸٪ مثبت (Very Positive)</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">🔍 ابعاد تفکیکی SemEval ABSA:</span>
+              <span class="ai-metric-val" id="revAspects" style="font-size:.8rem">غذا: ۹۹٪ | سرویس: ۹۶٪ | فضا: ۹۴٪</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">⚡ سرعت پاسخگویی و رعایت مهلت SLA:</span>
+              <span class="ai-metric-val" id="revSla" style="color:#2ecc71">پاسخ در ۲ دقیقه (استاندارد: &lt;۱۵ دقیقه)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-stage-info">
+          <div class="ai-stage-head" style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h4 style="font-size:1.05rem;color:var(--cream)">🤖 پاسخ دیپلماتیک تولیدشده با هوش مصنوعی</h4>
+              <div style="font-size:.78rem;color:var(--copper-soft)">نگارش خودکار متناسب با زبان و لحن مهمان</div>
+            </div>
+            <button onclick="copyGeneratedAiReply()" class="btn btn--line" style="padding:4px 10px;font-size:.75rem">کپی پاسخ</button>
+          </div>
+
+          <div style="background:rgba(210,154,90,0.08);border:1px solid var(--line-copper);padding:14px;border-radius:2px;font-size:.85rem;line-height:1.8;color:var(--cream)" id="revAiReply">
+            «درود و سپاس جناب کمالی عزیز. افتخار بزرگی بود که میزبان شما و میهمانان گرامی‌تان در قلب استانبول بودیم. حفظ عطر ناب زعفران ایرانی و خلق لحظاتی خاطره‌انگیز هدف قلبی تیم شمسه است. مشتاق دیدار مجدد شما در رویدادهای آخر هفته طبقه دوم هستیم!»
+          </div>
+
+          <div class="ai-hf-banner">
+            <span>مدل پردازش زبان طبیعی:</span>
+            <span class="ai-hf-tag" id="revHfModel">🤗 HooshvareLab/bert-fa-zwnj-base (ParsBERT)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: EMPTY SPACE MONETIZATION & CLUB YIELD PLANNER -->
+    <div id="aiTab-space" class="ai-tab-panel rev">
+      <div style="margin-bottom:12px;color:var(--muted);font-size:.84rem">👇 یک سناریوی رویداد را انتخاب کنید تا جهش بازدهی صندلی (RevPASH) و سود ناخالص ساعات خلوت سالن دوم شبیه‌سازی گردد:</div>
+      
+      <div class="ai-thumb-grid" id="spaceThumbGrid">
+        <div class="ai-thumb-card active" onclick="selectAiSpace('mafia', this)">
+          <div style="font-size:1.2rem;margin-bottom:4px">🎭</div>
+          <div class="ai-thumb-title">شب بازی مافیا و هوش هیجانی</div>
+          <div class="ai-thumb-sub">چهارشنبه‌ها ساعت ۱۶:۰۰ الی ۱۹:۳۰</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiSpace('poetry', this)">
+          <div style="font-size:1.2rem;margin-bottom:4px">🎶</div>
+          <div class="ai-thumb-title">شب شعر، موسیقی و تکنوازی تار</div>
+          <div class="ai-thumb-sub">پنجشنبه‌ها ساعت ۱۷:۰۰ الی ۲۰:۰۰</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiSpace('cowork', this)">
+          <div style="font-size:1.2rem;margin-bottom:4px">💻</div>
+          <div class="ai-thumb-title">فضای کار اشتراکی وب۳ و فریلنسر</div>
+          <div class="ai-thumb-sub">دوشنبه و سه‌شنبه ساعت ۱۳ تا ۱۶:۳۰</div>
+        </div>
+        <div class="ai-thumb-card" onclick="selectAiSpace('corporate', this)">
+          <div style="font-size:1.2rem;margin-bottom:4px">🎂</div>
+          <div class="ai-thumb-title">ضیافت شرکتی و تولد دربست</div>
+          <div class="ai-thumb-sub">جمعه و شنبه قبل از شام (رزرو کامل)</div>
+        </div>
+      </div>
+
+      <!-- Live Stage Output for Space -->
+      <div class="ai-stage" id="spaceStage">
+        <div class="ai-stage-media">
+          <img id="spaceImg" src="assets/img/meetup.jpg" alt="نمای سالن میتاپ">
+          <div class="ai-stage-top-badge" id="spaceRevpashBadge" style="background:#2ecc71;color:#0b150e">RevPASH: 56.5 TL/صندلی-ساعت</div>
+          <div class="ai-stage-tag" id="spaceProfitTag">💰 سود ناخالص ماهانه افزوده: +۸۵٬۰۰۰ لیر</div>
+        </div>
+
+        <div class="ai-stage-info">
+          <div class="ai-stage-head">
+            <h3 class="ai-stage-title" id="spaceTitle">شب بازی مافیا و اتاق سناریو (چهارشنبه‌ها)</h3>
+            <div class="ai-stage-sub" id="spaceSub">پر کردن افت تقاضای بعدازظهر با ایونت‌های گروهی با وفاداری بالا</div>
+          </div>
+
+          <div class="ai-metric-table">
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">📈 جهش بهره‌وری صندلی-ساعت Kimes RevPASH:</span>
+              <span class="ai-metric-val" id="spaceRevpash" style="color:#2ecc71">از ۱۲٫۰ لیر به ۵۶٫۵ لیر (+۳۷۰٪)</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">👥 تکمیل ظرفیت سالن دوم (Occupancy):</span>
+              <span class="ai-metric-val" id="spaceOccupancy">۴۵ نفر از ۵۰ صندلی (۹۰٪ پرشدگی)</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">☕ پکیج پذیرایی پیشنهادی هوش مصنوعی:</span>
+              <span class="ai-metric-val" id="spaceMenu">فینگر فود، چای زعفرانی، باقلوا استانبولی</span>
+            </div>
+            <div class="ai-metric-item">
+              <span class="ai-metric-name">🎙 امکانات فنی آماده‌به‌کار:</span>
+              <span class="ai-metric-val" id="spaceEquipment">میکروفون بیسیم، نمایشگر سناریو، نور دیمر</span>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+            <a href="#reserve" data-branch="taksim" class="btn btn--gold" style="font-size:.85rem;padding:9px 18px">رزرو سالن برای رویداد</a>
+            <a href="https://wa.me/905013252452?text=سلام،%20برای%20برگزاری%20رویداد%20در%20طبقه%20دوم%20میزبان%20استانبول%20پیام%20می‌دهم" target="_blank" rel="noopener" class="btn btn--dark" style="font-size:.85rem;padding:9px 18px">استعلام در واتساپ</a>
+          </div>
+
+          <div class="ai-hf-banner">
+            <span>الگوریتم درآمدزایی:</span>
+            <span class="ai-hf-tag">Kimes RevPASH & Dynamic Yield Optimization (Paper-01)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direct Jump to Admin Intelligence Panel -->
+    <div class="rev" style="margin-top:28px;text-align:center;padding:20px;background:rgba(210,154,90,0.06);border:1px dashed var(--line-copper);border-radius:4px">
+      <span style="color:var(--cream);font-size:.92rem;margin-inline-end:14px">می‌خواهید کنترل‌های کامل ادمین، تحلیل ۱۹ رستوران و ۱۰ مقاله ISI را ببینید؟</span>
+      <a href="intelligence.html" class="btn btn--gold" style="display:inline-flex;align-items:center;gap:6px">
+        <span>🚀 ورود به داشبورد کامل هوش تجاری و ادمین پنل</span>
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -1764,6 +2124,414 @@ document.addEventListener('DOMContentLoaded', function(){
   form.querySelectorAll('input,select,textarea').forEach(function(el){
     el.addEventListener('input', function(){ el.closest('.field').classList.remove('bad'); });
   });
+
+  
+/* ================= LIVE INTERACTIVE AI STUDIO SCRIPT ================= */
+var aiInteriorData = {
+  "copper-walnut": {
+    title: "مس تیره و گردوی دست‌ساز (شعبه استقلال)",
+    sub: "سبک مدرن ایرانی با هارمونی مس اکسیدنشده و گردوی آمریکایی",
+    img: "assets/img/interior.jpg",
+    tag: "📍 شعبه استقلال — فضای رستوران مدرن",
+    badge: "⚡ تحلیل آنی AI فعال",
+    bitner: "۹۶ / ۱۰۰",
+    light: "۲۷۰۰K (نور ملایم طلایی آرامش‌بخش)",
+    dwell: "۸۵ دقیقه (+۳۵٪ افزایش سفارش چای و دسر)",
+    acoustic: "۶۲ دسی‌بل (پنل‌های چوبی جاذب صدا)",
+    materials: "ورق مس چکش‌خورده، گردوی دست‌ساز، بازالت",
+    model: "🤗 Bitner Servicescape Aesthetic Scorer"
+  },
+  "isfahan-azure": {
+    title: "لاجورد، فیروزه و مقرنس اصفهان",
+    sub: "هنر اصیل معماری صفوی با آیینه‌کاری مدرن و بافت مخمل",
+    img: "assets/img/interior-isfahan.jpg",
+    tag: "📍 سالن تشریفات و شاه‌نشین — تم اصفهان",
+    badge: "💎 شاهکار معماری صفوی",
+    bitner: "۹۸ / ۱۰۰",
+    light: "۳۰۰۰K (نور طبیعی خنثی با تأکید بر انعکاس آیینه‌ها)",
+    dwell: "۹۵ دقیقه (مناسب ضیافت‌های خانوادگی و تشریفات)",
+    acoustic: "۶۵ دسی‌بل با فرش‌های دستباف عایق کف",
+    materials: "کاشی هفت‌رنگ لاجوردی، آیینه‌کاری اسلیمی، مخمل",
+    model: "🤗 Bitner Servicescape Aesthetic Scorer"
+  },
+  "ottoman-neoclassic": {
+    title: "نئوکلاسیک عثمانی و چرم زرشکی (شعبه کوکاتیپه)",
+    sub: "تلاقی معماری کاخ‌های بوسفور با مهمان‌نوازی شرقی",
+    img: "assets/img/interior2.jpg",
+    tag: "📍 شعبه کوکاتیپه — سالن ضیافت VIP",
+    badge: "👑 پرشکوه و دیپلماتیک",
+    bitner: "۹۴ / ۱۰۰",
+    light: "۲۵۰۰K (نور گرم اشرافی با لوستر کریستال)",
+    dwell: "۹۰ دقیقه (جلسات کاری و شام‌های رسمی)",
+    acoustic: "۵۸ دسی‌بل (عایق‌بندی کامل دیوارها و پرده‌ها)",
+    materials: "ستون‌های گچ‌بری باروک، چرم چسترفیلد زرشکی، برنز",
+    model: "🤗 Bitner Servicescape Aesthetic Scorer"
+  },
+  "meetup-community": {
+    title: "سالن میتاپ، رویدادها و اتاق بازی مافیا",
+    sub: "طبقه اختصاصی دورهمی‌های فرهنگی، شب بازی و جلسات وب۳",
+    img: "assets/img/meetup.jpg",
+    tag: "📍 طبقه دوم — سالن چندمنظوره ۶۰ نفره",
+    badge: "🎭 فضای اجتماعی تعاملی",
+    bitner: "۹۲ / ۱۰۰",
+    light: "۳۵۰۰K (نور قابل تنظیم با دیمرهای هوشمند)",
+    dwell: "۱۲۰ دقیقه (دوره‌های ۲ تا ۳ ساعته رویداد)",
+    acoustic: "سیستم صوتی مجهز به میکروفون بیسیم و باند JBL",
+    materials: "میزهای مدولار، صندلی‌های ارگونومیک، پرده پروجکشن",
+    model: "🤗 Kimes Yield & Servicescape Space Optimizer"
+  },
+  "cyber-speakeasy": {
+    title: "لانژ اسپیک‌ایزی و کلاب شبانه (Cyber Speakeasy)",
+    sub: "طراحی مدرن اتمسفریک برای ایونت‌های موسیقی و شعر معاصر",
+    img: "assets/img/interior-speakeasy.jpg",
+    tag: "📍 سالن کلاب — اتمسفر سینمایی امبر",
+    badge: "🎶 فضای رویدادهای زنده",
+    bitner: "۹۵ / ۱۰۰",
+    light: "۲۲۰۰K (نورپردازی سینمایی نئون امبر و کهربایی)",
+    dwell: "۱۰۵ دقیقه (پذیرایی با نوشیدنی‌های ارگانیک و تاپاس)",
+    acoustic: "سیستم صوتی های-فای با ساب‌ووفر و کنترل رزونانس",
+    materials: "دیوارهای اسلت چوبی، مبل‌های مخمل نوک‌مدادی، نئون",
+    model: "🤗 Bitner Servicescape Aesthetic Scorer"
+  }
+};
+
+var aiMenuData = {
+  "koobideh": {
+    title: "چلو کباب کوبیده زعفرانی مخصوص",
+    sub: "پرفروش‌ترین کباب سنتی با گوشت تازه گوسفندی و کره حیوانی",
+    img: "assets/img/dish-koobideh.jpg",
+    badge: "⭐️ ربع ستاره BCG (Star Item)",
+    tag: "💰 حاشیه سود ناخالص: ۷۱٫۸٪",
+    prices: "۳۹۰ لیر / ۱۱۰ لیر مواد اولیه",
+    margin: "+۲۸۰ لیر به ازای هر پرس",
+    mix: "۳۴٪ از کل فاکتورهای ناهار و شام",
+    saffron: "۹٫۹ از ۱۰ (زعفران ممتاز سرگل قائنات)",
+    prep: "۱۴ دقیقه روی منقل زغال طبیعی",
+    recom: "💡 <b>توصیه الگوریتم Kasavana & Smith:</b> پیشنهاد باندل با دوغ نعنایی و زیتون پرورده شمسه (+۴۵ لیر به سود ناخالص هر فاکتور اضافه می‌کند)."
+  },
+  "hero-platter": {
+    title: "سینی ضیافت مجلل شمسه (مخصوص ۴ تا ۵ نفر)",
+    sub: "پلاتر شاهانه شامل شیشلیک، برگ، کوبیده، جوجه و پلوهای زعفرانی",
+    img: "assets/img/hero-platter.jpg",
+    badge: "⭐️ لنگر سودآوری فوق‌العاده",
+    tag: "💰 حاشیه سود ناخالص: ۷۳٫۵٪",
+    prices: "۱,۸۵۰ لیر / ۴۹۰ لیر مواد اولیه",
+    margin: "+۱,۳۶۰ لیر سود خالص در هر سفارش",
+    mix: "۱۸٪ از سفارش‌های خانوادگی و تشریفات",
+    saffron: "۱۰ از ۱۰ (برنج دم‌سیاه با زرشک و خلال پسته)",
+    prep: "۲۲ دقیقه پخت و تزئین شاهانه",
+    recom: "💡 <b>توصیه هوش مصنوعی:</b> بهترین گزینه برای سفارش‌های کلاب، میتاپ و تولدها که نرخ اشتراک‌گذاری در اینستاگرام را ۳ برابر می‌کند."
+  },
+  "ghormeh": {
+    title: "خورشت قورمه‌سبزی جاافتاده تهرانی",
+    sub: "سبزی قرمه معطر خردشده، لیمو عمانی دست‌چین و گوشت تازه",
+    img: "assets/img/dish-ghormeh.jpg",
+    badge: "🐎 اسب بارکش (Plowhorse)",
+    tag: "💰 حاشیه سود ناخالص: ۷۳٫۴٪",
+    prices: "۳۲۰ لیر / ۸۵ لیر مواد اولیه",
+    margin: "+۲۳۵ لیر به ازای هر پرس",
+    mix: "۲۸٪ از سفارش‌های ناهار ظهر",
+    saffron: "۹٫۵ از ۱۰ (شنبلیله و لیمو عمانی اصیل)",
+    prep: "آماده سرو فوری در کمتر از ۵ دقیقه",
+    recom: "💡 <b>توصیه الگوریتم:</b> به دلیل سرعت بالای سرو، بهترین خوراک برای پر کردن میزها در ساعات اوج ناهار کاری تکسیم است."
+  },
+  "zereshk": {
+    title: "زرشک‌پلو با مرغ زعفرانی مجلسی",
+    sub: "ران یا سینه مرغ زعفرانی با سس غلیظ کره و زرشک پفکی",
+    img: "assets/img/dish-zereshk.jpg",
+    badge: "🐎 اسب بارکش پرطرفدار (Plowhorse)",
+    tag: "💰 حاشیه سود ناخالص: ۷۴٫۱٪",
+    prices: "۲۹۰ لیر / ۷۵ لیر مواد اولیه",
+    margin: "+۲۱۵ لیر به ازای هر پرس",
+    mix: "۲۴٪ از سفارش‌های توریست‌های خارجی",
+    saffron: "۹٫۸ از ۱۰ (سس طلایی زعفران خالص)",
+    prep: "۶ دقیقه سرو فوری",
+    recom: "💡 <b>توصیه هوش مصنوعی:</b> بیشترین نمره محبوبیت در میان توریست‌های ترکیه‌ای و اروپایی به دلیل طعم متعادل و بدون تندی."
+  },
+  "jujeh": {
+    title: "جوجه‌کباب با استخوان زعفرانی ارگانیک",
+    sub: "مرینیت ۲۴ ساعته در زعفران قائنات، پیاز و لیمو ترش طبیعی",
+    img: "assets/img/dish-jujeh.jpg",
+    badge: "⭐️ ستاره پایدار (Star Item)",
+    tag: "💰 حاشیه سود ناخالص: ۷۴٫۱٪",
+    prices: "۳۴۰ لیر / ۸۸ لیر مواد اولیه",
+    margin: "+۲۵۲ لیر به ازای هر پرس",
+    mix: "۲۱٪ از کل سفارش‌های کبابی",
+    saffron: "۹٫۷ از ۱۰ (عطر و طعم زعفرانی نافذ)",
+    prep: "۱۶ دقیقه روی منقل زغال",
+    recom: "💡 <b>توصیه هوش مصنوعی:</b> همراهی با ماست موسیر چکیده سنتی شمسه، ضریب رضایت بازخوردهای گوگل مپ را به ۹۹٪ می‌رساند."
+  }
+};
+
+var aiReviewData = {
+  "review-fa": {
+    author: "مهندس آرش کمالی (مقیم تکسیم)",
+    stars: "★★★★★",
+    text: "«دیشب به همراه مهمانان ترک‌زبانم رفتیم شعبه استقلال شمسه. واقعاً کوبیده و شیشلیک با کیفیت تهران بود و مهمان‌های ما از بوی زعفران قفقازی و رفتار صمیمی مدیر شگفت‌زده شدند. فضای طبقه بالا هم دنج و عالی بود.»",
+    polarity: "+۹۸٪ مثبت (Very Positive)",
+    aspects: "غذا: ۹۹٪ | سرویس: ۹۶٪ | فضا: ۹۴٪ | قیمت: ۹۲٪",
+    sla: "پاسخ در ۲ دقیقه (استاندارد: <۱۵ دقیقه)",
+    reply: "«درود و سپاس جناب کمالی عزیز. افتخار بزرگی بود که میزبان شما و میهمانان گرامی‌تان در قلب استانبول بودیم. حفظ عطر ناب زعفران ایرانی و خلق لحظاتی خاطره‌انگیز هدف قلبی تیم شمسه است. مشتاق دیدار مجدد شما در رویدادهای آخر هفته طبقه دوم هستیم!»",
+    model: "🤗 HooshvareLab/bert-fa-zwnj-base (ParsBERT)"
+  },
+  "review-tr": {
+    author: "Emre Demir (İstanbul / Yerel Rehber)",
+    stars: "★★★★★",
+    text: "«İstiklal Caddesi'nin kalabalığından sonra ikinci kattaki sakin ve otantik hava harika geldi. Kuzu kaburga ve zereşkli pilav mükemmel pişmişti. Personel çok kibar ve Türkçe biliyor. Kesinlikle Taksim'in en iyi İran lokantası.»",
+    polarity: "+۹۶٪ مثبت (Çok Olumlu)",
+    aspects: "Lezzet: 98% | Hizmet: 95% | Ortam: 94% | Fiyat: 90%",
+    sla: "پاسخ خودکار در ۳ دقیقه",
+    reply: "«Değerli Emre Bey, nazik ziyaretiniz ve bu güzel yorumunuz için çok teşekkür ederiz. İstiklal Caddesi'ndeki şubemizde sizleri ağırlamaktan ve lezzetlerimizi beğenmenizden büyük mutluluk duyduk. Bir sonraki İstanbul gezinizde yeniden görüşmek dileğiyle!»",
+    model: "🤗 dbmdz/bert-base-turkish-cased (BERTurk)"
+  },
+  "review-en": {
+    author: "Sarah Jenkins (London, UK / Food Blogger)",
+    stars: "★★★★★",
+    text: "«Outstanding culinary journey! The saffron rice melts in your mouth and the Ghormeh Sabzi has a depth of flavor that rivaled Michelin-starred Middle Eastern spots. The staff was incredibly welcoming and fluent in English. Don't miss this hidden gem!»",
+    polarity: "+۹۹٪ مثبت (Extremely Positive)",
+    aspects: "Food: 99% | Hospitality: 97% | Ambience: 93% | Value: 92%",
+    sla: "پاسخ خودکار در ۲ دقیقه",
+    reply: "«Dear Sarah, thank you so much for your wonderful words! It was an absolute delight hosting you in Istanbul. Our chefs take immense pride in crafting authentic Persian heritage dishes with pure saffron. Wishing you safe travels and looking forward to welcoming you back soon!»",
+    model: "🤗 yangheng/deberta-v3-base-absa (DeBERTa-v3)"
+  },
+  "review-triage": {
+    author: "رضا سلیمانی (گردشگر نوروزی)",
+    stars: "★★☆☆☆",
+    text: "«غذا و کباب واقعا خوشمزه بود اما جمعه شب ساعت ۹ با اینکه از قبل تلفنی گفته بودیم می‌آییم، ۲۰ دقیقه دم در معطل خالی شدن میز شدیم. سالن شلوغ بود و گارسون‌ها دیر سفارش گرفتند.»",
+    polarity: "-۴۲٪ نیازمند اقدام فوری (Crisis Triage Alert)",
+    aspects: "غذا: ۹۲٪ (عالی) | مدیریت صف و زمان: ۲۴٪ (نقطه درد بحرانی)",
+    sla: "هشدار فوری به تلگرام ادمین + پیش‌نویس زیر ۴ دقیقه",
+    reply: "«جناب سلیمانی گرامی، سلام و احترام. از بابت کیفیت غذا خرسندیم اما صمیمانه بابت معطلی ایجادشده در ساعات اوج شلوغی جمعه‌شب از شما پوزش می‌طلبیم. حق با شماست؛ سیستم نوبت‌دهی آنلاین را فعال کرده‌ایم تا دیگر چنین تاخیری تکرار نشود. خوشحال می‌شویم در سفر بعدی میهمان ویژه مدیریت شمسه باشید تا خاطره‌ای بی‌نقص برایتان رقم بزنیم (کد دلجویی: VIP-SHAMSE).»",
+    model: "🚨 Crisis SLA Triage & Auto-Resolution Engine"
+  }
+};
+
+var aiSpaceData = {
+  "mafia": {
+    title: "شب بازی مافیا و اتاق سناریو (چهارشنبه‌ها)",
+    sub: "پر کردن افت تقاضای بعدازظهر با ایونت‌های گروهی با وفاداری بالا",
+    img: "assets/img/meetup.jpg",
+    revpashBadge: "RevPASH: 56.5 TL/صندلی-ساعت",
+    profitTag: "💰 سود ناخالص ماهانه افزوده: +۸۵٬۰۰۰ لیر",
+    revpash: "از ۱۲٫۰ لیر به ۵۶٫۵ لیر (+۳۷۰٪ جهش درآمدی)",
+    occupancy: "۴۵ نفر از ۵۰ صندلی (۹۰٪ پرشدگی سالن دوم)",
+    menu: "فینگر فود ایرانی، چای زعفرانی، باقلوا استانبولی",
+    equipment: "میکروفون بیسیم، نمایشگر سناریو، نور دیمر"
+  },
+  "poetry": {
+    title: "شب شعر، موسیقی زنده و تکنوازی تار (پنجشنبه‌ها)",
+    sub: "هم‌نشینی با فرهنگ ایرانی و سازهای سنتی تار، سه‌تار و دف",
+    img: "assets/img/interior-speakeasy.jpg",
+    revpashBadge: "RevPASH: 62.0 TL/صندلی-ساعت",
+    profitTag: "💰 سود ناخالص ماهانه افزوده: +۹۵٬۰۰۰ لیر",
+    revpash: "از ۱۱٫۰ لیر به ۶۲٫۰ لیر (+۴۶۰٪ جهش درآمدی)",
+    occupancy: "۶۰ نفر تکمیل ظرفیت کامل سالن (۱۰۰٪ پرشدگی)",
+    menu: "چای و نبات هل‌دار، شله‌زرد مخصوص، سینی کباب میکس شمسه",
+    equipment: "سیستم صوتی استریو Hi-Fi، نور امبر، استیج نوازنده"
+  },
+  "cowork": {
+    title: "فضای کار اشتراکی وب۳ و فریلنسرها (دوشنبه و سه‌شنبه)",
+    sub: "میزبانی از کوچ‌نشینان دیجیتال (Digital Nomads) در ساعات آرام ظهر",
+    img: "assets/img/interior.jpg",
+    revpashBadge: "RevPASH: 42.0 TL/صندلی-ساعت",
+    profitTag: "💰 سود ناخالص ماهانه افزوده: +۶۲٬۰۰۰ لیر",
+    revpash: "از ۸٫۰ لیر به ۴۲٫۰ لیر (+۴۲۵٪ بهره‌وری ساعات خلوت)",
+    occupancy: "۳۵ نفر متخصص فناوری و توریست کاری",
+    menu: "قهوه دمی اسپشالتی، چای زعفرانی نامحدود، اسنک کوکو سبزی",
+    equipment: "اینترنت وای‌فای گیگابیتی پرسرعت، پریز برق روی هر میز"
+  },
+  "corporate": {
+    title: "ضیافت شرکتی و جشن تولد دربست (جمعه و شنبه)",
+    sub: "رزرو کامل سالن دوم با پذیرایی VIP و سفارشی‌سازی منو",
+    img: "assets/img/interior2.jpg",
+    revpashBadge: "RevPASH: 78.0 TL/صندلی-ساعت",
+    profitTag: "💰 سود ناخالص ماهانه افزوده: +۱۴۰٬۰۰۰ لیر",
+    revpash: "از ۱۵٫۰ لیر به ۷۸٫۰ لیر (حداکثر سقف بازدهی سالن)",
+    occupancy: "۵۵ تا ۶۰ نفر رزرو دربست سالن",
+    menu: "سینی‌های ضیافت پلاتر شمسه، دسر بستنی سنتی زعفرانی و فالوده",
+    equipment: "سیستم صوتی اختصاصی، پروژکتور پخش اسلاید و کلیپ"
+  }
+};
+
+function switchAiTab(tabKey, btn) {
+  var btns = document.querySelectorAll('.ai-tab-btn');
+  btns.forEach(function(b) { b.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+
+  var panels = document.querySelectorAll('.ai-tab-panel');
+  panels.forEach(function(p) { p.classList.remove('active'); });
+
+  var target = document.getElementById('aiTab-' + tabKey);
+  if (target) target.classList.add('active');
+}
+
+function selectAiInterior(key, card) {
+  var cards = document.querySelectorAll('#interiorThumbGrid .ai-thumb-card');
+  cards.forEach(function(c) { c.classList.remove('active'); });
+  if (card) card.classList.add('active');
+
+  var data = aiInteriorData[key];
+  if (!data) return;
+
+  var img = document.getElementById('intImg');
+  if (img) img.src = data.img;
+
+  var tag = document.getElementById('intTag');
+  if (tag) tag.textContent = data.tag;
+
+  var badge = document.getElementById('intBadge');
+  if (badge) badge.textContent = data.badge;
+
+  var title = document.getElementById('intTitle');
+  if (title) title.textContent = data.title;
+
+  var sub = document.getElementById('intSub');
+  if (sub) sub.textContent = data.sub;
+
+  var bitner = document.getElementById('intBitnerScore');
+  if (bitner) bitner.textContent = data.bitner;
+
+  var light = document.getElementById('intLight');
+  if (light) light.textContent = data.light;
+
+  var dwell = document.getElementById('intDwell');
+  if (dwell) dwell.textContent = data.dwell;
+
+  var acoustic = document.getElementById('intAcoustic');
+  if (acoustic) acoustic.textContent = data.acoustic;
+
+  var mat = document.getElementById('intMaterials');
+  if (mat) mat.textContent = data.materials;
+
+  var model = document.getElementById('intHfModel');
+  if (model) model.textContent = data.model;
+}
+
+function selectAiDish(key, card) {
+  var cards = document.querySelectorAll('#menuThumbGrid .ai-thumb-card');
+  cards.forEach(function(c) { c.classList.remove('active'); });
+  if (card) card.classList.add('active');
+
+  var data = aiMenuData[key];
+  if (!data) return;
+
+  var img = document.getElementById('dishImg');
+  if (img) img.src = data.img;
+
+  var badge = document.getElementById('dishBcgBadge');
+  if (badge) badge.textContent = data.badge;
+
+  var tag = document.getElementById('dishTag');
+  if (tag) tag.textContent = data.tag;
+
+  var title = document.getElementById('dishTitle');
+  if (title) title.textContent = data.title;
+
+  var sub = document.getElementById('dishSub');
+  if (sub) sub.textContent = data.sub;
+
+  var prices = document.getElementById('dishPrices');
+  if (prices) prices.textContent = data.prices;
+
+  var margin = document.getElementById('dishMargin');
+  if (margin) margin.textContent = data.margin;
+
+  var mix = document.getElementById('dishMix');
+  if (mix) mix.textContent = data.mix;
+
+  var saffron = document.getElementById('dishSaffron');
+  if (saffron) saffron.textContent = data.saffron;
+
+  var prep = document.getElementById('dishPrepTime');
+  if (prep) prep.textContent = data.prep;
+
+  var recom = document.getElementById('dishRecommendation');
+  if (recom) recom.innerHTML = data.recom;
+}
+
+function selectAiReview(key, card) {
+  var cards = document.querySelectorAll('#reviewThumbGrid .ai-thumb-card');
+  cards.forEach(function(c) { c.classList.remove('active'); });
+  if (card) card.classList.add('active');
+
+  var data = aiReviewData[key];
+  if (!data) return;
+
+  var auth = document.getElementById('revAuthor');
+  if (auth) auth.textContent = data.author;
+
+  var stars = document.getElementById('revStars');
+  if (stars) stars.textContent = data.stars;
+
+  var text = document.getElementById('revText');
+  if (text) text.textContent = data.text;
+
+  var pol = document.getElementById('revPolarity');
+  if (pol) {
+    pol.textContent = data.polarity;
+    pol.style.color = (data.polarity.indexOf('-') !== -1) ? '#e74c3c' : '#2ecc71';
+  }
+
+  var asp = document.getElementById('revAspects');
+  if (asp) asp.textContent = data.aspects;
+
+  var sla = document.getElementById('revSla');
+  if (sla) sla.textContent = data.sla;
+
+  var rep = document.getElementById('revAiReply');
+  if (rep) rep.textContent = data.reply;
+
+  var mod = document.getElementById('revHfModel');
+  if (mod) mod.textContent = data.model;
+}
+
+function selectAiSpace(key, card) {
+  var cards = document.querySelectorAll('#spaceThumbGrid .ai-thumb-card');
+  cards.forEach(function(c) { c.classList.remove('active'); });
+  if (card) card.classList.add('active');
+
+  var data = aiSpaceData[key];
+  if (!data) return;
+
+  var img = document.getElementById('spaceImg');
+  if (img) img.src = data.img;
+
+  var badge = document.getElementById('spaceRevpashBadge');
+  if (badge) badge.textContent = data.revpashBadge;
+
+  var ptag = document.getElementById('spaceProfitTag');
+  if (ptag) ptag.textContent = data.profitTag;
+
+  var title = document.getElementById('spaceTitle');
+  if (title) title.textContent = data.title;
+
+  var sub = document.getElementById('spaceSub');
+  if (sub) sub.textContent = data.sub;
+
+  var revp = document.getElementById('spaceRevpash');
+  if (revp) revp.textContent = data.revpash;
+
+  var occ = document.getElementById('spaceOccupancy');
+  if (occ) occ.textContent = data.occupancy;
+
+  var menu = document.getElementById('spaceMenu');
+  if (menu) menu.textContent = data.menu;
+
+  var eq = document.getElementById('spaceEquipment');
+  if (eq) eq.textContent = data.equipment;
+}
+
+function copyGeneratedAiReply() {
+  var rep = document.getElementById('revAiReply');
+  if (!rep) return;
+  var text = rep.textContent || rep.innerText;
+  navigator.clipboard.writeText(text).then(function() {
+    alert("✓ پاسخ هوش مصنوعی در حافظه کپی شد!");
+  }).catch(function() {
+    prompt("متن پاسخ هوش مصنوعی جهت کپی:", text);
+  });
+}
+
 
   /* ---- branch buttons: preselect the branch inside the reservation form ---- */
   document.querySelectorAll('[data-branch]').forEach(function(btn){
