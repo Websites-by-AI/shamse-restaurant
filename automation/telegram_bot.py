@@ -709,6 +709,7 @@ COMMANDS = [
     {"command": "campaign", "description": "تولید تبلیغ دورهمی و کلاب با AI"},
     {"command": "skills", "description": "⚡ ۱۰۰ مهارت هوش تجاری و گیت‌وی‌ها"},
     {"command": "franchise", "description": "🏢 هوش فرانچایز و تحلیل شعب"},
+    {"command": "gmaps", "description": "📍 هوش گوگل مپ و پیام همکاری B2B"},
     {"command": "intel", "description": "تحلیل رقبا و حاشیه سود منو"},
     {"command": "space", "description": "تحلیل درآمد فضای خالی رستوران"},
     {"command": "rsvp", "description": "ثبت‌نام رویدادها و میتاپ‌ها"},
