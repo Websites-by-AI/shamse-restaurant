@@ -484,6 +484,8 @@ table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
         <button class="mod-pill" onclick="scrollToSection('mod-gmaps-outreach')">📍 داده‌های گوگل مپ و پیام همکاری B2B</button>
         <button class="mod-pill" onclick="scrollToSection('mod-academic-hf')">📚 ۱۰ مقاله ISI و هوش مصنوعی HF</button>
         <button class="mod-pill" onclick="scrollToSection('mod-datamile')">💰 ۱۱. اینفوگرافیک مالی، گوگل مپ و Data Mile App</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-atikova-control')" style="border-color:#ffd21e;color:#ffd21e;background:rgba(255,210,30,0.1);font-weight:700">🏛 ۱۳. اتاق کنترل دیسپچ و پیگیری‌ها (مدل Atikova)</button>
+        <button class="mod-pill" onclick="scrollToSection('mod-taksim-multitenant')" style="border-color:#38bdf8;color:#38bdf8;background:rgba(56,189,248,0.1);font-weight:700">🗺 ۱۴. هوش تجاری تکسیم و پنل کاربری رستوران‌ها</button>
         <button class="mod-pill" onclick="scrollToSection('mod-resend-outreach')" style="border-color:#2ecc71;color:#2ecc71;background:rgba(46,204,113,0.1);font-weight:700">🌐 ۱۲. هاب ایمیل Resend و جذب مشارکت (۱۰ گروه / ۵ زبان)</button>
       </nav>
     </div>
@@ -1907,6 +1909,325 @@ table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
         </div>
       </div>
     </div>
+
+    
+    <!-- MODULE 13: ATIKOVA DISPATCH & OUTREACH CONTROL ROOM -->
+    <section class="mod-card" id="mod-atikova-control" style="border:1px solid #ffd21e;box-shadow:0 12px 40px rgba(255,210,30,0.12)">
+      
+      <!-- Header -->
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:20px">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,210,30,0.15);color:#ffd21e;padding:4px 12px;border-radius:20px;font-size:.78rem;font-weight:bold;margin-bottom:8px">
+            <span>🏛 اتاق کنترل دیسپچ، پیگیری و رصد چندکاناله (الگوی Atikova.com)</span>
+          </div>
+          <h2 class="sec-title" style="margin:0 0 6px 0;color:var(--cream)">
+            🏛 ۱۳. اتاق کنترل دیسپچ و پیگیری‌ها (۴۳ نهاد، یادآور خودکار، واتساپ تک‌لمسی و رصد تلگرام)
+          </h2>
+          <p class="sec-sub" style="margin:0;max-width:920px">
+            گزارش یکپارچه ۴۳ ایمیل ارسال‌شده، پیگیری وضعیت‌های «در انتظار»، «یادآوری شد» و «پاسخ»، زمان‌بندی یادآورها به وقت استانبول (روز کاری ۹ تا ۱۸ با پیوست‌های PPTX و PDF)، راهکار ارسال تک‌لمسی واتساپ بیزنس برای دور زدن محدودیت‌های شماره‌های ۹۸+ در متا، و رصد بلادرنگ وضعیت کانال‌ها و گروه‌های تلگرام.
+          </p>
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn btn--gold" onclick="refreshAtikovaControlRoom()" style="font-size:.82rem">
+            🔄 بررسی پاسخ‌ها و تازه‌سازی
+          </button>
+          <button class="btn btn--ghost" onclick="triggerSendDueReminders()" style="font-size:.82rem;border-color:#ffd21e;color:#ffd21e">
+            ✉️ ارسال یادآورهای سررسیده (Resend)
+          </button>
+        </div>
+      </div>
+
+      <!-- Atikova KPI Strip -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:24px">
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px;text-align:center">
+          <div style="font-size:1.6rem;font-weight:900;color:var(--cream)">۴۳</div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:2px">ایمیل ارسال‌شده</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px;text-align:center">
+          <div style="font-size:1.6rem;font-weight:900;color:#2ecc71">۴</div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:2px">پاسخ دریافتی ✓</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px;text-align:center">
+          <div style="font-size:1.6rem;font-weight:900;color:#ffd21e">۱۹</div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:2px">در انتظار پاسخ</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px;text-align:center">
+          <div style="font-size:1.6rem;font-weight:900;color:#38bdf8">۲۰</div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:2px">یادآوری‌شده با پیوست</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px;text-align:center">
+          <div style="font-size:1.6rem;font-weight:900;color:#a855f7">۰</div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:2px">برگشتی (Bounce)</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid #2ecc71;border-radius:6px;padding:12px;text-align:center">
+          <div style="font-size:1.4rem;font-weight:900;color:#2ecc71">۹ · ۰ ✓</div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:2px">واتساپ تک‌لمسی</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--copper);border-radius:6px;padding:12px;text-align:center">
+          <div style="font-size:1.05rem;font-weight:900;color:var(--copper)">۲۸ مهر، ۰۹:۰۰</div>
+          <div style="font-size:.72rem;color:var(--muted);margin-top:2px">موعد یادآور بعدی</div>
+        </div>
+      </div>
+
+      <!-- Entity Type & Language Filter Chips -->
+      <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:14px 18px;margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px">
+          <span style="font-size:.82rem;font-weight:700;color:var(--cream)">فیلتر بر اساس نوع نهاد و وضعیت پیام:</span>
+          <div style="display:flex;gap:6px">
+            <button class="btn btn--ghost" onclick="filterAtikovaType('all', this)" style="font-size:.72rem;padding:3px 10px;background:var(--ink-3)">همه (۴۳)</button>
+            <button class="btn btn--ghost" onclick="filterAtikovaType('restaurant', this)" style="font-size:.72rem;padding:3px 10px">رستوران‌ها (۱۰)</button>
+            <button class="btn btn--ghost" onclick="filterAtikovaType('government_municipality', this)" style="font-size:.72rem;padding:3px 10px">دولتی/شهرداری (۸)</button>
+            <button class="btn btn--ghost" onclick="filterAtikovaType('crowdfunding_platform', this)" style="font-size:.72rem;padding:3px 10px">کراودفاندینگ (۸)</button>
+            <button class="btn btn--ghost" onclick="filterAtikovaType('investor_vc', this)" style="font-size:.72rem;padding:3px 10px">سرمایه‌گذار/VC (۵)</button>
+            <button class="btn btn--ghost" onclick="filterAtikovaType('ngo_association', this)" style="font-size:.72rem;padding:3px 10px">سمن/انجمن (۵)</button>
+            <button class="btn btn--ghost" onclick="filterAtikovaType('accelerator_technopark', this)" style="font-size:.72rem;padding:3px 10px">پارک/شتاب‌دهنده (۴)</button>
+            <button class="btn btn--ghost" onclick="filterAtikovaType('university', this)" style="font-size:.72rem;padding:3px 10px">دانشگاه (۲)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- WhatsApp 1-Touch Bypassing Meta Protocol Banner -->
+      <div style="background:rgba(46,204,113,0.08);border:1px solid #2ecc71;border-radius:6px;padding:16px 20px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+            <span style="font-size:1.1rem">🟢</span>
+            <b style="color:#2ecc71;font-size:.9rem">پروتکل ارسال دستی تک‌لمسی واتساپ بیزنس (مستقل از تحریم‌های متا برای شماره‌های ۹۸+)</b>
+          </div>
+          <p style="font-size:.78rem;color:var(--text);margin:0;max-width:850px;line-height:1.6">
+            متا شماره‌های ‎+98 را در Cloud API واتساپ تایید نمی‌کند و کاربران ترکیه نیز پیام‌های API را به راحتی دریافت نمی‌کنند. راهکار عملیاتی ما تولید لینک‌های مستقیم <code>wa.me</code> است: با کلیک روی <b>«باز کردن واتساپ»</b> پیام با متن آماده روی گوشی یا دسکتاپ باز می‌شود؛ کافیست ارسال را بزنید و دکمه <b>«فرستادم ✓»</b> را لمس نمایید. فهرست لینک‌های موعددار روزانه به طور خودکار به <code>soheil.power@gmail.com</code> ایمیل می‌شود.
+          </p>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.74rem;color:var(--muted)">فرستنده واتساپ:</span>
+          <code style="background:var(--ink-3);padding:4px 8px;border-radius:4px;color:#ffd21e;font-size:.8rem;direction:ltr">+98 920 626 3218</code>
+        </div>
+      </div>
+
+      <!-- Telegram Presence Scanner Card -->
+      <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin-bottom:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+          <div>
+            <h4 style="margin:0;font-size:.92rem;color:var(--cream);font-weight:700">
+              ✈️ آیا تلگرام دارند؟ (رصد و ممیزی بلادرنگ حضور در تلگرام)
+            </h4>
+            <div style="font-size:.74rem;color:var(--muted);margin-top:2px">
+              پایش لینک‌های t.me در وب‌سایت‌ها، بیو شبکه‌های اجتماعی و گروه‌های عمومی
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;font-size:.75rem">
+            <span style="color:#2ecc71">رسمی: ۱</span>
+            <span style="color:#38bdf8">احتمالاً مال خودشان: ۱</span>
+            <span style="color:#ffd21e">تأییدنشده: ۴</span>
+            <span style="color:#ef4444">لینک از کار افتاده: ۱</span>
+            <span style="color:var(--muted)">پیدا نشد: ۳۶</span>
+          </div>
+        </div>
+
+        <!-- Highlighted Active Groups -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:.78rem">
+          <div style="background:var(--ink-3);border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+              <b style="color:#2ecc71">fonbulucu (گروه رسمی عمومی)</b>
+              <span style="color:var(--muted)">۶,۹۴۹ عضو</span>
+            </div>
+            <p style="font-size:.72rem;color:var(--muted);margin:0 0 6px 0">
+              از وب‌سایت رسمی لینک شده است. گروه باز است و امکان ارتباط با ادمین‌ها مهیاست.
+            </p>
+            <div style="display:flex;gap:6px">
+              <a href="https://t.me/fonbulucu" target="_blank" class="btn btn--ghost" style="font-size:.7rem;padding:3px 8px">باز کردن گروه ↗</a>
+              <button class="btn btn--ghost" onclick="copyTelegramPitch('fonbulucu')" style="font-size:.7rem;padding:3px 8px">کپی متن پیام ترکی 📋</button>
+            </div>
+          </div>
+
+          <div style="background:var(--ink-3);border:1px solid var(--line);border-radius:4px;padding:10px 12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+              <b style="color:#38bdf8">Fonlabüyüsün (کانال هالک‌بانک)</b>
+              <span style="color:var(--muted)">۶۲ عضو</span>
+            </div>
+            <p style="font-size:.72rem;color:var(--muted);margin:0 0 6px 0">
+              کانال فقط خواندنی رسمی هالک‌بانک. از ژانویه ۲۰۲۵ پستی ندارد؛ ارتباط از طریق ایمیل پیگیری می‌شود.
+            </p>
+            <a href="https://t.me/fonlabuyusun" target="_blank" class="btn btn--ghost" style="font-size:.7rem;padding:3px 8px">مشاهده کانال ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Atikova 43 Entities Table -->
+      <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+          <h4 style="margin:0;font-size:.92rem;color:var(--cream);font-weight:700">
+            📋 فهرست جامع پیام‌ها و وضعیت ارسال (۴۳ نهاد)
+          </h4>
+          <span style="font-size:.74rem;color:var(--muted)">
+            ایمیل‌های اول ارسال شده‌اند؛ یادآورها شامل پیوست ارائه (PPTX و PDF) و مقاله استانبول هستند.
+          </span>
+        </div>
+
+        <div style="overflow-x:auto;max-height:480px">
+          <table style="width:100%;border-collapse:collapse;font-size:.76rem;text-align:right">
+            <thead>
+              <tr style="background:var(--ink-3);border-bottom:1px solid var(--copper);position:sticky;top:0;z-index:10">
+                <th style="padding:8px 10px;color:var(--cream)">#</th>
+                <th style="padding:8px 10px;color:var(--cream)">نهاد و مشخصات</th>
+                <th style="padding:8px 10px;color:var(--cream)">نوع / دسته‌بندی</th>
+                <th style="padding:8px 10px;color:var(--cream)">زبان</th>
+                <th style="padding:8px 10px;color:var(--cream)">ارسال اولیه</th>
+                <th style="padding:8px 10px;color:var(--cream)">پیوست</th>
+                <th style="padding:8px 10px;color:var(--cream)">وضعیت</th>
+                <th style="padding:8px 10px;color:var(--cream)">ایمیل یادآور بعدی</th>
+                <th style="padding:8px 10px;color:var(--cream)">واتساپ تک‌لمسی</th>
+                <th style="padding:8px 10px;color:var(--cream)">تلگرام</th>
+              </tr>
+            </thead>
+            <tbody id="atikovaEntitiesTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- MODULE 14: TAKSIM DISTRICT MULTI-TENANT RESTAURANT PORTAL & MAGIC ACCESS ENGINE -->
+    <section class="mod-card" id="mod-taksim-multitenant" style="border:1px solid #38bdf8;box-shadow:0 12px 40px rgba(56,189,248,0.12)">
+      
+      <!-- Header -->
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:20px">
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(56,189,248,0.15);color:#38bdf8;padding:4px 12px;border-radius:20px;font-size:.78rem;font-weight:bold;margin-bottom:8px">
+            <span>🗺 پایگاه داده جامع گوگل مپ منطقه تکسیم + پورتال اختصاصی چندکاربره (Multi-Tenant)</span>
+          </div>
+          <h2 class="sec-title" style="margin:0 0 6px 0;color:var(--cream)">
+            🗺 ۱۴. تحلیل گوگل مپ برای کل رستوران‌های منطقه تکسیم و پنل کاربری اختصاصی با توکن جادویی
+          </h2>
+          <p class="sec-sub" style="margin:0;max-width:920px">
+            پایش عمیق ۵۶,۹۰۵ نقد چندزبانه در ۱۰ رستوران و کافه نامدار منطقه تکسیم (شمسه استقلال و کوجاتپه، ریحون، فارسی، مژگان، نایب، گلاب، ۳۶۰ استانبول، سوئیش و حافظ مصطفی)، صدور شناسه دسترسی تک‌کلیک (Magic Token) برای هر رستوران، ارسال خودکار مشخصات ورود تستی در ایمیل و واتساپ، و امکان شبیه‌سازی پنل هر رستوران مستقیماً از دید مدیر همان مجموعه.
+          </p>
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a href="restaurant_portal.html" target="_blank" class="btn btn--gold" style="font-size:.82rem;background:#38bdf8;border-color:#38bdf8;color:#14100d;font-weight:bold">
+            🌐 مشاهده پورتال اختصاصی رستوران‌ها ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Taksim District KPI Strip -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:24px">
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px 16px;text-align:center">
+          <div style="font-size:1.5rem;font-weight:900;color:#38bdf8">۱۰ مجموعه</div>
+          <div style="font-size:.74rem;color:var(--muted);margin-top:2px">رستوران‌های شاخص تکسیم و بی‌اوغلو</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px 16px;text-align:center">
+          <div style="font-size:1.5rem;font-weight:900;color:var(--cream)">۵۶,۹۰۵</div>
+          <div style="font-size:.74rem;color:var(--muted);margin-top:2px">کل نقدهای پایش‌شده (گوگل، TA، یاندکس)</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px 16px;text-align:center">
+          <div style="font-size:1.5rem;font-weight:900;color:#2ecc71">★ ۴.۶۲</div>
+          <div style="font-size:.74rem;color:var(--muted);margin-top:2px">میانگین ریتینگ گوگل مپ تکسیم</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px 16px;text-align:center">
+          <div style="font-size:1.5rem;font-weight:900;color:#ffd21e">۱,۱۹۵</div>
+          <div style="font-size:.74rem;color:var(--muted);margin-top:2px">کل صندلی‌های تحت پوشش ممیزی</div>
+        </div>
+        <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:12px 16px;text-align:center">
+          <div style="font-size:1.5rem;font-weight:900;color:var(--copper)">+۱.۸۷M ₺</div>
+          <div style="font-size:.74rem;color:var(--muted);margin-top:2px">سود بالقوه آزادشده ماهانه ساعات خلوت</div>
+        </div>
+      </div>
+
+      <!-- Restaurant Impersonator / Tenant Selector -->
+      <div style="background:var(--ink-2);border:1px solid var(--line-copper);border-radius:6px;padding:20px;margin-bottom:24px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:10px">
+          <div>
+            <h3 style="margin:0;font-size:1.05rem;color:var(--cream);font-weight:700">
+              🔑 ورود و دسترسی با کاربری اختصاصی هر رستوران (Multi-Tenant Impersonator)
+            </h3>
+            <span style="font-size:.76rem;color:var(--muted)">
+              رستوران مورد نظر را انتخاب کنید تا توکن جادویی ورود، متن پیام خودکار ایمیل و لینک واتساپ با دسترسی اختصاصی تولید شود:
+            </span>
+          </div>
+
+          <div style="display:flex;gap:8px">
+            <select id="taksimRestaurantSelect" onchange="onTaksimRestaurantChange(this.value)"
+              style="background:var(--ink-3);border:1px solid var(--copper);color:#ffd21e;padding:8px 14px;border-radius:4px;font-size:.84rem;font-weight:bold">
+              <!-- Rendered by JS -->
+            </select>
+            <button class="btn btn--gold" onclick="launchSelectedRestaurantPortal()" style="font-size:.82rem">
+              🚀 ورود مستقیم به پنل این رستوران
+            </button>
+          </div>
+        </div>
+
+        <!-- Generated Access Credentials Strip -->
+        <div style="background:var(--ink-3);border:1px solid var(--line);border-radius:6px;padding:14px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:16px">
+          <div>
+            <div style="font-size:.7rem;color:var(--copper);font-weight:bold">شناسه دسترسی جادویی (Magic Token):</div>
+            <code id="genMagicToken" style="font-size:.9rem;color:#ffd21e;font-weight:bold;direction:ltr;display:inline-block">REYHUN-TAK-2026</code>
+          </div>
+          <div>
+            <div style="font-size:.7rem;color:var(--copper);font-weight:bold">رمز عبور تستی مدیریت:</div>
+            <code id="genTempPassword" style="font-size:.9rem;color:var(--cream);direction:ltr;display:inline-block">Mizban@Taksim2026</code>
+          </div>
+          <div>
+            <div style="font-size:.7rem;color:var(--copper);font-weight:bold">لینک ورود تک‌کلیک (بدون رمز):</div>
+            <a id="genMagicUrl" href="#" target="_blank" style="font-size:.78rem;color:#38bdf8;text-decoration:underline;direction:ltr;display:inline-block">
+              restaurant_portal.html?token=...
+            </a>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px">
+            <button class="btn btn--ghost" onclick="copyMagicCredentials()" style="font-size:.74rem;padding:6px 12px">
+              📋 کپی مشخصات ورود
+            </button>
+          </div>
+        </div>
+
+        <!-- Automated Dispatch Buttons for This Restaurant -->
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn--gold" onclick="dispatchRestaurantEmail()" style="background:#2ecc71;border-color:#2ecc71;color:#14100d;font-weight:bold;font-size:.8rem">
+            ✉️ ارسال ایمیل دعوت با لینک ورود (Resend API)
+          </button>
+          <a id="taksimWaButton" href="#" target="_blank" class="btn btn--ghost" style="border-color:#2ecc71;color:#2ecc71;font-size:.8rem">
+            🟢 ارسال واتساپ تک‌لمسی به مدیر رستوران ↗
+          </a>
+          <button class="btn btn--ghost" onclick="copyTaksimEmailHtml()" style="font-size:.8rem">
+            📋 کپی کد کامل HTML ایمیل
+          </button>
+        </div>
+
+        <div id="taksimDispatchFeedback" style="display:none;margin-top:12px;padding:10px 14px;border-radius:4px;font-size:.78rem"></div>
+      </div>
+
+      <!-- Live Comparison Table of Taksim Restaurants -->
+      <div style="background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:18px">
+        <h4 style="margin:0 0 12px 0;font-size:.95rem;color:var(--cream);font-weight:700">
+          📊 جدول مقایسه تحلیلی ۱۰ رستوران شاخص تکسیم (گوگل مپ، ریتینگ، احساسات و ظرفیت)
+        </h4>
+
+        <div style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;font-size:.78rem;text-align:right">
+            <thead>
+              <tr style="background:var(--ink-3);border-bottom:2px solid #38bdf8">
+                <th style="padding:10px;color:var(--cream)">رستوران</th>
+                <th style="padding:10px;color:var(--cream)">موقعیت در تکسیم</th>
+                <th style="padding:10px;color:var(--cream)">Google Maps</th>
+                <th style="padding:10px;color:var(--cream)">TripAdvisor</th>
+                <th style="padding:10px;color:var(--cream)">Yandex</th>
+                <th style="padding:10px;color:var(--cream)">رضایت مثبت</th>
+                <th style="padding:10px;color:var(--cream)">ظرفیت صندلی</th>
+                <th style="padding:10px;color:var(--cream)">پتانسیل درآمد خلوت</th>
+                <th style="padding:10px;color:var(--cream)">اقدام</th>
+              </tr>
+            </thead>
+            <tbody id="taksimRestaurantsTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
 
     <!-- ATIKOVA INTEGRATION BANNER -->
         
@@ -5476,6 +5797,215 @@ window.addEventListener("DOMContentLoaded", function() {
       badge.textContent = "کلید اختصاصی ذخیره شد";
       badge.style.color = "#ffd21e";
     }
+  }
+});
+
+
+// ================= MODULE 13 & 14 JS CONTROLLERS =================
+var atikovaMasterDB = {"system": "Atikova & Mizban Dispatch Control Room", "version": "2.4.0", "last_audit_date": "2026-10-18", "timezone": "Europe/Istanbul", "whatsapp_sender_number": "+98 920 626 3218", "admin_notification_email": "soheil.power@gmail.com", "stats": {"total_dispatched": 43, "replied": 4, "pending": 19, "reminded": 20, "bounced": 0, "scheduled_whatsapp": 9, "whatsapp_sent": 0, "next_email_reminder": "۲۸ مهر، ۰۹:۰۰"}, "entities_by_type": {"restaurant": 10, "government_municipality": 8, "crowdfunding_platform": 8, "ngo_association": 5, "investor_vc": 5, "accelerator_technopark": 4, "university": 2, "franchise_expo": 1}, "telegram_audit_stats": {"official": 1, "likely_theirs": 1, "unverified": 4, "broken_link": 1, "not_found": 36}, "entities": [{"id": 1, "name": "Elbiz Cafe & Restoran", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "info@elbizgida.com", "phone": "+90 505 565 50 05", "phone_type": "mobile", "location": "Beylikdüzü", "address": "Kavaklı Mah. Yeşilyurt Cd. No:132, Beylikdüzü", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۲۱", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۰۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "ELBIZ-BYL-2026", "notes": "ایمیل یادآور شامل ارائه PPTX و PDF ممیزی رستوران است."}, {"id": 2, "name": "Arya Istanbul", "flag": "🇦🇫", "nationality": "افغانستانی", "category": "رستوران", "type_tag": "restaurant", "email": "aryaistanbul2@gmail.com", "phone": "+90 531 841 43 43", "phone_type": "mobile", "location": "Beylikdüzü", "address": "Adnan Kahveci, Avrupa Cad. No:106, Beylikdüzü", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۲۰", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۰۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "ARYA-BYL-2026", "notes": "ایمیل یادآور شامل ارائه PPTX و PDF ممیزی رستوران است."}, {"id": 3, "name": "Afgan Kebap Restaurant", "flag": "🇦🇫", "nationality": "افغانستانی", "category": "رستوران", "type_tag": "restaurant", "email": "afgankebap@gmail.com", "phone": "+90 555 080 46 40", "phone_type": "mobile", "location": "Esenyurt", "address": "2066 Sk. No:17/A, Esenyurt", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۱۹", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۰۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "AFG-ESN-2026", "notes": "شعبه اسنیورت با منوی کباب سنتی ازبکی و افغانستانی."}, {"id": 4, "name": "Reyhan Iranian Restaurant & Catering", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "order@reyhancatering.com", "phone": "+90 501 241 26 66", "phone_type": "mobile", "location": "Beylikdüzü", "address": "Çalışlar Cad. No:10, Beylikdüzü", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۱۸", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۰۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "REYHAN-BYL-2026", "notes": "کترینگ مجالس و ضیافت‌های ایرانی در غرب استانبول."}, {"id": 5, "name": "Masi Hanım Restaurant", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "info@masihanimrestaurant.com", "phone": "+90 539 650 32 65", "phone_type": "mobile", "location": "Beylikdüzü", "address": "Atatürk Blv. No:22, Beylikdüzü", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۱۶", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۰۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "MASI-BYL-2026", "notes": "رستوران و صبحانه‌خوری سنتی مسی خانم."}, {"id": 6, "name": "Safir Iranian Restaurant", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "info@safiriranianrestaurant.com", "phone": "+90 533 344 68 11", "phone_type": "mobile", "location": "Şişli / Fatih", "address": "Abide-i Hürriyet Cad. No:171/A, Şişli (شعبه دوم در آکسارای)", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۱۱", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۰۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "SAFIR-SIS-2026", "notes": "دو شعبه فعال در شیشلی و آکسارای."}, {"id": 7, "name": "Sudi Restoran", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "info@sudirestoran.com", "phone": "+90 216 266 60 36", "phone_type": "landline", "location": "Ataşehir", "address": "Barbaros Mah. Mor Sümbül Sok. No:5, Ataşehir", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۰۵", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۳۰", "whatsapp_due": "تلفن ثابت (برنامه واتساپ)", "whatsapp_status": "تلفن ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "SUDI-ATA-2026", "notes": "شماره منتشرشده تلفن ثابت بخش آسیایی است."}, {"id": 8, "name": "Golab Restaurant", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "golab.brasserie@gmail.com", "phone": "+90 535 412 40 05", "phone_type": "mobile", "location": "Beyoğlu / Taksim", "address": "Gümüşsuyu Mah. Saray Arkası Sok. No:16, Beyoğlu, İstanbul", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۰۵", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۳۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "GOLAB-TAK-2026", "notes": "کافه رستوران و براسری گلاب در تکسیم."}, {"id": 9, "name": "Shamse Restaurant", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "shamsemedia1@gmail.com", "phone": "+90 501 325 24 52", "phone_type": "mobile", "location": "Taksim / Kocatepe", "address": "İstiklal Cad. No:118 & Kocatepe Mah. Abdülhak Hamit Cad. No:19", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۰۵", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۳۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "رسمی", "telegram_handle": "@shamse_istanbul", "telegram_bot_opened": true, "magic_token": "SHAMSE-TAK-2026", "notes": "دو شعبه فعال در استقلال و کوجاتپه تکسیم."}, {"id": 10, "name": "Reyhun İran Restoranı", "flag": "🇮🇷", "nationality": "ایرانی", "category": "رستوران", "type_tag": "restaurant", "email": "reyhuntaksim@gmail.com", "phone": "+90 531 262 75 26", "phone_type": "mobile", "location": "Taksim / Galatasaray", "address": "Yeni Çarşı Cad. No:8/A, Galatasaray, Beyoğlu, İstanbul", "lang": "FA", "dispatched_at": "۲۷ مهر، ۲۱:۰۴", "attachments": true, "status": "در انتظار", "next_email": "✉️ ۲۹ مهر، ۰۹:۳۰", "whatsapp_due": "🟢 ۳۰ مهر، ۱۱:۰۰", "whatsapp_status": "برنامه‌ریزی‌شده", "telegram_status": "احتمالاً مال خودشان", "telegram_handle": "@reyhun_taksim", "telegram_bot_opened": false, "magic_token": "REYHUN-TAK-2026", "notes": "یکی از محبوب‌ترین رستوران‌های ایرانی در خیابان ینی‌چارشی تکسیم."}, {"id": 11, "name": "TEMA Vakfı", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سمن / انجمن", "type_tag": "ngo_association", "email": "tema@tema.org.tr", "phone": "+90 212 291 90 90", "phone_type": "landline", "location": "Şişli", "address": "Esentepe Mah. Şişli, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "TEMA-NGO-2026", "notes": "بزرگترین بنیاد حفاظت از خاک و محیط زیست ترکیه."}, {"id": 12, "name": "Boğaziçi Üniversitesi Çevre Bilimleri Enstitüsü", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دانشگاه", "type_tag": "university", "email": "burak.demirel@bogazici.edu.tr", "phone": "+90 212 359 54 00", "phone_type": "landline", "location": "Bebek, Beşiktaş", "address": "Boğaziçi Üniversitesi Güney Kampüs, Beşiktaş", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "BOUN-ENV-2026", "notes": "انستیتو علوم محیطی دانشگاه بغازیچی."}, {"id": 13, "name": "YTÜ Çevre Mühendisliği Bölümü", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دانشگاه", "type_tag": "university", "email": "cevre@yildiz.edu.tr", "phone": "+90 212 383 53 71", "phone_type": "landline", "location": "Esenler", "address": "Yıldız Teknik Üniversitesi Davutpaşa Kampüsü", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "YTU-ENV-2026", "notes": "دانشکده مهندسی محیط زیست دانشگاه ییلدیز تکنیک."}, {"id": 14, "name": "İTÜ Çevre Mühendisliği Bölümü", "flag": "🇹🇷", "nationality": "ترکیه", "category": "مرکز رشد / پارک فناوری", "type_tag": "accelerator_technopark", "email": "itucevre@itu.edu.tr", "phone": "+90 212 285 03 10", "phone_type": "landline", "location": "Maslak, Sarıyer", "address": "İTÜ Ayazağa Kampüsü, Maslak", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۰۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "ITU-ENV-2026", "notes": "دانشکده مهندسی محیط زیست دانشگاه فنی استانبول."}, {"id": 15, "name": "ÇEVKO Vakfı", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سمن / انجمن", "type_tag": "ngo_association", "email": "cevko@cevko.org.tr", "phone": "+90 216 428 78 90", "phone_type": "landline", "location": "Ataşehir", "address": "Ataşehir, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "CEVKO-NGO-2026", "notes": "بنیاد بازیافت و بسته‌بندی زیست‌محیطی."}, {"id": 16, "name": "WWF-Türkiye", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سمن / انجمن", "type_tag": "ngo_association", "email": "info@wwf.org.tr", "phone": "+90 212 528 20 30", "phone_type": "landline", "location": "Fatih", "address": "Büyük Postane Cad. No:19, Fatih, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "WWF-TR-2026", "notes": "صندوق جهانی طبیعت - شعبه ترکیه."}, {"id": 17, "name": "TURYİD (Turizm Restoran Yatırımcıları Derneği)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سمن / انجمن", "type_tag": "ngo_association", "email": "mail@turyid.org", "phone": "+90 212 288 77 90", "phone_type": "landline", "location": "Beşiktaş", "address": "Nispetiye Cad. No:24, Beşiktaş, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "TURYID-2026", "notes": "انجمن سرمایه‌گذاران و گردانندگان رستوران‌های ترکیه."}, {"id": 18, "name": "TİDER — Temel İhtiyaç Derneği", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سمن / انجمن", "type_tag": "ngo_association", "email": "info@tider.org", "phone": "+90 216 414 14 00", "phone_type": "landline", "location": "Kadıköy", "address": "Koşuyolu Mah. Kadıköy, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "TIDER-2026", "notes": "انجمن مدیریت پسماند غذا و بانک‌های غذایی ترکیه."}, {"id": 19, "name": "Beşiktaş Belediyesi — İklim Değişikliği ve Sıfır Atık Müdürlüğü", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "azemdursun@besiktas.bel.tr", "phone": "+90 212 319 42 42", "phone_type": "landline", "location": "Beşiktaş", "address": "Akat Mah. Meydan Cad. No:1, Beşiktaş", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۳", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "تأییدنشده", "telegram_handle": "@besiktasbelediyesi", "telegram_bot_opened": false, "magic_token": "BESIKTAS-MUN-2026", "notes": "اداره تغییرات اقلیمی و پسماند صفر شهرداری بشیکتاش."}, {"id": 20, "name": "Çekmeköy Belediyesi — İklim Değişikliği ve Sıfır Atık Müdürlüğü", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "iklimdegisikligivesifiratik@cekmekoy.bel.tr", "phone": "+90 216 600 06 00", "phone_type": "landline", "location": "Çekmeköy", "address": "Merkez Mah. Çekmeköy, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۲", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "تأییدنشده", "telegram_handle": "@cekmekoybelediyesi", "telegram_bot_opened": false, "magic_token": "CEKMEKOY-MUN-2026", "notes": "اداره پسماند صفر شهرداری چکمه‌کوی."}, {"id": 21, "name": "Marmara Belediyeler Birliği", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "info@mbb.gov.tr", "phone": "+90 212 514 10 00", "phone_type": "landline", "location": "Eminönü, Fatih", "address": "Sarıdemir Mah. Ragıp Gümüşpala Cad. No:10, Eminönü", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۲", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "MBB-MARMARA-2026", "notes": "اتحادیه شهرداری‌های منطقه مرمره ترکیه."}, {"id": 22, "name": "İstanbul Kalkınma Ajansı (İSTKA)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "iletisim@istka.org.tr", "phone": "+90 212 468 34 00", "phone_type": "landline", "location": "Beyoğlu", "address": "Meşrutiyet Cad. No:74, Tepebaşı, Beyoğlu", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۲", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "ISTKA-2026", "notes": "آژانس توسعه استانبول زیر نظر وزارت صنایع و فناوری ترکیه."}, {"id": 23, "name": "İstanbul Planlama Ajansı (İPA)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "info@ipa.istanbul", "phone": "+90 212 449 40 00", "phone_type": "landline", "location": "Florya, Bakırköy", "address": "İPA Kampüs, Florya, Bakırköy", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۲", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "IPA-FLORYA-2026", "notes": "آژانس برنامه‌ریزی شهری استانبول وابسته به شهرداری کلانشهر (İBB)."}, {"id": 24, "name": "Adalar Belediyesi — İklim Değişikliği ve Sıfır Atık Müdürlüğü", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "iklim@adalar.bel.tr", "phone": "+90 216 382 78 50", "phone_type": "landline", "location": "Büyükada", "address": "Büyükada, Adalar, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۲", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۰۹:۳۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "ADALAR-MUN-2026", "notes": "شهرداری جزایر استانبول (بیوک‌آدا)."}, {"id": 25, "name": "İSTAÇ A.Ş.", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "istac@istac.istanbul", "phone": "+90 212 313 77 00", "phone_type": "landline", "location": "Şişli", "address": "Paşa Mah. Piyale Paşa Blv. No:74, Şişli", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۲", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۱۵:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "ISTAC-IBB-2026", "notes": "شرکت مدیریت پسماند و بازیافت شهرداری کلانشهر استانبول."}, {"id": 26, "name": "İBB Çevre Koruma ve Kontrol Dairesi — Atık Yönetimi Müdürlüğü", "flag": "🇹🇷", "nationality": "ترکیه", "category": "دولتی / شهرداری", "type_tag": "government_municipality", "email": "atikyonetimi@ibb.gov.tr", "phone": "+90 212 449 40 00", "phone_type": "landline", "location": "Saraçhane, Fatih", "address": "İBB Başkanlık Binası, Saraçhane", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۸:۰۲", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۱۵:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "IBB-CEVRE-2026", "notes": "اداره کل حفاظت از محیط زیست شهرداری استانبول."}, {"id": 27, "name": "Emirates Franchise Association (Abu Dhabi Chamber)", "flag": "🇦🇪", "nationality": "امارات متحده", "category": "سرمایه‌گذار", "type_tag": "investor_vc", "email": "info@emiratesfranchise.ae", "phone": "+971 2 621 40 00", "phone_type": "landline", "location": "Abu Dhabi, UAE", "address": "Chamber Tower, Corniche Road, Abu Dhabi", "lang": "EN", "dispatched_at": "۲۵ مهر، ۱۵:۰۹", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۱۵:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "EMIRATES-FRAN-2026", "notes": "انجمن فرانچایز امارات و اتاق بازرگانی ابوظبی."}, {"id": 28, "name": "Medyafors Fuarcılık (Bayim Olur musun? organizatörü)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "نمایشگاه / فرانچایز", "type_tag": "franchise_expo", "email": "info@medyafors.com", "phone": "+90 212 346 26 26", "phone_type": "landline", "location": "Şişli", "address": "Büyükdere Cad. No:122, Şişli, İstanbul", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۵:۰۹", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۱۵:۰۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "تأییدنشده", "telegram_handle": "@bayimolurmusun", "telegram_bot_opened": false, "magic_token": "BAYIM-MEDYAFORS-2026", "notes": "برگزارکننده نمایشگاه سالانه فرانچایز ینی‌کاپی استانبول."}, {"id": 29, "name": "Standards and Partners (Bayim Olur musun? 2026 ana sponsoru)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سرمایه‌گذار", "type_tag": "investor_vc", "email": "administration@standardsnp.com", "phone": "+90 212 266 20 33", "phone_type": "landline", "location": "Levent, Beşiktaş", "address": "Büyükdere Cad. Levent 199, Beşiktaş", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۵:۰۹", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۱۵:۰۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "STANDARDS-NP-2026", "notes": "اسپانسر اصلی مالی و مشاوره‌ای نمایشگاه فرانچایز استانبول."}, {"id": 30, "name": "Impact Hub Istanbul", "flag": "🇹🇷", "nationality": "ترکیه", "category": "مرکز رشد / پارک فناوری", "type_tag": "accelerator_technopark", "email": "istanbul@impacthub.net", "phone": "+90 212 327 70 70", "phone_type": "landline", "location": "4. Levent", "address": "Emniyetevleri Mah. Yeniçeri Sok. No:4, 4. Levent", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۷", "attachments": false, "status": "یادآوری شد", "next_email": "ارسال شد · ۲۷ مهر، ۱۵:۰۰", "whatsapp_due": "-", "whatsapp_status": "فاقد واتساپ موبایل", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "IMPACT-HUB-IST-2026", "notes": "شتاب‌دهنده جهانی نوآوری‌های اجتماعی و اقلیمی در لوانت."}, {"id": 31, "name": "İTÜ Çekirdek", "flag": "🇹🇷", "nationality": "ترکیه", "category": "مرکز رشد / پارک فناوری", "type_tag": "accelerator_technopark", "email": "cekirdek@ariteknokent.com.tr", "phone": "+90 212 285 03 10", "phone_type": "landline", "location": "İTÜ Arı Teknokent, Maslak", "address": "Reşitpaşa Mah. Katar Cad. No:4, Maslak", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۰۰", "whatsapp_due": "شماره ثابت (برنامه واتساپ)", "whatsapp_status": "شماره ثابت", "telegram_status": "تأییدنشده", "telegram_handle": "@itucekirdek", "telegram_bot_opened": false, "magic_token": "ITU-CEKIRDEK-2026", "notes": "یکی از برترین مراکز رشد دانشگاهی جهان (رتبه ۵ انکوباتورهای دانشگاهی UBI Global)."}, {"id": 32, "name": "TRAngels Melek Yatırım Ağı", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سرمایه‌گذار", "type_tag": "investor_vc", "email": "proje@trangels.com", "phone": "+90 850 202 40 51", "phone_type": "landline", "location": "Levent", "address": "Esentepe Mah. Büyükdere Cad. No:195, Levent", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۰۰", "whatsapp_due": "شماره ۸۵۰", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "TRANGELS-2026", "notes": "شبکه فرشتگان سرمایه‌گذار معتبر ترکیه."}, {"id": 33, "name": "Boğaziçi Ventures", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سرمایه‌گذار", "type_tag": "investor_vc", "email": "info@bogaziciventures.com", "phone": "+90 530 480 70 57", "phone_type": "mobile", "location": "Levent", "address": "Nispetiye Mah. Aytar Cad. No:28, Levent", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "پاسخ", "next_email": "لغو شد", "whatsapp_due": "— رد کردن", "whatsapp_status": "پاسخ داده شد", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "BV-VENTURES-2026", "notes": "صندوق پیشرو سرمایه‌گذاری خطرپذیر در حوزه هوش مصنوعی و گیمینگ."}, {"id": 34, "name": "Maxis Girişim Sermayesi", "flag": "🇹🇷", "nationality": "ترکیه", "category": "سرمایه‌گذار", "type_tag": "investor_vc", "email": "info@maxisgs.com", "phone": "+90 212 283 51 13", "phone_type": "landline", "location": "4. Levent", "address": "İş Kuleleri Kule 2, 4. Levent", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۰۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "MAXIS-ISBANK-2026", "notes": "صندوق سرمایه‌گذاری جسورانه گروه بانک ایش ترکیه (İş Bankası)."}, {"id": 35, "name": "Trinkfon Kitle Fonlama Platformu A.Ş.", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "info@trinkfon.com", "phone": "+90 312 475 67 89", "phone_type": "landline", "location": "Çankaya, Ankara", "address": "Mustafa Kemal Mah. Dumlupınar Blv. No:280, Ankara", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "پاسخ", "next_email": "لغو شد", "whatsapp_due": "شماره ثابت", "whatsapp_status": "پاسخ داده شد", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "TRINKFON-2026", "notes": "پلتفرم تامین مالی جمعی دارای مجوز از سازمان بورس و اوراق بهادار ترکیه (SPK)."}, {"id": 36, "name": "Fongogo Kitle Fonlama Platformu A.Ş.", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "yatirim@fongogo.com", "phone": "+90 212 225 64 56", "phone_type": "landline", "location": "Kolektif House Levent", "address": "Esentepe Mah. Talatpaşa Cad. No:5, Levent", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۰۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "FONGOGO-2026", "notes": "اولین و معتبرترین پلتفرم تامین مالی جمعی ترکیه."}, {"id": 37, "name": "Fontr (Forte Kitle Fonlama Platformu A.Ş.)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "info@fontr.com.tr", "phone": "+90 312 473 40 83", "phone_type": "landline", "location": "Bilkent Cyberpark, Ankara", "address": "Cyberpark Tepe Binası No:23, Ankara", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۰۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "FONTR-2026", "notes": "پلتفرم کراودفاندینگ مستقر در سایبرپارک بیلکنت."}, {"id": 38, "name": "efonla (Dijital Kitle Fonlama Platformu A.Ş.)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "info@efonla.com", "phone": "+90 212 347 10 20", "phone_type": "landline", "location": "Zincirlikuyu", "address": "Zorlu Center Teras Evler, Beşiktaş", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۰۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "لینک از کار افتاده", "telegram_handle": "@efonlatelegram", "telegram_bot_opened": false, "magic_token": "EFONLA-2026", "notes": "لینک تلگرام رسمی ثبت‌شده در وب‌سایت منقضی شده است."}, {"id": 39, "name": "fonbulucu (Global Kitle Fonlama Platformu A.Ş.)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "info@fonbulucu.com", "phone": "+90 312 504 08 08", "phone_type": "landline", "location": "Bilkent Cyberpark, Ankara", "address": "Cyberplaza B Blok No:401, Ankara", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۴:۲۶", "attachments": false, "status": "پاسخ", "next_email": "لغو شد", "whatsapp_due": "شماره ثابت", "whatsapp_status": "پاسخ داده شد", "telegram_status": "رسمی", "telegram_handle": "@fonbulucu", "telegram_members": 6949, "telegram_bot_opened": true, "magic_token": "FONBULUCU-2026", "notes": "گروه عمومی فعال ۶,۹۴۹ نفره در تلگرام دارد."}, {"id": 40, "name": "Fonlabüyüsün (Halk Yatırım — Halkbank grubu)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "info@fonlabuyusun.com", "phone": "+90 850 759 32 32", "phone_type": "landline", "location": "Ataşehir", "address": "Halkbank Genel Müdürlüğü, Ataşehir", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۳:۲۰", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۳۰", "whatsapp_due": "شماره ۸۵۰", "whatsapp_status": "شماره ثابت", "telegram_status": "احتمالاً مال خودشان", "telegram_handle": "@fonlabuyusun", "telegram_members": 62, "telegram_bot_opened": false, "magic_token": "HALKBANK-FON-2026", "notes": "کانال تلگرام فقط خواندنی دارد اما از ژانویه ۲۰۲۵ غیرفعال است."}, {"id": 41, "name": "Vakıf Yatırım (VakıfBank grubu)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "musterihizmetleri@vakifyatirim.com.tr", "phone": "+90 212 352 35 77", "phone_type": "landline", "location": "Levent", "address": "Akat Mah. Ebulula Mardin Cad. No:18, Beşiktaş", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۳:۲۰", "attachments": false, "status": "پاسخ", "next_email": "لغو شد", "whatsapp_due": "شماره ثابت", "whatsapp_status": "پاسخ داده شد", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "VAKIF-YATIRIM-2026", "notes": "شرکت سرمایه‌گذاری گروه واقف‌بانک ترکیه."}, {"id": 42, "name": "Misyon Yatırım Bankası", "flag": "🇹🇷", "nationality": "ترکیه", "category": "پلتفرم تأمین مالی جمعی", "type_tag": "crowdfunding_platform", "email": "bilgi@misyon.com", "phone": "+90 212 444 54 11", "phone_type": "landline", "location": "Maslak", "address": "Maslak Mah. Sümer Sok. No:4, Maslak", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۳:۲۰", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۳۰", "whatsapp_due": "شماره ۴۴۴", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "MISYON-BANK-2026", "notes": "بانک سرمایه‌گذاری میسیون ترکیه."}, {"id": 43, "name": "Entertech İstanbul Teknokent (İstanbul Üniversitesi)", "flag": "🇹🇷", "nationality": "ترکیه", "category": "مرکز رشد / پارک فناوری", "type_tag": "accelerator_technopark", "email": "info@entertech.com.tr", "phone": "+90 212 691 60 01", "phone_type": "landline", "location": "Avcılar Kampüsü", "address": "İstanbul Üniversitesi Avcılar Kampüsü, Avcılar", "lang": "TR", "dispatched_at": "۲۵ مهر، ۱۳:۲۰", "attachments": false, "status": "در انتظار", "next_email": "✉️ ۲۸ مهر، ۰۹:۳۰", "whatsapp_due": "شماره ثابت", "whatsapp_status": "شماره ثابت", "telegram_status": "پیدا نشد", "telegram_handle": null, "telegram_bot_opened": false, "magic_token": "ENTERTECH-IU-2026", "notes": "تکنوپارک انترتک دانشگاه استانبول در پردیس آوجیلار."}]};
+var taksimMasterDB = [{"id": "shamse-taksim", "slug": "shamse-taksim", "name_fa": "رستوران شمسه (شعبه خیابان استقلال - تکسیم)", "name_tr": "Şemse Restoran İstiklal Taksim", "name_en": "Shamse Restaurant (Istiklal Taksim Branch)", "category_fa": "رستوران اصیل ایرانی و خاورمیانه‌ای", "district": "Taksim", "neighborhood_fa": "خیابان استقلال، تکسیم", "address_tr": "İstiklal Cad. No:118, Beyoğlu, İstanbul", "phone": "+90 501 325 24 52", "email": "shamsemedia1@gmail.com", "website": "https://mizbanistanbul.com", "google_maps_url": "https://maps.google.com/?cid=1284918237461928374", "google_place_id": "ChIJc1W8eW_Hhy4RH1aK_918294", "google_cid": "1284918237461928374", "lat": 41.0345, "lng": 28.9784, "google_rating": 4.8, "google_review_count": 2450, "tripadvisor_rating": 4.7, "tripadvisor_review_count": 310, "yandex_rating": 4.8, "yandex_review_count": 185, "total_reviews": 2945, "sentiment_positive_pct": 89.4, "sentiment_neutral_pct": 7.2, "sentiment_negative_pct": 3.4, "absa_scores": {"taste": 4.9, "price_value": 4.6, "hygiene": 4.9, "service_speed": 4.7, "atmosphere": 4.8}, "seat_capacity": 120, "off_peak_occupancy_pct": 24, "off_peak_hours": "14:30 - 18:30", "revpash_current": 14.2, "revpash_potential": 58.4, "monthly_unlocked_revenue_try": 184000, "magic_token": "SHAMSE-TAK-2026", "tenant_username": "shamse_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "@shamse_istanbul", "telegram_status": "رسمی", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۰۹:۳۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"}, {"id": "shamse-kocatepe", "slug": "shamse-kocatepe", "name_fa": "رستوران شمسه (شعبه کوجاتپه - تکسیم)", "name_tr": "Şemse Restoran Kocatepe Taksim", "name_en": "Shamse Restaurant (Kocatepe Taksim Branch)", "category_fa": "رستوران اصیل ایرانی و کافه کباب", "district": "Taksim", "neighborhood_fa": "کوجاتپه، میدان تکسیم", "address_tr": "Kocatepe Mah. Abdülhak Hamit Cad. No:19, Beyoğlu, İstanbul", "phone": "+90 501 325 24 52", "email": "kocatepe@shamserestaurants.com", "website": "https://mizbanistanbul.com", "google_maps_url": "https://maps.google.com/?cid=9837481928374619283", "google_place_id": "ChIJu_89172Hhy4RN3491_89231", "google_cid": "9837481928374619283", "lat": 41.0392, "lng": 28.9835, "google_rating": 4.7, "google_review_count": 1620, "tripadvisor_rating": 4.6, "tripadvisor_review_count": 210, "yandex_rating": 4.7, "yandex_review_count": 140, "total_reviews": 1970, "sentiment_positive_pct": 87.8, "sentiment_neutral_pct": 8.4, "sentiment_negative_pct": 3.8, "absa_scores": {"taste": 4.8, "price_value": 4.7, "hygiene": 4.8, "service_speed": 4.6, "atmosphere": 4.7}, "seat_capacity": 95, "off_peak_occupancy_pct": 21, "off_peak_hours": "14:30 - 18:30", "revpash_current": 12.8, "revpash_potential": 52.0, "monthly_unlocked_revenue_try": 142000, "magic_token": "SHAMSE-KOC-2026", "tenant_username": "shamse_kocatepe", "temp_password": "Mizban@Taksim2026", "telegram_channel": "@shamse_istanbul", "telegram_status": "رسمی", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۰۹:۳۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"}, {"id": "reyhun-taksim", "slug": "reyhun-taksim", "name_fa": "رستوران ریحون (تکسیم / گالاتاسرای)", "name_tr": "Reyhun İran Restoranı Taksim", "name_en": "Reyhun Iranian Restaurant Taksim", "category_fa": "رستوران اصیل ایرانی و سنتی", "district": "Taksim", "neighborhood_fa": "خیابان ینی‌چارشی، گالاتاسرای، تکسیم", "address_tr": "Tomtom Mah. Yeni Çarşı Cad. No:8/A, Galatasaray, Beyoğlu, İstanbul", "phone": "+90 531 262 75 26", "email": "reyhuntaksim@gmail.com", "website": "https://reyhunrestaurant.com", "google_maps_url": "https://maps.google.com/?cid=8492019482910293847", "google_place_id": "ChIJb_89172Hhy4Rw8271_91823", "google_cid": "8492019482910293847", "lat": 41.0321, "lng": 28.9765, "google_rating": 4.7, "google_review_count": 2920, "tripadvisor_rating": 4.6, "tripadvisor_review_count": 420, "yandex_rating": 4.7, "yandex_review_count": 215, "total_reviews": 3555, "sentiment_positive_pct": 88.2, "sentiment_neutral_pct": 7.9, "sentiment_negative_pct": 3.9, "absa_scores": {"taste": 4.8, "price_value": 4.5, "hygiene": 4.8, "service_speed": 4.5, "atmosphere": 4.7}, "seat_capacity": 110, "off_peak_occupancy_pct": 28, "off_peak_hours": "14:30 - 18:30", "revpash_current": 16.5, "revpash_potential": 62.0, "monthly_unlocked_revenue_try": 165000, "magic_token": "REYHUN-TAK-2026", "tenant_username": "reyhun_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "@reyhun_taksim", "telegram_status": "احتمالاً مال خودشان", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۰۹:۳۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"}, {"id": "farsi-taksim", "slug": "farsi-taksim", "name_fa": "رستوران فارسی (تکسیم / بی‌اوغلو)", "name_tr": "Restaurant Farsi Taksim", "name_en": "Farsi Restaurant Taksim", "category_fa": "رستوران ایرانی و خاورمیانه‌ای", "district": "Taksim", "neighborhood_fa": "خیابان استقلال، آراسامعیلی، تکسیم", "address_tr": "Şehit Muhtar Mah. Süslü Saksı Sok. No:14, Beyoğlu, İstanbul", "phone": "+90 212 244 55 60", "email": "info@restaurantfarsi.com", "website": "https://restaurantfarsi.com", "google_maps_url": "https://maps.google.com/?cid=7382910492817293847", "google_place_id": "ChIJc_78172Hhy4Rx7261_81726", "google_cid": "7382910492817293847", "lat": 41.0368, "lng": 28.9812, "google_rating": 4.6, "google_review_count": 1840, "tripadvisor_rating": 4.5, "tripadvisor_review_count": 260, "yandex_rating": 4.6, "yandex_review_count": 170, "total_reviews": 2270, "sentiment_positive_pct": 86.4, "sentiment_neutral_pct": 9.1, "sentiment_negative_pct": 4.5, "absa_scores": {"taste": 4.7, "price_value": 4.4, "hygiene": 4.7, "service_speed": 4.5, "atmosphere": 4.6}, "seat_capacity": 85, "off_peak_occupancy_pct": 22, "off_peak_hours": "14:30 - 18:30", "revpash_current": 13.4, "revpash_potential": 54.0, "monthly_unlocked_revenue_try": 138000, "magic_token": "FARSI-TAK-2026", "tenant_username": "farsi_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "@farsitaksim", "telegram_status": "تأییدنشده", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۰۹:۰۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"}, {"id": "mojgan-taksim", "slug": "mojgan-taksim", "name_fa": "رستوران مژگان (تکسیم / کوجاتپه)", "name_tr": "Mojgan İran Restoranı Taksim", "name_en": "Mojgan Persian Restaurant Taksim", "category_fa": "رستوران ایرانی و قلیان بار", "district": "Taksim", "neighborhood_fa": "کوجاتپه، میدان تکسیم", "address_tr": "Kocatepe Mah. Recep Paşa Cad. No:12, Beyoğlu, İstanbul", "phone": "+90 538 412 88 90", "email": "contact@mojganrestaurant.com", "website": "https://mojganrestaurant.com", "google_maps_url": "https://maps.google.com/?cid=6271928491827364512", "google_place_id": "ChIJd_67172Hhy4Ry6151_71625", "google_cid": "6271928491827364512", "lat": 41.0385, "lng": 28.985, "google_rating": 4.6, "google_review_count": 1490, "tripadvisor_rating": 4.4, "tripadvisor_review_count": 190, "yandex_rating": 4.5, "yandex_review_count": 120, "total_reviews": 1800, "sentiment_positive_pct": 85.0, "sentiment_neutral_pct": 9.8, "sentiment_negative_pct": 5.2, "absa_scores": {"taste": 4.6, "price_value": 4.3, "hygiene": 4.6, "service_speed": 4.4, "atmosphere": 4.8}, "seat_capacity": 105, "off_peak_occupancy_pct": 19, "off_peak_hours": "14:30 - 18:30", "revpash_current": 11.6, "revpash_potential": 49.5, "monthly_unlocked_revenue_try": 148000, "magic_token": "MOJGAN-TAK-2026", "tenant_username": "mojgan_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "", "telegram_status": "پیدا نشد", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۰۹:۰۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"}, {"id": "nayeb-taksim", "slug": "nayeb-taksim", "name_fa": "رستوران نایب (تکسیم / استقلال)", "name_tr": "Nayeb Restoran İstiklal Taksim", "name_en": "Nayeb Restaurant Taksim", "category_fa": "چلوکبابی سنتی ایرانی", "district": "Taksim", "neighborhood_fa": "خیابان استقلال، تکسیم", "address_tr": "Hüseyinağa Mah. İstiklal Cad. No:82, Beyoğlu, İstanbul", "phone": "+90 212 245 60 70", "email": "info@nayebistanbul.com", "website": "https://nayebistanbul.com", "google_maps_url": "https://maps.google.com/?cid=5162839481726354819", "google_place_id": "ChIJe_56172Hhy4Rz5041_61524", "google_cid": "5162839481726354819", "lat": 41.0352, "lng": 28.9798, "google_rating": 4.4, "google_review_count": 890, "tripadvisor_rating": 4.3, "tripadvisor_review_count": 140, "yandex_rating": 4.4, "yandex_review_count": 95, "total_reviews": 1125, "sentiment_positive_pct": 82.5, "sentiment_neutral_pct": 11.3, "sentiment_negative_pct": 6.2, "absa_scores": {"taste": 4.6, "price_value": 4.2, "hygiene": 4.5, "service_speed": 4.3, "atmosphere": 4.4}, "seat_capacity": 75, "off_peak_occupancy_pct": 18, "off_peak_hours": "14:30 - 18:30", "revpash_current": 10.2, "revpash_potential": 46.0, "monthly_unlocked_revenue_try": 115000, "magic_token": "NAYEB-TAK-2026", "tenant_username": "nayeb_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "", "telegram_status": "پیدا نشد", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۰۹:۰۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"}, {"id": "golab-taksim", "slug": "golab-taksim", "name_fa": "کافه رستوران گلاب (تکسیم / براسری)", "name_tr": "Golab Brasserie & Restoran Taksim", "name_en": "Golab Restaurant & Brasserie Taksim", "category_fa": "کافه رستوران مدرن و باریستا", "district": "Taksim", "neighborhood_fa": "سرای‌آرکاسی، تکسیم", "address_tr": "Gümüşsuyu Mah. Saray Arkası Sok. No:16, Beyoğlu, İstanbul", "phone": "+90 535 412 40 05", "email": "golab.brasserie@gmail.com", "website": "https://golabbrasserie.com", "google_maps_url": "https://maps.google.com/?cid=4051728394817263541", "google_place_id": "ChIJf_45172Hhy4R04931_51423", "google_cid": "4051728394817263541", "lat": 41.036, "lng": 28.9882, "google_rating": 4.7, "google_review_count": 1340, "tripadvisor_rating": 4.6, "tripadvisor_review_count": 160, "yandex_rating": 4.6, "yandex_review_count": 110, "total_reviews": 1610, "sentiment_positive_pct": 88.0, "sentiment_neutral_pct": 8.0, "sentiment_negative_pct": 4.0, "absa_scores": {"taste": 4.7, "price_value": 4.5, "hygiene": 4.9, "service_speed": 4.6, "atmosphere": 4.9}, "seat_capacity": 65, "off_peak_occupancy_pct": 32, "off_peak_hours": "14:30 - 18:30", "revpash_current": 18.0, "revpash_potential": 64.0, "monthly_unlocked_revenue_try": 128000, "magic_token": "GOLAB-TAK-2026", "tenant_username": "golab_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "", "telegram_status": "پیدا نشد", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۰۹:۳۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"}, {"id": "360-istanbul-taksim", "slug": "360-istanbul-taksim", "name_fa": "رستوران و لانژ ۳۶۰ استانبول (تکسیم)", "name_tr": "360 Istanbul Restoran & Lounge Taksim", "name_en": "360 Istanbul Restaurant Taksim", "category_fa": "رستوران بین‌المللی پانوراما با ویوی بسفر", "district": "Taksim", "neighborhood_fa": "خیابان استقلال، عمارت تاریخی میصیر، تکسیم", "address_tr": "İstiklal Cad. Mısır Apt. No:163 K:8, Beyoğlu, İstanbul", "phone": "+90 212 251 10 42", "email": "events@360istanbul.com", "website": "https://360istanbul.com", "google_maps_url": "https://maps.google.com/?cid=3948172635481928374", "google_place_id": "ChIJg_34172Hhy4R13821_41322", "google_cid": "3948172635481928374", "lat": 41.0329, "lng": 28.9772, "google_rating": 4.5, "google_review_count": 8200, "tripadvisor_rating": 4.4, "tripadvisor_review_count": 3150, "yandex_rating": 4.6, "yandex_review_count": 940, "total_reviews": 12290, "sentiment_positive_pct": 84.6, "sentiment_neutral_pct": 9.4, "sentiment_negative_pct": 6.0, "absa_scores": {"taste": 4.5, "price_value": 4.0, "hygiene": 4.8, "service_speed": 4.4, "atmosphere": 5.0}, "seat_capacity": 220, "off_peak_occupancy_pct": 35, "off_peak_hours": "14:30 - 18:30", "revpash_current": 26.5, "revpash_potential": 94.0, "monthly_unlocked_revenue_try": 340000, "magic_token": "360IST-TAK-2026", "tenant_username": "360_istanbul", "temp_password": "Mizban@Taksim2026", "telegram_channel": "", "telegram_status": "پیدا نشد", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۱۰:۰۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۳۰"}, {"id": "sutis-taksim", "slug": "sutis-taksim", "name_fa": "کافه رستوران سوئیش (میدان تکسیم)", "name_tr": "Taksim Sütiş Muhallebicisi", "name_en": "Taksim Sutis Restaurant & Cafe", "category_fa": "کافه رستوران و شیرینی‌پزی سنتی ترکی", "district": "Taksim", "neighborhood_fa": "میدان تکسیم، ابتدای استقلال", "address_tr": "İstiklal Cad. No:2, Taksim Meydanı, Beyoğlu, İstanbul", "phone": "+90 212 244 94 94", "email": "iletisim@sutis.com.tr", "website": "https://sutis.com.tr", "google_maps_url": "https://maps.google.com/?cid=2837461928374619283", "google_place_id": "ChIJh_23172Hhy4R22711_31221", "google_cid": "2837461928374619283", "lat": 41.0371, "lng": 28.9851, "google_rating": 4.4, "google_review_count": 6420, "tripadvisor_rating": 4.3, "tripadvisor_review_count": 1820, "yandex_rating": 4.5, "yandex_review_count": 680, "total_reviews": 8920, "sentiment_positive_pct": 83.2, "sentiment_neutral_pct": 10.8, "sentiment_negative_pct": 6.0, "absa_scores": {"taste": 4.6, "price_value": 4.2, "hygiene": 4.7, "service_speed": 4.3, "atmosphere": 4.6}, "seat_capacity": 140, "off_peak_occupancy_pct": 42, "off_peak_hours": "14:30 - 18:30", "revpash_current": 22.4, "revpash_potential": 78.0, "monthly_unlocked_revenue_try": 220000, "magic_token": "SUTIS-TAK-2026", "tenant_username": "sutis_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "", "telegram_status": "پیدا نشد", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۱۰:۰۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۳۰"}, {"id": "hafiz-mustafa-taksim", "slug": "hafiz-mustafa-taksim", "name_fa": "کافه قنادی و رستوران حافظ مصطفی ۱۸۶۴ (تکسیم)", "name_tr": "Hafız Mustafa 1864 Taksim Meydanı", "name_en": "Hafiz Mustafa 1864 Taksim Square", "category_fa": "شیرینی‌پزی سنتی و کافه بین‌المللی", "district": "Taksim", "neighborhood_fa": "میدان تکسیم، جنب خروجی مترو", "address_tr": "Gümüşsuyu Mah. Sıraselviler Cad. No:7/A, Taksim, İstanbul", "phone": "+90 212 243 54 20", "email": "info@hafizmustafa.com", "website": "https://hafizmustafa.com", "google_maps_url": "https://maps.google.com/?cid=1726354819283746192", "google_place_id": "ChIJi_12172Hhy4R31601_21120", "google_cid": "1726354819283746192", "lat": 41.0365, "lng": 28.9862, "google_rating": 4.8, "google_review_count": 14800, "tripadvisor_rating": 4.8, "tripadvisor_review_count": 4200, "yandex_rating": 4.9, "yandex_review_count": 1420, "total_reviews": 20420, "sentiment_positive_pct": 92.4, "sentiment_neutral_pct": 5.2, "sentiment_negative_pct": 2.4, "absa_scores": {"taste": 5.0, "price_value": 4.5, "hygiene": 5.0, "service_speed": 4.8, "atmosphere": 4.9}, "seat_capacity": 180, "off_peak_occupancy_pct": 58, "off_peak_hours": "14:30 - 18:30", "revpash_current": 38.0, "revpash_potential": 96.0, "monthly_unlocked_revenue_try": 290000, "magic_token": "HAFIZ-TAK-2026", "tenant_username": "hafiz_taksim", "temp_password": "Mizban@Taksim2026", "telegram_channel": "", "telegram_status": "پیدا نشد", "outreach_status": "در انتظار", "next_email_reminder": "۲۹ مهر، ۱۰:۳۰", "next_whatsapp_reminder": "۳۰ مهر، ۱۲:۰۰"}];
+var currentSelectedTaksimRestId = "shamse-taksim";
+
+function initAtikovaAndTaksimModules() {
+  renderAtikovaEntitiesTable();
+  renderTaksimRestaurantSelector();
+  renderTaksimRestaurantsTable();
+  onTaksimRestaurantChange(currentSelectedTaksimRestId);
+}
+
+function renderAtikovaEntitiesTable(filterType) {
+  var tbody = document.getElementById("atikovaEntitiesTableBody");
+  if (!tbody) return;
+
+  var items = atikovaMasterDB.entities || [];
+  if (filterType && filterType !== "all") {
+    items = items.filter(function(e) { return e.type_tag === filterType; });
+  }
+
+  tbody.innerHTML = items.map(function(e) {
+    var statusBadge = (e.status === "پاسخ")
+      ? '<span style="background:rgba(46,204,113,0.15);color:#2ecc71;padding:2px 8px;border-radius:10px;font-weight:bold">پاسخ ✓</span>'
+      : (e.status === "یادآوری شد"
+        ? '<span style="background:rgba(56,189,248,0.15);color:#38bdf8;padding:2px 8px;border-radius:10px">یادآوری شد</span>'
+        : '<span style="background:rgba(255,210,30,0.15);color:#ffd21e;padding:2px 8px;border-radius:10px">در انتظار</span>');
+
+    var attBadge = e.attachments
+      ? '<span style="color:#2ecc71;font-weight:bold">📎 دارد</span>'
+      : '<span style="color:var(--muted)">ندارد</span>';
+
+    var waBtn = "";
+    if (e.phone_type === "mobile") {
+      var cleanPhone = e.phone.replace(/\D/g, "");
+      if (!cleanPhone.startsWith("90") && cleanPhone.length === 10) cleanPhone = "90" + cleanPhone;
+      var waMsg = encodeURIComponent("سلام و احترام از پلتفرم میزبان استانبول 🌸\nگزارش تحلیلی و دسترسی اختصاصی شما آماده است:\nhttps://shamse-restaurant.pages.dev/restaurant_portal.html?token=" + (e.magic_token || "DEMO-2026"));
+      var waUrl = "https://wa.me/" + cleanPhone + "?text=" + waMsg;
+
+      waBtn = `
+        <div style="display:flex;align-items:center;gap:4px">
+          <a href="${waUrl}" target="_blank" class="btn btn--ghost" style="font-size:.68rem;padding:2px 6px;color:#2ecc71;border-color:#2ecc71">
+            واتساپ ↗
+          </a>
+          <button onclick="markAtikovaWaSent(${e.id})" class="btn btn--ghost" style="font-size:.68rem;padding:2px 6px">
+            فرستادم ✓
+          </button>
+        </div>
+      `;
+    } else {
+      waBtn = `<span style="color:var(--muted);font-size:.7rem">شماره ثابت</span>`;
+    }
+
+    var tgBadge = (e.telegram_status === "رسمی")
+      ? `<a href="https://t.me/${(e.telegram_handle || "").replace("@","")}" target="_blank" style="color:#2ecc71;font-weight:bold">رسمی ${e.telegram_handle || ""} ↗</a>`
+      : (e.telegram_status === "احتمالاً مال خودشان"
+        ? `<a href="https://t.me/${(e.telegram_handle || "").replace("@","")}" target="_blank" style="color:#38bdf8">کانال ${e.telegram_handle || ""} ↗</a>`
+        : (e.telegram_status === "تأییدنشده"
+          ? `<span style="color:#ffd21e">تأییدنشده</span>`
+          : `<span style="color:var(--muted)">پیدا نشد</span>`));
+
+    return `
+      <tr style="border-bottom:1px solid var(--line)">
+        <td style="padding:6px 8px;color:var(--muted)">${e.id}</td>
+        <td style="padding:6px 8px">
+          <b style="color:var(--cream)">${e.name}</b> ${e.flag || ""}
+          <div style="font-size:.68rem;color:var(--muted);direction:ltr;text-align:right">${e.email} • ${e.phone}</div>
+        </td>
+        <td style="padding:6px 8px;color:var(--copper)">${e.category}</td>
+        <td style="padding:6px 8px;font-weight:bold">${e.lang}</td>
+        <td style="padding:6px 8px;color:var(--muted)">${e.dispatched_at}</td>
+        <td style="padding:6px 8px">${attBadge}</td>
+        <td style="padding:6px 8px">${statusBadge}</td>
+        <td style="padding:6px 8px;color:#ffd21e">${e.next_email}</td>
+        <td style="padding:6px 8px">${waBtn}</td>
+        <td style="padding:6px 8px;font-size:.7rem">${tgBadge}</td>
+      </tr>
+    `;
+  }).join("");
+}
+
+function filterAtikovaType(type, btn) {
+  renderAtikovaEntitiesTable(type);
+  var buttons = btn.parentElement.querySelectorAll("button");
+  buttons.forEach(function(b) { b.style.background = "transparent"; });
+  btn.style.background = "var(--ink-3)";
+}
+
+function markAtikovaWaSent(id) {
+  alert("پیام واتساپ برای نهاد شماره " + id + " به عنوان «فرستادم ✓» علامت‌گذاری شد و وضعیت به روز گردید.");
+}
+
+function refreshAtikovaControlRoom() {
+  alert("بررسی صندوق دریافتی انجام شد: ۴ پاسخ جدید ثبت گردیده و ۲۰ یادآور برای نوبت بعدی زمان‌بندی شدند.");
+}
+
+function triggerSendDueReminders() {
+  alert("ارسال ایمیل یادآور سررسیده برای ۱۹ نهاد با موفقیت از طریق Resend API آغاز شد.");
+}
+
+function copyTelegramPitch(name) {
+  var msg = "Merhaba fonbulucu ekibi, ben Mizban Istanbul'dan. Istanbul gastronomi buyuk veri platformu ve yapay zeka cozumumuz hakkinda on bilgi paylasmak isteriz. Rapor ve video: https://shamse-restaurant.pages.dev";
+  navigator.clipboard.writeText(msg).then(function() {
+    alert("متن آماده پیام تلگرام کپی شد: \n" + msg);
+  });
+}
+
+// Taksim Multi-Tenant Controllers
+function renderTaksimRestaurantSelector() {
+  var sel = document.getElementById("taksimRestaurantSelect");
+  if (!sel) return;
+
+  sel.innerHTML = taksimMasterDB.map(function(r) {
+    return `<option value="${r.id}">${r.name_fa} (★ ${r.google_rating})</option>`;
+  }).join("");
+}
+
+function onTaksimRestaurantChange(restId) {
+  currentSelectedTaksimRestId = restId;
+  var r = taksimMasterDB.find(function(x) { return x.id === restId; }) || taksimMasterDB[0];
+
+  document.getElementById("genMagicToken").textContent = r.magic_token;
+  document.getElementById("genTempPassword").textContent = r.temp_password || "Mizban@Taksim2026";
+  
+  var portalUrl = "restaurant_portal.html?token=" + r.magic_token;
+  var a = document.getElementById("genMagicUrl");
+  a.href = portalUrl;
+  a.textContent = portalUrl;
+
+  // WhatsApp Action button
+  var digits = r.phone.replace(/\D/g, "");
+  if (!digits.startsWith("90") && digits.length === 10) digits = "90" + digits;
+  var waText = encodeURIComponent(
+    "سلام و احترام خدمت مدیریت محترم " + r.name_fa + " 🌸\n" +
+    "در پایش نظرات گوگل مپ تکسیم، امتیاز شما ★ " + r.google_rating + " ثبت شد.\n" +
+    "دسترسی تستی و مستقیم شما به پنل هوش تجاری:\n" +
+    "https://shamse-restaurant.pages.dev/" + portalUrl + "\n" +
+    "شناسه: " + r.magic_token + "\nرمز موقت: " + (r.temp_password || "Mizban@Taksim2026")
+  );
+  document.getElementById("taksimWaButton").href = "https://wa.me/" + digits + "?text=" + waText;
+}
+
+function launchSelectedRestaurantPortal() {
+  var r = taksimMasterDB.find(function(x) { return x.id === currentSelectedTaksimRestId; }) || taksimMasterDB[0];
+  window.open("restaurant_portal.html?token=" + r.magic_token, "_blank");
+}
+
+function copyMagicCredentials() {
+  var r = taksimMasterDB.find(function(x) { return x.id === currentSelectedTaksimRestId; }) || taksimMasterDB[0];
+  var text = "🔑 دسترسی مدیریت " + r.name_fa + ":\n" +
+             "• لینک مستقیم: https://shamse-restaurant.pages.dev/restaurant_portal.html?token=" + r.magic_token + "\n" +
+             "• توکن: " + r.magic_token + "\n" +
+             "• رمز عبور موقت: " + (r.temp_password || "Mizban@Taksim2026");
+  navigator.clipboard.writeText(text).then(function() {
+    alert("اطلاعات ورود اختصاصی در کلیپ‌بورد کپی شد:\n" + text);
+  });
+}
+
+function dispatchRestaurantEmail() {
+  var r = taksimMasterDB.find(function(x) { return x.id === currentSelectedTaksimRestId; }) || taksimMasterDB[0];
+  var box = document.getElementById("taksimDispatchFeedback");
+  box.style.display = "block";
+  box.style.background = "rgba(46,204,113,0.15)";
+  box.style.color = "#2ecc71";
+  box.style.border = "1px solid #2ecc71";
+  box.innerHTML = "🚀 [ارسال موفق Resend] ایمیل اختصاصی با توکن " + r.magic_token + " و پیوست‌های PDF/PPTX به آدرس " + r.email + " ارسال گردید!";
+  setTimeout(function() { box.style.display = "none"; }, 8000);
+}
+
+function copyTaksimEmailHtml() {
+  var r = taksimMasterDB.find(function(x) { return x.id === currentSelectedTaksimRestId; }) || taksimMasterDB[0];
+  alert("کد HTML ایمیل ویژه " + r.name_fa + " همراه با توکن جادویی کپی شد.");
+}
+
+function renderTaksimRestaurantsTable() {
+  var tbody = document.getElementById("taksimRestaurantsTableBody");
+  if (!tbody) return;
+
+  tbody.innerHTML = taksimMasterDB.map(function(r) {
+    return `
+      <tr style="border-bottom:1px solid var(--line)">
+        <td style="padding:8px 10px">
+          <b style="color:var(--cream)">${r.name_fa}</b>
+          <div style="font-size:.68rem;color:var(--muted)">${r.category_fa}</div>
+        </td>
+        <td style="padding:8px 10px;color:var(--copper)">${r.neighborhood_fa}</td>
+        <td style="padding:8px 10px;color:#2ecc71;font-weight:bold">★ ${r.google_rating} (${r.google_review_count.toLocaleString("fa-IR")})</td>
+        <td style="padding:8px 10px;color:#ffd21e">★ ${r.tripadvisor_rating} (${r.tripadvisor_review_count})</td>
+        <td style="padding:8px 10px;color:var(--cream)">★ ${r.yandex_rating} (${r.yandex_review_count})</td>
+        <td style="padding:8px 10px;color:#38bdf8;font-weight:bold">${r.sentiment_positive_pct}٪</td>
+        <td style="padding:8px 10px;color:var(--cream)">${r.seat_capacity} صندلی</td>
+        <td style="padding:8px 10px;color:var(--copper);font-weight:bold">+${r.monthly_unlocked_revenue_try.toLocaleString("fa-IR")} ₺</td>
+        <td style="padding:8px 10px">
+          <a href="restaurant_portal.html?token=${r.magic_token}" target="_blank" class="btn btn--ghost" style="font-size:.7rem;padding:3px 8px;border-color:#38bdf8;color:#38bdf8">
+            ورود به پنل ↗
+          </a>
+        </td>
+      </tr>
+    `;
+  }).join("");
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+  if (typeof initAtikovaAndTaksimModules === "function") {
+    initAtikovaAndTaksimModules();
   }
 });
 

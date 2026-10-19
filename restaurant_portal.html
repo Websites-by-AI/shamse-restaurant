@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>داشبورد اختصاصی مدیریت رستوران • پلتفرم میزبان استانبول</title>
+  <style>
+    :root {
+      --ink: #13100c;
+      --ink-2: #1a1511;
+      --ink-3: #221b15;
+      --ink-4: #0f0c09;
+      --copper: #d29a5a;
+      --copper-2: #daa760;
+      --gold: #ffd21e;
+      --success: #2ecc71;
+      --sky: #38bdf8;
+      --cream: #f8f8f8;
+      --text: #d1c8bb;
+      --muted: #a89d8e;
+      --line: rgba(255,255,255,0.085);
+      --line-copper: rgba(210,154,90,0.3);
+      --font: "Vazirmatn", "IRANSansX", "Segoe UI", Tahoma, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--ink);
+      color: var(--text);
+      font-family: var(--font);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+    /* Top Bar */
+    .top-header {
+      background: rgba(15,12,9,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line-copper);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border: 2px solid var(--copper);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: var(--copper);
+      background: var(--ink-2);
+    }
+    .logo-text h1 { font-size: 1.05rem; color: var(--cream); font-weight: 800; margin: 0; }
+    .logo-text span { font-size: .75rem; color: var(--copper); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: .84rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .2s;
+      border: 1px solid transparent;
+    }
+    .btn-gold { background: var(--copper); color: #14100d; }
+    .btn-gold:hover { background: var(--copper-2); }
+    .btn-ghost { background: transparent; border-color: var(--line-copper); color: var(--cream); }
+    .btn-ghost:hover { background: var(--ink-3); border-color: var(--copper); }
+    .btn-success { background: var(--success); color: #14100d; }
+
+    /* Login Modal Card */
+    #loginCard {
+      background: var(--ink-2);
+      border: 1px solid var(--line-copper);
+      border-radius: 8px;
+      padding: 32px 24px;
+      max-width: 520px;
+      margin: 40px auto;
+      text-align: center;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    }
+
+    /* Main Dashboard View */
+    #dashboardView { display: none; }
+
+    /* Tenant Info Banner */
+    .tenant-banner {
+      background: linear-gradient(135deg, var(--ink-2) 0%, var(--ink-3) 100%);
+      border: 1px solid var(--line-copper);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .tenant-title { font-size: 1.35rem; color: var(--cream); font-weight: 800; margin-bottom: 4px; }
+    .tenant-meta { font-size: .84rem; color: var(--muted); display: flex; gap: 16px; flex-wrap: wrap; }
+    .badge-verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(46,204,113,0.15);
+      color: var(--success);
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: .72rem;
+      font-weight: 700;
+    }
+
+    /* KPI Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .kpi-card {
+      background: var(--ink-2);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 18px 20px;
+      transition: .2s;
+    }
+    .kpi-card:hover { border-color: var(--line-copper); transform: translateY(-2px); }
+    .kpi-val { font-size: 1.7rem; font-weight: 900; margin: 4px 0; }
+    .kpi-lbl { font-size: .78rem; color: var(--muted); }
+
+    /* Section Cards */
+    .card {
+      background: var(--ink-2);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin-bottom: 24px;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      color: var(--cream);
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ABSA Dimension Bar */
+    .absa-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+      font-size: .84rem;
+    }
+    .absa-label { width: 140px; color: var(--cream); font-weight: 600; }
+    .absa-bar-bg {
+      flex: 1;
+      height: 10px;
+      background: var(--ink-3);
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .absa-bar-fill { height: 100%; border-radius: 5px; }
+    .absa-score { width: 55px; text-align: left; font-weight: 700; color: var(--gold); }
+
+    /* Review Triage Box */
+    .review-item {
+      background: var(--ink-3);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: .82rem;
+    }
+    .ai-reply-box {
+      background: rgba(210,154,90,0.08);
+      border-right: 3px solid var(--copper);
+      border-radius: 4px;
+      padding: 10px 14px;
+      margin-top: 10px;
+      font-size: .82rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .top-header { flex-direction: column; align-items: flex-start; }
+      .tenant-banner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="top-header">
+    <div class="logo-badge">
+      <div class="logo-mark">M</div>
+      <div class="logo-text">
+        <h1>پلتفرم هوش تجاری میزبان استانبول</h1>
+        <span>داشبورد اختصاصی مدیریت رستوران (Restaurant Client Portal)</span>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:10px;align-items:center">
+      <a href="index.html" class="btn btn-ghost" style="font-size:.78rem">خانه ↗</a>
+      <a href="intelligence.html" class="btn btn-ghost" style="font-size:.78rem">پنل سوپرادمین ↗</a>
+      <button class="btn btn-gold" onclick="openTenantSwitcher()" id="tenantSwitcherBtn" style="display:none;font-size:.78rem">
+        🔄 تعویض رستوران
+      </button>
+      <button class="btn btn-ghost" onclick="logoutTenant()" id="logoutBtn" style="display:none;font-size:.78rem">
+        خروج ✕
+      </button>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- LOGIN SCREEN (If not authenticated) -->
+    <div id="loginCard">
+      <div style="font-size:2.5rem;margin-bottom:12px">🏛️</div>
+      <h2 style="color:var(--cream);font-size:1.25rem;font-weight:800;margin-bottom:6px">
+        ورود به پنل هوش تجاری رستوران
+      </h2>
+      <p style="font-size:.84rem;color:var(--muted);margin-bottom:20px">
+        شناسه اختصاصی (Magic Token) ارسالی در ایمیل یا واتساپ را وارد فرمایید:
+      </p>
+
+      <div style="margin-bottom:16px">
+        <input type="text" id="tokenInput" placeholder="مثال: REYHUN-TAK-2026 یا SHAMSE-TAK-2026"
+          style="width:100%;padding:12px;background:var(--ink-3);border:1px solid var(--copper);border-radius:6px;color:#ffd21e;font-size:.92rem;font-weight:700;text-align:center;direction:ltr">
+      </div>
+
+      <button class="btn btn-gold" onclick="submitLoginToken()" style="width:100%;justify-content:center;padding:12px;font-size:.9rem">
+        🔑 ورود به داشبورد اختصاصی
+      </button>
+
+      <!-- Quick Preset Demo Buttons for Taksim Restaurants -->
+      <div style="margin-top:24px;border-top:1px solid var(--line);padding-top:18px;text-align:right">
+        <div style="font-size:.75rem;color:var(--copper);font-weight:bold;margin-bottom:8px">
+          دسترسی‌های سریع تستی منطقه تکسیم (برای ارزیابی و دمو):
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+          <button class="btn btn-ghost" onclick="loginWithToken('SHAMSE-TAK-2026')" style="font-size:.72rem;justify-content:center">
+            رستوران شمسه (استقلال)
+          </button>
+          <button class="btn btn-ghost" onclick="loginWithToken('REYHUN-TAK-2026')" style="font-size:.72rem;justify-content:center">
+            رستوران ریحون (تکسیم)
+          </button>
+          <button class="btn btn-ghost" onclick="loginWithToken('FARSI-TAK-2026')" style="font-size:.72rem;justify-content:center">
+            رستوران فارسی (تکسیم)
+          </button>
+          <button class="btn btn-ghost" onclick="loginWithToken('MOJGAN-TAK-2026')" style="font-size:.72rem;justify-content:center">
+            رستوران مژگان (کوجاتپه)
+          </button>
+          <button class="btn btn-ghost" onclick="loginWithToken('NAYEB-TAK-2026')" style="font-size:.72rem;justify-content:center">
+            رستوران نایب (استقلال)
+          </button>
+          <button class="btn btn-ghost" onclick="loginWithToken('GOLAB-TAK-2026')" style="font-size:.72rem;justify-content:center">
+            کافه براسری گلاب
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN DASHBOARD VIEW (Rendered after token match) -->
+    <div id="dashboardView">
+      
+      <!-- Tenant Info Banner -->
+      <div class="tenant-banner">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+            <h2 class="tenant-title" id="dNameFa">نام رستوران</h2>
+            <span class="badge-verified">✓ اکانت تاییدشده میزبان</span>
+          </div>
+          <div class="tenant-meta">
+            <span>📍 منطقه: <b id="dDistrict" style="color:var(--cream)">تکسیم</b></span>
+            <span>🏢 آدرس: <span id="dAddress">...</span></span>
+            <span>📞 تلفن: <span id="dPhone" style="direction:ltr;display:inline-block">...</span></span>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <a href="mizban_restaurant_weekly_report.pdf" download class="btn btn-ghost" style="font-size:.78rem">
+            📄 دانلود گزارش هفتگی (PDF)
+          </a>
+          <a href="mizban_restaurant_intelligence_pitch.pptx" download class="btn btn-gold" style="font-size:.78rem">
+            📊 دانلود اسلایدها (PPTX)
+          </a>
+        </div>
+      </div>
+
+      <!-- KPI Metrics Grid -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-lbl">امتیاز گوگل مپ (Google Maps)</div>
+          <div class="kpi-val" style="color:#2ecc71" id="dGoogleRating">★ 4.8</div>
+          <div style="font-size:.75rem;color:var(--muted)" id="dGoogleReviews">از ۲,۴۵۰ نظر ثبت‌شده</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-lbl">امتیاز تریپ‌ادوایزر (TripAdvisor)</div>
+          <div class="kpi-val" style="color:#ffd21e" id="dTripRating">★ 4.7</div>
+          <div style="font-size:.75rem;color:var(--muted)" id="dTripReviews">انتخاب توریست‌های خارجی</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-lbl">شاخص احساسات کلی (Positive NLP)</div>
+          <div class="kpi-val" style="color:#38bdf8" id="dPosPct">۸۹.۴٪</div>
+          <div style="font-size:.75rem;color:var(--muted)">رضایت بالا نسبت به میانگین تکسیم</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-lbl">پتانسیل درآمد ماهانه ساعات خلوت</div>
+          <div class="kpi-val" style="color:var(--copper)" id="dUnlockedRevenue">+۱۸۴,۰۰۰ ₺</div>
+          <div style="font-size:.75rem;color:var(--muted)">در ساعات ۱۴:۳۰ تا ۱۸:۳۰</div>
+        </div>
+      </div>
+
+      <!-- Aspect-Based Sentiment Analysis (ABSA) 5-Dimension Radar -->
+      <div class="card">
+        <div class="card-title">
+          <span>📊 ممیزی ابعاد رضایت مشتریان با مدل DeBERTa-v3 ABSA (از ۵٫۰ امتیاز)</span>
+          <span style="font-size:.75rem;color:var(--muted)">مقایسه با میانگین رستوران‌های منطقه تکسیم</span>
+        </div>
+
+        <div id="absaBarsContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Yield Management: Off-Peak Hours Optimization -->
+      <div class="card" style="border-color:var(--line-copper)">
+        <div class="card-title">
+          <span>⏳ مدیریت درآمد و پر کردن صندلی‌های راکد (Yield RevPASH Optimization)</span>
+          <span style="background:rgba(210,154,90,0.15);color:var(--copper);padding:3px 10px;border-radius:12px;font-size:.72rem">
+            ساعات طلایی ۱۴:۳۰ تا ۱۸:۳۰
+          </span>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:16px" id="yieldGrid">
+          <div style="background:var(--ink-3);padding:16px;border-radius:6px">
+            <div style="font-size:.8rem;color:var(--muted)">ظرفیت کل سالن:</div>
+            <div style="font-size:1.3rem;font-weight:800;color:var(--cream)" id="dCapacity">۱۲۰ صندلی</div>
+            <div style="font-size:.76rem;color:var(--muted);margin-top:4px">
+              نرخ اشغال فعلی در ساعات خلوت: <b id="dOccupancy" style="color:#ef4444">۲۴٪</b>
+            </div>
+          </div>
+
+          <div style="background:var(--ink-3);padding:16px;border-radius:6px">
+            <div style="font-size:.8rem;color:var(--muted)">شاخص RevPASH (درآمد هر صندلی در ساعت):</div>
+            <div style="font-size:1.3rem;font-weight:800;color:#2ecc71" id="dRevpash">۱۴.۲ ₺ ➔ ۵۸.۴ ₺</div>
+            <div style="font-size:.76rem;color:var(--muted);margin-top:4px">
+              جهش قابل دسترس با میزبانی رویدادهای کلاب مافیا و میتاپ‌ها
+            </div>
+          </div>
+        </div>
+
+        <div style="background:rgba(46,204,113,0.08);border:1px solid #2ecc71;border-radius:6px;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+          <div>
+            <div style="color:#2ecc71;font-weight:bold;font-size:.88rem">💡 پیشنهاد هوشمند پلتفرم برای سالن شما:</div>
+            <div style="font-size:.78rem;color:var(--text);margin-top:2px">
+              میزبانی دورهمی‌های عصرانه روزهای سه‌شنبه و پنج‌شنبه ظرفیت خالی شما را کاملاً پوشش می‌دهد.
+            </div>
+          </div>
+          <button class="btn btn-success" onclick="alert('درخواست فعال‌سازی بسته درآمدزایی با موفقیت ثبت گردید. کارشناس میزبان ظرف ۲ ساعت آینده با شما تماس خواهد گرفت.')">
+            🚀 فعال‌سازی بسته درآمدزایی سالن
+          </button>
+        </div>
+      </div>
+
+      <!-- AI Review Responder (4 Languages) -->
+      <div class="card">
+        <div class="card-title">
+          <span>🤖 دستیار هوشمند پاسخ‌دهی ۴ زبانه به نظرات مشتریان (AI Review Copilot)</span>
+          <span style="font-size:.75rem;color:var(--muted)">پاسخ‌های آماده در کمتر از ۱۵ دقیقه با مدل‌های چندزبانه</span>
+        </div>
+
+        <div id="sampleReviewsContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Atikova Luxury Concierge Network Integration -->
+      <div class="card" style="background:linear-gradient(135deg,var(--ink-2),var(--ink-3))">
+        <div class="card-title">
+          <span>🏨 شبکه کانسیرژ هتل‌های ۵ ستاره استانبول (شبکه Atikova)</span>
+          <span style="background:rgba(56,189,248,0.15);color:var(--sky);padding:3px 10px;border-radius:12px;font-size:.72rem">
+            ۱۸۶ هتل تشریفاتی متصل
+          </span>
+        </div>
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:14px">
+          میزبان استانبول سالن شما را به عنوان مقصد برتر غذاهای اصیل به کانسیرژ هتل‌های لوکس منطقه بسفر و شیشلی (سوئیس‌اوتل، هیلتون، رافلز و مارمارا) معرفی می‌کند.
+        </p>
+
+        <div style="background:var(--ink-3);padding:14px;border-radius:6px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+          <div style="font-size:.8rem;color:var(--cream)">
+            آخرین درخواست رزرو VIP دریافتی: <b>۴ مهمان تشریفاتی از هتل سوئیس‌اوتل بسفروس (امشب ساعت ۲۰:۳۰)</b>
+          </div>
+          <button class="btn btn-gold" onclick="alert('میز VIP برای مهمانان سوئیس‌اوتل با موفقیت تایید شد. پیامک خوش‌آمدگویی برای مهمان ارسال گردید.')">
+            تایید رزرو کانسیرژ ✓
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Embedded Taksim Restaurants Dataset
+    var taksimData = [];
+    var currentRestaurant = null;
+
+    // Load DB
+    fetch("automation/taksim_restaurants_intel.json")
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        taksimData = data;
+        checkUrlToken();
+      })
+      .catch(function() {
+        // Fallback default dataset for offline preview
+        taksimData = [
+          {
+            id: "shamse-taksim",
+            name_fa: "رستوران شمسه (شعبه خیابان استقلال - تکسیم)",
+            district: "تکسیم / بی‌اوغلو",
+            address_tr: "İstiklal Cad. No:118, Beyoğlu, İstanbul",
+            phone: "+90 501 325 24 52",
+            google_rating: 4.8,
+            google_review_count: 2450,
+            tripadvisor_rating: 4.7,
+            tripadvisor_review_count: 310,
+            sentiment_positive_pct: 89.4,
+            monthly_unlocked_revenue_try: 184000,
+            seat_capacity: 120,
+            off_peak_occupancy_pct: 24,
+            revpash_current: 14.2,
+            revpash_potential: 58.4,
+            magic_token: "SHAMSE-TAK-2026",
+            absa_scores: { taste: 4.9, price_value: 4.6, hygiene: 4.9, service_speed: 4.7, atmosphere: 4.8 }
+          },
+          {
+            id: "reyhun-taksim",
+            name_fa: "رستوران ریحون (تکسیم / گالاتاسرای)",
+            district: "تکسیم / گالاتاسرای",
+            address_tr: "Yeni Çarşı Cad. No:8/A, Galatasaray, Beyoğlu",
+            phone: "+90 531 262 75 26",
+            google_rating: 4.7,
+            google_review_count: 2920,
+            tripadvisor_rating: 4.6,
+            tripadvisor_review_count: 420,
+            sentiment_positive_pct: 88.2,
+            monthly_unlocked_revenue_try: 165000,
+            seat_capacity: 110,
+            off_peak_occupancy_pct: 28,
+            revpash_current: 16.5,
+            revpash_potential: 62.0,
+            magic_token: "REYHUN-TAK-2026",
+            absa_scores: { taste: 4.8, price_value: 4.5, hygiene: 4.8, service_speed: 4.5, atmosphere: 4.7 }
+          }
+        ];
+        checkUrlToken();
+      });
+
+    function checkUrlToken() {
+      var params = new URLSearchParams(window.location.search);
+      var token = params.get("token") || localStorage.getItem("mizban_client_token");
+      if (token) {
+        loginWithToken(token);
+      }
+    }
+
+    function submitLoginToken() {
+      var inp = document.getElementById("tokenInput").value.trim().toUpperCase();
+      if (!inp) {
+        alert("لطفاً شناسه اختصاصی را وارد فرمایید.");
+        return;
+      }
+      loginWithToken(inp);
+    }
+
+    function loginWithToken(token) {
+      var clean = token.trim().toUpperCase();
+      var found = taksimData.find(function(r) {
+        return r.magic_token === clean || r.id === token.toLowerCase();
+      });
+
+      if (!found) {
+        // Fallback to first if demo
+        found = taksimData[0];
+      }
+
+      currentRestaurant = found;
+      localStorage.setItem("mizban_client_token", found.magic_token);
+
+      // Render Dashboard
+      renderDashboard(found);
+
+      document.getElementById("loginCard").style.display = "none";
+      document.getElementById("dashboardView").style.display = "block";
+      document.getElementById("tenantSwitcherBtn").style.display = "inline-flex";
+      document.getElementById("logoutBtn").style.display = "inline-flex";
+    }
+
+    function logoutTenant() {
+      localStorage.removeItem("mizban_client_token");
+      currentRestaurant = null;
+      document.getElementById("loginCard").style.display = "block";
+      document.getElementById("dashboardView").style.display = "none";
+      document.getElementById("tenantSwitcherBtn").style.display = "none";
+      document.getElementById("logoutBtn").style.display = "none";
+    }
+
+    function openTenantSwitcher() {
+      logoutTenant();
+    }
+
+    function renderDashboard(r) {
+      document.getElementById("dNameFa").textContent = r.name_fa;
+      document.getElementById("dDistrict").textContent = r.district || "تکسیم";
+      document.getElementById("dAddress").textContent = r.address_tr || "...";
+      document.getElementById("dPhone").textContent = r.phone || "...";
+
+      document.getElementById("dGoogleRating").textContent = "★ " + r.google_rating;
+      document.getElementById("dGoogleReviews").textContent = "از " + r.google_review_count.toLocaleString("fa-IR") + " نظر ثبت‌شده";
+      document.getElementById("dTripRating").textContent = "★ " + (r.tripadvisor_rating || 4.6);
+      document.getElementById("dPosPct").textContent = r.sentiment_positive_pct + "٪";
+      document.getElementById("dUnlockedRevenue").textContent = "+" + (r.monthly_unlocked_revenue_try || 174000).toLocaleString("fa-IR") + " ₺";
+
+      document.getElementById("dCapacity").textContent = (r.seat_capacity || 100) + " صندلی";
+      document.getElementById("dOccupancy").textContent = (r.off_peak_occupancy_pct || 22) + "٪";
+      document.getElementById("dRevpash").textContent = (r.revpash_current || 14) + " ₺ ➔ " + (r.revpash_potential || 58) + " ₺";
+
+      // ABSA Bars
+      var absa = r.absa_scores || { taste: 4.8, price_value: 4.5, hygiene: 4.8, service_speed: 4.6, atmosphere: 4.7 };
+      var dims = [
+        { label: "طعم و کیفیت غذا", score: absa.taste, color: "#2ecc71" },
+        { label: "بهداشت و نظافت سالن", score: absa.hygiene, color: "#38bdf8" },
+        { label: "اتمسفر و راحتی صندلی‌ها", score: absa.atmosphere, color: "#a855f7" },
+        { label: "سرعت سرویس و میزبانی", score: absa.service_speed, color: "#ffd21e" },
+        { label: "قیمت در برابر کیفیت", score: absa.price_value, color: "var(--copper)" }
+      ];
+
+      var absaHtml = dims.map(function(d) {
+        var pct = (d.score / 5.0) * 100;
+        return `
+          <div class="absa-row">
+            <div class="absa-label">${d.label}</div>
+            <div class="absa-bar-bg">
+              <div class="absa-bar-fill" style="width:${pct}%;background:${d.color}"></div>
+            </div>
+            <div class="absa-score">${d.score} / ۵</div>
+          </div>
+        `;
+      }).join("");
+      document.getElementById("absaBarsContainer").innerHTML = absaHtml;
+
+      // Sample Reviews with AI Responses
+      var reviews = [
+        {
+          author: "Alexandre Dupont (توریست فرانسوی)",
+          stars: "★★★★★",
+          date: "دیروز",
+          lang: "EN",
+          text: "Exceptional kebabs and saffron rice! The ambience in Taksim is magical, and the staff was extremely hospitable.",
+          reply_tr: "Harika geri bildiriminiz için teşekkür ederiz! Sizi Taksim şubemizde tekrar ağırlamaktan mutluluk duyarız.",
+          reply_en: "Thank you for the wonderful review, Alexandre! We are delighted you enjoyed our authentic saffron rice and hope to welcome you back soon."
+        },
+        {
+          author: "فاطمه الزهراء (مسافر کویت)",
+          stars: "★★★★★",
+          date: "۳ روز پیش",
+          lang: "AR",
+          text: "أفضل مشويات جربتها في منطقة تقسيم، النظافة ممتازة والخدمة سريعة جداً وراشف الزعفران لا ينسى.",
+          reply_ar: "شكراً جزيلاً لزيارتكم الكريمة وكلماتكم الطيبة! سعداء جداً بنيل إعجابكم ونتطلع لاستضافتكم دائماً في إسطنبول.",
+          reply_fa: "بسیار خرسندیم که طعم کباب و عطر زعفران مورد پسند شما واقع شد. همواره چشم‌انتظار میزبانی مجدد شما هستیم."
+        }
+      ];
+
+      var reviewsHtml = reviews.map(function(rev) {
+        return `
+          <div class="review-item">
+            <div class="review-header">
+              <div>
+                <b style="color:var(--cream)">${rev.author}</b>
+                <span style="color:#ffd21e;margin-right:8px">${rev.stars}</span>
+              </div>
+              <span style="color:var(--muted)">${rev.date}</span>
+            </div>
+            <p style="font-size:.82rem;color:var(--text);margin-bottom:8px">"${rev.text}"</p>
+            
+            <div class="ai-reply-box">
+              <div style="font-size:.74rem;color:var(--copper);font-weight:bold;margin-bottom:4px">
+                ⚡ پاسخ پیشنهادی هوش مصنوعی (آماده ارسال در گوگل مپ):
+              </div>
+              <div style="font-size:.78rem;color:var(--cream)">${rev.reply_en || rev.reply_ar}</div>
+              <button class="btn btn-ghost" onclick="navigator.clipboard.writeText('${rev.reply_en || rev.reply_ar}');alert('پاسخ هوشمند در حافظه کپی شد.')"
+                style="margin-top:6px;font-size:.7rem;padding:3px 10px">
+                📋 کپی پاسخ جهت ارسال در Google Business
+              </button>
+            </div>
+          </div>
+        `;
+      }).join("");
+      document.getElementById("sampleReviewsContainer").innerHTML = reviewsHtml;
+    }
+  </script>
+</body>
+</html>
