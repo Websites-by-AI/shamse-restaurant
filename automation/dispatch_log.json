@@ -1,5 +1,29 @@
 [
   {
+    "timestamp": "2026-10-19T21:05:56.791974",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792443956_8009",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
+    "timestamp": "2026-10-19T21:05:28.643354",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792443928_6365",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
     "timestamp": "2026-10-19T20:54:14.987241",
     "channel": "email_resend",
     "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
@@ -2733,28 +2757,6 @@
     "restaurant_name": "کافه رستوران آریا استانبول",
     "channel": "email",
     "recipient": "info@aryacafe.com",
-    "timestamp": "2026-10-19 19:19:15",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-AFGHAN-7555",
-    "lead_id": "afghan-restaurant-58",
-    "restaurant_name": "رستوران افغان (سفرهٔ افغان)",
-    "channel": "email",
-    "recipient": "sofreh@afghanrestaurant58.com",
-    "timestamp": "2026-10-19 19:19:15",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-AFGHAN-7555",
-    "lead_id": "afghan-turk",
-    "restaurant_name": "رستوران افغان ترک",
-    "channel": "email",
-    "recipient": "info@afghanturkrestaurant.com",
     "timestamp": "2026-10-19 19:19:15",
     "status": "delivered",
     "opened": true,

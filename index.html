@@ -497,6 +497,178 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
   *{animation:none!important;transition:none!important}
   .rev{opacity:1;transform:none}
 }
+
+/* === WORDPRESS LUXURY HERO SLIDER === */
+.wp-hero-slider {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  overflow: hidden;
+  background: #0f0b09;
+}
+.wp-slide {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 60px;
+}
+.wp-slide.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+.wp-slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.35);
+  transform: scale(1.05);
+  transition: transform 6s ease;
+}
+.wp-slide.active .wp-slide-bg {
+  transform: scale(1.0);
+}
+.wp-slide-content {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wp-slider-ctrl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(20,16,13,0.7);
+  border: 1px solid var(--copper);
+  color: var(--copper);
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+.wp-slider-ctrl:hover {
+  background: var(--copper);
+  color: #14100d;
+}
+.wp-slider-prev { right: 24px; }
+.wp-slider-next { left: 24px; }
+.wp-slider-dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+.wp-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  border: 1px solid var(--copper);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.wp-dot.active {
+  background: var(--copper);
+  width: 32px;
+  border-radius: 7px;
+}
+
+/* === WORDPRESS WOOCOMMERCE-STYLE MENU FILTER === */
+.wp-menu-filter-bar {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  margin: 20px 0 28px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.wp-filter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.wp-search-box {
+  position: relative;
+  flex: 1;
+  min-width: 240px;
+}
+.wp-search-input {
+  width: 100%;
+  background: var(--ink-1);
+  border: 1px solid var(--line);
+  color: var(--cream);
+  padding: 10px 38px 10px 14px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: .88rem;
+  transition: border-color .3s;
+}
+.wp-search-input:focus {
+  outline: none;
+  border-color: var(--copper);
+}
+.wp-search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+.wp-dietary-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.wp-diet-btn {
+  background: var(--ink-1);
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: .78rem;
+  cursor: pointer;
+  transition: all .2s;
+  font-family: inherit;
+}
+.wp-diet-btn:hover {
+  border-color: var(--copper);
+  color: var(--cream);
+}
+.wp-diet-btn.active {
+  background: var(--copper);
+  color: #14100d;
+  border-color: var(--copper);
+  font-weight: 700;
+}
+.wp-sort-select {
+  background: var(--ink-1);
+  border: 1px solid var(--line);
+  color: var(--cream);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: .82rem;
+  font-family: inherit;
+}
+
 </style>
 </head>
 <body>
@@ -560,37 +732,113 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
       <a href="#reviews" class="na-opt">نظرات</a>
       <a href="#contact">تماس با ما</a>
     </nav>
+    <div class="lang-switch hide-s" style="display:flex;align-items:center;gap:6px;font-size:.76rem;margin-left:10px">
+      <span style="color:var(--copper);font-weight:bold" title="فارسی">🇮🇷 FA</span>
+      <span style="color:var(--muted)">|</span>
+      <span style="color:var(--text);cursor:pointer" title="English" onclick="alert('Switching to English interface...')">🇬🇧 EN</span>
+      <span style="color:var(--muted)">|</span>
+      <span style="color:var(--text);cursor:pointer" title="Türkçe" onclick="alert('Türkçe arayüze geçiliyor...')">🇹🇷 TR</span>
+    </div>
+    <a href="admin_panel.html" class="btn btn--ghost desk" style="font-size:.75rem;padding:6px 10px;border-color:#ffd21e;color:#ffd21e">⚙️ پنل مدیریت</a>
     <a href="#reserve" class="btn btn--gold desk">رزرو میز</a>
     <button class="burger" id="burger" aria-label="باز و بست منو" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero" id="home">
-  <div class="bg" style="--hero:url('assets/img/hero-platter.jpg')"></div>
-  <div class="wrap">
-    <span class="kicker">🍽 بزرگ‌ترین رستوران ایرانی تکسیم — دو شعبه در استانبول</span>
-    <h1>رستوران شمسه؛ دو طبقه از <em>طعم و مهمان‌نوازی ایرانی</em> در قلب تکسیم</h1>
-    <p class="lead">
-      شمسه، رستوران معروف ایرانی در قلب استانبول، با <b>دو شعبه</b> میزبان شماست: شعبه اصلی در خیابان استقلال (تکسیم)
-      و «شمسه سو کلاب» در کوجاتپه. عطر زعفران و زغال، دو طبقه سالن (طبقهٔ همکف رستوران + طبقهٔ اختصاصی میتاپ)، موسیقی زنده و مهمان‌نوازی ایرانی —
-      همه‌روزه از ۱۲ ظهر تا ۱:۳۰ بامداد.
-    </p>
-    <p class="hero-name">رستوران شمسه</p>
-    <div class="cta">
-      <a href="#menu" class="btn btn--gold">مشاهده منو</a>
-      <a href="#ai-live-studio" class="btn btn--line" style="border-color:var(--copper);color:var(--copper)">⚡ تست زنده هوش مصنوعی</a>
-      <a href="#reserve" class="btn btn--ghost">رزرو میز</a>
-    </div>
-    <div class="facts">
-      <div><b data-count="72">۰</b><span>تنوع غذا در منو</span></div>
-      <div><b data-count="2">۰</b><span>شعبه در استانبول</span></div>
-      <div><b data-count="120">۰</b><span>ظرفیت سالن و تراس</span></div>
-      <div><b>۴٫۸ ★</b><span>امتیاز مهمانان در گوگل</span></div>
+
+<!-- ================= WORDPRESS LUXURY HERO SLIDER ================= -->
+<section class="wp-hero-slider" id="home">
+  
+  <!-- Slide 1: Main Taksim & Kocatepe Branches -->
+  <div class="wp-slide active" id="slide-1">
+    <div class="wp-slide-bg" style="background-image:url('assets/img/hero-platter.jpg')"></div>
+    <div class="wp-slide-content">
+      <span class="kicker">🍽 بزرگ‌ترین رستوران ایرانی تکسیم — دو شعبه در استانبول</span>
+      <h1>رستوران شمسه؛ دو طبقه از <em>طعم و مهمان‌نوازی ایرانی</em> در قلب تکسیم</h1>
+      <p class="lead">
+        شمسه، رستوران معروف ایرانی در قلب استانبول با <b>دو شعبه</b>: استقلال (تکسیم) و «شمسه سو کلاب» کوجاتپه.
+        عطر زعفران و زغال، دو طبقه سالن پذیرایی، موسیقی زنده، و ثبت بالاترین رضایت مشتریان در گوگل مپ و تریپ‌ادوایزر.
+      </p>
+      <p class="hero-name">رستوران شمسه • شعبه استقلال</p>
+      <div class="cta">
+        <a href="#menu" class="btn btn--gold">مشاهده منوی مصور</a>
+        <a href="#reserve" class="btn btn--ghost">رزرو آنلاین میز</a>
+        <a href="admin_panel.html" class="btn btn--line" style="border-color:#ffd21e;color:#ffd21e">⚙️ پنل مدیریت وردپرسی</a>
+      </div>
+      <div class="facts">
+        <div><b data-count="72">۷۲</b><span>تنوع غذا در منو</span></div>
+        <div><b data-count="2">۲</b><span>شعبه در استانبول</span></div>
+        <div><b data-count="120">۱۲۰</b><span>ظرفیت سالن و تراس</span></div>
+        <div><b>۴٫۸ ★</b><span>امتیاز گوگل مپ (۵,۰۵۵ نقد)</span></div>
+      </div>
     </div>
   </div>
-  <div class="scroll-hint"><span>اسکرول کنید</span><i></i></div>
+
+  <!-- Slide 2: Saffron Kebabs & Culinary Excellence -->
+  <div class="wp-slide" id="slide-2">
+    <div class="wp-slide-bg" style="background-image:url('assets/img/dish-koobideh.jpg')"></div>
+    <div class="wp-slide-content">
+      <span class="kicker">🥩 ۱۰۰٪ گوشت تازه گوسفندی • زعفران قائنات • نان داغ سنتی</span>
+      <h1>کباب‌های زغالی اصیل، شیشلیک مخصوص و <em>ته‌دیگ زعفرانی کریستالی</em></h1>
+      <p class="lead">
+        هنر تخته‌کاری استادان قدیمی تهران در استانبول؛ از کباب سلطانی و بختیاری تا کباب لقمه بازاری با کره محلی و برنج دودی ایرانی.
+        برنده نشان بین‌المللی Travelers' Choice در پلتفرم TripAdvisor.
+      </p>
+      <p class="hero-name">طعم ناب بازارهای کهن ایران</p>
+      <div class="cta">
+        <a href="#menu" class="btn btn--gold">سفارش کباب زغالی</a>
+        <a href="shamse_sentiment_report.html" class="btn btn--line" style="border-color:var(--copper);color:var(--copper)">🎙️ گزارش و پادکست نظرات</a>
+        <a href="#reserve" class="btn btn--ghost">رزرو میز VIP</a>
+      </div>
+      <div class="facts">
+        <div><b>۱۰۰٪</b><span>گوشت حلال ذبح روز</span></div>
+        <div><b>۴ ساعت</b><span>طبخ آرام خورش‌ها</span></div>
+        <div><b>۲۹۵</b><span>نقد گردشگران اروپایی</span></div>
+        <div><b>۹۵٫۱٪</b><span>رضایت از کیفیت کباب</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3: 2nd Floor VIP Lounge & Meetups -->
+  <div class="wp-slide" id="slide-3">
+    <div class="wp-slide-bg" style="background-image:url('assets/img/interior2.jpg')"></div>
+    <div class="wp-slide-content">
+      <span class="kicker">☕ طبقه دوم اختصاصی — کافه، موسیقی زنده و شب‌های مافیا</span>
+      <h1>فضایی دل‌نشین برای <em>دورهمی‌های استارتاپی، شب مافیا</em> و ایونت‌ها</h1>
+      <p class="lead">
+        مجهز به سیستم صوتی پیشرفته، پروژکتور، صندلی‌های ارگونومیک و پذیرایی چای و باقلوای خوش‌آمدگویی.
+        بهترین انتخاب جامعه اکسپات‌ها و کارآفرینان در بی‌اوغلو.
+      </p>
+      <p class="hero-name">کافه کلاب و سالن رویداد شمسه</p>
+      <div class="cta">
+        <a href="events.html" class="btn btn--gold">تقویم رویدادهای هفته</a>
+        <a href="restaurant_portal.html" class="btn btn--ghost">پرتال چندمستأجره رستوران</a>
+        <a href="#contact" class="btn btn--line" style="border-color:var(--copper);color:var(--copper)">رزرو طبقه دوم VIP</a>
+      </div>
+      <div class="facts">
+        <div><b>۵۰+</b><span>ظرفیت دورهمی اختصاصی</span></div>
+        <div><b>۱۰۰ مگابیت</b><span>اینترنت فیبر نوری پرسرعت</span></div>
+        <div><b>۳ رویداد</b><span>میتاپ هفتگی فعال</span></div>
+        <div><b>۱۰۰٪</b><span>تجهیزات سمعی و بصری</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider Controls -->
+  <button class="wp-slider-ctrl wp-slider-prev" onclick="changeWpSlide(-1)" aria-label="اسلاید قبلی">❯</button>
+  <button class="wp-slider-ctrl wp-slider-next" onclick="changeWpSlide(1)" aria-label="اسلاید بعدی">❮</button>
+
+  <!-- Slider Pagination Dots -->
+  <div class="wp-slider-dots">
+    <span class="wp-dot active" onclick="goWpSlide(0)"></span>
+    <span class="wp-dot" onclick="goWpSlide(1)"></span>
+    <span class="wp-dot" onclick="goWpSlide(2)"></span>
+  </div>
+
+  <div class="scroll-hint"><span>اسکرول به منو</span><i></i></div>
 </section>
+
 
 <!-- ================= ABOUT ================= -->
 <section class="section section--cream" id="about">
@@ -647,6 +895,45 @@ details.q p{color:var(--muted);padding:0 42px 22px 0}
       <h2 class="sec-title">منوی شمسه؛ از خورش‌های خانگی تا کباب‌های زغالی</h2>
       <p class="sec-sub">از پیش‌غذاهای دودی و خورش‌های خانگی تا کباب‌های زغالی و دسرهای سنتی؛ دسته مورد علاقه‌تان را انتخاب کنید.</p>
       <div class="ornament"><svg viewBox="0 0 24 24" fill="#d29a5a"><path d="M12 2l2.2 5 5.3.8-3.9 3.7.9 5.3-4.5-2.4-4.5 2.4.9-5.3L4.5 7.8l5.3-.8z"/></svg></div>
+    </div>
+
+
+    <!-- WORDPRESS WOOCOMMERCE-STYLE ADVANCED MENU FILTER BAR -->
+    <div class="wp-menu-filter-bar">
+      <div class="wp-filter-row">
+        
+        <!-- Live Instant Search Box -->
+        <div class="wp-search-box">
+          <input type="text" id="wpMenuSearch" class="wp-search-input" placeholder="🔍 جستجوی آنی غذاها و مواد اولیه (مثلا: کوبیده، زعفران، باقلوا)..." oninput="applyWpMenuFilter()">
+          <span class="wp-search-icon">🔍</span>
+        </div>
+
+        <!-- Dietary & Special Tags -->
+        <div class="wp-dietary-tags">
+          <button class="wp-diet-btn active" data-diet="all" onclick="setWpDietFilter('all', this)">همه غذاها</button>
+          <button class="wp-diet-btn" data-diet="bestseller" onclick="setWpDietFilter('bestseller', this)">🌟 پرفروش</button>
+          <button class="wp-diet-btn" data-diet="halal" onclick="setWpDietFilter('halal', this)">🥩 گوشت حلال</button>
+          <button class="wp-diet-btn" data-diet="veg" onclick="setWpDietFilter('veg', this)">🌿 گیاهی</button>
+          <button class="wp-diet-btn" data-diet="glutenfree" onclick="setWpDietFilter('glutenfree', this)">🌾 بدون گلوتن</button>
+        </div>
+
+        <!-- Sorting Selector -->
+        <div>
+          <select id="wpMenuSort" class="wp-sort-select" onchange="applyWpMenuFilter()">
+            <option value="default">مرتب‌سازی پیش‌فرض منو</option>
+            <option value="price-asc">ارزان‌ترین به گران‌ترین</option>
+            <option value="price-desc">گران‌ترین به ارزان‌ترین</option>
+            <option value="popular">محبوب‌ترین غذاها</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- Live Results Counter Badge -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted)">
+        <span id="wpMenuCount">نمایش ۲۴ از ۲۴ غذای اصیل شمسه</span>
+        <span style="color:var(--copper)">✨ فیلتر فعال و قیمت‌های رسمی به لیر ترکیه (TRY)</span>
+      </div>
     </div>
 
     <div class="tabs" role="tablist" id="tabs">

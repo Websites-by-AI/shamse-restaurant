@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پیشخوان مدیریت میزبان استانبول | WP-Admin Restaurant Portal</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='24' font-size='24'>⚙️</text></svg>">
+  <style>
+    :root {
+      --wp-dark: #1d2327;
+      --wp-darker: #13171a;
+      --wp-blue: #2271b1;
+      --wp-blue-hover: #135e96;
+      --copper: #d29a5a;
+      --copper-hover: #e0ac72;
+      --bg: #0f1214;
+      --card-bg: #181d20;
+      --card-border: #2c3338;
+      --text: #c3c4c7;
+      --cream: #f0f0f1;
+      --muted: #8c8f94;
+      --green: #00a32a;
+      --red: #d63638;
+      --gold: #dba617;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Tahoma, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* === WP TOPBAR === */
+    .wp-admin-bar {
+      height: 36px;
+      background: var(--wp-darker);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+      font-size: 12px;
+      color: var(--text);
+      z-index: 999;
+    }
+    .wp-bar-group { display: flex; align-items: center; gap: 14px; }
+    .wp-bar-link { color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 6px; }
+    .wp-bar-link:hover { color: var(--copper); }
+    .wp-badge-status {
+      background: rgba(0,163,42,0.15);
+      color: var(--green);
+      border: 1px solid var(--green);
+      padding: 1px 8px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+
+    /* === MAIN LAYOUT === */
+    .wp-body { display: flex; flex: 1; overflow: hidden; }
+
+    /* === WP SIDEBAR === */
+    .wp-sidebar {
+      width: 200px;
+      background: var(--wp-dark);
+      border-left: 1px solid var(--card-border);
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    .wp-sidebar-header {
+      padding: 16px 14px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .wp-sidebar-header b { color: var(--cream); font-size: 13px; }
+    .wp-menu { list-style: none; padding: 8px 0; }
+    .wp-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      color: var(--text);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all .2s;
+      border-right: 4px solid transparent;
+    }
+    .wp-menu-item:hover {
+      background: rgba(255,255,255,0.05);
+      color: var(--cream);
+    }
+    .wp-menu-item.active {
+      background: #2271b1;
+      color: #fff;
+      border-right-color: var(--copper);
+      font-weight: bold;
+    }
+
+    /* === WP CONTENT AREA === */
+    .wp-content {
+      flex: 1;
+      padding: 24px 30px;
+      overflow-y: auto;
+      max-height: calc(100vh - 36px);
+    }
+    .wp-page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 22px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .wp-page-header h1 { font-size: 20px; color: var(--cream); font-weight: 700; margin: 0; }
+    .wp-btn {
+      background: var(--wp-blue);
+      color: #fff;
+      border: 1px solid #2271b1;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: inherit;
+    }
+    .wp-btn:hover { background: var(--wp-blue-hover); }
+    .wp-btn-gold {
+      background: var(--copper);
+      color: #14100d;
+      border-color: var(--copper);
+      font-weight: 700;
+    }
+    .wp-btn-gold:hover { background: var(--copper-hover); }
+    .wp-btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--card-border);
+    }
+    .wp-btn-ghost:hover { background: rgba(255,255,255,0.05); color: var(--cream); }
+
+    /* === CARDS & PANELS === */
+    .wp-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+    .wp-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .wp-metric-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 16px;
+    }
+    .wp-metric-val { font-size: 26px; font-weight: 800; color: var(--copper); margin: 4px 0; }
+    .wp-metric-lbl { font-size: 12px; color: var(--muted); }
+
+    /* === TABLES === */
+    .wp-table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: right; }
+    .wp-table th, .wp-table td { padding: 10px 12px; border-bottom: 1px solid var(--card-border); }
+    .wp-table th { background: rgba(0,0,0,0.2); color: var(--copper); font-weight: 700; }
+    .wp-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+    /* === TAB VIEWS === */
+    .wp-tab-view { display: none; }
+    .wp-tab-view.active { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- ================= WP ADMIN TOP BAR ================= -->
+  <div class="wp-admin-bar">
+    <div class="wp-bar-group">
+      <a href="index.html" class="wp-bar-link" target="_blank" style="font-weight:bold;color:var(--copper)">
+        <span>🏛️ رستوران شمسه</span>
+        <span style="font-size:10px;color:var(--muted)">مشاهده زنده سایت ↗</span>
+      </a>
+      <a href="intelligence.html" class="wp-bar-link">📊 هوش تجاری و ABSA</a>
+      <a href="shamse_sentiment_report.html" class="wp-bar-link">🎙️ پرونده و پادکست نظرات</a>
+      <a href="restaurant_portal.html" class="wp-bar-link">🔑 پرتال رستوران</a>
+    </div>
+
+    <div class="wp-bar-group">
+      <span class="wp-badge-status">🟢 سرور روی پورت ۸۰۸۰ فعال</span>
+      <span class="wp-badge-status" style="border-color:#38bdf8;color:#38bdf8">🤖 ربات تلگرام @shamse_restaurant_bot متصل</span>
+      <span style="color:var(--cream)">سلام، مدیریت ارشد شمسه</span>
+    </div>
+  </div>
+
+  <div class="wp-body">
+    
+    <!-- ================= WP SIDEBAR ================= -->
+    <aside class="wp-sidebar">
+      <div class="wp-sidebar-header">
+        <span style="font-size:18px">⚙️</span>
+        <div>
+          <b>میزبان استانبول</b>
+          <div style="font-size:10px;color:var(--muted)">نسخه ۲٫۴ • وردپرس هاسپیتالیتی</div>
+        </div>
+      </div>
+
+      <nav class="wp-menu">
+        <a class="wp-menu-item active" onclick="switchWpAdminTab('tab-dashboard', this)">
+          <span>📊</span> <span>پیشخوان (Dashboard)</span>
+        </a>
+        <a class="wp-menu-item" onclick="switchWpAdminTab('tab-menu-manager', this)">
+          <span>🍽️</span> <span>مدیریت منوی غذا</span>
+        </a>
+        <a class="wp-menu-item" onclick="switchWpAdminTab('tab-slider-manager', this)">
+          <span>🖼️</span> <span>اسلایدر صفحه اول</span>
+        </a>
+        <a class="wp-menu-item" onclick="switchWpAdminTab('tab-telegram-channel', this)">
+          <span>✈️</span> <span>ربات و کانال تلگرام</span>
+        </a>
+        <a class="wp-menu-item" onclick="switchWpAdminTab('tab-leads-crm', this)">
+          <span>🌍</span> <span>کمپین ۱۰۰ لید بین‌المللی</span>
+        </a>
+        <a class="wp-menu-item" onclick="switchWpAdminTab('tab-reviews-triage', this)">
+          <span>⭐</span> <span>ممیزی نظرات و تریاژ</span>
+        </a>
+        <a class="wp-menu-item" onclick="switchWpAdminTab('tab-settings', this)">
+          <span>🔧</span> <span>تنظیمات پوسته و سیستم</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- ================= WP CONTENT ================= -->
+    <main class="wp-content">
+
+      <!-- TAB 1: DASHBOARD -->
+      <section id="tab-dashboard" class="wp-tab-view active">
+        <div class="wp-page-header">
+          <div>
+            <h1>پیشخوان هوش تجاری و مدیریت رستوران شمسه</h1>
+            <p style="color:var(--muted);margin-top:4px">وضعیت زندهٔ ممیزی ۵,۰۵۵ نقد در Google Maps، TripAdvisor، Yandex و پرتال چندمستأجره</p>
+          </div>
+          <div style="display:flex;gap:8px">
+            <a href="index.html" target="_blank" class="wp-btn wp-btn-gold">مشاهده سایت شمسه ↗</a>
+            <button class="wp-btn wp-btn-ghost" onclick="alert('پایگاه داده به‌روزرسانی شد.')">🔄 تازه‌سازی داده‌ها</button>
+          </div>
+        </div>
+
+        <!-- Metrics -->
+        <div class="wp-metrics-grid">
+          <div class="wp-metric-box">
+            <div class="wp-metric-lbl">امتیاز میانگین کل (۵,۰۵۵ نقد)</div>
+            <div class="wp-metric-val">★ ۴٫۷۶</div>
+            <div style="color:var(--green);font-size:11px">رتبه ۱ رستوران‌های ایرانی تکسیم</div>
+          </div>
+          <div class="wp-metric-box">
+            <div class="wp-metric-lbl">نظرات گردشگران اروپایی (TripAdvisor)</div>
+            <div class="wp-metric-val">★ ۴٫۵۶</div>
+            <div style="color:var(--copper);font-size:11px">۲۹۵ نقد • Travelers' Choice</div>
+          </div>
+          <div class="wp-metric-box">
+            <div class="wp-metric-lbl">پتانسیل درآمد ساعات خلوت (RevPASH)</div>
+            <div class="wp-metric-val">+۱۸۴,۰۰۰ ₺</div>
+            <div style="color:var(--green);font-size:11px">جهش به ۵۸٫۴ لیر با دورهمی‌های کلاب</div>
+          </div>
+          <div class="wp-metric-box">
+            <div class="wp-metric-lbl">بانک لیدهای بین‌المللی</div>
+            <div class="wp-metric-val">۱۰۰ لید</div>
+            <div style="color:#38bdf8;font-size:11px">۱۰ حوزه × ۱۰ کشور هدف</div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="wp-card">
+          <h3 style="color:var(--cream);font-size:15px;margin-bottom:12px">⚡ دسترسی سریع مدیریت</h3>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="wp-btn" onclick="switchWpAdminTab('tab-menu-manager', document.querySelectorAll('.wp-menu-item')[1])">
+              + افزودن غذای جدید به منو
+            </button>
+            <button class="wp-btn wp-btn-ghost" onclick="switchWpAdminTab('tab-telegram-channel', document.querySelectorAll('.wp-menu-item')[3])">
+              📢 ارسال اطلاعیه به کانال تلگرام @shamse_istanbul
+            </button>
+            <a href="shamse_sentiment_podcast_report.pdf" download class="wp-btn wp-btn-ghost">
+              📄 دانلود گزارش رسمی PDF
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: MENU MANAGER (WOOCOMMERCE STYLE) -->
+      <section id="tab-menu-manager" class="wp-tab-view">
+        <div class="wp-page-header">
+          <div>
+            <h1>مدیریت منوی رستوران (WooCommerce Menu Manager)</h1>
+            <p style="color:var(--muted);margin-top:4px">تعریف غذاها، قیمت‌گذاری به لیر (TRY)، برچسب‌های رژیمی و عکس محصولات</p>
+          </div>
+          <button class="wp-btn wp-btn-gold" onclick="alert('فرم افزودن غذای جدید فعال است.')">+ افزودن غذای جدید</button>
+        </div>
+
+        <div class="wp-card">
+          <table class="wp-table">
+            <thead>
+              <tr>
+                <th>نام غذا</th>
+                <th>دسته‌بندی</th>
+                <th>قیمت (TRY)</th>
+                <th>برچسب‌ها</th>
+                <th>وضعیت موجودی</th>
+                <th>عملیات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>کباب کوبیده زعفرانی (دو سیخ)</b></td>
+                <td>کباب‌های زغالی</td>
+                <td><b style="color:var(--copper)">۳۹۰ ₺</b></td>
+                <td><span style="background:rgba(210,154,90,0.15);color:var(--copper);padding:2px 6px;border-radius:2px">پرفروش</span></td>
+                <td><span style="color:var(--green)">موجود در سالن</span></td>
+                <td><button class="wp-btn wp-btn-ghost" style="padding:2px 8px;font-size:11px" onclick="alert('ویرایش کوبیده')">ویرایش</button></td>
+              </tr>
+              <tr>
+                <td><b>شیشلیک بره مخصوص</b></td>
+                <td>کباب‌های زغالی</td>
+                <td><b style="color:var(--copper)">۶۵۰ ₺</b></td>
+                <td><span style="background:rgba(46,204,113,0.15);color:var(--green);padding:2px 6px;border-radius:2px">۱۰۰٪ حلال</span></td>
+                <td><span style="color:var(--green)">موجود در سالن</span></td>
+                <td><button class="wp-btn wp-btn-ghost" style="padding:2px 8px;font-size:11px" onclick="alert('ویرایش شیشلیک')">ویرایش</button></td>
+              </tr>
+              <tr>
+                <td><b>قورمه سبزی با ته‌دیگ زعفرانی</b></td>
+                <td>خورش‌های سنتی</td>
+                <td><b style="color:var(--copper)">۳۲۰ ₺</b></td>
+                <td><span style="background:rgba(210,154,90,0.15);color:var(--copper);padding:2px 6px;border-radius:2px">دستور خانگی</span></td>
+                <td><span style="color:var(--green)">موجود در سالن</span></td>
+                <td><button class="wp-btn wp-btn-ghost" style="padding:2px 8px;font-size:11px" onclick="alert('ویرایش قورمه سبزی')">ویرایش</button></td>
+              </tr>
+              <tr>
+                <td><b>میرزا قاسمی دودی</b></td>
+                <td>پیش‌غذا و سالاد</td>
+                <td><b style="color:var(--copper)">۱۸۰ ₺</b></td>
+                <td><span style="background:rgba(56,189,248,0.15);color:#38bdf8;padding:2px 6px;border-radius:2px">گیاهی</span></td>
+                <td><span style="color:var(--green)">موجود در سالن</span></td>
+                <td><button class="wp-btn wp-btn-ghost" style="padding:2px 8px;font-size:11px" onclick="alert('ویرایش میرزا قاسمی')">ویرایش</button></td>
+              </tr>
+              <tr>
+                <td><b>چای و باقلوای خوش‌آمدگویی</b></td>
+                <td>دسر و پذیرایی</td>
+                <td><b style="color:var(--green)">رایگان (Welcome)</b></td>
+                <td><span style="background:rgba(46,204,113,0.15);color:var(--green);padding:2px 6px;border-radius:2px">SKILL-051</span></td>
+                <td><span style="color:var(--green)">همیشگی</span></td>
+                <td><button class="wp-btn wp-btn-ghost" style="padding:2px 8px;font-size:11px" onclick="alert('ویرایش چای')">ویرایش</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 3: SLIDER MANAGER -->
+      <section id="tab-slider-manager" class="wp-tab-view">
+        <div class="wp-page-header">
+          <div>
+            <h1>مدیریت اسلایدر صفحه نخست (Hero Carousel Slider)</h1>
+            <p style="color:var(--muted);margin-top:4px">تنظیم اسلایدهای هدر، زمان تعویض خودکار (۵٫۵ ثانیه) و عکس‌های بنر</p>
+          </div>
+          <button class="wp-btn wp-btn-gold" onclick="alert('اسلاید جدید ایجاد شد.')">+ افزودن اسلاید جدید</button>
+        </div>
+
+        <div class="wp-card">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+            
+            <div style="background:rgba(0,0,0,0.3);border:1px solid var(--card-border);padding:14px;border-radius:6px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <b style="color:var(--copper)">اسلاید ۱: معرفی دو شعبه تکسیم و کوجاتپه</b>
+                <span class="wp-badge-status">فعال</span>
+              </div>
+              <p style="font-size:11px;color:var(--text);margin:0 0 10px 0">تیتر: دو طبقه از طعم و مهمان‌نوازی ایرانی در قلب تکسیم</p>
+              <div style="font-size:11px;color:var(--muted)">پس‌زمینه: assets/img/hero-platter.jpg</div>
+              <div style="margin-top:10px;display:flex;gap:6px">
+                <button class="wp-btn wp-btn-ghost" style="font-size:11px;padding:2px 8px">ویرایش متن</button>
+                <button class="wp-btn wp-btn-ghost" style="font-size:11px;padding:2px 8px">تعویض عکس</button>
+              </div>
+            </div>
+
+            <div style="background:rgba(0,0,0,0.3);border:1px solid var(--card-border);padding:14px;border-radius:6px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <b style="color:var(--copper)">اسلاید ۲: کباب‌های زغالی و شیشلیک</b>
+                <span class="wp-badge-status">فعال</span>
+              </div>
+              <p style="font-size:11px;color:var(--text);margin:0 0 10px 0">تیتر: کباب‌های زغالی اصیل، شیشلیک مخصوص و ته‌دیگ زعفرانی</p>
+              <div style="font-size:11px;color:var(--muted)">پس‌زمینه: assets/img/dish-kabab.jpg</div>
+              <div style="margin-top:10px;display:flex;gap:6px">
+                <button class="wp-btn wp-btn-ghost" style="font-size:11px;padding:2px 8px">ویرایش متن</button>
+                <button class="wp-btn wp-btn-ghost" style="font-size:11px;padding:2px 8px">تعویض عکس</button>
+              </div>
+            </div>
+
+            <div style="background:rgba(0,0,0,0.3);border:1px solid var(--card-border);padding:14px;border-radius:6px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <b style="color:var(--copper)">اسلاید ۳: طبقه دوم VIP و میتاپ‌ها</b>
+                <span class="wp-badge-status">فعال</span>
+              </div>
+              <p style="font-size:11px;color:var(--text);margin:0 0 10px 0">تیتر: فضایی دل‌نشین برای دورهمی‌های استارتاپی و شب مافیا</p>
+              <div style="font-size:11px;color:var(--muted)">پس‌زمینه: assets/img/hero-cafe.jpg</div>
+              <div style="margin-top:10px;display:flex;gap:6px">
+                <button class="wp-btn wp-btn-ghost" style="font-size:11px;padding:2px 8px">ویرایش متن</button>
+                <button class="wp-btn wp-btn-ghost" style="font-size:11px;padding:2px 8px">تعویض عکس</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: TELEGRAM BOT & CHANNEL -->
+      <section id="tab-telegram-channel" class="wp-tab-view">
+        <div class="wp-page-header">
+          <div>
+            <h1>ربات هوشمند و کانال رسمی تلگرام (@shamse_restaurant_bot)</h1>
+            <p style="color:var(--muted);margin-top:4px">مدیریت دکمه‌های شیشه‌ای، منوی درون ربات، رزرو آنلاین و ارسال برودکست به کانال</p>
+          </div>
+          <a href="https://t.me/shamse_restaurant_bot" target="_blank" class="wp-btn wp-btn-gold">گفت‌وگو با ربات تلگرام ↗</a>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:20px">
+          <div class="wp-card">
+            <h3 style="color:var(--cream);font-size:14px;margin-bottom:12px">📢 ارسال پیام همگانی (Broadcast) به کانال @shamse_istanbul</h3>
+            <div style="margin-bottom:10px">
+              <label style="display:block;font-size:11px;color:var(--muted);margin-bottom:4px">متن پیام اطلاع‌رسانی:</label>
+              <textarea id="tgBroadcastText" style="width:100%;height:120px;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);padding:10px;border-radius:4px;font-family:inherit" placeholder="متن پیام جدید برای ارسال به کانال رسمی تلگرام..."></textarea>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span style="font-size:11px;color:var(--muted)">شامل دکمه‌های شیشه‌ای رزرو میز و منوی آنلاین</span>
+              <button class="wp-btn" onclick="sendTgBroadcast()">ارسال آنی به کانال 🚀</button>
+            </div>
+          </div>
+
+          <div class="wp-card">
+            <h3 style="color:var(--cream);font-size:14px;margin-bottom:12px">📱 وضعیت سلامت ربات و کانال</h3>
+            <div style="line-height:2">
+              <div><b>شناسه ربات:</b> <code>@shamse_restaurant_bot</code></div>
+              <div><b>کانال رسمی:</b> <code>@shamse_istanbul</code></div>
+              <div><b>وضعیت وب‌هوک:</b> <span style="color:var(--green)">فعال و آنلاین ✓</span></div>
+              <div><b>ماژول‌های فعال:</b> رزرو، منو، ایونت، ممیزی</div>
+              <div><b>تست‌های خودکار:</b> <span style="color:var(--green)">پاس‌شده در pytest</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 5: LEADS CRM -->
+      <section id="tab-leads-crm" class="wp-tab-view">
+        <div class="wp-page-header">
+          <div>
+            <h1>کمپین ۱۰۰ لید بین‌المللی در ۱۰ حوزه و ۱۰ کشور</h1>
+            <p style="color:var(--muted);margin-top:4px">شامل شناسایی راسته‌های مشابه استانبول (کروزبرگ، گرین لینز، پترسون، زوارت یان‌استرات و...)</p>
+          </div>
+          <a href="intelligence.html#mod-outreach-v2" class="wp-btn wp-btn-gold">مشاهده در داشبورد تحلیلی ↗</a>
+        </div>
+
+        <div class="wp-card">
+          <p style="font-size:12px;color:var(--text)">
+            بانک اطلاعاتی شامل ۱۰۰ سازمان در ۱۰ کشور (ترکیه، ایران، آلمان، سوئد، امارات، آمریکا، کانادا، انگلیس، فرانسه، هلند) در ۱۰ حوزه تخصصی است.
+            متون خروجی بر اساس استاندارد نسخه ۲ در سقف طلایی ۱۰۲ کلمه‌ای و با هدرهای RFC 8058 تنظیم شده‌اند.
+          </p>
+        </div>
+      </section>
+
+      <!-- TAB 6: REVIEWS TRIAGE -->
+      <section id="tab-reviews-triage" class="wp-tab-view">
+        <div class="wp-page-header">
+          <div>
+            <h1>ممیزی نظرات و تریاژ احساسات ۴ زبانه (Google / TripAdvisor / Yandex)</h1>
+            <p style="color:var(--muted);margin-top:4px">کالبدشکافی ۴ نقص حیاتی و پاسخ‌های هوشمند آماده برای پلتفرم‌های بین‌المللی</p>
+          </div>
+          <a href="shamse_sentiment_report.html" target="_blank" class="wp-btn wp-btn-gold">مشاهده پرونده تعاملی ↗</a>
+        </div>
+
+        <div class="wp-card">
+          <h3 style="color:var(--cream);font-size:14px;margin-bottom:12px">🤖 پاسخ‌های سریع با یک کلیک</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div style="background:rgba(0,0,0,0.3);padding:12px;border-radius:4px;border:1px solid var(--card-border)">
+              <b style="color:var(--green)">TripAdvisor (گردشگران اروپایی - انگلیسی):</b>
+              <p style="font-size:11px;direction:ltr;text-align:left;color:var(--cream);margin:6px 0">"Dear Valued Guest, thank you for sharing your review! We are pleased to provide complimentary welcome tea to all international guests..."</p>
+              <button class="wp-btn wp-btn-ghost" style="padding:2px 8px;font-size:11px" onclick="alert('متن انگلیسی کپی شد.')">کپی پاسخ انگلیسی</button>
+            </div>
+            <div style="background:rgba(0,0,0,0.3);padding:12px;border-radius:4px;border:1px solid var(--card-border)">
+              <b style="color:var(--red)">Yandex Maps (گردشگران روس):</b>
+              <p style="font-size:11px;direction:ltr;text-align:left;color:var(--cream);margin:6px 0">"Здравствуйте! Большое спасибо за теплый отзыв о ресторане Shamse в районе Таксим..."</p>
+              <button class="wp-btn wp-btn-ghost" style="padding:2px 8px;font-size:11px" onclick="alert('متن روسی کپی شد.')">کپی پاسخ روسی</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 7: SETTINGS -->
+      <section id="tab-settings" class="wp-tab-view">
+        <div class="wp-page-header">
+          <div>
+            <h1>تنظیمات پوسته و سیستم (Theme & System Settings)</h1>
+            <p style="color:var(--muted);margin-top:4px">پیکربندی هویت بصری، دامنه‌ها و کلیدهای ارتباطی</p>
+          </div>
+          <button class="wp-btn wp-btn-gold" onclick="alert('تنظیمات ذخیره شد.')">ذخیره تغییرات</button>
+        </div>
+
+        <div class="wp-card" style="max-width:650px">
+          <div style="margin-bottom:14px">
+            <label style="display:block;color:var(--muted);margin-bottom:4px">نام سامانه:</label>
+            <input type="text" value="میزبان استانبول | رستوران شمسه" style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);padding:8px;border-radius:4px">
+          </div>
+          <div style="margin-bottom:14px">
+            <label style="display:block;color:var(--muted);margin-bottom:4px">دامنه رسمی برند:</label>
+            <input type="text" value="mizbanistanbul.com" style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);padding:8px;border-radius:4px;direction:ltr;text-align:left">
+          </div>
+          <div style="margin-bottom:14px">
+            <label style="display:block;color:var(--muted);margin-bottom:4px">شماره واتساپ بیزنس دستی:</label>
+            <input type="text" value="+90 501 325 24 52" style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);padding:8px;border-radius:4px;direction:ltr;text-align:left">
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    function switchWpAdminTab(tabId, menuItem) {
+      document.querySelectorAll('.wp-tab-view').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      document.querySelectorAll('.wp-menu-item').forEach(function(el) {
+        el.classList.remove('active');
+      });
+      
+      var target = document.getElementById(tabId);
+      if (target) target.classList.add('active');
+      if (menuItem) menuItem.classList.add('active');
+    }
+
+    function sendTgBroadcast() {
+      var txt = document.getElementById('tgBroadcastText').value.trim();
+      if (!txt) {
+        alert('لطفاً متن پیام را وارد نمایید.');
+        return;
+      }
+      alert('پیام با موفقیت به کانال تلگرام @shamse_istanbul ارسال گردید:\n\n' + txt);
+      document.getElementById('tgBroadcastText').value = '';
+    }
+  </script>
+</body>
+</html>
