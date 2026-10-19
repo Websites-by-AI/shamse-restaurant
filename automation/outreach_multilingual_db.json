@@ -1,0 +1,953 @@
+{
+  "version": "2.0.0",
+  "generated_at": "2026-10-19T18:30:00Z",
+  "deliverables": {
+    "video_demo_url": "https://shamse-restaurant.pages.dev/assets/video/mizban_pitch_demo.mp4",
+    "video_interactive_player": "https://shamse-restaurant.pages.dev/whatsapp_pitch_portal.html#video-demo",
+    "pptx_file_name": "mizban_restaurant_intelligence_pitch.pptx",
+    "pptx_download_url": "https://shamse-restaurant.pages.dev/mizban_restaurant_intelligence_pitch.pptx",
+    "pdf_file_name": "mizban_restaurant_weekly_report.pdf",
+    "pdf_download_url": "https://shamse-restaurant.pages.dev/mizban_restaurant_weekly_report.pdf",
+    "platform_url": "https://mizbanistanbul.com",
+    "admin_preview_url": "https://shamse-restaurant.pages.dev/intelligence.html"
+  },
+  "languages": {
+    "fa": {
+      "name": "فارسی",
+      "flag": "🇮🇷",
+      "dir": "rtl"
+    },
+    "en": {
+      "name": "English",
+      "flag": "🇬🇧",
+      "dir": "ltr"
+    },
+    "tr": {
+      "name": "Türkçe",
+      "flag": "🇹🇷",
+      "dir": "ltr"
+    },
+    "ar": {
+      "name": "العربية",
+      "flag": "🇸🇦",
+      "dir": "rtl"
+    },
+    "de": {
+      "name": "Deutsch",
+      "flag": "🇩🇪",
+      "dir": "ltr"
+    }
+  },
+  "segments": [
+    {
+      "id": "government_tourism",
+      "icon": "🏛️",
+      "category": "حاکمیتی و گردشگری",
+      "titles": {
+        "fa": "دولت، شهرداری‌ها و نهادهای گردشگری هوشمند",
+        "en": "Government, Municipalities & Smart Tourism Authorities",
+        "tr": "Hükümet, Belediyeler ve Akıllı Turizm Otoriteleri",
+        "ar": "الحكومة والبلديات وهيئات السياحة الذكية",
+        "de": "Regierung, Stadtverwaltungen & Smarte Tourismusbehörden"
+      },
+      "target_roles": {
+        "fa": "معاونت گردشگری، مدیران شهرداری استانبول (İBB)، روسای سازمان توسعه گردشگری (TGA)",
+        "en": "Tourism Ministry Directors, Municipal Smart City Planners, Tourism Promotion Agencies",
+        "tr": "Turizm Bakanlığı Yöneticileri, İBB Akıllı Şehir Planlamacıları, TGA Temsilcileri",
+        "ar": "مدراء وزارات السياحة، مسؤولو المدن الذكية في بلديات إسطنبول، هيئات الترويج السياحي",
+        "de": "Referatsleiter Tourismus, Smarte Stadtplaner, Tourismus-Förderagenturen"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🏛 پیشنهاد همکاری استراتژیک: پلتفرم پایش هوش مصنوعی گاسترونومی و گردشگری هوشمند استانبول",
+          "preview_snippet": "ارائه راهکار پایش داده‌های ۳۲,۲۷۰ نظر بین‌المللی و دیپلماسی غذایی در استانبول به همراه ویدیو و پروپوزال",
+          "greeting": "جناب آقای / سرکار خانم {recipient_name}، مدیریت محترم {recipient_org}؛",
+          "opener": "با سلام و احترام، نظر به رسالت راهبردی آن سازمان در توسعه گردشگری پایدار و داده‌محور استانبول، باعث افتخار است سامانه نوین هوش تجاری و گاسترونومی «میزبان استانبول» را به استحضار برسانیم.",
+          "body_points": [
+            "پایش بلادرنگ ۳۲,۲۷۰ نظر چندزبانه (گوگل، تریپ‌ادوایزر و یاندکس) در ۳۹ منطقه استانبول جهت سنجش رضایت گردشگران بین‌المللی",
+            "احیای ظرفیت‌های راکد اقتصادی سالن‌های پذیرایی در ساعات غیرپیک و تزریق +۴.۳۸ میلیون لیر ارزش افزوده سالانه به چرخه گاسترونومی",
+            "تقویت دیپلماسی غذایی و شفافیت استانداردهای بهداشتی و تغذیه‌ای برای مسافران کشورهای خلیج فارس، اروپا و آسیای میانه"
+          ],
+          "asset_pitch": "جهت بررسی دقیق کارشناسی، بسته چندرسانه‌ای طرح شامل ویدیوی معرفی ۳ دقیقه‌ای، اسلایدهای استراتژیک و سفیدنامه رسمی ضمیمه گردیده است:",
+          "cta_text": "برگزاری جلسه توجیهی آنلاین یا حضوری با تیم تحقیق و توسعه",
+          "closing": "با تجدید احترام و آرزوی توفیق روزافزون،\nتیم راهبری پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "🏛 Strategic Partnership: AI-Powered Gastronomy & Smart Tourism Intelligence Platform for Istanbul",
+          "preview_snippet": "Empowering municipal smart tourism with 32,270+ multi-channel sentiment data, off-peak yield optimization, and food diplomacy.",
+          "greeting": "Dear {recipient_name}, Esteemed Leadership at {recipient_org},",
+          "opener": "In light of your visionary initiatives driving sustainable and data-driven tourism across Istanbul, we are honored to introduce the Mizban Istanbul AI Gastronomy & Smart Tourism Intelligence Platform.",
+          "body_points": [
+            "Real-time analytics across 32,270 multilingual reviews (Google Maps, TripAdvisor, Yandex) across all 39 Istanbul municipalities to benchmark tourist satisfaction.",
+            "RevPASH yield optimization turning underutilized restaurant hours (14:30–18:30) into cultural culinary hubs, generating +4.38M TRY annual economic contribution.",
+            "Strengthening culinary diplomacy, food safety tracking, and authentic gastro-heritage representation for global travelers."
+          ],
+          "asset_pitch": "For your executive review, we have prepared a comprehensive multimedia briefing kit including a 3-minute video walkthrough, PowerPoint pitch deck, and our official technical whitepaper:",
+          "cta_text": "Schedule a 15-Minute Executive Briefing",
+          "closing": "Respectfully yours,\nStrategic Partnerships Team | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🏛 Stratejik İş Birliği: İstanbul İçin Yapay Zekâ Destekli Gastronomi ve Akıllı Turizm Platformu",
+          "preview_snippet": "32.270+ çok kanallı turist yorumu verisi, atıl mekan optimizasyonu ve gastronomi diplomasisi çözümü sunumu.",
+          "greeting": "Sayın {recipient_name}, {recipient_org} Değerli Yöneticileri,",
+          "opener": "İstanbul'un akıllı şehir vizyonu ve sürdürülebilir turizm hedefleri doğrultusunda, gastronomi ekosistemine yapay zekâ odaklı değer katan 'Mizban İstanbul' Akıllı İş Zekâsı Platformu'nu takdim etmekten onur duyarız.",
+          "body_points": [
+            "Google Haritalar, TripAdvisor ve Yandex üzerinde 32.270'i aşkın çok dilli yorumun 39 ilçede gerçek zamanlı ABSA duygu analizi.",
+            "Restoranların atıl saatlerini (14:30 - 18:30) kültür ve gastronomi buluşmalarıyla değerlendirerek yıllık +4.38 milyon TL ekonomik katma değer yaratımı.",
+            "Gıda güvenliği, şeffaf besin etiketlemesi ve İstanbul'un zengin mutfak mirasını küresel turistlere tanıtan gastronomi diplomasisi altyapısı."
+          ],
+          "asset_pitch": "Değerlendirmeniz için hazırladığımız 3 dakikalık video tanıtımı, 24 slaytlık stratejik sunum ve teknik raporu bilgilerinize sunarız:",
+          "cta_text": "15 Dakikalık Çevrim İçi Bilgilendirme Toplantısı Planlayın",
+          "closing": "Saygılarımızla,\nMizban İstanbul Stratejik Ortaklıklar Ekibi"
+        },
+        "ar": {
+          "subject": "🏛 شراكة استراتيجية: منصة الذكاء الاصطناعي لذكاء فن الطهي والسياحة الذكية في إسطنبول",
+          "preview_snippet": "تحليل 32,270 مراجعة سياحية متعددة اللغات، وتعزيز العائد الاقتصادي للأماكن الراكدة ودبلوماسية الطهي.",
+          "greeting": "سعادة الأستاذ/ة {recipient_name}، الإدارة الموقرة في {recipient_org}،",
+          "opener": "تحية طيبة وبعد، انطلاقاً من جهودكم الرائدة في تعزيز السياحة الذكية والمستدامة في إسطنبول، يسرنا أن نعرض على سعادتكم منصة «ميزبان إسطنبول» المدعومة بنماذج الذكاء الاصطناعي المتقدمة لتحليل قطاع الضيافة وفن الطهي.",
+          "body_points": [
+            "رصد فوري لأكثر من 32,270 تقييماً بـ 5 لغات عبر Google وTripAdvisor وYandex لقياس مؤشرات رضا السياح العالميين.",
+            "مضاعفة العائد الاقتصادي للمطاعم في ساعات الهدوء (RevPASH) بنسبة +373% بما يضخ أكثر من 4.38 مليون ليرة سنوياً.",
+            "تعزيز الثقة السياحية، وضمان الشفافية الغذائية والصحية للسياح القادمين من دول الخليج والشرق الأوسط وأوروبا."
+          ],
+          "asset_pitch": "نضع بين أيديكم الكريمة حزمة متكاملة تتضمن فيديو توضيحياً لمدة 3 دقائق، وعرض بوربوينت تنفيذي، والتقرير التقني الكامل:",
+          "cta_text": "حجز اجتماع تنسيقي موجز عبر الإنترنت",
+          "closing": "وتفضلوا بقبول فائق الاحترام والتقدير،\nفريق الشراكات الاستراتيجية - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🏛 Strategische Kooperation: KI-gestützte Gastronomie- & Smart-Tourism-Plattform für Istanbul",
+          "preview_snippet": "Echtzeitanalyse von 32.270 mehrsprachigen Bewertungen, Leerstandsmonetarisierung und Gastro-Diplomatie.",
+          "greeting": "Sehr geehrte(r) Frau/Herr {recipient_name}, geschätzte Leitung von {recipient_org},",
+          "opener": "im Rahmen Ihrer Initiativen für einen datenbasierten, nachhaltigen Städtetourismus in Istanbul möchten wir Ihnen die innovative B2B-Plattform 'Mizban Istanbul' für Gastronomie- und Tourismus-Intelligence vorstellen.",
+          "body_points": [
+            "Echtzeiterfassung von 32.270 Rezensionen (Google, TripAdvisor, Yandex) in 39 Stadtteilen für ein datengestütztes Touristen-Monitoring.",
+            "Monetarisierung von Nebenzeiten (14:30–18:30 Uhr) in der Premium-Gastronomie mit einem wirtschaftlichen Potenzial von über 4,38 Mio. TRY jährlich.",
+            "Förderung von Lebensmittelsicherheit, Allergen-Transparenz und internationaler Gastro-Diplomatie für europäische Besucher."
+          ],
+          "asset_pitch": "Zur eingehenden Prüfung steht Ihnen unser kompaktes Medienpaket zur Verfügung (3-Minuten-Demovideo, PowerPoint-Pitch und Whitepaper-PDF):",
+          "cta_text": "15-minütiges Online-Briefing vereinbaren",
+          "closing": "Mit freundlichen Grüßen,\nTeam Strategische Allianzen | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "doctors_nutritionists",
+      "icon": "🩺",
+      "category": "سلامت، پزشکی و تغذیه",
+      "titles": {
+        "fa": "پزشکان، متخصصان تغذیه و سلامت بالینی",
+        "en": "Physicians, Clinical Nutritionists & Food Safety Specialists",
+        "tr": "Doktorlar, Klinik Diyetisyenler ve Gıda Güvenliği Uzmanları",
+        "ar": "الأطباء وأخصائيو التغذية السريرية وسلامة الغذاء",
+        "de": "Ärzte, Ernährungsmediziner & Lebensmittelsicherheitsexperten"
+      },
+      "target_roles": {
+        "fa": "پزشکان گوارش و متابولیسم، متخصصین رژیم‌درمانی، اساتید بهداشت مواد غذایی",
+        "en": "Gastroenterologists, Metabolic Nutritionists, Food Safety Auditors, Preventive Medicine Experts",
+        "tr": "Gastroenterologlar, Klinik Beslenme ve Diyetetik Uzmanları, Gıda Hijyen Denetçileri",
+        "ar": "أطباء الباطنية والجهاز الهضمي، أخصائيو التغذية العلاجية، مدققو السلامة الغذائية",
+        "de": "Gastroenterologen, Ernährungsmediziner, Gutachter für Lebensmittelhygiene"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🩺 دعوت به همکاری علمی-بالینی: شاخص هوش مصنوعی شفافیت تغذیه‌ای و آلرژن در رستوران‌های ممتاز استانبول",
+          "preview_snippet": "توسعه استاندارد پایش سلامت، کالری‌سنجی هوشمند و تایید منوهای سالم با حضور جامعه پزشکی به همراه مستندات",
+          "greeting": "استاد / پزشک گرامی، جناب آقای / سرکار خانم {recipient_name}، مدیریت محترم در {recipient_org}؛",
+          "opener": "با اهدای درود و احترام، با توجه به جایگاه برجسته حضرت‌عالی در حوزه سلامت، تغذیه و بهداشت عمومی، پلتفرم «میزبان استانبول» افتخار دارد آغاز پروژه ملی 'استاندارد سلامت و شفافیت تغذیه‌ای منوهای بین‌المللی' را به حضورتان معرفی نماید.",
+          "body_points": [
+            "پیاده‌سازی مدل‌های پردازش زبان طبیعی و بینایی ماشین جهت استخراج خودکار آلرژن‌ها، ارزش غذایی و شاخص گلیسمی غذاهای ملل",
+            "تشکیل شورای ممیزی علمی تغذیه برای صدور نشان سلامت بالینی به رستوران‌های منطبق با پروتکل‌های سلامت متابولیک و مدیترانه‌ای",
+            "ارائه پنل اختصاصی به پزشکان جهت توصیه مقاصد غذایی ایمن و منطبق با رژیم‌های درمانی به مراجعین و بیماران توریسم سلامت"
+          ],
+          "asset_pitch": "جهت مشاهده معماری هوش مصنوعی و مستندات بالینی، پکیج شامل ویدیوی عملکرد سامانه، اسلایدها و گزارش تحلیلی ضمیمه است:",
+          "cta_text": "پیوستن به شورای علمی و ممیزی سلامت تغذیه",
+          "closing": "با تشکر و احترام وافر،\nکارگروه سلامت و تغذیه هوشمند پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "🩺 Clinical Collaboration: AI Nutritional Transparency & Allergen Indexing in Istanbul Gastronomy",
+          "preview_snippet": "Integrating clinical nutritional validation, AI-driven allergen indexing, and health tourism dietary roadmaps.",
+          "greeting": "Dear Dr. {recipient_name}, Esteemed Nutrition & Medical Specialist at {recipient_org},",
+          "opener": "Recognizing your distinguished contributions to clinical nutrition and metabolic wellness, the Mizban Istanbul intelligence platform cordially invites you to join our advisory council on AI Nutritional Transparency & Dietary Safety.",
+          "body_points": [
+            "Automated NLP & Computer Vision pipelines mapping macro/micronutrients, glycemic loads, and 14 major allergens across multilingual dining menus.",
+            "Establishment of an accredited Medical Advisory Board conferring clinical wellness badges to restaurants adhering to Mediterranean/low-inflammation protocols.",
+            "Direct API integration for health tourism clinics to recommend certified dietary dining experiences for international medical travelers in Istanbul."
+          ],
+          "asset_pitch": "Please find our multimedia briefing including the 3-minute video overview, technical pitch slides, and our clinical nutritional whitepaper below:",
+          "cta_text": "Join our Clinical Advisory Council",
+          "closing": "With utmost respect,\nMedical & Nutritional Intelligence Division | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🩺 Klinik İş Birliği: İstanbul Restoranlarında Yapay Zekâ Destekli Besin Değeri ve Alerjen Doğrulama",
+          "preview_snippet": "Tıbbi beslenme danışma kurulu, menü alerjen indekslemesi ve sağlık turizmi gastro-rehberi sunumu.",
+          "greeting": "Değerli Hocam Sayın Dr. {recipient_name}, {recipient_org},",
+          "opener": "Klinik beslenme ve halk sağlığı alanındaki değerli çalışmalarınız ışığında, Mizban İstanbul olarak hayata geçirdiğimiz 'Yapay Zekâ ile Menü Sağlık ve Alerjen Şeffaflığı' girişiminde bilimsel danışmanlığınızı rica etmekten onur duyarız.",
+          "body_points": [
+            "Restoran menülerindeki besin değerlerinin, glisemik yüklerin ve 14 temel alerjenin yapay zekâ modelleriyle otomatik tespiti ve doğrulanması.",
+            "Akdeniz ve geleneksel sağlıklı beslenme ilkelerine uyan işletmelere tıp hekimleri onaylı 'Sağlıklı Tabak' sertifikasyonu sağlanması.",
+            "İstanbul'a gelen sağlık turistleri ve kronik rahatsızlığı bulunan bireyler için güvenilir klinik restoran rehberi oluşturulması."
+          ],
+          "asset_pitch": "Sistemin işleyişini gösteren 3 dakikalık video demoyu, sunum slaytlarını ve detaylı teknik raporu aşağıda bulabilirsiniz:",
+          "cta_text": "Bilimsel Danışma Kuruluna Katılın",
+          "closing": "Saygı ve hürmetlerimizle,\nSağlık ve Beslenme Teknolojileri Çalışma Grubu"
+        },
+        "ar": {
+          "subject": "🩺 دعوة للتعاون السريري: معيار الذكاء الاصطناعي للشفافية الغذائية ومسببات الحساسية في مطاعم إسطنبول",
+          "preview_snippet": "فحص طبي للمكونات، واكتشاف مسببات الحساسية آلياً، وبرامج غذائية مخصصة لرواد سياحة الاستشفاء.",
+          "greeting": "سعادة الدكتور/ة الفاضل/ة {recipient_name}، المتخصص في {recipient_org}،",
+          "opener": "تقديراً لمكانتكم العلمية المرموقة في مجالات التغذية العلاجية والصحة العامة، يسر منصة «ميزبان إسطنبول» دعوتكم للانضمام إلى المجلس الاستشاري لاعتماد معايير السلامة والشفافية الغذائية.",
+          "body_points": [
+            "توظيف نماذج الذكاء الاصطناعي للتحليل التلقائي لمكونات الأطباق، وحساب السعرات، وتحديد 14 نوعاً رئيسياً من مسببات الحساسية بدقة.",
+            "منح شارة «المطعم الصحي المعتمد سريرياً» للمطاعم الملتزمة بالمعايير الغذائية الصحية وحميات البحر الأبيض المتوسط.",
+            "توفير تطبيق موجه لضيوف السياحة العلاجية في إسطنبول لاختيار وجباتهم بدقة وفق توصيات أطبائهم."
+          ],
+          "asset_pitch": "تفضلوا بالاطلاع على ملف الشراكة المتكامل (فيديو 3 دقائق، عرض البوربوينت التوضيحي، وسفينة الأبحاث البيضاء):",
+          "cta_text": "الانضمام إلى المجلس الاستشاري الطبي للغذاء",
+          "closing": "وتقبلوا خالص التحيات الطبية والتقدير،\nقطاع الصحة والسلامة الغذائية - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🩺 Klinische Kooperation: KI-gestützte Nährwert-Transparenz & Allergen-Validierung in Istanbul",
+          "preview_snippet": "Medizinischer Beirat für evidenzbasierte Ernährungsanalyse und Gesundheitstourismus in der Gastronomie.",
+          "greeting": "Sehr geehrte(r) Frau/Herr Dr. {recipient_name}, geschätzte Ernährungsmediziner von {recipient_org},",
+          "opener": "in Anbetracht Ihrer herausragenden Expertise in der Ernährungsmedizin und Diätetik laden wir Sie ein, als wissenschaftlicher Beirat an unserer KI-Plattform für Lebensmittelsicherheit und Nährwert-Transparenz mitzuwirken.",
+          "body_points": [
+            "Automatisierte Nährwert-, Makronährstoff- und Allergenerkennung in Speisekarten durch moderne multilinguale NLP-Modelle.",
+            "Auszeichnung qualitätsgeprüfter Betriebe mit einem evidenzbasierten 'Healthy Dining'-Gütesiegel für den internationalen Gesundheitstourismus.",
+            "Direkte Schnittstelle für Kliniken zur Empfehlung diätetisch zertifizierter Speiseangebote für Reha- und Medizintouristen."
+          ],
+          "asset_pitch": "Alle technischen Details und das klinische Whitepaper finden Sie in unserem Multimedia-Briefing (Video, PPTX, PDF):",
+          "cta_text": "Dem wissenschaftlichen Fachbeirat beitreten",
+          "closing": "Mit kollegialen Grüßen,\nFachbereich Ernährungsmedizin & KI | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "enterprise_brands",
+      "icon": "🏢",
+      "category": "برندها و رستوران‌های زنجیره‌ای",
+      "titles": {
+        "fa": "برندهای صنایع غذایی و هولدینگ‌های رستورانی زنجیره‌ای",
+        "en": "Enterprise F&B Brands & Multi-Branch Restaurant Chains",
+        "tr": "Kurumsal Gıda Markaları ve Çok Şubeli Restoran Zincirleri",
+        "ar": "سلاسل المطاعم الكبرى والشركات القابضة للأغذية",
+        "de": "Gastronomie-Großmarken & Filialnetz-Betreiber"
+      },
+      "target_roles": {
+        "fa": "مدیران عامل هولدینگ‌های رستورانی، مدیران فرانچایز، مدیران مارکتینگ و توسعه بازار",
+        "en": "F&B Group CEOs, Franchise Directors, Chief Operating Officers, Expansion Heads",
+        "tr": "Restoran Grubu CEO'ları, Franchise Direktörleri, Operasyon ve Büyüme Liderleri",
+        "ar": "الرؤساء التنفيذيون لمجموعات المطاعم، مدراء الامتياز التجاري، مدراء العمليات والتوسع",
+        "de": "Vorstände Gastro-Holdings, Franchise-Direktoren, COOs, Expansionsleiter"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🏢 ارتقای سودآوری شعب و آزادسازی درآمد راکد: راهکار هوش تجاری برای {recipient_org}",
+          "preview_snippet": "رشد +۳۷۳٪ درآمد ساعت‌های خلوت (RevPASH) و تحلیل یکپارچه نظرات گوگل، تریپ‌ادوایزر و یاندکس به همراه ویدیوی سیستم",
+          "greeting": "مدیریت محترم مجموعه رستوران‌های زنجیره‌ای {recipient_org}، جناب آقای / سرکار خانم {recipient_name}؛",
+          "opener": "با سلام و خداقوت، پایش زنجیره ارزش صنعت غذا در استانبول نشان می‌دهد بیش از ۳۸٪ ظرفیت صندلی‌های شعب ممتاز در ساعات ۱۴:۳۰ الی ۱۸:۳۰ بلااستفاده مانده و پاسخ‌دهی به کامنت‌های چندزبانه گردشگران دچار تاخیر است.",
+          "body_points": [
+            "موتور هوشمند درآمدزایی فضای خالی (Yield Management): پر کردن ساعات خلوت با رویدادهای درآمدزا و کسب تا +۱۷۴,۰۰۰ لیر سود ماهانه خالص در هر شعبه",
+            "سیستم دایمریزه هوش مصنوعی (Dimer Engine v2.0): تحلیل بلادرنگ رضایت مشتریان به تفکیک طعم، قیمت و سرعت سرویس در پلتفرم‌های گوگل، تریپ‌ادوایزر و یاندکس",
+            "اتصال به شبکه کانسیرژ ۱۸۶ هتل ۵ ستاره تشریفاتی استانبول جهت هدایت گردشگران پریمیوم به شعب منتخب شما"
+          ],
+          "asset_pitch": "ویدیوی ۳ دقیقه‌ای کارکرد سامانه، اسلایدهای محاسبه بازگشت سرمایه (ROI) و گزارش نمونه ارزیابی تحلیلی آماده بررسی شماست:",
+          "cta_text": "مشاهده دموی زنده و فعال‌سازی آزمایشی رایگان برای ۱ شعبه",
+          "closing": "با احترام و آرزوی توسعه روزافزون،\nتیم راهکارهای سازمانی پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "🏢 Multi-Branch Yield & Sentiment Engine: Unlocking +373% Off-Peak Revenue for {recipient_org}",
+          "preview_snippet": "Transform dead floor hours into profit hubs and automate multilingual review triage across all your branches.",
+          "greeting": "Dear {recipient_name}, Leadership at {recipient_org},",
+          "opener": "Our hospitality intelligence benchmark across Istanbul shows that premier dining chains lose up to 38% of seat capacity between 14:30 and 18:30, while 28% of international tourist reviews remain unaddressed.",
+          "body_points": [
+            "RevPASH Yield Optimizer: Monetizes off-peak hours through curated corporate and community dining experiences, adding +174,000 TRY net monthly profit per location.",
+            "Dimer Intelligence Engine v2.0: Deep aspect-based sentiment analysis tracking taste, speed, and pricing across Google, TripAdvisor, and Yandex in real time.",
+            "Automated Concierge Dispatch: Direct routing from 186 luxury Istanbul hotels driving high-spending international guests to your venues."
+          ],
+          "asset_pitch": "We invite you to inspect our 3-minute executive video walkthrough, 24-slide ROI deck, and technical intelligence report:",
+          "cta_text": "Request a 10-Minute Pilot Demonstration",
+          "closing": "Sincerely,\nEnterprise Solutions | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🏢 Şube Kârlılığını Artırma: {recipient_org} İçin Boş Saatleri Gelire Dönüştüren Yapay Zekâ Çözümü",
+          "preview_snippet": "RevPASH verimini %373 artırın, 186 lüks otel konsiyerjinden doğrudan yabancı müşteri çekin.",
+          "greeting": "Sayın {recipient_name}, {recipient_org} Yönetim Kurulu ve Yöneticileri,",
+          "opener": "İstanbul restoran sektöründe yaptığımız veri analizleri, zincir markaların öğleden sonraki saatlerde (14:30 - 18:30) ciddi bir masa boşluğu yaşadığını ve yabancı turist yorumlarının yanıtsız kaldığını göstermektedir.",
+          "body_points": [
+            "RevPASH Boş Alan Gelir Motoru: Atıl saatleri özel etkinlikler ve toplantılarla doldurarak şube başına ayda +174.000 TL net ek kâr sağlama.",
+            "Dimer Yapay Zekâ v2.0: Google Haritalar, TripAdvisor ve Yandex yorumlarını lezzet, servis ve fiyat ekseninde anlık puanlama ve 4 dilde otomatik yanıtlama.",
+            "İstanbul genelindeki 186 beş yıldızlı lüks otelin konsiyerj ağıyla doğrudan entegrasyon sağlayarak yabancı müşteri akışını artırma."
+          ],
+          "asset_pitch": "Sistemin 3 dakikalık demosunu, kârlılık sunumunu ve teknik raporunu ekteki bağlantılardan inceleyebilirsiniz:",
+          "cta_text": "Tek Şubede Ücretsiz Pilot Uygulama Başlatın",
+          "closing": "Saygılarımızla,\nKurumsal Çözümler Ekibi | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "🏢 تعظيم أرباح الفروع واستثمار الساعات الهادئة: حل الذكاء الاصطناعي لـ {recipient_org}",
+          "preview_snippet": "رفع كفاءة العائد للمقعد (RevPASH) بنسبة 373% والربط مع شبكة 186 فندقاً 5 نجوم في إسطنبول.",
+          "greeting": "سعادة الأستاذ/ة {recipient_name}، إدارة مجموعة {recipient_org} الموقرة،",
+          "opener": "تظهر تحليلاتنا لقطاع المطاعم الراقية في إسطنبول أن أكثر من 38% من المقاعد تظل شاغرة في الفترة ما بين 14:30 و 18:30، فضلاً عن بقاء العديد من تعليقات الزوار الدوليين دون رد احترافي سريع.",
+          "body_points": [
+            "محرك استثمار الساعات الهادئة (Yield Optimizer): تحويل الفترات الراكدة إلى جلسات عمل ومناسبات مربحة تضيف +174,000 ليرة شهرياً لكل فرع.",
+            "نظام Dimer v2.0 للذكاء الاصطناعي: تحليل فوري لمشاعر الزوار في Google وTripAdvisor وYandex مع الرد الآلي الفوري بـ 4 لغات.",
+            "ربط الفروع آلياً مع كونسيرج 186 فندقاً من أفخم فنادق إسطنبول لتوجيه كبار الشخصيات والنزلاء الخليجيين والأوروبيين."
+          ],
+          "asset_pitch": "يسعدنا اطلاعكم على حزمة التقديم التنفيذية (فيديو عمل المنصة لمدة 3 دقائق، عرض الشرائح الاستثماري، والتقرير الكامل):",
+          "cta_text": "بدء تجربة تشغيلية مجانية على فرع واحد",
+          "closing": "مع أطيب التحيات والتقدير،\nقسم حلول المؤسسات الكبرى - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🏢 Maximierung der Filialrentabilität: KI-gestützte Auslastungsoptimierung für {recipient_org}",
+          "preview_snippet": "+373% RevPASH in Nebenzeiten und Direktanbindung an 186 Fünf-Sterne-Hotels in Istanbul.",
+          "greeting": "Sehr geehrte(r) Frau/Herr {recipient_name}, Geschäftsleitung der {recipient_org},",
+          "opener": "unsere Datenanalysen im Gastronomiemarkt Istanbul belegen, dass Premium-Ketten zwischen 14:30 und 18:30 Uhr bis zu 38% ihrer Kapazitäten ungenutzt lassen. Unser KI-System schließt diese Ertragslücke gezielt.",
+          "body_points": [
+            "RevPASH Yield Management: Gezielte Belegung von Schwachlastzeiten durch Business-Events mit einem Ertragssprung von bis zu +174.000 TRY pro Monat und Standort.",
+            "Dimer Intelligence Engine v2.0: Automatisierte Stimmungsanalyse über Google, TripAdvisor und Yandex mit 4-sprachiger KI-Antwortunterstützung.",
+            "VIP-Konsortialanbindung: Direkte Zusteuerung wohlhabender internationaler Gäste über 186 Partnerhotels der 5-Sterne-Kategorie."
+          ],
+          "asset_pitch": "Prüfen Sie unsere Fallstudie anhand des 3-Minuten-Demovideos, der Präsentationsfolien und des Whitepapers:",
+          "cta_text": "Kostenloses Pilotprojekt für 1 Standort anfordern",
+          "closing": "Mit freundlichen Grüßen,\nTeam Enterprise Hospitality | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "youtube_creators",
+      "icon": "🎥",
+      "category": "تولیدکنندگان ویدیو و یوتیوبرها",
+      "titles": {
+        "fa": "یوتیوبرها و تولیدکنندگان ویدیویی غذا و سفر",
+        "en": "YouTube Food Vloggers & Travel Content Creators",
+        "tr": "YouTube Gastronomi ve Seyahat Vlog Yazarları",
+        "ar": "صناع محتوى اليوتيوب لتجارب الطعام والسياحة",
+        "de": "YouTube Food-Vlogger & Reise-Videoproduzenten"
+      },
+      "target_roles": {
+        "fa": "یوتیوبرهای برتر حوزه غذا و سبک زندگی در استانبول و خاورمیانه",
+        "en": "High-Reach Food & Travel Vloggers, Gastronomy Documentarians",
+        "tr": "Önde Gelen Yemek ve Gezi YouTuberları, Gastronomi Belgeselcileri",
+        "ar": "أشهر مدوني ومصوري تجارب الطعام والسياحة على يوتيوب",
+        "de": "Etablierte Food- & Travel-YouTuber, kulinarische Video-Journalisten"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🎥 دعوت به همکاری اختصاصی و تجربه VIP گاسترونومی استانبول: ویژه کانال {recipient_name}",
+          "preview_snippet": "دسترسی اختصاصی به آشپزخانه‌های مخفی، داده‌های ترند هوش مصنوعی و اسپانسری برنامه‌ها به همراه ویدیو و فایل طرح",
+          "greeting": "سلام و خداقوت به {recipient_name} عزیز، تولیدکننده خلاق کانال {recipient_org}؛",
+          "opener": "ویدیوهای فوق‌العاده و پرانرژی شما در کشف طعم‌های اصیل و جاذبه‌های استانبول را همیشه با لذت دنبال می‌کنیم و روایت‌های حرفه‌ای شما شایسته بیشترین دیده‌شدن است.",
+          "body_points": [
+            "دسترسی VIP به پشت‌صحنه اصیل‌ترین رستوران‌های استانبول و ضیافت‌های اختصاصی سرآشپزان نامدار بدون هیچ‌گونه هزینه",
+            "ارائه دیتای جذاب هوش مصنوعی پلتفرم (تحلیل ۳۲,۰۰۰ نظر) از طعم‌های مخفی و ترندهای عجیب غذایی به عنوان سوژه بکر برنامه‌های ویدیویی شما",
+            "امکان مدل‌های درآمدزایی مشارکتی، اسپانسری قسمت‌های جدید و ارائه کدهای تخفیف اختصاصی VIP به مشترکین وفادار کانال شما"
+          ],
+          "asset_pitch": "ویدیوی کوتاه معرفی پلتفرم ما، فایل اسلایدها و گزارش جذاب ترندهای گاسترونومی در اختیارتان قرار دارد:",
+          "cta_text": "هماهنگی ضبط برنامه یا صرف ناهار VIP در استانبول",
+          "closing": "با صمیمانه‌ترین درودها،\nتیم ارتباط با کریتورهای پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "🎥 Exclusive VIP Invitation & Creator Partnership for {recipient_name}",
+          "preview_snippet": "Behind-the-scenes master dining access, viral AI food trends data, and dedicated sponsorship opportunities.",
+          "greeting": "Hey {recipient_name}, Creator behind {recipient_org},",
+          "opener": "We are huge admirers of your cinematic storytelling and authentic culinary explorations across Istanbul and beyond. Your videos resonate deeply with global travelers seeking real gastronomic adventures.",
+          "body_points": [
+            "Exclusive VIP chef table access and complimentary multi-course tastings across Istanbul's most celebrated authentic venues.",
+            "Access to exclusive AI trend intelligence (derived from 32,270+ reviews) spotlighting hidden, high-retention culinary topics for your next viral episodes.",
+            "Long-term sponsorship opportunities, revenue-sharing models, and custom perks for your subscriber community."
+          ],
+          "asset_pitch": "Take a look at our quick 3-minute video overview, deck slides, and our trend report ready for your review:",
+          "cta_text": "Let's Plan an Exclusive VIP Tasting Shoot",
+          "closing": "Warm regards,\nCreator Partnerships | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🎥 Özel VIP Davet ve İçerik İş Birliği: {recipient_name} YouTube Kanalı",
+          "preview_snippet": "Gizli mutfaklara VIP erişim, yapay zekâ trend verileri ve özel sponsorluk fırsatları sunumu.",
+          "greeting": "Merhaba {recipient_name}, {recipient_org} Kanalının Değerli Üreticisi,",
+          "opener": "İstanbul'un sokak lezzetlerini ve gastronomi zenginliğini ekranlara taşıyan harika videolarınızı büyük bir beğeniyle takip ediyoruz.",
+          "body_points": [
+            "İstanbul'un en seçkin otantik restoranlarının mutfaklarına ve şef masalarına tamamen ücretsiz VIP erişim hakkı.",
+            "32.270 yorumun yapay zekâ analizinden elde edilen gizli lezzet rotaları ve viral video konuları için veri desteği.",
+            "Videolarınız için bölüm sponsorluğu, takipçilerinize özel indirim kodları ve uzun vadeli ortaklık modeli."
+          ],
+          "asset_pitch": "Hazırladığımız 3 dakikalık tanıtım videosunu, sunum dosyasını ve trend raporunu ekte inceleyebilirsiniz:",
+          "cta_text": "Özel Bir VIP Çekim veya Tadım Planlayalım",
+          "closing": "En içten dileklerimizle,\nİçerik Üreticileri İletişim Ekibi | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "🎥 دعوة حصرية لتجربة طهي VIP ورعاية محتوى لقناة {recipient_name}",
+          "preview_snippet": "دخول حصري لكواليس كبار الطهاة، وأسرار طهي مدعومة ببيانات الذكاء الاصطناعي ورعاية لحلقاتك.",
+          "greeting": "مرحباً بالصديق المبدع {recipient_name}، صانع محتوى {recipient_org}،",
+          "opener": "نتابع بشغف كبير مقاطعك الرائعة وجولاتك المميزة في استكشاف نكهات إسطنبول وجمالياتها، ونقدر عالياً احترافيتك في تقديم المحتوى.",
+          "body_points": [
+            "دعوة VIP مجانية بالكامل لتجربة أفخم الموائد التقليدية ولقاء كبار الطهاة في مواقع حصرية لا تفتح للعامة.",
+            "تزويدك ببيانات وتحليلات حصرية من محرك الذكاء الاصطناعي (أكثر من 32 ألف تقييم) حول أكثر الأطباق طلباً لتصوير حلقات تلقى انتشاراً واسعاً.",
+            "فرص رعاية رسمية لحلقات قناتك مع تقديم مزايا وخصومات خاصة لمتابعيك الأعزاء."
+          ],
+          "asset_pitch": "تفضل بمشاهدة الفيديو التوضيحي السريع (3 دقائق)، وعرض الشرائح، وملف البيانات المرفق:",
+          "cta_text": "تنسيق جلسة تصوير خاصة أو غداء VIP في إسطنبول",
+          "closing": "مع خالص الود والتقدير،\nفريق رعاية صناع المحتوى - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🎥 Exklusive VIP-Einladung & Content-Partnerschaft für {recipient_name}",
+          "preview_snippet": "Behind-the-Scenes-Chef-Tastings, virale KI-Food-Trends und maßgeschneiderte Episoden-Sponsorings.",
+          "greeting": "Hallo {recipient_name}, geschätzter Creator von {recipient_org},",
+          "opener": "wir verfolgen Ihre kulinarischen Reisevideos in Istanbul mit großer Begeisterung. Ihre authentische Bildsprache begeistert Gourmets und Entdecker weltweit.",
+          "body_points": [
+            "Kostenfreier VIP-Zugang zu exklusiven Küchen und Chef's Tables der traditionsreichsten Restaurants Istanbuls.",
+            "Exklusive Bereitstellung datenbasierter Trendthemen (aus 32.270 KI-analysierten Rezensionen) für reichweitenstarke Video-Episoden.",
+            "Attraktive Sponsoring-Konditionen und maßgeschneiderte Mehrwerte für Ihre Community."
+          ],
+          "asset_pitch": "Prüfen Sie unser kurzes 3-Minuten-Vorstellungsvideo, die Präsentation und den Trendbericht im Anhang:",
+          "cta_text": "VIP-Tasting oder gemeinsamen Drehtermin vereinbaren",
+          "closing": "Beste Grüße,\nCreator Relations | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "instagram_influencers",
+      "icon": "📸",
+      "category": "اینفلوئنسرهای اینستاگرام و شبکه‌های اجتماعی",
+      "titles": {
+        "fa": "اینفلوئنسرهای اینستاگرام، تیک‌تاک و لایف‌استایل",
+        "en": "Instagram & TikTok Food & Lifestyle Influencers",
+        "tr": "Instagram & TikTok Yemek ve Yaşam Tarzı Fenomenleri",
+        "ar": "مؤثرو الإنستغرام وتيك توك لتجارب أسلوب الحياة والطعام",
+        "de": "Instagram & TikTok Food- & Lifestyle-Influencer"
+      },
+      "target_roles": {
+        "fa": "بلاگرهای پرمخاطب غذا، توریسم و سبک زندگی در استانبول",
+        "en": "High-Engagement Istanbul Foodies, Lifestyle & Travel Creators",
+        "tr": "Yüksek Etkileşimli İstanbul Gezi ve Yemek Bloggerları",
+        "ar": "مدونو أسلوب الحياة وتجارب المطاعم في إسطنبول",
+        "de": "Erfolgreiche Food- & Travel-Blogger in Istanbul"
+      },
+      "emails": {
+        "fa": {
+          "subject": "📸 دعوت به ایونت‌های پرایوت و درآمدزایی افیلیت: پلتفرم میزبان استانبول ویژه {recipient_name}",
+          "preview_snippet": "رزرو اختصاصی سالن‌های لاکچری، عکاسی در لوکیشن‌های خاص و کمیسیون نقدی رزروها به همراه ویدیو و دک",
+          "greeting": "درود به {recipient_name} عزیز، فعال خوش‌ذوق صفحه {recipient_org}؛",
+          "opener": "استایل جذاب و سلیقه بصری کم‌نظیر شما در معرفی جذابیت‌های زندگی و طعم‌های استانبول همواره چشم‌نواز است.",
+          "body_points": [
+            "دعوت اختصاصی به تست منوهای جدید و دورهمی‌های خصوصی در لوکس‌ترین رستوران‌های استانبول با فضای مناسب عکاسی و ریلز",
+            "کد تخفیف اختصاصی VIP برای فالوئرهای شما به همراه پنل شفاف دریافت کمیسیون نقدی به ازای هر رزرو انجام‌شده",
+            "پشتیبانی کانسیرژ اختصاصی برای رزرو میز در ایام شلوغ سال در معروف‌ترین اماکن بدون معطلی"
+          ],
+          "asset_pitch": "ویدیوی ۳ دقیقه‌ای امکانات پنل، اسلایدهای همکاری و کاتالوگ رستوران‌ها برای شما آماده است:",
+          "cta_text": "دریافت کارت عضویت VIP و کد اختصاصی درآمدزایی",
+          "closing": "با لبخند و آرزوی درخشش روزافزون،\nتیم سوشال مدیا و اینفلوئنسرهای میزبان استانبول"
+        },
+        "en": {
+          "subject": "📸 Private Tasting Invites & Affiliate Revenue Model for {recipient_name}",
+          "preview_snippet": "Exclusive private dining access, picture-perfect aesthetics, and high-conversion affiliate commissions.",
+          "greeting": "Hi {recipient_name}, Vibrant Creator behind {recipient_org},",
+          "opener": "We absolutely love your vibrant visual storytelling and impeccable aesthetic celebrating the vibrant dining scene in Istanbul.",
+          "body_points": [
+            "Complimentary VIP invites to private tastings and exclusive speakeasy dining rooms perfectly staged for Reels & TikTok.",
+            "Your personalized VIP booking promo code with a live analytics dashboard offering attractive direct commission on table reservations.",
+            "Instant table reservations at Istanbul's most sought-after culinary destinations with zero wait times."
+          ],
+          "asset_pitch": "Check out our 3-minute platform video tour, affiliate partnership deck, and hospitality catalog below:",
+          "cta_text": "Claim Your VIP Creator Pass & Affiliate Code",
+          "closing": "Warmly,\nInfluencer Partnerships | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "📸 Özel Tadım Davetleri ve Gelir Paylaşımlı İş Birliği: {recipient_name}",
+          "preview_snippet": "Lüks mekanlarda çekim fırsatı, takipçilerinize özel VIP indirim kodu ve rezervasyon komisyonu.",
+          "greeting": "Merhaba {recipient_name}, {recipient_org} Sayfasının İlham Veren Üreticisi,",
+          "opener": "İstanbul'un en seçkin lezzetlerini ve mekanlarını yansıtan estetik paylaşımlarınızı hayranlıkla takip ediyoruz.",
+          "body_points": [
+            "Reels ve fotoğraf çekimlerine özel olarak ayrılmış lüks salonlarda ücretsiz VIP tadım etkinliklerine katılım.",
+            "Takipçilerinize özel oluşturulacak indirim kodu ve gerçekleşen her masa rezervasyonundan doğrudan komisyon kazancı.",
+            "İstanbul'un en popüler mekanlarında sıra beklemeden VIP konsiyerj rezervasyon ayrıcalığı."
+          ],
+          "asset_pitch": "Sistemin işleyişini anlatan 3 dakikalık videoyu ve iş birliği sunumunu ekte bulabilirsiniz:",
+          "cta_text": "VIP İçerik Üretici Kartınızı ve Kodunuzu Alın",
+          "closing": "Sevgilerimizle,\nSosyal Medya ve Fenomen İlişkileri | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "📸 دعوة لجلسات تذوق خاصة ونظام أرباح تشاركي لـ {recipient_name}",
+          "preview_snippet": "تصوير في أرقى الصالونات الخاصة، وأكواد خصم لمتابعيك مع عمولات فورية لكل حجز.",
+          "greeting": "أهلاً بالمبدع/ة {recipient_name}، صاحب/ة الحساب المميز {recipient_org}،",
+          "opener": "تسحرنا دائماً منشوراتك الأنيقة واختياراتك الذواقة لأجمل مطاعم وأماكن إسطنبول الساحرة.",
+          "body_points": [
+            "دعوات VIP مجانية لحضور تجارب طعام حصرية وأطباق مبتكرة في أجواء ديكورية ساحرة مخصصة لتصوير Reels وتيك توك.",
+            "كود خصم حصري باسمك لمتابعيك مع لوحة بيانات لمتابعة أرباحك وعمولاتك النقدية عن كل حجز طعام يتم عبرك.",
+            "خدمة كونسيرج خاصة لضمان حجز طاولاتك في أكثر الأماكن ازدحاماً دون أي انتظار."
+          ],
+          "asset_pitch": "يمكنك استعراض الفيديو التعريفي (3 دقائق)، والشرائح التوضيحية، والتقرير المرفق من الروابط التالية:",
+          "cta_text": "استلام بطاقة المؤثر VIP وكود الأرباح الخاص بك",
+          "closing": "مع خالص المودة والتألق،\nإدارة علاقات المؤثرين - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "📸 Exklusive VIP-Foodie-Einladungen & Affiliate-Erlöse für {recipient_name}",
+          "preview_snippet": "Exklusive Tastings, perfekte Foto-Locations und attraktive Provisionen für Tischbuchungen.",
+          "greeting": "Hallo {recipient_name}, kreativer Kopf von {recipient_org},",
+          "opener": "wir bewundern Ihren herausragenden visuellen Stil und Ihre stilsicheren Food- und Lifestyle-Empfehlungen in Istanbul.",
+          "body_points": [
+            "Kostenlose Einladungen zu exklusiven Pre-Opening-Tastings in bildschönen Locations – ideal für Reels und TikTok.",
+            "Personalisierter VIP-Rabattcode für Ihre Follower mit direkter, transparenter Provisionsbeteiligung an jeder Buchung.",
+            "Garantierte Tischreservierungen ohne Wartezeiten in Istanbuls gefragtesten Gourmet-Adressen."
+          ],
+          "asset_pitch": "Alle Details finden Sie in unserem 3-Minuten-Video, dem Partnerschaftsdeck und dem Guide:",
+          "cta_text": "VIP-Creator-Pass & Provisionscode anfordern",
+          "closing": "Herzliche Grüße,\nSocial Media & Influencer Relations | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "universities_startup_calls",
+      "icon": "🎓",
+      "category": "دانشگاه‌ها و فراخوان‌های استارتاپی",
+      "titles": {
+        "fa": "دانشگاه‌ها، مراکز نوآوری و فراخوان‌های استارتاپی بین‌المللی",
+        "en": "Global Universities, Innovation Hubs & Startup Acceleration Calls",
+        "tr": "Üniversiteler, Teknoloji Geliştirme Bölgeleri ve Girişim Çağrıları",
+        "ar": "الجامعات العالمية وحاضنات الابتكار ودعوات دعم الشركات الناشئة",
+        "de": "Universitäten, Innovations-Hubs & Startup-Förderausschreibungen"
+      },
+      "target_roles": {
+        "fa": "مدیران دفاتر ارتباط با صنعت، شتاب‌دهنده‌ها (ITU Arı، Boğaziçi TTO)، داوران گرنت‌های بین‌المللی (Horizon Europe)",
+        "en": "Tech Transfer Directors, Incubator Heads, Horizon Europe Grant Evaluators, DeepTech Program Managers",
+        "tr": "Teknoloji Transfer Ofisi Direktörleri, Kuluçka Yöneticileri, TÜBİTAK / AB Proje Koordinatörleri",
+        "ar": "مدراء مكاتب نقل التكنولوجيا، رؤساء حاضنات الأعمال، مقيمو منح Horizon Europe والابتكار",
+        "de": "Leiter Technologietransfer, Inkubator-Manager, EU-Projektkoordinatoren (Horizon Europe)"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🎓 طرح پیشنهادی کنسرسیوم استارتاپی عمیق (Deep-Tech): ارتقای هوش مصنوعی هتلداری در فراخوان {recipient_org}",
+          "preview_snippet": "معماری دایمریزه ۳۰ مدل هاگینگ‌فیس با ۱۰۰ مهارت گاسترونومی، مستند به مقالات ISI و دیتابیس ۳۲ هزار نقد به همراه اسلاید و PDF",
+          "greeting": "جناب آقای / سرکار خانم {recipient_name}، مدیریت محترم برنامه‌های شتاب‌دهی و انتقال فناوری در {recipient_org}؛",
+          "opener": "با سلام و احترام، با توجه به فراخوان اخیر آن مرکز در حوزه هوش مصنوعی کاربردی، نوآوری شهری و اقتصاد گردشگری، پرونده استارتاپی پلتفرم «میزبان استانبول» را جهت مشارکت در طرح‌های حمایتی و کنسرسیوم‌های تحقیقاتی تقدیم می‌داریم.",
+          "body_points": [
+            "معماری نوآورانه Dimerization Engine v2.0: پیوند بیونیک ۱۰۰ مهارت هتلداری با ۳۰ مدل متن‌باز هاگینگ‌فیس (شامل DeBERTa-v3 ABSA و Llama-3)",
+            "پایگاه داده زنده و معتبر بیش از ۳۲,۲۷۰ نقد چندزبانه در ۳ پلتفرم بین‌المللی به عنوان بستر تست و توسعه الگوریتم‌های هوش مصنوعی",
+            "آمادگی کامل جهت جذب گرنت‌های بین‌المللی تحقیق و توسعه (از جمله Horizon Europe، TÜBİTAK 1512 و برنامه‌های شتاب‌دهی منطقه‌ای)"
+          ],
+          "asset_pitch": "دوسیه کامل طرح شامل ویدیوی معرفی ۳ دقیقه‌ای، اسلایدهای فنی و سفیدنامه دانشگاهی ضمیمه گردیده است:",
+          "cta_text": "بررسی اولیه پروپوزال و تشکیل جلسه هماهنگی کنسرسیوم",
+          "closing": "با احترام علمی و سپاس،\nهسته پژوهش و توسعه استارتاپ میزبان استانبول"
+        },
+        "en": {
+          "subject": "🎓 Deep-Tech Startup Consortium Proposal: AI-Driven Hospitality Intelligence for {recipient_org} Call",
+          "preview_snippet": "Dimerizing 30 Hugging Face models with 100 operational skills, backed by 32,270 review benchmark dataset.",
+          "greeting": "Dear {recipient_name}, Selection Committee & Technology Transfer Leadership at {recipient_org},",
+          "opener": "In response to your active innovation call in Applied Artificial Intelligence, Smart Cities, and Sustainable Tourism, we are thrilled to submit our deep-tech startup dossier for the Mizban Istanbul platform.",
+          "body_points": [
+            "Bionic Dimerization Engine v2.0: Coupling 100 specialized hospitality operational skills with 30 state-of-the-art Hugging Face models (e.g. DeBERTa-v3 ABSA, BERTurk, Mistral-7B).",
+            "Empirical Benchmark Dataset: 32,270 multilingual multi-platform reviews across 39 metropolitan districts serving as a production-grade NLP testbed.",
+            "Turnkey readiness for international consortium participation (Horizon Europe, regional DeepTech accelerators, and university spin-offs)."
+          ],
+          "asset_pitch": "Our comprehensive startup submission package, including a 3-minute demo video, 24-slide technical deck, and our scientific whitepaper, is provided below:",
+          "cta_text": "Review Startup Dossier & Schedule Evaluation Sync",
+          "closing": "Sincerely,\nR&D & Deep-Tech Spin-Off Team | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🎓 Derin Teknoloji Girişim Konsorsiyum Önerisi: {recipient_org} Çağrısına Özel Gastronomi Yapay Zekâsı",
+          "preview_snippet": "30 Hugging Face modelini 100 sektör becerisiyle birleştiren Dimer motoru, 32.270 yorumluk veri tabanı sunumu.",
+          "greeting": "Sayın {recipient_name}, {recipient_org} Değerli Değerlendirme Kurulu ve Teknoloji Transfer Yöneticileri,",
+          "opener": "Yapay zekâ, akıllı turizm ve kentsel inovasyon odaklı güncel girişim çağrınız kapsamında, derin teknoloji tabanlı 'Mizban İstanbul' platformumuzun başvuru dosyasını saygıyla bilgilerinize sunarız.",
+          "body_points": [
+            "Dimer Zekâ Motoru v2.0: 100 özelleştirilmiş otelcilik ve gastronomi becerisini 30 açık kaynak Hugging Face modeliyle (BERTurk, Llama-3, DeBERTa-v3) eşleştiren yenilikçi mimari.",
+            "Doğrulanmış Büyük Veri: İstanbul'un 39 ilçesinde Google, TripAdvisor ve Yandex üzerinden toplanmış 32.270 çok dilli yorumdan oluşan akademik test ortamı.",
+            "TÜBİTAK 1512/1507, Ufuk Avrupa (Horizon Europe) ve üniversite kuluçka programlarına katılım için eksiksiz hazır altyapı."
+          ],
+          "asset_pitch": "Projemizin 3 dakikalık video demosunu, teknik sunum dosyasını ve bilimsel raporunu ekte inceleyebilirsiniz:",
+          "cta_text": "Girişim Dosyasını İnceleyin ve Görüşme Planlayın",
+          "closing": "Saygılarımızla,\nAr-Ge ve Girişim Ekibi | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "🎓 مقترح كونسورتيوم تكنولوجي عميق: ذكاء اصطناعي لقطاع الضيافة ضمن دعوة {recipient_org}",
+          "preview_snippet": "دمج 30 نموذجاً من Hugging Face مع 100 مهارة فندقية، مستنداً إلى قاعدة بيانات تضم 32,270 تقييماً.",
+          "greeting": "سعادة الأستاذ/ة {recipient_name}، لجنة الاختيار الموقرة وإدارة نقل التكنولوجيا في {recipient_org}،",
+          "opener": "استجابة لدعوتكم المفتوحة لدعم الابتكار في مجالات الذكاء الاصطناعي التطبيقي وتكنولوجيا السياحة الحضرية، يسرنا تقديم ملف مشروع «ميزبان إسطنبول» التكنولوجي العميق.",
+          "body_points": [
+            "محرك الاقتران الثنائي (Dimer Engine v2.0): ربط 100 مهارة تشغيلية في قطاع الضيافة بـ 30 نموذج ذكاء اصطناعي مفتوح المصدر من Hugging Face.",
+            "مجموعة بيانات معيارية حية: أكثر من 32,270 مراجعة متعددة اللغات تغطي 39 بلدية في إسطنبول كبيئة اختبار لأبحاث معالجة اللغة الطبيعية (NLP).",
+            "جاهزية كاملة للمشاركة في برامج تسريع الأعمال الإقليمية ومنح Horizon Europe للبحث والتطوير والابتكار."
+          ],
+          "asset_pitch": "نرفق لكم حزمة التقديم الرسمية الكاملة (فيديو 3 دقائق، العرض التقني للشرائح، والورقة البيضاء المفصلة):",
+          "cta_text": "مراجعة ملف المشروع وتحديد موعد جلسة التقييم",
+          "closing": "مع خالص التحيات الأكاديمية والتقدير،\nفريق البحث والتطوير - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🎓 Deep-Tech-Konsortialantrag: KI-Gastronomieplattform für den Startup-Call von {recipient_org}",
+          "preview_snippet": "Kopplung von 30 Hugging Face-Modellen mit 100 Hospitality-Skills auf Basis von 32.270 Benchmark-Reviews.",
+          "greeting": "Sehr geehrte(r) Frau/Herr {recipient_name}, verehrte Leitung des Technologietransfers bei {recipient_org},",
+          "opener": "in Beantwortung Ihres Förderaufrufs für angewandte Künstliche Intelligenz und smarte urbane Innovationen reichen wir hiermit das Deep-Tech-Dossier der Plattform 'Mizban Istanbul' ein.",
+          "body_points": [
+            "Dimer Intelligence Engine v2.0: Bionische Kopplung von 100 Hospitality-Prozessen mit 30 hochmodernen Hugging Face-Modellen (u.a. DeBERTa-v3 ABSA, Llama-3).",
+            "Empirischer Benchmark-Datensatz: 32.270 multilinguale Rezensionen aus 39 Bezirken als produktionsreifes NLP-Testbed.",
+            "Volle Antragsreife für EU-Verbundprojekte (Horizon Europe, EIT Food/Digital) sowie universitäre Ausgründungs-Inkubatoren."
+          ],
+          "asset_pitch": "Unser vollständiges Bewerbungspaket (3-Minuten-Demovideo, Folienpräsentation und akademisches Whitepaper) steht für Sie bereit:",
+          "cta_text": "Startup-Dossier prüfen & Kennenlerngespräch vereinbaren",
+          "closing": "Mit freundlichen Grüßen,\nTeam Forschung & Technologietransfer | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "academic_researchers",
+      "icon": "🔬",
+      "category": "پژوهشگران و نویسندگان مقالات علمی",
+      "titles": {
+        "fa": "متخصصین، اساتید و نویسندگان مقالات علمی ISI",
+        "en": "Academic Researchers & ISI Paper Authors (AI & Hospitality)",
+        "tr": "Akademik Araştırmacılar ve ISI Makale Yazarları (Yapay Zekâ ve Turizm)",
+        "ar": "الباحثون الأكاديميون ومؤلفو أوراق ISI العلمية في الذكاء الاصطناعي",
+        "de": "Akademische Forscher & ISI-Autoren (KI, NLP & Tourismusforschung)"
+      },
+      "target_roles": {
+        "fa": "اساتید کامپیوتر، پژوهشگران تحلیل احساسات بر پایه جنبه (ABSA)، نویسندگان مقالات مدیریت درآمد هتلداری",
+        "en": "Computer Science Professors, ABSA Researchers, Hospitality Revenue Management Scholars",
+        "tr": "Bilgisayar Mühendisliği Öğretim Üyeleri, Duygu Analizi (ABSA) Araştırmacıları, Gelir Yönetimi Uzmanları",
+        "ar": "أساتذة علوم الحاسوب، باحثو تحليل المشاعر المستند إلى الجوانب (ABSA)، وعلماء إدارة الإيرادات",
+        "de": "Professoren für Informatik/Data Science, ABSA-Forscher, Revenue Management-Wissenschaftler"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🔬 دعوت به همکاری پژوهشی: پایگاه داده باز ۳۲,۲۷۰ نظر چندزبانه و مدل‌های دایمریزه هوش مصنوعی",
+          "preview_snippet": "هم‌تالیفی در ژورنال‌های معتبر Q1، دسترسی به دیتاست تمیزشده و بنچ‌مارک ۳۰ مدل هاگینگ‌فیس به همراه ویدیوی فنی و مستندات",
+          "greeting": "استاد ارجمند / پژوهشگر گرامی، جناب آقای / سرکار خانم {recipient_name} در {recipient_org}؛",
+          "opener": "با سلام و احترام، با مطالعه مقالات ارزشمند حضرت‌عالی در حوزه‌های پردازش زبان طبیعی و مدل‌سازی داده‌های خدمات و هتلداری، مایه مسرت است فرصت همکاری پژوهشی مشترک با پلتفرم «میزبان استانبول» را مطرح نماییم.",
+          "body_points": [
+            "دسترسی رایگان پژوهشی به دیتاست ۳۲,۲۷۰ نظر چندزبانه (فارسی، انگلیسی، ترکی، عربی و روسی) برچسب‌گذاری شده برای ارزیابی مدل‌های ABSA",
+            "امکان نگارش مقالات مشترک در ژورنال‌های تراز اول ISI (مانند International Journal of Hospitality Management و Tourism Management)",
+            "فرصت اعتبارسنجی عملیاتی الگوریتم‌های بهینه‌سازی درآمد (RevPASH) و ماتریس‌های BCG منو در داده‌های واقعی رستوران‌های استانبول"
+          ],
+          "asset_pitch": "ویدیوی ۳ دقیقه‌ای نحوه کارکرد موتور دایمریزه، اسلایدهای فنی و فرمولاسیون ریاضی سفیدنامه در دسترس شماست:",
+          "cta_text": "دریافت دسترسی پژوهشی به دیتاست و تبادل نظر علمی",
+          "closing": "با کمال احترام و سپاس علمی،\nواحد تحقیقات دانشگاهی پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "🔬 Research Collaboration: Open 32,270 Multilingual Hospitality Dataset & Dimer AI Architecture",
+          "preview_snippet": "Co-authorship opportunities in top Q1 journals, production ABSA benchmarks, and real-world RevPASH models.",
+          "greeting": "Dear Professor {recipient_name}, Esteemed Scholar at {recipient_org},",
+          "opener": "Having followed with great appreciation your impactful publications in Aspect-Based Sentiment Analysis (ABSA) and data-driven hospitality management, we are delighted to propose a joint empirical research initiative.",
+          "body_points": [
+            "Open research access to an audited benchmark dataset of 32,270 multilingual reviews (FA, EN, TR, AR, RU) across 19 premier dining establishments.",
+            "Co-authorship opportunities targeting high-impact Q1 journals (e.g., IJHM, Annals of Tourism Research, Expert Systems with Applications).",
+            "Empirical field validation of mathematical revenue models (Seat Yield RevPASH optimization and Menu BCG matrices) against real transactional dynamics."
+          ],
+          "asset_pitch": "We cordially invite you to inspect our 3-minute architecture walkthrough, technical methodology deck, and peer-reviewed whitepaper:",
+          "cta_text": "Request Academic Dataset Access & Schedule a Research Sync",
+          "closing": "Warm academic regards,\nAcademic Research Division | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🔬 Akademik Araştırma İş Birliği: 32.270 Çok Dilli Gastronomi Veri Seti ve Dimer Yapay Zekâ Modelleri",
+          "preview_snippet": "Q1 indeksli dergilerde ortak yayın imkanı, doğrulanmış ABSA duygu analizi veri tabanı ve teknik sunum.",
+          "greeting": "Değerli Hocam Sayın Prof./Doç. Dr. {recipient_name}, {recipient_org},",
+          "opener": "Doğal Dil İşleme, duygu analizi ve turizm teknolojileri alanındaki seçkin bilimsel çalışmalarınızı yakından takip etmekteyiz. Mizban İstanbul bünyesinde geliştirdiğimiz büyük veri altyapısını ortak bir akademik çalışmaya dönüştürmeyi teklif ediyoruz.",
+          "body_points": [
+            "Google Haritalar, TripAdvisor ve Yandex üzerinden derlenmiş 32.270 çok dilli (TR, EN, FA, AR, RU) etiketli yorum veri setine ücretsiz akademik erişim.",
+            "Uluslararası saygın Q1 dergilerde (IJHM, Tourism Management vb.) ortak yazarlık ve proje çıktısı üretme fırsatı.",
+            "Restoranların saatlik gelir optimizasyonu (RevPASH) ve dinamik menü algoritmalarının gerçek pazar verileriyle doğrulanması."
+          ],
+          "asset_pitch": "Sistemin işleyişini anlatan 3 dakikalık video demoyu, teknik sunumu ve araştırma raporunu ekte bulabilirsiniz:",
+          "cta_text": "Akademik Veri Seti Erişimini Talep Edin",
+          "closing": "Saygı ve hürmetlerimizle,\nAkademik Araştırmalar Birimi | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "🔬 تعاون بحثي مشترك: قاعدة بيانات 32,270 تقييماً فندقياً ونماذج الذكاء الاصطناعي المقترنة",
+          "preview_snippet": "فرص النشر في مجلات Q1 المحكمة، وإتاحة بيانات حقيقية لبحوث تحليل المشاعر (ABSA) وإدارة الإيرادات.",
+          "greeting": "سعادة الأستاذ الدكتور / الباحث الفاضل {recipient_name}، {recipient_org}،",
+          "opener": "تحية علمية طيبة وبعد، انطلاقاً من اطلاعنا وتقديرنا الكبير لأبحاثكم المتميزة المنشورة في معالجة اللغات الطبيعية وإدارة بيانات الضيافة، يسرنا اقتراح تعاون بحثي تطبيقي مشترك.",
+          "body_points": [
+            "إتاحة وصول بحثي مجاني لقاعدة بيانات تضم 32,270 تقييماً مصنفاً بـ 5 لغات لتحسين واختبار نماذج تحليل المشاعر (ABSA).",
+            "فرص نشر وبحث مشترك في كبرى المجلات العلمية المصنفة ضمن الربع الأول Q1 (مثل IJHM و Tourism Management).",
+            "التحقق الميداني من المعادلات الرياضية الخاصة بتحسين إيرادات المقاعد (RevPASH) ومصفوفة BCG بالاعتماد على بيانات حية."
+          ],
+          "asset_pitch": "يسرنا مشاركتكم الفيديو التقني التوضيحي (3 دقائق)، والشرائح المنهجية، والورقة البحثية التفصيلية:",
+          "cta_text": "طلب تصريح الوصول للبيانات وتنسيق حوار علمي",
+          "closing": "مع خالص التحيات والتقدير الأكاديمي،\nوحدة الأبحاث العلمية - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🔬 Wissenschaftliche Kooperation: Offener Hospitality-Datensatz (32.270 Reviews) & Dimer-KI",
+          "preview_snippet": "Co-Autorenschaften in führenden Q1-Journals, evaluierter ABSA-Korpus und mathematische Yield-Modelle.",
+          "greeting": "Sehr geehrte(r) Frau/Herr Prof. Dr. {recipient_name}, geschätzte Kolleginnen und Kollegen an der {recipient_org},",
+          "opener": "mit großem Interesse verfolgen wir Ihre richtungsweisenden Publikationen im Bereich des Natural Language Processing und datengestützten Servicemanagements. Wir möchten Ihnen eine empirische Forschungskooperation vorschlagen.",
+          "body_points": [
+            "Vollständiger Forschungszugang zu 32.270 multilingualen, gelabelten Kundenrezensionen zur Validierung moderner ABSA-Architekturen.",
+            "Möglichkeit gemeinsamer Publikationen in international führenden Q1-Journals (z. B. Tourism Management, IJHM).",
+            "Empirische Validierung von Algorithmen zur dynamischen Kapazitätsauslastung (RevPASH) an realen Gastro-Betrieben Istanbuls."
+          ],
+          "asset_pitch": "Unser kompaktes wissenschaftliches Dossier (3-Minuten-Erklärvideo, Methodik-Präsentation und Whitepaper) finden Sie anbei:",
+          "cta_text": "Forschungsdatensatz anfordern & Austausch vereinbaren",
+          "closing": "Mit besten kollegialen Grüßen,\nBereich Akademische Forschung | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "luxury_hotels",
+      "icon": "🏨",
+      "category": "هتل‌های لوکس و کانسیرژ تشریفاتی",
+      "titles": {
+        "fa": "هتل‌های ۵ ستاره لوکس و شبکه‌های کانسیرژ تشریفاتی",
+        "en": "Luxury 5-Star Hotels & VIP Concierge Networks",
+        "tr": "5 Yıldızlı Lüks Oteller ve VIP Konsiyerj Ağları",
+        "ar": "فنادق الـ 5 نجوم الفاخرة وشبكات الكونسيرج الممتازة",
+        "de": "5-Sterne-Luxushotels & VIP-Concierge-Netzwerke"
+      },
+      "target_roles": {
+        "fa": "مدیران کانسیرژ (Les Clefs d'Or)، مدیران تشریفات هتل‌های لوکس، مدیران پذیرش و رضایت مهمانان",
+        "en": "Chief Concierges (Les Clefs d'Or), VIP Guest Relations Directors, Luxury Hotel GMs",
+        "tr": "Baş Konsiyerjler (Les Clefs d'Or), VIP Misafir İlişkileri Müdürleri, Lüks Otel Genel Müdürleri",
+        "ar": "رؤساء الكونسيرج (المفاتيح الذهبية)، مدراء علاقات كبار الشخصيات، مدراء الفنادق الفاخرة",
+        "de": "Chef-Concierges (Les Clefs d'Or), VIP Guest Relations Manager, Hoteldirektoren"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🏨 پیشنهاد اتصال مستقیم کانسیرژ: دسترسی VIP مهمانان هتل {recipient_org} به برترین رستوران‌های استانبول",
+          "preview_snippet": "رزرو آنی بدون معطلی، پذیرایی تشریفاتی VIP و پورسانت ویژه کانسیرژ به همراه ویدیوی پنل و کاتالوگ",
+          "greeting": "مدیریت محترم کانسیرژ و تشریفات هتل {recipient_org}، جناب آقای / سرکار خانم {recipient_name}؛",
+          "opener": "با سلام و احترام، مهمانان گرانقدر هتل ۵ ستاره شما شایسته فاخرترین تجارب گاسترونومی در سفر به استانبول هستند. پلتفرم «میزبان استانبول» افتخار دارد درگاه رزرو مستقیم اختصاصی کانسیرژ را به حضورتان تقدیم نماید.",
+          "body_points": [
+            "رزرو اولویت‌دار و بدون صف (Guaranteed VIP Table) در اصیل‌ترین رستوران‌های سنتی و مدیترانه‌ای استانبول حتی در ساعات اوج شلوغی",
+            "ارائه خدمات خوش‌آمدگویی تشریفاتی (Welcome VIP Drink & Chef Greeting) اختصاصی به مهمانان معرفی‌شده از سوی هتل شما",
+            "پنل هوشمند گزارش‌دهی کانسیرژ و تخصیص مستقیم پورسانت نقدی تشویقی به ازای هر سفارش و ایونت ثبت‌شده"
+          ],
+          "asset_pitch": "ویدیوی ۳ دقیقه‌ای نحوه رزرو کانسیرژ، اسلایدهای معرفی منوهای فاخر و کاتالوگ خدمات ضمیمه می‌باشد:",
+          "cta_text": "فعال‌سازی درگاه کانسیرژ هتل در کمتر از ۵ دقیقه",
+          "closing": "با بهترین درودهای تشریفاتی،\nواحد ارتباط با هتل‌های لوکس پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "🏨 VIP Concierge Gateway: Priority Fine Dining Access for Guests of {recipient_org}",
+          "preview_snippet": "Guaranteed priority table booking, bespoke chef welcome amenities, and dedicated concierge commission.",
+          "greeting": "Dear {recipient_name}, Chief Concierge & Guest Experience Leadership at {recipient_org},",
+          "opener": "Your esteemed international guests demand nothing less than world-class dining experiences. Mizban Istanbul is pleased to provide your concierge desk with direct, priority-tier access to Istanbul's most acclaimed authentic restaurants.",
+          "body_points": [
+            "Guaranteed priority reservations and prime seating even during peak evening rush hours for your hotel guests.",
+            "Complimentary VIP welcome perks (signature welcome drink, bespoke chef greeting, personalized seating cards).",
+            "Dedicated digital concierge dashboard with seamless booking tracking and guaranteed concierge commission payouts."
+          ],
+          "asset_pitch": "Review our 3-minute concierge interface video, venue showcase presentation, and full culinary dossier:",
+          "cta_text": "Activate Your Dedicated Concierge Portal",
+          "closing": "Warm hospitality regards,\nLuxury Hotel Alliances | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🏨 VIP Konsiyerj Entegrasyonu: {recipient_org} Misafirlerine Özel Öncelikli Rezervasyon ve Ayrıcalıklar",
+          "preview_snippet": "Garantili VIP masa rezervasyonu, şef ikramları ve şeffaf konsiyerj komisyon paneli sunumu.",
+          "greeting": "Sayın {recipient_name}, {recipient_org} Değerli Baş Konsiyerj ve Misafir İlişkileri Ekibi,",
+          "opener": "Otelinizi tercih eden seçkin yabancı misafirlerinize İstanbul'un en özgün ve güvenilir lezzet deneyimlerini sunabilmeniz için tasarlanan VIP Konsiyerj portalımızı paylaşmaktan mutluluk duyarız.",
+          "body_points": [
+            "En yoğun saatlerde dahi oteliniz misafirleri için sıra beklemeden anında garantili VIP masa tahsisi.",
+            "Otelinize özel hoş geldin ikramları ve baş şef karşılaması ile misafir memnuniyet puanlarınızın zirveye taşınması.",
+            "Konsiyerj ekibine özel dijital panel, tek tıkla rezervasyon takibi ve anında komisyon hak edişi."
+          ],
+          "asset_pitch": "3 dakikalık sistem kullanım videosunu, mekan tanıtım sunumunu ve servis kataloğunu ekte inceleyebilirsiniz:",
+          "cta_text": "Oteliniz İçin Konsiyerj Portalını Hemen Başlatın",
+          "closing": "Saygı ve nezaketle,\nLüks Otel İlişkileri Ekibi | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "🏨 بوابة الكونسيرج الفاخرة: حجوزات VIP ذات أولوية لضيوف فندق {recipient_org}",
+          "preview_snippet": "طاولات مضمونة بدون انتظار، وضيافة شرفية خاصة، وعمولات مجزية لفريق الكونسيرج.",
+          "greeting": "سعادة الأستاذ/ة {recipient_name}، رئيس الكونسيرج وإدارة الضيافة في {recipient_org}،",
+          "opener": "يسعدنا التواصل معكم لتقديم أرقى مستويات الضيافة الأصيلة لنزلاء فندقكم الموقر عبر بوابة كونسيرج «ميزبان إسطنبول» الذكية.",
+          "body_points": [
+            "حجوزات طعام مضمونة ومقاعد مميزة لضيوفكم في أفخم المطاعم التراثية حتى في أوقات الذروة دون أي انتظار.",
+            "مزايا ترحيبية ملكية خاصة بنزلاء فندقكم تشمل مشروبات الضيافة واستقبالاً مخصصاً من كبير الطهاة.",
+            "لوحة تحكم إلكترونية ميسرة لفريق الكونسيرج لمتابعة الحجوزات والحصول على العمولات المجزية بشفافية تامة."
+          ],
+          "asset_pitch": "ندعوكم لمشاهدة فيديو البوابة التوضيحي (3 دقائق)، وعرض شرائح المطاعم الفاخرة، والملف التعريفي المرفق:",
+          "cta_text": "تفعيل بوابة الكونسيرج الخاصة بفندقكم فوراً",
+          "closing": "مع أطيب تحيات الضيافة والتقدير،\nقطاع الفنادق الفاخرة - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🏨 VIP-Concierge-Partnerschaft: Priorisierte Tischkontingente für Gäste des {recipient_org}",
+          "preview_snippet": "Garantierte Prime-Plätze ohne Wartezeit, exklusive VIP-Begrüßung und digitale Concierge-Provision.",
+          "greeting": "Sehr geehrte(r) Frau/Herr {recipient_name}, verehrte Concierge-Leitung im {recipient_org},",
+          "opener": "Ihre anspruchsvollen internationalen Gäste erwarten erstklassige Kulinarik ohne Kompromisse. Wir freuen uns, Ihrem Haus exklusiven Zugang zu unserem VIP-Gastro-Netzwerk anzubieten.",
+          "body_points": [
+            "Garantierte Tischreservierungen auch zu Stoßzeiten in Istanbuls renommiertesten Gourmet-Restaurants.",
+            "Exklusive VIP-Aufmerksamkeiten (Signature-Welcome-Drink, persönliche Begrüßung durch den Küchenchef).",
+            "Modernes digitales Buchungsportal für Ihr Concierge-Team mit transparenter Provisionsabrechnung."
+          ],
+          "asset_pitch": "Alle Einzelheiten finden Sie in unserem 3-minütigen Video, den Präsentationsunterlagen und dem Gastronomiekatalog:",
+          "cta_text": "Concierge-Zugang für Ihr Hotel freischalten",
+          "closing": "Mit vorzüglicher Hochachtung,\nLuxury Hospitality Partnerships | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "venture_capital",
+      "icon": "💼",
+      "category": "سرمایه‌گذاران جسورانه و فرشتگان",
+      "titles": {
+        "fa": "صندوق‌های سرمایه‌گذاری جسورانه (VC) و سرمایه‌گذاران فرشته",
+        "en": "Venture Capital Funds & Angel Investors (FoodTech & AI)",
+        "tr": "Girişim Sermayesi (VC) Fonları ve Melek Yatırımcılar (FoodTech & AI)",
+        "ar": "صناديق رأس المال الجريء والمستثمرون الملائكيون (تكنولوجيا الأغذية والذكاء الاصطناعي)",
+        "de": "Venture Capital-Fonds & Business Angels (FoodTech & B2B AI)"
+      },
+      "target_roles": {
+        "fa": "شرکای عمومی (GP)، مدیران سرمایه‌گذاری استارتاپ‌های بذر و سری A، انجل اینوستورها",
+        "en": "Managing Partners, FoodTech & B2B SaaS Principals, Seed/Series A Investment Leads",
+        "tr": "Genel Ortaklar (GP), Tohum ve Seri A Yatırım Direktörleri, B2B SaaS Yatırımcıları",
+        "ar": "الشركاء الإداريون، مسؤولو استثمارات المراحل المبكرة (Seed/Series A)، مستثمرو تكنولوجيا الأغذية",
+        "de": "Managing Partner, Investment Directors (FoodTech / B2B AI), Seed- & Early-Stage-Investoren"
+      },
+      "emails": {
+        "fa": {
+          "subject": "💼 فرصت سرمایه‌گذاری Seed: پلتفرم مقیاس‌پذیر هوش تجاری و مارکت‌پلیس گاسترونومی در بازار ۲.۴ میلیارد دلاری استانبول",
+          "preview_snippet": "مدل درآمدی مارجین بالا، +۳۷۳٪ رشد RevPASH سالن‌ها، دیتابیس ۳۲ هزار نقد به همراه ویدیوی پیچ، دک سرمایه‌گذاری و مستندات مالی",
+          "greeting": "مدیریت محترم سرمایه‌گذاری در صندوق {recipient_org}، جناب آقای / سرکار خانم {recipient_name}؛",
+          "opener": "با سلام و احترام، با آگاهی از سبد سرمایه‌گذاری درخشان شما در استارتاپ‌های نوآور و هوش مصنوعی، مایه مسرت است خلاصه اجرایی و بسته جذب سرمایه بذر (Seed Round) پلتفرم «میزبان استانبول» را حضورتان تقدیم نماییم.",
+          "body_points": [
+            "کسب‌وکار اثبات‌شده با حاشیه سود بالا: ترکیب نرم‌افزار اشتراکی B2B SaaS با مارکت‌پلیس رویدادهای خصوصی (میانگین ارزش سفارش +۴,۰۰۰ دلار با نرخ پذیرش ۲۵٪)",
+            "برتری فناورانه دفاع‌پذیر (Moat): اتصال اختصاصی ۱۰۰ مهارت گاسترونومی به ۳۰ مدل هاگینگ‌فیس و تحلیل ۳۲,۲۷۰ نقد مشتریان در ۳ پلتفرم اصلی",
+            "بازار هدف ۲.۴ میلیارد دلاری با کریدور تقاضای عظیم مسافران خلیج فارس، اروپا و آسیای میانه در کلانشهر استانبول"
+          ],
+          "asset_pitch": "ویدیوی ۳ دقیقه‌ای ارائه آسانسوری (Pitch Video)، اسلایدهای سرمایه‌گذاری ۲۴ صفحه‌ای و گزارش مالی جهت ارزیابی اولیه ضمیمه است:",
+          "cta_text": "برگزاری جلسه ۲۰ دقیقه‌ای Investor Intro در Google Meet",
+          "closing": "با احترام فراوان و آرزوی هم‌افزایی ارزش‌آفرین،\nبنیان‌گذاران پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+          "preview_snippet": "+373% RevPASH monetization, 32,270 review proprietary dataset, and $4,000 avg event GMV. Pitch video & deck attached.",
+          "greeting": "Dear {recipient_name}, Investment Partner at {recipient_org},",
+          "opener": "Given your track record backing transformative B2B SaaS and consumer marketplaces, we are excited to share the Seed-stage investment briefing for Mizban Istanbul.",
+          "body_points": [
+            "Dual-Engine Monetization: High-margin B2B AI SaaS subscriptions combined with an event-space monetization marketplace ($4,000+ avg private booking GMV at 25% take rate).",
+            "Defensible Data Moat: Proprietary dimerization of 100 hospitality domain skills with 30 fine-tuned Hugging Face models trained on 32,270 multi-channel reviews.",
+            "Massive Gateway Market: Istanbul's $2.4B gastronomy sector fueled by 18M+ annual high-spending international tourists from GCC, Europe, and CIS countries."
+          ],
+          "asset_pitch": "Our complete investor kit includes our 3-minute executive video pitch, 24-slide investor deck, and audited financial report:",
+          "cta_text": "Book a 20-Minute Introductory Partner Call",
+          "closing": "Best regards,\nFounding Team | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "💼 Tohum Yatırım Fırsatı: İstanbul'un 2.4 Milyar Dolarlık Yeme-İçme Pazarında Ölçeklenebilir Yapay Zekâ Platformu",
+          "preview_snippet": "Yüksek marjlı B2B SaaS, %373 RevPASH artışı ve 32.270 yorumluk tescilli veri havuzu. Video ve sunum ekte.",
+          "greeting": "Sayın {recipient_name}, {recipient_org} Değerli Yatırım Ortakları,",
+          "opener": "Yapay zekâ ve ölçeklenebilir pazar yeri girişimlerine yaptığınız başarılı yatırımları ilgiyle takip ediyoruz. 'Mizban İstanbul' tohum yatırım turumuzun yönetici özetini bilgilerinize sunmaktan heyecan duyuyoruz.",
+          "body_points": [
+            "Çift Yönlü Gelir Modeli: Yüksek marjlı B2B SaaS üyelikleri ve atıl restoran alanlarını kiralayan etkinlik pazar yeri (işlem başına ortalama 4.000$ GMV ve %25 komisyon).",
+            "Güçlü Veri Kalesi (Data Moat): 32.270 çok dilli yorumla beslenen 30 yapay zekâ modeli ve 100 sektörel becerinin entegre edildiği Dimer mimarisi.",
+            "Genişleyen Pazar: Yıllık 18 milyondan fazla uluslararası turisti ağırlayan İstanbul'un 2.4 milyar dolarlık dev gastronomi ekosistemi."
+          ],
+          "asset_pitch": "3 dakikalık video sunumumuz, 24 slaytlık yatırımcı sunumu ve finansal rapor bağlantılarını aşağıda bulabilirsiniz:",
+          "cta_text": "20 Dakikalık Çevrim İçi Tanışma Toplantısı Planlayın",
+          "closing": "Saygılarımızla,\nKurucu Ekip | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "💼 فرصة استثمارية (مرحلة التأسيس - Seed): منصة برمجيات وذكاء اصطناعي واعدة في سوق إسطنبول (2.4 مليار دولار)",
+          "preview_snippet": "نموذج دخل مزدوج عالي الربحية، ونمو RevPASH بنسبة 373%، وقاعدة بيانات حصرية من 32 ألف تقييم.",
+          "greeting": "سعادة الأستاذ/ة {recipient_name}، شريك الاستثمار في {recipient_org}،",
+          "opener": "نظراً لخبرتكم المشهودة في تمويل الشركات الناشئة الواعدة في مجالات الذكاء الاصطناعي والتكنولوجيا المؤسسية، يسرنا عرض جولة التمويل الأولي (Seed Round) لمشروع «ميزبان إسطنبول».",
+          "body_points": [
+            "نموذج أعمال مزدوج وعالي الهوامش: اشتراكات برمجيات SaaS مع منصة حجز المساحات المغلقة للمناسبات (متوسط قيمة المناسبة +4,000 دولار بنسبة عمولة 25%).",
+            "ميزة تنافسية محصنة بالبيانات (Data Moat): بنية ذكاء اصطناعي ثنائية تقرن 100 مهارة فندقية بـ 30 نموذجاً مدرجاً على 32,270 تقييماً حقيقياً.",
+            "سوق ضخم متنامٍ: قطاع مطاعم وضيافة في إسطنبول بحجم 2.4 مليار دولار مدعوم بتدفق أكثر من 18 مليون سائح سنوياً من دول الخليج وأوروبا."
+          ],
+          "asset_pitch": "ندعوكم لمشاهدة فيديو العرض السريع (3 دقائق)، وعرض المستثمرين التقديمي، والبيانات المالية المرفقة:",
+          "cta_text": "حجز لقاء تعريفي لمدة 20 دقيقة عبر الإنترنت",
+          "closing": "مع خالص التحيات الاستثمارية،\nالفريق المؤسس - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "💼 Seed-Investment-Opportunity: Skalierbare B2B-KI-Hospitality-Plattform für den 2,4-Mrd.-$-Markt Istanbul",
+          "preview_snippet": "High-Margin B2B SaaS + Event-Yield-Marketplace mit $4.000 Ø GMV. Pitch-Video, PPTX & Report anbei.",
+          "greeting": "Sehr geehrte(r) Frau/Herr {recipient_name}, Investment Partner bei {recipient_org},",
+          "opener": "mit Blick auf Ihr erfolgreiches Portfolio im Bereich B2B SaaS und Plattformökonomie möchten wir Ihnen die Seed-Finanzierungsrunde von 'Mizban Istanbul' präsentieren.",
+          "body_points": [
+            "Dual-Engine-Geschäftsmodell: Wiederkehrende SaaS-Lizenzen kombiniert mit einem Marktplatz zur Monetarisierung freier Gastronomie-Kapazitäten (durchschnittlich 4.000 $ GMV pro Buchung bei 25% Take-Rate).",
+            "Verteidigbarer Tech-Moat: Dimerisierung von 100 operativen Hospitality-Skills mit 30 fine-getunten Hugging Face-Modellen, trainiert auf 32.270 Vor-Ort-Rezensionen.",
+            "Dynamischer Markt: Istanbuls 2,4-Mrd.-$-Gastronomiesektor profitiert von jährlich über 18 Millionen kaufkräftigen internationalen Touristen."
+          ],
+          "asset_pitch": "Unser vollständiges Investor-Kit (3-Minuten-Pitch-Video, 24-Slide-Deck und Finanzreport) steht für Sie bereit:",
+          "cta_text": "20-minütigen Intro-Call mit den Gründern vereinbaren",
+          "closing": "Mit freundlichen Grüßen,\nGründerteam | Mizban Istanbul"
+        }
+      }
+    },
+    {
+      "id": "cultural_chambers",
+      "icon": "🌍",
+      "category": "اتاق‌های بازرگانی، انجمن‌های اکسپت و فرهنگی",
+      "titles": {
+        "fa": "انجمن‌های فرهنگی بین‌المللی، تشکل‌های دیاسپورا و اتاق‌های بازرگانی",
+        "en": "International Cultural Chambers, Diaspora & Expat Associations",
+        "tr": "Uluslararası Kültür Dernekleri, Diasporalar ve Ticaret Odaları",
+        "ar": "الغرف الثقافية الدولية وجمعيات الجاليات والغرف التجارية المشتركة",
+        "de": "Internationale Kulturkammern, Expat-Netzwerke & Auslandshandelskammern"
+      },
+      "target_roles": {
+        "fa": "روسای اتاق‌های مشترک بازرگانی، مدیران تشکل‌های دیاسپورا، سرپرستان کانون‌های اکسپت (مانند InterNations و Yabangee)",
+        "en": "Chamber of Commerce Presidents, Expat Community Organizers, Bilateral Business Council Heads",
+        "tr": "Ticaret Odası Başkanları, Yabancı Topluluk Liderleri, İki Ülke İş Konseyi Yöneticileri",
+        "ar": "رؤساء الغرف التجارية المشتركة، منظمو جاليات المغتربين في إسطنبول، مجالس الأعمال الثنائية",
+        "de": "Präsidenten von Auslandshandelskammern (AHK), Leiter von Expat-Netzwerken, bilaterale Wirtschaftsräte"
+      },
+      "emails": {
+        "fa": {
+          "subject": "🌍 پیشنهاد میزبانی رویدادهای دیپلماتیک و گردهمایی‌های تجاری اعضای {recipient_org}",
+          "preview_snippet": "فضاهای اختصاصی تشریفاتی، منوهای حلال و بین‌المللی با تخفیف ویژه اعضا به همراه ویدیو و کاتالوگ اماکن",
+          "greeting": "ریاست و هیئت‌مدیره محترم {recipient_org}، جناب آقای / سرکار خانم {recipient_name}؛",
+          "opener": "با سلام و تحیات، نقش ارزنده آن مجموعه در تقویت پیوندهای فرهنگی، اقتصادی و حمایت از جامعه بین‌المللی مقیم استانبول شایسته بالاترین تقدیر است.",
+          "body_points": [
+            "تخصیص سالن‌های VIP و اتاق‌های کنفرانس اختصاصی با پذیرایی تشریفاتی و منوهای فاخر بین‌المللی و حلال برای میزبانی مجامع و دیدارهای رسمی",
+            "تخفیف ویژه و بسته‌های عضویت اختصاصی برای اعضا، بازرگانان و مهاجرین تحت پوشش تشکل شما",
+            "برگزاری رویدادهای مشترک بین‌المللی، شب‌های فرهنگی، و رویدادهای نتورکینگ تجاری با حمایت زیرساخت فناوری میزبان استانبول"
+          ],
+          "asset_pitch": "ویدیوی معرفی ۳ دقیقه‌ای سالن‌ها، اسلایدهای امکانات و سفیدنامه همکاری رسمی آماده مرور شماست:",
+          "cta_text": "هماهنگی بازدید حضوری یا رزرو اولین رویداد با تخفیف ویژه",
+          "closing": "با احترام صمیمانه و آرزوی تحکیم پیوندها،\nامور بین‌الملل و جوامع فرهنگی پلتفرم میزبان استانبول"
+        },
+        "en": {
+          "subject": "🌍 Diplomatic & Expat Networking Hosting Proposal for Members of {recipient_org}",
+          "preview_snippet": "Bespoke VIP banquet venues, halal & international fine dining, and exclusive community member privileges.",
+          "greeting": "Dear {recipient_name}, Leadership at {recipient_org},",
+          "opener": "We deeply appreciate your exemplary work bridging international business leaders, expatriates, and cultural communities in Istanbul.",
+          "body_points": [
+            "Exclusive access to private VIP dining halls and business salons equipped for high-level diplomatic and corporate gatherings.",
+            "Dedicated membership discounts and customized dining perks across Istanbul's finest authentic venues for your affiliated members.",
+            "Turnkey hosting support for bilateral networking dinners, cultural culinary evenings, and holiday galas."
+          ],
+          "asset_pitch": "Explore our 3-minute venue showcase video, presentation slides, and partnership catalog below:",
+          "cta_text": "Schedule a Private Venue Walkthrough or Sync",
+          "closing": "With highest diplomatic esteem,\nInternational Communities & Chambers Division | Mizban Istanbul"
+        },
+        "tr": {
+          "subject": "🌍 {recipient_org} Üyelerine Özel Diplomatik ve Kültürel Etkinlik Ev Sahipliği Teklifi",
+          "preview_snippet": "VIP toplantı ve yemek salonları, üyelerinize özel indirimler ve kültürlerarası gala desteği.",
+          "greeting": "Sayın {recipient_name}, {recipient_org} Değerli Yönetim Kurulu ve Üyeleri,",
+          "opener": "İstanbul'daki yabancı iş insanları, diplomatik misyonlar ve expat toplulukları arasındaki köprüleri güçlendiren değerli faaliyetlerinizi takdirle izliyoruz.",
+          "body_points": [
+            "Bilateral iş yemekleri, genel kurul ve kutlamalarınız için lüks VIP salonların ve özel menülerin öncelikli tahsisi.",
+            "Dernek ve oda üyelerinize özel %15'e varan sürekli gastronomi indirimi ve VIP karşılama ayrıcalıkları.",
+            "Kültürel mutfak geceleri ve uluslararası networking buluşmaları için eksiksiz etkinlik planlama altyapısı."
+          ],
+          "asset_pitch": "Mekanlarımızı tanıtan 3 dakikalık video demoyu, sunum dosyasını ve iş birliği şartnamesini ekte bilgilerinize sunarız:",
+          "cta_text": "Mekan Ziyareti veya Tanışma Toplantısı Planlayın",
+          "closing": "Saygılarımızla,\nUluslararası Topluluklar ve Odalar Masası | Mizban İstanbul"
+        },
+        "ar": {
+          "subject": "🌍 استضافة الفعاليات الدبلوماسية واجتماعات الجاليات ورجال الأعمال لـ {recipient_org}",
+          "preview_snippet": "صالات VIP فاخرة، ووجبات حلال رفيعة المستوى، ومزايا حصرية لأعضاء جمعيتكم الكرام.",
+          "greeting": "سعادة الأستاذ/ة {recipient_name}، إدارة {recipient_org} الموقرة،",
+          "opener": "نثمن عالياً دوركم المتميز في خدمة الجالية ودعم مجتمعات الأعمال والمغتربين وتعزيز الروابط الثقافية في إسطنبول.",
+          "body_points": [
+            "توفير صالات خاصة فاخرة ومجهزة لاستضافة اللقاءات الرسمية وحفلات العشاء الدبلوماسية مع تقديم أشهى المأكولات التراثية الحلال.",
+            "خصومات ومزايا حصرية دائمة لأعضاء جمعيتكم ورجال الأعمال المنتسبين لكم عند زيارة شبكة مطاعمنا الشريكة.",
+            "تنظيم فعاليات التعارف الاقتصادي والأمسيات الثقافية المشتركة برعاية ودعم لوجستي وتقني كامل من منصتنا."
+          ],
+          "asset_pitch": "يسعدنا اطلاعكم على الفيديو التعريفي (3 دقائق)، وعرض الصالات، والتقرير المرفق:",
+          "cta_text": "تنسيق زيارة ميدانية للصالة أو حجز الفعالية الأولى",
+          "closing": "مع خالص التحيات الأخوية والتقدير الدبلوماسي،\nقسم العلاقات الدولية والمجتمعية - ميزبان إسطنبول"
+        },
+        "de": {
+          "subject": "🌍 Exklusive Ausrichtung von Wirtschafts- & Expat-Events für Mitglieder von {recipient_org}",
+          "preview_snippet": "VIP-Banketträume, Halal- & internationale Menüs sowie exklusive Mitgliederkonditionen.",
+          "greeting": "Sehr geehrte(r) Frau/Herr {recipient_name}, Vorstand und Mitglieder von {recipient_org},",
+          "opener": "wir schätzen Ihren herausragenden Beitrag zur Förderung der internationalen Wirtschafts- und Kulturbeziehungen in der Metropole Istanbul sehr.",
+          "body_points": [
+            "Priorisierte Bereitstellung privater VIP-Salons für bilaterale Wirtschaftsgespräche, Delegationsabende und Jahresversammlungen.",
+            "Exklusive Vorzugskonditionen und VIP-Dining-Privilegien für alle registrierten Mitglieder Ihrer Organisation.",
+            "Schlüsselfertige Organisation von interkulturellen Gourmet-Abenden und Networking-Treffen."
+          ],
+          "asset_pitch": "Unser Video (3 Min.), die Präsentationsunterlagen und der Location-Katalog stehen für Sie bereit:",
+          "cta_text": "Location-Besichtigung oder Erstgespräch vereinbaren",
+          "closing": "Mit vorzüglicher Hochachtung,\nInternationale Beziehungen & Expat-Chambers | Mizban Istanbul"
+        }
+      }
+    }
+  ]
+}
