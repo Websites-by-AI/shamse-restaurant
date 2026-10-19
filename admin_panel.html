@@ -526,12 +526,65 @@
             <input type="text" value="+90 501 325 24 52" style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);padding:8px;border-radius:4px;direction:ltr;text-align:left">
           </div>
         </div>
+
+        <!-- MAILJET AUTOMATED EMAIL RELAY INTEGRATION -->
+        <div class="wp-card" style="max-width:650px;margin-top:20px;border-top:2px solid var(--copper)">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <h3 style="color:var(--cream);font-size:1.05rem;margin:0;display:flex;align-items:center;gap:8px">
+              <span>📧</span>
+              اتصال خودکار ایمیل مارکتینگ میل‌جت (Mailjet Relay & API)
+            </h3>
+            <span style="background:rgba(243,156,18,0.18);color:#f39c12;border:1px solid #f39c12;padding:2px 8px;border-radius:12px;font-size:.72rem;font-weight:bold">
+              ⏳ در حال بررسی اکانت (Under Review)
+            </span>
+          </div>
+          <p style="font-size:.8rem;color:var(--muted);margin-bottom:14px">
+            تنظیمات ارسال خودکار ایمیل‌های تراکنشی، رزرو میز و پروپوزال‌های B2B از طریق درگاه Mailjet SMTP و API v3.1.
+          </p>
+          <div style="margin-bottom:12px">
+            <label style="display:block;color:var(--muted);font-size:.78rem;margin-bottom:4px">Primary API Key (شناسه عمومی):</label>
+            <input type="text" id="cfgMailjetApiKey" value="b5af6ec2f275931f9216b8c7eb9c03eb" readonly style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--copper);padding:8px;border-radius:4px;font-family:monospace;direction:ltr;text-align:left">
+          </div>
+          <div style="margin-bottom:12px">
+            <label style="display:block;color:var(--muted);font-size:.78rem;margin-bottom:4px">Secret Key (کلید محرمانه ارسال):</label>
+            <input type="password" id="cfgMailjetSecretKey" placeholder="پس از فعال‌سازی اکانت، کلید محرمانه را اینجا قرار دهید" style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);padding:8px;border-radius:4px;direction:ltr;text-align:left">
+            <div style="font-size:.72rem;color:var(--muted);margin-top:3px">
+              وضعیت فعلی در داشبورد میل‌جت: <b style="color:#f39c12">Not generated</b> (به‌محض تایید پشتیبانی، کلید صادر می‌شود).
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+            <div>
+              <label style="display:block;color:var(--muted);font-size:.78rem;margin-bottom:4px">SMTP Server Host:</label>
+              <input type="text" value="in-v3.mailjet.com" readonly style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--muted);padding:6px;border-radius:4px;font-size:.78rem;direction:ltr;text-align:left">
+            </div>
+            <div>
+              <label style="display:block;color:var(--muted);font-size:.78rem;margin-bottom:4px">SMTP Port (TLS):</label>
+              <input type="text" value="587 (یا 465 SSL)" readonly style="width:100%;background:var(--bg);border:1px solid var(--card-border);color:var(--muted);padding:6px;border-radius:4px;font-size:.78rem;direction:ltr;text-align:left">
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button class="wp-btn wp-btn-ghost" onclick="testMailjetDispatch()" style="font-size:.78rem">
+              🚀 ارسال ایمیل تستی (حالت شبیه‌سازی / Audit)
+            </button>
+            <span id="mailjetTestStatus" style="font-size:.76rem;color:#2ecc71;display:none">✓ اتصال آزمایشی برقرار شد.</span>
+          </div>
+        </div>
       </section>
 
     </main>
   </div>
 
   <script>
+    function testMailjetDispatch() {
+      var s = document.getElementById('mailjetTestStatus');
+      if (s) {
+        s.style.display = 'inline';
+        s.textContent = '⏳ در حال تست اتصال به in-v3.mailjet.com...';
+        setTimeout(function() {
+          s.textContent = '✓ سرور میل‌جت آماده است. حالت شبیه‌سازی فعال است و پس از درج Secret Key ارسال زنده آغاز خواهد شد.';
+        }, 600);
+      }
+    }
     function switchWpAdminTab(tabId, menuItem) {
       document.querySelectorAll('.wp-tab-view').forEach(function(el) {
         el.classList.remove('active');

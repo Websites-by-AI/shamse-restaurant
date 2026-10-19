@@ -65,6 +65,12 @@ def test_admin_panel_wp_style_structure():
     assert "@shamse_istanbul" in html, "Must integrate Telegram channel @shamse_istanbul"
     assert "@shamse_restaurant_bot" in html, "Must reference official bot"
 
+    # Mailjet Relay & API Integration
+    assert "b5af6ec2f275931f9216b8c7eb9c03eb" in html, "Must contain Mailjet Primary API Key"
+    assert "in-v3.mailjet.com" in html, "Must configure Mailjet SMTP relay host"
+    assert "cfgMailjetSecretKey" in html, "Must provide secret key input"
+
+
 def test_telegram_bot_file_and_channel_verification():
     assert os.path.exists(TG_BOT_PY), "telegram_bot.py must exist"
     with open(TG_BOT_PY, "r", encoding="utf-8") as f:
