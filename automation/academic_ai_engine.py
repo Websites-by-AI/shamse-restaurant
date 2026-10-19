@@ -170,66 +170,39 @@ def calculate_anti_phantom_franchise_roi(initial_capex, monthly_profit, annual_i
 
 
 def get_huggingface_model_registry():
-    """ثبت رسمی مدل‌های هاگینگ‌فیس متصل به سیستم."""
-    return [
-        {
-            "task": "Aspect-Based Sentiment Analysis",
-            "model_id": "yangheng/deberta-v3-base-absa-v1.1",
-            "url": "https://huggingface.co/yangheng/deberta-v3-base-absa-v1.1",
-            "framework": "PyTorch / Transformers / PyABSA",
-            "downloads": "52,000+"
-        },
-        {
-            "task": "Turkish Review Classification",
-            "model_id": "dbmdz/bert-base-turkish-cased",
-            "url": "https://huggingface.co/dbmdz/bert-base-turkish-cased",
-            "framework": "Transformers / BERTurk",
-            "downloads": "41,000+"
-        },
-        {
-            "task": "Multilingual 4-Language Sentiment (fa, tr, en, ar)",
-            "model_id": "cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
-            "url": "https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
-            "framework": "Transformers / XLM-RoBERTa",
-            "downloads": "211,000+"
-        },
-        {
-            "task": "Persian ZWNJ Review Classification",
-            "model_id": "HooshvareLab/bert-fa-zwnj-base",
-            "url": "https://huggingface.co/HooshvareLab/bert-fa-zwnj-base",
-            "framework": "Transformers / ParsBERT",
-            "downloads": "8,900+"
-        },
-        {
-            "task": "Turkish Sentiment Scoring",
-            "model_id": "savasy/bert-base-turkish-sentiment-cased",
-            "url": "https://huggingface.co/savasy/bert-base-turkish-sentiment-cased",
-            "framework": "Transformers / BERTurk",
-            "downloads": "15,000+"
-        },
-        {
-            "task": "Event Copywriting & Campaign LLM",
-            "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
-            "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-            "framework": "Transformers / vLLM / GGUF",
-            "downloads": "1,800,000+"
-        }
-    ]
+    """ثبت رسمی ۳۰ مدل هاگینگ‌فیس متصل به سیستم هوش تجاری دایمریزه."""
+    try:
+        from dimer_intelligence_engine import HUGGINGFACE_30_MODELS
+        return [
+            {
+                "task": m["task"],
+                "model_id": m["hf_id"],
+                "name": m["name"],
+                "url": f"https://huggingface.co/{m['hf_id']}",
+                "framework": m["framework"],
+                "downloads": m["downloads"],
+                "category": m["category"]
+            }
+            for m in HUGGINGFACE_30_MODELS
+        ]
+    except Exception:
+        # Fallback if imported in isolated subpath
+        dimer_path = os.path.join(os.path.dirname(__file__), "dimer_matrix.json")
+        if os.path.exists(dimer_path):
+            with open(dimer_path, "r", encoding="utf-8") as f:
+                d = json.load(f)
+                return [
+                    {
+                        "task": m["task"],
+                        "model_id": m["hf_id"],
+                        "name": m["name"],
+                        "url": f"https://huggingface.co/{m['hf_id']}",
+                        "framework": m["framework"],
+                        "downloads": m["downloads"],
+                        "category": m["category"]
+                    }
+                    for m in d.get("models_registry", [])
+                ]
+        return []
 
 
-if __name__ == "__main__":
-    papers = load_academic_papers()
-    print(f"Loaded {len(papers)} ISI academic papers.")
-    revpash = calculate_kimes_revpash(77000, 140, 10)
-    print(f"RevPASH sample calculation: {revpash} TRY/seat-hour")
-    
-    sample_menu = [
-        {"name": "کوبیده", "price": 420, "food_cost": 135, "sold_quantity": 150},
-        {"name": "قورمه‌سبزی", "price": 350, "food_cost": 88, "sold_quantity": 180},
-        {"name": "کشک بادمجان", "price": 190, "food_cost": 34, "sold_quantity": 210},
-        {"name": "شیشلیک", "price": 680, "food_cost": 258, "sold_quantity": 60}
-    ]
-    bcg = classify_kasavana_smith_menu(sample_menu)
-    print(f"BCG Classified {len(bcg)} dishes:")
-    for b in bcg:
-        print(f" - {b['name']}: {b['quadrant']} (CM: {b['contribution_margin']} TRY, MM%: {b['menu_mix_pct']}%)")
