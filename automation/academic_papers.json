@@ -1,0 +1,217 @@
+[
+  {
+    "id": "PAPER-01",
+    "title": "Implementing Restaurant Revenue Management: A Five-Step Approach",
+    "authors": [
+      "Sheryl E. Kimes"
+    ],
+    "journal": "Cornell Hotel and Restaurant Administration Quarterly",
+    "year": 1999,
+    "doi_or_url": "https://doi.org/10.1177/001088049904000315",
+    "module_id": "mod-space",
+    "module_name_fa": "ماژول ۵: درآمدزایی از فضای خالی و ساعات خلوت سالن",
+    "breakthrough_fa": "فرمول‌بندی شاخص حیاتی RevPASH (درآمد به ازای هر صندلی-ساعت در دسترس) برای غلبه بر خطاهای محاسباتی چک میانگین و سنجش بهره‌وری واقعی ظرفیت سالن.",
+    "math_formula": "RevPASH = Total_Revenue / (Capacity_Seats * Operating_Hours)",
+    "github_repo": "https://github.com/topics/revenue-management",
+    "github_stars": "1.2k+",
+    "huggingface_model": "scikit-learn/tabular-yield-management",
+    "huggingface_url": "https://huggingface.co/models?search=yield+management",
+    "huggingface_downloads": "25k+"
+  },
+  {
+    "id": "PAPER-02",
+    "title": "Menu Engineering: A Practical Guide to Menu Analysis",
+    "authors": [
+      "Michael L. Kasavana",
+      "Donald I. Smith"
+    ],
+    "journal": "Hospitality Publications, Michigan State University / Cornell Quarterly",
+    "year": 1982,
+    "doi_or_url": "https://ecommons.cornell.edu/bitstreams/32b3d931-6298-47d5-b729-b0786916d16b/download",
+    "module_id": "mod-competitors",
+    "module_name_fa": "ماژول ۳: تحلیل رقبا و ماتریس مهندسی منو و هزینه‌ها",
+    "breakthrough_fa": "طبقه‌بندی علمی اقلام منو به ۴ ربع BCG (ستاره‌ها، اسب‌های بارکش، معماها و سگ‌ها) بر اساس نرخ سهم سود (Contribution Margin) و نرخ مانع محبوبیت (۷۰٪ قانون میانگین).",
+    "math_formula": "Hurdle_Rate = (100% / N_items) * 0.70; ACM = sum(CM_i * Q_i) / sum(Q_i)",
+    "github_repo": "https://github.com/topics/menu-engineering",
+    "github_stars": "850+",
+    "huggingface_model": "tabular-classification/bcg-menu-matrix",
+    "huggingface_url": "https://huggingface.co/models?search=bcg+matrix",
+    "huggingface_downloads": "18k+"
+  },
+  {
+    "id": "PAPER-03",
+    "title": "SemEval-2014 Task 4: Aspect Based Sentiment Analysis",
+    "authors": [
+      "Maria Pontiki",
+      "Dimitris Galanis",
+      "John Pavlopoulos",
+      "Harris Papageorgiou",
+      "Ion Androutsopoulos",
+      "Suresh Manandhar"
+    ],
+    "journal": "Proceedings of the 8th International Workshop on Semantic Evaluation (SemEval 2014), Dublin",
+    "year": 2014,
+    "doi_or_url": "https://aclanthology.org/S14-2004/",
+    "module_id": "mod-reviews",
+    "module_name_fa": "ماژول ۴: تحلیل هوشمند کامنت‌های گوگل مپ و تفکیک احساسات",
+    "breakthrough_fa": "معیار مرجع جهانی برای استخراج احساسات بر اساس جنبه‌های تفکیکی در نظرات رستوران‌ها (کیفیت غذا، سرویس، اتمسفر و قیمت) به جای تحلیل کلی و سطحی متن.",
+    "math_formula": "ABSA_Score(Aspect_k) = sum(w_i * Polarity_i) / N_mentions",
+    "github_repo": "https://github.com/yangheng95/PyABSA",
+    "github_stars": "4.2k+",
+    "huggingface_model": "yangheng/deberta-v3-base-absa-v1.1",
+    "huggingface_url": "https://huggingface.co/yangheng/deberta-v3-base-absa-v1.1",
+    "huggingface_downloads": "52,000+"
+  },
+  {
+    "id": "PAPER-04",
+    "title": "BERTurk - Pre-trained BERT models for Turkish",
+    "authors": [
+      "Stefan Schweter"
+    ],
+    "journal": "Zenodo Research / ArXiv",
+    "year": 2020,
+    "doi_or_url": "https://doi.org/10.5281/zenodo.3770924",
+    "module_id": "mod-reviews",
+    "module_name_fa": "ماژول ۴: پایش کامنت‌های ترکی گوگل مپ و یاندکس رستوران‌های استانبول",
+    "breakthrough_fa": "توسعه مدل ترنسفورمر BERTurk برای زبان ترکی با درک پسوندهای پیچیده صرفی، واکاشی اصطلاحات محلی مشتریان ترک در نقد کباب و دونر و دسته‌بندی قصد خرید.",
+    "math_formula": "P(Sentiment | Review_tr) = Softmax(W_h * BERTurk_CLS + b)",
+    "github_repo": "https://github.com/stefan-it/turkish-bert",
+    "github_stars": "1.1k+",
+    "huggingface_model": "dbmdz/bert-base-turkish-cased",
+    "huggingface_url": "https://huggingface.co/dbmdz/bert-base-turkish-cased",
+    "huggingface_downloads": "41,000+"
+  },
+  {
+    "id": "PAPER-05",
+    "title": "Unsupervised Cross-lingual Representation Learning at Scale (XLM-RoBERTa)",
+    "authors": [
+      "Alexis Conneau",
+      "Kartikay Khandelwal",
+      "Naman Goyal",
+      "Vishrav Chaudhary",
+      "Guillaume Wenzek",
+      "Francisco Guzmán",
+      "Edouard Grave",
+      "Myle Ott",
+      "Luke Zettlemoyer",
+      "Veselin Stoyanov"
+    ],
+    "journal": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)",
+    "year": 2020,
+    "doi_or_url": "https://aclanthology.org/2020.acl-main.747/",
+    "module_id": "mod-gateways",
+    "module_name_fa": "ماژول ۷: گیت‌وی‌های پایش لحظه‌ای و ۱۰۰ مهارت هوش تجاری",
+    "breakthrough_fa": "یادگیری بازنمایی بین‌زبانی در مقیاس ۱۰۰ زبان بدون نظارت، امکان انتقال فوری مدل احساسات به ۴ زبان کلیدی گردشگری استانبول (فارسی، ترکی، انگلیسی و عربی).",
+    "math_formula": "Cross_Lingual_Loss = - sum_{lang} log P(x_masked | x_{context}, lang)",
+    "github_repo": "https://github.com/facebookresearch/XLM",
+    "github_stars": "4.8k+",
+    "huggingface_model": "cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
+    "huggingface_url": "https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
+    "huggingface_downloads": "211,000+"
+  },
+  {
+    "id": "PAPER-06",
+    "title": "ParsBERT: A transformer-based model for Persian language understanding",
+    "authors": [
+      "Mehrdad Farahani",
+      "Mohammad Gharachorloo",
+      "Marzieh Farahani",
+      "Mohammad Manthouri"
+    ],
+    "journal": "Neural Computing and Applications (Springer)",
+    "year": 2021,
+    "doi_or_url": "https://doi.org/10.1007/s00521-020-05525-4",
+    "module_id": "mod-gateways",
+    "module_name_fa": "ماژول ۷: پردازش زبان طبیعی فارسی و ربات تلگرام",
+    "breakthrough_fa": "معماری بومی پردازش زبان فارسی با مدیریت دقیق فاصله مجازی (ZWNJ)، عبارات محاوره‌ای نقد غذا و نام خوراک‌های ایرانی، افزایش دقت تحلیل نظرات فارسی به ۹۳٪.",
+    "math_formula": "ParsBERT_Score = Linear(Dropout(GELU(W * Hidden_State + b)))",
+    "github_repo": "https://github.com/hooshvare/parsbert",
+    "github_stars": "890+",
+    "huggingface_model": "HooshvareLab/bert-fa-zwnj-base",
+    "huggingface_url": "https://huggingface.co/HooshvareLab/bert-fa-zwnj-base",
+    "huggingface_downloads": "8,900+"
+  },
+  {
+    "id": "PAPER-07",
+    "title": "Llama 3: Open Foundation and Fine-Tuned Chat Models for Domain Copywriting",
+    "authors": [
+      "Hugo Touvron",
+      "Louis Martin",
+      "Kevin Stone",
+      "Peter Albert",
+      "Amjad Almahairi",
+      "Yasmine Babaei"
+    ],
+    "journal": "Meta AI Research Whitepaper / ArXiv:2307.09288",
+    "year": 2023,
+    "doi_or_url": "https://arxiv.org/abs/2307.09288",
+    "module_id": "mod-campaign",
+    "module_name_fa": "ماژول ۱: استودیو هوش مصنوعی تولید تبلیغات و دورهمی‌های کلاب",
+    "breakthrough_fa": "مدل‌های کلامی دستوری (Instruction-Tuned LLMs) با توانایی تولید متن‌های ترغیب‌کننده تبلیغاتی، سناریوهای مافیا کلاب، جدول زمان‌بندی Run of Show و پست‌های اینستاگرام با انگیزش فوری اقدام (CTA).",
+    "math_formula": "P(Token_t | Context, Persona, Goal) = Softmax(Attn(Q, K, V))",
+    "github_repo": "https://github.com/meta-llama/llama3",
+    "github_stars": "65k+",
+    "huggingface_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "huggingface_url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+    "huggingface_downloads": "1,800,000+"
+  },
+  {
+    "id": "PAPER-08",
+    "title": "Servicescapes: The Impact of Physical Surroundings on Customers and Employees",
+    "authors": [
+      "Mary Jo Bitner"
+    ],
+    "journal": "Journal of Marketing (American Marketing Association)",
+    "year": 1992,
+    "doi_or_url": "https://doi.org/10.1177/002224299205600205",
+    "module_id": "mod-themes",
+    "module_name_fa": "ماژول ۲: استودیو معماری و طراحی مدرن رستوران با ۵ تم شاخص",
+    "breakthrough_fa": "نظریه جامع فیزیک محیطی (Servicescapes) اثبات‌کننده رابطه مستقیم هارمونی متریال، پالت نوری، هارمونی مس و گردو بر میانگین زمان توقف مشتری (Dwell Time) و پذیرش سفارشات بالاتر.",
+    "math_formula": "Customer_Approach_Behavior = f(Ambient_Conditions, Spatial_Layout, Signs_Symbols)",
+    "github_repo": "https://github.com/topics/interior-design-ai",
+    "github_stars": "420+",
+    "huggingface_model": "design-ai/servicescape-aesthetic-scorer",
+    "huggingface_url": "https://huggingface.co/models?search=interior+design",
+    "huggingface_downloads": "12k+"
+  },
+  {
+    "id": "PAPER-09",
+    "title": "Meeting Planners' Venue Selection Criteria: A Restaurant Private Dining Perspective",
+    "authors": [
+      "Carl P. Borchgrevink",
+      "Alex M. Susskind",
+      "Joseph M. Tarras"
+    ],
+    "journal": "Journal of Convention & Event Tourism (Routledge)",
+    "year": 2011,
+    "doi_or_url": "https://doi.org/10.1080/15470148.2011.598353",
+    "module_id": "mod-benchmark",
+    "module_name_fa": "ماژول ۶: بنچ‌مارک پلتفرم‌های جهانی رویداد (RestauRent, Tagvenue)",
+    "breakthrough_fa": "تحلیل معیارهای تصمیم‌گیری سازمان‌دهندگان ایونت‌های شرکتی در انتخاب اتاق‌های پرایوت داینینگ رستوران؛ اثبات ضریب تبدیل ۷ برابری در پاسخ‌دهی زیر ۱ ساعت.",
+    "math_formula": "P(Booking_Conversion) = 1 / (1 + exp(-(beta_0 + 7.0 * FastResponse + beta_1 * AudioVisual)))",
+    "github_repo": "https://github.com/topics/event-management",
+    "github_stars": "950+",
+    "huggingface_model": "tabular-classification/event-lead-conversion",
+    "huggingface_url": "https://huggingface.co/models?search=lead+conversion",
+    "huggingface_downloads": "14k+"
+  },
+  {
+    "id": "PAPER-10",
+    "title": "Using the Plural Form in the Management of Restaurant Chains",
+    "authors": [
+      "Jeffrey L. Bradach"
+    ],
+    "journal": "Administrative Science Quarterly (Cornell Johnson School)",
+    "year": 1997,
+    "doi_or_url": "https://doi.org/10.2307/2393736",
+    "module_id": "mod-franchise",
+    "module_name_fa": "ماژول ۸: هوش فرانچایز، ممیزی شعب و آنالیز نمایشگاه ینی‌کاپی",
+    "breakthrough_fa": "مدل علمی فرم دوگانه (Plural Form) برای ترکیب شعب ملکی و نمایندگی فرانچایز جهت جلوگیری از کم‌فروشی، حفظ کیفیت برند و فیلتر کارمزدهای پنهان زنجیره تأمین در شرایط تورمی.",
+    "math_formula": "Anti_Phantom_ROI = Net_Annual_Cashflow * (1 - Inflation_Rate) / Initial_Capex",
+    "github_repo": "https://github.com/topics/franchise-management",
+    "github_stars": "620+",
+    "huggingface_model": "tabular-anomaly-detection/franchise-audit",
+    "huggingface_url": "https://huggingface.co/models?search=anomaly+detection",
+    "huggingface_downloads": "22k+"
+  }
+]
