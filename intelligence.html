@@ -1741,6 +1741,35 @@ table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </section>
 
+    
+      <!-- Section C: 30 Admin & Infographic Skills Interactive Explorer -->
+      <div style="margin-top:36px;background:var(--ink-2);border:1px solid var(--line-copper);padding:24px">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+          <div>
+            <h3 style="font-size:1.15rem;color:var(--cream);margin-bottom:4px">🛠 سامانه ۳۰ مهارت پیشرفته ادمین پنل، اینفوگرافیک و ارکستراسیون هاگینگ‌فیس</h3>
+            <span style="font-size:.82rem;color:var(--copper-light)">مهارت‌های تخصصی مدیران برای رندر وکتوری اینفوگرافیک، اتوماسیون پیام‌های CRM و اجرای مدل‌های هوش مصنوعی Hugging Face</span>
+          </div>
+          <span id="adminSkillsCountBadge" style="font-size:.82rem;background:rgba(210,154,90,0.15);border:1px solid var(--line-copper);color:var(--copper);padding:3px 10px;border-radius:3px">نمایش ۳۰ از ۳۰ مهارت</span>
+        </div>
+
+        <div style="margin-bottom:14px">
+          <input type="text" id="adminSkillSearchInput" style="width:100%;background:var(--ink-1);border:1px solid var(--line);color:var(--cream);padding:10px 14px;font-size:.9rem" placeholder="جستجو میان ۳۰ مهارت ادمین (مثال: SVG، واتس‌اپ، Place ID، ریتینگ، Llama، تورم...)" oninput="filterAdminSkillsUI()">
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px" id="adminSkillClusterChips">
+          <button class="c-chip active" onclick="setAdminClusterFilter('all', this)">همه ۳۰ مهارت</button>
+          <button class="c-chip" onclick="setAdminClusterFilter('visual-intel', this)">۱. اینفوگرافیک و هوش بصری (۱۰)</button>
+          <button class="c-chip" onclick="setAdminClusterFilter('admin-crm', this)">۲. اتوماسیون ادمین و B2B (۱۰)</button>
+          <button class="c-chip" onclick="setAdminClusterFilter('hf-orchestration', this)">۳. ارکستراسیون هاگینگ‌فیس (۱۰)</button>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px" id="adminSkillsGridContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </section>
+
     <!-- ATIKOVA INTEGRATION BANNER & INTERACTIVE DRAWER -->
     <div class="atikova-banner">
       <div class="atikova-text">
@@ -3577,6 +3606,76 @@ function downloadOutreachDoc(restId) {
 // Hook into onload
 window.addEventListener("DOMContentLoaded", function() {
   initGmapsOutreachModule();
+});
+
+
+// 30 Admin Skills & Infographic Explorer Data & Logic
+var adminSkillsData = [{"id": "SKILL-ADM-001", "cluster_id": "visual-intel", "name_fa": "موتور رندر اینفوگرافیک‌های وکتوری پویا (Dynamic SVG Infographic Engine)", "name_en": "Dynamic Vector Infographic Engine", "description": "تولید در لحظه تصاویر وکتوری SVG با استایل تم برنزی تیره، گرادیانت‌های اختصاصی و داده‌های زنده فروش و رضایت مشتری.", "tool": "SVG DOM Vector Builder & Canvas Exporter", "trigger": "به‌روزرسانی داده‌های فروش، ریتینگ یا درخواست خروجی گرافیکی ادمین", "action": "رندر خودکار گرافیک برداری ریسپانسیو با پشتیبانی از دانلود PNG/SVG"}, {"id": "SKILL-ADM-002", "cluster_id": "visual-intel", "name_fa": "رسم‌کننده منحنی بهره‌وری صندلی-ساعت Kimes RevPASH (RevPASH Curve Visualizer)", "name_en": "Kimes RevPASH Yield Curve Visualizer", "description": "ترسیم منحنی بازده صندلی در طول شبانه‌روز، نمایش فرورفتگی ساعات خلوت (۱۴:۳۰ تا ۱۸:۳۰) و خط روند جهش درآمدی حاصل از کلاب.", "tool": "RevPASH Formula Visualizer (Cornell Model)", "trigger": "ثبت داده‌های تراکنش یا شبیه‌سازی درآمد ساعات بعدازظهر", "action": "تولید دیاگرام مقایسه‌ای وضعیت سنتی (12 TL) در برابر هوشمند (55 TL)"}, {"id": "SKILL-ADM-003", "cluster_id": "visual-intel", "name_fa": "ترسیم‌کننده ۴ ربع ماتریس مهندسی منو BCG (BCG Menu Matrix Plotter)", "name_en": "BCG 4-Quadrant Menu Profitability Plotter", "description": "پلات گرافیکی اقلام منو بر روی دو محور محبوبیت (Menu Mix %) و سود ناخالص (Contribution Margin) با آستانه خط‌چین Hurdle Rate.", "tool": "Kasavana & Smith BCG Plotter", "trigger": "تغییر قیمت فروش، بهای مواد اولیه گوشت/برنج یا آمار صندوق POS", "action": "دسته‌بندی خودکار به ستاره، اسب بارکش، معما و سگ همراه با گره‌های نوری"}, {"id": "SKILL-ADM-004", "cluster_id": "visual-intel", "name_fa": "دیاگرام فلوچارت پایپ‌لاین هوش مصنوعی نظرات (AI Review Pipeline Flowchart)", "name_en": "Omnichannel Review-to-Action Pipeline Flowchart", "description": "نمایش بصری جریان داده از ۸ گیت‌وی پایش تا مدل‌های چندزبانه، طبقه‌بندی جنبه‌های غذا و اقدام فوری زیر ۱۵ دقیقه.", "tool": "Mermaid/SVG Multi-Stage Pipeline Graph", "trigger": "ورود نظر جدید یا ممیزی سرعت پاسخ‌دهی سیستم SLA", "action": "نمایش گام‌های ۴گانه پردازش، تریاژ و ارسال پاسخ با نشانگرهای وضعیت سبز"}, {"id": "SKILL-ADM-005", "cluster_id": "visual-intel", "name_fa": "نقشه حرارتی جغرافیایی تراکم رستوران‌ها (Istanbul Districts Density Heatmap)", "name_en": "Istanbul Districts Dining Density Heatmap", "description": "ترسیم نقشه حرارتی مناطق استراتژیک استانبول (تکسیم، زیتین‌بورنو، اسنیورت، شیشلی، آتاشهیر) بر اساس ریتینگ و پتانسیل بازار.", "tool": "GeoJSON Coordinates Spatial Visualizer", "trigger": "فیلتر منطقه‌ای در پنل ادمین یا تحلیل موقعیت شعبه جدید", "action": "رندر مناطق با کدهای رنگی تراکم و پیوست اطلاعات تماس هر کلاستر"}, {"id": "SKILL-ADM-006", "cluster_id": "visual-intel", "name_fa": "نمودار راداری ابعاد ۴گانه احساسات SemEval ABSA (Aspect Sentiment Radar Chart)", "name_en": "SemEval-2014 Aspect Sentiment Radar Chart", "description": "ترسیم چندضلعی راداری برای ۴ بعد تفکیکی کیفیت غذا، کیفیت سرویس، اتمسفر سالن و منصفانه بودن قیمت در مقیاس ۵ ستاره.", "tool": "Polar Radar Coordinate Renderer", "trigger": "پردازش دسته‌ای کامنت‌های هفتگی یک رستوران", "action": "ترسیم شکل هندسی شاخص‌ها جهت شناسایی در یک نگاه افت کیفیت سرویس یا آشپزخانه"}, {"id": "SKILL-ADM-007", "cluster_id": "visual-intel", "name_fa": "شتاب‌سنج و سرعت گردش میزهای سالن (Table Turnover Velocity Gauge)", "name_en": "Table Turnover & Dwell Velocity Gauge", "description": "نمایش سنجه سرعت تخلیه و آماده‌سازی میزها در ساعات اوج ناهار و شام برای جلوگیری از معطلی مهمانان بدون رزرو.", "tool": "Dwell Time Velocity Calculator", "trigger": "مدت توقف میز بیش از ۹۰ دقیقه در ساعات اوج شلوغی", "action": "هشدار رنگی زرد به سرمهماندار جهت مدیریت چک فاکتور و چای پایانی"}, {"id": "SKILL-ADM-008", "cluster_id": "visual-intel", "name_fa": "گیج ظرفیت رویدادهای شرکتی و پرایوت داینینگ (B2B Event Capacity Gauge)", "name_en": "B2B Corporate Event Capacity Gauge", "description": "نمایش درصد پرشدگی طبقات میتاپ و سالن‌های اختصاصی برای رزروهای بالای ۳۰ نفر بر اساس تقویم هفتگی رویدادها.", "tool": "Capacity Utilization Progress Engine", "trigger": "درخواست ثبت رویداد جدید در فرم رزرو یا ربات تلگرام", "action": "محاسبه فضای خالی باقیمانده و پیشنهاد بهترین ساعات خالی به هماهنگ‌کننده"}, {"id": "SKILL-ADM-009", "cluster_id": "visual-intel", "name_fa": "نقشه درختی آنالیز سهم هزینه‌های تمام‌شده (Supply Chain Cost Treemap)", "name_en": "Supply Chain Food Cost Breakdown Treemap", "description": "تفکیک گرافیکی درختی بهای تمام‌شده اقلام منو به گوشت تازه، برنج ایرانی زعفرانی، روغن، سبزیجات و دستمزد مستقیم سرآشپز.", "tool": "Treemap Cost Allocation Algorithm", "trigger": "نوسان بیش از ۵٪ قیمت گوشت گوسفندی در بازار عمده‌فروشی رامی", "action": "نمایش بلوک‌های هزینه‌ای متورم‌شده جهت تنظیم سهمیه یا قیمت‌گذاری مجدد"}, {"id": "SKILL-ADM-010", "cluster_id": "visual-intel", "name_fa": "تولیدکننده کارت اینفوگرافیک خلاصه اجرایی تک‌صفحه‌ای (Executive One-Page Infographic)", "name_en": "Executive One-Page Infographic Snapshot Generator", "description": "تولید خلاصه‌گزارش بصری مدیریتی در یک کارت فشرده شامل ۵ شاخص کلیدی ریتینگ، RevPASH، حاشیه سود، رویدادها و کامنت‌های نیازمند اقدام.", "tool": "Executive Dashboard Snapshot Compiler", "trigger": "درخواست مدیر ارشد یا تولید گزارش هفتگی خودکار برای تلگرام ادمین", "action": "کامپایل کارت اینفوگرافیک استاندارد آماده اشتراک‌گذاری و پرینت"}, {"id": "SKILL-ADM-011", "cluster_id": "admin-crm", "name_fa": "اعتبارسنجی خودکار شناسه Place ID و CID گوگل مپ (Google Maps Place ID Validator)", "name_en": "Automated Google Maps Place ID & CID Validator", "description": "بررسی تطابق شناسه رسمی گوگل مپ، جلوگیری از خطاهای ثبتی و استخراج لینک مستقیم نویگیشن نقشه برای هر ۱۹ رستوران.", "tool": "Google Place ID Parser & CID Resolver", "trigger": "ثبت یا ویرایش پروفایل رستوران جدید در دایرکتوری", "action": "تأیید ساختار ChIJ و ایجاد لینک مستقیم گوگل مپ"}, {"id": "SKILL-ADM-012", "cluster_id": "admin-crm", "name_fa": "ژنراتور لینک تک‌کلیکی واتس‌اپ پیام آمادهٔ همکاری (One-Click WhatsApp Outreach Linker)", "name_en": "One-Click Personalized WhatsApp Outreach Linker", "description": "تبدیل متن پیام شخصی‌سازی‌شده و شماره تماس مدیر رستوران به لینک استاندارد wa.me با انکودینگ کامل کاراکترهای فارسی و اموجی‌ها.", "tool": "WhatsApp Universal Deep Link Crafter", "trigger": "انتخاب رستوران در پنل ادمین یا درخواست ارسال پیام", "action": "تولید لینک مستقیم چت واتس‌اپ حاوی متن کامل شخصی‌سازی‌شده"}, {"id": "SKILL-ADM-013", "cluster_id": "admin-crm", "name_fa": "موتور استخراج نقاط درد و فرصت‌های درآمدی از نقدها (Review Pain-Point Extractor)", "name_en": "Review Opportunity & Pain Point Miner", "description": "تحلیل کامنت‌های با امتیاز ۳ ستاره و کمتر و کشف مواردی نظیر عدم پاسخ به توریست‌های خارجی، خلوتی ظهرها و کمبود جای پارک.", "tool": "NLP Latent Demand & Complaint Parser", "trigger": "بارگذاری نقدهای جدید از گیت‌وی گوگل مپ یا یاندکس", "action": "تولید برچسب‌های فرصت (قرمز) جهت گنجاندن در پروپوزال همکاری B2B"}, {"id": "SKILL-ADM-014", "cluster_id": "admin-crm", "name_fa": "تریاژ و هشدار فوری کامنت‌های منفی بی‌پاسخ (Unanswered Negative Review Triage)", "name_en": "Unanswered Critical Review Triage & Alert", "description": "پایش نقدها و شناسایی کامنت‌های زیر ۳ ستاره که بیش از ۲ ساعت بدون پاسخ مانده‌اند، به همراه پیش‌نویس پاسخ دلجویانه اختصاصی.", "tool": "Crisis SLA Triage & Auto-Draft Engine", "trigger": "تشخیص کامنت منفی بی‌پاسخ در پایپ‌لاین لحظه‌ای", "action": "ارسال نوتیفیکیشن فوری به ربات ادمین و ثبت وضعیت در صف اقدام"}, {"id": "SKILL-ADM-015", "cluster_id": "admin-crm", "name_fa": "امتیازدهی لیدهای پرایوت داینینگ شرکتی (Borchgrevink Event Lead Scorer)", "name_en": "High-Ticket Private Dining Lead Scorer", "description": "محاسبه احتمال عقد قرارداد رزرو سالن اختصاصی بر اساس الگوریتم مقاله Borchgrevink 2011 (سرعت پاسخ، تجهیزات صوتی و انعطاف پذیری).", "tool": "Borchgrevink Logistic Lead Conversion Scorer", "trigger": "ثبت درخواست رزرو گروهی بالای ۲۰ نفر", "action": "تخصیص امتیاز تبدیل (۰ تا ۱۰۰٪) و اولویت‌بندی در داشبورد پیگیری"}, {"id": "SKILL-ADM-016", "cluster_id": "admin-crm", "name_fa": "سنجشگر رعایت مهلت پاسخ‌دهی ۴ زبانه (Multi-Lingual Auto-Responder SLA Tracker)", "name_en": "Multi-Lingual Auto-Responder SLA Tracker", "description": "ثبت تایم‌استمپ دریافت پیام و ارسال پاسخ به زبان‌های فارسی، ترکی، انگلیسی و عربی جهت تضمین میانگین پاسخ‌دهی زیر ۱۵ دقیقه.", "tool": "SLA Compliance Monitored Timer", "trigger": "ثبت رویداد ارسال پاسخ به کامنت یا پیام دایرکت", "action": "محاسبه شاخص رعایت SLA و نمایش سبز/قرمز در داشبورد مدیر"}, {"id": "SKILL-ADM-017", "cluster_id": "admin-crm", "name_fa": "مسیریاب و تطبیق‌دهنده هتل‌های شبکه Atikova (Atikova Hospitality Cross-Referencer)", "name_en": "Atikova Hospitality Network Matcher", "description": "اتصال خودکار درخواست‌های اقامت توریست‌ها، ضیافت‌های بزرگ و سالن‌های بین‌المللی به ۱۸۶ مرکز تشریفات Atikova با شماره تماس مستقیم.", "tool": "Atikova Venue Knowledge Graph Matcher", "trigger": "درخواست سالن با ظرفیت بیش از ۲۰۰ نفر یا خدمات هتلینگ ۵ ستاره", "action": "پیشنهاد نزدیک‌ترین هتل همکار (دیوان، چراغان، هیلتون، مارمارا) با دکمه واتس‌اپ"}, {"id": "SKILL-ADM-018", "cluster_id": "admin-crm", "name_fa": "ارسال‌کننده هوشمند پیام‌های گروهی تلگرام (Telegram Admin Segment Dispatcher)", "name_en": "Telegram Bot Admin Segment Dispatcher", "description": "ارسال فراخوان‌های رویدادها، اطلاعیه‌ها و پیام‌های شخصی‌سازی‌شده به تفکیک کاربران علاقه‌مند به مافیا، میتاپ‌های فناوری یا شعر.", "tool": "Telegram Bot API Broadcast Engine", "trigger": "دستور انتشار ادمین در ربات با اعمال فیلتر برچسب کاربران", "action": "ارسال دسته‌ای پیام با نرخ مجاز تلگرام (۳۰ پیام در ثانیه) بدون بلاک شدن"}, {"id": "SKILL-ADM-019", "cluster_id": "admin-crm", "name_fa": "ممیزی بازگشت سرمایه ضد فریب تورمی فرانچایز (Bradach Anti-Phantom ROI Auditor)", "name_en": "Bradach Anti-Phantom Franchise ROI Auditor", "description": "محاسبه دوره بازگشت سرمایه واقعی با کسر هزینه‌های پنهان، کارمزد مواد اولیه و تنزیل با تورم سالانه ۳۵٪ لیر ترکیه.", "tool": "Bradach Plural Form ROI Calculator", "trigger": "بررسی طرح‌های توجیهی فرانچایز متقاضیان شعب جدید", "action": "تولید کارنامه شفافیت مالی (گرید A+) و افشای سودهای کاذب"}, {"id": "SKILL-ADM-020", "cluster_id": "admin-crm", "name_fa": "امتیازدهی ممیزی بازرس مخفی و بهداشت شعب (Mystery Shopper & Hygiene Engine)", "name_en": "Mystery Shopper & Quality Standard Auditor", "description": "ثبت و نمره‌دهی شاخص‌های بازرسی کیفیت غذا، بهداشت آشپزخانه، دمای سرو کباب و پوشش پرسنل بر اساس چک‌لیست استاندارد بین‌المللی.", "tool": "Standard Operating Procedure (SOP) Audit Tool", "trigger": "تکمیل فرم بازرسی ماهانه یا ثبت گزارش کنترل کیفی شعبه", "action": "رتبه‌بندی عملکرد شعب در شبکه و صدور گواهینامه طلایی کیفیت"}, {"id": "SKILL-ADM-021", "cluster_id": "hf-orchestration", "name_fa": "پایپ‌لاین استخراج احساسات جنبه‌ها با DeBERTa (DeBERTa-v3 ABSA Pipeline)", "name_en": "DeBERTa-v3 Aspect Sentiment Extractor", "description": "اجرای مدل yangheng/deberta-v3-base-absa-v1.1 از هاگینگ‌فیس برای تفکیک دقیق قطبیت نظرات انگلیسی و بین‌المللی گردشگران رستوران.", "tool": "Hugging Face Inference API / PyABSA Pipeline", "trigger": "دریافت نقد به زبان انگلیسی در گوگل مپ یا تریپ‌ادوایزر", "action": "استخراج جنبه‌های غذا، سرویس، اتمسفر و قیمت با درصد اطمینان بالا"}, {"id": "SKILL-ADM-022", "cluster_id": "hf-orchestration", "name_fa": "درک ساختار صرفی زبان ترکی با ترنسفورمر BERTurk (BERTurk Morphological Engine)", "name_en": "BERTurk Customer Review Sentiment Classifier", "description": "به‌کارگیری مدل dbmdz/bert-base-turkish-cased برای تحلیل نقدهای مشتریان بومی ترک در استانبول و شناسایی کلیدواژه‌های لهجه استانبولی.", "tool": "Hugging Face BERTurk Transformer", "trigger": "شناسایی متن ورودی به زبان ترکی استانبولی (tr)", "action": "دسته‌بندی نیت مشتری (تعریف، شکایت، سوال قیمت) و استخراج احساسات"}, {"id": "SKILL-ADM-023", "cluster_id": "hf-orchestration", "name_fa": "نرمال‌سازی نیم‌فاصله و زبان محاوره‌ای با ParsBERT (ParsBERT Persian Review Parser)", "name_en": "ParsBERT Persian Review & ZWNJ Normalizer", "description": "استفاده از مدل HooshvareLab/bert-fa-zwnj-base برای تمیزسازی متون فارسی، تصحیح نیم‌فاصله‌ها و تحلیل عمیق لحن نقدهای ایرانی و افغانستانی.", "tool": "Hugging Face ParsBERT Model", "trigger": "دریافت نظر یا پیام به زبان فارسی (fa)", "action": "نرمال‌سازی الفبایی، حذف کاراکترهای مخرب و ارزیابی رضایت مشتری"}, {"id": "SKILL-ADM-024", "cluster_id": "hf-orchestration", "name_fa": "انتقال بدون‌نظارت احساسات بین ۴ زبان با XLM-RoBERTa (XLM-RoBERTa Cross-Lingual Transfer)", "name_en": "XLM-RoBERTa 4-Language Sentiment Aligner", "description": "به‌کارگیری مدل cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual برای همگام‌سازی شاخص رضایت در میان ۴ زبان فارسی، ترکی، انگلیسی و عربی.", "tool": "Hugging Face XLM-RoBERTa Multilingual Engine", "trigger": "محاسبه شاخص رضایت جامع شبکه رستوران‌ها", "action": "تولید امتیاز همگن رضایت بدون افت دقت در ترجمه بین‌زبانی"}, {"id": "SKILL-ADM-025", "cluster_id": "hf-orchestration", "name_fa": "تولیدکننده سناریوهای کلاب و کپی‌رایتینگ با Llama-3 (Llama-3 Club Copywriting Engine)", "name_en": "Meta Llama-3 Hospitality Copywriter", "description": "مهندسی پرامپت با مدل meta-llama/Meta-Llama-3-8B-Instruct جهت نگارش خودکار متن‌های ترغیب‌کننده دورهمی‌های شبانه، سناریوهای مافیا و ایمیل‌های B2B.", "tool": "Hugging Face Llama-3 Chat Pipeline", "trigger": "انتخاب موضوع رویداد در استودیوی ماژول ۱ یا فرم تبلیغات", "action": "تولید فوری ۳ نسخه متن تلگرام، اینستاگرام و برنامه زمانی با لحن جذاب"}, {"id": "SKILL-ADM-026", "cluster_id": "hf-orchestration", "name_fa": "مدیریت لغو اضطراری و تأخیر مدل‌های هوش مصنوعی (Multi-Model Latency & Fallback Controller)", "name_en": "Multi-Model Fallback & Latency Controller", "description": "پایش زمان پاسخگویی APIهای هاگینگ‌فیس؛ در صورت تاخیر بیش از ۲ ثانیه، سوئیچ خودکار به کش محلی و مدل‌های سبک قانون‌محور بدون توقف پنل.", "tool": "Resilient AI Circuit Breaker & Fallback Handler", "trigger": "تایم‌اوت یا اختلال در پاسخ سرور ابری استنتاج هوش مصنوعی", "action": "پاسخ‌دهی آنی از پایگاه دانش محلی و ثبت هشدار فنی در لاگ سیستم"}, {"id": "SKILL-ADM-027", "cluster_id": "hf-orchestration", "name_fa": "شناسایی موجودیت‌های نام غذا و برابرسازی چندزبانه (Culinary Named Entity Recognition - NER)", "name_en": "Culinary Named Entity Recognition (NER)", "description": "استخراج خودکار اسامی غذاها (کوبیده، قابلی پلو، منتو، شیشلیک، دیزی) از متن کامنت‌ها و برابرسازی به ترکی و انگلیسی برای منوی دیجیتال.", "tool": "Specialized Culinary Tokenizer & NER", "trigger": "ورود متن حاوی نام غذا در کامنت‌ها یا جستجوی کاربر در ربات", "action": "هایلایت نام غذا، اتصال به شناسه آیتم منو و نمایش قیمت و عکس"}, {"id": "SKILL-ADM-028", "cluster_id": "hf-orchestration", "name_fa": "ارزیابی زیبایی‌شناختی پالت‌های معماری Servicescape (Bitner Aesthetic Scorer)", "name_en": "Bitner Servicescape Aesthetic Harmony Scorer", "description": "تحلیل کنتراست رنگ‌ها، بازتاب مس و گردو و سنجش میزان تطابق دکوراسیون با سبک انتخابی (لوکس برنزی، فیروزه‌ای یا اسکاندیناوی).", "tool": "Design Aesthetic Color Harmony Algorithmic Model", "trigger": "تغییر تم طراحی در ماژول ۲ استودیو معماری", "action": "محاسبه امتیاز هارمونی فضایی (از ۱۰۰) و توصیه پالت نورپردازی"}, {"id": "SKILL-ADM-029", "cluster_id": "hf-orchestration", "name_fa": "محاسبه‌گر پویای کف سفارش ساعات خلوت (Dynamic Minimum Spend Calculator)", "name_en": "Dynamic Off-Peak Minimum Spend Optimizer", "description": "محاسبه انعطاف‌پذیر حداقل مبلغ سفارش برای رویدادهای خصوصی بر اساس فرمول Kimes و کشش قیمتی تقاضای ساعات بعدازظهر.", "tool": "Kimes Yield Elasticity Optimizer", "trigger": "استعلام سالن اختصاصی در روزهای دوشنبه تا چهارشنبه", "action": "پیشنهاد کف سفارش تخفیف‌دار جهت پر کردن صندلی‌ها با حفظ حاشیه سود"}, {"id": "SKILL-ADM-030", "cluster_id": "hf-orchestration", "name_fa": "عامل سرپرست خودکار چندعامله رستوران (Multi-Agent Hospitality Orchestrator)", "name_en": "Autonomous Hospitality Multi-Agent Orchestrator", "description": "هماهنگ‌کننده مرکزی تمامی ۲۹ مهارت دیگر، مدیریت جریان کار میان پایش داده‌ها، تولید گرافیک، ثبت رزرو و ارسال پیام‌های مدیریت.", "tool": "Master Agent Controller & Event Bus", "trigger": "هرگونه تغییر وضعیت سیستمی، دریافت لید یا درخواست تحلیل ادمین", "action": "فراخوانی همزمان عامل‌های تخصصی، تلفیق نتایج و نمایش داشبورد جامع"}];
+var currentAdminCluster = "all";
+
+function initAdminSkillsModule() {
+  renderAdminSkillsList(adminSkillsData);
+}
+
+function setAdminClusterFilter(clusterId, btn) {
+  currentAdminCluster = clusterId;
+  var chips = document.querySelectorAll("#adminSkillClusterChips .c-chip");
+  chips.forEach(function(c) { c.classList.remove("active"); });
+  if (btn) btn.classList.add("active");
+  filterAdminSkillsUI();
+}
+
+function filterAdminSkillsUI() {
+  var query = (document.getElementById("adminSkillSearchInput").value || "").trim().toLowerCase();
+  var filtered = adminSkillsData.filter(function(s) {
+    var matchesCluster = (currentAdminCluster === "all" || s.cluster_id === currentAdminCluster);
+    var matchesQuery = !query || (
+      s.name_fa.toLowerCase().indexOf(query) !== -1 ||
+      s.name_en.toLowerCase().indexOf(query) !== -1 ||
+      s.description.toLowerCase().indexOf(query) !== -1 ||
+      s.tool.toLowerCase().indexOf(query) !== -1 ||
+      s.id.toLowerCase().indexOf(query) !== -1
+    );
+    return matchesCluster && matchesQuery;
+  });
+
+  var badge = document.getElementById("adminSkillsCountBadge");
+  if (badge) badge.textContent = "نمایش " + filtered.length + " از ۳۰ مهارت";
+  renderAdminSkillsList(filtered);
+}
+
+function renderAdminSkillsList(items) {
+  var container = document.getElementById("adminSkillsGridContainer");
+  if (!container) return;
+  if (items.length === 0) {
+    container.innerHTML = '<div style="grid-column:1/-1;padding:24px;text-align:center;color:var(--muted)">هیچ مهارتی با این مشخصات یافت نشد.</div>';
+    return;
+  }
+
+  container.innerHTML = items.map(function(s) {
+    return `
+      <div style="background:var(--ink-3);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;justify-content:space-between;gap:10px">
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+            <span style="font-family:monospace;font-size:.75rem;color:var(--copper);background:rgba(210,154,90,0.1);padding:2px 6px;border-radius:2px">${s.id}</span>
+            <span style="font-size:.72rem;color:var(--muted)">${s.cluster_id}</span>
+          </div>
+          <h4 style="font-size:.95rem;color:var(--cream);margin-bottom:2px">${s.name_fa}</h4>
+          <div style="font-size:.78rem;color:var(--copper-light);margin-bottom:6px">${s.name_en}</div>
+          <p style="font-size:.82rem;color:var(--text);line-height:1.7;margin-bottom:8px">${s.description}</p>
+        </div>
+        <div style="border-top:1px solid var(--line);padding-top:8px;font-size:.76rem;line-height:1.6;color:var(--muted)">
+          <div>⚙️ <b>ابزار:</b> <span style="color:var(--cream)">${s.tool}</span></div>
+          <div>⚡ <b>تریگر:</b> <span style="color:var(--text)">${s.trigger}</span></div>
+          <div>🎯 <b>اقدام:</b> <span style="color:#2ecc71">${s.action}</span></div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+  initAdminSkillsModule();
 });
 
 </script>
