@@ -1381,15 +1381,33 @@ table.bench-table tr:hover td{background:rgba(255,255,255,.02)}
     </section>
 
     <!-- ATIKOVA INTEGRATION BANNER -->
+        <!-- ATIKOVA INTEGRATION BANNER & INTERACTIVE DRAWER -->
     <div class="atikova-banner">
       <div class="atikova-text">
-        <h3>🌱 اتصال به دیتابیس جامع هتلداری و تشریفات استانبول (شبکه Atikova)</h3>
-        <p>این سامانه به پایگاه داده ۱۸۶ هلدینگ هتلداری، مراکز رویداد و پذیرایی استانبول (شامل گروه دیوان، هیلتون، سوئیس‌اوتل، چراغان پالاس، رافلز و مارمارا) متصل است و امکان همکاری و بازاریابی B2B رویدادها را فراهم می‌کند.</p>
+        <h3>🌱 اتصال به دیتابیس جامع هتلداری، ضیافت‌ها و تشریفات استانبول (شبکه Atikova.com)</h3>
+        <p>این سامانه به پایگاه داده ۱۸۶ هلدینگ هتلداری، مراکز رویداد و پذیرایی استانبول (شامل گروه دیوان، سوئیس‌اوتل، هیلتون، چراغان پالاس، رافلز، د مارمارا و تایتانیک) متصل است و امکان همکاری و بازاریابی B2B رویدادها را فراهم می‌کند.</p>
       </div>
-      <a href="restaurants.html" class="btn">مشاهده دیتابیس رستوران‌ها</a>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn btn--gold" onclick="toggleAtikovaDrawer()" id="toggleAtikovaBtn">🏢 مشاهده شبکه مراکز Atikova (۱۵ گروه شاخص)</button>
+        <a href="restaurants.html" class="btn btn--ghost">فهرست ۱۹ رستوران ایرانی و افغان</a>
+      </div>
     </div>
 
-  </div>
+    <!-- Collapsible Atikova Hospitality Directory -->
+    <div id="atikovaDrawer" style="display:none;background:var(--ink-2);border:1px solid var(--line-copper);padding:26px;margin:-40px 0 70px;border-top:0">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:10px">
+        <div>
+          <h4 style="font-size:1.15rem;color:var(--cream);margin-bottom:4px">🏛 هلدینگ‌های هتلداری، سالن‌های ضیافت و مراکز همایش استانبول (شبکه Atikova)</h4>
+          <span style="font-size:.82rem;color:var(--copper)">پایگاه داده شرکای تجاری برای برگزاری ضیافت‌ها، کترینگ مجالس، تشریفات و اقامت‌های VIP</span>
+        </div>
+        <button class="btn btn--ghost" onclick="toggleAtikovaDrawer()" style="padding:6px 14px;font-size:.8rem">بستن پنل ✕</button>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px" id="atikovaGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+</div>
 </main>
 
 <footer class="footer">
