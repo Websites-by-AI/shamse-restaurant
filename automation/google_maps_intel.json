@@ -37,7 +37,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 210,
     "yandex_rating": 4.6,
-    "yandex_review_count": 130
+    "yandex_review_count": 130,
+    "email": "info@restaurantfarsi.com",
+    "instagram": "@restaurantfarsi_tr",
+    "facebook": "restaurantfarsi.istanbul",
+    "telegram": "@farsirestaurant_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "reyhun-taksim",
@@ -77,7 +89,19 @@
     "tripadvisor_rating": 4.6,
     "tripadvisor_review_count": 380,
     "yandex_rating": 4.7,
-    "yandex_review_count": 190
+    "yandex_review_count": 190,
+    "email": "contact@reyhun.net",
+    "instagram": "@reyhun_istanbul",
+    "facebook": "reyhunpersianrestaurant",
+    "telegram": "@reyhun_manager",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "safir-sisli",
@@ -116,7 +140,19 @@
     "tripadvisor_rating": 4.4,
     "tripadvisor_review_count": 140,
     "yandex_rating": 4.5,
-    "yandex_review_count": 115
+    "yandex_review_count": 115,
+    "email": "sisli@safiriranianrestaurant.com",
+    "instagram": "@safir_restaurant_istanbul",
+    "facebook": "safirrestaurant.istanbul",
+    "telegram": "@safir_sisli_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "safir-aksaray",
@@ -155,7 +191,19 @@
     "tripadvisor_rating": 4.3,
     "tripadvisor_review_count": 85,
     "yandex_rating": 4.4,
-    "yandex_review_count": 75
+    "yandex_review_count": 75,
+    "email": "aksaray@safiriranianrestaurant.com",
+    "instagram": "@safir_aksaray_istanbul",
+    "facebook": "safir.aksaray.tr",
+    "telegram": "@safir_aksaray_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "shamse-taksim",
@@ -194,7 +242,19 @@
     "tripadvisor_rating": 4.6,
     "tripadvisor_review_count": 185,
     "yandex_rating": 4.7,
-    "yandex_review_count": 145
+    "yandex_review_count": 145,
+    "email": "taksim@shamserestaurants.com",
+    "instagram": "@shamse_restaurant",
+    "facebook": "shamserestaurantistanbul",
+    "telegram": "@shamse_restaurant_bot",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "shamse-kocatepe",
@@ -232,7 +292,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 110,
     "yandex_rating": 4.6,
-    "yandex_review_count": 95
+    "yandex_review_count": 95,
+    "email": "kocatepe@shamserestaurants.com",
+    "instagram": "@shamse_kocatepe",
+    "facebook": "shamserestaurant.kocatepe",
+    "telegram": "@shamse_restaurant_bot",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "sudi-atasehir",
@@ -270,7 +342,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 125,
     "yandex_rating": 4.5,
-    "yandex_review_count": 85
+    "yandex_review_count": 85,
+    "email": "info@sudirestaurant.com",
+    "instagram": "@sudi_restaurant_istanbul",
+    "facebook": "sudirestaurant.atasehir",
+    "telegram": "@sudi_atasehir_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "asuman-fatih",
@@ -309,7 +393,19 @@
     "tripadvisor_rating": 4.4,
     "tripadvisor_review_count": 195,
     "yandex_rating": 4.5,
-    "yandex_review_count": 120
+    "yandex_review_count": 120,
+    "email": "contact@asumanrestaurant.com",
+    "instagram": "@asuman_iranian_restaurant",
+    "facebook": "asumanrestaurant.fatih",
+    "telegram": "@asuman_fatih_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "mojgan-taksim",
@@ -348,7 +444,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 160,
     "yandex_rating": 4.6,
-    "yandex_review_count": 110
+    "yandex_review_count": 110,
+    "email": "info@mojganrestaurant.com",
+    "instagram": "@mojgan_restaurant_taksim",
+    "facebook": "mojganrestaurant",
+    "telegram": "@mojgan_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "shandiz-maltepe",
@@ -387,7 +495,19 @@
     "tripadvisor_rating": 4.4,
     "tripadvisor_review_count": 95,
     "yandex_rating": 4.5,
-    "yandex_review_count": 70
+    "yandex_review_count": 70,
+    "email": "info@shandizistanbul.com",
+    "instagram": "@shandiz_istanbul",
+    "facebook": "shandizrestaurant.maltepe",
+    "telegram": "@shandiz_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "nayeb-taksim",
@@ -426,7 +546,19 @@
     "tripadvisor_rating": 4.3,
     "tripadvisor_review_count": 115,
     "yandex_rating": 4.4,
-    "yandex_review_count": 80
+    "yandex_review_count": 80,
+    "email": "info@nayebistanbul.com",
+    "instagram": "@nayeb_restaurant_istanbul",
+    "facebook": "nayebrestaurant.taksim",
+    "telegram": "@nayeb_taksim_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "keyvan-esenyurt",
@@ -465,7 +597,19 @@
     "tripadvisor_rating": 4.4,
     "tripadvisor_review_count": 80,
     "yandex_rating": 4.5,
-    "yandex_review_count": 65
+    "yandex_review_count": 65,
+    "email": "contact@keyvanrestaurant.com",
+    "instagram": "@keyvan_restaurant_esenyurt",
+    "facebook": "keyvanrestaurant.tr",
+    "telegram": "@keyvan_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "bahar-afghan",
@@ -504,7 +648,19 @@
     "tripadvisor_rating": 4.6,
     "tripadvisor_review_count": 220,
     "yandex_rating": 4.7,
-    "yandex_review_count": 150
+    "yandex_review_count": 150,
+    "email": "info@baharafghan.com",
+    "instagram": "@bahar_afghan_restaurant",
+    "facebook": "baharafghanistanbul",
+    "telegram": "@bahar_afghan_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "afgan-kebap",
@@ -543,7 +699,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 90,
     "yandex_rating": 4.5,
-    "yandex_review_count": 60
+    "yandex_review_count": 60,
+    "email": "contact@afgankebap.com",
+    "instagram": "@afgan_kebap_esenyurt",
+    "facebook": "afgankebap.istanbul",
+    "telegram": "@afgankebap_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "arya-istanbul",
@@ -582,7 +750,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 110,
     "yandex_rating": 4.5,
-    "yandex_review_count": 75
+    "yandex_review_count": 75,
+    "email": "info@aryacafe.com",
+    "instagram": "@arya_cafe_istanbul",
+    "facebook": "aryacaferestaurant",
+    "telegram": "@arya_istanbul_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "afghan-restaurant-58",
@@ -621,7 +801,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 170,
     "yandex_rating": 4.6,
-    "yandex_review_count": 125
+    "yandex_review_count": 125,
+    "email": "sofreh@afghanrestaurant58.com",
+    "instagram": "@afghan_restaurant_58",
+    "facebook": "sofrehafghan.zeytinburnu",
+    "telegram": "@afghan58_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "afghan-turk",
@@ -660,7 +852,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 150,
     "yandex_rating": 4.6,
-    "yandex_review_count": 105
+    "yandex_review_count": 105,
+    "email": "info@afghanturkrestaurant.com",
+    "instagram": "@afghan_turk_zeytinburnu",
+    "facebook": "afghanturkrestaurant",
+    "telegram": "@afghanturk_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "manan-kabil",
@@ -699,7 +903,19 @@
     "tripadvisor_rating": 4.5,
     "tripadvisor_review_count": 115,
     "yandex_rating": 4.5,
-    "yandex_review_count": 75
+    "yandex_review_count": 75,
+    "email": "info@manankabil.com",
+    "instagram": "@manan_kabil_zeytinburnu",
+    "facebook": "manankabilrestaurant",
+    "telegram": "@manankabil_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   },
   {
     "id": "afghan-bek",
@@ -738,6 +954,18 @@
     "tripadvisor_rating": 4.4,
     "tripadvisor_review_count": 95,
     "yandex_rating": 4.4,
-    "yandex_review_count": 60
+    "yandex_review_count": 60,
+    "email": "contact@afghanbek.com",
+    "instagram": "@afghan_bek_zeytinburnu",
+    "facebook": "afghanbekrestaurant",
+    "telegram": "@afghanbek_admin",
+    "lead_status": "verified",
+    "channels_ready": [
+      "email",
+      "whatsapp",
+      "telegram",
+      "instagram",
+      "facebook"
+    ]
   }
 ]
