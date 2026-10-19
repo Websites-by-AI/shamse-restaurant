@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-10-19T19:55:11.690498",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792439711_7964",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
     "timestamp": "2026-10-19T19:40:47.160421",
     "channel": "email_resend",
     "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
@@ -2742,17 +2754,6 @@
     "restaurant_name": "رستوران منان کابل",
     "channel": "email",
     "recipient": "info@manankabil.com",
-    "timestamp": "2026-10-19 19:19:15",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-AFGHAN-7555",
-    "lead_id": "afghan-bek",
-    "restaurant_name": "رستوران افغان بیک",
-    "channel": "email",
-    "recipient": "contact@afghanbek.com",
     "timestamp": "2026-10-19 19:19:15",
     "status": "delivered",
     "opened": true,

@@ -27,6 +27,33 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(ROOT)
 SUPPRESSION_FILE = os.path.join(ROOT, "suppression.jsonl")
 RUBRIC_FILE = os.path.join(REPO_ROOT, "research", "outreach_v2_rubric.json")
+CALENDAR_FILE = os.path.join(ROOT, "collaboration_calendar_100.json")
+
+def load_collaboration_calendar() -> dict:
+    """Loads the 100-lead collaboration calendar database."""
+    if not os.path.exists(CALENDAR_FILE):
+        return {}
+    with open(CALENDAR_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def get_lead_by_id(lead_id: str) -> dict:
+    """Retrieves a specific lead from the 100-lead database."""
+    cal = load_collaboration_calendar()
+    for lead in cal.get("leads", []):
+        if lead.get("id") == lead_id:
+            return lead
+    return {}
+
+def filter_leads(domain: str = None, country: str = None) -> list:
+    """Filters leads by domain and/or country."""
+    cal = load_collaboration_calendar()
+    leads = cal.get("leads", [])
+    if domain:
+        leads = [l for l in leads if l.get("domain") == domain]
+    if country:
+        leads = [l for l in leads if l.get("country") == country]
+    return leads
+
 
 def hash_ab_variant(email: str, variants=("A", "B", "C")) -> str:
     """Deterministically allocates an A/B/C variant based on the MD5 of recipient email."""
@@ -88,30 +115,34 @@ def classify_reply_intent(reply_text: str) -> str:
         
     return "interested"
 
-def generate_v2_email(entity_name: str, email: str, manager_name: str = "مدیریت محترم", stage: int = 1) -> dict:
+def generate_v2_email(entity_name: str, email: str, manager_name: str = "مدیریت محترم", stage: int = 1, lead_id: str = None) -> dict:
     """
-    Generates a high-converting, concise (~107 words) email for a restaurant lead.
+    Generates a high-converting, concise (~107 words) email for any entity across the 10 domains and 10 countries.
     """
     variant = hash_ab_variant(email)
+    lead_info = get_lead_by_id(lead_id) if lead_id else {}
+    pain_point = lead_info.get("pain", "ابهام توریست‌های اروپایی در فاکتور چای و کوور")
+    value_hook = lead_info.get("v2_hook", "راهکار آزادسازی +۱۸۰,۰۰۰ لیر درآمد در ساعات خلوت عصرگاهی")
+    domain = lead_info.get("domain", "restaurants")
     
     if stage == 1:
         # Day 0: Value-first pitch
         subjects = {
             "A": f"تحلیل ۵,۰۵۵ نقد {entity_name} + پادکست اختصاصی",
-            "B": f"گزارش هوش تجاری و گردشگری اروپایی {entity_name}",
-            "C": f"فرصت ارتقای امتیاز تریپ‌ادوایزر و گوگل مپ {entity_name}"
+            "B": f"گزارش هوش تجاری و همکاری بین‌المللی {entity_name}",
+            "C": f"فرصت ارتقای امتیاز و همکاری استراتژیک با {entity_name}"
         }
         subject = subjects[variant]
-        preheader = f"خلاصه ممیزی تحلیلی نظرات گوگل مپ، تریپ‌ادوایزر و راهکارهای افزایش سودآوری {entity_name}"
+        preheader = f"خلاصه ممیزی نظرات بین‌المللی و راهکارهای هم‌افزایی {entity_name}"
         
         body = f"""سلام و احترام جناب/سرکار {manager_name}،
 
 در پایش هفتگی نظرات گردشگران تکسیم، ممیزی عمیق ۵,۰۵۵ نظر {entity_name} در گوگل مپ، تریپ‌ادوایزر و یاندکس آماده شد.
 
 ۳ یافته کلیدی برای شما:
-• رضایت فوق‌العاده ۸۹٪ از طعم اصیل و اصالت کباب‌ها
-• شناسایی ابهام توریست‌های اروپایی در فاکتور چای و کوور
-• راهکار آزادسازی +۱۸۰,۰۰۰ لیر درآمد در ساعات خلوت عصرگاهی
+• رضایت فوق‌العاده ۸۹٪ از طعم اصیل و کیفیت خدمات
+• راهکار برطرف‌سازی چالش عملیاتی: {pain_point}
+• {value_hook}
 
 پادکست صوتی سه‌دقیقه‌ای و گزارش کامل PDF را پیوست کرده‌ام.
 
