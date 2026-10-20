@@ -40,10 +40,10 @@
       "first_seen": "2026-10-17T20:45:01.972726+00:00",
       "id": "0189eb12a83edbf3",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1FRkh0VnEzWWd1VGJuYVMwNzZIT0luQ3FJV0Joa0dZRl9VS0g5Rm5paTkwdHFsV2k2MjJjczRodEh6MkczLU9XSDh6SmZzTlFXb2pGTjJMZzRGSklKNU54eGZHeDdzei13c3NoQ3ExOGxKdWZLUjV5TVJ4OE9ZQQ?oc=5",
-      "message_id": null,
+      "message_id": 36,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-20T17:09:02.479993+00:00",
       "published": "2026-10-14T09:09:06+00:00",
       "score": 8,
       "source": "Google News — Istanbul food",
@@ -680,6 +680,23 @@
       "title": "İstanbul'a Yakın Hafta Sonu Rotaları: Oteller ve Gezilecek Yerler - Oggusto",
       "title_fa": "رستوران‌های استانبول"
     },
+    "1f4a900682db2c89": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "1f4a900682db2c89",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVXZ0LVRVNEUwRzZ3RFVvd2ZVY2x1UWUzRUhWSFl6eDd2MjRXQkxqYjE3M25uWThKckdHUklIQ1FaTUhLOC1rcFE4ZkRHZTV5d2RwZUluNDU5T0JxYVdlZ2hGVUJjaUM2YVRlMGplMjlKaERaOHlQVlpPQ2ZXUTNqbWE3d3NyWGRUaGZlcGpJb0tyOE9SaHBEVUFpdE5iWXpqYngyeEdUWHNoQ3FPXzdv0gGyAUFVX3lxTE4yNncxTHYtRzBjLURRd2tUek85Y3RpQ0ZBRU9yTm9qUnlSOGFsQ3FqZ2lINmNwZWVONDhsQU1zSnM0dzNOa21mNXlEQWVoYW43WUJLYVBJS0p3Q01yMF9xTlNqWWxoQTZNTmhoUWdtRTlzOHZKZ041TVFudWlOVFJFTmVBblpsZEdIbXBCbVJ4MHQ1ZzlBR3hZbkYzSTc1azRndE9xTVdSb0VWZ1pLWVpjQWc?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T16:17:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "آتش‌سوزی در یک رستوران در استانبول رخ داد",
+      "title": "Etiler'de restoranda korkutan yangın! Alevler gece yarısı sardı - Bursada Bugün",
+      "title_fa": "آتش‌سوزی در رستوران"
+    },
     "1f8f0fd914ded217": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -763,6 +780,23 @@
       "source": "Google News — İstanbul restoran",
       "summary_fa": "",
       "title": "ASH İstanbul Catering: Geçmişten gelen lezzet, bugünün davetleri - gastronomiturkey.com",
+      "title_fa": ""
+    },
+    "2942bbd0e0c72d52": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "2942bbd0e0c72d52",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUDl6WDRlMi0wR3lWNVRxejFIdF9XNlJ5V3RCYjVuV1FWZlFNZXFBUWFzcC1FYzd3SVdEa2xXelFieDNoNWF3Q05vaUd0UUQxOHdfZkhnUHcwRmZmOWZSdGFoYU1iTVNmWmxhczczUHYyMEEyWXlvSE9HX2lTbWRLZG95LVlZVHgtZnJJZw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T16:35:24+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Kastamonu’da park halindeki tanker alev alev yandı - GZT",
       "title_fa": ""
     },
     "29bc1c6967a5e3cf": {
@@ -1071,6 +1105,23 @@
       "title": "İstanbul Watch Festival 2026: Markalar, Tarih ve Tüm Detaylar - Oggusto",
       "title_fa": ""
     },
+    "3d06f6ae238f5756": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "3d06f6ae238f5756",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPLURQY1RQdS0tX1BEcEVYRmFuX2lMWjBoSXNydVM4X1EyVXpvOERGTUtnaWY4TFVlcW1yMEpQNXN6d0pnajQ1UjV5TzNmQkZUNVlCVmtyV0Zva2pyUU1xZEFOb3R0ZlA4R203WjJkbzBLc2JoN1VDakROLUJGbXgzSjVsWFBQUjhIZEVLckhWaXI0cW1BTlBlMDJfNDZMdjBuekRmMnVjMkJsTVJXN0V0cmVFZ2Q1MGV6YjgwVlUwWUlQb0s1dnlqdzFmOA?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-18T15:09:05+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "فهرستی از ۱۰ فرودگاه برتر دنیا منتشر شده، اما ارتباطی به رستوران ندارد.",
+      "title": "Dünyanın en iyi 10 havalimanı belli oldu! Rakiplerini geride bıraktı: İstanbul zirveye damga vurdu | Yerel Haberler - GZT",
+      "title_fa": "۱۰ فرودگاه برتر دنیا"
+    },
     "3dcb8ef2f536a60b": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -1087,6 +1138,23 @@
       "summary_fa": "رستوران الیف سلطان در قاغیठनه",
       "title": "Kağıthane’de Ev Yemeklerinin Adresi: Elif Sultan Ev Yemekleri - İstanbul Ses",
       "title_fa": "الیف سلطان"
+    },
+    "3fd5931846f28e5e": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "3fd5931846f28e5e",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNN1lJN25kOG0zZ0V6R0dhU0laWklfa0xCZXRlUGFvTE5tLW9zVHNid0pLcnEzR3dWMEpBTS1vY3d2eDFOek1UbVRveUNBY2hjU3lQUHFrNG9UNktxT0JMR19kZ0FFWjd3enhIVTZaRGo2VjhUZmpyQURTWXRsUGIwRGc1TzJHN2htWEVGMHB4dDdvQ1hKaW5OQVVET1NsUEt3?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T16:59:20+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul Gaziosmanpaşa (GOP) yangın son dakika: Ekipler sevk edildi | Yerel Haberler - GZT",
+      "title_fa": ""
     },
     "4174ec41451f13d0": {
       "cat": "رستوران و کافه در استانبول",
@@ -1853,6 +1921,23 @@
       "title": "Latest situation in Istanbul hit by Selin: A missing person was found alive. - Haberler.com",
       "title_fa": ""
     },
+    "610f55e66da7f008": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "610f55e66da7f008",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZVGNNM3B3aHF2TmUwaDFsdUR0Z0hoOUg2Q0pKUC1EUzhzZXRZd2k4TUI0V2N0Sl9oeEpfcEtSMlBqLXRGWFZfeElQRWZ4eUptVUxJVUxRNEJwNG5wZkJIekwyRExzb0FObFF2YlNVVG4?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-15T07:16:31+00:00",
+      "score": 8,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "۱۲ رستوران سالم در استانبول با غذاهای گیاهی معرفی شدند",
+      "title": "12 Healthy Restaurants with Vegan and Vegetarian Food in Istanbul, Turkiye (Turkey) - Will Fly for Food",
+      "title_fa": "رستوران‌های سالم در استانبول"
+    },
     "6120a6c60c3c87e9": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -2193,6 +2278,23 @@
       "title": "Smoke, sweets and crowds fill Gaziantep as GastroAntep draws food lovers - Türkiye Today",
       "title_fa": "جشنواره گاستروآنتپ"
     },
+    "76eb55372f419be7": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "76eb55372f419be7",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQzBrY3lPUHRQSzlJQ0d5UFRLbUdkSlR6VThDcDlNazJIOURlNmYzd3V1QVY2T0hCVzhIY3hkRXJSa2NXeGxISktrdVUtSl9ET0lDdG14WGpTc2pQb096QjJtRjFiaV94aW1TMGV4VVdRVW5ZQVJsZmN2U21KM0x5ZDFYdXdFODlaQmdfNl9VcGhmdzdyY29iaWxvQXlOWVQtNDlDQ2JZU0h2RGdGYkpMNHYxa0hlWUpKT3RGVWdqUk9Nd0FVYmdsQUdkM2p2YW9zMVM2MU85b19TZ3FkRTZGQ0VZazljOGNZS0o4?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T15:09:31+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "FRIGO Shares Shift to Call Auction After Circuit Breaker on Borsa Istanbul - The Globe and Mail",
+      "title_fa": ""
+    },
     "7790be7e360209fd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -2261,6 +2363,23 @@
       "title": "KÜN Restaurant, dünyanın en iyi 100 lüks restoranı arasında! - Ayancık Gazetesi",
       "title_fa": "رستوران KÜN در جایگاه 100 برتر جهانی"
     },
+    "7d998524c7478cfe": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "7d998524c7478cfe",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbWJNRUtCSEpnT2ZqOXZrdzA1UkI5MHRHaGtfUUN5MVlHeHBjTURZckRhQ3g2SEJ3b3A4TkJkWS13ZVdCU1MybkNLeFNDYVVIUGFYMkxBbDVWYW0yT21IVTZVT1FTaTRCZHZMT0RySkVEUGpNUy1HOE5oQm9paVhqWlBROWVqU01HamdodWpYNWxNbXBCWHhGNy01dTQ4cG9Q?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T16:29:43+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "آتش‌سوزی در رستورانی استانبول رخ داد و باعث شد رستوران از کار بیفتد.",
+      "title": "İstanbul Etiler'de yangın paniği: Restoran kullanılamaz hale geldi | Yerel Haberler - GZT",
+      "title_fa": "آتش‌سوزی در رستورانی استانبول"
+    },
     "7dd8f100e44174f4": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2294,6 +2413,23 @@
       "summary_fa": "",
       "title": "Truck queue stretches 30 kilometers at Bulgarian border - Hürriyet Daily News",
       "title_fa": ""
+    },
+    "7e22c07cd318191e": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "7e22c07cd318191e",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZFVBTHEyU2VLaExGLXFxVFB5Qk93SXBUMnVLNFRsZEY2SUVxZmJEaTA3OF9aNk9FTnZxbURBaDVKd1JGc0VnQ1M0TVFqbHdLWVAyTWhXSGRUbHpZUDk5U29TUE96ZHYtU3BoYzhiUGpZMXJfQk5nV0hnY2JST3lINXhBT2RxeTN5dk9oWHVrVUJDZWV0dzBSWlh1VEFtekxDX1pEVUlDdGNnZw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T14:46:54+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "گزارش ازمیراث建築 استانبول",
+      "title": "Atatürk'ün mimarından İstanbul'a kalan miras: Çemberlitaş Palas'ın 88 yıllık hikâyesi - isthaberler.com",
+      "title_fa": "معماری استانبول"
     },
     "7e24c28cbe63d09b": {
       "cat": "رستوران و کافه در استانبول",
@@ -2669,6 +2805,23 @@
       "title": "İstanbul, Avrupa’nın gastronomi rotalarında öne çıkıyor - Türkiye Turizm",
       "title_fa": "استانبول در صدر گاسترونومی اروپا"
     },
+    "9929d21df3180182": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "9929d21df3180182",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZEZDWG5nTUk4UjBrYWRXNEkzbEtlTXhNc0JSSlA1bTVyNXFhZGdxWUtTRmZLNzNMX3VqZmIyZC1QTWlydDFxUkRSTHhBX2tpS0lQcHlvaDFsRG9fWEoyRlBKczdnQURYMm8yVDlkTFBiSk1tdDhUcG4zWktrYjFLYlRmeGllVEJqR1dpT1BnS1phWFRMUE5uMVFudUszdw?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T16:16:26+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "آتش‌سوزی در رستورانی در استانبول رخ داد",
+      "title": "Etiler'de gece yarısı korkutan yangın: Restoran küle döndü - Muhalif",
+      "title_fa": "آتش‌سوزی در رستورانی"
+    },
     "9a0c55c664e068bc": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2820,6 +2973,23 @@
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "İstanbul Watch Festival Saat Meraklılarını Kadıköy’de Buluşturdu - Maxi Haber",
+      "title_fa": ""
+    },
+    "a18aa23b8aa77f7a": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "a18aa23b8aa77f7a",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTW5fZGJpeFpXSHRFU2FhNXJfa0h4T09CbGlCZFczbDB5aGU5WEhnRVEwWTRHYXZ3Zy1aUkdBX2wzR2hWaWROcmVGMW9uMExkLUtxQmRMSUJXNUJhT09FZnQ3QmdhcGZxZERqUHhnbjlUZEdvdWlnOWE1aU4zTVRFYl9vUXc?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T09:20:02+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul’da sel nedeniyle can kaybı 7’ye yükseldi - Kibris Haberci",
       "title_fa": ""
     },
     "a18bd575cb94257a": {
@@ -3076,6 +3246,23 @@
       "summary_fa": "",
       "title": "Avrupa’da yılbaşı ruhunu yaşatan en iyi oteller - Time Out Worldwide",
       "title_fa": ""
+    },
+    "b1ecb6d1bcb96055": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "b1ecb6d1bcb96055",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY1p0Vm9NVGlGZ0dWa2dSak5xaTk0TUIySU9mNnNCLThqWU5RR3ROZldnQjZMSnpHVzVsY3BuMHp3Q0NWTlpBVGEzS3VwR0NISE9KTWtrQkdicG9QbGlPVlRQdzZmdGVTZnBOTEVkTkQxN0FjYk1lbnQzdDkzaGNvTUplRGdJY1hhX0RSQ0lzcTJVZWd1ZE1KandHRU9ManpuYzJybDBwSS1GbkFKSk1mekZsbWlQamhoYmtadUVB?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-10T12:52:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "برنامه موسیقی و غذاهای محلی در رستوران Aşiret استانبول برگزار شد",
+      "title": "Mardin’de Aşiret Restaurant’ta türkü ve yöresel tatlar aynı gecede buluştu - Kenthaber27",
+      "title_fa": "برنامه موسیقی در رستوران"
     },
     "b213b2d03aecfdf6": {
       "cat": "رستوران و کافه در استانبول",
@@ -3604,6 +3791,23 @@
       "title": "Mezzaluna’nın İstanbul’daki İki Yeni Adresini Keşfedin - Oggusto",
       "title_fa": "دو رستوران جدید"
     },
+    "c5da07a1cf22bb66": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-20T17:09:02.479993+00:00",
+      "id": "c5da07a1cf22bb66",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNmQzaGV0UHJ4RHZCcEFKWnBFZlFZdmtaNGl4M2NQOUlRUmhCbGxMakc1NXVyZ3c3OGF1UEJOX21ubzJNanRUQjdNdUxHblBiVXBzcUg0MC1qX2pzMFRWTFBhejV2NEJVNzJmbWp4VEx1VVBXQXZ4TllSdjc5MVJEbGpSSno?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T16:28:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "یک رستوران در منطقه اتیلر استانبول آتش گرفت",
+      "title": "Etiler'de restoran alev alev yandı - Yeniçağ Gazetesi",
+      "title_fa": "آتش‌سوزی در رستوران"
+    },
     "c8032da86a3d7c98": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -3950,10 +4154,10 @@
       "first_seen": "2026-10-18T15:53:26.555251+00:00",
       "id": "daf0aea94fcb4c20",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBSVmdYcGZaemJSRmhzQkhGZWcxTjNDNFVOclFEQkVoTHJhcDdkcGc3S05kSXQxVGNEYUp4M0hKNDFaMWRZdldqWnpYT3FjUExUYzd0bGRFUWk2RUpyejJETU43Q2Y3RHFzelNfSFNYbw?oc=5",
-      "message_id": null,
+      "message_id": 36,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-20T17:09:02.479993+00:00",
       "published": "2026-10-14T17:23:00+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -4341,10 +4545,10 @@
       "first_seen": "2026-10-14T20:14:03.133023+00:00",
       "id": "fa12c995a89f0b57",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQ2J3NmxzZC1ab0tVeXFJdEJEN2FTSGpfUkhWc3h5RjNhTUtSU3R5YjNEUUZLMnlrV1duZnVVWmpkNDAwUjlYbzBGZU9PRml6R2VJZDFORHR5d3JpSWwzRGFZUmVUWGFMalNWdlU5eUQ3b3FGUERwWWMwbWVOdGtmcGYtdjNZSHhWNjFyOVBCYTFDZ1lEMHNjX1dXQlE0VEszTzBqVnZocmZQT3g1OUE?oc=5",
-      "message_id": null,
+      "message_id": 36,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-20T17:09:02.479993+00:00",
       "published": "2026-10-14T06:48:33+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -4659,6 +4863,12 @@
     },
     {
       "at": "2026-10-20T11:39:17.937366+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-20T17:09:02.479993+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
