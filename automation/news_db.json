@@ -272,6 +272,23 @@
       "title": "Atıktan Sanata projesi gastronomi manifestosuyla yeni bir boyut kazandı - Para Dergi",
       "title_fa": "جشنوارهٔ غذا در استانبول"
     },
+    "0ceebfebd2f8c934": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "0ceebfebd2f8c934",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTHMxcmlrdE1fMm5MdXFVNk5idmpXUVI1X2JtNzkydXFKZ1JzSTFyVWpkN3doQk5jc3AtMVBLQkpGN0JRcWh4NFgxWUNlRk51bDQ0YUFXN1hONGtDdGZVeUo0eW9iOXZibVViYlBpRlVsV0ZqWEtQYkpQbktHRy1yb2pYYl9zVHNqZTY4M1RJTWFfVWV1Sld2aG82alRmOG1OM21MdkJUbUx0T3NpejVJMEUxY1h2OUZEb0ROa25TSzJ0blZBYllyWjYtbTEtZnd1M09oZGg1ZURlZU9EeXBYT3pTOFk?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-08T13:28:00+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "ULAS Shares Briefly Halted as Borsa Istanbul Triggers Circuit Breaker - The Globe and Mail",
+      "title_fa": ""
+    },
     "0db5fada68b8b28a": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -901,6 +918,23 @@
       "title": "Kastamonu’da park halindeki tanker alev alev yandı - GZT",
       "title_fa": ""
     },
+    "2943b98c1b28f864": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "2943b98c1b28f864",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNM19Ya0NzUUxVRjFsNDdTd2pZU2g0bEdkcGhFSFRPbTBaWWZKZXFITWEzWVg0TXdXaVJ5aG52ZzdmLTJxMkRfQm9VcjBacW1JOWptQmI1VUxkT1V6cXVheTBzeUlnLUtxMVBOa283cHhjQ3I1OEdPOXd6dThpc2MyWGJLOHdIU3RTaHhvTw?oc=5",
+      "message_id": 42,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-21T21:44:02.811642+00:00",
+      "published": "2026-10-08T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "دو رستوران جدید با نام Mezzaluna در استانبول باز شده است",
+      "title": "Mezzaluna'dan İstanbul'a iki yeni buluşma noktası - NTV Haber",
+      "title_fa": "دو رستوران جدید در استانبول"
+    },
     "29bc1c6967a5e3cf": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -968,6 +1002,23 @@
       "summary_fa": "جشنواره استانبول که ۱۲ بار بهترین بود، ۵ ستاره گرفت",
       "title": "12 kez dünyanın en iyisi seçilmişti: İstanbul’daki festival şimdi de 5 yıldız aldı - TRHaber",
       "title_fa": "جشنواره استانبول ۵ ستاره شد"
+    },
+    "2c4a4c0fcb805a97": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "2c4a4c0fcb805a97",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1QyQm9XcS1ibnhiSFRBeXRkMDRaZjhDRUR4NmtSVlROdktmNVlQbmZldUZQZEpPWkl1ZlV4TGRWMTFYT2RDYjliLWIta1NnOE1VWURkWWRCTUI1SG1kUjBvbkhDZnVMMktfcW5IYjV3LXE2WjNSYWF2UEtHNkVXMzZIU1hFYWFvUHc5UHd0RjhSMmtRcGtGU29ueU1PYUtBc0lWSzRETm0tT0ZxNXprYUtuTVFMbEMyVkVLaDB1Ml8?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "انتخاب رستوران‌های ۲۰۲۷ در ۳ دسامبر اعلام می‌شود.",
+      "title": "2027 Michelin Rehberi’nde Muğla Heyecanı: 2027 Seçkisi 3 Aralık’ta Açıklanacak - Muğla Gazetesi",
+      "title_fa": "انتخاب رستوران‌های ۲۰۲۷"
     },
     "2d07b0afc68e415a": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -1173,6 +1224,23 @@
       "title": "(Nov 28-29) Language: No Broblem @ Alan Kadıköy",
       "title_fa": "نمایش زبان: بدون مشکل"
     },
+    "395526dd880d31f9": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "395526dd880d31f9",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaGZwN0U0RHJRckRYTkcyMWt1VlF2aUd6aTNhajVfXy1LczRjR2doNUUwU21PeXBFaFBqNHRVb0x6UHd6al9VemtHdlhFblVZVDE4Wi0zLXBLWG5IQTRETUluYk91Y3NvVTdyc0Vxd1luR2NwUUFOaEFKaVdob1oyeUxmTQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T09:37:57+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Barrack, Şeybani ile İstanbul’da görüştü - İktibas Dergisi",
+      "title_fa": ""
+    },
     "3a1c72cca5252f7b": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -1189,6 +1257,23 @@
       "summary_fa": "",
       "title": "SON DAKİKA| İstanbul'da yarın okullar tatil edildi | Yerel Haberler - GZT",
       "title_fa": ""
+    },
+    "3a6d493f7efcaa92": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "3a6d493f7efcaa92",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcUhoZ29jMUhPQ0dqU2JLZGF0VVhBSm9KQlF5QmhmVUdBeWZ1a0xkdzRyQlltSkNMb0kxTjZWU2hoYnEzQ0dLXzhreEtLZWFJSGp6QUtwZldrX3d3OWk1c2M5MWpHNXFxMDNBV0hXTFZ2VEd0aXp1bVItQXo3ZVduYU1PSEFrcFJfT1c3YTd3SlV0MDRxQXNWZnNzbVhTd9IBowFBVV95cUxQbTJ3Yk9oSDAtMmk3R1p4d3h5S2o2ZWhVNm44TlNhYkJFRWxFNFJyZnIyeFdybVUybHRpM0pkSC1HeDRIZ0ZRV2pBREYzRzJBVFpSX2IzdUlScHlLSDZDV3E4VldjVWZTZTl6MlgzTEFCWXNMVE9YeFR4UzdhbmJDM3VDYnNHQ283QTRQQng4eTY2YlotSHpqZWJkWUFQbG50Z1FB?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T10:33:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "تاریخ انتشار MICHELIN Türkiye اعلام شد.",
+      "title": "MICHELIN Türkiye rehberi açıklanıyor: Tarih belli oldu - Haber Global",
+      "title_fa": "اعلام تاریخ انتشار MICHELIN"
     },
     "3b296471fb284baf": {
       "cat": "رستوران و کافه در استانبول",
@@ -1734,6 +1819,23 @@
       "title": "6 cities where the market is the real museum - Getaway Magazine",
       "title_fa": "۶ شهر با بازارهای جذاب"
     },
+    "4dcc66e0dab30cd5": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "4dcc66e0dab30cd5",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUnl3QzN2ZjMyc3NVMEl1ZnE3bklOY1ktTVNiV05Nd1VaVkNEd3lIbHhocGF0UlpkQldoQU9DSlZySHMxZEdEcFYycEJNWDRBZndHNloza09GaVQtU1FkUHUzQVZOTWY5YWw4UUs3SmcwR2hyLVMzbzdWSFlVckU1ZGZ5RXktd3M1YnpmZ3JuaGVSQ1d6TDBGaGlzbThpVDdKX1E?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "رئیس شهرداری ملطیه با همشهری‌هایش در استانبول ملاقات کرد",
+      "title": "Malatya belediye başkanı İstanbul'da hemşerileriyle buluştu - Saray Medya",
+      "title_fa": "ملتی با همشهری‌ها"
+    },
     "4e91694f5fd7e5aa": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2142,6 +2244,23 @@
       "title": "Gastronomi kazanında kaynayanlar - Hürriyet",
       "title_fa": "گاسترونومی استانبول"
     },
+    "5fe39b7d8b4339ad": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "5fe39b7d8b4339ad",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUUhhN0RUZThsSllKY0V0STdMRlJTOHYzXzFDZEk0Z3RFcHJnZnRUd08wU0ROMVVpV2xjV3M5dTN3c1pNRzRqRjZJQlhFRG9yXzBLTWJaQWVhUDJKZ1JJRHBUS0tPdVJ3dkVYUjVXOGJxd0lONGdJUlp5MDVVRHAzOVk4RnhtQWxyajMxazVscmI5SnZhYXAzbXJxRGhJOFJKRF9scWdxT2x3Ym02Q0VSZVJNNW5zUTRuOEFfcW1PWVJmSUdjM2I1ZFVMVTEwcWxQallfdzhQaw?oc=5",
+      "message_id": 42,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-21T21:44:02.811642+00:00",
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "انتخاب رستوران‌های ترکیه توسط میشلین در آذر اعلام می‌شود",
+      "title": "Michelin Rehberi'nin Türkiye genelini kapsayan ilk seçkisi Aralık ayında açıklanacak - Tourism Today",
+      "title_fa": "انتخاب رستوران‌های ترکیه توسط میشلین"
+    },
     "6063b1dd24327bdd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -2379,6 +2498,23 @@
       "summary_fa": "درگیری در رستوران ازمیر منجر به مرگ شد.",
       "title": "İzmir'de restoranda bıçaklı kavga. İşletmeci öldü, müşteri ağır yaralı - Nefes Gazetesi",
       "title_fa": "درگیری در رستوران"
+    },
+    "6cadc0f2836e221d": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "6cadc0f2836e221d",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WNFppNWdUaG1JS1JsOFU4M0Rpdkxac2xnT09IN1dKbktxZk5nMTRRcG90MEdTdkdXV3psemZ4blBCRnBoZXAwNHJtb1owWmRFTDFkdTJjRDhhMWJqSk9ycnc3U0pGNHBMUEpJaklBRTVmc2RSSms0Mg?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-11T07:00:00+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "6 Waikīkī dinner spots worth the reservation - The Manual",
+      "title_fa": ""
     },
     "6e233f7c8389cafa": {
       "cat": "رستوران و کافه در استانبول",
@@ -3128,6 +3264,23 @@
       "title": "HuQQabaz Garden, İstanbul boğazı’nda yeni bir sayfa açtı - gastronomiturkey.com",
       "title_fa": ""
     },
+    "8f9146bf47768492": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "8f9146bf47768492",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZnlkUEI3VmVxaWRYQ3dUeHdJSWJVV1c2X0RHWVVsTnd2Mk5ubGQxNXN3V1RwSUFkN25HZV8wcUZqMnNIdzdyLTY4RVVxZE90TC1nZUg3TzNnODVKcjlXNy1zRkROcHV2ZV92UUxBMlJTVGI3cDFLT1RDcUJBZVlxRDhoSGZDWl9NalVuSDVrQnFnc054RnNOTVdKdm9iUDZybGJYbFZFRHA2cXJkZnlxSldsYw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "ترکیه پرچم فلسطین را روی برج گالاتا روشن کرد.",
+      "title": "Turkey Illuminates Galata Tower with Palestinian Flag in Sol - جريدة القدس",
+      "title_fa": "پرچم فلسطین روی برج گالاتا"
+    },
     "8fbad50df2b07d3a": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": "cloudflare",
@@ -3263,6 +3416,23 @@
       "summary_fa": "۲۰۰ نقطهٔ لذیذ استانبول معرفی شد",
       "title": "İstanbul'un 200'den fazla lezzet noktası belirlendi: Ünlü şeflerden gastronomi rotası - T24",
       "title_fa": "۲۰۰ نقطهٔ لذیذ استانبول"
+    },
+    "955bd5df9c538504": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "955bd5df9c538504",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTnhSX1FfNTFMYXVRVVVxZkJhZFZqWnNQVDFYM0x1S19CZnNfeExNTWR5aHNRVVJuZldWNFBaQ1hjcnY5ZnpkcHprU0FYMUN6d3pzV1owTlNfNm9JTHVOWTNjYWlyUW5VMzc4U2RqRmdIVENXbTNPc09zNGlOeWM5TDktVFdZNERhVVVUV2tHYUE4MTZYY2t3RGMyXzV1enBTc2fSAacBQVVfeXFMTUxnTVBoQXhDbG44SWpoNTZTUS1ydUpTb1VxRDhTVTdLNlR3amRnV0RIRm0tMkYtOGt2elY5ZEdiZ0ZOWF82NTZhLTZ1SF82VWY1Y0E5cnU3TVhDVHFJaldOQUdfeS1kTmJQZ3RsMW0xTnBWZHRadERNeHMxbnJOM1VaRU0xaVVfQ29XdDlfXy1sLVd0Zmgxd1V6ZGZwUHN1LTZNZXZGMXM?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "هفته ژاپن ۲۰۲۶ در استانبول آغاز شد و پل جدیدی برای دوستی فرهنگی ایجاد می‌کند",
+      "title": "İstanbul Japan Week 2026 Başladı: Kültürel Dostlukta Yeni Bir Köprü Kuruluyor - Fikriyat",
+      "title_fa": "هفته ژاپن در استانبول"
     },
     "95c8cd9d41962a4e": {
       "cat": "رستوران و کافه در استانبول",
@@ -4947,6 +5117,23 @@
       "title": "Kartal’daki Balık Restoranları: Sahil, Dragos ve Soğanlık Rehberi - Kartal 24",
       "title_fa": "رستوران‌های ماهی استانبول"
     },
+    "de28df285ac5cd4b": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "de28df285ac5cd4b",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPa3g5blBxdlo5blctekxXZjA5T0tXZWgxSjNZQW5GS0E2WU10TXFjbFZ1S1pHanZjdTF3ZmZsbGRmZnBNTmx1UDItQndXVTRsQnhmSXlUUE1vS1F4M2RrRi1NM2s3WXh3ODJwYTdmalgyRWgzbGk5cld1YnpvanNDaHhodVpDaVA4dHdfT2ZLQTh4ZzM3ZDNEMnJRbXgzSkdQM0JlZDB2anJnc19rY1dJV2pKbw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-08T07:00:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Bakan Akın Gürlek’e kumpas girişimi! Kirli pazarlık deşifre oldu! Ekrem İmamoğlu detayı - Kamudanhaber",
+      "title_fa": ""
+    },
     "dee20a5c29109d35": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -5201,6 +5388,23 @@
       "summary_fa": "جشنواره فیلم گاسترونومی استانبول برگزار می‌شود",
       "title": "Uluslararası Gastronomi Film Festivali’nde kısa filmler aynı yarışmada - Anka Haber",
       "title_fa": "جشنواره فیلم گاسترونومی"
+    },
+    "ee435d0d2846dda2": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-21T21:44:02.811642+00:00",
+      "id": "ee435d0d2846dda2",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYUFQdjh4UF9WRlNlMnA5TDFfT1BFV1ZXTVZMU1NRa3U2ZmFmbzlhMXV3WjZBY2JHblpVcWlVYWhMYkVXTFA0SExKcEZrQXlfM2VVSmtNMnh4cjlldzk4cVkzcGpTMzc0bGtVdlhGazRzQ1FsTVBnVGloNDZsWkd6VlFUTDN1MDh4VmlaVV95OTVCVUkwMy1oVVBlb0RqYXpE0gGcAUFVX3lxTE5WVzlmbkp3dXJNTWExS2tCMm02NGpXRjU3c21HWHZHc044QlA4MndnckJzbmp6amZqRUxlZW1wbk9tTzRIbkJwcnNPNnh0WnVZRktkVVNzaFFvc1ppR29yU2VNcU9ZZ2NEZURkUDU4TnFqODFUd3B2bldkeVIxR2Y4MGliZi00YjZTR1RYejFUeFNUeGcxMjdRRzBQQg?oc=5",
+      "message_id": 42,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-21T21:44:02.811642+00:00",
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "میشلن در ۳ دسامبر ۲۰۲۶ رستوران‌های برتر ترکیه را اعلام می‌کند",
+      "title": "MICHELIN, Türkiye'nin ilk ulusal seçkisini 3 Aralık 2026'da İstanbul'da duyuracak - Son Dakika",
+      "title_fa": "اعلام رستوران‌های برتر"
     },
     "eed8016e8555352a": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -5692,6 +5896,12 @@
     },
     {
       "at": "2026-10-21T17:13:57.657719+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-21T21:44:02.811642+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
