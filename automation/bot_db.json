@@ -6,12 +6,18 @@
     "cmd:iranian": 2,
     "cmd:menu": 1,
     "cmd:rsvp": 1,
-    "cmd:start": 4,
-    "messages": 11
+    "cmd:start": 5,
+    "messages": 12
   },
   "reminders": {},
   "rsvps": {},
   "users": {
+    "147902895": {
+      "events": 0,
+      "joined": "2026-10-21",
+      "name": "Masoud Zadeh",
+      "opt_in": true
+    },
     "8454249259": {
       "events": 0,
       "joined": "2026-10-14",
