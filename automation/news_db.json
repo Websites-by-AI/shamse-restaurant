@@ -255,6 +255,23 @@
       "title": "Turkish authorities raid TV channel as press freedom groups warn of a crackdown - Stamford Advocate",
       "title_fa": ""
     },
+    "0765ea5f5671d935": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "0765ea5f5671d935",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSnBGRjhqSC1uSXppQ25qYWluY19KaFZQZXg0ajRqTFpvZzJKcDF6Y0szZk53TjFNSkJ0N0JObm5IamRvNnJMU1JmeXg1UVJ3QkJPTHdDTjhacjlseFlINnZyTUlNeW1ZNUpBSjJ3a3ExeHB2NjBWaDZjMXotTFRqU21KQkthSUt3cWJMWFZSaUo1RFJuRkpNWi1IYWZRUml2ZG9NLUZOcUtGR1JnLVYwSTMwcG5mcjJ0aFpyZ3VweDJCZw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-22T12:13:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "زني ۲۸ روز کار کرد و ۱۱۰۰ موم و ۶۲ وازو ساخت",
+      "title": "Afyon'daki festival için 28 gün çalıştı! Kadın girişimci 1100 haşhaş mumu ve 62 vazo hazırladı - Afyon Postası",
+      "title_fa": "فستيوال آفيون"
+    },
     "07c65684c2ccb30a": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -884,6 +901,23 @@
       "title": "İstanbulda 200 lezzet noktası ünlü şefler tarafından tescillendi - Kültür Sanat Haberleri - CNN Türk",
       "title_fa": "۲۰۰ نقطهٔ خوشمزه استانبول"
     },
+    "20f752617e7d6029": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "20f752617e7d6029",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQa2xoRml4eXp6SzNieWdBX3VDeGlCZ2xZREgza1BlZEFZZl90RHN1elZjNFBQa0FLOTVmMTVHeGFhOS1lam12V2VOR29OOHJ0MzhzMXVWR3pyTG9pemN5dE9tV2JSVG50WVhJaXFPaGsweWlTbUVGZ3NUUzQ4ZjR2WjhKZ0RuYm5QWlllb05oc3Jad1Q0S2owT0lSZjVHSTRwVktlUUpKQS1DanA0aWRWd0VQY1pnZWc4clN3VGNOUzVWX05I?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-22T06:52:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul’da kan donduran vahşet! Boşanma aşamasındaki eşine ürün satan kasabı öldürdü - Medyatava",
+      "title_fa": ""
+    },
     "2268f2ba4e12da73": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -1275,6 +1309,23 @@
       "title": "Türkiye’nin restoran ve otel harcamalarında bir şehir öne çıktı - Turizm Ajansı",
       "title_fa": "استانبول در رستوران‌ها و هتل‌ها اول شد"
     },
+    "382fee4bdc82f6a1": {
+      "cat": "رویدادها و فراخوان‌های شهر استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "382fee4bdc82f6a1",
+      "link": "https://yabangee.com/no_land_zorlu_psm/",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-21T13:47:34+00:00",
+      "score": 8,
+      "source": "Yabangee Istanbul (رویدادها)",
+      "summary_fa": "گروه نو لند با ترکیب فرهنگی از موسیقی民، جاز و جهانی در استودیو ۱۰۰ زورلو PSM به اجرا می‌پردازد.",
+      "title": "(Oct 30) No Land @ %100 Studio (Zorlu PSM)",
+      "title_fa": "کنسرت نو لند"
+    },
     "38661982b420e48f": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -1400,10 +1451,10 @@
       "first_seen": "2026-10-19T13:18:50.923129+00:00",
       "id": "3bfa99b11c0c1e1e",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSkUtZTNEM0pFNVNkc21iU3FsdmtkZnFmdFRmN0xmYktlbDllamZKQUxfUjNxSEZEMDFUTnVwdlNuQ0RTbF9VaDdNZGkyalJJYm9Wbm1JYy1ZSVJNV25hVWFkenlFcjI4SzBaX0daQ0M4OGt6T29KMXJ6cHhRRnNOMjNZUkRLajJhVnZzdXR2eFFXblJFUXNDbURBN2N0WXc?oc=5",
-      "message_id": null,
+      "message_id": 45,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-22T17:11:58.996149+00:00",
       "published": "2026-10-16T06:56:43+00:00",
       "score": 8,
       "source": "Google News — Istanbul food",
@@ -1869,6 +1920,23 @@
       "summary_fa": "",
       "title": "Pinar Sut stock trades at 0.27 times book value - ad-hoc-news.de",
       "title_fa": ""
+    },
+    "4b820b9c5e691da1": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "4b820b9c5e691da1",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBpU1JydjNfVkQweElHUUxUTFlPdVM2cnBYN0JhRW5Ec25aN1pyS2pHMy1CcEIzOExrTUZuUkd3TU1NMWhWTmdySHh6cFRfQnBOUGpXb29zQ3JiTl82WTFFSG1LVGpXblRGeUsxSnB4RHBlYXAwY1luMFZJRQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-17T04:42:24+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "یک شاگرد دوباره",
+      "title": "Somer, an apprentice once again - Hürriyet Daily News",
+      "title_fa": "سومر"
     },
     "4ba5d7b83397ec8d": {
       "cat": "رستوران و کافه در استانبول",
@@ -3400,6 +3468,23 @@
       "title": "Sel sonrası salgın tehlikesi; Sular altına kalan gıdalar ne kadar güvenli? - Gıda Bülteni",
       "title_fa": "غذای زیر آب"
     },
+    "8ae4f3188456946c": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "8ae4f3188456946c",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdnhPY01uUHVGWUo3eVpweVlGazZnWjdtbVNOQUFUZVg0VHluR1d3RGp0bGFUNXYwSU5kV0xUYVFGN2p2YkpFYW0yTFVSUDlpMUJrazZzbjBISU9zb2JVNUxIakNQdDVnaXEtbE42SVlJcXVSNGdMVjFLYkUtRGpLd3RFWGdxNktJUXFRVHlUeUZHV2JGd3JydWxKS1FyME1m?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T06:16:19+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul'da 10 ton zehir kül edildi: Fabrikada dev imha operasyonu - GZT",
+      "title_fa": ""
+    },
     "8b813334d7a4190d": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -3859,6 +3944,23 @@
       "title": "(Oct 30) Headache @ Fiba Salon IKSV",
       "title_fa": ""
     },
+    "9c2e1c7bdba93b28": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "9c2e1c7bdba93b28",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeDdXVDh4NzBJT25MaVZXRkJHcV9SUWJENWtOR0prUHhmQTlBeDhIQWY1WkdWdzBrQTZBV1YxM1BfUUY5MzVMYUdzSXozcTVfWEhOS3ZTNkJFSlViU0JITHdHOUZfQXllMTVzYmFWMWpDOUx2ZHAtSkNuS2F3alk1RjByb2VDd2RjTHhyelM3SHhWYjM4ZmN1S05zREtxcnh4b2g4M3J3N3RZNzVBUWc?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-09T06:05:12+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Five confirmed dead in Istanbul building collapse as search wraps up - Hürriyet Daily News",
+      "title_fa": ""
+    },
     "9c4d19cf7cfa0fb2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -4214,6 +4316,23 @@
       "source": "Google News — İstanbul restoran",
       "summary_fa": "ترمینال VIP در فرودگاه استانبول",
       "title": "İstanbul Havalimanı’ndaki VIP Terminal Rus Turistlerin Aktarma Tercihini Değiştiriyor - Turizm Gazetesi",
+      "title_fa": ""
+    },
+    "aadbd63054495be9": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "aadbd63054495be9",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUVE5MnozZnAtZkpWZ0lGTm5HX1pzdEJJMWw5UWprRmVxYnNIZzJDM2dycWpHS0ZnN1JsX3h3aGp6bzlhakVLTzJEQjZYMUt2YVBRSDBnV0prcy13QndtLVlkYzRjSnF1VDJaNWhuQXI5NWpNRXI3aVp0Vkgzd1NmWjI2Q0tEUUpjWVZYTmFJaWl6N09yZXhlRA?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-22T13:55:01+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "30. İstanbul Tiyatro Festivali perde açıyor - www.milliyetsanat.com",
       "title_fa": ""
     },
     "aca1afa74e289908": {
@@ -5066,6 +5185,23 @@
       "title": "Somer, an apprentice once again - Hürriyet Daily News",
       "title_fa": "سومر"
     },
+    "cb4a5289514dd576": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "cb4a5289514dd576",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQjdNbkU3eXBKUldzbTBwcFlpREp5aHd4OWlqVlZZdlRjZmVyM0tLeUx2bDJlUHpab1FZMllLU3BZN29tcDBBVFY0X05YMUtISGpuNzhlNk9jc0VaV0RIclJSUEFGaWQ2WWtMbTZXaC1KZ0dmRmZhbnBYY1g1ZjdiRzV5ZlNJWHBCeWJfQ2tKT0lUaGVoVS1UUDVPUk1QM0pXRmpiUllTSU9KNko4V0ZjZXgwU1FsdVZDemt3U1VQWXFZTXl4aDM5Uk5B?oc=5",
+      "message_id": 45,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-22T17:11:58.996149+00:00",
+      "published": "2026-10-09T14:23:47+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "تاریخ انتشار گاید میشلن ۲۰۲۷ اعلام شد",
+      "title": "Gurmelerin merakla beklediği 2027 Michelin Rehberi’nin açıklanma tarihi belli oldu - Türkiye Gazetesi",
+      "title_fa": "تاریخ انتشار گاید میشلن ۲۰۲۷"
+    },
     "cce145d47770d313": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "pollinations",
@@ -5133,6 +5269,23 @@
       "summary_fa": "آتش‌سوزی در یک رستوران استانبول رخ داد و یک کارمند زخمی شد",
       "title": "Esenyurt'ta restoran yangını: Müdahale sırasında bir çalışan yaralandı - Muhalif",
       "title_fa": "آتش‌سوزی در رستوران"
+    },
+    "ced749e922d6c5b6": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "ced749e922d6c5b6",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQc0ptNUhOUUNuOWtDV0VPdDdnNHZJOWV5cnRtQnduNFVvanZUWm5rVUotWEZxTEFGbFlnN192bkZ5eWRiY3hEMWl0dVRWX3dKTktuOEg2dkxmRG9jUjBXaTJVN3pvR3VndElzVU1lLUttLXg1NDc4WndhNEpWUlg3Y2I0R3NNbG9mNnFDbFJ6REFLS0U3MWVfTnFkZlpoZ3RqbDhwTlh0VGZLMmhtRTdtdlNR?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-22T14:30:00+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "در استانبول به مذاکره می‌پردازند",
+      "title": "Foreign ministers to meet in Istanbul for talks on Iran, Yemen and regional security - Horizon Weekly",
+      "title_fa": "وزرای خارجه در استانبول"
     },
     "d1e3d687ee4f8e67": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -5746,6 +5899,23 @@
       "title": "Uluslararası Gastronomi Film Festivali’nde kısa filmler aynı yarışmada - Anka Haber",
       "title_fa": "جشنواره فیلم گاسترونومی"
     },
+    "ee43147136a0eb9f": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "ee43147136a0eb9f",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPM3FLbms1dDRwRlZlS2F6YUxkd01OOTI4VDM2Q2dLVk5HTjdZNzJGV29TTElOMnNGZWlLMVdBQzdQNHEwdnRfWGhZcnNZYnZoM1ZLSkR6QWd2bjhUTV9OcDFGM1Q0ZExQVmpZeTJuM3l3dWJSWlc5VVBwYjJJRXJOVkExSVlRN0UyczJRVFM0eHhESjhla0dXMWZBaw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T05:27:37+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "DEAŞ’ın finans ağına İstanbul ve Mersin’de operasyon: 7 gözaltı | Yerel Haberler - GZT",
+      "title_fa": ""
+    },
     "ee435d0d2846dda2": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -5813,6 +5983,23 @@
       "summary_fa": "تاکید بر رعایت حقوق بشر در کارهای مربوط به غزه",
       "title": "UN experts urge food agency to uphold human rights amid concerns about Gaza-related work - US Muslims",
       "title_fa": "کارشناسان سازمان ملل"
+    },
+    "f2d57f3e6025de65": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-22T17:11:58.996149+00:00",
+      "id": "f2d57f3e6025de65",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQng5S0YtRUZ0V3o2S25VVm9NNHNrTW5BTE1PalRGc09oaWNVRWlkcU1ueGtqN3VtekVkZkNpODVKWGhhb3NrSHFoTk9yZmtXSmMzMVJwY3o3MGxzdWJFbFVVWnRkR3J2WXZac21LUnFiU2IyWjA2bVN4LWpRT3dLLXBnTWFCeFBZVURfUmRJVXBJelJ3a19OekRVX05rY3Qz?oc=5",
+      "message_id": 45,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-22T17:11:58.996149+00:00",
+      "published": "2026-10-09T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "میشلین تاریخ انتخاب رستوران‌های ترکیه را اعلام کرد.",
+      "title": "Michelin Rehberi Türkiye seçkisi için tarih belli oldu - Yeniçağ Gazetesi",
+      "title_fa": "انتخاب رستوران‌های ترکیه توسط میشلین"
     },
     "f3d038d664df79d6": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -6324,6 +6511,12 @@
       "at": "2026-10-22T11:54:54.482204+00:00",
       "feeds": 6,
       "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-22T17:11:58.996149+00:00",
+      "feeds": 6,
+      "new": 11,
       "posted": 3
     }
   ]
