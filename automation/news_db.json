@@ -839,10 +839,10 @@
       "first_seen": "2026-10-17T10:46:30.186502+00:00",
       "id": "1a32de42c7d509b4",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnVsOFNwVlE4bjNRSnFHRlY5OEZwRWVBcGVKU2dyU3FlTDR2MTJjZE9NTm54Z2x2STRtcmM1REF6U2FQc041bWtkV3NaRmRuTUJzeDNsTVVkWXNISDloSmpmUzQ2YjItTDVlYWdOTkREc2hMeVdWZG8wR3A4RTVYT2h5TW9HVThnQUNEckNST1pGVktVeVZuQ0FPTThSUFUweFIxZUxpdlQ?oc=5",
-      "message_id": null,
+      "message_id": 51,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-23T21:25:41.979884+00:00",
       "published": "2026-10-17T01:10:00+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -986,6 +986,23 @@
       "title": "İstanbul’da kan donduran vahşet! Boşanma aşamasındaki eşine ürün satan kasabı öldürdü - Medyatava",
       "title_fa": ""
     },
+    "2251fac4e30a2de8": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "2251fac4e30a2de8",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZHRYaDl3STNEb05vSm1sdklxMjhqLWk5N08tS1hUbVZrTDluWFNobTZfdHBJZGpPYm4xU2l1Q0VQQVhXbWYwZlEzbGJzbGRfSW9PVmNTTFhXYTFLMzgzU1ptMGIwRGs2WlVRWnllYV95eGFnNWF0dmtKYi1VQS1oWFBXLWtFa2ZnMjdQSWhWWWdEWWc?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-22T12:35:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "مالک دونرچی آتش‌زن در فرودگاه استانبول شناخته شد",
+      "title": "Havalimanındaki cüzdan yakan dönercinin sahibi belli oldu - Nefes Gazetesi",
+      "title_fa": "دونرچی در فرودگاه"
+    },
     "2268f2ba4e12da73": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -1104,6 +1121,23 @@
       "summary_fa": "",
       "title": "Daikin'den küçük ölçekli projelere yönelik iklimlendirme çözümü - Anadolu Ajansı",
       "title_fa": ""
+    },
+    "25a90d12f686c895": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "25a90d12f686c895",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQmNTTGVnU0xJQVRfV1hmaXpvd05LQUI2eEJBdGc5Q0QzWTQ5cHh3TTNGRGNoTFBwOHdiM05Sc29FYklrOUFtQWxEZFI3MDBOemtKQ3FCWWFzcW9zRGdMX2ZBUGdqbC1xVXltdTZiRm5FaDdPUlFCSFdaUjJhX3BsV2tYdTZoQUc2X2czdFloNjBtMDVrOWpyTkwxaVpQNGdLYkJXX0NR?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-21T20:18:24+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "اوون تیال بازیگر انگلیسی در استانبول",
+      "title": "BAFTA ödüllü İngiliz oyuncu Owen Teale İstanbul’da tarihi mekanları gezdi - Haber 1",
+      "title_fa": "اوون تیال در استانبول"
     },
     "2942bbd0e0c72d52": {
       "cat": "رستوران و کافه در استانبول",
@@ -1512,6 +1546,23 @@
       "summary_fa": "سمینار استانبول با حضور کارشناسان برای ایجاد نسل‌های سالم‌تر",
       "title": "Istanbul Summit unites experts to build healthier generations | Daily Sabah - Daily Sabah",
       "title_fa": "سمینار غذا در استانبول"
+    },
+    "37c0f20482e7cb5a": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "37c0f20482e7cb5a",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUjJqYXJ1VnYzejVDYm1QUFV4X3lNSUg2NEVjbEVFQ2hqN3VfWHU3cHJRTnVrZkdPNW8tQnNRV0Q1YjROOXJzSkRtamNYeEpaTkZmV212WWIwM2t3V0xKbHVNVkhINjJyVURpbzRwUjBGenFkOXNmWm5GNGpLcTBTWWQ2NjZsREtqTjBzbw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T08:15:06+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Wadephul discusses sea route security in Istanbul - deutschland.de",
+      "title_fa": ""
     },
     "37e92e4cf5f71548": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2533,23 +2584,6 @@
       "title": "Arda Öztaşkın ile “Hayatı Yaşanır Kılan, Boşluktur” üzerine bir buluşma - Time Out Worldwide",
       "title_fa": "برنامهٔ فرهنگی"
     },
-    "556e660b90774e21": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "556e660b90774e21",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbjVBWWpEdFhCdHRUeklfVFd4dXBMeTgyeEgtWVVYLXNyRzhoUmhiaHY1T3hFUWU1bU5XcDA0bEMteE1sYmh6Q1lEQ1FEQUtNeVZCcWNQZmFSQS1JREt1YVFyUUVwSGRfeFQyeWY4WDlIYU1aRFlkeTBYN1ZsZFAyWG9TRnVGYWxsV0FZdGFUVy1JZ1VSamg4UTBDeEN3ei1UcGR1Vy1EbHVKYmpoZWJTc0otR0ZwQQ?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-14T15:45:00+00:00",
-      "score": 0,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "",
-      "title": "Staten Islander takes reins of progressive non-profit founded by Van Jones - SILive.com",
-      "title_fa": ""
-    },
     "559870be9af26497": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -2685,23 +2719,6 @@
       "summary_fa": "یک واردکننده آمریکایی غذا علیه دولت ترامپ به دلیل مالیات ۵۰٪ بر کانادا اقامه دعوا کرده است",
       "title": "Trump administration sued by US food importer for 50% tariffs on Canada - Anadolu Ajansı",
       "title_fa": "مالیات غذایی ۵۰٪"
-    },
-    "5a6fa1c43dd6fbe1": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "5a6fa1c43dd6fbe1",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb2xHT281bHRQX1A5OFdZT3kwOEl4eEt0STR2bXl1YUxMVFlMN3pQbWlOd3VCakpvZWtzWjJIQVdXY1BMOTBBMUZSZ2x2ZkpPck5vZDBOVEQ0M0JnU2ptVWVxcW5yYnV1Y0VfQmZYRWhkWlk3MGZPUFRzeVZjTjBnbU5Gc2dJTXVQdVdyaHMyQnhpVzMxVUFZQmhwREh3c1N0SzUxdFhsTlFRRnpsd0dHRWtWaGJTdV9VSXZDYXNMOFpBSjRhMlVWV2tlU2Zrdw?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-13T18:30:17+00:00",
-      "score": 2,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "در مورد کارهای مرتبط با غزه ابراز نگرانی کردند",
-      "title": "UN experts urge food agency to uphold human rights amid concerns about Gaza-related work - Anadolu Ajansı",
-      "title_fa": "کارشناسان سازمان ملل"
     },
     "5dafe2684c1690a0": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -3536,6 +3553,23 @@
       "title": "Truck queue stretches 30 kilometers at Bulgarian border - Hürriyet Daily News",
       "title_fa": ""
     },
+    "7e0565af014e6a6d": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "7e0565af014e6a6d",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOeVh5N09NSkpUSFg2QXJ1RHBXcWs0TWpyN2M0WDJWRFZuV0hleVNSLUdSLWlSR3dHZ215Qnl5aWJSb2JyeDhXbHFNX01zUlBYcHFNQXdYc1RKT2tzaTk4OHF3NVA0M2FvY0tXZ09pSTRqQm4yWktRZGhiTUxXd2RBNW5GdUpxNk3SAaIBQVVfeXFMT1o0MGFUUjZOU0FqaW1nQ0hwMUdLbEgzeV96TnlfaE1waVcxZ19TbEtTUTZnOEM4M2FLYUVMd01aMmU2VzB4TDFfWF9jaldYVFVQYzFKT181d1NQNEVYNF9EX3R1WEhVcFE1QS1rTVloclRlbDlJb3NEcGFUZVp6UE8zRUQyTk5WZzNjdFVXcjBVVm9BNmxmcG5SX2V2RGw4Wjd3?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T18:07:28+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "رستوران Maple Shade یکشنبه تعطیل می‌شود",
+      "title": "Maple Shade Restaurant To Close For Good Sunday - Patch",
+      "title_fa": "بستن رستوران"
+    },
     "7e22c07cd318191e": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -3586,23 +3620,6 @@
       "summary_fa": "فصول پاییز در رستوران نوبو استانبول",
       "title": "Sonbaharın lezzetleri Nobu Istanbul’da - gastronomiturkey.com",
       "title_fa": "پاییز در نوبو استانبول"
-    },
-    "80642f3a19aa45f4": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "80642f3a19aa45f4",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaVd1ZzZ6ZXBPTHM3UFYta1JVTzdoNHVaeDV4cURPMDk2c0dSaVFSZjZnMGMtamhYXzV6b3oybGVlQUdLWUNZYlRkMzFQQ3BmX2tHZmF6eFBiZmhxd1RXWUFDckZBOVc0R2R1czV5V2RwdV9KVlNMMi15YjYxTjlrVF9mY0tMZHYzV255SE1xSDYyODJPT3Bybkk5czVZbG1Jd3dLMk1tcnZ2REpB?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-14T14:00:41+00:00",
-      "score": 0,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "İstanbul Watch Festival, saat meraklılarını ve koleksiyonerleri buluşturdu - Euronews.com",
-      "title_fa": ""
     },
     "80de42ac3c4d1312": {
       "cat": "رستوران و کافه در استانبول",
@@ -3892,6 +3909,23 @@
       "summary_fa": "",
       "title": "İstanbul’un En İyi Listening Room Mekânları: 7 Hi-Fi Adres - Oggusto",
       "title_fa": ""
+    },
+    "8be7b0c5ddd85f73": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "8be7b0c5ddd85f73",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWmdtSm9JRTloNEhIdXQ2a3MxNXZiaERnSVBMai1VMHFMbUY3NFozUmlUWHoyaTVaNk1BV0tHMk9NVlB5aVRYOHJJaER1a1U1T1BvNS1ENWF6Qm16bzZQNjBqYzJhZmh2OWdnUHh0bWppUmRoWE1LUGR0UXFkSjRQQmFLVkRGT2lZbXZrQ2lUOEtHMDMtTHFkM3VuMlhwTzlwWXJ5U1JB?oc=5",
+      "message_id": 51,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-10-23T21:25:41.979884+00:00",
+      "published": "2026-10-10T07:00:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "انتخاب رستوران‌های ترکیه در راهنمای میشلن ۲۰۲۷",
+      "title": "2027 MICHELIN Rehberi Türkiye Ulusal Seçkisi 3 Aralık’ta açıklanacak - Gezelim",
+      "title_fa": "انتخاب رستوران‌های ترکیه"
     },
     "8ceafa8241513a4d": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -4437,23 +4471,6 @@
       "title": "Niğde’nin lezzetleri ve Tabal Gastronomi Evi İstanbul’da vitrine çıktı - Kars Manşet",
       "title_fa": "جشنواره غذا در استانبول"
     },
-    "a17dd2a2c619e2e2": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "a17dd2a2c619e2e2",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNS1FwcGxRcmNSSC1hcEpLR2lVdlJiRXlQSkpCbzNYbmptWGJRMmwxaFRPeHIxUVRxSGRlWUNfX3ZQUEd5RGlsc3Y2S3BaMjE5eFB1UlFqS3NmcHRDSW1IRVZXaWNNLURXYW52S3AxMk1INHRQWVQ0NDRXZXQ3ZTNqYkdJR2pxQUtrQy0xR0FGYmJfVzB1?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-14T03:57:08+00:00",
-      "score": 0,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "İstanbul Watch Festival Saat Meraklılarını Kadıköy’de Buluşturdu - Maxi Haber",
-      "title_fa": ""
-    },
     "a18aa23b8aa77f7a": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -4572,23 +4589,6 @@
       "summary_fa": "",
       "title": "Fondue restaurant The Melting Pot in Maple Shade is closing this weekend - Inquirer.com",
       "title_fa": ""
-    },
-    "a5814a78faeec263": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "a5814a78faeec263",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SNi1QcmxhX3hZTW5SLTVnNkJNdE9YNFo2aElSd1Y4VC1STkI0TUVicGR6OF80RHF6bFBpSTlyWnkwNFdLTkFWbDNReWtVUERZbkczd2ZvWUVJWkVkdUdaS2R2QXlRNFBNdmc?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-13T23:00:19+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "رستوران‌های برگر خوب در کارتال استانبول",
-      "title": "Kartal’da En İyi Burger Restoranları: Hamburger Nerede Yenir? - Kartal 24",
-      "title_fa": "رستوران‌های برگر در کارتال"
     },
     "a6046fc5bbcac938": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -5712,6 +5712,40 @@
       "title": "German foreign minister says Istanbul meeting to explore ways out of regional conflicts - Anadolu Ajansı",
       "title_fa": ""
     },
+    "ce38e51339c44433": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "ce38e51339c44433",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSndfemdvZnZLRW43UjQ1SVBLdFpXRlNyNkk5ODNIOEIyay1oMGR0czVhYjBXblNFZ0Ztd0lMNDVUMzFUMjY3c0hpU0RqQkVSRmlZTUItS0oyTUZ0VEs1Q2RCN0JaZE8yQTJNOU9uMkJTYU1tNmpZSy1ZY3VUVXU4aklxM2RQR0FIMnVKNlotX2p2RmljNHJzdml2OA?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T08:58:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Kira derdine son veren uçaklar alıcısını bekliyor. Hepsi satışta - Nefes Gazetesi",
+      "title_fa": ""
+    },
+    "ce738f87b92bffc2": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "ce738f87b92bffc2",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOb1BKTjNRX19XS0NZVjRoQUV3NlFaV2FuT0RpY3RKT2JmeGVTSko3NTdPUnd4aVFuWTgxTjk1NVl0cWJ4ZDJPOEg4MDBtY3djNHNGbjNlM1h1LTJTNkktMEwtQ0RaUGhJYW9nR0FIem9hamJKYjIzTHRQQmQzc2hUVTFxWUNJLXVBbzNXbWNHb2FzdHhYTURNZWh3?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T18:10:01+00:00",
+      "score": 6,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "در بورسا ترکیه حدود 100 نفر به علت مسمومیت غذایی مشکوک بستری شده‌اند",
+      "title": "Around 100 people suffer suspected food poisoning in Bursa, Turkey - Hispanatolia",
+      "title_fa": "100 نفر در بورسا ترکیه مسموم شدند"
+    },
     "ceb1690c68af6c41": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -5820,10 +5854,10 @@
       "first_seen": "2026-10-17T04:32:54.094816+00:00",
       "id": "d4bde2588d8f1bba",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYTdBQWt1NWNnZzd3UlpUNXJ1cWJoeS1keW5WMnowRDVUdmdVVTNtRk9qZW1hRWtlLTB2M2doZ3FlZFJsRlVQNFY4VWV3Q241emxfa0VxTFRnWmdOdER5MXAzTi1jZmJ2cXN1dWpjc2tWbGZEWTFocVFyQ2pmYjg3S0ZvS1pYNEJ2QUU3WGtaZDViRjdiZncweDRENXppUVZJVmJ2N3drekgtYVYzR2dhWGFYNjhJM1JwcGpGNg?oc=5",
-      "message_id": null,
+      "message_id": 51,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-23T21:25:41.979884+00:00",
       "published": "2026-10-16T20:20:56+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -6069,23 +6103,6 @@
       "title": "Ela Excellence Resort Belek, Olive Fest 2026 İle Zeytin Kültürünü Sanat Ve Gastronomiyle Buluşturdu - Turizm Gazetesi",
       "title_fa": "جشنواره زیتون ۲۰۲۶ استانبول"
     },
-    "dd1519940301ed20": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "dd1519940301ed20",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qNzJWV2ZQU0JCVGl0empzZFowUEZfbmlHcFlKZUdJYWppakJZRjFWR0hRLUl6WHJLNHUtVkNzYlhBZlNKSUR3dm5YTUNrOUI2bWxSdFdWeUpoVUZ3alM2REs0aUFmdjU3?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-13T18:14:56+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "فهرستی از رستوران‌های ماهی در کارتال",
-      "title": "Kartal’daki Balık Restoranları: Sahil, Dragos ve Soğanlık Rehberi - Kartal 24",
-      "title_fa": "رستوران‌های ماهی استانبول"
-    },
     "de0f14688cd0bde4": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -6324,6 +6341,23 @@
       "title": "İstanbul'da festival alanına taşlı sopalı saldırı! Tekbir getirerek ilerlediler - Haberler",
       "title_fa": "حمله به فستیوال غذا در استانبول"
     },
+    "e90dac353abcdb3e": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-23T21:25:41.979884+00:00",
+      "id": "e90dac353abcdb3e",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUUtLY2Y4eHpLemtmYnp6clFxUkloRXR6TFNEam5laWtGM2FtVU1WRmNCSGpjbzN4aGpvdmF3LTBJeXd3SWR4dm51U19ab3JqVnFoandDNnpmSnBGZXlzeEYzbnVVLUVUVldzVk5OMTE3OWtpTFdEak9aYUxGa2htdV9PVWJ1MnBSa0ViYlJtdTRvZ0ViYy1OY1EtbmpEek1Jel9Mbkpwdjl1bHVidXE5NFhfZGdpZ2F3SjZXd3czT01qajR5M0tqOFhKa1HSAcwBQVVfeXFMTlFLS2NmOHh6S3prZmJ6enJRcVJJaEV0ekxTRGpuZWlrRjNhbVVNVkZjQkhqY28zeGhqb3Zhdy0wSXl3d0lkeHZudVNfWm9yalZxaGp3QzZ6ZkpwRmV5c3hGM251VS1FVFZXc1ZOTjExNzlraUxXRGpPWmFMRmtobXVfT1VidTJwUmtFYmJSbXU0b2dFYmMtTmNRLW5qRHpNSXpfTG5KcHY5dWx1YnVxOTRYX2RnaWdhd0o2V3d3M09Namo0eTNLajhYSmtR?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T15:08:00+00:00",
+      "score": 2,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "وزیر خارجه آلمان هشدار داد که اختلال در حمل‌و‌نقل دریایی ممکن است به قحطی در کشورهای فقیرتر بیانجامد.",
+      "title": "German foreign minister warns shipping disruptions could trigger famine in poorer countries - Hromadske",
+      "title_fa": "اخطار وزیر خارجه آلمان"
+    },
     "ebf561b1a1bbc2ee": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -6494,23 +6528,6 @@
       "title": "BAFTA ödüllü İngiliz oyuncu Owen Teale İstanbul’da tarihi mekanları gezdi - https://www.ensondakika.com.tr/",
       "title_fa": "عوض کردن بازیگر انگلیسی"
     },
-    "f141453fb507825d": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "f141453fb507825d",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVXhtOXU5VkIwdHNxUDd1X3VlOUYxVkhydlZPcHdRS0FWSXlqeG1mODRBZVlEak1RT2tEd0VUdUktUC1tcVdPeC1xNEZ0cTZ3Y2FtYW03Y3k4cEt6M2s1NVI2ZHp0OVJucHBhQUhnZWU2QnAtSHg4aEdSOG1nUkZfY1R2NHdITWlDZWZmWTZTZWxUdzJGUkNjbHU3emVHMmE3WkFOM3hxZ0J1RmFGT1Z0em1oY0NQZ3NTd0tMTUdsaFdabnk3QVFwUzZBVm52QdIBzgFBVV95cUxPVXhtOXU5VkIwdHNxUDd1X3VlOUYxVkhydlZPcHdRS0FWSXlqeG1mODRBZVlEak1RT2tEd0VUdUktUC1tcVdPeC1xNEZ0cTZ3Y2FtYW03Y3k4cEt6M2s1NVI2ZHp0OVJucHBhQUhnZWU2QnAtSHg4aEdSOG1nUkZfY1R2NHdITWlDZWZmWTZTZWxUdzJGUkNjbHU3emVHMmE3WkFOM3hxZ0J1RmFGT1Z0em1oY0NQZ3NTd0tMTUdsaFdabnk3QVFwUzZBVm52QQ?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-13T18:18:43+00:00",
-      "score": 2,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "تاکید بر رعایت حقوق بشر در کارهای مربوط به غزه",
-      "title": "UN experts urge food agency to uphold human rights amid concerns about Gaza-related work - US Muslims",
-      "title_fa": "کارشناسان سازمان ملل"
-    },
     "f2d57f3e6025de65": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -6527,23 +6544,6 @@
       "summary_fa": "میشلین تاریخ انتخاب رستوران‌های ترکیه را اعلام کرد.",
       "title": "Michelin Rehberi Türkiye seçkisi için tarih belli oldu - Yeniçağ Gazetesi",
       "title_fa": "انتخاب رستوران‌های ترکیه توسط میشلین"
-    },
-    "f3d038d664df79d6": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:14:03.133023+00:00",
-      "id": "f3d038d664df79d6",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbmtkX3RnZ2pTS2luRG9hUVIxX3FMVnZXeDBZdzZmdnI3SndiM0lHWEJ0TXNXcmNGTGNTRlFOUlVKMWhhYWhWdEdZTDU3Y2dBVmhwOWcxMHlEN1g1dHNSSUE3YjN0am9vTWtjbTJ1MTZRTTVGMHJzSWxYYVVLUHc3V2VjVEFxNGxvb1hjeFZySmc2RG9HTDFQQU5vTHJ4NTJ4U1k4QWZoOElVQQ?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-14T15:05:00+00:00",
-      "score": 0,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "",
-      "title": "Worthing restaurant relaunches under new name - SussexWorld",
-      "title_fa": ""
     },
     "f3d8233c5662fc18": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -7034,6 +7034,12 @@
       "at": "2026-10-23T17:09:04.655296+00:00",
       "feeds": 6,
       "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-23T21:25:41.979884+00:00",
+      "feeds": 6,
+      "new": 8,
       "posted": 3
     }
   ]
