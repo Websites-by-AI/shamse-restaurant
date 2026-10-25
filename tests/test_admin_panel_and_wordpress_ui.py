@@ -78,6 +78,13 @@ def test_admin_panel_wp_style_structure():
     assert "10 İyileştirme Stratejisi" in html, "Must contain 10 Improvement Strategies table"
     assert "10 Hesaplama Alanı" in html, "Must contain 10 Calculators table"
 
+    # Authentication & WhatsApp Dispatch
+    assert "wpAdminLoginOverlay" in html, "Must have admin login overlay"
+    assert "shamse_admin" in html, "Must support shamse_admin username"
+    assert "Shamse@2026!Istiklal" in html, "Must define secure password"
+    assert "fullWhatsAppPitchText" in html, "Must have ready-to-dispatch WhatsApp text"
+
+
 
 
 def test_telegram_bot_file_and_channel_verification():
