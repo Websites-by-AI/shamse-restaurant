@@ -29,11 +29,15 @@ jobs:
       - name: Prepare deploy folder
         run: |
           mkdir -p _site
-          cp index.html marketing.html events.html restaurants.html intelligence.html preview.html _site/
+          cp -r *.html _site/
           cp -r assets _site/
+          mkdir -p _site/reports
+          cp -r reports/* _site/reports/ || true
           printf '%s\n' \
             '/assets/*' \
             '  Cache-Control: public, max-age=31536000, immutable' \
+            '/reports/*' \
+            '  Cache-Control: public, max-age=86400' \
             '/*' \
             '  X-Content-Type-Options: nosniff' \
             '  Referrer-Policy: strict-origin-when-cross-origin' > _site/_headers
@@ -64,8 +68,10 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           mkdir -p _space
-          cp index.html marketing.html events.html restaurants.html intelligence.html preview.html _space/
+          cp -r *.html _space/
           cp -r assets _space/
+          mkdir -p _space/reports
+          cp -r reports/* _space/reports/ || true
           cat > _space/README.md <<'EOF'
           ---
           title: رستوران شمسه استانبول | Shamse Restaurant
