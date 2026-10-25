@@ -80,12 +80,21 @@ def test_pdf_report_integrity_and_size():
     # Check content in PDF using pymupdf
     import fitz
     doc = fitz.open(pdf_path)
-    assert len(doc) >= 6, f"PDF must have at least 6 pages, got {len(doc)}"
+    assert len(doc) == 8, f"PDF must have exactly 8 pages, got {len(doc)}"
     full_text = "".join(page.get_text() for page in doc)
     assert "مهسا" in full_text and "رضایی" in full_text
     assert "David Miller" in full_text
     assert "restaurant_repair_app.html" in full_text
     assert "shamse_intelligence_video.mp4" in full_text
+
+    # Verify interactive clickable links across pages
+    total_links = sum(len(page.get_links()) for page in doc)
+    assert total_links >= 50, f"PDF must contain at least 50 clickable hyperlinks, found {total_links}"
+
+    # Verify direct Google CIDs and Org IDs in text
+    assert "2241374547534113988" in full_text
+    assert "17473698162897224914" in full_text
+    assert "198117936491" in full_text
 
 def test_video_deliverable_and_comment_screenshots():
     video_asset = os.path.join(REPO_ROOT, "assets", "video", "shamse_intelligence_video.mp4")

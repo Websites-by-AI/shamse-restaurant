@@ -1,5 +1,29 @@
 [
   {
+    "timestamp": "2026-10-25T20:30:16.928412",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792960216_0555",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
+    "timestamp": "2026-10-25T20:29:53.590011",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792960193_3909",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
     "timestamp": "2026-10-25T20:04:08.648666",
     "channel": "email_resend",
     "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
@@ -2762,28 +2786,6 @@
     "restaurant_name": "رستوران شمسه (شعبه کوجاتپه)",
     "channel": "email",
     "recipient": "kocatepe@shamserestaurants.com",
-    "timestamp": "2026-10-19 19:16:19",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-SUDI-A-7379",
-    "lead_id": "sudi-atasehir",
-    "restaurant_name": "رستوران سودی",
-    "channel": "email",
-    "recipient": "info@sudirestaurant.com",
-    "timestamp": "2026-10-19 19:16:19",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-ASUMAN-7379",
-    "lead_id": "asuman-fatih",
-    "restaurant_name": "رستوران آسمان",
-    "channel": "email",
-    "recipient": "contact@asumanrestaurant.com",
     "timestamp": "2026-10-19 19:16:19",
     "status": "delivered",
     "opened": true,
