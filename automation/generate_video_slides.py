@@ -372,11 +372,12 @@ SLIDES_HTML = [
 
       <div style="background:#17120e;border:2px solid #c48a48;border-radius:12px;padding:24px 40px;width:1000px;text-align:right">
         <div style="font-size:22px;color:#ffd21e;font-weight:bold;margin-bottom:12px">لینک‌های دسترسی و اعتبارسنجی ۱۰۰٪ تاییدشده:</div>
-        <div style="font-size:18px;line-height:1.9;color:#e8ded4;direction:ltr;text-align:left;font-family:monospace">
-          • Google Maps (Branch 1): https://maps.google.com/?q=Istiklal+Caddesi+179<br>
-          • Google Maps (Branch 2): https://maps.google.com/?q=Abdulhak+Hamit+Caddesi+17<br>
-          • Repair App: https://shamse-restaurant.pages.dev/restaurant_repair_app.html<br>
-          • Web Dossier: https://shamse-restaurant.pages.dev/shamse_sentiment_report.html
+        <div style="font-size:17px;line-height:1.9;color:#e8ded4;direction:ltr;text-align:left;font-family:monospace">
+          • Google Maps (Branch 1 CID): https://maps.google.com/?cid=2241374547534113988<br>
+          • Google Maps (Branch 2 CID): https://maps.google.com/?cid=17473698162897224914<br>
+          • TripAdvisor (Reviews): https://www.tripadvisor.com/Restaurant_Review-g293974-d27493918-Reviews<br>
+          • Yandex Maps (Org ID): https://yandex.com/maps/org/shamse_restaurant/198117936491/<br>
+          • Repair App: https://shamse-restaurant.pages.dev/restaurant_repair_app.html
         </div>
       </div>
 

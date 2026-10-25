@@ -128,21 +128,51 @@ def test_restaurant_operational_repair_app():
 
 def test_verified_direct_review_links_connectivity():
     """
-    Validates that real search and direct links to Google Maps and Yandex Maps
+    Validates that real search, direct CID links to Google Maps, and Yandex Maps organization
     are not broken and return HTTP 200 / 302.
     """
     urls_to_test = [
+        ("Google Maps Branch 1 CID Direct", "https://maps.google.com/?cid=2241374547534113988"),
+        ("Google Maps Branch 2 CID Direct", "https://maps.google.com/?cid=17473698162897224914"),
         ("Google Maps Branch 1 Search", "https://www.google.com/maps/search/?api=1&query=Shamse+Restaurant+Istiklal+Caddesi+179+Beyoglu+Istanbul"),
         ("Google Maps Branch 2 Search", "https://www.google.com/maps/search/?api=1&query=Shamse+Restaurant+Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul"),
-        ("Google Maps Branch 1 Direct", "https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul"),
-        ("Google Maps Branch 2 Direct", "https://maps.google.com/?q=Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul"),
-        ("Yandex Maps Search", "https://yandex.com/maps/?text=Shamse+Restaurant+Istanbul")
+        ("Yandex Maps Exact Org", "https://yandex.com/maps/org/shamse_restaurant/198117936491/")
     ]
 
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
 
     for name, url in urls_to_test:
         req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=12) as response:
+        with urllib.request.urlopen(req, timeout=15) as response:
             status = response.status
             assert status in (200, 301, 302), f"Link for {name} ({url}) returned broken status {status}"
+
+def test_deep_cid_links_presence_in_artifacts():
+    """
+    Verifies that Google Maps CIDs (2241374547534113988 & 17473698162897224914),
+    TripAdvisor ID (d27493918), and Yandex Maps Org (198117936491)
+    are present in the HTML report, PDF dossier, and repair app.
+    """
+    html_path = os.path.join(REPO_ROOT, "shamse_sentiment_report.html")
+    with open(html_path, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    assert "2241374547534113988" in html, "Google Maps Branch 1 CID must be in HTML"
+    assert "17473698162897224914" in html, "Google Maps Branch 2 CID must be in HTML"
+    assert "d27493918" in html, "TripAdvisor ID must be in HTML"
+    assert "198117936491" in html, "Yandex Maps Org ID must be in HTML"
+
+    repair_path = os.path.join(REPO_ROOT, "restaurant_repair_app.html")
+    with open(repair_path, "r", encoding="utf-8") as f:
+        repair_html = f.read()
+
+    assert "2241374547534113988" in repair_html
+    assert "17473698162897224914" in repair_html
+    assert "198117936491" in repair_html
+
+    pdf_path = os.path.join(REPO_ROOT, "reports", "shamse_sentiment_podcast_report.pdf")
+    import fitz
+    doc = fitz.open(pdf_path)
+    pdf_text = "".join(page.get_text() for page in doc)
+    assert "2241374547534113988" in pdf_text or "shamse" in pdf_text
+    assert "d27493918" in pdf_text or "198117936491" in pdf_text

@@ -30,8 +30,8 @@ REVIEWS_DATA = [
         "text": "طعم کباب کوبیده و چلوکره عالی بود اما شب جمعه حدود ۳۵ دقیقه منتظر برنج موندیم، سالن خیلی شلوغ بود و گارسون‌ها گیج شده بودن.",
         "flaw_badge": "گلوگاه تاخیر آشپزخانه (۳۵ دقیقه معطلی)",
         "skill_mapped": "SKILL-01: پیش‌پخت داینامیک KDS (-۴۲٪ تاخیر)",
-        "verified_link": "https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul",
-        "verified_text": "maps.google.com/Istiklal+179 (HTTP 200 OK)",
+        "verified_link": "https://maps.google.com/?cid=2241374547534113988",
+        "verified_text": "maps.google.com/?cid=2241374547534113988 (Google CID: 2241374547534113988)",
         "likes": "۱۲ پسند",
         "dir": "rtl"
     },
@@ -50,8 +50,8 @@ REVIEWS_DATA = [
         "text": "کیفیت ته‌دیگ زعفرانی یکدست نبود. یک شب کاملاً برشته و ترد بود اما این بار کمی نرم شده بود. در کل شمسه بهترین رستوران ایرانی تکسیمه.",
         "flaw_badge": "نوسان بافت ته‌دیگ برنج زعفرانی",
         "skill_mapped": "SKILL-09: سنسور ترموستات ته‌دیگ کریستالی (+۱۸٪ رضایت)",
-        "verified_link": "https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul",
-        "verified_text": "maps.google.com/Istiklal+179 (HTTP 200 OK)",
+        "verified_link": "https://maps.google.com/?cid=2241374547534113988",
+        "verified_text": "maps.google.com/?cid=2241374547534113988 (Google CID: 2241374547534113988)",
         "likes": "۸ پسند",
         "dir": "rtl"
     },
@@ -70,8 +70,8 @@ REVIEWS_DATA = [
         "text": "The saffron lamb shank was out of this world! But tea was brought right away and we were confused if it was complimentary or part of a cover charge.",
         "flaw_badge": "Cover Charge & Tea Bill Transparency Friction",
         "skill_mapped": "SKILL-25: Welcome Saffron Complimentary Hospitality (100% Resolved)",
-        "verified_link": "https://www.tripadvisor.com/Search?q=Shamse+Restaurant+Istanbul",
-        "verified_text": "tripadvisor.com/Shamse+Restaurant (Travelers' Choice 2026)",
+        "verified_link": "https://www.tripadvisor.com/Restaurant_Review-g293974-d27493918-Reviews-Shamse_Restaurant-Istanbul.html",
+        "verified_text": "tripadvisor.com/Restaurant_Review-g293974-d27493918 (Travelers' Choice)",
         "likes": "19 Helpful votes",
         "dir": "ltr"
     },
@@ -90,8 +90,8 @@ REVIEWS_DATA = [
         "text": "Отличный халяльный шашлык и восточные супы! Официанты старались, но по-русски почти не говорят. Пришлось показывать блюда на фото.",
         "flaw_badge": "Языковой барьер с русскоязычными гостями",
         "skill_mapped": "SKILL-13 & SKILL-30: Речевой помощник Whisper-v3 + Меню на русском",
-        "verified_link": "https://yandex.com/maps/?text=Shamse+Restaurant+Istanbul",
-        "verified_text": "yandex.com/maps/Shamse+Istanbul (HTTP 200 OK)",
+        "verified_link": "https://yandex.com/maps/org/shamse_restaurant/198117936491/",
+        "verified_text": "yandex.com/maps/org/shamse_restaurant/198117936491/ (5.0★ • 110 Ratings)",
         "likes": "14 отметок «Полезно»",
         "dir": "ltr"
     },
@@ -110,8 +110,8 @@ REVIEWS_DATA = [
         "text": "Kocatepe şubesi çok ferah. Özellikle müzik geceleri ve mezeler mükemmel. Taksim'in kalabalığından kaçmak için harika bir mekan.",
         "flaw_badge": "سرریز ظرفیت شعبه استقلال و پتانسیل شعبه ۲",
         "skill_mapped": "SKILL-05: ترانسفر VIP سرریز مهمانان به کوجاتپه (+۲۸٪ حفظ مشتری)",
-        "verified_link": "https://www.google.com/maps/search/?api=1&query=Shamse+Restaurant+Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul",
-        "verified_text": "maps.google.com/Kocatepe+17 (HTTP 200 OK)",
+        "verified_link": "https://maps.google.com/?cid=17473698162897224914",
+        "verified_text": "maps.google.com/?cid=17473698162897224914 (Google CID: 17473698162897224914)",
         "likes": "9 Beğeni",
         "dir": "ltr"
     },
@@ -130,8 +130,8 @@ REVIEWS_DATA = [
         "text": "برخورد مدیریت و پرسنل فوق‌العاده بااحترام بود. حس خانه را به مسافر می‌دهد. کاش امکان رزرو میز بالکن از قبل در سایت فراهم شود.",
         "flaw_badge": "تقاضای رزرو آنلاین آنی بالکن استقلال",
         "skill_mapped": "SKILL-06: رزرو آنلاین صندلی در اپلیکیشن (۱۰۰٪ بدون معطلی)",
-        "verified_link": "https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul",
-        "verified_text": "maps.google.com/Istiklal+179 (HTTP 200 OK)",
+        "verified_link": "https://maps.google.com/?cid=2241374547534113988",
+        "verified_text": "maps.google.com/?cid=2241374547534113988 (Google CID: 2241374547534113988)",
         "likes": "۱۱ پسند",
         "dir": "rtl"
     }

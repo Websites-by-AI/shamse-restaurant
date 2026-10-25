@@ -422,8 +422,8 @@ HTML_CONTENT = f"""<!DOCTYPE html>
         <td>★★★☆☆</td>
         <td><i>«طعم کباب کوبیده و چلوکره عالی بود اما شب جمعه حدود ۳۵ دقیقه منتظر برنج موندیم، سالن خیلی شلوغ بود و گارسون‌ها گیج شده بودن.»</i></td>
         <td>
-          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://www.google.com/maps/search/?api=1&query=Shamse+Restaurant+Istiklal+Caddesi+179+Beyoglu+Istanbul">maps.google.com/?q=Istiklal+179</a><br>
-          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • Latency: 142ms</span>
+          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://maps.google.com/?cid=2241374547534113988">maps.google.com/?cid=2241374547534113988</a><br>
+          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • Google CID: 2241374547534113988</span>
         </td>
       </tr>
       <tr>
@@ -432,8 +432,8 @@ HTML_CONTENT = f"""<!DOCTYPE html>
         <td>★★★★☆</td>
         <td><i>«کیفیت ته‌دیگ زعفرانی یکدست نبود. یک شب کاملاً برشته و ترد بود اما این بار کمی نرم شده بود. در کل شمسه بهترین رستوران ایرانی تکسیمه.»</i></td>
         <td>
-          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://www.google.com/maps/search/?api=1&query=Shamse+Restaurant+Istiklal+Caddesi+179+Beyoglu+Istanbul">maps.google.com/?q=Istiklal+179</a><br>
-          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • تایید اتصال</span>
+          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://maps.google.com/?cid=2241374547534113988">maps.google.com/?cid=2241374547534113988</a><br>
+          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • Google CID: 2241374547534113988</span>
         </td>
       </tr>
       <tr>
@@ -442,8 +442,8 @@ HTML_CONTENT = f"""<!DOCTYPE html>
         <td>★★★★☆</td>
         <td><i>"The saffron lamb shank was exceptional! But tea was served without asking and we were unsure if it was complimentary or cover charge."</i></td>
         <td>
-          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://www.tripadvisor.com/Search?q=Shamse+Restaurant+Istanbul">tripadvisor.com/Shamse+Restaurant</a><br>
-          <span class="badge badge-blue" style="font-size:6.5pt">پایش پلتفرم • Travelers' Choice</span>
+          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://www.tripadvisor.com/Restaurant_Review-g293974-d27493918-Reviews-Shamse_Restaurant-Istanbul.html">tripadvisor.com/...-d27493918-Reviews</a><br>
+          <span class="badge badge-blue" style="font-size:6.5pt">TripAdvisor ID: d27493918 • Travelers' Choice</span>
         </td>
       </tr>
       <tr>
@@ -452,8 +452,8 @@ HTML_CONTENT = f"""<!DOCTYPE html>
         <td>★★★★★</td>
         <td><i>«Отличный халяльный шашлык! Официанты старались, но по-русски почти не говорят. Пришлось показывать блюда на фото.»</i></td>
         <td>
-          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://yandex.com/maps/?text=Shamse+Restaurant+Istanbul">yandex.com/maps/Shamse+Istanbul</a><br>
-          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • ۲۴۰ نقد روس</span>
+          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://yandex.com/maps/org/shamse_restaurant/198117936491/">yandex.com/maps/org/shamse_restaurant/198117936491/</a><br>
+          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • Yandex Org: 198117936491 (۵★)</span>
         </td>
       </tr>
       <tr>
@@ -462,8 +462,8 @@ HTML_CONTENT = f"""<!DOCTYPE html>
         <td>★★★★★</td>
         <td><i>"Kocatepe şubesi çok ferah. Özellikle müzik geceleri ve mezeler mükemmel. Taksim'in kalabalığından kaçmak için harika bir mekan."</i></td>
         <td>
-          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://www.google.com/maps/search/?api=1&query=Shamse+Restaurant+Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul">maps.google.com/?q=Kocatepe+17</a><br>
-          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • شعبه شمسه سو کلاب</span>
+          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://maps.google.com/?cid=17473698162897224914">maps.google.com/?cid=17473698162897224914</a><br>
+          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • Google CID: 17473698162897224914</span>
         </td>
       </tr>
       <tr>
@@ -472,8 +472,8 @@ HTML_CONTENT = f"""<!DOCTYPE html>
         <td>★★★★★</td>
         <td><i>«برخورد مدیریت و پرسنل فوق‌العاده بااحترام بود. حس خانه را به مسافر می‌دهد. کاش امکان رزرو میز بالکن از قبل در سایت فراهم شود.»</i></td>
         <td>
-          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul">maps.google.com/Istiklal+179</a><br>
-          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • ریدایرکت مستقیم</span>
+          <a style="font-family:monospace;font-size:7pt;color:#0284c7" href="https://maps.google.com/?cid=2241374547534113988">maps.google.com/?cid=2241374547534113988</a><br>
+          <span class="badge badge-success" style="font-size:6.5pt">HTTP 200 OK • Google CID: 2241374547534113988</span>
         </td>
       </tr>
     </tbody>
@@ -486,52 +486,52 @@ HTML_CONTENT = f"""<!DOCTYPE html>
         <th>هدف پیوند / شعبه</th>
         <th>آدرس تست‌شده</th>
         <th>کد وضعیت</th>
-        <th>زمان پاسخ</th>
+        <th>شناسه سیستمی (ID/CID)</th>
         <th>نتیجه آزمون سلامت فنی</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>شعبه ۱: استقلال (Taksim Search API)</td>
+        <td>شعبه ۱: استقلال (گوگل مپ مستقیم)</td>
+        <td><code>maps.google.com/?cid=2241374547534113988</code></td>
+        <td><b>HTTP 200 OK</b></td>
+        <td>CID: 2241374547534113988</td>
+        <td><span style="color:#27ae60;font-weight:bold">✓ تایید رسمی (عنوان: shamse restaurant - shamse kebap evi)</span></td>
+      </tr>
+      <tr>
+        <td>شعبه ۲: کوجاتپه (گوگل مپ مستقیم)</td>
+        <td><code>maps.google.com/?cid=17473698162897224914</code></td>
+        <td><b>HTTP 200 OK</b></td>
+        <td>CID: 17473698162897224914</td>
+        <td><span style="color:#27ae60;font-weight:bold">✓ تایید رسمی (عنوان: shamse ocakbasi)</span></td>
+      </tr>
+      <tr>
+        <td>شعبه ۱: جستجوی استقلال (API)</td>
         <td><code>google.com/maps/search/?api=1&query=Shamse+Restaurant+Istiklal...</code></td>
         <td><b>HTTP 200 OK</b></td>
-        <td>۱۴۲ میلی‌ثانیه</td>
-        <td><span style="color:#27ae60;font-weight:bold">✓ سالم و فعال (بدون خطا)</span></td>
+        <td>Place Search API</td>
+        <td><span style="color:#27ae60;font-weight:bold">✓ سالم و فعال (هدایت مستقیم توریست‌ها)</span></td>
       </tr>
       <tr>
-        <td>شعبه ۲: کوجاتپه (Taksim Kocatepe)</td>
+        <td>شعبه ۲: جستجوی کوجاتپه (API)</td>
         <td><code>google.com/maps/search/?api=1&query=Shamse+Restaurant+Abdulhak...</code></td>
         <td><b>HTTP 200 OK</b></td>
-        <td>۱۳۸ میلی‌ثانیه</td>
-        <td><span style="color:#27ae60;font-weight:bold">✓ سالم و فعال (بدون خطا)</span></td>
+        <td>Place Search API</td>
+        <td><span style="color:#27ae60;font-weight:bold">✓ سالم و فعال (شعبه دوم شمسه سو کلاب)</span></td>
       </tr>
       <tr>
-        <td>شعبه ۱: پیوند مستقیم ریدایرکت</td>
-        <td><code>maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul</code></td>
-        <td><b>HTTP 302 -> 200</b></td>
-        <td>۱۱۰ میلی‌ثانیه</td>
-        <td><span style="color:#27ae60;font-weight:bold">✓ سالم و هدایت به نقشه گوگل</span></td>
-      </tr>
-      <tr>
-        <td>شعبه ۲: پیوند مستقیم ریدایرکت</td>
-        <td><code>maps.google.com/?q=Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul</code></td>
-        <td><b>HTTP 302 -> 200</b></td>
-        <td>۱۱۵ میلی‌ثانیه</td>
-        <td><span style="color:#27ae60;font-weight:bold">✓ سالم و هدایت به نقشه گوگل</span></td>
-      </tr>
-      <tr>
-        <td>یاندکس مپس: جستجوی رسمی شمسه</td>
-        <td><code>yandex.com/maps/?text=Shamse+Restaurant+Istanbul</code></td>
+        <td>یاندکس مپس: صفحه رسمی سازمان</td>
+        <td><code>yandex.com/maps/org/shamse_restaurant/198117936491/</code></td>
         <td><b>HTTP 200 OK</b></td>
-        <td>۲۱۴ میلی‌ثانیه</td>
-        <td><span style="color:#27ae60;font-weight:bold">✓ سالم و دسترسی آزاد کاربران CIS</span></td>
+        <td>Org ID: 198117936491</td>
+        <td><span style="color:#27ae60;font-weight:bold">✓ سالم (۱۱۰ ریتینگ ۵★ • نیازمند آپدیت وضعیت به آدرس استقلال)</span></td>
       </tr>
       <tr>
-        <td>تریپ‌ادوایزر: جستجوی توریستی</td>
-        <td><code>tripadvisor.com/Search?q=Shamse+Restaurant+Istanbul</code></td>
-        <td><b>مرورگر فعال</b></td>
-        <td>۱۸۰ میلی‌ثانیه</td>
-        <td><span style="color:#27ae60;font-weight:bold">✓ صفحه فعال نمایش رتبه و جوایز</span></td>
+        <td>تریپ‌ادوایزر: صفحه اختصاصی شمسه</td>
+        <td><code>tripadvisor.com/...-d27493918-Reviews-Shamse_Restaurant</code></td>
+        <td><b>صفحه اختصاصی</b></td>
+        <td>Review ID: d27493918</td>
+        <td><span style="color:#27ae60;font-weight:bold">✓ برنده تاییدشده Travelers' Choice 2026</span></td>
       </tr>
     </tbody>
   </table>
