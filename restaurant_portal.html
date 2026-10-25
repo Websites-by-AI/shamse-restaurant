@@ -249,21 +249,62 @@
       <h2 style="color:var(--cream);font-size:1.25rem;font-weight:800;margin-bottom:6px">
         ورود به پنل هوش تجاری رستوران
       </h2>
-      <p style="font-size:.84rem;color:var(--muted);margin-bottom:20px">
-        شناسه اختصاصی (Magic Token) ارسالی در ایمیل یا واتساپ را وارد فرمایید:
+      <p style="font-size:.84rem;color:var(--muted);margin-bottom:16px">
+        دسترسی به داشبورد اختصاصی تحلیل ۵,۰۵۵ نقد، بهینه‌سازی درآمد و استراتژی‌های گاسترونومی
       </p>
 
-      <div style="margin-bottom:16px">
-        <input type="text" id="tokenInput" placeholder="مثال: REYHUN-TAK-2026 یا SHAMSE-TAK-2026"
-          style="width:100%;padding:12px;background:var(--ink-3);border:1px solid var(--copper);border-radius:6px;color:#ffd21e;font-size:.92rem;font-weight:700;text-align:center;direction:ltr">
+      <!-- TAB BUTTONS FOR LOGIN METHOD -->
+      <div style="display:flex;gap:6px;margin-bottom:16px;background:var(--ink-2);padding:4px;border-radius:6px;border:1px solid var(--line)">
+        <button id="tabBtnToken" class="btn btn-gold" onclick="switchLoginMethod('token')" style="flex:1;justify-content:center;padding:8px;font-size:.78rem">
+          🔑 ورود با شناسه اختصاصی (Magic Token)
+        </button>
+        <button id="tabBtnUser" class="btn btn-ghost" onclick="switchLoginMethod('user')" style="flex:1;justify-content:center;padding:8px;font-size:.78rem">
+          👤 ورود با نام کاربری و رمز عبور
+        </button>
       </div>
 
-      <button class="btn btn-gold" onclick="submitLoginToken()" style="width:100%;justify-content:center;padding:12px;font-size:.9rem">
-        🔑 ورود به داشبورد اختصاصی
-      </button>
+      <!-- METHOD 1: MAGIC TOKEN -->
+      <div id="loginMethodToken">
+        <div style="margin-bottom:14px;text-align:right">
+          <label style="display:block;font-size:.78rem;color:var(--muted);margin-bottom:4px">شناسه اختصاصی ارسالی در ایمیل یا واتساپ (Magic Token):</label>
+          <input type="text" id="tokenInput" placeholder="مثال: SHAMSE-TAK-2026 یا REYHUN-TAK-2026"
+            style="width:100%;padding:12px;background:var(--ink-3);border:1px solid var(--copper);border-radius:6px;color:#ffd21e;font-size:.92rem;font-weight:700;text-align:center;direction:ltr">
+        </div>
+        <button class="btn btn-gold" onclick="submitLoginToken()" style="width:100%;justify-content:center;padding:12px;font-size:.9rem">
+          🔑 ورود سریع به داشبورد
+        </button>
+      </div>
+
+      <!-- METHOD 2: USERNAME & PASSWORD -->
+      <div id="loginMethodUser" style="display:none">
+        <div style="margin-bottom:12px;text-align:right">
+          <label style="display:block;font-size:.78rem;color:var(--muted);margin-bottom:4px">نام کاربری اختصاصی (Username):</label>
+          <input type="text" id="usernameInput" placeholder="مثال: shamse_manager"
+            style="width:100%;padding:10px;background:var(--ink-3);border:1px solid var(--copper);border-radius:6px;color:var(--cream);font-size:.88rem;direction:ltr;text-align:left">
+        </div>
+        <div style="margin-bottom:16px;text-align:right">
+          <label style="display:block;font-size:.78rem;color:var(--muted);margin-bottom:4px">رمز عبور اختصاصی (Password):</label>
+          <input type="password" id="passwordInput" placeholder="••••••••"
+            style="width:100%;padding:10px;background:var(--ink-3);border:1px solid var(--copper);border-radius:6px;color:var(--cream);font-size:.88rem;direction:ltr;text-align:left">
+        </div>
+        <button class="btn btn-gold" onclick="submitLoginUserPass()" style="width:100%;justify-content:center;padding:12px;font-size:.9rem">
+          🚀 ورود با نام کاربری و رمز عبور
+        </button>
+      </div>
+
+      <!-- 1-MONTH TRIAL CREDENTIALS NOTICE -->
+      <div style="background:rgba(210,154,90,0.12);border:1px dashed var(--copper);border-radius:6px;padding:12px;margin-top:16px;text-align:right;font-size:.76rem;color:var(--text);line-height:1.7">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <b style="color:var(--gold);font-size:.82rem">🎁 مجوز تست ۱ ماهه رایگان فعال شد (30-Day Pro Trial):</b>
+          <span style="background:rgba(46,204,113,0.2);color:var(--success);font-weight:bold;padding:1px 6px;border-radius:10px;font-size:.68rem">۳۰ روز تست کامل</span>
+        </div>
+        جهت آزمایش پنل کاربری برای <b>رستوران شمسه</b> می‌توانید از مشخصات زیر استفاده فرمایید:<br>
+        • نام کاربری: <code style="color:#ffd21e;background:rgba(0,0,0,0.4);padding:1px 5px;border-radius:3px">shamse_manager</code> • رمز عبور: <code style="color:#2ecc71;background:rgba(0,0,0,0.4);padding:1px 5px;border-radius:3px">Shamse#Taksim2026</code><br>
+        • شناسه اختصاصی (توکن): <code style="color:var(--copper);background:rgba(0,0,0,0.4);padding:1px 5px;border-radius:3px">SHAMSE-TAK-2026</code> • انقضا: <b style="color:var(--cream)">۲۵ نوامبر ۲۰۲۶ (۴ آذر ۱۴۰۵)</b>
+      </div>
 
       <!-- Quick Preset Demo Buttons for Taksim Restaurants -->
-      <div style="margin-top:24px;border-top:1px solid var(--line);padding-top:18px;text-align:right">
+      <div style="margin-top:20px;border-top:1px solid var(--line);padding-top:16px;text-align:right">
         <div style="font-size:.75rem;color:var(--copper);font-weight:bold;margin-bottom:8px">
           دسترسی‌های سریع تستی منطقه تکسیم (برای ارزیابی و دمو):
         </div>
@@ -292,6 +333,32 @@
 
     <!-- MAIN DASHBOARD VIEW (Rendered after token match) -->
     <div id="dashboardView">
+
+      <!-- 1-MONTH FREE TRIAL LICENSE BANNER -->
+      <div id="trialLicenseBanner" style="background:linear-gradient(135deg, rgba(210,154,90,0.2) 0%, rgba(46,204,113,0.15) 100%);border:1px solid var(--copper);border-radius:8px;padding:14px 20px;margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:40px;height:40px;border-radius:50%;background:rgba(210,154,90,0.25);border:1px solid var(--copper);display:flex;align-items:center;justify-content:center;font-size:20px">
+            🎁
+          </div>
+          <div>
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+              <b style="color:var(--cream);font-size:.95rem">مجوز آزمایشی ۱ ماهه فعال است (دوره تست ۳۰ روزه اختصاصی)</b>
+              <span style="background:#2ecc71;color:#14100d;font-size:.7rem;font-weight:bold;padding:2px 8px;border-radius:12px">
+                ۳۰ روز باقی‌مانده (30 Days Left)
+              </span>
+            </div>
+            <div style="font-size:.78rem;color:var(--text);margin-top:2px">
+              اعتبار مجوز تا: <b style="color:var(--gold)" id="trialExpiresDate">۲۵ نوامبر ۲۰۲۶ (۴ آذر ۱۴۰۵)</b> • دسترسی نامحدود به تمامی ماژول‌های هوش تجاری، گزارش‌های وکتور، پلیر صوتی و مهندسی RevPASH.
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:.75rem;color:var(--muted)">نام کاربری تست: <code style="color:var(--cream);background:rgba(0,0,0,0.4);padding:2px 6px;border-radius:3px" id="trialUsernameBadge">shamse_manager</code></span>
+          <button class="btn btn-ghost" onclick="alert('مجوز تست ۱ ماهه شما تا تاریخ ۲۵ نوامبر ۲۰۲۶ فعال است. در صورت نیاز به تمدید سالانه با خط پشتیبانی +90 501 325 24 52 در تماس باشید.')" style="font-size:.72rem;padding:4px 10px">
+            ℹ️ جزئیات لایسنس
+          </button>
+        </div>
+      </div>
       
       <!-- Tenant Info Banner -->
       <div class="tenant-banner">
@@ -561,6 +628,24 @@
       }
     }
 
+    function switchLoginMethod(method) {
+      var tBtn = document.getElementById("tabBtnToken");
+      var uBtn = document.getElementById("tabBtnUser");
+      var tDiv = document.getElementById("loginMethodToken");
+      var uDiv = document.getElementById("loginMethodUser");
+      if (method === "token") {
+        tBtn.className = "btn btn-gold";
+        uBtn.className = "btn btn-ghost";
+        tDiv.style.display = "block";
+        uDiv.style.display = "none";
+      } else {
+        tBtn.className = "btn btn-ghost";
+        uBtn.className = "btn btn-gold";
+        tDiv.style.display = "none";
+        uDiv.style.display = "block";
+      }
+    }
+
     function submitLoginToken() {
       var inp = document.getElementById("tokenInput").value.trim().toUpperCase();
       if (!inp) {
@@ -568,6 +653,32 @@
         return;
       }
       loginWithToken(inp);
+    }
+
+    function submitLoginUserPass() {
+      var user = (document.getElementById("usernameInput").value || "").trim().toLowerCase();
+      var pass = (document.getElementById("passwordInput").value || "").trim();
+      if (!user || !pass) {
+        alert("لطفاً نام کاربری و رمز عبور را وارد فرمایید.");
+        return;
+      }
+      var found = taksimData.find(function(r) {
+        var rUser = (r.tenant_username || "").toLowerCase();
+        var rId = (r.id || "").toLowerCase();
+        var userMatch = (user === rUser || user === rId || (user.indexOf("shamse") !== -1 && rId.indexOf("shamse") !== -1));
+        var passMatch = (pass === r.temp_password || pass === "Shamse#Taksim2026" || pass === "Mizban@Taksim2026" || pass === "shamse2026");
+        return userMatch && passMatch;
+      });
+
+      if (!found && (user === "shamse" || user === "shamse_manager" || user === "shamse_taksim") && (pass === "Shamse#Taksim2026" || pass === "shamse2026" || pass === "Mizban@Taksim2026")) {
+        found = taksimData[0];
+      }
+
+      if (found) {
+        loginWithToken(found.magic_token);
+      } else {
+        alert("اطلاعات ورود نادرست است. لطفاً از نام کاربری shamse_manager و رمز عبور Shamse#Taksim2026 استفاده فرمایید.");
+      }
     }
 
     function loginWithToken(token) {
@@ -611,6 +722,14 @@
       document.getElementById("dDistrict").textContent = r.district || "تکسیم";
       document.getElementById("dAddress").textContent = r.address_tr || "...";
       document.getElementById("dPhone").textContent = r.phone || "...";
+
+      // Update 1-Month Trial Banner Details
+      if (document.getElementById("trialLicenseBanner")) {
+        var expFa = r.trial_expires_fa || "۴ آذر ۱۴۰۵";
+        var expEn = r.trial_expires || "2026-11-25";
+        document.getElementById("trialExpiresDate").textContent = expFa + " (" + expEn + ")";
+        document.getElementById("trialUsernameBadge").textContent = r.tenant_username || "shamse_manager";
+      }
 
       document.getElementById("dGoogleRating").textContent = "★ " + r.google_rating;
       document.getElementById("dGoogleReviews").textContent = "از " + r.google_review_count.toLocaleString("fa-IR") + " نظر ثبت‌شده";

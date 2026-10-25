@@ -41,13 +41,19 @@
     "revpash_potential": 58.4,
     "monthly_unlocked_revenue_try": 184000,
     "magic_token": "SHAMSE-TAK-2026",
-    "tenant_username": "shamse_taksim",
-    "temp_password": "Mizban@Taksim2026",
+    "tenant_username": "shamse_manager",
+    "temp_password": "Shamse#Taksim2026",
     "telegram_channel": "@shamse_istanbul",
     "telegram_status": "رسمی",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۰۹:۳۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "shamse-kocatepe",
@@ -91,13 +97,19 @@
     "revpash_potential": 52.0,
     "monthly_unlocked_revenue_try": 142000,
     "magic_token": "SHAMSE-KOC-2026",
-    "tenant_username": "shamse_kocatepe",
-    "temp_password": "Mizban@Taksim2026",
+    "tenant_username": "shamse_manager",
+    "temp_password": "Shamse#Taksim2026",
     "telegram_channel": "@shamse_istanbul",
     "telegram_status": "رسمی",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۰۹:۳۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "reyhun-taksim",
@@ -147,7 +159,13 @@
     "telegram_status": "احتمالاً مال خودشان",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۰۹:۳۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "farsi-taksim",
@@ -197,7 +215,13 @@
     "telegram_status": "تأییدنشده",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۰۹:۰۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "mojgan-taksim",
@@ -216,7 +240,7 @@
     "google_place_id": "ChIJd_67172Hhy4Ry6151_71625",
     "google_cid": "6271928491827364512",
     "lat": 41.0385,
-    "lng": 28.9850,
+    "lng": 28.985,
     "google_rating": 4.6,
     "google_review_count": 1490,
     "tripadvisor_rating": 4.4,
@@ -247,7 +271,13 @@
     "telegram_status": "پیدا نشد",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۰۹:۰۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "nayeb-taksim",
@@ -297,7 +327,13 @@
     "telegram_status": "پیدا نشد",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۰۹:۰۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "golab-taksim",
@@ -315,7 +351,7 @@
     "google_maps_url": "https://maps.google.com/?cid=4051728394817263541",
     "google_place_id": "ChIJf_45172Hhy4R04931_51423",
     "google_cid": "4051728394817263541",
-    "lat": 41.0360,
+    "lat": 41.036,
     "lng": 28.9882,
     "google_rating": 4.7,
     "google_review_count": 1340,
@@ -347,7 +383,13 @@
     "telegram_status": "پیدا نشد",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۰۹:۳۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "360-istanbul-taksim",
@@ -397,7 +439,13 @@
     "telegram_status": "پیدا نشد",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۱۰:۰۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۳۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۳۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "sutis-taksim",
@@ -447,7 +495,13 @@
     "telegram_status": "پیدا نشد",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۱۰:۰۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۳۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۱:۳۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   },
   {
     "id": "hafiz-mustafa-taksim",
@@ -497,6 +551,12 @@
     "telegram_status": "پیدا نشد",
     "outreach_status": "در انتظار",
     "next_email_reminder": "۲۹ مهر، ۱۰:۳۰",
-    "next_whatsapp_reminder": "۳۰ مهر، ۱۲:۰۰"
+    "next_whatsapp_reminder": "۳۰ مهر، ۱۲:۰۰",
+    "trial_status": "active",
+    "trial_days": 30,
+    "trial_start": "2026-10-26",
+    "trial_expires": "2026-11-25",
+    "trial_expires_fa": "۴ آذر ۱۴۰۵",
+    "license_type": "مجوز تست ۱ ماهه (30-Day Pro Trial)"
   }
 ]

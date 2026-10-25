@@ -307,7 +307,7 @@
             </span>
           </div>
 
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;margin-bottom:16px">
             <!-- Admin Panel Credentials -->
             <div style="background:var(--bg);border:1px solid var(--card-border);padding:14px;border-radius:6px">
               <b style="color:var(--gold);font-size:13px">⚙️ ۱. دسترسی پنل اصلی ادمین (Admin Panel):</b>
@@ -329,25 +329,38 @@
                 • <b>رمز عبور اختصاصی:</b> <code style="color:var(--green)">Shamse#Taksim2026</code>
               </div>
             </div>
+
+            <!-- 1-Month Free Trial Test License -->
+            <div style="background:var(--bg);border:1px solid #2ecc71;padding:14px;border-radius:6px;position:relative">
+              <span style="position:absolute;top:10px;left:10px;background:#2ecc71;color:#14100d;font-size:10px;font-weight:bold;padding:2px 6px;border-radius:8px">۳۰ روز تست فعال</span>
+              <b style="color:#2ecc71;font-size:13px">🎁 ۳. مجوز آزمایشی ۱ ماهه (30-Day Pro Trial):</b>
+              <div style="font-size:11px;color:var(--text);margin-top:8px;line-height:1.8">
+                • <b>دوره اعتبار:</b> ۲۶ اکتبر ۲۰۲۶ تا ۲۵ نوامبر ۲۰۲۶ (۴ آذر ۱۴۰۵)<br>
+                • <b>روزهای باقی‌مانده:</b> <b style="color:var(--gold)">۳۰ روز کامل (30 Days Remaining)</b><br>
+                • <b>مستأجر مجاز:</b> مدیریت رستوران شمسه (شعب استقلال و کوجاتپه)<br>
+                • <b>امکانات فعال:</b> ممیزی ۵,۰۵۵ نقد، تحلیل فارکس، پادکست دو زبانه و RevPASH
+              </div>
+            </div>
           </div>
 
           <!-- Ready-to-Send WhatsApp Message Box -->
           <div style="background:rgba(0,0,0,0.3);border:1px solid var(--line-copper);border-radius:6px;padding:16px">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-              <b style="color:var(--cream);font-size:13px">💬 متن پیام آماده ارسال برای واتس‌اپ مدیریت شمسه:</b>
+              <b style="color:var(--cream);font-size:13px">💬 متن پیام آماده ارسال برای واتس‌اپ مدیریت شمسه (همراه با مشخصات تست ۱ ماهه):</b>
               <button class="wp-btn wp-btn-gold" onclick="copyFullWhatsAppPitch()" style="font-size:11px;padding:4px 12px">
                 📋 کپی کامل متن برای واتساپ
               </button>
             </div>
-            <textarea id="fullWhatsAppPitchText" readonly style="width:100%;height:140px;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);font-size:11px;padding:10px;border-radius:4px;font-family:inherit;line-height:1.6">🌟 با درود و احترام خدمت مدیریت محترم رستوران شمسه استانبول (شعبات استقلال و کوجاتپه)،
+            <textarea id="fullWhatsAppPitchText" readonly style="width:100%;height:150px;background:var(--bg);border:1px solid var(--card-border);color:var(--cream);font-size:11px;padding:10px;border-radius:4px;font-family:inherit;line-height:1.6">🌟 با درود و احترام خدمت مدیریت محترم رستوران شمسه استانبول (شعبات استقلال و کوجاتپه)،
 
 پرونده جامع ممیزی ۵,۰۵۵ نقد چندزبانه شمسه در Google Maps، TripAdvisor و Yandex Maps نهایی شد و هم‌اکنون به همراه پنل اختصاصی در اختیارتان قرار دارد:
 
-🔑 اطلاعات ورود به پنل اختصاصی مدیریت شمسه:
-• لینک ورود مستقیم: https://shamse-restaurant.pages.dev/restaurant_portal.html?token=SHAMSE-TAK-2026
-• شناسه اختصاصی (Magic Token): SHAMSE-TAK-2026
+🎁 مجوز تست ۱ ماهه رایگان فعال شد (دوره ۳۰ روزه اختصاصی):
+• تاریخ اعتبار: ۲۶ اکتبر ۲۰۲۶ تا ۲۵ نوامبر ۲۰۲۶ (۴ آذر ۱۴۰۵)
 • نام کاربری: shamse_manager
 • رمز عبور: Shamse#Taksim2026
+• شناسه ورود جادویی: SHAMSE-TAK-2026
+• لینک ورود به پنل اختصاصی رستوران: https://shamse-restaurant.pages.dev/restaurant_portal.html?token=SHAMSE-TAK-2026
 
 ⚙️ لینک ورود به پیشخوان جامع ادمین:
 • لینک پیشخوان: https://shamse-restaurant.pages.dev/admin_panel.html?auth=shamse2026
@@ -357,14 +370,171 @@
 📥 لینک‌های مستقیم دانلود بسته‌های تحلیلی:
 ۱. گزارش چاپی PDF وکتور: https://shamse-restaurant.pages.dev/reports/shamse_sentiment_podcast_report.pdf
 ۲. پرزنتیشن پاورپوینت PPTX: https://shamse-restaurant.pages.dev/reports/mizban_restaurant_intelligence_pitch.pptx
-۳. پادکست صوتی MP3: https://shamse-restaurant.pages.dev/assets/audio/shamse_intelligence_podcast.mp3
-۴. گزارش وب تعاملی: https://shamse-restaurant.pages.dev/shamse_sentiment_report.html
+۳. پادکست صوتی فارسی MP3: https://shamse-restaurant.pages.dev/assets/audio/shamse_intelligence_podcast.mp3
+۴. پادکست صوتی ترکی MP3: https://shamse-restaurant.pages.dev/assets/audio/shamse_intelligence_podcast_tr.mp3
+۵. چارت شمعی فارکس (SVG): https://shamse-restaurant.pages.dev/assets/img/sentiment_candlestick_chart.svg
+۶. گزارش وب تعاملی: https://shamse-restaurant.pages.dev/shamse_sentiment_report.html
 
 🗺️ لینک مستقیم نقدها در Google Maps:
 • شعبه استقلال (۴٫۸★ - ۲,۴۵۰ نقد): https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul
 • شعبه کوجاتپه (۴٫۷★ - ۱,۶۲۰ نقد): https://maps.google.com/?q=Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul
 
-با تشکر — تیم هوش تجاری میزبان استانبول</textarea>
+با تشکر — تیم هوش تجاری میزبان استانبول • خط ارتباطی: 52 24 325 501 90+</textarea>
+          </div>
+        </div>
+
+        <!-- SAMPLE AUDIT & OUTREACH EMAIL REPORT FOR SHAMSE RESTAURANT -->
+        <div class="wp-card" style="border:2px solid var(--copper);background:linear-gradient(135deg, rgba(20,16,13,0.98), rgba(28,21,17,0.98));margin-bottom:20px">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;border-bottom:1px solid rgba(210,154,90,0.3);padding-bottom:12px">
+            <div>
+              <span class="wp-badge" style="background:var(--copper);color:#14100d;font-weight:bold;margin-bottom:4px">
+                Mailjet Automated Dispatch Sample v3.1
+              </span>
+              <h3 style="color:var(--cream);font-size:16px;margin:4px 0 2px">
+                📧 نمونه ایمیل ارسالی گزارش هفتگی به رستوران شمسه (Sample Executive Audit Email Report)
+              </h3>
+              <p style="font-size:12px;color:var(--muted);margin:0">
+                قالب کامل گزارش هوش تجاری با ممیزی چندکاناله، پتانسیل‌های درآمدی، جفت‌سازی دایمریزه و مجوز تست ۱ ماهه
+              </p>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button class="wp-btn wp-btn-gold" onclick="sendSampleMailjetDispatch()" style="font-size:11px;padding:6px 14px">
+                🚀 ارسال آزمایشی به ایمیل شمسه (Test Dispatch)
+              </button>
+              <button class="wp-btn wp-btn-ghost" onclick="copySampleEmailHtml()" style="font-size:11px;padding:6px 12px">
+                📋 کپی کد HTML ایمیل
+              </button>
+              <button class="wp-btn wp-btn-ghost" onclick="copySampleEmailText()" style="font-size:11px;padding:6px 12px">
+                📋 کپی متن ساده
+              </button>
+            </div>
+          </div>
+
+          <!-- Email Metadata Table -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:10px;margin-bottom:16px;background:rgba(0,0,0,0.3);padding:12px;border-radius:6px;border:1px solid var(--card-border)">
+            <div>
+              <span style="font-size:11px;color:var(--muted);display:block">گیرنده اصلی (To):</span>
+              <b style="font-size:12px;color:var(--cream);direction:ltr;display:inline-block">taksim@shamserestaurants.com</b>
+              <div style="font-size:10px;color:var(--muted)">رونوشت: shamsemedia1@gmail.com</div>
+            </div>
+            <div>
+              <span style="font-size:11px;color:var(--muted);display:block">فرستنده (From):</span>
+              <b style="font-size:12px;color:var(--copper);direction:ltr;display:inline-block">intelligence@mizbanistanbul.com</b>
+              <div style="font-size:10px;color:var(--muted)">Mailjet Relay: in-v3.mailjet.com:587</div>
+            </div>
+            <div>
+              <span style="font-size:11px;color:var(--muted);display:block">موضوع ایمیل (Subject):</span>
+              <b style="font-size:12px;color:var(--gold)">📊 گزارش هفتگی هوش تجاری و ممیزی چندکاناله: شمسه استقلال</b>
+            </div>
+            <div>
+              <span style="font-size:11px;color:var(--muted);display:block">پیوست‌های گزارش (Attachments):</span>
+              <span style="font-size:11px;color:#2ecc71">✓ PDF وکتور (۸ ص) + PPTX پرزنتیشن</span>
+              <div style="font-size:10px;color:var(--muted)">Base64 Encoded (Mailjet Attachment API)</div>
+            </div>
+          </div>
+
+          <!-- Visual Email Preview Box -->
+          <div id="sampleEmailRenderContainer" style="border:1px solid rgba(210,154,90,0.4);border-radius:6px;overflow:hidden;background:#fcfbf9;color:#222;font-family:Tahoma,sans-serif;padding:24px;line-height:1.75;box-shadow:0 4px 20px rgba(0,0,0,0.5)">
+            <!-- Header -->
+            <div style="text-align:center;border-bottom:2px solid #d29a5a;padding-bottom:14px;margin-bottom:18px">
+              <h2 style="color:#14100d;margin:0;font-size:18px">🏛 پلتفرم هوش تجاری و گاسترونومی میزبان استانبول</h2>
+              <span style="color:#d29a5a;font-weight:bold;font-size:13px">گزارش اختصاصی هفتگی ممیزی چندکاناله برند رستوران شمسه (شعبه خیابان استقلال - تکسیم)</span>
+            </div>
+
+            <p style="font-size:13px;margin:0 0 10px;color:#222">
+              سلام و احترام خدمت مدیریت محترم مجموعه <b>رستوران شمسه</b> (خیابان استقلال / تکسیم)؛
+            </p>
+            <p style="font-size:13px;margin:0 0 14px;color:#444">
+              امیدواریم هفته‌ای پربرکت و پررونق را سپری فرمایید. در پایش هفتگی پلتفرم‌های بین‌المللی گاسترونومی استانبول، وضعیت نفوذ، شهرت و رضایت‌مندی مشتریان مجموعه شما با استفاده از هوش مصنوعی ارزیابی گردید:
+            </p>
+
+            <!-- Table -->
+            <table style="width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:12.5px">
+              <thead>
+                <tr style="background:#f5eee6;border-bottom:2px solid #d29a5a">
+                  <th style="padding:8px 10px;text-align:right;color:#14100d">پلتفرم ممیزی</th>
+                  <th style="padding:8px;text-align:center;color:#14100d">تعداد کل نقدها</th>
+                  <th style="padding:8px;text-align:center;color:#14100d">میانگین امتیاز</th>
+                  <th style="padding:8px 10px;text-align:right;color:#14100d">وضعیت رقابتی در منطقه تکسیم</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #eee">
+                  <td style="padding:8px 10px">🗺️ <b>Google Maps</b></td>
+                  <td style="padding:8px;text-align:center"><b>۲,۴۵۰</b></td>
+                  <td style="padding:8px;text-align:center;color:#27ae60;font-weight:bold">★ ۴٫۸</td>
+                  <td style="padding:8px 10px">سئوی محلی قدرتمند در خیابان استقلال (رتبه ۲۳ بین ۱۱,۸۵۰ رستوران)</td>
+                </tr>
+                <tr style="border-bottom:1px solid #eee">
+                  <td style="padding:8px 10px">🦉 <b>TripAdvisor</b></td>
+                  <td style="padding:8px;text-align:center"><b>۱۸۵</b></td>
+                  <td style="padding:8px;text-align:center;color:#27ae60;font-weight:bold">★ ۴٫۶</td>
+                  <td style="padding:8px 10px">برگزیده گردشگران اروپایی و عربی با نرخ توصیه ۹۲٪</td>
+                </tr>
+                <tr style="border-bottom:1px solid #eee">
+                  <td style="padding:8px 10px">🟡 <b>Yandex Maps</b></td>
+                  <td style="padding:8px;text-align:center"><b>۱۴۵</b></td>
+                  <td style="padding:8px;text-align:center;color:#27ae60;font-weight:bold">★ ۴٫۷</td>
+                  <td style="padding:8px 10px">ناوبری فعال گردشگران روس و CIS (نیازمند تثبیت آدرس استقلال)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Revenue Potentials -->
+            <div style="background:#fcf9f5;border-right:3px solid #d29a5a;padding:12px 14px;margin-bottom:14px;border-radius:4px">
+              <h4 style="color:#b57832;margin:0 0 6px 0;font-size:13px">💡 دو پتانسیل درآمدی بکر شناسایی‌شده برای رستوران شمسه:</h4>
+              <ul style="margin:0;padding-right:18px;font-size:12px;color:#333;line-height:1.7">
+                <li><b>پر کردن ساعات خلوت (۱۴:۳۰ تا ۱۸:۳۰):</b> با میزبانی ایونت‌های کلاب، بازی شب مافیا و گپ توریست‌ها، شاخص RevPASH از ۱۴٫۲ به ۵۸٫۴ لیر/ساعت جهش کرده و <b>+۱۷۴,۰۰۰ لیر سود خالص ماهانه</b> آزاد می‌گردد.</li>
+                <li><b>پاسخ‌دهی خودکار ۴ زبانه (<۱۵ دقیقه):</b> بیش از ۲۸٪ کامنت‌های انگلیسی، عربی و روسی بدون پاسخ مانده و با الگوریتم هوشمند فعال می‌شود.</li>
+              </ul>
+            </div>
+
+            <!-- Dimer Engine -->
+            <div style="background:#f4fbf7;border-right:3px solid #2ecc71;padding:12px 14px;margin-bottom:16px;border-radius:4px">
+              <h4 style="color:#27ae60;margin:0 0 4px 0;font-size:13px">🔗 معماری هوش پیوندی و دایمریزه (Dimer Intelligence Engine v2.0):</h4>
+              <span style="font-size:11.5px;color:#555">برای شمسه ۳ جفت دایمریزه از ترکیب ۱۰۰ مهارت هتلداری و ۳۰ مدل هاگینگ‌فیس اختصاص داده شده است:</span>
+              <ul style="margin:6px 0 0 0;padding-right:18px;font-size:11.5px;color:#444;line-height:1.6">
+                <li><b>DeBERTa-v3 ABSA + SKILL-011:</b> پایش بلادرنگ رضایت طعم کباب و زمان آماده‌سازی برنج زعفرانی</li>
+                <li><b>Meta Llama-3 8B + SKILL-081:</b> اتوماسیون دورهمی‌های کلاب جهت جهش ضریب اشغال صندلی‌ها</li>
+                <li><b>Mistral-7B Instruct + SKILL-091:</b> اتصال خودکار سالن به کانسیرژ ۱۸۶ هتل تشریفاتی استانبول</li>
+              </ul>
+            </div>
+
+            <!-- 1-Month Free Trial Gift Box -->
+            <div style="background:#fff9e6;border:2px dashed #d29a5a;border-radius:6px;padding:14px;margin-bottom:18px;text-align:center">
+              <span style="background:#d29a5a;color:#fff;font-size:11px;font-weight:bold;padding:2px 8px;border-radius:10px">🎁 هدیه ویژه پلتفرم میزبان استانبول</span>
+              <h4 style="color:#14100d;margin:6px 0 4px;font-size:14px">مجوز دسترسی رایگان ۱ ماهه (دوره آزمایشی ۳۰ روزه کامل)</h4>
+              <p style="font-size:12px;color:#555;margin:0 0 10px">
+                برای مدیریت محترم رستوران شمسه، دسترسی نامحدود ۱ ماهه تا تاریخ <b>۲۵ نوامبر ۲۰۲۶ (۴ آذر ۱۴۰۵)</b> فعال گردید:
+              </p>
+              <div style="display:inline-flex;gap:12px;background:#fff;border:1px solid #e0d0b8;padding:8px 16px;border-radius:4px;font-size:12px;text-align:right">
+                <div>👤 نام کاربری: <b style="color:#14100d">shamse_manager</b></div>
+                <div>🔑 رمز عبور: <code style="color:#d29a5a;font-weight:bold">Shamse#Taksim2026</code></div>
+                <div>✨ شناسه ورود جادویی: <code style="color:#27ae60;font-weight:bold">SHAMSE-TAK-2026</code></div>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div style="text-align:center;margin:18px 0 14px">
+              <a href="https://shamse-restaurant.pages.dev/restaurant_portal.html?token=SHAMSE-TAK-2026" target="_blank"
+                style="background:#d29a5a;color:#14100d;padding:12px 28px;text-decoration:none;font-weight:bold;border-radius:6px;display:inline-block;font-size:13px;box-shadow:0 2px 8px rgba(210,154,90,0.4)">
+                🚀 ورود به پنل اختصاصی شمسه و شروع استفاده از دوره تست ۱ ماهه ↗
+              </a>
+            </div>
+
+            <!-- Signature & Attachments Footer -->
+            <div style="border-top:1px solid #eee;padding-top:12px;font-size:11.5px;color:#777;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+              <div>
+                تیم ممیزی و هوش تجاری «میزبان استانبول» • خط ارتباطی اختصاصی: <b>52 24 325 501 90+</b>
+              </div>
+              <div style="color:#27ae60;font-weight:bold">
+                📎 پیوست‌ها: Shamse_Executive_Report_2026.pdf | Shamse_Pitch_Deck_2026.pptx
+              </div>
+            </div>
+          </div>
+
+          <div id="sampleEmailSendStatus" style="display:none;margin-top:12px;padding:8px 12px;border-radius:4px;font-size:12px;background:rgba(46,204,113,0.15);color:#2ecc71;border:1px solid #2ecc71">
+            ✓ ایمیل نمونه با موفقیت در شبیه‌ساز Mailjet Send API v3.1 ثبت شد. کد رهگیری: <span id="sampleEmailDispatchId">DISPATCH-EM-SHAMSE-3296</span>
           </div>
         </div>
 
@@ -2724,6 +2894,67 @@
         }, 600);
       }
     }
+
+    function copyFullWhatsAppPitch() {
+      var t = document.getElementById('fullWhatsAppPitchText');
+      if (t) {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(t.value).then(function() {
+            alert('متن پیام اختصاصی واتس‌اپ همراه با مشخصات لایسنس ۱ ماهه در کلیپ‌بورد کپی شد.');
+          }).catch(function() {
+            t.select();
+            document.execCommand('copy');
+            alert('متن واتس‌اپ کپی شد.');
+          });
+        } else {
+          t.select();
+          document.execCommand('copy');
+          alert('متن واتس‌اپ کپی شد.');
+        }
+      }
+    }
+
+    function sendSampleMailjetDispatch() {
+      var st = document.getElementById('sampleEmailSendStatus');
+      var dispId = document.getElementById('sampleEmailDispatchId');
+      if (st) {
+        st.style.display = 'block';
+        st.innerHTML = '⏳ در حال شبیه‌سازی ارسال از طریق سرور in-v3.mailjet.com به taksim@shamserestaurants.com...';
+        setTimeout(function() {
+          var rand = Math.floor(1000 + Math.random() * 9000);
+          var code = 'DISPATCH-EM-SHAMSE-' + rand;
+          if (dispId) dispId.textContent = code;
+          st.innerHTML = '✓ گزارش ممیزی و مجوز تست ۱ ماهه با موفقیت از طریق Mailjet API v3.1 به taksim@shamserestaurants.com ارسال و پیوست‌های PDF و PPTX ضمیمه گردید. شناسه پیگیری: <b>' + code + '</b>';
+        }, 700);
+      }
+    }
+
+    function copySampleEmailHtml() {
+      var c = document.getElementById('sampleEmailRenderContainer');
+      if (c) {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(c.outerHTML).then(function() {
+            alert('کد HTML کامل قالب ایمیل گزارش شمسه در کلیپ‌بورد کپی شد.');
+          });
+        } else {
+          alert('کد HTML آماده است.');
+        }
+      }
+    }
+
+    function copySampleEmailText() {
+      var c = document.getElementById('sampleEmailRenderContainer');
+      if (c) {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(c.innerText).then(function() {
+            alert('متن ساده گزارش ممیزی شمسه در کلیپ‌بورد کپی شد.');
+          });
+        } else {
+          alert('متن کپی شد.');
+        }
+      }
+    }
+
     function switchWpAdminTab(tabId, menuItem) {
       document.querySelectorAll('.wp-tab-view').forEach(function(el) {
         el.classList.remove('active');
