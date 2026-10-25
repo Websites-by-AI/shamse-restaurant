@@ -1649,6 +1649,7 @@ HTML_CONTENT = f"""<!DOCTYPE html>
   <div style="background:#faf5ee;border:1px solid #c48a48;border-radius:4px;padding:6px 10px;font-size:7.5pt;margin-bottom:6px">
     <b>🎧 محتوای فایل صوتی ضبط‌شده و ویدیوی MP4 چندرسانه‌ای:</b><br>
     • <b>فایل صوتی پادکست (MP3):</b> در مسیر <code>assets/audio/shamse_intelligence_podcast.mp3</code> (مدت: ۱ دقیقه و ۵ ثانیه)<br>
+    • <b>فایل صوتی پادکست ترکی استانبولی (Türkçe MP3):</b> در مسیر <code>assets/audio/shamse_intelligence_podcast_tr.mp3</code> (مدت: ۱ دقیقه و ۲۰ ثانیه - خلاصه هیئت مدیره به ترکی)<br>
     • <b>ویدیوی مستند (Full HD MP4):</b> در مسیر <a href="https://shamse-restaurant.pages.dev/assets/video/shamse_intelligence_video.mp4">assets/video/shamse_intelligence_video.mp4</a> و نسخه ریشه <a href="https://shamse-restaurant.pages.dev/shamse_intelligence_video.mp4">shamse_intelligence_video.mp4</a> با ترکیب اسلایدهای تصویری کامنت‌ها، نقد خطاها و صدای همگام‌سازی‌شده.<br>
     • <b>وب‌ویو تعاملی پلیر:</b> دسترسی برخط با پلیرهای صوتی و تصویری در: <a href="https://shamse-restaurant.pages.dev/shamse_sentiment_report.html">https://shamse-restaurant.pages.dev/shamse_sentiment_report.html</a>
   </div>

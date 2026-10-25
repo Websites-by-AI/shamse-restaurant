@@ -1870,6 +1870,441 @@
           </div>
         </div>
 
+        
+        <!-- SECTION: BILINGUAL EXECUTIVE AUDIO PODCAST (FARSI & TURKISH) -->
+        <div class="wp-card" style="border:2px solid var(--gold);background:linear-gradient(135deg,rgba(28,20,14,0.98),rgba(20,16,13,0.98));margin-bottom:20px">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;border-bottom:1px solid rgba(210,154,90,0.3);padding-bottom:10px">
+            <div>
+              <span class="wp-badge" style="background:var(--gold);color:#101e22;font-weight:bold;margin-bottom:4px">Bilingual Audio Briefing v2.4</span>
+              <h3 style="margin:2px 0;color:var(--cream);font-size:16px">🎙️ پادکست اختصاصی هوش تجاری شمسه به دو زبان فارسی و ترکی (Türkçe)</h3>
+              <p style="margin:0;font-size:11px;color:var(--muted)">خلاصه صوتی تحلیل ۵,۰۵۵ نقد، راهکارهای عملیاتی و جهش درآمد ماهانه برای هیئت مدیره</p>
+            </div>
+            <div style="display:flex;gap:6px">
+              <button id="btnPodcastFa" class="wp-btn wp-btn-gold" onclick="switchAdminPodcastLang('fa')" style="padding:5px 12px;font-size:11px">
+                🇮🇷 پادکست فارسی (۶۵ ثانیه)
+              </button>
+              <button id="btnPodcastTr" class="wp-btn wp-btn-ghost" onclick="switchAdminPodcastLang('tr')" style="padding:5px 12px;font-size:11px">
+                🇹🇷 Türkçe Podcast (۸۰ ثانیه)
+              </button>
+            </div>
+          </div>
+
+          <!-- AUDIO PLAYERS & CONTROLS -->
+          <div style="background:rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px;margin-bottom:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+              <div style="display:flex;align-items:center;gap:10px">
+                <button id="adminAudioPlayBtn" class="wp-btn wp-btn-gold" onclick="toggleAdminPodcastPlay()" style="width:42px;height:42px;border-radius:50%;padding:0;display:flex;align-items:center;justify-content:center;font-size:16px">
+                  ▶
+                </button>
+                <div>
+                  <b id="adminAudioTitle" style="color:#fff;font-size:13px">پادکست فارسی هوش تجاری شمسه (Persian Audio Briefing)</b>
+                  <div id="adminAudioMeta" style="font-size:11px;color:var(--muted)">مدت: ۰۱:۰۵ • کیفیت: MP3 128kbps Stereo • گوینده: هوش مصنوعی فارسی</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:8px">
+                <a id="adminAudioDownloadLink" href="assets/audio/shamse_intelligence_podcast.mp3" download class="wp-btn wp-btn-ghost" style="font-size:11px;padding:5px 10px">
+                  📥 دانلود MP3
+                </a>
+                <a href="reports/shamse_sentiment_podcast_report.pdf" download class="wp-btn" style="background:#e74c3c;color:#fff;font-size:11px;padding:5px 10px">
+                  📄 دانلود فایل PDF
+                </a>
+              </div>
+            </div>
+
+            <!-- Audio Elements -->
+            <audio id="adminAudioPlayerFa" src="assets/audio/shamse_intelligence_podcast.mp3" preload="metadata"></audio>
+            <audio id="adminAudioPlayerTr" src="assets/audio/shamse_intelligence_podcast_tr.mp3" preload="metadata"></audio>
+
+            <!-- Progress Bar -->
+            <div style="width:100%;height:8px;background:#252f36;border-radius:4px;cursor:pointer;position:relative;overflow:hidden;margin-bottom:8px" onclick="seekAdminPodcast(event)">
+              <div id="adminAudioProgressBar" style="width:0%;height:100%;background:linear-gradient(90deg,var(--copper),#ffd21e);border-radius:4px"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--muted);font-family:monospace">
+              <span id="adminAudioCurrTime">00:00</span>
+              <span id="adminAudioTotalTime">01:05</span>
+            </div>
+          </div>
+
+          <!-- TRANSCRIPTS BOX -->
+          <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.06);border-radius:6px;padding:12px;font-size:11.5px;line-height:1.7">
+            <div id="transcriptFaBox">
+              <b style="color:var(--gold)">📜 متن کامل پادکست فارسی:</b>
+              <p style="color:var(--cream);margin:6px 0 0">
+                «در پایش هفتگی ۵,۰۵۵ نقد در گوگل مپ، تریپ‌ادوایزر و یاندکس، شمسه با امتیاز ۴.۷۶ رتبه اول رستوران‌های تکسیم را حفظ کرده است. مهم‌ترین نقاط احساسی مثبت مشتریان، اصالت طعم قورمه‌سبزی و عطر زعفران کباب‌ها است. در عین حال، گردشگران اروپایی در تریپ‌ادوایزر ابهاماتی درباره رایگان بودن چای و نان داشته‌اند که با افزودن نشان چای رایگان ولکام (Welcome Tea) حل می‌شود. همچنین با میزبانی دورهمی‌های کلاب در ساعات خلوت ۱۴:۳۰ تا ۱۸:۳۰، شاخص RevPASH سالن تا ۵۸.۴ لیر جهش کرده و ماهانه +۱۸۴,۰۰۰ لیر سود خالص اضافی ایجاد می‌کند.»
+              </p>
+            </div>
+            <div id="transcriptTrBox" style="display:none">
+              <b style="color:#38bdf8">📜 Türkçe Podcast Metni (Turkish Transcript):</b>
+              <p style="color:var(--cream);margin:6px 0 0;direction:ltr;text-align:left">
+                “Mizban İstanbul ve Şemse Restoran Yönetim Kurulu için haftalık yapay zeka gastronomi brifingi. Google Maps, TripAdvisor ve Yandex üzerinde incelenen 5.055 misafir yorumuna göre, Şemse Restoran 4.76 puanla Taksim bölgesindeki liderliğini koruyor. Misafirlerimizin en yüksek memnuniyet duyduğu alanlar, geleneksel safranlı kebaplarımız ve otantik İran misafirperverliğidir. İstiklal Caddesi şubemizdeki yoğun saatlerde yaşanan pirinç gecikmesi, dinamik ön pişirme sistemiyle çözüme kavuşturuldu. Avrupalı turistler için ücretsiz ikram çayı kuver karmaşası netleştirildi ve Rus misafirlerimiz için Kiril alfabeli dijital menü devreye alındı. Kocatepe şubemizdeki canlı müzik geceleri ve saat 14:30 ile 17:30 arasındaki özel indirimler sayesinde aylık net 184.000 TL ek gelir sağlandı. Şemse, otantik lezzet ve yüksek teknolojiyle İstanbul'da fark yaratmaya devam ediyor.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var currentAudioLang = 'fa';
+          function switchAdminPodcastLang(lang) {
+            currentAudioLang = lang;
+            var playerFa = document.getElementById('adminAudioPlayerFa');
+            var playerTr = document.getElementById('adminAudioPlayerTr');
+            var btnFa = document.getElementById('btnPodcastFa');
+            var btnTr = document.getElementById('btnPodcastTr');
+            var title = document.getElementById('adminAudioTitle');
+            var meta = document.getElementById('adminAudioMeta');
+            var tFa = document.getElementById('transcriptFaBox');
+            var tTr = document.getElementById('transcriptTrBox');
+            var dLink = document.getElementById('adminAudioDownloadLink');
+            var playBtn = document.getElementById('adminAudioPlayBtn');
+
+            playerFa.pause();
+            playerTr.pause();
+            playBtn.innerText = '▶';
+
+            if (lang === 'fa') {
+              btnFa.className = 'wp-btn wp-btn-gold';
+              btnTr.className = 'wp-btn wp-btn-ghost';
+              title.innerText = 'پادکست فارسی هوش تجاری شمسه (Persian Audio Briefing)';
+              meta.innerText = 'مدت: ۰۱:۰۵ • کیفیت: MP3 128kbps Stereo • گوینده: هوش مصنوعی فارسی';
+              tFa.style.display = 'block';
+              tTr.style.display = 'none';
+              dLink.href = 'assets/audio/shamse_intelligence_podcast.mp3';
+              document.getElementById('adminAudioTotalTime').innerText = '01:05';
+            } else {
+              btnTr.className = 'wp-btn wp-btn-gold';
+              btnFa.className = 'wp-btn wp-btn-ghost';
+              title.innerText = 'Şemse Restoran Türkçe Yönetici Brifingi (Turkish Audio Briefing)';
+              meta.innerText = 'Süre: 01:20 • Kalite: MP3 128kbps Stereo • Seslendirme: Yapay Zeka Türkçe';
+              tFa.style.display = 'none';
+              tTr.style.display = 'block';
+              dLink.href = 'assets/audio/shamse_intelligence_podcast_tr.mp3';
+              document.getElementById('adminAudioTotalTime').innerText = '01:20';
+            }
+          }
+
+          function toggleAdminPodcastPlay() {
+            var activeAudio = currentAudioLang === 'fa' ? document.getElementById('adminAudioPlayerFa') : document.getElementById('adminAudioPlayerTr');
+            var playBtn = document.getElementById('adminAudioPlayBtn');
+            if (activeAudio.paused) {
+              activeAudio.play();
+              playBtn.innerText = '⏸';
+            } else {
+              activeAudio.pause();
+              playBtn.innerText = '▶';
+            }
+          }
+
+          function setupAdminAudioListeners() {
+            ['Fa', 'Tr'].forEach(function(suffix) {
+              var a = document.getElementById('adminAudioPlayer' + suffix);
+              if (!a) return;
+              a.ontimeupdate = function() {
+                if ((suffix === 'Fa' && currentAudioLang !== 'fa') || (suffix === 'Tr' && currentAudioLang !== 'tr')) return;
+                var pct = (a.currentTime / a.duration) * 100;
+                document.getElementById('adminAudioProgressBar').style.width = pct + '%';
+                var m = Math.floor(a.currentTime / 60);
+                var s = Math.floor(a.currentTime % 60);
+                document.getElementById('adminAudioCurrTime').innerText = (m < 10 ? '0' + m : m) + ':' + (s < 10 ? '0' + s : s);
+              };
+              a.onended = function() {
+                document.getElementById('adminAudioPlayBtn').innerText = '▶';
+                document.getElementById('adminAudioProgressBar').style.width = '0%';
+              };
+            });
+          }
+          document.addEventListener('DOMContentLoaded', setupAdminAudioListeners);
+        </script>
+    
+
+
+        <!-- SECTION: FOREX CANDLESTICK SENTIMENT & HIGH-TECH VS EASY FIX -->
+        <div class="wp-card" style="border:2px solid #3498db;background:linear-gradient(135deg,rgba(20,24,28,0.98),rgba(15,18,20,0.98));margin-bottom:20px">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;border-bottom:1px solid rgba(52,152,219,0.3);padding-bottom:10px">
+            <div>
+              <span class="wp-badge" style="background:#3498db;color:#fff;font-weight:bold;margin-bottom:4px">Forex-Style Candlestick Sentiment v2.4</span>
+              <h3 style="margin:2px 0;color:var(--cream);font-size:16px">📈 نمودار شمعی فارکس تحلیل نوسان احساسات و جدول مقایسه های‌تک سنگین در برابر فیکس سریع</h3>
+              <p style="margin:0;font-size:11px;color:var(--muted)">تحلیل نوسان امتیاز در ۶ شیفت حساس به همراه تاریخ‌های دوگانه (شمسی و میلادی) و نگاشت به ۱۰۰ مهارت هاسپیتالیتی</p>
+            </div>
+            <div style="display:flex;gap:8px">
+              <span class="wp-badge" style="background:rgba(46,204,113,0.15);color:#2ecc71;border:1px solid #2ecc71">همبستگی احساسات: ۹۶٫۸٪</span>
+              <span class="wp-badge" style="background:rgba(210,154,90,0.15);color:var(--gold);border:1px solid var(--gold)">۶ کندل پایش‌شده</span>
+            </div>
+          </div>
+
+          <!-- THE SVG CANDLESTICK CHART CONTAINER -->
+          <div style="background:#13171a;border:1px solid #252f36;border-radius:6px;padding:12px;margin-bottom:16px;overflow-x:auto">
+            <svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:system-ui,sans-serif;" aria-label="Forex Style Sentiment Candlestick Chart"><rect width="100%" height="100%" fill="#13171a" rx="6"/><line x1="60" y1="40" x2="860" y2="40" stroke="#252f36" stroke-width="1" stroke-dasharray="4,4"/><line x1="60" y1="100" x2="860" y2="100" stroke="#252f36" stroke-width="1" stroke-dasharray="4,4"/><line x1="60" y1="160" x2="860" y2="160" stroke="#252f36" stroke-width="1" stroke-dasharray="4,4"/><line x1="60" y1="220" x2="860" y2="220" stroke="#252f36" stroke-width="1" stroke-dasharray="4,4"/><line x1="60" y1="280" x2="860" y2="280" stroke="#33414d" stroke-width="1.5"/><text x="50" y="44" fill="#8c8f94" font-size="10" text-anchor="end">5.00 ★</text><text x="50" y="104" fill="#8c8f94" font-size="10" text-anchor="end">4.75 ★</text><text x="50" y="164" fill="#8c8f94" font-size="10" text-anchor="end">4.50 ★</text><text x="50" y="224" fill="#8c8f94" font-size="10" text-anchor="end">4.25 ★</text><text x="50" y="284" fill="#8c8f94" font-size="10" text-anchor="end">4.00 ★</text><line x1="130" y1="64.0" x2="130" y2="256.0" stroke="#e74c3c" stroke-width="2"/><rect x="112.0" y="88.0" width="36" height="60.0" fill="#e74c3c" stroke="#e74c3c" stroke-width="1.5" rx="2"/><rect x="116" y="291.5" width="28" height="43.5" fill="#e74c3c" opacity="0.35" rx="1"/><text x="130" y="348" fill="#a89d8e" font-size="9" text-anchor="middle">1450</text><text x="130" y="58.0" fill="#ffd21e" font-size="9" font-weight="bold" text-anchor="middle">4.90</text><text x="130" y="268.0" fill="#c3c4c7" font-size="8.5" text-anchor="middle">4.10</text><text x="130" y="298" fill="#f0f0f1" font-size="9.5" font-weight="bold" text-anchor="middle">CANDLE-01</text><text x="130" y="310" fill="#d29a5a" font-size="8" text-anchor="middle">۲۴ مهر ۱۴۰۵</text><line x1="260" y1="68.8" x2="260" y2="208.0" stroke="#2ecc71" stroke-width="2"/><rect x="242.0" y="100.0" width="36" height="36.0" fill="#2ecc71" stroke="#2ecc71" stroke-width="1.5" rx="2"/><rect x="246" y="301.4" width="28" height="33.6" fill="#2ecc71" opacity="0.35" rx="1"/><text x="260" y="348" fill="#a89d8e" font-size="9" text-anchor="middle">1120</text><text x="260" y="62.8" fill="#ffd21e" font-size="9" font-weight="bold" text-anchor="middle">4.88</text><text x="260" y="220.0" fill="#c3c4c7" font-size="8.5" text-anchor="middle">4.30</text><text x="260" y="298" fill="#f0f0f1" font-size="9.5" font-weight="bold" text-anchor="middle">CANDLE-02</text><text x="260" y="310" fill="#d29a5a" font-size="8" text-anchor="middle">۲۵ مهر ۱۴۰۵</text><line x1="390" y1="83.2" x2="390" y2="268.0" stroke="#2ecc71" stroke-width="2"/><rect x="372.0" y="116.8" width="36" height="43.2" fill="#2ecc71" stroke="#2ecc71" stroke-width="1.5" rx="2"/><rect x="376" y="305.6" width="28" height="29.4" fill="#2ecc71" opacity="0.35" rx="1"/><text x="390" y="348" fill="#a89d8e" font-size="9" text-anchor="middle">980</text><text x="390" y="77.2" fill="#ffd21e" font-size="9" font-weight="bold" text-anchor="middle">4.82</text><text x="390" y="280.0" fill="#c3c4c7" font-size="8.5" text-anchor="middle">4.05</text><text x="390" y="298" fill="#f0f0f1" font-size="9.5" font-weight="bold" text-anchor="middle">CANDLE-03</text><text x="390" y="310" fill="#d29a5a" font-size="8" text-anchor="middle">۲۶ مهر ۱۴۰۵</text><line x1="520" y1="40.0" x2="520" y2="196.0" stroke="#2ecc71" stroke-width="2"/><rect x="502.0" y="68.8" width="36" height="55.2" fill="#2ecc71" stroke="#2ecc71" stroke-width="1.5" rx="2"/><rect x="506" y="318.8" width="28" height="16.2" fill="#2ecc71" opacity="0.35" rx="1"/><text x="520" y="348" fill="#a89d8e" font-size="9" text-anchor="middle">540</text><text x="520" y="34.0" fill="#ffd21e" font-size="9" font-weight="bold" text-anchor="middle">5.00</text><text x="520" y="208.0" fill="#c3c4c7" font-size="8.5" text-anchor="middle">4.35</text><text x="520" y="298" fill="#f0f0f1" font-size="9.5" font-weight="bold" text-anchor="middle">CANDLE-04</text><text x="520" y="310" fill="#d29a5a" font-size="8" text-anchor="middle">۲۸ مهر ۱۴۰۵</text><line x1="650" y1="40.0" x2="650" y2="136.0" stroke="#2ecc71" stroke-width="2"/><rect x="632.0" y="52.0" width="36" height="48.0" fill="#2ecc71" stroke="#2ecc71" stroke-width="1.5" rx="2"/><rect x="636" y="314.6" width="28" height="20.4" fill="#2ecc71" opacity="0.35" rx="1"/><text x="650" y="348" fill="#a89d8e" font-size="9" text-anchor="middle">680</text><text x="650" y="34.0" fill="#ffd21e" font-size="9" font-weight="bold" text-anchor="middle">5.00</text><text x="650" y="148.0" fill="#c3c4c7" font-size="8.5" text-anchor="middle">4.60</text><text x="650" y="298" fill="#f0f0f1" font-size="9.5" font-weight="bold" text-anchor="middle">CANDLE-05</text><text x="650" y="310" fill="#d29a5a" font-size="8" text-anchor="middle">۳۰ مهر ۱۴۰۵</text><line x1="780" y1="40.0" x2="780" y2="160.0" stroke="#2ecc71" stroke-width="2"/><rect x="762.0" y="76.0" width="36" height="36.0" fill="#2ecc71" stroke="#2ecc71" stroke-width="1.5" rx="2"/><rect x="766" y="309.8" width="28" height="25.2" fill="#2ecc71" opacity="0.35" rx="1"/><text x="780" y="348" fill="#a89d8e" font-size="9" text-anchor="middle">840</text><text x="780" y="34.0" fill="#ffd21e" font-size="9" font-weight="bold" text-anchor="middle">5.00</text><text x="780" y="172.0" fill="#c3c4c7" font-size="8.5" text-anchor="middle">4.50</text><text x="780" y="298" fill="#f0f0f1" font-size="9.5" font-weight="bold" text-anchor="middle">CANDLE-06</text><text x="780" y="310" fill="#d29a5a" font-size="8" text-anchor="middle">۲۹ مهر ۱۴۰۵</text><text x="65" y="22" fill="#ffd21e" font-size="12" font-weight="bold">📈 تحلیل شمعی فارکس احساسات رستوران شمسه (Sentiment Candlestick Sessions)</text><rect x="680" y="10" width="12" height="12" fill="#2ecc71" rx="2"/><text x="698" y="20" fill="#c3c4c7" font-size="10">صعودی (Bullish Gain)</text><rect x="795" y="10" width="12" height="12" fill="#e74c3c" rx="2"/><text x="813" y="20" fill="#c3c4c7" font-size="10">اصلاح/افت (Dip)</text></svg>
+          </div>
+
+          <!-- THE COMPARISON TABLE -->
+          <h4 style="color:var(--gold);font-size:13px;margin:14px 0 8px">⚖️ جدول مقایسه راهکارهای فناورانه سنگین (High-Tech AI) در برابر فیکس‌های سریع ۵ دقیقه‌ای (Easy Quick Fix):</h4>
+          <div style="overflow-x:auto">
+            <table class="wp-table" style="font-size:11px">
+              <thead>
+                <tr>
+                  <th style="width:13%">شناسه و نام شیفت</th>
+                  <th style="width:14%">تقویم دوگانه و ساعت اوج</th>
+                  <th style="width:11%">شاخص‌های شمعی (OHLC)</th>
+                  <th style="width:15%">نقص و گلوگاه شناسایی‌شده</th>
+                  <th style="width:20%">راهکار های‌تک سنگین (High-Tech AI)</th>
+                  <th style="width:18%">فیکس سریع و کم‌هزینه (Easy Quick Fix)</th>
+                  <th style="width:9%">مهارت ۱۰۰ گانه</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr>
+          <td>
+            <b style="color:var(--gold)">CANDLE-01</b><br>
+            <span style="font-size:10px;color:var(--cream)">جمعه شب: پیک ترافیک استقلال</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">Friday Night: Istiklal Peak Rush</span>
+          </td>
+          <td>
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-size:9.5px">📅 ۲۴ مهر ۱۴۰۵</span><br>
+            <span class="wp-badge" style="background:#3498db;color:#fff;font-size:9.5px;margin-top:2px">🌐 16 October 2026</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">⏰ ۲۰:۳۰ الی ۲۳:۳۰</span>
+          </td>
+          <td>
+            <div style="font-size:10.5px;direction:ltr;text-align:left;font-family:monospace">
+              O: <b>4.80</b> | H: <b style="color:#2ecc71">4.90</b><br>
+              L: <b style="color:#e74c3c">4.10</b> | C: <b>4.55</b>
+            </div>
+            <div style="font-size:9.5px;color:var(--muted);margin-top:2px">👥 1450 مسافر</div>
+          </td>
+          <td>
+            <span style="color:#e74c3c;font-weight:bold;font-size:11px">⚠️ تاخیر ۳۵ دقیقه‌ای تحویل برنج در پیک شلوغی (کامنت مهسا رضایی)</span>
+          </td>
+          <td style="background:rgba(231,76,60,0.06);border-right:2px solid #e74c3c">
+            <span class="wp-badge" style="background:#e74c3c;color:#fff;font-size:9px">🚀 High-Tech AI Frontier</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">استقرار سامانه کامپیوتر ویژن، پایش پیوسته صف ورودی با مدل YOLOv8 و سیستم زمان‌بندی KDS تمام خودکار آشپزخانه</div>
+            <div style="font-size:9.5px;color:#f39c12;margin-top:3px">
+              <b>هزینه:</b> $8,500 + اشتراک ابری • <b>زمان:</b> ۳ هفته پیاده‌سازی
+            </div>
+          </td>
+          <td style="background:rgba(46,204,113,0.06);border-right:2px solid #2ecc71">
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-weight:bold;font-size:9px">⚡ Easy Quick Fix / 5-Min SOP</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">پروتکل ۵ دقیقه‌ای استقرار پلوپزهای کته قالبی پیش‌پخت هوشمند و پذیرایی رایگان نان داغ و سوپ جو به محض نشستن</div>
+            <div style="font-size:9.5px;color:#2ecc71;margin-top:3px">
+              <b>هزینه:</b> ۱,۲۰۰ لیر (هزینه ۲ دیگ کته قالبی) • <b>زمان:</b> اجرای فوری در شیفت بعدی
+            </div>
+          </td>
+          <td style="text-align:center">
+            <span class="wp-badge" style="background:#d29a5a;color:#101e22;font-weight:bold">SKILL-01</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">سرعت سرویس و ریتم میزها</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b style="color:var(--gold)">CANDLE-02</b><br>
+            <span style="font-size:10px;color:var(--cream)">شنبه ظهر: ناهار خانوادگی مسافران</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">Saturday Lunch: Family & Tahdig Rush</span>
+          </td>
+          <td>
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-size:9.5px">📅 ۲۵ مهر ۱۴۰۵</span><br>
+            <span class="wp-badge" style="background:#3498db;color:#fff;font-size:9.5px;margin-top:2px">🌐 17 October 2026</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">⏰ ۱۳:۰۰ الی ۱۶:۰۰</span>
+          </td>
+          <td>
+            <div style="font-size:10.5px;direction:ltr;text-align:left;font-family:monospace">
+              O: <b>4.60</b> | H: <b style="color:#2ecc71">4.88</b><br>
+              L: <b style="color:#e74c3c">4.30</b> | C: <b>4.75</b>
+            </div>
+            <div style="font-size:9.5px;color:var(--muted);margin-top:2px">👥 1120 مسافر</div>
+          </td>
+          <td>
+            <span style="color:#e74c3c;font-weight:bold;font-size:11px">⚠️ عدم یکدستی برشتگی و تردی ته‌دیگ زعفرانی در شیفت‌های مختلف (کامنت آرش نیکزاد)</span>
+          </td>
+          <td style="background:rgba(231,76,60,0.06);border-right:2px solid #e74c3c">
+            <span class="wp-badge" style="background:#e74c3c;color:#fff;font-size:9px">🚀 High-Tech AI Frontier</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">سنسورهای هوشمند اینترنت اشیا (IoT Sensor-Cook) با ترموکوپل‌های دیجیتال زیر کف دیگ‌های مسی جهت کنترل دمای برشتگی</div>
+            <div style="font-size:9.5px;color:#f39c12;margin-top:3px">
+              <b>هزینه:</b> $3,200 • <b>زمان:</b> ۱۰ روز نصب سخت‌افزاری
+            </div>
+          </td>
+          <td style="background:rgba(46,204,113,0.06);border-right:2px solid #2ecc71">
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-weight:bold;font-size:9px">⚡ Easy Quick Fix / 5-Min SOP</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">تنظیم تایمر زنگ‌دار ۲۵ دقیقه‌ای برای هر دیگ برنج و استفاده از پیمانه استاندارد ترکیب زعفران دم‌کرده و ماست چکیده</div>
+            <div style="font-size:9.5px;color:#2ecc71;margin-top:3px">
+              <b>هزینه:</b> ۱۵۰ لیر (خرید تایمر دیجیتال) • <b>زمان:</b> اجرای همان روز
+            </div>
+          </td>
+          <td style="text-align:center">
+            <span class="wp-badge" style="background:#d29a5a;color:#101e22;font-weight:bold">SKILL-07</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">کیفیت طعم و اصالت پخت</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b style="color:var(--gold)">CANDLE-03</b><br>
+            <span style="font-size:10px;color:var(--cream)">یکشنبه عصر: تورهای گردشگران غربی</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">Sunday Afternoon: European Tourists</span>
+          </td>
+          <td>
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-size:9.5px">📅 ۲۶ مهر ۱۴۰۵</span><br>
+            <span class="wp-badge" style="background:#3498db;color:#fff;font-size:9.5px;margin-top:2px">🌐 18 October 2026</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">⏰ ۱۶:۳۰ الی ۱۹:۳۰</span>
+          </td>
+          <td>
+            <div style="font-size:10.5px;direction:ltr;text-align:left;font-family:monospace">
+              O: <b>4.50</b> | H: <b style="color:#2ecc71">4.82</b><br>
+              L: <b style="color:#e74c3c">4.05</b> | C: <b>4.68</b>
+            </div>
+            <div style="font-size:9.5px;color:var(--muted);margin-top:2px">👥 980 مسافر</div>
+          </td>
+          <td>
+            <span style="color:#e74c3c;font-weight:bold;font-size:11px">⚠️ ابهام توریست‌های انگلیسی در مورد کوور شارژ و رایگان بودن چای (کامنت David Miller)</span>
+          </td>
+          <td style="background:rgba(231,76,60,0.06);border-right:2px solid #e74c3c">
+            <span class="wp-badge" style="background:#e74c3c;color:#fff;font-size:9px">🚀 High-Tech AI Frontier</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">سیستم جامع Billing AI با صورت‌حساب الکترونیکی داینامیک، تفکیک چندارزی خودکار و نمایشگر تبلت سر میز با تایید اثر انگشت</div>
+            <div style="font-size:9.5px;color:#f39c12;margin-top:3px">
+              <b>هزینه:</b> $4,500 • <b>زمان:</b> ۲ هفته راه‌اندازی نرم‌افزاری
+            </div>
+          </td>
+          <td style="background:rgba(46,204,113,0.06);border-right:2px solid #2ecc71">
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-weight:bold;font-size:9px">⚡ Easy Quick Fix / 5-Min SOP</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">چاپ پلاکارد دوزبانه روی میزها و عبارت برجسته: Complimentary Welcome Saffron Tea - No Hidden Charges روی برگه فاکتور</div>
+            <div style="font-size:9.5px;color:#2ecc71;margin-top:3px">
+              <b>هزینه:</b> ۸۰ لیر (چاپ استند اکریلیک میز) • <b>زمان:</b> اجرای ۲ ساعته
+            </div>
+          </td>
+          <td style="text-align:center">
+            <span class="wp-badge" style="background:#d29a5a;color:#101e22;font-weight:bold">SKILL-25</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">شفافیت صورت‌حساب و تریاژ</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b style="color:var(--gold)">CANDLE-04</b><br>
+            <span style="font-size:10px;color:var(--cream)">سه‌شنبه شب: ضیافت توریست‌های روس</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">Tuesday Night: CIS & Russian Diners</span>
+          </td>
+          <td>
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-size:9.5px">📅 ۲۸ مهر ۱۴۰۵</span><br>
+            <span class="wp-badge" style="background:#3498db;color:#fff;font-size:9.5px;margin-top:2px">🌐 20 October 2026</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">⏰ ۱۹:۰۰ الی ۲۲:۰۰</span>
+          </td>
+          <td>
+            <div style="font-size:10.5px;direction:ltr;text-align:left;font-family:monospace">
+              O: <b>4.65</b> | H: <b style="color:#2ecc71">5.00</b><br>
+              L: <b style="color:#e74c3c">4.35</b> | C: <b>4.88</b>
+            </div>
+            <div style="font-size:9.5px;color:var(--muted);margin-top:2px">👥 540 مسافر</div>
+          </td>
+          <td>
+            <span style="color:#e74c3c;font-weight:bold;font-size:11px">⚠️ سد زبانی گارسون‌ها با مسافران روس‌زبان و نیاز به نشان دادن عکس غذا (کامنت Dmitry Smirnov)</span>
+          </td>
+          <td style="background:rgba(231,76,60,0.06);border-right:2px solid #e74c3c">
+            <span class="wp-badge" style="background:#e74c3c;color:#fff;font-size:9px">🚀 High-Tech AI Frontier</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">مچ‌بندهای سالن‌دار مجهز به چیپست Whisper-v3 و هوش مصنوعی DeepL جهت ترجمه صوتی بلادرنگ گفتار روسی به گوش‌پوش گارسون</div>
+            <div style="font-size:9.5px;color:#f39c12;margin-top:3px">
+              <b>هزینه:</b> $5,800 • <b>زمان:</b> ۴ هفته سفارش و آموزش
+            </div>
+          </td>
+          <td style="background:rgba(46,204,113,0.06);border-right:2px solid #2ecc71">
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-weight:bold;font-size:9px">⚡ Easy Quick Fix / 5-Min SOP</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">منوی تصویری لمینت‌شده با خط سیریلیک روسی، شماره‌گذاری عددی غذاها و بارکد QR اختصاصی روی میز</div>
+            <div style="font-size:9.5px;color:#2ecc71;margin-top:3px">
+              <b>هزینه:</b> ۲۲۰ لیر (لمینت منوی روسی) • <b>زمان:</b> تحویل در عرض ۲۴ ساعت
+            </div>
+          </td>
+          <td style="text-align:center">
+            <span class="wp-badge" style="background:#d29a5a;color:#101e22;font-weight:bold">SKILL-13</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">آداب میزبانی و زبان توریست‌ها</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b style="color:var(--gold)">CANDLE-05</b><br>
+            <span style="font-size:10px;color:var(--cream)">پنجشنبه شب: موسیقی زنده لانژ کوجاتپه</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">Thursday Evening: Kocatepe Live Music</span>
+          </td>
+          <td>
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-size:9.5px">📅 ۳۰ مهر ۱۴۰۵</span><br>
+            <span class="wp-badge" style="background:#3498db;color:#fff;font-size:9.5px;margin-top:2px">🌐 22 October 2026</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">⏰ ۲۱:۰۰ الی ۰۰:۳۰</span>
+          </td>
+          <td>
+            <div style="font-size:10.5px;direction:ltr;text-align:left;font-family:monospace">
+              O: <b>4.75</b> | H: <b style="color:#2ecc71">5.00</b><br>
+              L: <b style="color:#e74c3c">4.60</b> | C: <b>4.95</b>
+            </div>
+            <div style="font-size:9.5px;color:var(--muted);margin-top:2px">👥 680 مسافر</div>
+          </td>
+          <td>
+            <span style="color:#e74c3c;font-weight:bold;font-size:11px">⚠️ محدودیت فضای پارکینگ در تکسیم و عدم آگاهی مسافران از ترانسفر رایگان ۵ دقیقه‌ای به شعبه ۲ (کامنت Caner Demir)</span>
+          </td>
+          <td style="background:rgba(231,76,60,0.06);border-right:2px solid #e74c3c">
+            <span class="wp-badge" style="background:#e74c3c;color:#fff;font-size:9px">🚀 High-Tech AI Frontier</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">سامانه دیسپچ بین‌شعبه‌ای خودکار با ترکر GPS ناوگان VIP، تخمین بلادرنگ زمان رسیدن به درب ورودی و تخصیص صندلی کلود</div>
+            <div style="font-size:9.5px;color:#f39c12;margin-top:3px">
+              <b>هزینه:</b> $6,400 • <b>زمان:</b> ۳ هفته برنامه‌نویسی
+            </div>
+          </td>
+          <td style="background:rgba(46,204,113,0.06);border-right:2px solid #2ecc71">
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-weight:bold;font-size:9px">⚡ Easy Quick Fix / 5-Min SOP</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">ایستادن راهنمای تشریفات با تابلوی شمسه در ورودی استقلال و هدایت مهمانان به ون اختصاصی شمسه با هماهنگی تلفنی واتساپ</div>
+            <div style="font-size:9.5px;color:#2ecc71;margin-top:3px">
+              <b>هزینه:</b> صفر (استفاده از ون موجود شعبه ۲) • <b>زمان:</b> اجرای آنی
+            </div>
+          </td>
+          <td style="text-align:center">
+            <span class="wp-badge" style="background:#d29a5a;color:#101e22;font-weight:bold">SKILL-30</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">مدیریت سرریز و وفادارسازی</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <b style="color:var(--gold)">CANDLE-06</b><br>
+            <span style="font-size:10px;color:var(--cream)">چهارشنبه عصر: غروب بالکن پانورامیک</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">Wednesday Sunset: Istiklal Balcony</span>
+          </td>
+          <td>
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-size:9.5px">📅 ۲۹ مهر ۱۴۰۵</span><br>
+            <span class="wp-badge" style="background:#3498db;color:#fff;font-size:9.5px;margin-top:2px">🌐 21 October 2026</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">⏰ ۱۷:۳۰ الی ۲۰:۰۰</span>
+          </td>
+          <td>
+            <div style="font-size:10.5px;direction:ltr;text-align:left;font-family:monospace">
+              O: <b>4.70</b> | H: <b style="color:#2ecc71">5.00</b><br>
+              L: <b style="color:#e74c3c">4.50</b> | C: <b>4.85</b>
+            </div>
+            <div style="font-size:9.5px;color:var(--muted);margin-top:2px">👥 840 مسافر</div>
+          </td>
+          <td>
+            <span style="color:#e74c3c;font-weight:bold;font-size:11px">⚠️ پر بودن میزهای بالکن و تقاضای گردشگران برای رزرو آنلاین میزهای دید خیابان (کامنت احمد کمالی)</span>
+          </td>
+          <td style="background:rgba(231,76,60,0.06);border-right:2px solid #e74c3c">
+            <span class="wp-badge" style="background:#e74c3c;color:#fff;font-size:9px">🚀 High-Tech AI Frontier</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">ماژول ۳D Digital Twin سالن با قابلیت انتخاب صندلی واقعیت مجازی و پیش‌پرداخت ارزی با Stripe و لیر</div>
+            <div style="font-size:9.5px;color:#f39c12;margin-top:3px">
+              <b>هزینه:</b> $7,200 • <b>زمان:</b> ۵ هفته مدل‌سازی سه‌بعدی
+            </div>
+          </td>
+          <td style="background:rgba(46,204,113,0.06);border-right:2px solid #2ecc71">
+            <span class="wp-badge" style="background:#2ecc71;color:#000;font-weight:bold;font-size:9px">⚡ Easy Quick Fix / 5-Min SOP</span>
+            <div style="font-size:10.5px;color:var(--cream);margin-top:3px">افزودن فیلد ساده «انتخاب میز بالکن» در فرم رزرو موجود سایت و پیام خودکار تایید میز در واتساپ رستوران</div>
+            <div style="font-size:9.5px;color:#2ecc71;margin-top:3px">
+              <b>هزینه:</b> رایگان (به‌روزرسانی فرم آنلاین) • <b>زمان:</b> اجرای ۳۰ دقیقه‌ای در وردپرس
+            </div>
+          </td>
+          <td style="text-align:center">
+            <span class="wp-badge" style="background:#d29a5a;color:#101e22;font-weight:bold">SKILL-06</span><br>
+            <span style="font-size:9.5px;color:var(--muted)">رزرواسیون و تجربه میهمان</span>
+          </td>
+        </tr>
+        
+              </tbody>
+            </table>
+          </div>
+        </div>
+    
+
         <!-- SECTION 1: 10 STREET BARKER SLOGANS -->
         <div class="wp-card" style="margin-bottom:20px">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;border-bottom:1px solid var(--card-border);padding-bottom:10px">

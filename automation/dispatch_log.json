@@ -1,5 +1,29 @@
 [
   {
+    "timestamp": "2026-10-25T21:16:14.369552",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792962974_6170",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
+    "timestamp": "2026-10-25T21:14:45.611214",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792962885_7424",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
     "timestamp": "2026-10-25T20:58:11.760682",
     "channel": "email_resend",
     "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
@@ -2766,28 +2790,6 @@
     "restaurant_name": "رستوران ریحون",
     "channel": "email",
     "recipient": "contact@reyhun.net",
-    "timestamp": "2026-10-19 19:16:19",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-SAFIR--7379",
-    "lead_id": "safir-sisli",
-    "restaurant_name": "رستوران سفیر (شعبه شیشلی)",
-    "channel": "email",
-    "recipient": "sisli@safiriranianrestaurant.com",
-    "timestamp": "2026-10-19 19:16:19",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-SAFIR--7379",
-    "lead_id": "safir-aksaray",
-    "restaurant_name": "رستوران سفیر (شعبه آکسارای)",
-    "channel": "email",
-    "recipient": "aksaray@safiriranianrestaurant.com",
     "timestamp": "2026-10-19 19:16:19",
     "status": "delivered",
     "opened": true,

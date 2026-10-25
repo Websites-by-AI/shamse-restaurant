@@ -1035,8 +1035,11 @@ def generate_shamse_sentiment_report_html():
               <button class="btn btn--ghost" onclick="setPodcastSpeed(1.25)" style="font-size:.7rem;padding:2px 8px">1.25x</button>
               <button class="btn btn--ghost" onclick="setPodcastSpeed(1.5)" style="font-size:.7rem;padding:2px 8px">1.5x</button>
             </div>
+            <a href="assets/audio/shamse_intelligence_podcast_tr.mp3" download class="btn btn--ghost" style="font-size:.72rem;padding:4px 8px;border-color:#38bdf8;color:#38bdf8">
+              🇹🇷 پادکست ترکی (Türkçe) 📥
+            </a>
             <a href="assets/audio/shamse_intelligence_podcast.mp3" download class="btn btn--ghost" style="font-size:.72rem;padding:4px 8px">
-              دانلود صوت MP3 📥
+              🇮🇷 دانلود صوت فارسی MP3 📥
             </a>
           </div>
         </div>
@@ -1152,6 +1155,20 @@ def generate_shamse_sentiment_report_html():
               <source src="assets/video/shamse_intelligence_video.mp4" type="video/mp4">
               مرورگر شما از تگ ویدیو پشتیبانی نمی‌کند.
             </video>
+          </div>
+
+          <!-- FOREX CANDLESTICK SENTIMENT CHART -->
+          <div class="card" style="margin:24px 0;border:1.5px solid #3498db;background:#14171a;padding:16px;border-radius:8px">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:12px;border-bottom:1px solid #252f36;padding-bottom:10px">
+              <div>
+                <span class="badge" style="background:#3498db;color:#fff">تحلیل تکنیکال فارکس احساسات (Forex Candlestick Sentiment)</span>
+                <h4 style="margin:4px 0 0;color:#fff;font-size:1.05rem">📈 نوسان امتیاز شمسه در ۶ شیفت حساس به همراه تاریخ‌های دوگانه شمسی و میلادی</h4>
+              </div>
+              <span class="badge" style="background:#2ecc71;color:#000;font-weight:bold">★ ۴٫۷۶ ریتینگ بسته شده</span>
+            </div>
+            <div style="overflow-x:auto">
+              <img src="assets/img/sentiment_candlestick_chart.svg" alt="نمودار شمعی فارکس تحلیل احساسات شمسه" style="width:100%;min-width:700px;display:block">
+            </div>
           </div>
 
           <!-- Comment Screenshot Cards Gallery -->
