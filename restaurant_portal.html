@@ -427,11 +427,65 @@
         </div>
       </div>
 
+      <!-- 4-FORMAT DELIVERABLES & GOOGLE MAPS DOSSIER CARD -->
+      <div class="card" style="border:2px solid var(--copper);background:linear-gradient(135deg, rgba(26,21,17,0.95), rgba(15,12,9,0.95))">
+        <div class="card-title">
+          <span>📦 بسته‌های جامع ممیزی، پرزنتیشن و پادکست شمسه (دانلود مستقیم ۴ فرمت)</span>
+          <span style="background:rgba(210,154,90,0.2);color:var(--gold);padding:3px 10px;border-radius:12px;font-size:.72rem;font-weight:bold">
+            نسخه اختصاصی مدیریت رستوران
+          </span>
+        </div>
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:16px">
+          دسترسی فوری به تمامی تحلیل‌های ۵,۰۵۵ نقد، ۱۰ استراتژی تحول، ماشین‌حساب‌های احساسات و لینک‌های مستقیم نقدها در Google Maps.
+        </p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:12px;margin-bottom:16px">
+          <a href="reports/shamse_sentiment_podcast_report.pdf" download class="btn btn-ghost" style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:.82rem;padding:12px">
+            <span>📄</span> <span>دانلود گزارش وکتور (PDF)</span>
+          </a>
+          <a href="reports/mizban_restaurant_intelligence_pitch.pptx" download class="btn btn-gold" style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:.82rem;padding:12px">
+            <span>📊</span> <span>پرزنتیشن پاورپوینت (PPTX)</span>
+          </a>
+          <a href="assets/audio/shamse_intelligence_podcast.mp3" download class="btn btn-ghost" style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:.82rem;padding:12px">
+            <span>🎙️</span> <span>پادکست صوتی مدیریتی (MP3)</span>
+          </a>
+          <a href="shamse_sentiment_report.html" target="_blank" class="btn btn-ghost" style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:.82rem;padding:12px">
+            <span>🌐</span> <span>مشاهده پرونده تعاملی وب</span>
+          </a>
+        </div>
+
+        <div style="background:var(--ink-3);padding:14px;border-radius:6px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+          <div style="font-size:.8rem;color:var(--cream)">
+            <b>نقشه‌های مستقیم Google Maps:</b>
+            <a href="https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul" target="_blank" style="color:var(--copper);margin:0 8px;text-decoration:underline">شعبه ۱ — استقلال (4.8★) ↗</a> |
+            <a href="https://maps.google.com/?q=Abdulhak+Hamit+Caddesi+17+Kocatepe+Istanbul" target="_blank" style="color:var(--success);margin:0 8px;text-decoration:underline">شعبه ۲ — کوجاتپه (4.7★) ↗</a>
+          </div>
+          <button class="btn btn-ghost" onclick="copyExecutiveMessage()" style="font-size:.76rem;padding:4px 10px">
+            📋 کپی پیام اشتراک‌گذاری مدیران
+          </button>
+        </div>
+      </div>
+
     </div>
 
   </div>
 
   <script>
+    function copyExecutiveMessage() {
+      var msg = "🌟 خلاصه پرونده ممیزی رستوران شمسه استانبول:\n" +
+                "• ۵,۰۵۵ نقد در گوگل، تریپ‌ادوایزر و یاندکس (میانگین ۴٫۷۵★)\n" +
+                "• شعبه استقلال (۴٫۸★) و کوجاتپه (۴٫۷★)\n" +
+                "• دریافت گزارش PDF: https://websites-by-ai.github.io/shamse-restaurant/reports/shamse_sentiment_podcast_report.pdf\n" +
+                "• پرزنتیشن PPTX: https://websites-by-ai.github.io/shamse-restaurant/reports/mizban_restaurant_intelligence_pitch.pptx\n" +
+                "• پادکست صوتی: https://websites-by-ai.github.io/shamse-restaurant/assets/audio/shamse_intelligence_podcast.mp3";
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(msg).then(function() {
+          alert("متن رسمی پیام اشتراک‌گذاری در کلیپ‌بورد کپی شد.");
+        });
+      } else {
+        alert(msg);
+      }
+    }
     // Embedded Taksim Restaurants Dataset
     var taksimData = [];
     var currentRestaurant = null;
