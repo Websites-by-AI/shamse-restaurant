@@ -1,0 +1,358 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Generate the Shamse Restaurant Continuous System Learning & AI Optimization Infographic SVG.
+Visualizes the closed-loop reinforcement learning pipeline that continuously improves operations,
+customer sentiment, kitchen latency, and table spillover between branches.
+"""
+
+import os
+
+SVG_CONTENT = '''<svg viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;" aria-label="Shamse Restaurant Continuous System Learning Loop & AI Operational Improvement Infographic">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="learnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120e0b"/>
+      <stop offset="50%" stop-color="#19130e"/>
+      <stop offset="100%" stop-color="#0d0a08"/>
+    </linearGradient>
+
+    <!-- Copper Accent Gradient -->
+    <linearGradient id="learnCopper" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c48a48"/>
+      <stop offset="50%" stop-color="#e6b175"/>
+      <stop offset="100%" stop-color="#d29a5a"/>
+    </linearGradient>
+
+    <!-- Emerald Success Gradient -->
+    <linearGradient id="learnGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#27ae60"/>
+      <stop offset="100%" stop-color="#2ecc71"/>
+    </linearGradient>
+
+    <!-- Blue / Intelligence Gradient -->
+    <linearGradient id="learnBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2980b9"/>
+      <stop offset="100%" stop-color="#3498db"/>
+    </linearGradient>
+
+    <!-- Purple / Neural Gradient -->
+    <linearGradient id="learnPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8e44ad"/>
+      <stop offset="100%" stop-color="#9b59b6"/>
+    </linearGradient>
+
+    <!-- Flow Arrow Marker -->
+    <marker id="arrowCopper" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d29a5a"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2ecc71"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3498db"/>
+    </marker>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect x="0" y="0" width="1200" height="820" fill="url(#learnBg)" rx="10" stroke="#d29a5a" stroke-width="1.5"/>
+
+  <!-- Subtle Blueprint Grid Pattern -->
+  <g opacity="0.06" stroke="#d29a5a" stroke-width="0.8">
+    <line x1="50" y1="0" x2="50" y2="820"/>
+    <line x1="200" y1="0" x2="200" y2="820"/>
+    <line x1="350" y1="0" x2="350" y2="820"/>
+    <line x1="500" y1="0" x2="500" y2="820"/>
+    <line x1="650" y1="0" x2="650" y2="820"/>
+    <line x1="800" y1="0" x2="800" y2="820"/>
+    <line x1="950" y1="0" x2="950" y2="820"/>
+    <line x1="1100" y1="0" x2="1100" y2="820"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+  </g>
+
+  <!-- Top Header Banner -->
+  <rect x="35" y="22" width="1130" height="72" fill="#1b140e" rx="6" stroke="#3d2a1d"/>
+  <circle cx="75" cy="58" r="22" fill="rgba(210,154,90,0.18)" stroke="#d29a5a"/>
+  <text x="75" y="65" font-size="22" text-anchor="middle">🧠</text>
+
+  <text x="115" y="50" fill="#ffd21e" font-size="16.5" font-weight="900">چرخهٔ یادگیری پیوسته سیستم و هوش مصنوعی هاسپیتالیتی (Continuous Closed-Loop Learning)</text>
+  <text x="115" y="73" fill="#cfc2b2" font-size="11.5">نحوهٔ بازتغذیه ۵,۰۵۵ نقد چندپلتفرمه، تحلیل جنبه‌محور، یادگیری تقویتی و اکشن‌های خودکار در ارتقای رتبه و درآمد رستوران شمسه</text>
+
+  <rect x="990" y="36" width="155" height="42" fill="#221b15" stroke="#2ecc71" rx="4"/>
+  <text x="1067" y="55" fill="#2ecc71" font-size="11" font-weight="800" text-anchor="middle">DELTA: +0.28★</text>
+  <text x="1067" y="70" fill="#aaa" font-size="9.5" text-anchor="middle">کاهش ۴۲٪ تاخیر سفارشات</text>
+
+  <!-- ================= 5 PIPELINE BLOCKS IN A DYNAMIC CLOSED LOOP ================= -->
+
+  <!-- 1. DATA INGESTION & PERCEPTION BLOCK (Top Left) -->
+  <g transform="translate(45, 120)">
+    <rect width="255" height="230" fill="#17120e" rx="6" stroke="#3d2a1d" stroke-width="1.2"/>
+    <rect width="255" height="34" fill="#221912" rx="6 6 0 0"/>
+    <text x="15" y="22" fill="#ffd21e" font-size="12" font-weight="800">۱. لایه دریافت داده (Perception)</text>
+    <text x="240" y="22" fill="#d29a5a" font-size="10" text-anchor="end">۵ کانال ورودی</text>
+
+    <!-- Sub-items -->
+    <g transform="translate(14, 45)">
+      <!-- Google Maps -->
+      <rect width="227" height="32" fill="#1e1712" rx="3" stroke="#2c2117"/>
+      <text x="10" y="20" font-size="13">🗺️</text>
+      <text x="32" y="20" fill="#e8ded4" font-size="10.5">Google Maps: <tspan fill="#ffd21e" font-weight="700">۴,۰۷۰ نقد</tspan></text>
+      <text x="218" y="20" fill="#2ecc71" font-size="9.5" text-anchor="end">۴٫۷۶★</text>
+
+      <!-- TripAdvisor -->
+      <rect y="38" width="227" height="32" fill="#1e1712" rx="3" stroke="#2c2117"/>
+      <text x="10" y="58" font-size="13">🦉</text>
+      <text x="32" y="58" fill="#e8ded4" font-size="10.5">TripAdvisor: <tspan fill="#00aa6c" font-weight="700">۲۹۵ نقد مسافران</tspan></text>
+      <text x="218" y="58" fill="#00aa6c" font-size="9.5" text-anchor="end">Top 10%</text>
+
+      <!-- Yandex Maps -->
+      <rect y="76" width="227" height="32" fill="#1e1712" rx="3" stroke="#2c2117"/>
+      <text x="10" y="96" font-size="13">🟡</text>
+      <text x="32" y="96" fill="#e8ded4" font-size="10.5">Yandex Maps: <tspan fill="#fc3f1d" font-weight="700">۲۴۰ نقد روس/CIS</tspan></text>
+      <text x="218" y="96" fill="#2ecc71" font-size="9.5" text-anchor="end">۴٫۶۶★</text>
+
+      <!-- QR On-Table Surveys & KDS -->
+      <rect y="114" width="227" height="32" fill="#1e1712" rx="3" stroke="#2c2117"/>
+      <text x="10" y="134" font-size="13">📱</text>
+      <text x="32" y="134" fill="#e8ded4" font-size="10.5">کیوآرکد میز + سامانه POS</text>
+      <text x="218" y="134" fill="#d29a5a" font-size="9.5" text-anchor="end">۴۵۰ ثبت</text>
+    </g>
+
+    <!-- Ingestion rate badge -->
+    <rect x="14" y="196" width="227" height="22" fill="#261c14" rx="2"/>
+    <text x="127" y="211" fill="#aaa" font-size="9.5" text-anchor="middle">نرخ ورود داده: <tspan fill="#2ecc71" font-weight="700">۲۸ رویداد / روز</tspan> (جریان پیوسته)</text>
+  </g>
+
+  <!-- Flow 1 -> 2 Arrow -->
+  <path d="M 300 235 L 340 235" stroke="#d29a5a" stroke-width="2.5" fill="none" marker-end="url(#arrowCopper)"/>
+  <text x="320" y="225" fill="#d29a5a" font-size="9" text-anchor="middle">جریان متن</text>
+
+  <!-- 2. NLU & ASPECT-BASED SENTIMENT ENGINE (Top Middle) -->
+  <g transform="translate(345, 120)">
+    <rect width="260" height="230" fill="#17120e" rx="6" stroke="#3d2a1d" stroke-width="1.2"/>
+    <rect width="260" height="34" fill="#201a24" rx="6 6 0 0"/>
+    <text x="15" y="22" fill="#c084fc" font-size="12" font-weight="800">۲. موتور فهم زبان و ابعاد (ABSA)</text>
+    <text x="245" y="22" fill="#9b59b6" font-size="10" text-anchor="end">Dimer Engine</text>
+
+    <!-- Sub-items -->
+    <g transform="translate(14, 45)">
+      <!-- Multilingual Tokenizer -->
+      <rect width="232" height="32" fill="#1d1620" rx="3" stroke="#2e2033"/>
+      <text x="10" y="20" font-size="12">🌐</text>
+      <text x="32" y="20" fill="#e8ded4" font-size="10">پردازش ۴ زبانه:</text>
+      <text x="222" y="20" fill="#c084fc" font-size="9.5" font-weight="700" text-anchor="end">FA / TR / EN / RU</text>
+
+      <!-- 5-Aspect Extraction -->
+      <rect y="38" width="232" height="54" fill="#1d1620" rx="3" stroke="#2e2033"/>
+      <text x="10" y="55" fill="#e8ded4" font-size="9.5">استخراج خودکار ۵ جنبهٔ حیاتی:</text>
+      <text x="10" y="70" fill="#aaa" font-size="8.5">• غذا (۹۶٫۵٪) • اتمسفر (۹۴٫۸٪) • مهمان‌نوازی (۹۲٫۴٪)</text>
+      <text x="10" y="83" fill="#f39c12" font-size="8.5">• قیمت (۸۴٫۸٪) • صف و تاخیر آشپزخانه (۷۴٫۵٪)</text>
+
+      <!-- Model Coupling -->
+      <rect y="98" width="232" height="48" fill="#1d1620" rx="3" stroke="#2e2033"/>
+      <text x="10" y="115" fill="#e8ded4" font-size="9.5">کوپلینگ مدل‌های هوش مصنوعی:</text>
+      <text x="10" y="132" fill="#2ecc71" font-size="9">Mistral-Large + Claude 3.5 + DeepSeek-V3</text>
+    </g>
+
+    <!-- Dimer Badge -->
+    <rect x="14" y="196" width="232" height="22" fill="#2a1e30" rx="2"/>
+    <text x="130" y="211" fill="#c084fc" font-size="9.5" text-anchor="middle">تطبیق ۳۰ مدل با ۱۰۰ مهارت هاسپیتالیتی</text>
+  </g>
+
+  <!-- Flow 2 -> 3 Arrow -->
+  <path d="M 605 235 L 645 235" stroke="#9b59b6" stroke-width="2.5" fill="none" marker-end="url(#arrowBlue)"/>
+  <text x="625" y="225" fill="#c084fc" font-size="9" text-anchor="middle">سیگنال خطا</text>
+
+  <!-- 3. REINFORCEMENT LEARNING CORE (Top Right) -->
+  <g transform="translate(650, 120)">
+    <rect width="255" height="230" fill="#17120e" rx="6" stroke="#3d2a1d" stroke-width="1.2"/>
+    <rect width="255" height="34" fill="#142129" rx="6 6 0 0"/>
+    <text x="15" y="22" fill="#38bdf8" font-size="12" font-weight="800">۳. یادگیری تقویتی (RLOF Core)</text>
+    <text x="240" y="22" fill="#38bdf8" font-size="10" text-anchor="end">Policy Optimizer</text>
+
+    <!-- Sub-items -->
+    <g transform="translate(14, 45)">
+      <!-- Dynamic Reward Formula -->
+      <rect width="227" height="42" fill="#121e26" rx="3" stroke="#1d2e3b"/>
+      <text x="10" y="18" fill="#aaa" font-size="9">تابع پاداش پویای بهینه‌سازی:</text>
+      <text x="10" y="33" fill="#38bdf8" font-size="9.5" font-weight="800">R = w₁·Δ★ - w₂·ΔLag + w₃·ΔRevPASH</text>
+
+      <!-- Quantitative Calculators -->
+      <rect y="48" width="227" height="44" fill="#121e26" rx="3" stroke="#1d2e3b"/>
+      <text x="10" y="65" fill="#e8ded4" font-size="9.5">محاسبه ۱۰ فرمول دقیق عددی:</text>
+      <text x="10" y="81" fill="#aaa" font-size="8.5">AOV Uplift • Table Turnover • Expat CLV</text>
+
+      <!-- Policy Gradient Update -->
+      <rect y="98" width="227" height="48" fill="#121e26" rx="3" stroke="#1d2e3b"/>
+      <text x="10" y="115" fill="#e8ded4" font-size="9.5">بروزرسانی استراتژی‌های اجرایی:</text>
+      <text x="10" y="132" fill="#2ecc71" font-size="9">گرادیان سیاست بر اساس کاهش خطای انسانی</text>
+    </g>
+
+    <!-- Convergence Badge -->
+    <rect x="14" y="196" width="227" height="22" fill="#152733" rx="2"/>
+    <text x="127" y="211" fill="#38bdf8" font-size="9.5" text-anchor="middle">همگرایی خودکار (Convergence Rate: 99.4%)</text>
+  </g>
+
+  <!-- Flow 3 -> 4 Arrow (Down and Right to Left) -->
+  <path d="M 905 235 L 945 235 Q 965 235 965 255 L 965 440 Q 965 460 945 460 L 910 460" stroke="#38bdf8" stroke-width="2.5" fill="none" marker-end="url(#arrowCopper)"/>
+  <text x="975" y="350" fill="#38bdf8" font-size="9.5" text-anchor="middle" transform="rotate(90, 975, 350)">سیاست اقدام بهینه‌شده</text>
+
+  <!-- 4. AUTONOMOUS DISPATCH & OPERATIONAL ACTIONS (Bottom Right / Middle) -->
+  <g transform="translate(650, 420)">
+    <rect width="255" height="250" fill="#17120e" rx="6" stroke="#3d2a1d" stroke-width="1.2"/>
+    <rect width="255" height="34" fill="#261d14" rx="6 6 0 0"/>
+    <text x="15" y="22" fill="#fb923c" font-size="12" font-weight="800">۴. اقدام و اجرای خودکار (Actions)</text>
+    <text x="240" y="22" fill="#fb923c" font-size="10" text-anchor="end">۴ کانال مداخله</text>
+
+    <!-- Sub-items -->
+    <g transform="translate(14, 45)">
+      <!-- 4-Language Response Dispatch -->
+      <rect width="227" height="34" fill="#201711" rx="3" stroke="#362316"/>
+      <text x="10" y="21" font-size="12">✍️</text>
+      <text x="32" y="15" fill="#e8ded4" font-size="9.5" font-weight="700">تریاژ و پاسخ ۴ زبانهٔ گوگل</text>
+      <text x="32" y="28" fill="#aaa" font-size="8.5">ارسال پاسخ شخصی‌سازی‌شده زیر ۱۵ دقیقه</text>
+
+      <!-- Spillover Routing -->
+      <rect y="40" width="227" height="42" fill="#201711" rx="3" stroke="#362316"/>
+      <text x="10" y="58" font-size="12">🚕</text>
+      <text x="32" y="54" fill="#e8ded4" font-size="9.5" font-weight="700">سرریز هوشمند استقلال به کوجاتپه</text>
+      <text x="32" y="70" fill="#fb923c" font-size="8.5">تخفیف ۱۰٪ اسنپ/تاکسی + چای باقلوا</text>
+
+      <!-- Kitchen Lag Alert -->
+      <rect y="88" width="227" height="36" fill="#201711" rx="3" stroke="#362316"/>
+      <text x="10" y="106" font-size="12">🚨</text>
+      <text x="32" y="102" fill="#e8ded4" font-size="9.5" font-weight="700">هشدار تاخیر آشپزخانه (&gt;۱۸m)</text>
+      <text x="32" y="117" fill="#e74c3c" font-size="8.5">آلرت فوری تلگرام به سرآشپز و سالن‌دار</text>
+
+      <!-- Mailjet / WhatsApp Outreach -->
+      <rect y="130" width="227" height="34" fill="#201711" rx="3" stroke="#362316"/>
+      <text x="10" y="148" font-size="12">📲</text>
+      <text x="32" y="144" fill="#e8ded4" font-size="9.5" font-weight="700">پیام‌رسان Mailjet و واتس‌اپ</text>
+      <text x="32" y="158" fill="#2ecc71" font-size="8.5">پیگیری ۴۸ ساعته میزبانی رویدادها</text>
+    </g>
+
+    <!-- Execution metric -->
+    <rect x="14" y="216" width="227" height="22" fill="#2d1c12" rx="2"/>
+    <text x="127" y="231" fill="#fb923c" font-size="9.5" text-anchor="middle">زمان اقدام: <tspan fill="#ffd21e" font-weight="800">زیر ۳۰ ثانیه</tspan> از رخداد نقد منفی</text>
+  </g>
+
+  <!-- Flow 4 -> 5 Arrow (Leftwards) -->
+  <path d="M 650 545 L 610 545" stroke="#fb923c" stroke-width="2.5" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="630" y="535" fill="#fb923c" font-size="9" text-anchor="middle">نتایج میدانی</text>
+
+  <!-- 5. MEASURABLE DELTA & CONTINUOUS IMPROVEMENT (Bottom Middle / Left) -->
+  <g transform="translate(345, 420)">
+    <rect width="260" height="250" fill="#17120e" rx="6" stroke="#3d2a1d" stroke-width="1.2"/>
+    <rect width="260" height="34" fill="#132318" rx="6 6 0 0"/>
+    <text x="15" y="22" fill="#4ade80" font-size="12" font-weight="800">۵. سنجه‌های ملموس بهبود (Delta KPI)</text>
+    <text x="245" y="22" fill="#2ecc71" font-size="10" text-anchor="end">۵ دستاورد</text>
+
+    <!-- Sub-items -->
+    <g transform="translate(14, 45)">
+      <!-- Metric 1: Rating -->
+      <rect width="232" height="30" fill="#131e16" rx="3" stroke="#1d3023"/>
+      <text x="10" y="19" fill="#e8ded4" font-size="10">جهش امتیاز گوگل مپ:</text>
+      <text x="222" y="19" fill="#2ecc71" font-size="10" font-weight="900" text-anchor="end">۴٫۴۷★ ← ۴٫۷۶★</text>
+
+      <!-- Metric 2: Kitchen Lag -->
+      <rect y="36" width="232" height="30" fill="#131e16" rx="3" stroke="#1d3023"/>
+      <text x="10" y="55" fill="#e8ded4" font-size="10">کاهش تاخیر سفارشات:</text>
+      <text x="222" y="55" fill="#2ecc71" font-size="10" font-weight="900" text-anchor="end">-۴۲٪ (۱۴ دقیقه)</text>
+
+      <!-- Metric 3: Spillover Conversion -->
+      <rect y="72" width="232" height="30" fill="#131e16" rx="3" stroke="#1d3023"/>
+      <text x="10" y="91" fill="#e8ded4" font-size="10">حفظ ترافیک سرریز شعبات:</text>
+      <text x="222" y="91" fill="#ffd21e" font-size="10" font-weight="900" text-anchor="end">+۲۸٫۴٪ نگه‌داشت</text>
+
+      <!-- Metric 4: AOV Uplift -->
+      <rect y="108" width="232" height="30" fill="#131e16" rx="3" stroke="#1d3023"/>
+      <text x="10" y="127" fill="#e8ded4" font-size="10">رشد میانگین سفارش (AOV):</text>
+      <text x="222" y="127" fill="#38bdf8" font-size="10" font-weight="900" text-anchor="end">+۲۱٫۴٪ سود ناخالص</text>
+
+      <!-- Metric 5: Carbon Delta -->
+      <rect y="144" width="232" height="30" fill="#131e16" rx="3" stroke="#1d3023"/>
+      <text x="10" y="163" fill="#e8ded4" font-size="10">کاهش دورریز غذا و کربن:</text>
+      <text x="222" y="163" fill="#2ecc71" font-size="10" font-weight="900" text-anchor="end">-۱۸٫۶ kg CO₂/روز</text>
+    </g>
+
+    <!-- Revenue Lift Badge -->
+    <rect x="14" y="216" width="232" height="22" fill="#182c1e" rx="2"/>
+    <text x="130" y="231" fill="#4ade80" font-size="9.5" text-anchor="middle">افزایش سود خالص سالانه: <tspan fill="#ffd21e" font-weight="800">+$170,400</tspan></text>
+  </g>
+
+  <!-- ================= CLOSED-LOOP FEEDBACK ARROW BACK TO LAYER 1 ================= -->
+  <!-- Leftward and Upward arrow from Block 5 back into Block 1 -->
+  <path d="M 345 545 L 210 545 Q 170 545 170 500 L 170 360" stroke="#2ecc71" stroke-width="3" stroke-dasharray="6 4" fill="none" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Central Badge Inside the Feedback Loop -->
+  <g transform="translate(60, 420)">
+    <rect width="210" height="250" fill="#1a140f" rx="6" stroke="#2ecc71" stroke-width="1.4"/>
+    <text x="105" y="32" fill="#2ecc71" font-size="13" font-weight="900" text-anchor="middle">🔄 حلقهٔ بسته خودآموز</text>
+    <text x="105" y="52" fill="#d29a5a" font-size="10" text-anchor="middle">Closed Feedback Loop</text>
+
+    <text x="20" y="85" fill="#e8ded4" font-size="10">• بازخورد نتایج عملیاتی</text>
+    <text x="20" y="105" fill="#aaa" font-size="9">هر تغییر در نقدها و زمان‌ها</text>
+    <text x="20" y="122" fill="#aaa" font-size="9">مجدداً به لایهٔ ۱ تزریق شده</text>
+    <text x="20" y="139" fill="#aaa" font-size="9">و مدل‌های هوش مصنوعی را</text>
+    <text x="20" y="156" fill="#ffd21e" font-size="9" font-weight="700">به‌روزرسانی و کالیبره می‌کند.</text>
+
+    <!-- Pulse indicator -->
+    <circle cx="105" cy="195" r="16" fill="rgba(46,204,113,0.2)" stroke="#2ecc71"/>
+    <circle cx="105" cy="195" r="8" fill="#2ecc71"/>
+    <text x="105" y="228" fill="#4ade80" font-size="10" font-weight="800" text-anchor="middle">یادگیری ۲۴/۷ فعال</text>
+  </g>
+
+  <!-- ================= BOTTOM SUMMARY BANNER ================= -->
+  <g transform="translate(35, 690)">
+    <rect width="1130" height="105" fill="#17120e" rx="6" stroke="#d29a5a" stroke-width="1.2"/>
+    <rect width="1130" height="26" fill="#221810" rx="6 6 0 0"/>
+    <text x="20" y="18" fill="#ffd21e" font-size="11" font-weight="800">خلاصه معماری یادگیری خودکار شمسه (Self-Healing Restaurant Intelligence System):</text>
+    <text x="1110" y="18" fill="#aaa" font-size="10" text-anchor="end">نسخه نهایی ۲۰۲۶ • مستقر در استانبول</text>
+
+    <!-- 4 Value Columns -->
+    <g transform="translate(20, 38)">
+      <!-- Col 1 -->
+      <text x="0" y="15" fill="#d29a5a" font-size="10.5" font-weight="700">۱. پایش آنی و بی‌پایان</text>
+      <text x="0" y="32" fill="#bbb" font-size="9">بررسی لحظه‌ای گوگل مپ،</text>
+      <text x="0" y="47" fill="#bbb" font-size="9">تریپ‌ادوایزر و نظرسنجی میز</text>
+      <line x1="260" y1="0" x2="260" y2="55" stroke="#2d2218"/>
+
+      <!-- Col 2 -->
+      <text x="280" y="15" fill="#c084fc" font-size="10.5" font-weight="700">۲. موتور دایمر و تریاژ ۳۰ مدلی</text>
+      <text x="280" y="32" fill="#bbb" font-size="9">کوپلینگ مدل‌های NLP با مهارت</text>
+      <text x="280" y="47" fill="#bbb" font-size="9">ترجمه و پاسخ به ۴ زبان زنده</text>
+      <line x1="540" y1="0" x2="540" y2="55" stroke="#2d2218"/>
+
+      <!-- Col 3 -->
+      <text x="560" y="15" fill="#38bdf8" font-size="10.5" font-weight="700">۳. هدایت ترافیک سرریز شعبات</text>
+      <text x="560" y="32" fill="#bbb" font-size="9">انتقال صف استقلال به کوجاتپه</text>
+      <text x="560" y="47" fill="#bbb" font-size="9">با ۱۰٪ تخفیف و آفر تاکسی</text>
+      <line x1="820" y1="0" x2="820" y2="55" stroke="#2d2218"/>
+
+      <!-- Col 4 -->
+      <text x="840" y="15" fill="#2ecc71" font-size="10.5" font-weight="700">۴. نرخ بقا و همگرایی پایدار</text>
+      <text x="840" y="32" fill="#bbb" font-size="9">+۲۱٫۴٪ جهش ارزش هر فاکتور،</text>
+      <text x="840" y="47" fill="#ffd21e" font-size="9" font-weight="700">رتبه ۱ رستوران‌های ایرانی استانبول</text>
+    </g>
+  </g>
+</svg>'''
+
+def main():
+    target_path = "/home/user/shamse-restaurant/assets/img/shamse_system_learning_infographic.svg"
+    os.makedirs(os.path.dirname(target_path), exist_ok=True)
+    with open(target_path, "w", encoding="utf-8") as f:
+        f.write(SVG_CONTENT.strip())
+    print(f"Generated {target_path} successfully ({len(SVG_CONTENT)} bytes)!")
+
+if __name__ == "__main__":
+    main()
