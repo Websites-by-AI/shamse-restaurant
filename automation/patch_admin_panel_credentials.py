@@ -109,21 +109,21 @@ DASHBOARD_CREDENTIALS_CARD = '''
 پرونده جامع ممیزی ۵,۰۵۵ نقد چندزبانه شمسه در Google Maps، TripAdvisor و Yandex Maps نهایی شد و هم‌اکنون به همراه پنل اختصاصی در اختیارتان قرار دارد:
 
 🔑 اطلاعات ورود به پنل اختصاصی مدیریت شمسه:
-• لینک ورود مستقیم: https://websites-by-ai.github.io/shamse-restaurant/restaurant_portal.html?token=SHAMSE-TAK-2026
+• لینک ورود مستقیم: https://shamse-restaurant.pages.dev/restaurant_portal.html?token=SHAMSE-TAK-2026
 • شناسه اختصاصی (Magic Token): SHAMSE-TAK-2026
 • نام کاربری: shamse_manager
 • رمز عبور: Shamse#Taksim2026
 
 ⚙️ لینک ورود به پیشخوان جامع ادمین:
-• لینک پیشخوان: https://websites-by-ai.github.io/shamse-restaurant/admin_panel.html?auth=shamse2026
+• لینک پیشخوان: https://shamse-restaurant.pages.dev/admin_panel.html?auth=shamse2026
 • نام کاربری ادمین: shamse_admin
 • رمز عبور ادمین: Shamse@2026!Istiklal
 
 📥 لینک‌های مستقیم دانلود بسته‌های تحلیلی:
-۱. گزارش چاپی PDF وکتور: https://websites-by-ai.github.io/shamse-restaurant/reports/shamse_sentiment_podcast_report.pdf
-۲. پرزنتیشن پاورپوینت PPTX: https://websites-by-ai.github.io/shamse-restaurant/reports/mizban_restaurant_intelligence_pitch.pptx
-۳. پادکست صوتی MP3: https://websites-by-ai.github.io/shamse-restaurant/assets/audio/shamse_intelligence_podcast.mp3
-۴. گزارش وب تعاملی: https://websites-by-ai.github.io/shamse-restaurant/shamse_sentiment_report.html
+۱. گزارش چاپی PDF وکتور: https://shamse-restaurant.pages.dev/reports/shamse_sentiment_podcast_report.pdf
+۲. پرزنتیشن پاورپوینت PPTX: https://shamse-restaurant.pages.dev/reports/mizban_restaurant_intelligence_pitch.pptx
+۳. پادکست صوتی MP3: https://shamse-restaurant.pages.dev/assets/audio/shamse_intelligence_podcast.mp3
+۴. گزارش وب تعاملی: https://shamse-restaurant.pages.dev/shamse_sentiment_report.html
 
 🗺️ لینک مستقیم نقدها در Google Maps:
 • شعبه استقلال (۴٫۸★ - ۲,۴۵۰ نقد): https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul

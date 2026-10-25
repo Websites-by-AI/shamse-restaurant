@@ -5,7 +5,7 @@
 > 🌐 **دامنهٔ پیشنهادی و آزاد:** `mizbanistanbul.com` (تأییدشده در ثبت مرکزی Verisign RDAP)
 > 🎨 **طراحی و کدنویسی ۱۰۰٪ با هوش مصنوعی** — پروژه‌ی `shamse-restaurant` در سازمان [Websites-by-AI](https://github.com/Websites-by-AI)
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-d4af37?style=for-the-badge&logo=githubpages&logoColor=white)](https://websites-by-ai.github.io/shamse-restaurant/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-d4af37?style=for-the-badge&logo=githubpages&logoColor=white)](https://shamse-restaurant.pages.dev/)
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-Live-F38020?style=for-the-badge&logo=cloudflarepages&logoColor=white)](https://shamse-restaurant.pages.dev)
 [![Hugging Face Space](https://img.shields.io/badge/Hugging_Face-Space-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/spaces/Sosa654321/shamse-restaurant)
 [![Made with AI](https://img.shields.io/badge/Made_with-AI_🤖-9b2c2c?style=for-the-badge)](#)
@@ -14,7 +14,7 @@
 
 | پلتفرم | نشانی زنده | استقرار |
 |---|---|---|
-| 🐙 **GitHub Pages** | https://websites-by-ai.github.io/shamse-restaurant/ | خودکار (از برنچ `main`) |
+| 🐙 **GitHub Pages** | https://shamse-restaurant.pages.dev/ | خودکار (از برنچ `main`) |
 | 🌩 **Cloudflare Pages** | https://shamse-restaurant.pages.dev | خودکار با GitHub Actions |
 | 🤗 **Hugging Face Space** | https://huggingface.co/spaces/Sosa654321/shamse-restaurant | خودکار با GitHub Actions |
 

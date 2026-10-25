@@ -247,25 +247,25 @@ function copyIndexCredential(elementId, btnId) {
 • شعبه ۲ (کوجاتپه): ۴٫۷★ (۱,۶۲۰ نقد گوگل + ۴٫۸★ رضایت توریست‌های روس در یاندکس)
 
 🔐 ۱. اطلاعات ورود به پرتال اختصاصی مدیریت شمسه:
-• لینک ورود خودکار: https://websites-by-ai.github.io/shamse-restaurant/restaurant_portal.html?token=SHAMSE-TAK-2026
+• لینک ورود خودکار: https://shamse-restaurant.pages.dev/restaurant_portal.html?token=SHAMSE-TAK-2026
 • شناسه ورود جادویی (Magic Token): SHAMSE-TAK-2026
 • نام کاربری: shamse_manager
 • رمز عبور اختصاصی: Shamse#Taksim2026
 
 ⚙️ ۲. اطلاعات ورود به پیشخوان کل ادمین سیستم (WP-Admin):
-• لینک پیشخوان: https://websites-by-ai.github.io/shamse-restaurant/admin_panel.html?auth=shamse2026
+• لینک پیشخوان: https://shamse-restaurant.pages.dev/admin_panel.html?auth=shamse2026
 • نام کاربری ادمین: shamse_admin
 • رمز عبور ادمین: Shamse@2026!Istiklal
 
 📥 ۳. لینک‌های دانلود مستقیم خروجی‌ها:
 📄 دریافت گزارش چاپی PDF وکتور:
-https://websites-by-ai.github.io/shamse-restaurant/reports/shamse_sentiment_podcast_report.pdf
+https://shamse-restaurant.pages.dev/reports/shamse_sentiment_podcast_report.pdf
 📊 دریافت پرزنتیشن پاورپوینت PPTX:
-https://websites-by-ai.github.io/shamse-restaurant/reports/mizban_restaurant_intelligence_pitch.pptx
+https://shamse-restaurant.pages.dev/reports/mizban_restaurant_intelligence_pitch.pptx
 🎙️ دریافت پادکست بریفینگ صوتی MP3:
-https://websites-by-ai.github.io/shamse-restaurant/assets/audio/shamse_intelligence_podcast.mp3
+https://shamse-restaurant.pages.dev/assets/audio/shamse_intelligence_podcast.mp3
 🌐 مشاهده پرونده تعاملی آنلاین:
-https://websites-by-ai.github.io/shamse-restaurant/shamse_sentiment_report.html
+https://shamse-restaurant.pages.dev/shamse_sentiment_report.html
 
 🗺️ ۴. لینک مستقیم نقدها در Google Maps:
 • شعبه استقلال: https://maps.google.com/?q=Istiklal+Caddesi+179+Beyoglu+Istanbul

@@ -6,7 +6,7 @@
 
 | # | پلتفرم | نشانی | نحوهٔ استقرار |
 |---|---|---|---|
-| 1 | 🐙 **GitHub Pages** | https://websites-by-ai.github.io/shamse-restaurant/ | خودکار از برنچ `main` |
+| 1 | 🐙 **GitHub Pages** | https://shamse-restaurant.pages.dev/ | خودکار از برنچ `main` |
 | 2 | 🌩 **Cloudflare Pages** | https://shamse-restaurant.pages.dev | خودکار با GitHub Actions |
 | 3 | 🤗 **Hugging Face Space** | https://huggingface.co/spaces/Sosa654321/shamse-restaurant | خودکار با GitHub Actions |
 
