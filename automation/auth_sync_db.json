@@ -3,7 +3,7 @@
     "platform": "میزبان استانبول (Mizban Istanbul) - سامانه یکپارچه ورود شمسه",
     "version": "2.4.0",
     "session_policy": "365_DAYS_ONE_YEAR_STABLE",
-    "last_updated": "2026-10-25T20:58:11.628748+00:00"
+    "last_updated": "2026-10-25T21:21:45.775464+00:00"
   },
   "users": {
     "shamse_admin": {
@@ -100,15 +100,54 @@
       "telegram_username": null,
       "device": "Client (Telegram)",
       "status": "active"
+    },
+    "SHAMSE-365D-SHAMSE_ADMIN-61152EAD18E0": {
+      "token": "SHAMSE-365D-SHAMSE_ADMIN-61152EAD18E0",
+      "username": "shamse_admin",
+      "issued_at": "2026-10-25T21:14:45.492793+00:00",
+      "expires_at": "2027-10-25T21:14:45.492793+00:00",
+      "validity_days": 365,
+      "web_authenticated": false,
+      "telegram_authenticated": true,
+      "telegram_chat_id": 98765,
+      "telegram_username": null,
+      "device": "Client (Telegram)",
+      "status": "active"
+    },
+    "SHAMSE-365D-SHAMSE_ADMIN-BC798907072F": {
+      "token": "SHAMSE-365D-SHAMSE_ADMIN-BC798907072F",
+      "username": "shamse_admin",
+      "issued_at": "2026-10-25T21:16:14.222368+00:00",
+      "expires_at": "2027-10-25T21:16:14.222368+00:00",
+      "validity_days": 365,
+      "web_authenticated": false,
+      "telegram_authenticated": true,
+      "telegram_chat_id": 98765,
+      "telegram_username": null,
+      "device": "Client (Telegram)",
+      "status": "active"
+    },
+    "SHAMSE-365D-SHAMSE_ADMIN-3B3F80EAD9F6": {
+      "token": "SHAMSE-365D-SHAMSE_ADMIN-3B3F80EAD9F6",
+      "username": "shamse_admin",
+      "issued_at": "2026-10-25T21:21:45.775359+00:00",
+      "expires_at": "2027-10-25T21:21:45.775359+00:00",
+      "validity_days": 365,
+      "web_authenticated": false,
+      "telegram_authenticated": true,
+      "telegram_chat_id": 98765,
+      "telegram_username": null,
+      "device": "Client (Telegram)",
+      "status": "active"
     }
   },
   "sync_state": {
     "active_user": "shamse_admin",
     "is_synced": true,
-    "session_token": "SHAMSE-365D-SHAMSE_ADMIN-7647A0E1B2DA",
+    "session_token": "SHAMSE-365D-SHAMSE_ADMIN-3B3F80EAD9F6",
     "web_status": "AUTHENTICATED",
     "telegram_status": "AUTHENTICATED",
-    "expires_at": "2027-10-25T20:58:11.628690+00:00",
+    "expires_at": "2027-10-25T21:21:45.775359+00:00",
     "expires_in_days": 365,
     "header_badge_text": "✓ ورود یکپارچه فعال • کاربر: shamse_admin • اعتبار سشن: ۳۶۵ روزه (تا 2027-10-25) • سینک با تلگرام @shamse_restaurant_bot"
   }

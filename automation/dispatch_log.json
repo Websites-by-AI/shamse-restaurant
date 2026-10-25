@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-10-25T21:21:45.904971",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792963305_5780",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
     "timestamp": "2026-10-25T21:16:14.369552",
     "channel": "email_resend",
     "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
@@ -2779,17 +2791,6 @@
     "restaurant_name": "رستوران فارسی",
     "channel": "email",
     "recipient": "info@restaurantfarsi.com",
-    "timestamp": "2026-10-19 19:16:19",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-REYHUN-7379",
-    "lead_id": "reyhun-taksim",
-    "restaurant_name": "رستوران ریحون",
-    "channel": "email",
-    "recipient": "contact@reyhun.net",
     "timestamp": "2026-10-19 19:16:19",
     "status": "delivered",
     "opened": true,
