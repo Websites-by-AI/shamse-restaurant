@@ -104,9 +104,9 @@ def format_list_compact(restaurants, title=None, limit=10):
         if phone:
             contact_parts.append("☎️ " + phone)
         if web:
-            contact_parts.append("🌐 <a href='%s'>سایت/منو</a>" % web)
+            contact_parts.append('🌐 <a href="%s">سایت/منو</a>' % web)
         if maps:
-            contact_parts.append("🗺 <a href='%s'>نقشه</a>" % maps)
+            contact_parts.append('🗺 <a href="%s">نقشه</a>' % maps)
         if contact_parts:
             lines.append("   " + " | ".join(contact_parts))
         lines.append("")

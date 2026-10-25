@@ -345,9 +345,12 @@ def typing(chat_id):
 
 
 def reply(chat_id, text, buttons=True, keyboard=False, inline_markup=None):
+    # Normalize single-quoted hrefs to double-quoted hrefs for Telegram HTML parser
+    clean_text = re.sub(r'<a\s+href=[\'"]([^\'"]+)[\'"]', r'<a href="\1"', text)
+
     payload = {
         "chat_id": chat_id,
-        "text": text,
+        "text": clean_text,
         "disable_web_page_preview": True,
         "parse_mode": "HTML"
     }
@@ -362,6 +365,9 @@ def reply(chat_id, text, buttons=True, keyboard=False, inline_markup=None):
     if not resp.get("ok"):
         desc = (resp.get("description") or "").lower()
         if "can't parse entities" in desc or "bad request" in desc:
+            # Strip HTML tags so users never see raw <b> or <a> tags if entity parser fails
+            stripped_text = re.sub(r'<[^>]+>', '', clean_text)
+            payload["text"] = stripped_text
             payload.pop("parse_mode", None)
             resp = api("sendMessage", payload)
     return resp
