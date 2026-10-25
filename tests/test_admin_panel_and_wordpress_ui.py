@@ -70,6 +70,15 @@ def test_admin_panel_wp_style_structure():
     assert "in-v3.mailjet.com" in html, "Must configure Mailjet SMTP relay host"
     assert "cfgMailjetSecretKey" in html, "Must provide secret key input"
 
+    # Multi-format Deliverables & Branch Google Maps Dossier
+    assert "reports/mizban_restaurant_intelligence_pitch.pptx" in html, "Must link to PPTX deliverable"
+    assert "reports/shamse_sentiment_podcast_report.pdf" in html, "Must link to PDF deliverable"
+    assert "İstiklal Caddesi No:179" in html, "Must contain İstiklal branch address"
+    assert "Abdülhak Hamit Cad" in html, "Must contain Kocatepe branch address"
+    assert "10 İyileştirme Stratejisi" in html, "Must contain 10 Improvement Strategies table"
+    assert "10 Hesaplama Alanı" in html, "Must contain 10 Calculators table"
+
+
 
 def test_telegram_bot_file_and_channel_verification():
     assert os.path.exists(TG_BOT_PY), "telegram_bot.py must exist"
