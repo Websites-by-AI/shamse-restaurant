@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-10-25T19:53:58.032726",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792958038_1428",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
     "timestamp": "2026-10-25T19:35:42.450970",
     "channel": "email_resend",
     "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
@@ -2771,17 +2783,6 @@
     "restaurant_name": "رستوران مژگان",
     "channel": "email",
     "recipient": "info@mojganrestaurant.com",
-    "timestamp": "2026-10-19 19:16:19",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-SHANDI-7379",
-    "lead_id": "shandiz-maltepe",
-    "restaurant_name": "رستوران شاندیز",
-    "channel": "email",
-    "recipient": "info@shandizistanbul.com",
     "timestamp": "2026-10-19 19:16:19",
     "status": "delivered",
     "opened": true,
