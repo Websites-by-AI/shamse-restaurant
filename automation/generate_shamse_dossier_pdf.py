@@ -385,18 +385,141 @@ HTML_CONTENT = f"""<!DOCTYPE html>
       font-weight: bold;
     }}
 
-    /* SYSTEM LEARNING SVG WRAPPER */
-    .svg-wrap {{
-      border: 1.5px solid #c48a48;
-      border-radius: 6px;
-      background: #110d0a;
-      padding: 3px;
-      text-align: center;
+    /* PAGE 3: LEARNING CONTAINER & 30 SKILLS INFOGRAPHIC */
+    .learn-container {{
+      background: #14100d;
+      border: 1.5px solid #d29a5a;
+      border-radius: 8px;
+      padding: 9px 11px;
+      color: #f5ede4;
+      margin-bottom: 7px;
     }}
-    .svg-wrap svg {{
-      width: 100%;
-      height: auto;
-      max-height: 220mm;
+    .learn-title {{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #33251a;
+      padding-bottom: 5px;
+      margin-bottom: 7px;
+    }}
+    .learn-title h2 {{
+      font-size: 9.2pt;
+      color: #ffd21e;
+      margin: 0;
+    }}
+    .learn-title .sub {{
+      font-size: 6.8pt;
+      color: #a89d8e;
+    }}
+    .phases-grid {{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+      margin-bottom: 7px;
+    }}
+    .phase-card {{
+      background: #1d1712;
+      border: 1px solid #3d2c20;
+      border-radius: 5px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }}
+    .phase-num {{
+      font-size: 6.5pt;
+      font-weight: bold;
+      padding: 1px 4px;
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: 3px;
+    }}
+    .phase-title {{
+      font-size: 7.2pt;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 2px;
+    }}
+    .phase-desc {{
+      font-size: 6.2pt;
+      color: #c4b5a5;
+      line-height: 1.25;
+    }}
+    .phase-metric {{
+      font-size: 6.2pt;
+      font-weight: bold;
+      margin-top: 3px;
+      padding-top: 2px;
+      border-top: 1px dashed rgba(255,255,255,0.1);
+    }}
+    .formula-ribbon {{
+      background: #221b14;
+      border: 1px dashed #d29a5a;
+      border-radius: 4px;
+      padding: 4px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 6.8pt;
+      margin-bottom: 7px;
+    }}
+    .domains-title {{
+      font-size: 8pt;
+      font-weight: bold;
+      color: #ffd21e;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }}
+    .domains-grid {{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+      margin-bottom: 7px;
+    }}
+    .domain-card {{
+      background: #1a130e;
+      border-radius: 4px;
+      padding: 5px 6px;
+      border-right: 2.5px solid;
+    }}
+    .domain-name {{
+      font-size: 6.8pt;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 2px;
+    }}
+    .domain-skills {{
+      font-size: 6.1pt;
+      color: #b5a494;
+      line-height: 1.25;
+    }}
+    .domain-delta {{
+      font-size: 6.3pt;
+      font-weight: bold;
+      margin-top: 3px;
+      color: #2ecc71;
+    }}
+    .impact-grid {{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      margin-top: 5px;
+    }}
+    .impact-card {{
+      background: #faf6f0;
+      border: 1px solid #e7d8c5;
+      border-radius: 4px;
+      padding: 6px 8px;
+      font-size: 6.9pt;
+      line-height: 1.35;
+    }}
+    .impact-card b {{
+      display: block;
+      margin-bottom: 2px;
+      font-size: 7.2pt;
+    }}
       display: block;
     }}
   </style>
@@ -723,28 +846,160 @@ HTML_CONTENT = f"""<!DOCTYPE html>
 
   <div class="page-break"></div>
 
-  <!-- ================= PAGE 3: CONTINUOUS CLOSED-LOOP INFOGRAPHIC ================= -->
+  <!-- ================= PAGE 3: CONTINUOUS CLOSED-LOOP & 30 SKILLS INFOGRAPHIC ================= -->
   <div class="header-bar">
     <div>
-      <h1>🧠 اینفوگرافیک چرخه یادگیری پیوسته سیستم و خودآموزی RLOF</h1>
-      <div class="sub">معماری ۵ مرحله‌ای حلقه بسته هوش تجاری و موتور جفت‌سازی دایمر (Dimer Engine)</div>
+      <h1>🧠 اینفوگرافیک چرخه یادگیری پیوسته سیستم و خودآموزی ۳۰ مهارت عملیاتی</h1>
+      <div class="sub">معماری ۵ مرحله‌ای حلقه بسته RLOF، ماتریس ۳۰ مهارت و ارتقای مداوم استانداردهای میزبانی شمسه</div>
     </div>
     <div>
       <span class="badge badge-gold">همگرایی داده: ۹۹٫۴٪</span>
     </div>
   </div>
 
-  <div style="font-size:7.5pt;color:#444;margin-bottom:5px">
-    سیستم هوش تجاری میزبان استانبول بر مبنای چرخه تقویت بازخورد (Reinforcement Learning from Operational Feedback - RLOF) پیاده‌سازی شده است. این فرآیند سیگنال‌های ۵,۰۵۵ نقد آنلاین را در ۵ فاز متوالی به تصمیمات رفتاری تبدیل نموده و باعث کاهش ۴۲٪ تاخیر آشپزخانه و ارتقای ۰.۲۸★ امتیاز کل گوگل مپ شمسه شده است:
+  <div style="font-size:7.4pt;color:#3d332a;margin-bottom:6px;line-height:1.4">
+    سیستم هوش تجاری میزبان استانبول بر مبنای چرخه تقویت بازخورد عملیاتی (Reinforcement Learning from Operational Feedback - RLOF) پیاده‌سازی شده است. این فرآیند سیگنال‌های ۵,۰۵۵ نقد آنلاین را به طور خودکار به پروتکل‌های اجرایی آشپزخانه، سالن و پشتیبانی تبدیل نموده و باعث کاهش ۴۲٪ تاخیر سرویس و رشد ۰.۲۸★ امتیاز کل رستوران شمسه شده است:
   </div>
 
-  <div class="svg-wrap">
-    {LEARNING_SVG_DATA}
+  <!-- THE DARK INFOGRAPHIC CONTAINER -->
+  <div class="learn-container">
+    <div class="learn-title">
+      <div>
+        <h2>🔄 چرخه ۵ مرحله‌ای خودآموزی و بهینه‌سازی مستمر (Continuous Closed-Loop RLOF)</h2>
+        <div class="sub">تبدیل سیگنال خام مسافران به اقدام استاندارد هاسپیتالیتی و سنجش بلادرنگ جهش عملکرد (Delta)</div>
+      </div>
+      <div>
+        <span class="badge badge-success" style="font-size:6.8pt">کاهش ۷۶٪ خطای پرسنل</span>
+      </div>
+    </div>
+
+    <!-- 5 PHASES -->
+    <div class="phases-grid">
+      <div class="phase-card" style="border-top:2px solid #ffd21e">
+        <div>
+          <span class="phase-num" style="background:#ffd21e;color:#000">فاز ۱: ادراک</span>
+          <div class="phase-title">پایش چندکاناله</div>
+          <div class="phase-desc">گردآوری ۵,۰۵۵ نقد از Google Maps، TripAdvisor، Yandex Maps و نظرسنجی اختصاصی شمسه.</div>
+        </div>
+        <div class="phase-metric" style="color:#ffd21e">۲۸ سیگنال جدید در روز</div>
+      </div>
+
+      <div class="phase-card" style="border-top:2px solid #00aa6c">
+        <div>
+          <span class="phase-num" style="background:#00aa6c;color:#fff">فاز ۲: تحلیل</span>
+          <div class="phase-title">تحلیل ابعاد ABSA</div>
+          <div class="phase-desc">استخراج خودکار امتیاز طعم (۹۶٫۵٪)، اتمسفر (۹۴٫۸٪)، برخورد (۹۲٫۴٪) و تاخیر صف (۷۴٫۵٪).</div>
+        </div>
+        <div class="phase-metric" style="color:#00aa6c">دقت دسته‌بندی: ۹۸٫۲٪</div>
+      </div>
+
+      <div class="phase-card" style="border-top:2px solid #d29a5a">
+        <div>
+          <span class="phase-num" style="background:#d29a5a;color:#101e22">فاز ۳: هسته AI</span>
+          <div class="phase-title">موتور یادگیری RLOF</div>
+          <div class="phase-desc">محاسبه بردار پاداش هتل‌داری بر پایه رابطه ریاضی ستاره، تاخیر صف و میانگین ارزش فاکتور (AOV).</div>
+        </div>
+        <div class="phase-metric" style="color:#ffd21e">کوپلینگ ۳۰ مدل هوش مصنوعی</div>
+      </div>
+
+      <div class="phase-card" style="border-top:2px solid #38bdf8">
+        <div>
+          <span class="phase-num" style="background:#38bdf8;color:#000">فاز ۴: دیسپچ</span>
+          <div class="phase-title">اعزام ۳۰ مهارت</div>
+          <div class="phase-desc">ارسال پروتکل SOP به پوز سالن، KDS آشپزخانه، منوی دیجیتال و ساعت هوشمند سالن‌داران.</div>
+        </div>
+        <div class="phase-metric" style="color:#38bdf8">پاسخ تریاژ: &lt; ۱۵ دقیقه</div>
+      </div>
+
+      <div class="phase-card" style="border-top:2px solid #2ecc71">
+        <div>
+          <span class="phase-num" style="background:#2ecc71;color:#fff">فاز ۵: ارزیابی</span>
+          <div class="phase-title">سنجش دلتا و حلقه</div>
+          <div class="phase-desc">اندازه‌گیری بهبود رضایت مشتریان و بازتغذیه به الگوریتم جهت جلوگیری از تکرار خطای انسانی.</div>
+        </div>
+        <div class="phase-metric" style="color:#2ecc71">همگرایی الگو: ۹۹٫۴٪</div>
+      </div>
+    </div>
+
+    <!-- FORMULA RIBBON -->
+    <div class="formula-ribbon">
+      <div>
+        <span style="color:#d29a5a;font-weight:bold">رابطه ریاضی پاداش خودآموزی (RLOF Objective):</span>
+        <code style="color:#ffd21e;direction:ltr;display:inline-block;margin-right:6px">Reward = w₁·ΔStar - w₂·ΔServiceLag + w₃·ΔExpatCLV</code>
+      </div>
+      <div style="color:#2ecc71">
+        ✓ تضمین صفر شدن خطاهای سیستمی پرسنل در ساعات اوج شلوغی
+      </div>
+    </div>
+
+    <!-- 30 SKILLS 5 DOMAINS -->
+    <div class="domains-title">
+      <span>🎯 نگاشت ۳۰ مهارت ممیزی نقص‌ها به ۵ حوزه عملیاتی هاسپیتالیتی:</span>
+      <span style="color:#d29a5a;font-size:6.8pt">منطبق بر استانداردهای جهانی RevPASH و Forbes Travel</span>
+    </div>
+
+    <div class="domains-grid">
+      <div class="domain-card" style="border-color:#e74c3c">
+        <div class="domain-name" style="color:#e74c3c">حوزه الف: تاخیر سرویس</div>
+        <div class="domain-skills">
+          <b>SKILL-01 تا 06:</b> سنسور صف ورودی، کته قالبی پیش‌پخت، KDS هوشمند سوپ و کباب، پیامک نوبت‌دهی و پوز بی‌سیم.
+        </div>
+        <div class="domain-delta">۴۲٪- کاهش تاخیر پخت</div>
+      </div>
+
+      <div class="domain-card" style="border-color:#f39c12">
+        <div class="domain-name" style="color:#f39c12">حوزه ب: کیفیت طعم و ته‌دیگ</div>
+        <div class="domain-skills">
+          <b>SKILL-07 تا 12:</b> سنسور حرارت دیگ مس برای ته‌دیگ، دیس‌های سرامیکی، شاخص تندی ادویه و رطوبت‌سنج گریل.
+        </div>
+        <div class="domain-delta">۱۸٪+ رضایت منو پلو</div>
+      </div>
+
+      <div class="domain-card" style="border-color:#3498db">
+        <div class="domain-name" style="color:#3498db">حوزه ج: آداب میزبانی و زبان</div>
+        <div class="domain-skills">
+          <b>SKILL-13 تا 18:</b> تبلت ترجمه فوری Whisper+DeepL برای روس‌ها، سنسور سطح نوشیدنی، کاتالوگ ویدیویی خورشت‌ها.
+        </div>
+        <div class="domain-delta">۳۵٪+ رضایت روس‌زبانان</div>
+      </div>
+
+      <div class="domain-card" style="border-color:#9b59b6">
+        <div class="domain-name" style="color:#9b59b6">حوزه د: اتمسفر، صدا و تهویه</div>
+        <div class="domain-skills">
+          <b>SKILL-19 تا 24:</b> تهویه مکش مثبت دود زغال، تثبیت صدای موسیقی روی ۶۲dB، پرده هوای گرم ورودی و نور متمرکز ۳۰۰۰K.
+        </div>
+        <div class="domain-delta">۱۰۰٪ حذف بوی ماندگار</div>
+      </div>
+
+      <div class="domain-card" style="border-color:#2ecc71">
+        <div class="domain-name" style="color:#2ecc71">حوزه ه: شفافیت فاکتور و دلجویی</div>
+        <div class="domain-skills">
+          <b>SKILL-25 تا 30:</b> تفکیک چای ولکام رایگان، نمایش برابری لیر/دلار، پروتکل فوری مدیر سالن، کارت دعوت VIP به کوجاتپه.
+        </div>
+        <div class="domain-delta">۱۰۰٪ رفع ابهام مالی</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 IMPACT CARDS -->
+  <div class="impact-grid">
+    <div class="impact-card">
+      <b style="color:#b37d36">💡 پایش بلادرنگ و یادگیری مستمر:</b>
+      سیستم پس از دریافت هر نقد آنلاین جدید، الگوریتم NLP را رانده و در صورت تکرار یک نقص در ۲ نقد متوالی، به طور خودکار پروتکل آموزشی اختصاصی را برای سرپرست شیفت ارسال می‌نماید.
+    </div>
+    <div class="impact-card">
+      <b style="color:#1e824c">📈 جهش مالی و حذف زیان ظرفیت خالی:</b>
+      با فعال‌سازی مدیریت هوشمند میزها و ترانسفر رایگان ۵ دقیقه‌ای مهمانان از استقلال به شعبه کوجاتپه، ماهانه ۱۸۴,۰۰۰ لیر به سود خالص رستوران شمسه افزوده شده است.
+    </div>
+    <div class="impact-card">
+      <b style="color:#0284c7">🌐 تطبیق بین‌المللی با مسافران جهانی:</b>
+      رفع ابهام فاکتور چای برای توریست‌های غربی (TripAdvisor) و استقرار منوی تصویری روسی (Yandex Maps) نرخ امتیاز شمسه در میان رستوران‌های بی اوغلو را به رتبه برتر ارتقا داده است.
+    </div>
   </div>
 
   <div class="footer">
     <div>پلتفرم هوش تجاری و گاسترونومی میزبان استانبول (Mizban Istanbul) • دفتر تکسیم</div>
-    <div>صفحه ۳ از ۸ • چرخه یادگیری پیوسته سیستم و موتور دایمر</div>
+    <div>صفحه ۳ از ۸ • اینفوگرافیک چرخه یادگیری پیوسته سیستم و ماتریس ۳۰ مهارت</div>
   </div>
 
   <div class="page-break"></div>

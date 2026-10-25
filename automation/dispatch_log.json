@@ -1,5 +1,17 @@
 [
   {
+    "timestamp": "2026-10-25T20:58:11.760682",
+    "channel": "email_resend",
+    "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
+    "recipient": "partner@212vc.com",
+    "subject": "💼 Investment Opportunity (Seed): Scalable AI Hospitality SaaS & Marketplace Disrupting Istanbul's $2.4B Culinary Market",
+    "status": "delivered_simulated",
+    "success": true,
+    "message_id": "re_sim_1792961891_5592",
+    "simulated": true,
+    "provider": "resend_simulation_sandbox"
+  },
+  {
     "timestamp": "2026-10-25T20:45:14.580168",
     "channel": "email_resend",
     "sender": "Mizban Istanbul <partnership@mizbanistanbul.com>",
@@ -2776,17 +2788,6 @@
     "restaurant_name": "رستوران سفیر (شعبه آکسارای)",
     "channel": "email",
     "recipient": "aksaray@safiriranianrestaurant.com",
-    "timestamp": "2026-10-19 19:16:19",
-    "status": "delivered",
-    "opened": true,
-    "response_tracking": "pending_registration"
-  },
-  {
-    "dispatch_id": "DISPATCH-EM-SHAMSE-7379",
-    "lead_id": "shamse-taksim",
-    "restaurant_name": "رستوران شمسه (شعبه استقلال)",
-    "channel": "email",
-    "recipient": "taksim@shamserestaurants.com",
     "timestamp": "2026-10-19 19:16:19",
     "status": "delivered",
     "opened": true,
