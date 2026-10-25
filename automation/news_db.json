@@ -408,23 +408,6 @@
       "title": "SON DAKİKA HABER: Taksim’deki kanlı çatışmada 2 kardeş hüküm giymişti | Son dakika haberleri - Habertürk",
       "title_fa": ""
     },
-    "10ca18ca872afd6f": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T11:31:38.638209+00:00",
-      "id": "10ca18ca872afd6f",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYkxwbnZDd1U3elBVdlNnYXJWQ0FzR1c3bnNoZmdyMmpqVlBLRnl5XzNJVmFKb3RHLXJza2xOVVZxWnlyVko1SG5RLTZVcC0xUk54YTBqNm9ENmNPaG5hU1RONzhmN3Z4OUZGXy1TVUlOT2dIeW00UW9DeldXUTFZWFczNVZOWnNkSGlTdjN4WUZnaXJFamlmU0xvbmQ?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-15T08:08:33+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "غذاهای آفریقایی به اندازة فکر شده به ذائقة ترک نزدیک نیست",
-      "title": "Afrika yemekleri Türk damak tadına sanıldığı kadar uzak değil - Canlı Gaste",
-      "title_fa": "غذاهای آفریقایی"
-    },
     "1145a192710d388f": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -533,10 +516,10 @@
       "first_seen": "2026-10-19T13:18:50.923129+00:00",
       "id": "1476eb5c5a3593e4",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTHk2UzZNeFNzaFc2YmxXQjhRX3JZdVFrZW5uQ2pTNGdOQjRRRHZfd21heUZqX2lFUEh3S1hCd2dBTmhVdDJrOUxtSjI0czVrN1R3RHVpQXBKdVhHLWxYZW5mZGdwZkpzWUlURV8zcHRfR24zMUdMSy03azNhSzluOXZxTVR1RWQ5b05fYldVYWp2amxUV1FnMWx1QjhOS1RYUEE?oc=5",
-      "message_id": null,
+      "message_id": 57,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-25T11:32:19.335073+00:00",
       "published": "2026-10-19T11:45:37+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -696,23 +679,6 @@
       "summary_fa": "جلسه‌ای در استانبول برای دیپلماسی جدید برگزار می‌شود، جنگ‌های ایران، یمن و اوکراین تهدیدی برای امنیت غذایی جهانی است.",
       "title": "DW News. . Eight countries are meeting in Istanbul for a new round of diplomacy as wars in Iran, Yemen and Ukraine threaten global trade, energy supplies and food security. Germany, France, the UK and Italy are joining Turkey, Egypt, Saudi Arabia and Pakis - Facebook",
       "title_fa": "جلسهٔ دیپلماتیک ۸ کشور"
-    },
-    "1813eb1112625f6e": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T11:31:38.638209+00:00",
-      "id": "1813eb1112625f6e",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcDhuVjBjU1h5UU1aZk9nSlpjdjJUVVpMbkd3djB4V3RvRlBiTWIxd0paQjdwdTlscW9VaVRMTDdBSGk3MXU3OG40LWhIdmJvVjVldWRIQm1MT2JPb0xmRFFlcmE2UnZqWW5KZkxvSDRwdUFoLVl0QzdwVHpiQ29FOG1Ob3BwTlAtRmEwRjFLLXU?oc=5",
-      "message_id": 14,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-15T11:31:38.638209+00:00",
-      "published": "2026-10-06T00:12:27+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "فستیوال غذایی در استانبول با ۴ صحنه مختلف",
-      "title": "Dört ayrı sahnede festival buluşması - www.milliyetsanat.com",
-      "title_fa": "فستیوال غذایی"
     },
     "182edc8a5821d80f": {
       "cat": "رستوران و کافه در استانبول",
@@ -1445,23 +1411,6 @@
       "title": "Istanbul's traffic drove Nübel crazy too. - Haberler.com",
       "title_fa": ""
     },
-    "328d1965dae97c50": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T11:31:38.638209+00:00",
-      "id": "328d1965dae97c50",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcnQ2TkhBOWVTcU9vbUtjd0ZRQWlJckRBWHFHOENlZTc2TG9Db0VlN3F6Q3NHSmNqTHZTekVYMFRwQ3N2WlRWREdyLXM4ZUdaQVJERXpmSVMyS0d1QmlQZ01GYWRLZDNTaTZmeVNuUkJSRnRLVV94VV9NNXlBakJubUtPeWRDaWtTOWRqN0FuejRoRldvSFE?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-15T05:40:25+00:00",
-      "score": 0,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "Ünlü isimlerden 'İstanbul Watch Festival'e ziyaret - Habertürk",
-      "title_fa": ""
-    },
     "3297d1b46676e1c2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -1502,10 +1451,10 @@
       "first_seen": "2026-10-23T04:51:32.696173+00:00",
       "id": "36a587e31ad554db",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbXZRUFlrbVAyVV9hWmN4V2QwZE0wU1Itb09QU2l0dFpuNGFad1lRaUZwVkdoY3FPVk5qWFlidk03VkxVR2M0cERNZ19mamFXdEhzZ1k4Z2ZaeTlRVnkzLWpJdmZHRGlfX3Q4UllPX0RUR0dXNWw0d1F6ZWRoLUVabjlNczBxSjJRUkZqdkFZU0lsa2kwQW1XMXg5YlpzelBnTUtZdTNmMEbSAa4BQVVfeXFMUGpJQkEzQkFDeVp2ZktZTThETWdLb2pZM1ZrUnhibU9QNlF4VEF4OEpuTDNqWGdRV3B4bTN6bDE5S1ZfUGJCRHZXNnRKS1l3NjNRMkVxV0R6NGlEdmx2dUtsZmhZMFJGOV9oRHlIUkFLQlRfenV2YXp3R1UxVm1Fb184RFRETlRDakM3TVI4QWxIN3VTa1hVTW9GTjVHVDdHY09lekhtS2NPV2swaV93?oc=5",
-      "message_id": null,
+      "message_id": 57,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-25T11:32:19.335073+00:00",
       "published": "2026-10-19T14:18:00+00:00",
       "score": 8,
       "source": "Google News — Istanbul food",
@@ -1580,23 +1529,6 @@
       "summary_fa": "",
       "title": "Ekonomik kriz tiyatro üretimini ve seyirciyi zorluyor - İzmir’de Son Dakika",
       "title_fa": ""
-    },
-    "38e087921a9cf275": {
-      "cat": "رویدادها و فراخوان‌های شهر استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T11:31:38.638209+00:00",
-      "id": "38e087921a9cf275",
-      "link": "https://yabangee.com/language-no-broblem-alan-kadikoy/",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-05T13:35:03+00:00",
-      "score": 2,
-      "source": "Yabangee Istanbul (رویدادها)",
-      "summary_fa": "اجرای نمایش زبان: بدون مشکل با رقصنده فلسطینی ماراه حاج حسین در استانبول",
-      "title": "(Nov 28-29) Language: No Broblem @ Alan Kadıköy",
-      "title_fa": "نمایش زبان: بدون مشکل"
     },
     "394d9803397771b3": {
       "cat": "رستوران و کافه در استانبول",
@@ -2437,10 +2369,10 @@
       "first_seen": "2026-10-22T04:49:16.027868+00:00",
       "id": "534443c51ebaef09",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOdEd4SUFvcmlTdExIdzgxcmF1ZG12NzY5bmFHWUdKS3NNU29KS2ZNcHFwYnB3OUFvSnpidW9WZmZVYVVTb3Rsb3Zsay1pSFZsdFVIR0lrSG9sM2FtQ1laTXl0UEpLTThCNlNWT0ctQ2xPRkY3VTdyRF9qLTZHeFNEMjJ2a3lvSVFpcy1YUHpRWGRwSlFld3NpaEJpWHpkaXZwb3BySHNJU2FRbEdGOUk2SlBhM0Nxd3ZrTlBJWGZ6R1hsczhTcnZXM2FBNTR4c3BZZFNIedIBV0FVX3lxTE8xSnNkVWlNUm1kakRIOUZDTy1YNEp3Q3VNV2VSYWFKUEY5X19pcGFBbzBUYW1oMWt3VE5fNGpKTnFzSzNXNG1xMVpibHVrVW5Kc181RE80aw?oc=5",
-      "message_id": null,
+      "message_id": 57,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-25T11:32:19.335073+00:00",
       "published": "2026-10-19T08:31:00+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -2532,6 +2464,23 @@
       "summary_fa": "فستیوال تئاتر استانبول با Lacrima آغاز شد",
       "title": "İstanbul Tiyatro Festivali Lacrima ile açılıyor - Habertürk",
       "title_fa": "فستیوال تئاتر استانبول"
+    },
+    "56b1a82c4cf58f69": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-25T11:32:19.335073+00:00",
+      "id": "56b1a82c4cf58f69",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVkN2ZFg5Y0tuc3J3YTlSTzlDbG9EV0hEVGJHVzZla2tJQVR1VHpzbmhxVlVwQUNLM2dPQWZnLUxnVGNOeWxMZm9ERDRzVmc1enZ6VEZyN3VWOFVPRDFUVFNvdjNmN3ZueE12QTg0UlhWZlh2UllQWjQ3R2V6RE51LUgzTTNyUUhEUzNwVjlmanpkVTVvcTBPazE1dWtWRmw3bkVZbWxTQVdVOVY1ZTRtcVFUbzI1UGphQWRkMw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-11T23:10:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Türkiye’nin ilk saat festivali İstanbul Watch Festival saat meraklılarını buluşturdu - Haberizlenim",
+      "title_fa": ""
     },
     "56fe1678ff9d56dc": {
       "cat": "رستوران و کافه در استانبول",
@@ -2652,6 +2601,23 @@
       "title": "UN experts urge food agency to uphold human rights amid concerns about Gaza-related work - Anadolu Ajansı",
       "title_fa": "کارشناسان سازمان ملل"
     },
+    "5c5acf1b86856b9f": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-25T11:32:19.335073+00:00",
+      "id": "5c5acf1b86856b9f",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOczQwOU9XZXpvRzN1MTlENmNGeGE3bWltczVGUS1zaVlmS09tZVVhNFl6QUczTmJkWmE1WE1vZTNyQnd0blRhM0V1amVTWEVtWTlBcGJsMEtadlB6cUNILUt4a04zTEN5d21wYWlLd2pvMk9aLWU2QU0yMGlLVkx4VVdzYmJyMjRpeWU1azQwOEEwNkZTcWljc0NrZmR4SUdrc1E?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-25T09:03:59+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "دهمین سالگرد فستیوال آتا",
+      "title": "Çocuklar için sanatın sınırları kalkıyor: Atta Festival 10 yaşında - Euronews.com",
+      "title_fa": "فستیوال آتا"
+    },
     "5dafe2684c1690a0": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2667,6 +2633,23 @@
       "source": "Google News — Istanbul food",
       "summary_fa": "",
       "title": "Worthing restaurant relaunches under new name - SussexWorld",
+      "title_fa": ""
+    },
+    "5e64b06d6ec28591": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-25T11:32:19.335073+00:00",
+      "id": "5e64b06d6ec28591",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wRllTbFpMNldHR0MyT2Nac2VPbGplYzBnZUNUUk52d3J4di1YSWZyZU1kS3JIMVNlZU16X1Fvc0Zyc2JDNUxWTW0wdkJMYmlxLWZwdzlVYlZqM0FLVjQxRnhWQno3QWJZeVpteFJHa1hDc1BpQVN1N2MyNVVyNlU?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-24T15:58:48+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "He had frightened his fans! Hakkı Bulut has explained his latest condition. - Haberler.com",
       "title_fa": ""
     },
     "5e92914894d5cc0c": {
@@ -5151,6 +5134,23 @@
       "title": "Gastromasa’da 11. Yıl - gastronomiturkey.com",
       "title_fa": "جشنواره گاسترونومی استانبول"
     },
+    "ba64dfe7a3448e62": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-25T11:32:19.335073+00:00",
+      "id": "ba64dfe7a3448e62",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNOUxaRmdtem5MZ044WVVnZDVFd251ZlBkaVBodkRLUjdEZ3BkQmVmXzd1YlhJQVZfZkpiRmxmYTZOSUNDdlhLZExHZjVFaVVCR2YwLU1CeXRCeGRhb1REeHNkNm44eXNULXlCSDh5NHphSHR6MmphWnl5a2xIUlhEWkZHenBPc1BOSThUZU9TN2N6Zm1UaGJLbTFaTTIxdG5QeG55Skp1RTB1OTBrbTFLOGpPZDN3c1FjOGhHbWJmN09DdllKUERMWlRxRkt4WktDYnpJYw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-24T10:15:13+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "اتحاد هتل و زنان برای تولید پارچه",
+      "title": "DoubleTree by Hilton Istanbul – Moda, Linens For Life ile Otel Tekstillerini Kadın Emeğiyle Dönüştürüyor - Hotel Restaurant Dergisi",
+      "title_fa": "هتل در استانبول"
+    },
     "bc4d3f30498018e8": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -7070,6 +7070,12 @@
       "at": "2026-10-25T04:43:07.997454+00:00",
       "feeds": 6,
       "new": 8,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-25T11:32:19.335073+00:00",
+      "feeds": 6,
+      "new": 4,
       "posted": 3
     }
   ]
