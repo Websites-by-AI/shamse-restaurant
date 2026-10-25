@@ -83,6 +83,16 @@ def test_admin_panel_wp_style_structure():
     assert "shamse_admin" in html, "Must support shamse_admin username"
     assert "Shamse@2026!Istiklal" in html, "Must define secure password"
     assert "fullWhatsAppPitchText" in html, "Must have ready-to-dispatch WhatsApp text"
+    assert "performWpAdminLogin" in html, "Must implement login logic"
+    assert "wpLoginErrMsg" in html, "Must have login error display"
+
+    # 30 Flaw Critique & Hospitality Skills Matrix
+    assert "tab-30-skills" in html, "Must contain 30 skills tab"
+    assert "۳۰ مهارت نقد خطاها و راهکارها" in html, "Must contain 30 skills title"
+    assert "SKILL-01" in html and "SKILL-30" in html, "Must contain all 30 skills"
+    assert "نقد خطا و عارضه در نقدها" in html, "Must contain flaw critique section"
+    assert "راهکار هوشمند بهبود" in html, "Must contain improved solution section"
+
 
 
 
