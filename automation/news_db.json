@@ -601,10 +601,10 @@
       "first_seen": "2026-10-18T15:53:26.555251+00:00",
       "id": "19fe8e075feacf32",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUzdmQXFFY2RJaHpLS2J2bmRiY05adkJTbVN4dVB3cjhQcWw3ZTZhSVBPN3JSWU9SYVdFMEpmYnpEZDRXM25xRGZVMlEtZklaMTNBVVFwZEV4ajY0bVM5a3VLMWpLWFd4X2c0d1E0bVE1blJ3MGJtRXptUTVIdnVtY0stdmVGNlhXQWZhVzVzVFJFRFU?oc=5",
-      "message_id": null,
+      "message_id": 65,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-27T12:13:52.992881+00:00",
       "published": "2026-10-15T05:26:37+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -866,6 +866,23 @@
       "summary_fa": "جشنواره استانبول که ۱۲ بار بهترین بود، ۵ ستاره گرفت",
       "title": "12 kez dünyanın en iyisi seçilmişti: İstanbul’daki festival şimdi de 5 yıldız aldı - TRHaber",
       "title_fa": "جشنواره استانبول ۵ ستاره شد"
+    },
+    "2c2bf309eb5e2df3": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "2c2bf309eb5e2df3",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQc2xkazk5YlltQmhrMkNIYXVxOFc0aGU1MldLckpFT3E1TkltczFQNnluc2Jlajg1c3hHdDFiX2FwTVMtYk1jdnU2djExOTFVVnJzNUJPbFVyTDl4Y2lraDNOYXRhWFFSTUlLaVZiaTdsUWhPRU5PTTFUOEtNdW8tc1p5MzNqb01nazBBRTVsU0JQMlNLdmU0T01vdmfSAaIBQVVfeXFMTlBWMmNKYVdsazlYMV9tOGhHUmtxRW5xUTdQc28zNnNPNm1UM2lfTXZrd3dQN2hPVllneVlIaUNNdHhrb09NdVNQLTg5cmxZV2NZSXdtQV9KTUV4cTIxblYtOURwZUZYQlBTU3A4TFl5V0hDcVBmZEtKOHRnWndkNV8yMWU3Q3kwZU9NYzRiTFFFRzl0VVBHY0ZUcS1hb0NpMER3?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T06:48:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "شفرستوران ترک در استانبول درگذشت",
+      "title": "Kaynarcalı Sezen Şef Hayatını Kaybetti! Sezen Altın'a Veda - NetGaste",
+      "title_fa": "درگذشت شеф ترک"
     },
     "2f0887956796c780": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -1145,10 +1162,10 @@
       "first_seen": "2026-10-15T11:31:38.638209+00:00",
       "id": "455d699c52f545f1",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQW10SVhzSzRfY2gtQnRIMDZBM29ILUlFX2paNVB1S3Q4c1gxMWF0TExMUmpxOUJpV25SN2JDeUtQSVpoWVM3elFYSlVfbDRMZHpXNDIwd3h0bmttX3dlOC1LdWxqcExoZVJDc29QaVVjZzdUVk1ybjgxRXNkOUV3SFM4RDhENVJ2N3ZQZjlYeTFmdmU4WURVRFN4b29FVHNnYkNsNXlMZkZXNm9RenFTRzY4cVlzcU13?oc=5",
-      "message_id": null,
+      "message_id": 65,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-27T12:13:52.992881+00:00",
       "published": "2026-10-15T07:10:08+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -1955,6 +1972,23 @@
       "title": "MİCHELİN TÜRKİYE’NİN LEZZET HARİTASINI BÜYÜTÜYOR - Türkiye Turizm",
       "title_fa": "لذت ترکیه بزرگ می‌شود"
     },
+    "6ec7790d055936a6": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "6ec7790d055936a6",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNR3BOM2dzbTdLMHNGV2ZEQmVhQXpaRWNBMk1XRHFiRkh2b295NDQ2blBXV0FaV0xud09lTTFremJKalI4SmhsTFJ3UjdHTVhaUnV1RDk2X0kwNVBabll5UmVlQ2d2OWphWlpYTnpWVmljZi1XSExFbHNKOVVZVnc5NzJmRFdHamFPcW5yUVI5eVY4c1ZxbExweWRnczNiaTdyVXFfb0x5VTlRYTFV0gGsAUFVX3lxTE1HcE4zZ3NtN0swc0ZXZkRCZWFBelpFY0EyTVdEcWJGSHZvb3k0NDZuUFdXQVpXTG53T2VNMWt6YkpqUjhKaGxMUndSN0dNWFpSdXVEOTZfSTA1UFpuWXlSZWVDZ3Y5amFaWlhOelZWaWNmLVdITEVsc0o5VVlWdzk3MmZEV0dqYU9xbnJRUjl5VjhzVnFsTHB5ZGdzM2JpN3JVcV9vTHlVOVFhMVU?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T06:55:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "استارباکس در ترکیه رستوران جدیدی باز کرده، یک غذای آن ۷۵۰ لیر ترکیه است",
+      "title": "Starbucks Türkiye'de restoran açtı: Bir tabak makarna 750 TL! - Haber Hürriyeti",
+      "title_fa": "استارباکس رستوران گران‌قیمت"
+    },
     "70752a85520ef52e": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -2029,10 +2063,10 @@
       "first_seen": "2026-10-18T04:36:05.248214+00:00",
       "id": "75fcc6e6d517ea83",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWkZ3eHZiN2wwSFBZaTdfNlNuOVpQZ2x2OF9ycFNEb2daQ0k0TktrVFlpczRhbDlmbDJMMjAydGhNTGJwdzVIamdaMXhXS2drdl9JQ3ZTMmhJczZkZzg1VmN2Z0Q2bXZfSlNYVVdQei1jOGxlbFBNcGE4dkhMRVBpRTE0X0hkQ0swam9tekVfRmVFcDV3dEFnWnNwa2xaWnZVOEE?oc=5",
-      "message_id": null,
+      "message_id": 65,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-27T12:13:52.992881+00:00",
       "published": "2026-10-15T07:07:37+00:00",
       "score": 8,
       "source": "Google News — Istanbul food",
@@ -2346,6 +2380,23 @@
       "title": "Zeynep Değirmencioğlu Kimdir, Kaç Yaşında? Ayşecik'in Hayatı ve Oynadığı Filmler - ede TV",
       "title_fa": ""
     },
+    "84a266ce5660e834": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "84a266ce5660e834",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB0VkZpYW1kLV9vWkNYcnRaZGxzaV8wb29nMHFxNC1wTUNfSEx2QnFlUlJvTEpqNjlMVnJSY05CVkgtYjJGMlhlT2tPR2RVaXgzZzJBeGZGSXZBdS1BTlVDajJKc2FtYjVXTlVV0gFwQVVfeXFMTW9nTE0tQW9kMldvVTBsd2tPMURJYjIya2VNa0lnazJRYkUzZVY4M2g0cTF2RldwWE5hRjBPaEJJWUJMR1RmX1RjdTRUTVZadVR2U1Q1T2hySHZ4MUF1OFZEU0xkanU0OWc3LXNERzd2cg?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-21T09:00:25+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "آشنایی با نوترین رستوران‌های استانبول",
+      "title": "İstanbul’un en yeni restoranları - Uplifers",
+      "title_fa": "نوترین رستوران‌های استانبول"
+    },
     "857b98dfd5c2b6d2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2379,6 +2430,23 @@
       "summary_fa": "برگزاری فستیوال فیلم ترک در استانبول",
       "title": "Korkut Ata Türk Dünyası Film Festivali, İstanbul'da yapılacak - DHA | Demirören Haber Ajansı",
       "title_fa": "فستیوال فیلم ترک"
+    },
+    "883f2482a6da1d14": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "883f2482a6da1d14",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSUVIWFY3V051OWI4TDRZaktuZk5wSWpDTG1lUWlMOGgzaFp5ZW85NDcyRVVYaWl4Zm1kWThGaWNWTTVDNjFOdFlzUmY2VjFheWZUT3o1cjQtTlBLQ0RCV2w4THdxVmRwWnZRYjRSLVRPSm42Q1Z6MEEwWGN6X002Wk5seWY2SDNVcUxOSVFoTG00RXJ0RmRpWkxpNjFfRGRTaWE2NzlSTQ?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T21:25:07+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "رستوران در قلب اتیلر استانبول دچار حریق شد.",
+      "title": "Etiler'in kalbinde gece yarısı dehşeti: Restoran küle döndü - Havadis",
+      "title_fa": "اتش‌سوزی در رستوران"
     },
     "8859288e0575b2f2": {
       "cat": "رستوران و کافه در استانبول",
@@ -2465,6 +2533,23 @@
       "title": "Sel sonrası salgın tehlikesi; Sular altına kalan gıdalar ne kadar güvenli? - Gıda Bülteni",
       "title_fa": "غذای زیر آب"
     },
+    "8df18590a0e2ab53": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "8df18590a0e2ab53",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOGxsOFFzOUYtb25NMExVdUlITWJ4RVBzMFcwUzdiZm9PcTVVWElaTG1WTVQxY2NkMXZFMW54eC1FUjg5RUdzdnNLek5uSTFzcnB2NUhid0p2dWc4QW1SeVBqeHdESGNkSXVWRWhpMEd5MGJ6Zk9mYlYwT0lmc3pwa2FpUFljczE4M2FMX2RFbnNLMXJ0UjJwQzRyX0xiaUdUVWlF?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-20T18:06:03+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "باغ هوکباز در استانبول با غذاهای خوشمزه باز شده است",
+      "title": "HuQQabaz Garden, İstanbul boğazı’nda yeni bir sayfa açtı - gastronomiturkey.com",
+      "title_fa": "باغ هوکباز در استانبول"
+    },
     "8f8ba61ff04f0314": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -2550,6 +2635,23 @@
       "title": "İstanbul'un 200'den fazla lezzet noktası belirlendi: Ünlü şeflerden gastronomi rotası - T24",
       "title_fa": "۲۰۰ نقطهٔ لذیذ استانبول"
     },
+    "95c8cd9d41962a4e": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "95c8cd9d41962a4e",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPa2JqSEo0SEhFRVMzbEg4RlZTT1RxVjRzcEtkMGF6Y0tzZjVwdjc4U21rell5dVhCZ01hS2pFMzViVFc4MXBVZl9ZNlJWaVNpdjd1UVFaeGJUQVpGWWd2QWdYV3FDcTA5S0t0Zk5zODBBeW9CeVVrTmc4dXJMM1lCOHBzUlRGU00?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-21T17:48:26+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "وولفگانگ پاک، سرآشپه اسکار، در استانبول lahmacun پخت.",
+      "title": "Oscar şefi Wolfgang Puck İstanbul'da Mahir Lokantası'nda fırın başına geçip lahmacun yaptı - Odatv",
+      "title_fa": "وولفگانگ پاک lahmacun می‌پزد"
+    },
     "962ae281e467e5fd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -2600,6 +2702,23 @@
       "summary_fa": "استانبول به عنوان یکی از شهرهای برتر اروپا در زمینه گاسترونومی شناخته شده است",
       "title": "İstanbul, Avrupa’nın gastronomi rotalarında öne çıkıyor - Türkiye Turizm",
       "title_fa": "استانبول در صدر گاسترونومی اروپا"
+    },
+    "9917c6067a8027e9": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "9917c6067a8027e9",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRHItZUk0NEFvSkpNa08yNlgtTVFaanhEUFVnNVlqUTZZemtoLXkwMU5PLXJKNVZiZkFzaHV2dXc3WE9ETldvUEdWUHRIOVZtczVCcU5Fczk4bTJ3cjFYREVoNXBRN1pzdjBsRm5QX0JNRWVBdFpwWE40MU5pNkc1OHlnVzIzRF9aejA2WFZ1R0hUbHlyV0hlZEhZT1BaYjlaYzZZODdZUHFJU0UwQ1FobE01SHhpQ3paUUZNUzhR?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-21T08:17:29+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "کمسیون ۶۰۰۰ رستوران استانبول صفر شد",
+      "title": "Yemeksepeti’nden sel desteği: 3 ilde yaklaşık 6 bin restoranın komisyonu sıfırlandı - Odatv",
+      "title_fa": "رستوران‌های استانبول"
     },
     "9a0c55c664e068bc": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2839,6 +2958,23 @@
       "title": "İstanbul'un gizli kalmış lezzet hazineleri usta şeflerin onayından geçti - Havadis",
       "title_fa": "لذت‌های پنهان استانبول"
     },
+    "a9891d5ab4b90e53": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "a9891d5ab4b90e53",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0bzJNbnc1Sm43QjBScy11S0FpLW1jSkVNU3o2Snk5Z0d5cVI1MkhEbmhpR3hMYTI2TGJDbFFST3YwQ0JuV1Bud1EtdW8weWJpSnRSdFFMdDNRMDIwY3ZWdk84OC1lQU5VellTVFd2VkNBUU3SAXhBVV95cUxPbmlkWWxxSGRmaV92cDh0cldFcjNrRG1OOEl0Nk5KNDctbnZ3U283MjNURlVnR1ZkYjIySllBc3BmemJiRXZlbk1RTU1RSlE5MEdLNjRjbklqNzllWFdEUjM3ZXFVX3dyZ1YzTm5FeE1XbXNfR3ZGeE8?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-23T08:25:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "شэф ترک درگذشت. این خبر ارتباطی با رستوران شمسه ندارد",
+      "title": "Kaynarcalı \"Sezen Şef\" vefat etti - T54",
+      "title_fa": "شэф ترک درگذشت"
+    },
     "a99f94db3612810f": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
@@ -2889,6 +3025,23 @@
       "summary_fa": "ترمینال VIP در فرودگاه استانبول",
       "title": "İstanbul Havalimanı’ndaki VIP Terminal Rus Turistlerin Aktarma Tercihini Değiştiriyor - Turizm Gazetesi",
       "title_fa": ""
+    },
+    "abceba834a376aaa": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "abceba834a376aaa",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ1BXbjNkNG1jYVlEckJnakJmY1NYNkUzSUthY0tqekZzWVVKVVVUbDB4VThmX0ZnNTBCSVJmYmJGM1RjNGN0aDF1dFpLSFB5d0tEdEMzUFQyLWRXUVYyalZKMS1HWjNka1NsTmctQnN4bHZXSEx3ajVaekY5dFhSTUF4dUc1R0ExTXpnak9VSkxQTUpYMXdDTGUzVkdXWmZVNElB?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-27T08:32:35+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "پلاسی ۸۸ ساله در استانبول",
+      "title": "İstanbul'un 88 yıllık Çemberlitaş Palas'ı! Atatürk'ün mimarının ilk konut mirası - isthaberler.com",
+      "title_fa": "پلاس چمبرلیطاش"
     },
     "ad161dc43c5b25dd": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -3383,6 +3536,23 @@
       "title": "'Atıktan Sanata' projesi gastronomi manifestosuyla yeni boyut kazandı - Aydınses Gazetesi",
       "title_fa": "جشنوارهٔ غذا در استانبول"
     },
+    "c479cc26d1ae0d91": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "c479cc26d1ae0d91",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRHZEbDRnYWZseUo0bWE3M0pfYVY1aEI0R25FVURJNnVMbWFEM0RubWRUVTRQMVA5RWc5Y2JKekFuaWJfdHc5NnhJR2ZjODIyUWEwN3lLMWxESVExWmxJZFkxNG1YYzdvVHM2aU1sR3RGSGdqN1BQVUM1SWhfLXM4RkozcjRXZ040eFpCSGJRNU42TmNhYzdYOHgySGgwWURGV2p3N24zeDl6SUQ5M0FJWm1tYnRkV3FWTUlaOVYzZlU4LXZ6?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-21T08:11:04+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "برنده جایزه BAFTA در جشنواره فیلم دیجیتال استانبول جایزه گرفت",
+      "title": "BAFTA ödüllü oyuncu Owen Teale, \"Uluslararası Digital Film Festival İstanbul\"da ödül aldı - Anadolu Ajansı",
+      "title_fa": "جشنواره فیلم دیجیتال"
+    },
     "c498004272f40b80": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -3688,6 +3858,23 @@
       "summary_fa": "هکرها یخچال‌های سوپرمارکت فرانسوی را گرم کرده، باعث حریق و فساد مواد غذایی شد.",
       "title": "Hackers heat French supermarket fridges, sparking fires and spoiling food - Reuters",
       "title_fa": "حمله هکری به یخچال‌های سوپرمارکت فرانسوی"
+    },
+    "d73e562ce952a7f2": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "cloudflare",
+      "first_seen": "2026-10-27T12:13:52.992881+00:00",
+      "id": "d73e562ce952a7f2",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbjhTUnFBaDhLbjVaeDQ0XzN2c3ZHaW5IZTYtdEplM2FwcUxJZTRVaWNXeWlBX3NUSDdPejBHVXc1THJqWDVWYjZaUm5KVUxpdlhtNDNyNUFycllSOGFGZE9qc2Ezb2tINlJGY0dlODRjcUlMZEdZMHF5OGpaTVlraTlXSTh4dHVPdjdLWHkxc2FOZ0FxazR0WG56VGl0T3c0d1ExZEJ4VHFTUnM0X0p1UQ?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-26T21:16:00+00:00",
+      "score": 2,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "رویداد PIR Expo در روسیه برای رستوران، هتل و گردشگری آغاز شد",
+      "title": "Rusya’da restoran, otel ve turizm sektörüne yönelik PIR Expo açıldı - dikGAZETE.com",
+      "title_fa": "رویداد گردشگری در روسیه"
     },
     "d7ccb41914cb0cf1": {
       "cat": "رستوران و کافه در استانبول",
@@ -4404,6 +4591,12 @@
     },
     {
       "at": "2026-10-27T05:07:30.276002+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-27T12:13:52.992881+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
