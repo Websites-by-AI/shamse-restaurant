@@ -493,6 +493,23 @@
       "title": "Arnavutköy'deki restoran yangını kontrol altına alındı - Habererk.com",
       "title_fa": "آتش‌سوزی رستوران استانبول"
     },
+    "15b5f48af6c18bf1": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "pollinations",
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "id": "15b5f48af6c18bf1",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNei13dnFIQjNqYkVxVnNNTmZRYVFMSGh6QTdTUGF5UnRIZ0RWQ2FlZlZZV3lGeWVtRHpNaGVZZWFsM3J1cUVka0FzeS1MZnd5cHQxdzVmSDZuSXV2bjFyNXRhcDB6QVk4ZDhYOW1CdWp5ZW5keG1JNEV3SkdfX00yZGxfeWctZEh2MGlHOGNkdGJiZkVobXBGME1jZ2YtZWVM?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-31T10:19:00+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "یک مفهوم جدید در گاسترونومی استانبول معرفی شد که 12 طعم خاص را در یک تجربه‌ی منحصر به‌فرد به هم می‌پیوندد.",
+      "title": "Gastronomide yeni bir imza: 12 özel lezzet tek bir konsepte buluştu. - Güneydoğu Ekspres",
+      "title_fa": "نویسنده‌ی جدید گاسترونومی: 12 طعم خاص در یک مفهوم"
+    },
     "1609ea2fa7c7c38c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -615,7 +632,7 @@
     "18219f26f7db7625": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T05:43:39.852351+00:00",
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
       "id": "18219f26f7db7625",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWG9ZN01pWjk0ZklXYUJKOGJwWUhrS3BNV3lYV0t0YWJUS052RVpYcXJFSkVlSzVLNzVxMjhwc2t5UndFNmhLem9YWWE5ZHk1Q3pNNlhGODVlY3BHb1dWeG9aOGdtUVkzZU9VM25odU5yeVRyaVFLcTc3bnRkeUlKNTM5ajUySm80d3NuamdLWGEzUVhtVE5SR3AydjZyb1VlcEcxS2g2b2lxX1hPbkE?oc=5",
       "message_id": null,
@@ -1768,6 +1785,23 @@
       "title": "İstanbul’da Kutlama Yapılacak En İyi Mekanlar 2026 - Oggusto",
       "title_fa": "بهترین مکان‌ها برای جشن"
     },
+    "49decb4a3a08dcf3": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "id": "49decb4a3a08dcf3",
+      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPTXYzeDZ1eE1oR1FOT2o0c09oVjdaZmo4VXlLRjFNbzF1dHJkY2lkNkszNTl0R1psQXQyZ0hoVlNqcFE0WXE2MEk3akpRUHdWTGlKN0llZjFOMVBiT0hUTVRDcTRJLUF5MDlHRFExakk3SlRHZDVId19JZXA3UktkbzYxSG5ZNEJ4TmxQdXJYdWVyX29pcVhHNXZobWJ4b1FGSlpjdzRydmYySlBraVZOVDh5TXhUTDlTem9KUEVqOFdwcmY3bGZ0QjNtV2tCWmozMEhVS212VEFJTlRDblpnTE4tbmpweDNCQl9UNm8zV1kydkNKS3FjYUVlM2FKWmJlM3ZJ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-30T22:29:31+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Istanbul Grill California Publishes a Guide to Turkish Baklava - Banning Record Gazette",
+      "title_fa": ""
+    },
     "49dfed5a47a6c50d": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -1907,7 +1941,7 @@
     "4cf0c9ba57379cb7": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T05:43:39.852351+00:00",
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
       "id": "4cf0c9ba57379cb7",
       "link": "https://yabangee.com/kwoon-paribu-art/",
       "message_id": null,
@@ -1958,7 +1992,7 @@
     "4deda2a0d4394773": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T05:43:39.852351+00:00",
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
       "id": "4deda2a0d4394773",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yOHJvWHAwQWZmMXJJNU43UWZPMkZHQ19zOU42dTNhclBmMTB0enNmdDZQbkxlbXFhektfc1hTLXlaa0hkUmJLcTR4Y3A2bVhDWi1wYzg4a1hBN1A2UkhWN01DcHMzY2ZiNGc?oc=5",
       "message_id": null,
@@ -2012,10 +2046,10 @@
       "first_seen": "2026-10-30T12:57:58.422049+00:00",
       "id": "4f4edc22e8eb85f1",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb1M1b1JabE1hMWk5Y240Z3ptRVpObEo4eGhQal92ZWgtTU9IdEpxTzJudGJqQy1Cc21TWUVBUzczdjk4b1N3cjlPLVZlOWdsZFVYTUk2ckpDN05mc0xvQjFtc3NGcVZqUHpnWVl3OEtrSzBoZWYyZ2tjd2VaNjYxMEdlcGdLazNiSkZWcE5zakQwMVRPWGZMdGNWZXowOE0zVTcyRWd0YkVqQ0tEOW1IdkJPeW1yVzlyQUJ2WTg4dEsyX3M?oc=5",
-      "message_id": null,
+      "message_id": 80,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-31T12:33:14.920057+00:00",
       "published": "2026-10-21T09:51:32+00:00",
       "score": 8,
       "source": "Google News — Istanbul food",
@@ -2233,10 +2267,10 @@
       "first_seen": "2026-10-30T05:50:57.616698+00:00",
       "id": "5758800a0631d1f0",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMHpCT3lfZUkwSWpDVWE1RVZrS2EzcXJPQ04wbzl2TXg1RUJqZGxYSDNGVk5vdWlWdEVVbFJpdy1HdGRZZ1p2dVBCdzdFdWhxUFJtX2VjTURWMlZPWGpNSUtLeUJoYWtPWnNOdXIzRlpUZzExLUl3bDNXNkZ4NUlwTGpxWURuczUwbklTNFlxcXJlRDVEMFJaSWlNcHNRR3FYcFcybnlheGFPZWVOcXlYMHNaeTBnSE10dFE?oc=5",
-      "message_id": null,
+      "message_id": 80,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-31T12:33:14.920057+00:00",
       "published": "2026-10-21T13:07:00+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -2447,6 +2481,23 @@
       "summary_fa": "زوجی در استانبول کار خود را رها کردند و یک مزرعه ۴۰ دهکاره خریدند",
       "title": "They left their career in Istanbul! Now they have a 40-decare farm. - Haberler.com",
       "title_fa": "جذب در یک مزرعه"
+    },
+    "604fee07b7919ceb": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "id": "604fee07b7919ceb",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaUxNRmZPRFBFU2VvVmlkai1ONE1sUm5zemZ6LW0yU0dGYTluY0piOHA5RTB4a0hjNHZRWFF5N2hwQ0hSbWM2R1pZclR1VXFtTG5pQmFBeWxXaHNoVV9xbVFVVjVUQmM4MEk4OUVxRnpRLWVCNmRQcHNlZmFUY1hGNDB4U3JGR1o0YVlkMEEzY3k3SHlMYmZPTUR0RFRwb1dwcUdJdVhyVQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-29T09:58:49+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul Havalimanı 8 yılda 487 milyonu aşkın yolcuya hizmet verdi - DHA | Demirören Haber Ajansı",
+      "title_fa": ""
     },
     "6063b1dd24327bdd": {
       "cat": "رستوران و کافه در استانبول",
@@ -2689,7 +2740,7 @@
     "6759552360fbd2f2": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-10-31T05:43:39.852351+00:00",
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
       "id": "6759552360fbd2f2",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWDBBYnowQld4ME1hY2JZWFVpWjJrV1l6NlhOOFZZVUdaVm83ZVQ1bUFObFh6N05yYVRWbDRfcXpmTHYtUm0yRldzSHdQVktITFBaNjRXR1pWQkJRVElzaTh3aTkzZ2RONlFGVDVUQ2wzVWxPSktZcVR2T3JXVG5fYnJtbFdBV1BJS04wTXpoNmU4VFUzQkNTOXhn?oc=5",
       "message_id": null,
@@ -3182,7 +3233,7 @@
     "7afe6f7af4cca6f6": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T05:43:39.852351+00:00",
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
       "id": "7afe6f7af4cca6f6",
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbjNyd0F4aUJuR3hIZEo2QTZEN0xGN2xhc2RWQjVXREVOZnpvd3hrdVdIZHdKYVdWRVluSmFSTUVRamhKTmNaYWFNQjZPSmJGNUppT19mWlFDdHVlb2hDbk9OQVRoZmVON3IxdHpvX3BPMG1yYXVRVlBoZk9wbjE0ZzJIX0ZjOFFRU2EwSXgyMVM5ZV9fRGVSOUJmazBtRFFwSWlj0gGmAUFVX3lxTFB3NEFtcF9oX1hoYVVScC1NZnlhRGphUEgxWGhOWDRKTkctRGVnWjFhSGZKdDRrV0piQ2pyUmZmWEFlT2dxZFNTZ0Q4bGZXSVdhbW5IVG1kTFFMcExjZXJpRGlLNXRxT2NvZFRscTNPN3hGR3lzR1dHaXp4ajU0MGo3NGttZU1LV21DNk9yblRiSEV4dWptUXA5OUc3QUtfR1F5VGxuV1E?oc=5",
       "message_id": null,
@@ -3777,7 +3828,7 @@
     "8fbad50df2b07d3a": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T05:43:39.852351+00:00",
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
       "id": "8fbad50df2b07d3a",
       "link": "https://yabangee.com/giorgos-kakosaios-zorlu-psm/",
       "message_id": null,
@@ -3899,10 +3950,10 @@
       "first_seen": "2026-10-27T12:13:52.992881+00:00",
       "id": "95c8cd9d41962a4e",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPa2JqSEo0SEhFRVMzbEg4RlZTT1RxVjRzcEtkMGF6Y0tzZjVwdjc4U21rell5dVhCZ01hS2pFMzViVFc4MXBVZl9ZNlJWaVNpdjd1UVFaeGJUQVpGWWd2QWdYV3FDcTA5S0t0Zk5zODBBeW9CeVVrTmc4dXJMM1lCOHBzUlRGU00?oc=5",
-      "message_id": null,
+      "message_id": 80,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-10-31T12:33:14.920057+00:00",
       "published": "2026-10-21T17:48:26+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -5627,6 +5678,23 @@
       "title": "Mehmet Akdağ’ın Lezzet Rotaları & 7 Mehmet İstanbul - Oggusto",
       "title_fa": "رستوران‌های استانبول"
     },
+    "d83035ffbd6e77e7": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "id": "d83035ffbd6e77e7",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWWdlM1hiYmNBZzhqQlE3M3JBR1NTYW9RSWxpWEgyOWluRGE2aUZpMjBOZjZxb3BSMEV0azBtejk5eDNhNG43YlVvZmdkbm84Tl9mSVRrZnJ6aTZxbEtCbEY1elREZDN4eUk3STYtd3lyM3M3NEJKSXc1SVBkTmhzcXJtLTZScjhrVFNDa2tSdVYzRWZIdnc2QjMxX2Z2VmhTbVRNREFuLVpCSjJJMFJIbWV4cWF6Ujg?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-31T06:49:44+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Asya’nın en büyük HoReCa buluşması HOSTECH by TUSİD kapılarını açıyor - Ekonomist",
+      "title_fa": ""
+    },
     "d85c86a5257b66d7": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -5797,6 +5865,23 @@
       "title": "(Oct 31) Yabangee International Halloween Party: Volume XIII @ Beat",
       "title_fa": "جشن هالووین"
     },
+    "ddf2f475574d09bf": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "id": "ddf2f475574d09bf",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMzJXSk44YjBYQ0d0VzVndTZmNGRVdjJjX2tmTlZVLVh4VUhINndMY2dRaEowVnBKXzhGZFczd2k4WE12am5MUGdkenZYdXc0UWdlVHVzNHd2dVBaazdhcVRyRExhRTNjZ0k5amFEbkVpZThPbDN1N2ZPQTRsaWk3ZlhjXzdnOGRfZUhIMTlubGZDdDFaVDFwa2VtSGRiUlVJWVFjS1BMbDQySjhWSVVpMjhRTG54Ml82OFHSAbwBQVVfeXFMUFJ3c29kTlFtcllxcnNNNFdickE4UGh4b0xHbGV0bGdrMjNoU19tU1FHSHRHYjNHTEVYeHB0UDFzcmJUY1RRODR6VDZuMXFhTTl1cTFKUDNZTEpUNDhzMFRtMERsTjc1M3llczBQT1ZiZi14eXV0TVBEZlM5SjR4dWs1cnQ1c0xHQkstb0w3ajdSamFqSFMzQkpsQ180SUIyZjlQd0pQLS1BWWNoTlp0Q01WZ2FmaHYwSDR3eDg?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-30T06:05:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Günay Restaurant'ta yıldız buluşması! Berkay ve Ivi Adamou aynı sahnede - Bursada Bugün",
+      "title_fa": ""
+    },
     "dee20a5c29109d35": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -5949,6 +6034,23 @@
       "summary_fa": "در استانبول به یک فستیوال غذا حمله شد. مهاجمان با سنگ و چوب به محل حمله کردند.",
       "title": "İstanbul'da festival alanına taşlı sopalı saldırı! Tekbir getirerek ilerlediler - Haberler",
       "title_fa": "حمله به فستیوال غذا در استانبول"
+    },
+    "ea10bfd18755ee3a": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "id": "ea10bfd18755ee3a",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeVJYSGNQWk9WenB3Vm10YzVraWZXUFZlNE9PUk1qeWVIcEk0bU5MRjIzSUJmaHhBVXhQZmVObzR5SFBmRHQwNkNUX2M5aWg4R2lDaXFkcGJnazJ6UlpuamdJaV9qbWdNSU5YdkdieG81T2d5bDZva29iWmREaXBHQXAxUnpwaGZsaEZ6dDV2WGNoX0VvN2Jrc3JWSWUzNVFmUngzMXZKcUd5RkFIeXh4eXVpNDF0bzA2OV9hZ3FJQ1FpdEU?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-31T06:16:56+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Istanbul Grill Catering Adds Event Venue Booking to Online Ordering - Akron Beacon Journal",
+      "title_fa": ""
     },
     "ebf561b1a1bbc2ee": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -6590,6 +6692,12 @@
     },
     {
       "at": "2026-10-31T05:43:39.852351+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-10-31T12:33:14.920057+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
