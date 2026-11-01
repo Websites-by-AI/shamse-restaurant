@@ -649,7 +649,7 @@
     "18219f26f7db7625": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "18219f26f7db7625",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWG9ZN01pWjk0ZklXYUJKOGJwWUhrS3BNV3lYV0t0YWJUS052RVpYcXJFSkVlSzVLNzVxMjhwc2t5UndFNmhLem9YWWE5ZHk1Q3pNNlhGODVlY3BHb1dWeG9aOGdtUVkzZU9VM25odU5yeVRyaVFLcTc3bnRkeUlKNTM5ajUySm80d3NuamdLWGEzUVhtVE5SR3AydjZyb1VlcEcxS2g2b2lxX1hPbkE?oc=5",
       "message_id": null,
@@ -883,6 +883,23 @@
       "summary_fa": "یوتیوبر MeatMan از کایماک شیر بوفالو در استانبول می‌گوید.",
       "title": "YouTuber MeatMan highlights life-changing buffalo milk kaymak in Istanbul - www.famtimes.co.kr",
       "title_fa": "کایماک شگفت‌انگیز استانبول"
+    },
+    "1e9e6ac19085cd92": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
+      "id": "1e9e6ac19085cd92",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNc0tKY0VMcGlaUWFLZ1RGYXZWNkJ0ZDc4d0QxbkxBeDlFNUVGd1FIeTVTcVQxLWQxZGg0WVFYRGt3aUpEa18zTzM3QlpqUy1SWERlTTNnR0xjbzRjOVh6RGpOOTV5anQzaG80emVUOHlraVJIMnFlQXpGT1hTRWVNUmJSYkZFdFhNMC1NbFlmaXFZM2FnbXRJZVFjT1h2NGVzTU5fUk5sUGtwbnNfVk10R3ZUSjlMWV94RDZDUA?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-31T06:16:56+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Istanbul Grill California Publishes a Guide to Turkish Baklava - Akron Beacon Journal",
+      "title_fa": ""
     },
     "1ed713badd96737e": {
       "cat": "رستوران و کافه در استانبول",
@@ -1570,10 +1587,10 @@
       "first_seen": "2026-10-29T13:03:41.112897+00:00",
       "id": "4135935d9b98b74e",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaEozUVlaM1Y3VFoyOE1MdkJIRlFkTGQ4YVg3M2ZoMWh4bHF0Qk5mNDgyc0VlWEM2MnY0Wm1QZjBjbFp4UkExVDdydmpJYm0tOThNalVJdXRPRDVzTUpTcF9zNmk3Q243a2tHNkpiMjNxazVBSXE0MmxmLVA2ZDF3cE9CLW55WmZ5czNKTEhrZmhTZw?oc=5",
-      "message_id": null,
+      "message_id": 82,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T06:08:03.693621+00:00",
       "published": "2026-10-24T17:20:00+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -1825,10 +1842,10 @@
       "first_seen": "2026-10-28T22:36:39.518873+00:00",
       "id": "48aabe876c9ade7d",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdDBybXFCczNiODh4dUR6a2VkWnZ1N2FoaUl6Q0d4TVNJSjNMcUZlWHdFQ1dCV1YxY01zMW9SRHhmTGZNSUk0NzBqS19GZERtbktwZjhlUGtIVEVhZVVia2FCb1VncTZpTEUxY3BOMW5XRk1BQW9PeVZqc2tLdkdCNXctdXJKdjFpYThn?oc=5",
-      "message_id": null,
+      "message_id": 82,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T06:08:03.693621+00:00",
       "published": "2026-10-24T19:22:46+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -2009,7 +2026,7 @@
     "4cf0c9ba57379cb7": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "4cf0c9ba57379cb7",
       "link": "https://yabangee.com/kwoon-paribu-art/",
       "message_id": null,
@@ -2060,7 +2077,7 @@
     "4deda2a0d4394773": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "4deda2a0d4394773",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yOHJvWHAwQWZmMXJJNU43UWZPMkZHQ19zOU42dTNhclBmMTB0enNmdDZQbkxlbXFhektfc1hTLXlaa0hkUmJLcTR4Y3A2bVhDWi1wYzg4a1hBN1A2UkhWN01DcHMzY2ZiNGc?oc=5",
       "message_id": null,
@@ -2553,7 +2570,7 @@
     "604fee07b7919ceb": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "604fee07b7919ceb",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaUxNRmZPRFBFU2VvVmlkai1ONE1sUm5zemZ6LW0yU0dGYTluY0piOHA5RTB4a0hjNHZRWFF5N2hwQ0hSbWM2R1pZclR1VXFtTG5pQmFBeWxXaHNoVV9xbVFVVjVUQmM4MEk4OUVxRnpRLWVCNmRQcHNlZmFUY1hGNDB4U3JGR1o0YVlkMEEzY3k3SHlMYmZPTUR0RFRwb1dwcUdJdVhyVQ?oc=5",
       "message_id": null,
@@ -5531,10 +5548,10 @@
       "first_seen": "2026-10-28T12:56:46.110724+00:00",
       "id": "cd785b558e4b4c5f",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTzdMOXBHVlN6Rnd5aDdzMVlpckZpMzl5SGI4Ny1RTDN2VEdVRnM4S2w1aXRSYnh2Y1c5Y25SYjFrRlZnYWV5dkdvVlkzc05Qa0liSjRHVklpcUE0c1o5TEVwT1RIM0hvcXpQRW9YR0Uyc1Boelk2LXhrVks2NXhTalVtLTNobExRRG54dQ?oc=5",
-      "message_id": null,
+      "message_id": 82,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T06:08:03.693621+00:00",
       "published": "2026-10-23T11:22:19+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -5783,7 +5800,7 @@
     "d83035ffbd6e77e7": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "d83035ffbd6e77e7",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWWdlM1hiYmNBZzhqQlE3M3JBR1NTYW9RSWxpWEgyOWluRGE2aUZpMjBOZjZxb3BSMEV0azBtejk5eDNhNG43YlVvZmdkbm84Tl9mSVRrZnJ6aTZxbEtCbEY1elREZDN4eUk3STYtd3lyM3M3NEJKSXc1SVBkTmhzcXJtLTZScjhrVFNDa2tSdVYzRWZIdnc2QjMxX2Z2VmhTbVRNREFuLVpCSjJJMFJIbWV4cWF6Ujg?oc=5",
       "message_id": null,
@@ -5885,7 +5902,7 @@
     "da9cd2833d594c07": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T21:36:21.834925+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "da9cd2833d594c07",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGpWX0haVFdxTmpJNFlCX1YyYVkwSnpQLW1rR2k2NW5JS1BTRWZxeU5FZ2l2YW5mbXlhSk5MbmhvSEsySTEyYkFfUXlUY1FuUVRRa2duMFVyRHlUOGtjWXV1SkZESXBHVGJWOXFQRlB3SzBBMXRPaF9MRjY4dkR6UGhwSHo1ZjcwQ0lsQ3UwWGU?oc=5",
       "message_id": null,
@@ -5987,7 +6004,7 @@
     "ddf2f475574d09bf": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-10-31T21:36:21.834925+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "ddf2f475574d09bf",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMzJXSk44YjBYQ0d0VzVndTZmNGRVdjJjX2tmTlZVLVh4VUhINndMY2dRaEowVnBKXzhGZFczd2k4WE12am5MUGdkenZYdXc0UWdlVHVzNHd2dVBaazdhcVRyRExhRTNjZ0k5amFEbkVpZThPbDN1N2ZPQTRsaWk3ZlhjXzdnOGRfZUhIMTlubGZDdDFaVDFwa2VtSGRiUlVJWVFjS1BMbDQySjhWSVVpMjhRTG54Ml82OFHSAbwBQVVfeXFMUFJ3c29kTlFtcllxcnNNNFdickE4UGh4b0xHbGV0bGdrMjNoU19tU1FHSHRHYjNHTEVYeHB0UDFzcmJUY1RRODR6VDZuMXFhTTl1cTFKUDNZTEpUNDhzMFRtMERsTjc1M3llczBQT1ZiZi14eXV0TVBEZlM5SjR4dWs1cnQ1c0xHQkstb0w3ajdSamFqSFMzQkpsQ180SUIyZjlQd0pQLS1BWWNoTlp0Q01WZ2FmaHYwSDR3eDg?oc=5",
       "message_id": null,
@@ -6137,6 +6154,23 @@
       "title": "Meysu Gida Steps Up Share Buybacks on Borsa İstanbul - The Globe and Mail",
       "title_fa": ""
     },
+    "e5daf12d3d249b3f": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "pollinations",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
+      "id": "e5daf12d3d249b3f",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQY1NZVzNLTkJOV29CcllfMUV6U2stVU9CUlVWaFMtTTRTaWFqREZySWQ4V0RLdjdhVWlFdkFnMnVsSFo3ajBOVTFOakN1S0xyN1U2VFhQd1NmTm5VUHdCblQ5c1M4LWw5S0NlVU5VWU5oLXpmQS1vME9HZTlQYV93SHhOUENjX3RRRXZReG5mbFRSdmRMVGc?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-31T22:52:29+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "فستیوال MIX، به مناسبت ده سالگی Zorlu Performing Arts Center، از 6 نوامبر در PSM آغاز می‌شود و ترکیبی از غذا و موسیقی را به نمایش می‌گذارد.",
+      "title": "Zorlu PSM'de 10. Yıl: MIX Festival 6 Kasım'da Başlıyor - Yorumla",
+      "title_fa": "فستیوال MIX 10 ساله در Zorlu PSM، 6 نوامبر آغاز می‌شود"
+    },
     "e68f112f08c7c345": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "pollinations",
@@ -6174,7 +6208,7 @@
     "e7255e2b5a33abae": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-10-31T21:36:21.834925+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "e7255e2b5a33abae",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZHA5eGU3eGcyOTc5OXQ1YUJod0ZLUkRVZ3o4N2FULU1JRkRONEI0OHBDS1lza3JBVm8tdl8waUl5V25EV0t6OTh2MlY2Y2s1VDNFbVo1RXYycEdfRmg3NGlLWk00VWp2Y195RnFfOEQ4U1o5WDNZRHBQXy14eHR4RWxERW0zNnh6c1VmbzR4T2czVWc4UGfSAZsBQVVfeXFMTXp2UXVqMnd1M0k0UDlZbXRoVzltMXY3OXYwOXJ1Z29fcWMzeXp1NTh3VUNpNng5SllYQTRPT3pEUTI5NTFiRVd1bmduQkViV180MHNTN3kxZVdkRWlZZVNkZGtxemJoMERwd3d3TGdrQzMwQ1ViXy04NlMtdXRLM1c4UjM5MzN6SmZZcFIwaDctSzEtZWp5ckRSSGc?oc=5",
       "message_id": null,
@@ -6208,7 +6242,7 @@
     "ea10bfd18755ee3a": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
-      "first_seen": "2026-10-31T12:33:14.920057+00:00",
+      "first_seen": "2026-11-01T06:08:03.693621+00:00",
       "id": "ea10bfd18755ee3a",
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeVJYSGNQWk9WenB3Vm10YzVraWZXUFZlNE9PUk1qeWVIcEk0bU5MRjIzSUJmaHhBVXhQZmVObzR5SFBmRHQwNkNUX2M5aWg4R2lDaXFkcGJnazJ6UlpuamdJaV9qbWdNSU5YdkdieG81T2d5bDZva29iWmREaXBHQXAxUnpwaGZsaEZ6dDV2WGNoX0VvN2Jrc3JWSWUzNVFmUngzMXZKcUd5RkFIeXh4eXVpNDF0bzA2OV9hZ3FJQ1FpdEU?oc=5",
       "message_id": null,
@@ -6874,6 +6908,12 @@
     },
     {
       "at": "2026-10-31T21:36:21.834925+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-11-01T06:08:03.693621+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
