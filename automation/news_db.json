@@ -85,6 +85,23 @@
       "title": "There’s a hidden world behind Istanbul’s Grand Bazaar that hasn’t changed in centuries - CNN",
       "title_fa": "دنیای پنهان بازار بزرگ استانبول"
     },
+    "021376b22d7c2b82": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
+      "id": "021376b22d7c2b82",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9JWjNoS1ByMDFzNDNidnRGb1FjMlNFSDk1QWJVQkRycWVKVXNteXVZV0tvMnFwbGFka3F0bXA1UDFUa3ltYUhvR0Fid0lmaURaZ3ZnYWxacFlVWVpBZEt0Y0NZODdMLUh5UGJLLWMxVmwzQQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-28T23:14:00+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Handsome corn vendor in Türkiye becomes SNS star with millions of followers - famtimes.co.kr",
+      "title_fa": ""
+    },
     "0390b64c5a353509": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -272,6 +289,23 @@
       "title": "Burger & Lobster’ın Avrupa’daki ilk adresi İstanbul oldu - gastronomiturkey.com",
       "title_fa": ""
     },
+    "0c7c6ddcdc6c36f3": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "pollinations",
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
+      "id": "0c7c6ddcdc6c36f3",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV2ZRMndJNFptTkVVVWxGWXg3N0tRUjZBemhkSm9vOWZYNW12YUROOS1tWkNJRWR0c3VtV1ozb3FJZUdSdGxIQkZ6MnVHSUcwTGdxS3oyd3J3RGI3Z2lVMmNBUzg5dW9MRXFldHlhSmFXWG9zb0lnN19PTG5PeWY2YkJR?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-01T11:17:00+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "خبر درباره شروع مونتاژ هواپیما در رستوران.",
+      "title": "Restoran uçağın montajı başladı - Haber 7",
+      "title_fa": "آغاز مونتاژ هواپیما در رستوران"
+    },
     "0cecce9f297d8ce8": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -312,10 +346,10 @@
       "first_seen": "2026-10-26T22:41:08.966905+00:00",
       "id": "0ea9829cbaa218f4",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOT0lxckU4aWVoRVhCR2dIbWY3clRUWWtERjUxRUtmQUFNaEdsM0VpWlpWR0M1dVpZTkNzZEt1M3YtMEFmR2QxdUJ2dXlvdHFZSXJMUXc5a1Nfenc4RmUzZlpXM3FRRE5pRWRyb3NDTFdFd1RVVTU3YUowVkwtdERKYnBrVG9Ub2ZBc1dXdnpPLVZKdlhnYVVTVG5NRjBQRWM0MVNqczl3TFVGNmRTbENGX1JYdWl3QkdJaW1F?oc=5",
-      "message_id": null,
+      "message_id": 84,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T22:03:26.850164+00:00",
       "published": "2026-10-26T06:02:59+00:00",
       "score": 8,
       "source": "Google News — Istanbul food",
@@ -887,7 +921,7 @@
     "1e9e6ac19085cd92": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
-      "first_seen": "2026-11-01T06:08:03.693621+00:00",
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
       "id": "1e9e6ac19085cd92",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNc0tKY0VMcGlaUWFLZ1RGYXZWNkJ0ZDc4d0QxbkxBeDlFNUVGd1FIeTVTcVQxLWQxZGg0WVFYRGt3aUpEa18zTzM3QlpqUy1SWERlTTNnR0xjbzRjOVh6RGpOOTV5anQzaG80emVUOHlraVJIMnFlQXpGT1hTRWVNUmJSYkZFdFhNMC1NbFlmaXFZM2FnbXRJZVFjT1h2NGVzTU5fUk5sUGtwbnNfVk10R3ZUSjlMWV94RDZDUA?oc=5",
       "message_id": null,
@@ -1139,6 +1173,23 @@
       "title": "Sadiq Khan’ın künefe atölyesi: Londra ile İstanbul arasında tatlı köprü - Aksiyon.com.TR",
       "title_fa": ""
     },
+    "27fc7b63d7e1bff6": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
+      "id": "27fc7b63d7e1bff6",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSk5qLXdzZXdGZGJhY1Iya081MnNvalZ2SENtV1RnYnlBZUR6X2xRYllLRGFmUzAteUJJT3l4aDBvR05PZXd0V1hlSjVYUFJmZDAzUzVtdG5GUjhEeWtpZ0tyN3FKQlVraVV0LTNlekZMRVBZNTBKU0FlSk1UNVZjajhTOUIyR21BN3N3bHVtX195MWdGUS1ZY0Z1QTFMbDhMSVgwMGoyQXhZX00?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-30T23:11:38+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Tukas Gida stock gets one-year buyback framework - ad-hoc-news.de",
+      "title_fa": ""
+    },
     "284930bda652d9f0": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -1172,6 +1223,23 @@
       "summary_fa": "Accor در استانبول یک شب ترکیبی از گاسترونومی و موسیقی برگزار کرد که علاقه‌مندان به غذا و هنر را به هم پیوند داد.",
       "title": "ALL Accor’dan gastronomi ve müziği buluşturan gece - Tourism Today",
       "title_fa": "شب گاسترونومی و موسیقی Accor در استانبول"
+    },
+    "2987e6c2e9926f11": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
+      "id": "2987e6c2e9926f11",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ3hJdVRtODVFdl9EVEYzVUtIYXR5d0MyQ2w4RlhfWWtOMk1wcVhxQUtTN0xlSDk0Njc0My1JN2hIYkt6X1FNcUFqa1ZmbDhPdWo1OFNsOXVybUNwX1RTeUFwZ2dQT3A2TTl6NjNoM09DbUVjbnZsQ1BBVmMwSHV2T1JWa3dSbVgzUXNJelljRDU2cE9vNm5lNmVtMzlWMFpWVmhHSw?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-31T15:06:41+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Top 5 Best Iftar Deals in Islamabad for Ramadan 2026 - TechJuice",
+      "title_fa": ""
     },
     "29bc1c6967a5e3cf": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2465,23 +2533,6 @@
       "title": "Çocuklar için sanatın sınırları kalkıyor: Atta Festival 10 yaşında - Euronews.com",
       "title_fa": "فستيوال آتا ۱۰ سالشده"
     },
-    "5d371af4ecff816e": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": null,
-      "first_seen": "2026-10-14T20:13:49.195581+00:00",
-      "id": "5d371af4ecff816e",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUEVjVkE4Y09DdVhvdm5pRmRvRWhBbk9aOVlfaVJUd3RDWlM5VnNsVGtJYWJqWUczemtwNTB6em1hSWwwajd5aTBES21PVlBuYXNxcFFYNGhxeUktaHRtTmVhTkRoUHJQeThoQ0hfNW43aDF3MWNsUGU0UkRlMmxOR2hYT0hCMGNrc1VEWWVfR2FjejE1eUhTVFJwOGpRMlRWdGc?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-14T18:54:56+00:00",
-      "score": null,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "",
-      "title": "Heavy rain and flooding in Istanbul forces closure of schools - CT Insider",
-      "title_fa": ""
-    },
     "5dafe2684c1690a0": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -2570,7 +2621,7 @@
     "604fee07b7919ceb": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-01T06:08:03.693621+00:00",
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
       "id": "604fee07b7919ceb",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaUxNRmZPRFBFU2VvVmlkai1ONE1sUm5zemZ6LW0yU0dGYTluY0piOHA5RTB4a0hjNHZRWFF5N2hwQ0hSbWM2R1pZclR1VXFtTG5pQmFBeWxXaHNoVV9xbVFVVjVUQmM4MEk4OUVxRnpRLWVCNmRQcHNlZmFUY1hGNDB4U3JGR1o0YVlkMEEzY3k3SHlMYmZPTUR0RFRwb1dwcUdJdVhyVQ?oc=5",
       "message_id": null,
@@ -2641,10 +2692,10 @@
       "first_seen": "2026-10-29T13:03:41.112897+00:00",
       "id": "610f55e66da7f008",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZVGNNM3B3aHF2TmUwaDFsdUR0Z0hoOUg2Q0pKUC1EUzhzZXRZd2k4TUI0V2N0Sl9oeEpfcEtSMlBqLXRGWFZfeElQRWZ4eUptVUxJVUxRNEJwNG5wZkJIekwyRExzb0FObFF2YlNVVG4?oc=5",
-      "message_id": null,
+      "message_id": 84,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T22:03:26.850164+00:00",
       "published": "2026-10-26T01:47:22+00:00",
       "score": 8,
       "source": "Google News — Istanbul food",
@@ -3168,10 +3219,10 @@
       "first_seen": "2026-10-27T05:07:30.276002+00:00",
       "id": "76526ccf7f5d30f9",
       "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeDAyNEhXdEg0VUY5NXVBeDFfZkczVW1fNWdHZF9CajBjTTY0NGxmOTJvY1RHVk9wODBPMXllMUFmbkpscUJtNUlFOE5PRnlUU2lmTU5DMndXc0hLRDRWXzIzWkdHaURoMTNpbFFhSjFHOGwzY2VwNC1KWllaYjZUcEhUdGVrSDdaeHV1dDFFLS1lZDhkTE5Wbi1IekVUUkRYZzZQc2hIdURVaHl6aW5lY05PblEwLUpjSkgzcHRiWUFtZGhrZzhReA?oc=5",
-      "message_id": null,
+      "message_id": 84,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-01T22:03:26.850164+00:00",
       "published": "2026-10-25T20:39:55+00:00",
       "score": 8,
       "source": "Google News — İstanbul restoran",
@@ -3556,7 +3607,7 @@
     "815cb42d6e78e8a7": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-01T13:26:50.560924+00:00",
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
       "id": "815cb42d6e78e8a7",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdnJSTHl5TE9lclh6TVRTaTFNNGl4WVZqNC14TWdaaDlPTk5rWEgzMDM1QXd6WVAwUXZ6NEkyY2NLSF9YQ015N3Ixb2VoanB5OTZNUjYtVkp1S2stOURSY1ZpeVZhS0N2TldYek1FQm5iVmNWWGp0TmdVeGV2Vm9nYWRIVEFZUlBYcEE?oc=5",
       "message_id": null,
@@ -4029,23 +4080,6 @@
       "title": "'Şehrin Caz Hâli' İstanbul’u kuşattı: Festival devam ediyor - Türkiye Gazetesi",
       "title_fa": "فستیوال جاز استانبول"
     },
-    "93de7437e2a93173": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": null,
-      "first_seen": "2026-10-14T20:13:49.195581+00:00",
-      "id": "93de7437e2a93173",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY21lX09uaUZjY2kxaGN3V3B2ZEZEelNYWkMyZzNPSno1YTlRd3J5T0h5MDRQc3NHUXJFTm4wNVR5a1l5U0trbmRPMEJERGR5d0UyNFFPdHAxOVlGcWFPWnZTOEEyZmkxSzRJaUd0UllUT3pwQ1pHMDdwRTkwM21IelFETHM2ZlJlNkhfTTBMTDhFZ2lqVkFoaTN3?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-14T11:37:51+00:00",
-      "score": null,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "Safranbolu’nun Değerleri İstanbul’da Uluslararası Turizme Tanıtıldı - Karabük Postası",
-      "title_fa": ""
-    },
     "94fd8e5742cc0345": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -4368,6 +4402,23 @@
       "summary_fa": "جشنواره فیلم ترک در استانبول آغاز شد.",
       "title": "Açılış filmi Aytmatov: 6. Korkut Ata Türk Dünyası Film Festivali İstanbul’da başlıyor! - Takvim",
       "title_fa": "ششمین جشنواره فیلم ترک"
+    },
+    "a083ab6fff0de0be": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
+      "id": "a083ab6fff0de0be",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOdF81Q19RYTRFM1B5VGxtSWNGZ3hzOE9oX1ZEdEZSanJfdXU5MkVCX25KNmtyVnptMmphTUtGZmxpdEpBczBHUFBmbVpmRVNvT2ZsZkN1TDFFODVWZ1pHUXcwODBEZWhjU1VNeVRuZHhTQ3l0dEx0WThwa0dyMzZ0cFRMbENQUklscU83Uy1nZWN1RW13RUNSZG1rVXYyeE82V3ozcVVwMGFUeTJKUHBQMXZHVWV2OEUxSng2RjkwTGxXUEVhRjJfTk5TRXhHMFg0NHg2eGptV0dFNVVIUEJ5WGgtMnUxVjJSdXM1OVJfNG8yOVhIR2dvRmgtd3kxNHBTeGhHRkdER3dhVVU?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-30T22:29:46+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Istanbul Grill Catering Adds Event Venue Booking to Online Ordering - pictouadvocate.com",
+      "title_fa": ""
     },
     "a17210bcd09b133d": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -4707,6 +4758,23 @@
       "source": "Google News — İstanbul restoran",
       "summary_fa": "ترمینال VIP در فرودگاه استانبول",
       "title": "İstanbul Havalimanı’ndaki VIP Terminal Rus Turistlerin Aktarma Tercihini Değiştiriyor - Turizm Gazetesi",
+      "title_fa": ""
+    },
+    "ab065dc90fa7d371": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
+      "id": "ab065dc90fa7d371",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdjJJREltXzNtdHZUVVdVUmRGN2ppbmN1cWRjZkNoWGpMUjI5SnZrS3lydkR2Q0lDdVk3MGdQRVVwMDBjRmpXelNPdXJoT0JyV3ZHUVFQcXhwcFdlYU9ZdUc0TDhmcml3N3gxYUJxMWc1QmF2TWhXSzliSDg1UWRTUjVxV0ZRNXp2bnV1RWI2UlFYSGQzNlV6b0hGNmI?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-30T08:28:58+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Burger & Lobster’ın Avrupa’daki ilk adresi İstanbul oldu - gastronomiturkey.com",
       "title_fa": ""
     },
     "abbbd04a13af7163": {
@@ -5987,7 +6055,7 @@
     "da9cd2833d594c07": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-01T13:26:50.560924+00:00",
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
       "id": "da9cd2833d594c07",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGpWX0haVFdxTmpJNFlCX1YyYVkwSnpQLW1rR2k2NW5JS1BTRWZxeU5FZ2l2YW5mbXlhSk5MbmhvSEsySTEyYkFfUXlUY1FuUVRRa2duMFVyRHlUOGtjWXV1SkZESXBHVGJWOXFQRlB3SzBBMXRPaF9MRjY4dkR6UGhwSHo1ZjcwQ0lsQ3UwWGU?oc=5",
       "message_id": null,
@@ -6293,7 +6361,7 @@
     "e7255e2b5a33abae": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-01T13:26:50.560924+00:00",
+      "first_seen": "2026-11-01T22:03:26.850164+00:00",
       "id": "e7255e2b5a33abae",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZHA5eGU3eGcyOTc5OXQ1YUJod0ZLUkRVZ3o4N2FULU1JRkRONEI0OHBDS1lza3JBVm8tdl8waUl5V25EV0t6OTh2MlY2Y2s1VDNFbVo1RXYycEdfRmg3NGlLWk00VWp2Y195RnFfOEQ4U1o5WDNZRHBQXy14eHR4RWxERW0zNnh6c1VmbzR4T2czVWc4UGfSAZsBQVVfeXFMTXp2UXVqMnd1M0k0UDlZbXRoVzltMXY3OXYwOXJ1Z29fcWMzeXp1NTh3VUNpNng5SllYQTRPT3pEUTI5NTFiRVd1bmduQkViV180MHNTN3kxZVdkRWlZZVNkZGtxemJoMERwd3d3TGdrQzMwQ1ViXy04NlMtdXRLM1c4UjM5MzN6SmZZcFIwaDctSzEtZWp5ckRSSGc?oc=5",
       "message_id": null,
@@ -6698,23 +6766,6 @@
       "title": "mixed middle eastern meze sharing food platter in turkish restaurant - MiNDFOOD",
       "title_fa": "پلتر غذای ترکی"
     },
-    "fd0dcd2c5e3f3e75": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": null,
-      "first_seen": "2026-10-14T20:13:49.195581+00:00",
-      "id": "fd0dcd2c5e3f3e75",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rYkNNYi0zQVY3TE92VC1qeEV3R194eFVZNHdZN1NjNDFlWkU1RHg2dGsxQkpmX1RvcHozMWgyazVWUUgtVGRiVU1lcUFubDBXVFg1WF8wbGh4VDFIelR1XzFwOGc2UnR5eTlpRnMtOERDNVFlRV9QWEI0emxRUQ?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-14T17:00:24+00:00",
-      "score": null,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "",
-      "title": "Heavy Rain hits Istanbul - Anadolu Ajansı",
-      "title_fa": ""
-    },
     "fda14a8eb7f8c10b": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -7005,6 +7056,12 @@
     },
     {
       "at": "2026-11-01T13:26:50.560924+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-11-01T22:03:26.850164+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
