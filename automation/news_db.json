@@ -136,6 +136,23 @@
       "title": "Afrika yemekleri Türk damak tadına sanıldığı kadar uzak değil - Anadolu Ajansı",
       "title_fa": "غذاهای آفریقایی"
     },
+    "046b716263015230": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "046b716263015230",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBiUG5QbWNpcGVfRnZGLWV2X3k2N1BGNmtOVW43bFdycFFTSGd6UklNYW1lWU5ZNV9LeGtlX21NRjA4LUNuZWNXeGdPcHczUWtSVGl2LUNRUlBISE9ZRVJrZEF2MGpqRmc1TENGYS0zMEpfQ1pOeWtSUQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-05T13:01:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Devrek’te gastronomi alanı için önemli görüşme! - Elmas 67",
+      "title_fa": ""
+    },
     "04c9fe03d812c8c7": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -304,6 +321,23 @@
       "source": "Google News — İstanbul restoran",
       "summary_fa": "",
       "title": "Burger & Lobster’ın Avrupa’daki ilk adresi İstanbul oldu - gastronomiturkey.com",
+      "title_fa": ""
+    },
+    "0c25b4bb2809972d": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "0c25b4bb2809972d",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOWgxaUtldEV6ZE9PQ3BiWlZtYmlROWFuMDBDdk9uaTlLMlpMekE1ZjdLYTFfVXBOVWVrNzltTHh1RUFNQlFqc0FjUnFWd1JUUDlZZUNIdWV6cVVjMTEzZjdLSnFyNmV2aE14eU1qc2hiOEF5LTBxbFFxb0R0QmhUQVhn0gGCAUFVX3lxTE85aDFpS2V0RXpkT09DcGJaVm1iaVE5YW4wMEN2T25pOUsyWkx6QTVmN0thMV9VcE5VZWs3OW1MeHVFQU1CUWpzQWNScVZ3UlRQOVllQ0h1ZXpxVWMxMTNmN0tKcXI2ZXZoTXh5TWpzaGI4QXktMHFsUXFvRHRCaFRBWGc?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-05T15:30:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Londra'da Tanıdık Bir İsim: Lucca - alem.com.tr",
       "title_fa": ""
     },
     "0c7c6ddcdc6c36f3": {
@@ -1043,10 +1077,10 @@
       "first_seen": "2026-10-30T22:22:07.422741+00:00",
       "id": "1ffdd6f59d3b954d",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPclRMeUlfeWNuTUV6ZUFRYzV5TjRMM1A1RWItZ09UM09rT19aVE5YanU0ZFVkbkFQWEF3TDdXamJhYXV0bWUwMnVBcDBIWUhicnNJR01yMjBtbEVzNWR6NmNyNml5dnQtMG5Cc1RPU0ZvVExidEdZYVQzVGVWOWh1dDcwVHpqTVJYcTJJN0YxUGpYM2Q0NUhtZnFHRDJzSTlhdF9uaHR2SHBUODRHWnNUVUlPNGRqVTZyQ3JTTFJ3?oc=5",
-      "message_id": null,
+      "message_id": 95,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-05T19:58:06.328740+00:00",
       "published": "2026-10-29T11:24:07+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -1683,6 +1717,23 @@
       "title": "Düziçi’nde Alaca Gold Restoran Cafe Açıldı - Sabır Gazetesi",
       "title_fa": "بازشدن کافه رستوران"
     },
+    "3d9c2ab6896a7bce": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "pollinations",
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "3d9c2ab6896a7bce",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5zakdVV0swWjl1SFhBX0N4R0w4S2JyQUNKSFNZNFFwZnAyRXlNZlRoMnkwdUJ1S2pMZ2VXRlVNSHBSRGdiTHJiYnFWeVBCYWdmWFpnbjQyUWJ6RDgyOFQwRmt3RDVrVXdUQ0xiS0tnRkZNY3o0Ymg0UGE3aFdfUQ?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-05T16:37:22+00:00",
+      "score": 6,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "یک راهنمای کامل از بهترین قهوه‌خانه‌ها و کافه‌های نسل جدید در استانبول، ارائه شده توسط Oggusto.",
+      "title": "İstanbul Kahve Rehberi: En İyi Kahveciler ve Yeni Nesil Kafeler - Oggusto",
+      "title_fa": "راهنمای قهوه‌خانه‌های استانبول: بهترین‌ها و کافه‌های نسل جدید"
+    },
     "3eac57e4cff73281": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": "cloudflare",
@@ -1937,6 +1988,23 @@
       "summary_fa": "هتل هتل در پنج کشور، عملیات گاسترونومی خود را به مدیر یانس مانیکیس واگذار کرده، گزارش توریزم گازیتسی.",
       "title": "Hilton’un Beş Ülkedeki Gastronomi Operasyonları Yannis Manikis’e Emanet - Turizm Gazetesi",
       "title_fa": "عملیات گاسترونومی هتل هتل در پنج کشور به یانس مانیکیس واگذار شد"
+    },
+    "4820d848e25e3585": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "4820d848e25e3585",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZG42Y1V4SEctZTBBdU9kbWE4ZFZBVzFjS3FZT1hRbmtTc3ZxdTNib1EzbmxZMXo1MTJleHQzdTd0TXBaOFg5cU93VXoyUlZjUV85VlptUEtud2FleXBBejJmX05qWjBFTGJVTm5oUDBLRnBpTllzLTRGbUJCZGtXb2p0cmFDMEk2TzN4M1NvS1hRRnczZ3NwMDY3Z0QzTFUwNXhoVVZR?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-05T11:11:41+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul'un mirası Koç Holding katkılarıyla Londra'da - Time Out Worldwide",
+      "title_fa": ""
     },
     "48a15d973c3d0eae": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2907,6 +2975,23 @@
       "title": "Ankara'da En İyi Balık Restoranları | En Lezzetli Mekanlar 2026 - Oggusto",
       "title_fa": "رستوران‌های ماهی در آنکارا"
     },
+    "674a5f00a60fbbfe": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "674a5f00a60fbbfe",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zMFo5c18ySUJ0WENHSThfUHR1aUdsdGlIdlBzT2luQkNoaHhpVURPbTBNeXhVVlZNUl9CZTVTbnFuQkhSVnQ3aVBqR0Q4TE82ZS1iWHdSdU9OOTdVaFp2dlhLNnc0cXQzNUo0OG5sTmg?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-05T14:36:26+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Dünyanın En İyi 50 Restoranı 2026 Açıklandı: Zirvede Kim Var? - Oggusto",
+      "title_fa": ""
+    },
     "6759552360fbd2f2": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
@@ -2998,10 +3083,10 @@
       "first_seen": "2026-10-29T13:03:41.112897+00:00",
       "id": "68eacf7fd073acd9",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMXhqOFkwSDV4dHlhWk92ZXFJSWJqcmluRGp0ZnpoNXMxYzlCNXZKZll4QWQ3bmhnMVdodUhQQnVJM0xhc29qVTRYV3Y3UW56TFhJc0d0X3hnMHBsak9JcFhud0FpbFlvSEpRY2wzOElzelhNY1JCWEs2SWRVVlhoTjZn?oc=5",
-      "message_id": null,
+      "message_id": 95,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-05T19:58:06.328740+00:00",
       "published": "2026-10-29T10:14:31+00:00",
       "score": 8,
       "source": "Google News — İstanbul gastronomi",
@@ -3552,23 +3637,6 @@
       "summary_fa": "",
       "title": "Maple Shade Restaurant To Close For Good Sunday - Patch",
       "title_fa": ""
-    },
-    "7e52546d429d48d5": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "7e52546d429d48d5",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ3pwbXpjY3hmSkxBdkFKM2d0U3Y0MkoxN3pVMzVmbnhNdWVuTjRHNWVlWXAzRVFremxCLWFFNkdJbU8wTXBqaFhtYTdzWGtMTTl5ZUdzYjVSN2xwaUNJWTNhZnlhNk9VaDl5M21TVUc0VHVvSjBqQklHZDRESjhyUXhfNi1KWDJTZHJfTA?oc=5",
-      "message_id": 10,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-14T20:16:53.136600+00:00",
-      "published": "2026-10-07T13:36:42+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "فصول پاییز در رستوران نوبو استانبول",
-      "title": "Sonbaharın lezzetleri Nobu Istanbul’da - gastronomiturkey.com",
-      "title_fa": "پاییز در نوبو استانبول"
     },
     "80de42ac3c4d1312": {
       "cat": "رستوران و کافه در استانبول",
@@ -4168,7 +4236,7 @@
     "93f83bbd3bb187a6": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-05T06:48:49.145953+00:00",
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
       "id": "93f83bbd3bb187a6",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQODh6QTZIcWRjR1RjNEcxM3pXS1FUN0Nxd0VvZ3Nxa2Q4VXhjaGl5R19UZXRzWThRVUZ5ZmRLRkZkWW1qWUwwdDVBNU5kc1F5ZnpRMjBhV0UtcW1YY21wd2tZZHBoQW16TjZtR25vTmVWUUJ4RklJbTIxREZyb1V3S0tQbXJEbjk3dUhz?oc=5",
       "message_id": null,
@@ -4403,6 +4471,23 @@
       "title": "TAB Gıda, 2026 yılının üçüncü çeyreğinde büyümesini ve yatırımlarını sürdürdü İhlas Haber Ajansı - İhlas Haber Ajansı",
       "title_fa": ""
     },
+    "9cbd8e42e067a372": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "9cbd8e42e067a372",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWUZfaFBRUDcxZWRBZmplY3IzU2E4TmRqTVVNLV9qWi1IeXdJQ0V4ZGtwZWpkSkFkRFo3cXd6LXZhN2pIWEJobXVWOEZiUmJGZXA1b2tkc0RWVEJ5TVdwN09GNG5yaFhucmE0SWJ5cFdvVTFwVS12OGNhazVMVmw0UEpmQkZnZFVFRXpPeUNpQnAyeGlrSU9NWQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-05T16:04:43+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Nina Garcia’s Insider Guide to Istanbul: Where to Eat, Shop, and Stay - ELLE",
+      "title_fa": ""
+    },
     "9cc5edd28c0eed49": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "pollinations",
@@ -4590,23 +4675,6 @@
       "title": "Beyoğlu’nda şehrin tadını çıkarmak - gastronomiturkey.com",
       "title_fa": ""
     },
-    "a234d0c6924ee12b": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "a234d0c6924ee12b",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONDhVay1maGo2dTk3MDRCbHNxRkZUZFE0ZG1tRk83dHBCRERqeE45QjRlS1FLbExGT2VrNkZfUFM0TXRjOHQ0S3hiNXA0bFhWdkJrMWVWRmtKSkpJOEphWVhaRFkxNzl5TkFkOFlDR3BJRHVXNkFKaURGZ2RhVnVhOWxBZmYzTlBZR21PZlpFOTF2RDI2ZEFZYlVKVUdybDFtbEU5MU04V1ZPT1NyZV9rT2lWZzhWc3lTN2NIcGlRUllWdEU2N29PNDJZZjdsZVd1dkMtY2VMSUl4MVFEeGpXTEh2VUU4S18tSHdHOWl0ZmR4UdIB9wFBVV95cUxPR1hLV0hxU09lVEYzb2xudW9PTlp4Z2xGOXFRUnlveWxnN1BqaXpMWnlRMUJqYnRCdWt0R2gzVWZ4N1lQZFZRM1dZU0tlZzlVVE50OHpjWWFhNzdoVGFKTTBoanViNVRhRjlNZm9zNk1vN0VDRGY3NnFLTE9JbUY4SWdyUWt2ZU01bUhQbWlONHhUcUp0QVY1bjdzWExCOXVEd0lDbzBiQVNjblN0VG9uX1FTX19XR091NDJjX2Y5eTF2WlZmWXNXbkxvVDJUVzBJQlJKSFpidmI3RkVYMkVtOUxTRUttczZQNkR0NEFSRHU5cEpKZkRj?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-11T03:05:12+00:00",
-      "score": 0,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "",
-      "title": "Turkey: Muslims storm Japanese Anime festival in Istanbul, assault families, damage stalls and chanting ‘Allahu Akbar’ - Organiser",
-      "title_fa": ""
-    },
     "a2b2cf01aaa52158": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -4657,23 +4725,6 @@
       "summary_fa": "نمایش Artist Unknown در khuônۀ جشنوارۀ تئاتر استانبول",
       "title": "(3-4-17 Nov) Artist Unknown* İvi was Here @ Arter Karbon & Leyla Gencer",
       "title_fa": ""
-    },
-    "a3276e6f30d3b28e": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "a3276e6f30d3b28e",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYU0yNDRVMkItRDNCTnpOaVFaY0xfSlZrTlBJWHFaX3A4QlI1RGpIblBvbko4aHgzZzZ6bmNpTG5jX0tGSE1mNmJNQzVCNWcySFR1SEp3NlkxMV9jQkdwcDk2a2dDR1B3SGJDOWFITHZiU2NnNkFrelIxSmtsOEJ4bkJraHpjVHJ5TEhVNms2NWRhcFRxLUZUN2dhdlRBRnk5d0E?oc=5",
-      "message_id": 10,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-14T20:16:53.136600+00:00",
-      "published": "2026-10-08T06:55:13+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "همایش راهنمای غذا در رستوران Neolokal استانبول برگزار شد",
-      "title": "İncili Gastronomi Rehberi’nin 8’inci edisyonu için Neolokal’de davet düzenlendi - DHA | Demirören Haber Ajansı",
-      "title_fa": "همایش راهنمای غذا در استانبول"
     },
     "a395b979b65bc709": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -5032,40 +5083,6 @@
       "title": "Şebnem Ferah, Çukurova Üniversitesi Festival Alanı’nda Adanalılarla Buluştu - Medya Yenigün Gazetesi",
       "title_fa": "Şebnem Ferah در فرست‌قها دانشگاه Çukurova با مردم آدانا ملاقات کرد"
     },
-    "b35107d956b55b59": {
-      "cat": "رویدادها و فراخوان‌های شهر استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "b35107d956b55b59",
-      "link": "https://yabangee.com/aksak-delirium-alan-kadikoy/",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-07T13:38:27+00:00",
-      "score": 2,
-      "source": "Yabangee Istanbul (رویدادها)",
-      "summary_fa": "رویدادی در تئاتر استانبول برگزار می‌شود که به ماجرای افسانه‌های آخرالزمانی می‌پردازد.",
-      "title": "(Nov 24-25) Aksak Delirium @ Alan Kadıköy",
-      "title_fa": "تئاتر در استانبول"
-    },
-    "b381d9ee28772a65": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "b381d9ee28772a65",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWWxVZ1JlNElfREZNY015aTdGRlB2UU9oWVhVc0p1VlJ6WDNOLTRZZFc4T2FHaVg4bDY4bFhkb3ZJUzJ1cFcxaXM0d0VndTJ1Rng0SGRpUGVJa2ZTV3h2UEQ2Umdtekx0by1ZN19DTEJJbzFGLWEtVFBrR2hBNmNjYndIamktQlRPSnhNSndxaUhxVC1MZDZ2RUdKSWxOcFhNVEdxVmtpeUI?oc=5",
-      "message_id": 28,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-18T15:53:26.555251+00:00",
-      "published": "2026-10-09T08:58:55+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "رئیس جمهور سامي ار در استانبول با مردم ملطیه در جشنواره غذای ملطیه ملاقات کرد",
-      "title": "Başkan Sami Er, İstanbul'da Malatya Gastronomi Buluşmasında Malatyalılarla Buluştu - bianlikhaber.com",
-      "title_fa": "آشنایی با غذاهای ملطیه"
-    },
     "b3a561afe5e5cdc2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "pollinations",
@@ -5116,23 +5133,6 @@
       "summary_fa": "سی‌امین فستیوال تئاتر استانبول آغاز شد.",
       "title": "30. İstanbul Tiyatro Festivali başladı: İşte festival programı - Ortadoğu Gazetesi",
       "title_fa": "فستیوال تئاتر استانبول"
-    },
-    "b469d25db4e83592": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "b469d25db4e83592",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1TVV9YbnJQWGczOUNmMEU3RnNLbDZqZjh6Q3hpcmJyckU0RHdROVc0NncteHU1MWVuU1RRTnlVcl9wekdpTWJuM2RhbXZkUTEzNklkOV9fS1BlWmVseXhF?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-07T15:54:47+00:00",
-      "score": 0,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "İstanbul Watch Festival: Saat Dünyasına Yakından Bakmak İçin İki Gün - theMagger",
-      "title_fa": ""
     },
     "b547efb63112f1c2": {
       "cat": "رستوران و کافه در استانبول",
@@ -5321,23 +5321,6 @@
       "title": "Niğde'nin lezzetleri ve Tabal Gastronomi evi İstanbul'da vitrine çıktı - Yeni Akit Gazetesi",
       "title_fa": "غذاهای نیغده در استانبول"
     },
-    "bc99ea7626013705": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "bc99ea7626013705",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcjlkb01UWjFNeGxvMVVnMk9jVWNURXU5ajF1SEk3MDNjOXZ0NUJHQWtudThIS1dvVVB5cll3WVFlWWdEX0E5a2ltLXA3LWxWRm5CLXVQN0xBcTMyeEM5LW51Z1NCSzU2Tnhiclo5NENOdDMxQXloTU1TLUdxT2JvS0Z6S0ZrLXlQQWtuUTByM1JfWk9VaEpLempkN0N3dVNMdVdiUmdwc1pLUVphcjV0R2VacGE4SWl4eGZNX1cwYUtzbmswUnJjWkRR?oc=5",
-      "message_id": null,
-      "post": true,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-08T03:01:44+00:00",
-      "score": 6,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "فستیوال دیاربکر ۹ روز کنسرت، غذا و هنر را به ترکیه می‌آورد",
-      "title": "Diyarbakir Culture Route Festival to bring nine days of concerts, food and art to Türkiye - Türkiye Today",
-      "title_fa": "فستیوال دیاربکر"
-    },
     "bf1d0d3381dc0f08": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "pollinations",
@@ -5456,6 +5439,23 @@
       "summary_fa": "Kelis در سال ۱۰م فستیوال MIX در استانبول حضور دارد",
       "title": "Kelis, MIX Festival’in 10. yılında İstanbul’da - birgun.net",
       "title_fa": "فستیوال MIX در استانبول"
+    },
+    "c1148ea2da58dbff": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "c1148ea2da58dbff",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaERRRUdDalkyNTl0azNIc2xXRklfUk9WTFFEZ0N2T2VjS2F2MGhFcHc3SkVGVUw3LW9sbEJGVFRUZWphZFIwUk1obVJYTVpMbVVxeFRQU0daQUVYOEFkbVBGUlhDbko2R0drdzFZRTVvNXNrclJ6eDczUEdyOV9oMlhndjRxc3c?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-05T11:42:36+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul’un En İyi Sushi Restoranları - Oggusto",
+      "title_fa": ""
     },
     "c134c46c82eb3f30": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -5865,23 +5865,6 @@
       "title": "Around 100 people suffer suspected food poisoning in Bursa, Turkey - Hispanatolia",
       "title_fa": "مسمومیت غذایی در ترکیه"
     },
-    "ceb1690c68af6c41": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-14T20:16:53.136600+00:00",
-      "id": "ceb1690c68af6c41",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbm9ZV3E3Zktqd2JNblFnWUxsUFlNUjVUMy0wNEFaM2xkNFdCN1dwdURaVHJtaTlLU2ZoakNfcHlVSGNLOG9rMi0yYjlpNExQZjZRUXBWaGVDSndYeXF3c2hMaV9PcGwtbmFHdVJxUktjb2Zmdkx5dk1XUW5qajFxUlJ0Nzc0akFPTm5nbHhDY0RONWRtVjI4SFF5T0U2ZHA1LTJlSjJObThhZlJ4SGc?oc=5",
-      "message_id": 26,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-18T04:36:05.248214+00:00",
-      "published": "2026-10-08T19:08:53+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "آتش‌سوزی در یک رستوران استانبول رخ داد و یک کارمند زخمی شد",
-      "title": "Esenyurt'ta restoran yangını: Müdahale sırasında bir çalışan yaralandı - Muhalif",
-      "title_fa": "آتش‌سوزی در رستوران"
-    },
     "d1e3d687ee4f8e67": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -6174,7 +6157,7 @@
     "da9cd2833d594c07": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-05T06:48:49.145953+00:00",
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
       "id": "da9cd2833d594c07",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGpWX0haVFdxTmpJNFlCX1YyYVkwSnpQLW1rR2k2NW5JS1BTRWZxeU5FZ2l2YW5mbXlhSk5MbmhvSEsySTEyYkFfUXlUY1FuUVRRa2duMFVyRHlUOGtjWXV1SkZESXBHVGJWOXFQRlB3SzBBMXRPaF9MRjY4dkR6UGhwSHo1ZjcwQ0lsQ3UwWGU?oc=5",
       "message_id": null,
@@ -6255,6 +6238,23 @@
       "summary_fa": "جشن هالووین در استانبول",
       "title": "(Oct 31) Yabangee International Halloween Party: Volume XIII @ Beat",
       "title_fa": "جشن هالووین"
+    },
+    "ddedd07c372061fd": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
+      "id": "ddedd07c372061fd",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObjgtV2JZQlZEZXljNjRkck14T1N0aEtRUEN4M2xEcFV6eUVEeWlER05fT29rNTRCVGQ2UXRaRzVSbGx5LWF2VlRjb21fV1JzOGFYZl9JcUN6RE5aSldGS0kyUE5COEJ2TkJ4MUR0cEJwMXVfVHMyZWRZZFhSVWlWUWNFcnAxbDRsS2F0MVNDaWtPUGVDVmpRbzdhQWFna2EwYUtSNTY0RUxJam56?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-10-30T11:43:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Otel ve restoran sektörünün devleri İstanbul’da buluşuyor - Haber Global",
+      "title_fa": ""
     },
     "ddf2f475574d09bf": {
       "cat": "رستوران و کافه در استانبول",
@@ -6479,20 +6479,20 @@
     },
     "e7255e2b5a33abae": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": null,
-      "first_seen": "2026-11-05T06:48:49.145953+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-05T19:58:06.328740+00:00",
       "id": "e7255e2b5a33abae",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZHA5eGU3eGcyOTc5OXQ1YUJod0ZLUkRVZ3o4N2FULU1JRkRONEI0OHBDS1lza3JBVm8tdl8waUl5V25EV0t6OTh2MlY2Y2s1VDNFbVo1RXYycEdfRmg3NGlLWk00VWp2Y195RnFfOEQ4U1o5WDNZRHBQXy14eHR4RWxERW0zNnh6c1VmbzR4T2czVWc4UGfSAZsBQVVfeXFMTXp2UXVqMnd1M0k0UDlZbXRoVzltMXY3OXYwOXJ1Z29fcWMzeXp1NTh3VUNpNng5SllYQTRPT3pEUTI5NTFiRVd1bmduQkViV180MHNTN3kxZVdkRWlZZVNkZGtxemJoMERwd3d3TGdrQzMwQ1ViXy04NlMtdXRLM1c4UjM5MzN6SmZZcFIwaDctSzEtZWp5ckRSSGc?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
+      "message_id": 95,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-11-05T19:58:06.328740+00:00",
       "published": "2026-10-31T16:10:05+00:00",
-      "score": null,
+      "score": 9,
       "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
+      "summary_fa": "این رویداد گاسترونومی، موسیقی و میراث فرهنگی را در کنار هم به هم می‌آورد و فرصت‌های جدیدی برای تجربه‌های غذایی و فرهنگی در استانبول فراهم می‌کند.",
       "title": "İstanbul’da Gastronomi, Müzik ve Kültürel Miras Bir Arada - ELLE",
-      "title_fa": ""
+      "title_fa": "استانبول: گاسترونومی، موسیقی و میراث فرهنگی در کنار هم"
     },
     "e857cca2db9250de": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -7110,6 +7110,12 @@
     },
     {
       "at": "2026-11-05T06:48:49.145953+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 3
+    },
+    {
+      "at": "2026-11-05T19:58:06.328740+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 3
