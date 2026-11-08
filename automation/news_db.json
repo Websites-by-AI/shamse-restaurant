@@ -258,7 +258,7 @@
     "06ee6d4a269d0d34": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "06ee6d4a269d0d34",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSWVCU2ZkQ1hPejVFY1Q4SUlMZmx3NC1zUEF1UTF3TDNmNVhOZm1wTlJKZnluQVEyWjRBbkhtbmVaRm1wNTBSQy1kVThQRUo0MUd1cWRsYnpVYUgwTFpoODJfYXNCLW9lM0c0Y2FrMXQ4eVNtRWR6ZkpFb3hhQ3dmUFluUGxFWHg5bGtTYlZHXzZpVUVSX1R4cEYxbzYzRGl1Z0xTa3diYlNKMVJEalg00gG0AUFVX3lxTE51UjFSaVNrX0NhcDNPNnJZcnhVeU5oVE81T1hHd1BjemhVSFVORWFqek0xajFIcFFYQThHY3dfVDVZNnJHR296M2Z5UlFrWnJscG8xQlRaUEN6bm14SG4tRmU1akp5Q3ludng2YmUxYlNPVkEwZkVPYmQ5WlJjZWlGc05Sb19hR2lveVZSWXNoYThFSzctWWx5TmV6YmJEdi1USFNoM050dk9Dc3dobU5nVHV4TA?oc=5",
       "message_id": null,
@@ -292,7 +292,7 @@
     "07b7960520ed50c8": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "07b7960520ed50c8",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYkNINGpIbEptb1VhMGUwaGtUSWJPMjBhUUU0VmlMSWtQZnM0N0xiQXBlSmhTVTVrRHVDLWF1eWhwdl91ZG55dkNLd2NaRW5BM1M3MU9BLUo3WkkyTUtmWkVUVllFSXJFVzBQQ0ZmRVhwZmprb2t1S3BWNjF3ejAzbXpGRDc3ZVVZSEtaN2h0NTZFZkUydG41YmZpUXFHVUZRbzZBdFNR?oc=5",
       "message_id": null,
@@ -598,7 +598,7 @@
     "144f6d696dff37d8": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "144f6d696dff37d8",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQN3NMaUdFS19qblJPMkJPam5LMUxaS1V0ZzBzd253U2JVNHdUNXRZWDZMbWlCZ0FwMGdaZkR3OTE4a0R2RXM1NV9vNjFzdFhnM0xUY0JZOHpVVmN1ZFlGZjQxSHRBM1ZURGpHUkltTVFEQzVHVm9FREUxM3loNEk4UXAxY0IxMGswQXpnUG9EeU1ZYzV5X0k5bXY2M0cxTmxOX0xyYV9aUG5aY3l0UENMNjVqVG9TQ25T?oc=5",
       "message_id": null,
@@ -1601,7 +1601,7 @@
     "3100155155ae5f2a": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T05:59:36.141590+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "3100155155ae5f2a",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTDZpcEVkMzhkamdEMTZTc0xPdHE0OE9ubTBQWVlTR21TV1B1eUpYQmJqTWNnR08zZDlhWGk5TVcyZVNDNWxUNWxjME91cHhSVWJtc2pnWEVybUZUTENKT1NZaGZ5eEVhby05WU1nOVN2R2VERHlyZ0lHeU9hRUNvMWJsSkhEallQenBmRmxYVW1WVlBMTWc?oc=5",
       "message_id": null,
@@ -2369,10 +2369,10 @@
       "first_seen": "2026-10-27T22:15:16.311031+00:00",
       "id": "50466234307b4462",
       "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcHdjejVpQlpNSlJTY201ZjA3N29QWjNpeGVrNDVUSlBjaXBJY1J5R0RDdXl0TndVZTlwc09tV0VKeHZVN3dqWTZWSnJVTlc4ZXpzaXoycXI1WERzdmJfRGE5ak1fNWZ4NnhPTHdKVlpFN1ZVUF9ZbEtwbVNxd0FRM2VHVnhvWUx6aUxlWXUwQVhJVGRLS1VBd3N3?oc=5",
-      "message_id": null,
+      "message_id": 102,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-08T06:03:33.737872+00:00",
       "published": "2026-10-27T12:08:33+00:00",
       "score": 7,
       "source": "Google News — Istanbul food",
@@ -2399,20 +2399,20 @@
     },
     "510fbfd8104bdff8": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "510fbfd8104bdff8",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOR0ZMOUhVU3hmSEZIbFNRMlRZdEUtQ3Zxb1NXb3k5SFlSa2lDUUR2VWJuNkJZZ21vQ281MTZXX1VnZmVOOVF1Y2ZSeEdBWXNkeUlZNkxSWmN2TVRfYk4xN0pacl92Q2Fzc2ozYnJjM3psbWc1ejhTeVFwRFo5dEw1X29zVFFTYVNhWV9iSGVmRdIBlAFBVV95cUxQMXJQZW1UeFZ0SDF4RnBJMG9nTWhXTU85WV82el84eEwwa1R0dU9aeXE4THNoNzRWdFZJVDNScVQ3Q25BTDBEYVlzS0k0RUdaQ0FmNUxpdlJBZEF1d0pkMlJkZkdNQ0dOZ1JmWGFsaVFSTGJiVExCZHFwSi05bFlJTzdRMlM3YkZCa2J4ZWVlV1gzVE9i?oc=5",
       "message_id": null,
-      "post": null,
+      "post": false,
       "posted": false,
       "posted_at": null,
       "published": "2026-11-07T18:28:00+00:00",
-      "score": null,
+      "score": 0,
       "source": "Google News — Istanbul food",
-      "summary_fa": "",
+      "summary_fa": "رستوران خانوادگی در لیورپول پس از چهار ماه از افتتاح، برای 145,000 پوند به فروش می‌رسد.",
       "title": "Family's Liverpool restaurant up for sale for £145,000 - four months after opening - Liverpool Echo",
-      "title_fa": ""
+      "title_fa": "رستوران خانوادگی لیورپول برای فروش"
     },
     "5207b0da7dba9a73": {
       "cat": "رستوران و کافه در استانبول",
@@ -2978,7 +2978,7 @@
     "674a5f00a60fbbfe": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "674a5f00a60fbbfe",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zMFo5c18ySUJ0WENHSThfUHR1aUdsdGlIdlBzT2luQkNoaHhpVURPbTBNeXhVVlZNUl9CZTVTbnFuQkhSVnQ3aVBqR0Q4TE82ZS1iWHdSdU9OOTdVaFp2dlhLNnc0cXQzNUo0OG5sTmg?oc=5",
       "message_id": null,
@@ -3423,10 +3423,10 @@
       "first_seen": "2026-10-26T13:05:48.142884+00:00",
       "id": "77e6edd01297bbb9",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc3VFMGJKZ0ZQOWFWU3AtbXhYSjBIOUVEQ2dQcGZENU1yODgxLV9OS2NTRkJHUVdmTVpxeHhsZkFZMWlGNFFqdnJGRVJKUWFyMDg0a1Y5aHV2NDdVOHkxRDVuUENiazJaSzYtT1dmMURuUG85MFdpcWlVLVJhN0VkZS1jUnNINXR4N1JsN0RvSnA5SHhVMTNCeTJZajFNQUdXWUxwaWFsUQ?oc=5",
-      "message_id": null,
+      "message_id": 102,
       "post": true,
-      "posted": false,
-      "posted_at": null,
+      "posted": true,
+      "posted_at": "2026-11-08T06:03:33.737872+00:00",
       "published": "2026-10-26T11:45:56+00:00",
       "score": 7,
       "source": "Google News — İstanbul restoran",
@@ -3927,6 +3927,23 @@
       "title": "Londra’dan İstanbul’a uzanan bir lezzet hikayesi - Ekonomist",
       "title_fa": "داستان вкус استانبول"
     },
+    "88d994307d6feccd": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
+      "id": "88d994307d6feccd",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kSC1JTEduMjJmVXk4WkpyeGNUaTlLcFdaZlphZFRtOWVseTJkYmVQN21RNHpsNUJiU2hvRFMzcVRKRmtCUVR2YV92cm5JRnBYZDU3VQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-07T20:19:10+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "11 Best Pizza Places in Istanbul, Picked by Locals - ListeList",
+      "title_fa": ""
+    },
     "89101ac61fc6dce5": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -4236,7 +4253,7 @@
     "93f83bbd3bb187a6": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "93f83bbd3bb187a6",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQODh6QTZIcWRjR1RjNEcxM3pXS1FUN0Nxd0VvZ3Nxa2Q4VXhjaGl5R19UZXRzWThRVUZ5ZmRLRkZkWW1qWUwwdDVBNU5kc1F5ZnpRMjBhV0UtcW1YY21wd2tZZHBoQW16TjZtR25vTmVWUUJ4RklJbTIxREZyb1V3S0tQbXJEbjk3dUhz?oc=5",
       "message_id": null,
@@ -5661,23 +5678,6 @@
       "title": "İstanbul Kültür Yolu Festivali'nde 200’den fazla lezzet durağı tescillendi - Odatv",
       "title_fa": "۲۰۰ غذا در فستیوال استانبول"
     },
-    "c9eb6c9f3e3a59ce": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T11:31:38.638209+00:00",
-      "id": "c9eb6c9f3e3a59ce",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9xTjYxMVJ1Q015UG1YUE0xZUxSWXh2ZE9DYjZrRVExLVJQX0I4V21LLVd0cVluc29qcWstZ3h5Sml0Y3B3UDFwaENzdEgzN19VWkxkT244cVNEWkthY3h4NGM0Z3pZdnRUZXlHZzV1VXN1Q2xYVE9HM0VBbXYtUQ?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-13T22:27:17+00:00",
-      "score": 2,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "شعبه‌ای از رستوران یک سرآشپرد در استانبول بستن موقت",
-      "title": "Champion chef is temporarily closing his restaurant: The reason moved those who heard it - Haberler.com",
-      "title_fa": "بستن موقت رستوران"
-    },
     "ca97a51f23a35b84": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -5919,7 +5919,7 @@
     "d60d3e23e2ba39c9": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "d60d3e23e2ba39c9",
       "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcFA3MlRBS0lMdEJDQUNhVGZvcUstTkFxSGlpbEFxTnhZWkhuWEthVkFjVTVxMmZxSVY4b0E4am40aldxLWgzck1raEJhenVDajZVdGNrdnVrTkZKV2hDX1BwRG9Bb3M0OEg3RlNDRVExbUlpbDZIODFjbnZRdG5lUkxyMmUtRmhsaE9OUTZRQjI2aWVaS2xRT2p4T1hHemJFRjJBYVRYUGh0b1VrcUg1WUZBbjIxZERiN0J2ajcycHh2RVZWOTFEek8xSnBoWllfRzdkNjBB?oc=5",
       "message_id": null,
@@ -6106,7 +6106,7 @@
     "da9cd2833d594c07": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T05:59:36.141590+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "da9cd2833d594c07",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGpWX0haVFdxTmpJNFlCX1YyYVkwSnpQLW1rR2k2NW5JS1BTRWZxeU5FZ2l2YW5mbXlhSk5MbmhvSEsySTEyYkFfUXlUY1FuUVRRa2duMFVyRHlUOGtjWXV1SkZESXBHVGJWOXFQRlB3SzBBMXRPaF9MRjY4dkR6UGhwSHo1ZjcwQ0lsQ3UwWGU?oc=5",
       "message_id": null,
@@ -6191,7 +6191,7 @@
     "ddedd07c372061fd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T05:59:36.141590+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "ddedd07c372061fd",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObjgtV2JZQlZEZXljNjRkck14T1N0aEtRUEN4M2xEcFV6eUVEeWlER05fT29rNTRCVGQ2UXRaRzVSbGx5LWF2VlRjb21fV1JzOGFYZl9JcUN6RE5aSldGS0kyUE5COEJ2TkJ4MUR0cEJwMXVfVHMyZWRZZFhSVWlWUWNFcnAxbDRsS2F0MVNDaWtPUGVDVmpRbzdhQWFna2EwYUtSNTY0RUxJam56?oc=5",
       "message_id": null,
@@ -6650,7 +6650,7 @@
     "f568e602416dbe96": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-07T21:52:17.692266+00:00",
+      "first_seen": "2026-11-08T06:03:33.737872+00:00",
       "id": "f568e602416dbe96",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPei13QU1LNWEtX2ZuQ1ZHbWt4amtsalU3b0hGNkFQbm10S3FPRXFUOUVZbEx2TTRYMHFRNXZ6a1VWU01zTVp0VXpWRlNVRXBRczNHSnptdHJEZUU0SE9vWGx6SWdXd2plNktIeHUzR0pCZkdUbGlGaWtIYUpXU0g0UGhpQThsZUpz?oc=5",
       "message_id": null,
@@ -7149,6 +7149,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 3
+    },
+    {
+      "at": "2026-11-08T06:03:33.737872+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 2
     }
   ]
 }
