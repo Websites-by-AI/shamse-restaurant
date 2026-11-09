@@ -258,7 +258,7 @@
     "06ee6d4a269d0d34": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "06ee6d4a269d0d34",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSWVCU2ZkQ1hPejVFY1Q4SUlMZmx3NC1zUEF1UTF3TDNmNVhOZm1wTlJKZnluQVEyWjRBbkhtbmVaRm1wNTBSQy1kVThQRUo0MUd1cWRsYnpVYUgwTFpoODJfYXNCLW9lM0c0Y2FrMXQ4eVNtRWR6ZkpFb3hhQ3dmUFluUGxFWHg5bGtTYlZHXzZpVUVSX1R4cEYxbzYzRGl1Z0xTa3diYlNKMVJEalg00gG0AUFVX3lxTE51UjFSaVNrX0NhcDNPNnJZcnhVeU5oVE81T1hHd1BjemhVSFVORWFqek0xajFIcFFYQThHY3dfVDVZNnJHR296M2Z5UlFrWnJscG8xQlRaUEN6bm14SG4tRmU1akp5Q3ludng2YmUxYlNPVkEwZkVPYmQ5WlJjZWlGc05Sb19hR2lveVZSWXNoYThFSzctWWx5TmV6YmJEdi1USFNoM050dk9Dc3dobU5nVHV4TA?oc=5",
       "message_id": null,
@@ -292,7 +292,7 @@
     "07b7960520ed50c8": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "07b7960520ed50c8",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYkNINGpIbEptb1VhMGUwaGtUSWJPMjBhUUU0VmlMSWtQZnM0N0xiQXBlSmhTVTVrRHVDLWF1eWhwdl91ZG55dkNLd2NaRW5BM1M3MU9BLUo3WkkyTUtmWkVUVllFSXJFVzBQQ0ZmRVhwZmprb2t1S3BWNjF3ejAzbXpGRDc3ZVVZSEtaN2h0NTZFZkUydG41YmZpUXFHVUZRbzZBdFNR?oc=5",
       "message_id": null,
@@ -598,7 +598,7 @@
     "144f6d696dff37d8": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "144f6d696dff37d8",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQN3NMaUdFS19qblJPMkJPam5LMUxaS1V0ZzBzd253U2JVNHdUNXRZWDZMbWlCZ0FwMGdaZkR3OTE4a0R2RXM1NV9vNjFzdFhnM0xUY0JZOHpVVmN1ZFlGZjQxSHRBM1ZURGpHUkltTVFEQzVHVm9FREUxM3loNEk4UXAxY0IxMGswQXpnUG9EeU1ZYzV5X0k5bXY2M0cxTmxOX0xyYV9aUG5aY3l0UENMNjVqVG9TQ25T?oc=5",
       "message_id": null,
@@ -1631,23 +1631,6 @@
       "summary_fa": "۲۰۰ adres از غذاهای استانبول در مسیر گاسترونومی قرار گرفت",
       "title": "İstanbul mutfağının 200 adresi gastronomi rotasına girdi - Çankırı Postası",
       "title_fa": "۲۰۰ رستوران استانبول"
-    },
-    "328d1965dae97c50": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T11:31:38.638209+00:00",
-      "id": "328d1965dae97c50",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcnQ2TkhBOWVTcU9vbUtjd0ZRQWlJckRBWHFHOENlZTc2TG9Db0VlN3F6Q3NHSmNqTHZTekVYMFRwQ3N2WlRWREdyLXM4ZUdaQVJERXpmSVMyS0d1QmlQZ01GYWRLZDNTaTZmeVNuUkJSRnRLVV94VV9NNXlBakJubUtPeWRDaWtTOWRqN0FuejRoRldvSFE?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-15T05:40:25+00:00",
-      "score": 0,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "Ünlü isimlerden 'İstanbul Watch Festival'e ziyaret - Habertürk",
-      "title_fa": ""
     },
     "33c326e4efed30bf": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2944,7 +2927,7 @@
     "674a5f00a60fbbfe": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "674a5f00a60fbbfe",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zMFo5c18ySUJ0WENHSThfUHR1aUdsdGlIdlBzT2luQkNoaHhpVURPbTBNeXhVVlZNUl9CZTVTbnFuQkhSVnQ3aVBqR0Q4TE82ZS1iWHdSdU9OOTdVaFp2dlhLNnc0cXQzNUo0OG5sTmg?oc=5",
       "message_id": null,
@@ -3522,7 +3505,7 @@
     "7cd84e509caf11c1": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "7cd84e509caf11c1",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9oRzJUTjlNeTV0RTJLYzRHRG9WeFN3OFllRVQ2bV9sc0Y0ZkJzTm9CazByUFJQajJMMnF0SW5MTG1jU0VIQ1pET052SU90UjZpVDNFZHJyZVAwSjJlTEtMMWtqV2xlby1TeTJr?oc=5",
       "message_id": null,
@@ -4236,7 +4219,7 @@
     "93f83bbd3bb187a6": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "93f83bbd3bb187a6",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQODh6QTZIcWRjR1RjNEcxM3pXS1FUN0Nxd0VvZ3Nxa2Q4VXhjaGl5R19UZXRzWThRVUZ5ZmRLRkZkWW1qWUwwdDVBNU5kc1F5ZnpRMjBhV0UtcW1YY21wd2tZZHBoQW16TjZtR25vTmVWUUJ4RklJbTIxREZyb1V3S0tQbXJEbjk3dUhz?oc=5",
       "message_id": null,
@@ -4712,7 +4695,7 @@
     "a395b979b65bc709": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-04T06:24:59.836099+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "a395b979b65bc709",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNeERxaGRZb2pIQUJaMGthOHRHc2tHekV3UkZ5V29uZG1CTGlEdURqZ2Juc2FKaVNqMG81SjVnSkFpUVg5MDE4ejdPMW5jbG9sdVc4N1JFX01icGtsX3l4YVBNT2JmZUVGYzhzaGxRZjUyQXZudDk3ODZMaTJwWThCbzNXXzlYMjQ?oc=5",
       "message_id": null,
@@ -5817,7 +5800,7 @@
     "d478bf1ea90887d7": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "d478bf1ea90887d7",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9FS3BRYlhYWU5OV0ptTi1rX0xydVFESHZPOGdNb2VHdURXSzlEZXF4VmlZaWJNVjlBLWk5YXZIMkxfSU1DUWdnNDlxWUtvRV9kbkpVdl9TNFVoRWdDZGNrR3otYWYxbjI0M0xaTU9pWQ?oc=5",
       "message_id": null,
@@ -6089,7 +6072,7 @@
     "da9cd2833d594c07": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-08T13:26:30.841103+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "da9cd2833d594c07",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGpWX0haVFdxTmpJNFlCX1YyYVkwSnpQLW1rR2k2NW5JS1BTRWZxeU5FZ2l2YW5mbXlhSk5MbmhvSEsySTEyYkFfUXlUY1FuUVRRa2duMFVyRHlUOGtjWXV1SkZESXBHVGJWOXFQRlB3SzBBMXRPaF9MRjY4dkR6UGhwSHo1ZjcwQ0lsQ3UwWGU?oc=5",
       "message_id": null,
@@ -6208,7 +6191,7 @@
     "de103333f2e7eda0": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "de103333f2e7eda0",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbDdZc013SWtaTlVYSXo3REhfWlcwUzEwTUJaWUJSeVloNGFkcmJCelY2QTBLcWFoVG9MMmtnc3VsNkxkWTRvTGJVUnJ0NHg0aWlWcnB6dmRKMzJjSjVnZzRueWhLbDk4T2tPVHJ1S2VmdHAyWUxzRDFnTWhoQ3M0WDlB?oc=5",
       "message_id": null,
@@ -6545,6 +6528,23 @@
       "title": "Trump administration sued by US food importer for 50% tariffs on Canada - US Muslims",
       "title_fa": "مالیات ۵۰٪ غذا"
     },
+    "ec2dcbe1b7de8858": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "pollinations",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
+      "id": "ec2dcbe1b7de8858",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUWFONWZydDV2TjNGbUluVS1hdm5VZ05qalE0Z0I1R3hOdGxlT29oQVJjN0JqTmlMd0Y1XzNEYk1aTmJZNTFEdFB6cERXcmVqUHc1eWN0dmtXUDdOOTNYUzctaWZyTXRQUF85bUctcGhxSHoxbG5pTDBqTC1pVm9OZk1nQUJhQU94M1FNNzdZOXdEdw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-08T23:15:41+00:00",
+      "score": 0,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Bu Festival Bizim 5. Kez Müzikseverlerle Buluşuyor - Dosya Haber",
+      "title_fa": ""
+    },
     "ece34e9da82e88c5": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -6650,7 +6650,7 @@
     "f568e602416dbe96": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-08T22:07:24.093248+00:00",
+      "first_seen": "2026-11-09T06:33:17.232946+00:00",
       "id": "f568e602416dbe96",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPei13QU1LNWEtX2ZuQ1ZHbWt4amtsalU3b0hGNkFQbm10S3FPRXFUOUVZbEx2TTRYMHFRNXZ6a1VWU01zTVp0VXpWRlNVRXBRczNHSnptdHJEZUU0SE9vWGx6SWdXd2plNktIeHUzR0pCZkdUbGlGaWtIYUpXU0g0UGhpQThsZUpz?oc=5",
       "message_id": null,
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-14T20:14:03.133023+00:00",
-      "feeds": 6,
-      "new": 10,
-      "posted": 0
-    },
     {
       "at": "2026-10-14T20:14:34.888792+00:00",
       "feeds": 6,
@@ -7158,6 +7152,12 @@
     },
     {
       "at": "2026-11-08T22:07:24.093248+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 0
+    },
+    {
+      "at": "2026-11-09T06:33:17.232946+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 0
