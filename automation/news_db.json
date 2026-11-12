@@ -88,7 +88,7 @@
     "01fd52da3319f166": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "01fd52da3319f166",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMG1STEtVVTJMNjlRb3FYU0tRaWw1WUxTcHhTTlpab2tQaEVTMUpWYXlWNmRTMWNId2RZRy00VjZfeDFXRXMwbzRJU2JQTGJHcTFqNzlBQ0NyZ1h0TzdnOXZoWGp6NjZ5YU1scWxBVUtNaVlKVVhISkhBZms0akw2U2RreUlqTjcybndoUFo4N1hkVGpyNDdHbUVzVkE0NlF4Wk9CRDJiNm1PUkJ2Y0RxdlhQTmdHbEN3cGpWZEVFbzFhUy1obDN2TU1lVFZJejhIMk40clgxTQ?oc=5",
       "message_id": null,
@@ -139,7 +139,7 @@
     "03696ec2666a3ef9": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "03696ec2666a3ef9",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZUlZHbWlHR1NVdTFnUjg2WFR5UkwyYU5RNEZJQkxLTTRqbVhZVzRXbmNfRFdLdkN1ZDJWUDg1MTNIOWEzVzhHb1JUdnRZMERsb3BpVU9QSDV2MndQQ3pHVg?oc=5",
       "message_id": null,
@@ -309,7 +309,7 @@
     "06ee6d4a269d0d34": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "06ee6d4a269d0d34",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSWVCU2ZkQ1hPejVFY1Q4SUlMZmx3NC1zUEF1UTF3TDNmNVhOZm1wTlJKZnluQVEyWjRBbkhtbmVaRm1wNTBSQy1kVThQRUo0MUd1cWRsYnpVYUgwTFpoODJfYXNCLW9lM0c0Y2FrMXQ4eVNtRWR6ZkpFb3hhQ3dmUFluUGxFWHg5bGtTYlZHXzZpVUVSX1R4cEYxbzYzRGl1Z0xTa3diYlNKMVJEalg00gG0AUFVX3lxTE51UjFSaVNrX0NhcDNPNnJZcnhVeU5oVE81T1hHd1BjemhVSFVORWFqek0xajFIcFFYQThHY3dfVDVZNnJHR296M2Z5UlFrWnJscG8xQlRaUEN6bm14SG4tRmU1akp5Q3ludng2YmUxYlNPVkEwZkVPYmQ5WlJjZWlGc05Sb19hR2lveVZSWXNoYThFSzctWWx5TmV6YmJEdi1USFNoM050dk9Dc3dobU5nVHV4TA?oc=5",
       "message_id": null,
@@ -428,7 +428,7 @@
     "0a10e236e5df8b08": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
-      "first_seen": "2026-11-09T22:23:07.607039+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "0a10e236e5df8b08",
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5zeGNVVFdDQ0U3bU90dFpyUzBLTm5SR0lEOWdlVjVTYnpqVzIzT1NPcnVaWnRfUVR2RE9nQ29FUC1iRk9qUmF4Q0lrUGJJQ2diLU53d0s0T2RfS0J2bzE4TG4yckltZw?oc=5",
       "message_id": null,
@@ -1496,23 +1496,6 @@
       "title": "Atta Festival 10. Yılında İstanbul'da Başlıyor - SanatMat",
       "title_fa": "فستیوال آتا سال 10 در استانبول آغاز می‌شود"
     },
-    "2b9884e027c876b6": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T21:24:21.641657+00:00",
-      "id": "2b9884e027c876b6",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeURsWDhJcVAwZDJfVlhRa1RJQUN5aXVieGR0NGlhSWZmRTBKUzhwT3lfdEF1aTF6VG9nVDdEZHY2eVVvdVFkOVRtaEFVV1hDa2JhdDRXVUdZcUlVS0pNNV9jVmFFaktzVDVWUzhBUlE3ZVBqdC1KLUQ0TWRmdkJ5LTVlXzRGYi1SN3hKYU1GRXZQTlQ4bjltWGllZ2lILUFKdUxfOEFEbWVOSFJrX2kwZ0ViUExhT0ZJMUwtTHkyeERRNlF1LTZjZTVB?oc=5",
-      "message_id": 23,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-17T10:46:30.186502+00:00",
-      "published": "2026-10-05T07:00:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "جشنواره استانبول که ۱۲ بار بهترین بود، ۵ ستاره گرفت",
-      "title": "12 kez dünyanın en iyisi seçilmişti: İstanbul’daki festival şimdi de 5 yıldız aldı - TRHaber",
-      "title_fa": "جشنواره استانبول ۵ ستاره شد"
-    },
     "2c10b9ed880027f4": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
@@ -1972,23 +1955,6 @@
       "title": "İstanbul Kültür Yolu Festivali Başladı - Medya Gazete",
       "title_fa": ""
     },
-    "47d875d92c01109a": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T21:24:21.641657+00:00",
-      "id": "47d875d92c01109a",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeFljOXBqSTVVd2VyWUkwbnVfZFI4Z21CRWpiX1hOUkZkQ0o2U2czVUllaGJKNk14RzVDZlRkckFiS2Y2SDBWbkM2R21xNzFxc19SOXFoa1hpZTNSSzNWVldfYWZmRW4tSm9rQTZzRkVIM1N3cmV6aG9mQzZNTlpZRk92VDFJdDJMNFMxOW9LR0RWenEzcE5DQmh4WktWeU9PaDZMOEZCR0RDMzlvV1hPUWpBM1pOVXRYOUZ6RzE2NGszRDh1?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-04T20:31:53+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "جشنواره‌ای در استانبول برگزار می‌شود که به ساعت‌های لوکس می‌پردازد.",
-      "title": "İstanbul Watch Festival 10–11 Ekim’de: 30’dan Fazla Saat Markası Kadıköy’de Buluşacak - Doğayı Dinle",
-      "title_fa": "جشنوارهٔ ساعت استانبول"
-    },
     "481328f079e92e6f": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "pollinations",
@@ -2021,6 +1987,23 @@
       "source": "Google News — İstanbul restoran",
       "summary_fa": "",
       "title": "İstanbul'un mirası Koç Holding katkılarıyla Londra'da - Time Out Worldwide",
+      "title_fa": ""
+    },
+    "485f02fa7214a1fc": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "id": "485f02fa7214a1fc",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQXJ1UjA2QlI4S281bG9kQVF3RE0wUE1lZ3BINUVVeGZGdnZDRDh4blJQR1pFcnkzVmRSV3BfZnZ6amY4akM2OFVXZE1lam8yZWRRanpoeGN0TDZwTF9kUEp0bXpfLXRWQWpXVndRend1dmc4NVFQUmFxTzVZSFlyNTBlV2NtZXlzTWdfV1hVZ0NYWFh1eU96LU9KZ0hmQ2xEazZzMFhiY29FdHp5M1NCTkp1WnUyMDdjcEc5VG5jcEVpX2xwOTRReHRqcGF1ZFZtamFxag?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-12T08:23:23+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Yemeksepeti, \"Lezzetin Efsaneleri\" ile restoran iş ortaklarının başarısını ödüllendirecek İhlas Haber Ajansı - İhlas Haber Ajansı",
       "title_fa": ""
     },
     "48a15d973c3d0eae": {
@@ -2077,7 +2060,7 @@
     "491972a68dd83341": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "491972a68dd83341",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNDNyT2ZLaFpDRGVIYWJqYmpJOWNsSUtjelg1VWJUUHBnSVNrLUxNSF9iZWI3M1NRbE1PRkthb04zT3JwUThOT3dMTHphNnhDVkRVbWZ2NmlMVG1RNGVlRGxxcjBia05yb2ZoQWtyX051VlVrY1pKLTZqWlpmajZPMmxVY3JuNmhUTXgwcU84M1JKN2xGdUd4OEFFTjRFMzhBNlZheg?oc=5",
       "message_id": null,
@@ -2328,23 +2311,6 @@
       "summary_fa": "انجمن واردکنندگان کره جنوب به دنبال گسترش منابع واردات در ترکیه و فرانسه است",
       "title": "Korea Importers Association Seeks to Diversify Import Sources in Türkiye and France - 아시아경제",
       "title_fa": "انجمن واردکنندگان کره جنوب"
-    },
-    "4f0c79c603621d6e": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T21:24:21.641657+00:00",
-      "id": "4f0c79c603621d6e",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdU5TbjdSS2xLNjFfbXMtS3JvUkxfWTB5NG9pWGZEdVU5cExraXlENko1YXNYMjk0dndvMUNGcmNUNjUwNEJ0bXhPeVBEYWc5M3BGNkZSX2t4UDdoYkk5SWF5QVRVSndnTDdGTWpYMjRmZHQtc24wUUtuMEE5VlMyZS1pMnZJTUJ1a3JUbGVoMFU?oc=5",
-      "message_id": 21,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-16T21:10:44.731044+00:00",
-      "published": "2026-10-04T13:40:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "استانبول با ۲۰۰ نقطهٔ غذایی معرفی شد",
-      "title": "İstanbul'un lezzet haritası 200'den fazla durakla tanıtıldı - Ayaküstü Haber",
-      "title_fa": "نقشهٔ غذا استانبول"
     },
     "4f4edc22e8eb85f1": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2941,23 +2907,6 @@
       "title": "Massive new mural brings color to downtown Westbrook - newscentermaine.com",
       "title_fa": ""
     },
-    "672d20401fb7743d": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T21:24:21.641657+00:00",
-      "id": "672d20401fb7743d",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1mZnlndVJUSkZwMk9kLV80Z3hhYnFDVGdUekZEeXYxaFlJR2l0S0p5bnZxZGRybE1jTFhIMlJPTUhCSHlTMEdmOUlYeG5ZZ19TUkYzQUhuZWRldGNkc0J4NkFHMUE4TnNqcnc1ZDQ0THBtMjUwVldWM2NR?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-15T16:06:37+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "رستوران‌های ماهی در آنکارا معرفی شدند.",
-      "title": "Ankara'da En İyi Balık Restoranları | En Lezzetli Mekanlar 2026 - Oggusto",
-      "title_fa": "رستوران‌های ماهی در آنکارا"
-    },
     "674a5f00a60fbbfe": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
@@ -3076,6 +3025,23 @@
       "summary_fa": "جشن سال نو با غذای ژاپنی",
       "title": "Japon mutfağı ve boğaz manzarasıyla yeni yıl - gastronomiturkey.com",
       "title_fa": "غذای ژاپنی"
+    },
+    "6967ec7103b9ea36": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "id": "6967ec7103b9ea36",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcUcxZXN6ekY4NXpOeS1HLXpLdEEzekhHZVV2c01JSmV6d1pYZXlBd2VRN1A1TmlSSjhfNEVlam1WaXFwNnpEZ0lGcmF2c1Q4RF9MSExJMVk5N0xxY2U3MVdrbkxObkVKelRVTDl1SUFOMzdqMDVOaHR6bmxTQV9LNEVQSS1pV1RfYm5INTlBRzJkMVM1NklZLWF2TDZRVlNvbjUtRWtGSQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-09T11:46:35+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "İstanbul’da Boğaziçi Film Festivali jürisi programı değerlendirdi - https://www.ensondakika.com.tr/",
+      "title_fa": ""
     },
     "6a1481d946e98b05": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -3301,7 +3267,7 @@
     "72f8ba71458bc344": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "72f8ba71458bc344",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPM3k5aHdiYTRaRGw5U01SQkZTanJJVW9qZTl2WEI4WG5pNE50TUx6dFJZQVdLbHp0QWg0aW1mZ25UWjlqd2d1R3Jsam9HUE1BakV5VHlneHRPeEUtZkdOT284cDNlVnBKQzhFQkRQZUdZVXNic2NXSkFfbW1KbHcwR2ZPNlNKaXR2N2NET0FZWkpwd1dGekdZdVpCYUxYeE1VTVVaSmtNZE51YTczZmhN?oc=5",
       "message_id": null,
@@ -4146,6 +4112,23 @@
       "source": "Google News — Istanbul food",
       "summary_fa": "",
       "title": "Istanbul to screen 20 climate documentaries ahead of COP31 - Wisconsin Muslim Journal",
+      "title_fa": ""
+    },
+    "8d647914b6cb5371": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "id": "8d647914b6cb5371",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SdIBV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-12T08:29:15+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Yemeksepeti, \"Lezzetin Efsaneleri\" ile restoran iş ortaklarının başarısını ödüllendirecek - İSTANBUL - Mersin Haber",
       "title_fa": ""
     },
     "8df18590a0e2ab53": {
@@ -6545,6 +6528,23 @@
       "title": "Uluslararası Gastronomi Film Festivali’nde kısa filmler aynı yarışmada - Anka Haber",
       "title_fa": "جشنواره فیلم گاسترونومی"
     },
+    "eeacc99a7c49d720": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "id": "eeacc99a7c49d720",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcy03SFVqWk1EQlNOSXB3YWdjQkN3cnFlNkhTdndmc3EwYThOeVk5UlM0MTZreloyQWxfZVJtVmlDRF8tR0tCcFZ3eUsxYXhTTEFuS2d2UzRJQlBfeDRweWN5Z3NsN3dnTThsMEctZWFmaXJlMEl4TGlzMllvV1pXeFlWQlpJSUxZOEtoVw?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-12T15:53:51+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul’un En İyi Uzak Doğu Restoranları Önerileri | 2026 - Oggusto",
+      "title_fa": ""
+    },
     "eed8016e8555352a": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -6633,7 +6633,7 @@
     "f486f5f517f6a03c": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "f486f5f517f6a03c",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMUpqc3pQOHRtZEZSbE4wR2tuSmpSdFJjbEFPenJpakxCXzc3SGMwSVEtT3BJd1RmbmRvMG1VbEV5TV9qc3pxaVkzSDRkbDljYkl4blNicnItaWU2bHlSTU9SUWF6Xzc2ZHlWZkExWDFTNlA0SVI2eTJXZU5HRWd3bnNnWlAyaV91SnR6dlZ2S2Fla0wyWWc?oc=5",
       "message_id": null,
@@ -6701,7 +6701,7 @@
     "f92fddac2c39d5bd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-12T19:55:33.898520+00:00",
       "id": "f92fddac2c39d5bd",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUjFvcTkyYTRUdWhtZ1FOajV3dGhWcHFYM3ktUHdNZ25kYk9ucFh3Z25Ia1h4WnpQVEs4MkpKMi0yOGQyVElfUXpwQ2hJenJhRkxfQTR3ZkVpT1hQdUNnYUwtZ2cxc1k4MElvSFlJWExZaTlhZXdRRTVXTmNGYWF4MklyLTVOU2lEMHhKckRsczRpNEN2VWJBdWtFQzBnZDQ?oc=5",
       "message_id": null,
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-15T21:24:21.641657+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-16T04:33:48.882261+00:00",
       "feeds": 6,
@@ -7158,6 +7152,12 @@
     },
     {
       "at": "2026-11-12T07:12:46.075868+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 0
+    },
+    {
+      "at": "2026-11-12T19:55:33.898520+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 0
