@@ -88,7 +88,7 @@
     "01fd52da3319f166": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "01fd52da3319f166",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMG1STEtVVTJMNjlRb3FYU0tRaWw1WUxTcHhTTlpab2tQaEVTMUpWYXlWNmRTMWNId2RZRy00VjZfeDFXRXMwbzRJU2JQTGJHcTFqNzlBQ0NyZ1h0TzdnOXZoWGp6NjZ5YU1scWxBVUtNaVlKVVhISkhBZms0akw2U2RreUlqTjcybndoUFo4N1hkVGpyNDdHbUVzVkE0NlF4Wk9CRDJiNm1PUkJ2Y0RxdlhQTmdHbEN3cGpWZEVFbzFhUy1obDN2TU1lVFZJejhIMk40clgxTQ?oc=5",
       "message_id": null,
@@ -139,7 +139,7 @@
     "03696ec2666a3ef9": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "03696ec2666a3ef9",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ZUlZHbWlHR1NVdTFnUjg2WFR5UkwyYU5RNEZJQkxLTTRqbVhZVzRXbmNfRFdLdkN1ZDJWUDg1MTNIOWEzVzhHb1JUdnRZMERsb3BpVU9QSDV2MndQQ3pHVg?oc=5",
       "message_id": null,
@@ -595,23 +595,6 @@
       "title": "Istanbul Ataturk (ISL) (LTBA) passenger reviews - Flightradar24",
       "title_fa": ""
     },
-    "1145a192710d388f": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T21:24:21.641657+00:00",
-      "id": "1145a192710d388f",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUkxmQlNLTFdaVC1mWmpSTG84eXBqVjFoZ1I4MURlaDJQUlJLdTg1bDlsRWxvb1FmU29sbVVjaFEtcHYwcHBnNVRNb0lvcDdUNUduWk5ldG1XUTNVdVcwTFpESzMtNGpMelk2Wl9Eai03SUpnX1lmSU1uNVhpWnllQUR0ODJrYnRseFMydDVpdVVNZHdxbnk5VTJsalJIUnB6OVMzUS1xOA?oc=5",
-      "message_id": 21,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-16T21:10:44.731044+00:00",
-      "published": "2026-10-04T13:23:31+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "استانبول با بیش از ۲۰۰ ایستگاه معرفی شد",
-      "title": "İstanbul lezzet haritası 200'den fazla durakla tanıtıldı - Haber Gündemim",
-      "title_fa": "نقشهٔ вкуسی استانبول"
-    },
     "1274204f8571e4a6": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -713,23 +696,6 @@
       "summary_fa": "معرفی رستوران‌های ایتالیایی در استانبول",
       "title": "İstanbul’un En İyi İtalyan Restoranları | 2026 Rehberi - Oggusto",
       "title_fa": "بهترین رستوران‌های ایتالیایی استانبول"
-    },
-    "15286c7d9077f257": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-15T21:24:21.641657+00:00",
-      "id": "15286c7d9077f257",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYUNfeEI4dnNiMFJOX0RqbHhMVWVGN3NQMkxsbnYyNEN6ckx4UG1PNTlRazBqenNieVBPd0draU0wbkNSY1VDaHRJMUw3dUsxX1JGSDJvekFSSHhfbFNTZmZLOG42X3Q5MjBONVZaUzV2ZVRWd2hoVlMzYTBWMkxzLVpHbDVuNjZKVE84eGtTRQ?oc=5",
-      "message_id": 16,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-15T21:24:21.641657+00:00",
-      "published": "2026-10-04T10:55:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "شэф سمر رستوران کبابی جدیدی در استانبول باز کرده است",
-      "title": "Somer Şef'ten yeni restoran hamlesi: Bu kez kebapçı açtı - Taşköprü Postası",
-      "title_fa": "رستوران جدید کبابی در استانبول"
     },
     "154099f4d0a9ec48": {
       "cat": "رستوران و کافه در استانبول",
@@ -921,7 +887,7 @@
     "185f9e9f4b8c4a3f": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T07:12:46.075868+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "185f9e9f4b8c4a3f",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRnprWUh6OEVjVUFtOXc0T3RUbjBFd19yYWxXZEp0UW12NFlkVFRncXA5dVRnZ3RVSGhsOTBzZkdqUEVFZl9kTU52TzRhWkp6UWo1bWtGallRN3ozUWZCaFZRaTFuUF9RRjRqc3pINlVoWG5pNVdIMDZZZkdHbmluWktndjR0MVlMbGc?oc=5",
       "message_id": null,
@@ -1992,7 +1958,7 @@
     "485f02fa7214a1fc": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "485f02fa7214a1fc",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQXJ1UjA2QlI4S281bG9kQVF3RE0wUE1lZ3BINUVVeGZGdnZDRDh4blJQR1pFcnkzVmRSV3BfZnZ6amY4akM2OFVXZE1lam8yZWRRanpoeGN0TDZwTF9kUEp0bXpfLXRWQWpXVndRend1dmc4NVFQUmFxTzVZSFlyNTBlV2NtZXlzTWdfV1hVZ0NYWFh1eU96LU9KZ0hmQ2xEazZzMFhiY29FdHp5M1NCTkp1WnUyMDdjcEc5VG5jcEVpX2xwOTRReHRqcGF1ZFZtamFxag?oc=5",
       "message_id": null,
@@ -2060,7 +2026,7 @@
     "491972a68dd83341": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "491972a68dd83341",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNDNyT2ZLaFpDRGVIYWJqYmpJOWNsSUtjelg1VWJUUHBnSVNrLUxNSF9iZWI3M1NRbE1PRkthb04zT3JwUThOT3dMTHphNnhDVkRVbWZ2NmlMVG1RNGVlRGxxcjBia05yb2ZoQWtyX051VlVrY1pKLTZqWlpmajZPMmxVY3JuNmhUTXgwcU84M1JKN2xGdUd4OEFFTjRFMzhBNlZheg?oc=5",
       "message_id": null,
@@ -3029,7 +2995,7 @@
     "6967ec7103b9ea36": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "6967ec7103b9ea36",
       "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcUcxZXN6ekY4NXpOeS1HLXpLdEEzekhHZVV2c01JSmV6d1pYZXlBd2VRN1A1TmlSSjhfNEVlam1WaXFwNnpEZ0lGcmF2c1Q4RF9MSExJMVk5N0xxY2U3MVdrbkxObkVKelRVTDl1SUFOMzdqMDVOaHR6bmxTQV9LNEVQSS1pV1RfYm5INTlBRzJkMVM1NklZLWF2TDZRVlNvbjUtRWtGSQ?oc=5",
       "message_id": null,
@@ -3842,6 +3808,23 @@
       "title": "Bolton restaurant issued notice over 'opening hours breach' - The Bolton News",
       "title_fa": ""
     },
+    "86354ad9868d92d7": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "pollinations",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
+      "id": "86354ad9868d92d7",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaHhMT01nV0FqeTU0YVl5aDg0VWhIOVNRTTJsNDNOZ0VETnhWbXdodkNQT3lGSGkzVGlqSVdKd21OcW9qZGRraDVwOXpCSVNsZ19TdDI3TklVUDFGSXk2dkFodHZ3blV1Z19lVnBjTnN4VEI2dlcwMmNCRkpLRkNoQ1B1dWJZa1U4YlRCTUtZazhRbmVxQm1zT2s3bVNXUQ?oc=5",
+      "message_id": 107,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-11-13T06:48:17.000361+00:00",
+      "published": "2026-11-13T06:03:20+00:00",
+      "score": 9,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "این خبر اعلام می‌کند که استانبول در 20 مسیر گاسترونومی برتر اروپا شناسایی شده است که نشان‌دهنده جایگاه بالای شهر در حوزه غذا و سفر است.",
+      "title": "Avrupa’nın en iyi 20 gastronomi rotasında İstanbul da var - Türkiye Turizm",
+      "title_fa": "استانبول در 20 مسیر گاسترونومی برتر اروپا حضور دارد"
+    },
     "86428bfe503e69d9": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -4117,7 +4100,7 @@
     "8d647914b6cb5371": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "8d647914b6cb5371",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SdIBV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SQ?oc=5",
       "message_id": null,
@@ -4742,6 +4725,23 @@
       "summary_fa": "رستورانی در استانبول به سایر شهرها نیز جذب مشتری می‌کند",
       "title": "Yalnız Kocaeli değil, Sunay Akın'a göre Bıçkıdere İstanbul, Bursa ve Sakarya'ya da hitap edebilir - Çağdaş Kocaeli Gazetesi",
       "title_fa": "رستوران در استانبول"
+    },
+    "a79b8ef217498375": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
+      "id": "a79b8ef217498375",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9CVVRzbzJUdVN3bkxWSU1Janh4aVZUbWg4UFUtOVpwWFJpX3lUakU1QUxXdV9ESklFR0dMS0NramNKRmc1eU5objhPdzMxSjdlbV9VRVk0R0JJQXVycnFrS0pyd0Y?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-09T22:16:48+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "9 Pasta Restaurants in Istanbul Where Locals Actually Eat - ListeList",
+      "title_fa": ""
     },
     "a8206306af5dee20": {
       "cat": "رستوران و کافه در استانبول",
@@ -6531,14 +6531,14 @@
     "eeacc99a7c49d720": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "eeacc99a7c49d720",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcy03SFVqWk1EQlNOSXB3YWdjQkN3cnFlNkhTdndmc3EwYThOeVk5UlM0MTZreloyQWxfZVJtVmlDRF8tR0tCcFZ3eUsxYXhTTEFuS2d2UzRJQlBfeDRweWN5Z3NsN3dnTThsMEctZWFmaXJlMEl4TGlzMllvV1pXeFlWQlpJSUxZOEtoVw?oc=5",
       "message_id": null,
       "post": null,
       "posted": false,
       "posted_at": null,
-      "published": "2026-11-12T15:53:51+00:00",
+      "published": "2026-11-12T20:11:25+00:00",
       "score": null,
       "source": "Google News — İstanbul restoran",
       "summary_fa": "",
@@ -6633,7 +6633,7 @@
     "f486f5f517f6a03c": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "f486f5f517f6a03c",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMUpqc3pQOHRtZEZSbE4wR2tuSmpSdFJjbEFPenJpakxCXzc3SGMwSVEtT3BJd1RmbmRvMG1VbEV5TV9qc3pxaVkzSDRkbDljYkl4blNicnItaWU2bHlSTU9SUWF6Xzc2ZHlWZkExWDFTNlA0SVI2eTJXZU5HRWd3bnNnWlAyaV91SnR6dlZ2S2Fla0wyWWc?oc=5",
       "message_id": null,
@@ -6701,7 +6701,7 @@
     "f92fddac2c39d5bd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-12T19:55:33.898520+00:00",
+      "first_seen": "2026-11-13T06:48:17.000361+00:00",
       "id": "f92fddac2c39d5bd",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUjFvcTkyYTRUdWhtZ1FOajV3dGhWcHFYM3ktUHdNZ25kYk9ucFh3Z25Ia1h4WnpQVEs4MkpKMi0yOGQyVElfUXpwQ2hJenJhRkxfQTR3ZkVpT1hQdUNnYUwtZ2cxc1k4MElvSFlJWExZaTlhZXdRRTVXTmNGYWF4MklyLTVOU2lEMHhKckRsczRpNEN2VWJBdWtFQzBnZDQ?oc=5",
       "message_id": null,
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-16T04:33:48.882261+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-16T11:31:10.572403+00:00",
       "feeds": 6,
@@ -7161,6 +7155,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 0
+    },
+    {
+      "at": "2026-11-13T06:48:17.000361+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 1
     }
   ]
 }
