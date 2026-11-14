@@ -785,7 +785,7 @@
     "17e64faea2aa21f2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "17e64faea2aa21f2",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVlBzY2huUGRyalJNWlB2ZFk0N3kwc25CcWtFSlhFMjdmdGhZLVFGel9GX0R3OG5QVlRQT1U0ZGlTZ1VxZTlnV2tBbjZUUExKREs1SzctZjZTOHU3ak1KRlhCall0UGwyQWFvRU16U3pqVlJXSTMtRGJJUnFxLUU2TG5rSW14cEQyQU8yS1B5eWpqNnE5OXRpaFZUQjlDWlU?oc=5",
       "message_id": null,
@@ -1226,20 +1226,20 @@
     },
     "24050ca8a67e6547": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "24050ca8a67e6547",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSEtmc29meWZNMmVPaUhRU2IxTURzNWFFd2VDaVBXNi1zZ1pweGozb0lUal93a1Y4S21UZWFrNkpNZHNpSnZMaWozRlNqLWF0RkhXNjRmSDFzR2RYRWpvcnhfWmIwTUQzUTc4NjRubDlOVmF6NEdmNDREQzBUcDgwc2VPRkFKUzluSmpTQWlZMzRJNmwyaEt2U3VRMmxWZ1gwcDFScHJxUHo2NlQzTVHSAa4BQVVfeXFMUEhLZnNvZnlmTTJlT2lIUVNiMU1EczVhRXdlQ2lQVzYtc2dacHhqM29JVGpfd2tWOEttVGVhazZKTWRzaUp2TGlqM0ZTai1hdEZIVzY0Zkgxc0dkWEVqb3J4X1piME1EM1E3ODY0bmw5TlZhejRHZjQ0REMwVHA4MHNlT0ZBSlM5bkpqU0FpWTM0STZsMmhLdlN1UTJsVmdYMHAxUnBycVB6NjZUM01R?oc=5",
       "message_id": null,
-      "post": null,
+      "post": false,
       "posted": false,
       "posted_at": null,
       "published": "2026-11-14T13:15:00+00:00",
-      "score": null,
+      "score": 0,
       "source": "Google News — Istanbul food",
-      "summary_fa": "",
+      "summary_fa": "این فستیوال فرهنگی-ورزشی در ریاض حضور پیدا می‌کند و به گسترش جهانی خود ادامه می‌دهد.",
       "title": "Ethnosport Culture Festival expands global reach with Riyadh debut | Daily Sabah - Daily Sabah",
-      "title_fa": ""
+      "title_fa": "فستیوال ایتنسپور در ریاض گسترش می‌یابد"
     },
     "24f1458f875e04b3": {
       "cat": "رستوران و کافه در استانبول",
@@ -1584,7 +1584,7 @@
     "319e6450368fea99": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "319e6450368fea99",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNczV2U0V4MHFuSkpCeTM1Nk1rdEtiVzlxb3hXOUJUbzVVaGwzajFWLWNmc1o1T19ramw5aGI2YXpTeU9MaHZRMl9BaHlMZGdtMkZ5aHhEUHFYRlVCbVdLN0R3Vk55U2Y0bFNEcVJhaGRYaEtSQVFRYk9yLUNPT3BVVGhtVDBKRVJwM1NnQzNLb1pxV3BDdnc?oc=5",
       "message_id": null,
@@ -1771,7 +1771,7 @@
     "40f8fb44b066809c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "40f8fb44b066809c",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9lX1lsQ0doRjRWLThUYnNPYkUxQXJrZ2FsdDlna3hseHdwaGE3b05JWXM2S1BSUHNRQnNKTlVZZk15bWFFaERoQV9nbWY0aXlwSFUzc1U2ZFY0Smd2NVIxUFAwSjBfeVdybmtvZ19YN1hCU0taSUk4?oc=5",
       "message_id": null,
@@ -1975,7 +1975,7 @@
     "485f02fa7214a1fc": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "485f02fa7214a1fc",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQXJ1UjA2QlI4S281bG9kQVF3RE0wUE1lZ3BINUVVeGZGdnZDRDh4blJQR1pFcnkzVmRSV3BfZnZ6amY4akM2OFVXZE1lam8yZWRRanpoeGN0TDZwTF9kUEp0bXpfLXRWQWpXVndRend1dmc4NVFQUmFxTzVZSFlyNTBlV2NtZXlzTWdfV1hVZ0NYWFh1eU96LU9KZ0hmQ2xEazZzMFhiY29FdHp5M1NCTkp1WnUyMDdjcEc5VG5jcEVpX2xwOTRReHRqcGF1ZFZtamFxag?oc=5",
       "message_id": null,
@@ -3352,7 +3352,7 @@
     "78986189094a840a": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "78986189094a840a",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3VWMFZSczU2QzdWLU9iUmt0NlJUcUYxNnZWamdaXy1XUVF6eWYxaG9pa29tTFc1TzdFMlkyT0JIZUc3QXRFSkVOcEtnZEVYaE11UnNmM01hczBCUDVyNks5dU1YWWNmM2dPQlNXb21TX01jSG12X2Q5aU5EZ05GR1M3Snc5ZWpRNG5abWJlTWRISkFXQUQxYnpGaDBoTXFQZTl3QW5hQ3FZdGFrb2hNbU1sR3NWWEh0VlZzZHVnNA?oc=5",
       "message_id": null,
@@ -3961,6 +3961,23 @@
       "title": "Gastronomi başkenti Gaziantep'ten iki eşsiz lezzet daha koruma altında - Nirvana Haber",
       "title_fa": "محافظت از دو طعم ویژه گازینتهپ"
     },
+    "89adf428ff9bf5ec": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "id": "89adf428ff9bf5ec",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSVhWZGY3Rmo0ME8yNWRBNWlfRmZlSmp2bmhzMTVPSktRc01qQkFwUzlfUVBJbzdLakQ3eTZ2MFBYSmZ4dm5FS0V1SVc1WFVsd1dMRGFQWnp1Xzh1OFpGQlM3VnNmY0FCdHhnRjRvRDVXMjJ1RHZGMjRqeDl2R2I4azhmSThJdw?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-12T08:00:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Dünyanın En Büyük Müzik Festivalleri: Tarih, Şehir ve Ulaşım - Oggusto",
+      "title_fa": ""
+    },
     "89e94cb69a2cc714": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -4083,7 +4100,7 @@
     "8d647914b6cb5371": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "8d647914b6cb5371",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SdIBV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SQ?oc=5",
       "message_id": null,
@@ -5168,23 +5185,6 @@
       "title": "Kindness on the streets of Istanbul: A cat massaging its friend leaves social media amazed - Zamin.uz",
       "title_fa": ""
     },
-    "b8762620a2bedc56": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T11:31:10.572403+00:00",
-      "id": "b8762620a2bedc56",
-      "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPTThtZmJMZWlZZ0s2R3NsejJBWUQ3RHI0bERjd1BibWQ2azlMQm9VOFdGVm1GNVhWVlpuT2swbzVQc2plS05zZFgwU1ZVeHRfS3JCY1VxcmpEUjZzcU5SY2ZnbUZjRklERUtIWC1jQlVIMVFKem0tUGs1cDlWZlpxVmV0amlad01IRVNBa0NFVjdOSlQxbFQzNXk0b2l2VDVuUm9rSVl6bjI3MUx1amdfR0R2VXk2WEZiTFBFMndHemJYbEN4dXVibHVVUXYyQzJoRzhxc2ZZdmN3VGU5NHlEVFh0cFM0cy1nUkFVbWhHY1ZkSmFHaHdpT3RWVkkzYkh5M255YjdRWUxHZUJYZkhwV3RrdmJaUGRMOGlBbDNaWjVkSUp2Zll3eEV4ZXpqQzVLSk5UTF9nTjk?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-16T08:29:09+00:00",
-      "score": 2,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "",
-      "title": "Istanbul Restaurant Astley Bridge issued notice over opening hours - Trending Now Infrastructure",
-      "title_fa": ""
-    },
     "b8d942a27e6089cd": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -5647,7 +5647,7 @@
     "cebd59dcc5d08dec": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "cebd59dcc5d08dec",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHJTSHhWaDdXeXBoeTFCQzdmVEo5M05NeURfOHZ4NlJjdm9GVlUxdUtya2tSN2daQkc4enpyQWtucTl5Vk5BM3RCZmx5Qm5xZ1ZENUFTUFB3b2lQRzhNNUxoRUFaSnJEbjRTTXdOdGVrMTc5ZEhPZGZKU2d6M3VEcFJIRFo?oc=5",
       "message_id": null,
@@ -6531,14 +6531,14 @@
     "eeacc99a7c49d720": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "eeacc99a7c49d720",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcy03SFVqWk1EQlNOSXB3YWdjQkN3cnFlNkhTdndmc3EwYThOeVk5UlM0MTZreloyQWxfZVJtVmlDRF8tR0tCcFZ3eUsxYXhTTEFuS2d2UzRJQlBfeDRweWN5Z3NsN3dnTThsMEctZWFmaXJlMEl4TGlzMllvV1pXeFlWQlpJSUxZOEtoVw?oc=5",
       "message_id": null,
       "post": null,
       "posted": false,
       "posted_at": null,
-      "published": "2026-11-12T20:11:25+00:00",
+      "published": "2026-11-12T08:00:00+00:00",
       "score": null,
       "source": "Google News — İstanbul restoran",
       "summary_fa": "",
@@ -6717,16 +6717,16 @@
     },
     "fa6828360c6c6032": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": null,
-      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-14T22:25:41.224100+00:00",
       "id": "fa6828360c6c6032",
       "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOX3E5cEdteHNuMUJTMlY4REdJa1lfaDBkc25iaHV5b2tHb0ZwamtvMTRxcGszbjdkLXhMUHpzU2QzckNKWDltQmVyam5GUTZ4X2hoMmtTWThZR29qcTBnT010WTJYb0EzYWNubUFLLWtjdWhPUTYtZjFfWl84aHlDOU0waXAwdUdYTTNTMm50TUE?oc=5",
       "message_id": null,
-      "post": null,
+      "post": false,
       "posted": false,
       "posted_at": null,
       "published": "2026-11-12T20:12:54+00:00",
-      "score": null,
+      "score": 0,
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "Boğaz’ın ikonik oteli dünya sıralamasında - gastronomiturkey.com",
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-17T04:32:54.094816+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-17T10:46:30.186502+00:00",
       "feeds": 6,
@@ -7158,6 +7152,12 @@
     },
     {
       "at": "2026-11-14T18:03:48.874230+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 0
+    },
+    {
+      "at": "2026-11-14T22:25:41.224100+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 0
