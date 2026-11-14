@@ -153,23 +153,6 @@
       "title": "Beril Sarıaltun ile: Bu Festival Bizim'in Yolculuğu Üzerine - theMagger",
       "title_fa": ""
     },
-    "0390b64c5a353509": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-16T04:33:48.882261+00:00",
-      "id": "0390b64c5a353509",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcXNBUmFQdjhqU2o0b0pSZ2tCMENwaU5BUlVQcmx4end3WUdmRVdrSmJObUljZXlyQlRMSlp1TVppempfMC1uX2pEcTZySGZCeE9Scnp1YzJ1TWVBTzc1ak91cTBrMXR6azBNeDJRN2ItcnhPSzcxWnNNMFVROHo2V3ZlYld5UFhETkI5VDA1ZElkR0tQMU9QcmotbUl2VTNkX0lj?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-16T00:03:57+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "غذاهای آفریقایی به Türk ها نزدیک است",
-      "title": "Afrika yemekleri Türk damak tadına sanıldığı kadar uzak değil - Anadolu Ajansı",
-      "title_fa": "غذاهای آفریقایی"
-    },
     "046b716263015230": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
@@ -185,6 +168,23 @@
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "Devrek’te gastronomi alanı için önemli görüşme! - Elmas 67",
+      "title_fa": ""
+    },
+    "04a9dfa2d0187484": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "pollinations",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "id": "04a9dfa2d0187484",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNNjgyY0dCQVBja29wM3BhVHV2dWJKbVJuMW1WR1RLY1lCZDJfdHhxUl8zUkM5dXFmU3lRQmxjaHVvQnVyb1JaSHBGSnZtOEtoaUlfN2RkV2dmMndRb3JvbXY3TnJXRG5Uc25jOGNWN1FucUVNVDl2bnpxOHU5Q2hMZW1aZ0dMQXVaa3VKQmFMNDY5Zw?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-14T14:35:32+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Istanbul Cafe Planned for Buckland Hills Mall - Hoodline",
       "title_fa": ""
     },
     "04c9fe03d812c8c7": {
@@ -782,6 +782,23 @@
       "title": "Restoranlar, enstalasyonlar, halılar: Londra Tasarım Müzesi'ni bir günlüğüne devralan konferans - Aposto",
       "title_fa": "کنفرانس در موزهٔ لندن"
     },
+    "17e64faea2aa21f2": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "id": "17e64faea2aa21f2",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVlBzY2huUGRyalJNWlB2ZFk0N3kwc25CcWtFSlhFMjdmdGhZLVFGel9GX0R3OG5QVlRQT1U0ZGlTZ1VxZTlnV2tBbjZUUExKREs1SzctZjZTOHU3ak1KRlhCall0UGwyQWFvRU16U3pqVlJXSTMtRGJJUnFxLUU2TG5rSW14cEQyQU8yS1B5eWpqNnE5OXRpaFZUQjlDWlU?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-14T01:08:12+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "A new Manchester restaurant brings a taste of Istanbul to Buckland Hills - Greenwich Time",
+      "title_fa": ""
+    },
     "17ee4ffff269757a": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -883,23 +900,6 @@
       "summary_fa": "",
       "title": "Uluslararası Gastronomi Fuarında Osmaniye İmzası - Hasret Gazetesi",
       "title_fa": ""
-    },
-    "192f3afbbc5b0aad": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-16T04:33:48.882261+00:00",
-      "id": "192f3afbbc5b0aad",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYkdVVTFjTkVIYl9jVmt1OS1hSEFRWFpnVWcyMnBEaHNyZFNYOVZfUnZqUjdSdVFmR3NvNXotNXdhTkhqOGtLZ1V1OU1sQm5ia0R2NXI1c2JkRUtHbHBoSEVPMzdyVGZKcmw2YW03Q2hsU0laVmo2Zkp3cjI4N2tlSDNqZFNkSUsySVAyYmRtNjV2bHNWcUhTUkhlZzhrT214V0NOYXhCMnVFYzlpWk9rZnBDQ2YxZU9RUDZVOFJTYVNCTHRvVGV2LUN0Q0NwR0otNnc?oc=5",
-      "message_id": 17,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-16T04:33:48.882261+00:00",
-      "published": "2026-10-04T07:00:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "کشف غذاهای سنتی استانبول",
-      "title": "Saray mutfağından esnaf lokantasına: İstanbul’un mutfak hazinesi keşfediliyor - Takvim",
-      "title_fa": "غذاهای استانبول"
     },
     "19fe8e075feacf32": {
       "cat": "رستوران و کافه در استانبول",
@@ -1223,6 +1223,23 @@
       "summary_fa": "",
       "title": "Afyonkarahisar Gastronomi Konağı’nda Dikkat Çeken Siyasi Buluşma! - Afyon Türkeli Gazetesi",
       "title_fa": "همایش سیاسی"
+    },
+    "24050ca8a67e6547": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "id": "24050ca8a67e6547",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSEtmc29meWZNMmVPaUhRU2IxTURzNWFFd2VDaVBXNi1zZ1pweGozb0lUal93a1Y4S21UZWFrNkpNZHNpSnZMaWozRlNqLWF0RkhXNjRmSDFzR2RYRWpvcnhfWmIwTUQzUTc4NjRubDlOVmF6NEdmNDREQzBUcDgwc2VPRkFKUzluSmpTQWlZMzRJNmwyaEt2U3VRMmxWZ1gwcDFScHJxUHo2NlQzTVHSAa4BQVVfeXFMUEhLZnNvZnlmTTJlT2lIUVNiMU1EczVhRXdlQ2lQVzYtc2dacHhqM29JVGpfd2tWOEttVGVhazZKTWRzaUp2TGlqM0ZTai1hdEZIVzY0Zkgxc0dkWEVqb3J4X1piME1EM1E3ODY0bmw5TlZhejRHZjQ0REMwVHA4MHNlT0ZBSlM5bkpqU0FpWTM0STZsMmhLdlN1UTJsVmdYMHAxUnBycVB6NjZUM01R?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-14T13:15:00+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Ethnosport Culture Festival expands global reach with Riyadh debut | Daily Sabah - Daily Sabah",
+      "title_fa": ""
     },
     "24f1458f875e04b3": {
       "cat": "رستوران و کافه در استانبول",
@@ -1567,36 +1584,19 @@
     "319e6450368fea99": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
       "id": "319e6450368fea99",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNczV2U0V4MHFuSkpCeTM1Nk1rdEtiVzlxb3hXOUJUbzVVaGwzajFWLWNmc1o1T19ramw5aGI2YXpTeU9MaHZRMl9BaHlMZGdtMkZ5aHhEUHFYRlVCbVdLN0R3Vk55U2Y0bFNEcVJhaGRYaEtSQVFRYk9yLUNPT3BVVGhtVDBKRVJwM1NnQzNLb1pxV3BDdnc?oc=5",
       "message_id": null,
       "post": null,
       "posted": false,
       "posted_at": null,
-      "published": "2026-11-13T09:25:05+00:00",
+      "published": "2026-11-13T09:25:08+00:00",
       "score": null,
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "Hilton İstanbul Bomonti’de Uzak Doğu esintisi - gastronomiturkey.com",
       "title_fa": ""
-    },
-    "31efa9a3eec89015": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-16T04:33:48.882261+00:00",
-      "id": "31efa9a3eec89015",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaGN1Y2h2MUljbjFwT29mRWZpQXYzNk1JcXhZamlZLU5MMUJXVndLRE0zdWhDSmI1UGVQcFh3eTdGQnNjN3NTUGx2bHNqN3psSkd2eG5XZ0ZibDcyM2o2dkN6Z1RXYlExMXl4dzJaYTVHZ2s4cHBldjhySWRwaWdaVGNyYkctcEFBTU1UOTdIaVQ?oc=5",
-      "message_id": 18,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-16T11:31:10.572403+00:00",
-      "published": "2026-10-04T08:36:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "۲۰۰ adres از غذاهای استانبول در مسیر گاسترونومی قرار گرفت",
-      "title": "İstanbul mutfağının 200 adresi gastronomi rotasına girdi - Çankırı Postası",
-      "title_fa": "۲۰۰ رستوران استانبول"
     },
     "33c326e4efed30bf": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -1771,7 +1771,7 @@
     "40f8fb44b066809c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
       "id": "40f8fb44b066809c",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9lX1lsQ0doRjRWLThUYnNPYkUxQXJrZ2FsdDlna3hseHdwaGE3b05JWXM2S1BSUHNRQnNKTlVZZk15bWFFaERoQV9nbWY0aXlwSFUzc1U2ZFY0Smd2NVIxUFAwSjBfeVdybmtvZ19YN1hCU0taSUk4?oc=5",
       "message_id": null,
@@ -1975,7 +1975,7 @@
     "485f02fa7214a1fc": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
       "id": "485f02fa7214a1fc",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQXJ1UjA2QlI4S281bG9kQVF3RE0wUE1lZ3BINUVVeGZGdnZDRDh4blJQR1pFcnkzVmRSV3BfZnZ6amY4akM2OFVXZE1lam8yZWRRanpoeGN0TDZwTF9kUEp0bXpfLXRWQWpXVndRend1dmc4NVFQUmFxTzVZSFlyNTBlV2NtZXlzTWdfV1hVZ0NYWFh1eU96LU9KZ0hmQ2xEazZzMFhiY29FdHp5M1NCTkp1WnUyMDdjcEc5VG5jcEVpX2xwOTRReHRqcGF1ZFZtamFxag?oc=5",
       "message_id": null,
@@ -3352,7 +3352,7 @@
     "78986189094a840a": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
       "id": "78986189094a840a",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3VWMFZSczU2QzdWLU9iUmt0NlJUcUYxNnZWamdaXy1XUVF6eWYxaG9pa29tTFc1TzdFMlkyT0JIZUc3QXRFSkVOcEtnZEVYaE11UnNmM01hczBCUDVyNks5dU1YWWNmM2dPQlNXb21TX01jSG12X2Q5aU5EZ05GR1M3Snc5ZWpRNG5abWJlTWRISkFXQUQxYnpGaDBoTXFQZTl3QW5hQ3FZdGFrb2hNbU1sR3NWWEh0VlZzZHVnNA?oc=5",
       "message_id": null,
@@ -4083,7 +4083,7 @@
     "8d647914b6cb5371": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
       "id": "8d647914b6cb5371",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SdIBV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SQ?oc=5",
       "message_id": null,
@@ -5627,23 +5627,6 @@
       "title": "Izaka Terrace’ta iki şeften ortak imza - gastronomiturkey.com",
       "title_fa": "دو سرآشپز در ایزاکا تراس"
     },
-    "cd8f07d5f75c13b6": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": null,
-      "first_seen": "2026-10-16T11:31:10.572403+00:00",
-      "id": "cd8f07d5f75c13b6",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOR1daanFvYlF1aF9EZl9fVXZGaS05T2t5TXZGTUVUaTU2YXh2eHlJZnkzRHhvM0phMV85Y2M3NHVPOUhCMVRwNmFuRzJ5OEwwYWpiNTZSVGZNV29zbzBraTZrZ2ZnMzFhajlEalU5SnBEYkFJa25GYXZnaHQ5Y0tGZjJKNDE1ZHNUQzI2VmJ3dWR2XzhrWU5LZXl2aVh1MHVNY3dZOU5yZjNoXy1NUzFpcERRVktrWGZ5R0tFNVJMV0F4aTVrTEEwYk5zVVRKeGRQcmdOUXpLVQ?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-03T09:54:46+00:00",
-      "score": null,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "",
-      "title": "Puglia: the Taranto-Grottaglie cargo airline makes its debut, serving the agri-food sector in the South - Il Sole 24 ORE",
-      "title_fa": ""
-    },
     "ce738f87b92bffc2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -5664,14 +5647,14 @@
     "cebd59dcc5d08dec": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
       "id": "cebd59dcc5d08dec",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHJTSHhWaDdXeXBoeTFCQzdmVEo5M05NeURfOHZ4NlJjdm9GVlUxdUtya2tSN2daQkc4enpyQWtucTl5Vk5BM3RCZmx5Qm5xZ1ZENUFTUFB3b2lQRzhNNUxoRUFaSnJEbjRTTXdOdGVrMTc5ZEhPZGZKU2d6M3VEcFJIRFo?oc=5",
       "message_id": null,
       "post": null,
       "posted": false,
       "posted_at": null,
-      "published": "2026-11-13T10:33:18+00:00",
+      "published": "2026-11-13T11:08:58+00:00",
       "score": null,
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
@@ -6174,7 +6157,7 @@
     "dfaebace61a4553f": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
       "id": "dfaebace61a4553f",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUHRpdFBKYmhuUjVmM1pyY05MNXRhYW55Y3RSN0JXMnVYSVYtb29Xc1ItS1VKcXJZRTF0OGhkYnFUakJGc3dsbTdYbnZRbkJaeTFjdDBGbTVpWGt3QzlnZThqdzktYjZGSG1VSmM3VHU3TDRXZi1OVWl2dEtnVW1KbEhUNVBrcmtGbi1hdUdEZ25TWDA?oc=5",
       "message_id": null,
@@ -6732,6 +6715,23 @@
       "title": "Endüstriyel mutfak sektörünün devi İstanbul’da buluştu - Yeniçağ Gazetesi",
       "title_fa": ""
     },
+    "fa6828360c6c6032": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-14T18:03:48.874230+00:00",
+      "id": "fa6828360c6c6032",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOX3E5cEdteHNuMUJTMlY4REdJa1lfaDBkc25iaHV5b2tHb0ZwamtvMTRxcGszbjdkLXhMUHpzU2QzckNKWDltQmVyam5GUTZ4X2hoMmtTWThZR29qcTBnT010WTJYb0EzYWNubUFLLWtjdWhPUTYtZjFfWl84aHlDOU0waXAwdUdYTTNTMm50TUE?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-12T20:12:54+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Boğaz’ın ikonik oteli dünya sıralamasında - gastronomiturkey.com",
+      "title_fa": ""
+    },
     "fabd92022cf4fb28": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-16T21:10:44.731044+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-17T04:32:54.094816+00:00",
       "feeds": 6,
@@ -7161,6 +7155,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 1
+    },
+    {
+      "at": "2026-11-14T18:03:48.874230+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 0
     }
   ]
 }
