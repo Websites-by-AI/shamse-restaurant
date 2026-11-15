@@ -88,7 +88,7 @@
     "01fd52da3319f166": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T06:25:35.103230+00:00",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "01fd52da3319f166",
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMG1STEtVVTJMNjlRb3FYU0tRaWw1WUxTcHhTTlpab2tQaEVTMUpWYXlWNmRTMWNId2RZRy00VjZfeDFXRXMwbzRJU2JQTGJHcTFqNzlBQ0NyZ1h0TzdnOXZoWGp6NjZ5YU1scWxBVUtNaVlKVVhISkhBZms0akw2U2RreUlqTjcybndoUFo4N1hkVGpyNDdHbUVzVkE0NlF4Wk9CRDJiNm1PUkJ2Y0RxdlhQTmdHbEN3cGpWZEVFbzFhUy1obDN2TU1lVFZJejhIMk40clgxTQ?oc=5",
       "message_id": null,
@@ -784,20 +784,20 @@
     },
     "17e64faea2aa21f2": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "17e64faea2aa21f2",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVlBzY2huUGRyalJNWlB2ZFk0N3kwc25CcWtFSlhFMjdmdGhZLVFGel9GX0R3OG5QVlRQT1U0ZGlTZ1VxZTlnV2tBbjZUUExKREs1SzctZjZTOHU3ak1KRlhCall0UGwyQWFvRU16U3pqVlJXSTMtRGJJUnFxLUU2TG5rSW14cEQyQU8yS1B5eWpqNnE5OXRpaFZUQjlDWlU?oc=5",
       "message_id": null,
-      "post": null,
+      "post": false,
       "posted": false,
       "posted_at": null,
       "published": "2026-11-14T01:08:12+00:00",
-      "score": null,
+      "score": 0,
       "source": "Google News — Istanbul food",
-      "summary_fa": "",
+      "summary_fa": "یک رستوران جدید در مانچستر طعم غذاهای استانبول را در بکلاند هیلز عرضه می‌کند، اما خبری مرتبط با رستوران‌های ایرانی در استانبول نیست.",
       "title": "A new Manchester restaurant brings a taste of Istanbul to Buckland Hills - Greenwich Time",
-      "title_fa": ""
+      "title_fa": "رستوران مانچستر معرفی می‌کند طعم استانبول در بکلاند هیلز"
     },
     "17ee4ffff269757a": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -1583,20 +1583,20 @@
     },
     "319e6450368fea99": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "319e6450368fea99",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNczV2U0V4MHFuSkpCeTM1Nk1rdEtiVzlxb3hXOUJUbzVVaGwzajFWLWNmc1o1T19ramw5aGI2YXpTeU9MaHZRMl9BaHlMZGdtMkZ5aHhEUHFYRlVCbVdLN0R3Vk55U2Y0bFNEcVJhaGRYaEtSQVFRYk9yLUNPT3BVVGhtVDBKRVJwM1NnQzNLb1pxV3BDdnc?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
+      "message_id": 110,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-11-15T06:37:03.377350+00:00",
       "published": "2026-11-13T09:25:08+00:00",
-      "score": null,
+      "score": 7,
       "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
+      "summary_fa": "هتل هیلتون استانبول در شعبهٔ ببونتی، با ارائهٔ طعم‌های شرق دور، تجربهٔ جدیدی در زمینهٔ غذا و گاسترونومی در استانبول معرفی کرده است.",
       "title": "Hilton İstanbul Bomonti’de Uzak Doğu esintisi - gastronomiturkey.com",
-      "title_fa": ""
+      "title_fa": "هتل هیلتون ببونتی به سبک شرق دور"
     },
     "33c326e4efed30bf": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -1771,7 +1771,7 @@
     "40f8fb44b066809c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "40f8fb44b066809c",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9lX1lsQ0doRjRWLThUYnNPYkUxQXJrZ2FsdDlna3hseHdwaGE3b05JWXM2S1BSUHNRQnNKTlVZZk15bWFFaERoQV9nbWY0aXlwSFUzc1U2ZFY0Smd2NVIxUFAwSjBfeVdybmtvZ19YN1hCU0taSUk4?oc=5",
       "message_id": null,
@@ -1974,20 +1974,20 @@
     },
     "485f02fa7214a1fc": {
       "cat": "رستوران و کافه در استانبول",
-      "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "485f02fa7214a1fc",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQXJ1UjA2QlI4S281bG9kQVF3RE0wUE1lZ3BINUVVeGZGdnZDRDh4blJQR1pFcnkzVmRSV3BfZnZ6amY4akM2OFVXZE1lam8yZWRRanpoeGN0TDZwTF9kUEp0bXpfLXRWQWpXVndRend1dmc4NVFQUmFxTzVZSFlyNTBlV2NtZXlzTWdfV1hVZ0NYWFh1eU96LU9KZ0hmQ2xEazZzMFhiY29FdHp5M1NCTkp1WnUyMDdjcEc5VG5jcEVpX2xwOTRReHRqcGF1ZFZtamFxag?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
+      "message_id": 110,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-11-15T06:37:03.377350+00:00",
       "published": "2026-11-12T08:23:23+00:00",
-      "score": null,
+      "score": 7,
       "source": "Google News — İstanbul restoran",
-      "summary_fa": "",
+      "summary_fa": "سرویس سفارش‌ آنلاین یمنکسبیتی با برنامه ‘افسانه‌های طعم’ به رستوران‌های شریک خود جایزه می‌دهد و این برنامه از طریق آژانس خبری ایلاس اعلام خواهد شد.",
       "title": "Yemeksepeti, \"Lezzetin Efsaneleri\" ile restoran iş ortaklarının başarısını ödüllendirecek İhlas Haber Ajansı - İhlas Haber Ajansı",
-      "title_fa": ""
+      "title_fa": "یمنکسبیتی به رستوران‌های شریکش با ‘افسانه‌های طعم’ جایزه می‌دهد"
     },
     "48a15d973c3d0eae": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -3352,7 +3352,7 @@
     "78986189094a840a": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "78986189094a840a",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3VWMFZSczU2QzdWLU9iUmt0NlJUcUYxNnZWamdaXy1XUVF6eWYxaG9pa29tTFc1TzdFMlkyT0JIZUc3QXRFSkVOcEtnZEVYaE11UnNmM01hczBCUDVyNks5dU1YWWNmM2dPQlNXb21TX01jSG12X2Q5aU5EZ05GR1M3Snc5ZWpRNG5abWJlTWRISkFXQUQxYnpGaDBoTXFQZTl3QW5hQ3FZdGFrb2hNbU1sR3NWWEh0VlZzZHVnNA?oc=5",
       "message_id": null,
@@ -3964,7 +3964,7 @@
     "89adf428ff9bf5ec": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "89adf428ff9bf5ec",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSVhWZGY3Rmo0ME8yNWRBNWlfRmZlSmp2bmhzMTVPSktRc01qQkFwUzlfUVBJbzdLakQ3eTZ2MFBYSmZ4dm5FS0V1SVc1WFVsd1dMRGFQWnp1Xzh1OFpGQlM3VnNmY0FCdHhnRjRvRDVXMjJ1RHZGMjRqeDl2R2I4azhmSThJdw?oc=5",
       "message_id": null,
@@ -4100,7 +4100,7 @@
     "8d647914b6cb5371": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "8d647914b6cb5371",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SdIBV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SQ?oc=5",
       "message_id": null,
@@ -5647,7 +5647,7 @@
     "cebd59dcc5d08dec": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "cebd59dcc5d08dec",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHJTSHhWaDdXeXBoeTFCQzdmVEo5M05NeURfOHZ4NlJjdm9GVlUxdUtya2tSN2daQkc4enpyQWtucTl5Vk5BM3RCZmx5Qm5xZ1ZENUFTUFB3b2lQRzhNNUxoRUFaSnJEbjRTTXdOdGVrMTc5ZEhPZGZKU2d6M3VEcFJIRFo?oc=5",
       "message_id": null,
@@ -5966,6 +5966,23 @@
       "summary_fa": "200 جای غذا در استانبول توسط سرآشپزهای معروف تأیید شده است",
       "title": "İstanbulda 200den fazla lezzet noktası ünlü şefler tarafından tescillendi - İstanbul Haber - CNN Türk",
       "title_fa": "200 جای غذا در استانبول"
+    },
+    "d9e8496ca650e385": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "id": "d9e8496ca650e385",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNamlpT0xGQzRjak5obEFwSEw2aWEzRnJjSWlEN3ZtaVBOcUxxUXA2MDZrd0N2OGU0UDNCWW1USjk4NkEwWE5LM3RwcXNiM2xDQk9KcFMxM2NGWUUxbXJXeW42ZVE0XzQ4ODNfcGtISnhOaEEySHg4eG5jOURxUGxWNlZ4TngzOGVxRHg2TjRteWJENEdq?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-14T00:33:37+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Fatih Terim’in 83 bin TL’lik restoran hesabını ödeme yöntemi şaşırttı! - TR724",
+      "title_fa": ""
     },
     "da1c66e2a32b2b7b": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -6531,7 +6548,7 @@
     "eeacc99a7c49d720": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-14T22:25:41.224100+00:00",
+      "first_seen": "2026-11-15T06:37:03.377350+00:00",
       "id": "eeacc99a7c49d720",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcy03SFVqWk1EQlNOSXB3YWdjQkN3cnFlNkhTdndmc3EwYThOeVk5UlM0MTZreloyQWxfZVJtVmlDRF8tR0tCcFZ3eUsxYXhTTEFuS2d2UzRJQlBfeDRweWN5Z3NsN3dnTThsMEctZWFmaXJlMEl4TGlzMllvV1pXeFlWQlpJSUxZOEtoVw?oc=5",
       "message_id": null,
@@ -6681,23 +6698,6 @@
       "title": "46. İstanbul Film Festivali'nin tarihi belli oldu - Yeni Bakış Gazetesi İzmir",
       "title_fa": "فستیوال فیلم استانبول"
     },
-    "f6e8c22b96d43108": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T16:40:52.342662+00:00",
-      "id": "f6e8c22b96d43108",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObzZVcmpNdEpCQU9HTDRQbHQyaXMzSlVLU1o5dGdxaVdiWE1UVTVnUENONXlnbUFlX1lZcU5PcDBiUmtkRHB4eFVxNE9lZEk0ZnhaWHh4aGdzZnBpYU9hQ0xEYmphNWFyemhhbi1WX0JtR2stTzV1dzNHTHlnR2JvV2xXOERzOURrd0FUZlcxbEJfLW5LRG03NmxLOS1VUm5jSnV5ZzRXS0tJc1RUeFZwSU5R?oc=5",
-      "message_id": 20,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-16T16:40:52.342662+00:00",
-      "published": "2026-10-04T07:00:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "رستوران سمر شیف در استانبول به کباب‌چیا تبدیل شد؛ مالک سمر سیوریولوغو نقش جدیدی در این تغییر پذیرفت.",
-      "title": "Somer Şef restoranını kebapçıya çevirdi: Somer Sivrioğlu kimdir, kaç yaşında, nereli? - 24 Saat Gazetesi Ankara",
-      "title_fa": "سمر شیف: رستوران به کباب‌چیا تبدیل شد"
-    },
     "f92fddac2c39d5bd": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-17T10:46:30.186502+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-17T15:36:59.605473+00:00",
       "feeds": 6,
@@ -7161,6 +7155,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 0
+    },
+    {
+      "at": "2026-11-15T06:37:03.377350+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 2
     }
   ]
 }
