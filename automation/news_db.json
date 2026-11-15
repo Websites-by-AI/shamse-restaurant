@@ -1771,7 +1771,7 @@
     "40f8fb44b066809c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
       "id": "40f8fb44b066809c",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9lX1lsQ0doRjRWLThUYnNPYkUxQXJrZ2FsdDlna3hseHdwaGE3b05JWXM2S1BSUHNRQnNKTlVZZk15bWFFaERoQV9nbWY0aXlwSFUzc1U2ZFY0Smd2NVIxUFAwSjBfeVdybmtvZ19YN1hCU0taSUk4?oc=5",
       "message_id": null,
@@ -2295,6 +2295,23 @@
       "title": "Kebapçı İskender Opens First Restaurant Outside Türkiye in Knightsbridge - Accessible Hospitality Alliance",
       "title_fa": "رستوران کباپچی اسکندر"
     },
+    "4f52836ab00d0834": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "id": "4f52836ab00d0834",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSHJSMmJSR0lybzl0MHAxcV9neWwyODNOakhQWEI4R1VNdmtqVDBkYW8wZkJncUtkVEE0SE1FX0M3TnpuV25LVzlYeVlQXzlreVM1eVdaUDF0WHBIem9WenlZcmtzdXpUM3E4X3RCVmk2d1dFcFQtd3ZwcElHc3dmVENvYVhrM3ZsNjdzY2dmMEtoaGRlMEllRS1NaExoMk1vR2hZelFqN3F2a0pCcGZuRGtfeENaSTAybS11WTVn?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-15T13:34:42+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Beşiktaş'ın efsane kaptanı İbrahim Üzülmez restoran açtı: İşte lahmacun ve tatlı fiyatları | Futbol Haberleri - GZT",
+      "title_fa": ""
+    },
     "50466234307b4462": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "pollinations",
@@ -2396,6 +2413,23 @@
       "summary_fa": "",
       "title": "RESTORAN SEKTÖRÜNDE KRİZİN YENİ DÖNEMİ: AYAKTA KALMAK İÇİN MENÜLERDE %25’E VARAN İNDİRİM! - Haberler",
       "title_fa": ""
+    },
+    "53046c15687fc27b": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": "pollinations",
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "id": "53046c15687fc27b",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxONTRzTndZaXFxYmFzNEJNYzRqRGpJVm9hNmNpMTF2X1A1NVViZGpFX3I4WDFsWmtHa0lGVXZib2FjWU9iSXUzYWNqU1JPbXBKT0RuQ3ZSVlZhRmZhQ2V1R3NwLS1NOXlrQVJKR1h6aUE3TFJVNUN6dDJEZDQ1TThiS3NWV0ZkbVhwQlE?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-15T09:16:31+00:00",
+      "score": 0,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "مجرم در جیپ ۳ روز حضور داشت و غذا به وسیله سفارش درون وسیله‌ای دریافت کرد؛ این خبر ارتباطی با رستوران یا گاسترونومی ندارد.",
+      "title": "In Kağıthane, he did not get out of the jeep for 3 days and ordered his food to the vehicle! The suspect preparing for an armed attack was arrested. - Haberler.com",
+      "title_fa": "کشف مجرم در جیپ؛ سفارش غذا در حین آمادگی برای حمله"
     },
     "53666599f8cda2dc": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -2992,23 +3026,6 @@
       "title": "İstanbul’da Boğaziçi Film Festivali jürisi programı değerlendirdi - https://www.ensondakika.com.tr/",
       "title_fa": ""
     },
-    "6a1481d946e98b05": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T16:40:52.342662+00:00",
-      "id": "6a1481d946e98b05",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaTlCbzRZbllQWXpYVktydGJTbjdENU5TdGlxMTREMUo5dGIwSTdhSzZ6a2hMQVotZ3p0VVR5X0RacGNIUFE2UDh5aWVNMkE0Mkg2SVZWd3MwWDB0aFZsT3FadjJvbkphN1VGU3ZPdElJY3JKQ05XZG9lcHhBcExUR3V1VjhqYXM1ZXNreWdibmZfTUJ2clU0NXJscHBkVjNMTTNhWlNYVFhRVlNM?oc=5",
-      "message_id": 101,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-11-07T21:52:17.692266+00:00",
-      "published": "2026-10-16T10:40:50+00:00",
-      "score": 7,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "کترینگ ASH در استانبول با ترکیب طعم‌های باستانی و دعوت‌های مدرن، تجربه‌ای جدید در گاسترونومی ارائه می‌دهد.",
-      "title": "ASH İstanbul Catering: Geçmişten gelen lezzet, bugünün davetleri - gastronomiturkey.com",
-      "title_fa": "کترینگ ASH: طعم‌های گذشته، دعوت‌های زمان حال"
-    },
     "6bcdd4a38a206ecc": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -3352,7 +3369,7 @@
     "78986189094a840a": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
       "id": "78986189094a840a",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3VWMFZSczU2QzdWLU9iUmt0NlJUcUYxNnZWamdaXy1XUVF6eWYxaG9pa29tTFc1TzdFMlkyT0JIZUc3QXRFSkVOcEtnZEVYaE11UnNmM01hczBCUDVyNks5dU1YWWNmM2dPQlNXb21TX01jSG12X2Q5aU5EZ05GR1M3Snc5ZWpRNG5abWJlTWRISkFXQUQxYnpGaDBoTXFQZTl3QW5hQ3FZdGFrb2hNbU1sR3NWWEh0VlZzZHVnNA?oc=5",
       "message_id": null,
@@ -3518,23 +3535,6 @@
       "summary_fa": "رستوران Istanbul Grill California در استانبول راهنمایی جامع در مورد بیک‌لاوا ترکی منتشر کرده است.",
       "title": "Istanbul Grill California Publishes a Guide to Turkish Baklava - azcentral.com and The Arizona Republic",
       "title_fa": "رستوران 'Istanbul Grill California' راهنمای بیک‌لاوا ترکی را منتشر کرد"
-    },
-    "7d5df9a720ef6aae": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T16:40:52.342662+00:00",
-      "id": "7d5df9a720ef6aae",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxORlBxNTkyOEhWdmhxdFdaWTRReHNjVDFySE1UX0V1RXJzSk8yMnlNak05dTV4aTc0U3VJMlJvU1pPMmdOWlZ6Y1hOZFZiamltdG9vb1hDRzZUMTRQSkJzMXM0UndEUnhEN0ZkaXA3bElXcml5TlNoZHNBNmdlcm1ldURzZDctQ2JPWnZUZVRaOEVVd251RGZFNUt1bzVmdw?oc=5",
-      "message_id": 20,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-16T16:40:52.342662+00:00",
-      "published": "2026-10-16T12:39:07+00:00",
-      "score": 9,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "رستوران KÜN در استانبول به عنوان یکی از 100 بهترین رستوران لوکس جهان شناخته شد.",
-      "title": "KÜN Restaurant, dünyanın en iyi 100 lüks restoranı arasında! - Ayancık Gazetesi",
-      "title_fa": "رستوران KÜN در جایگاه 100 برتر جهانی"
     },
     "7d998524c7478cfe": {
       "cat": "رستوران و کافه در استانبول",
@@ -4100,7 +4100,7 @@
     "8d647914b6cb5371": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
       "id": "8d647914b6cb5371",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SdIBV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SQ?oc=5",
       "message_id": null,
@@ -4538,6 +4538,23 @@
       "summary_fa": "رستوران زولا در لندن شعبه دوم خود را باز می‌کند",
       "title": "Zula Burger to Open Second London Site in Spitalfields - Hospitality & Catering News",
       "title_fa": "رستوران زولا"
+    },
+    "9fb7b2861f3315c9": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "id": "9fb7b2861f3315c9",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOEZVRG5ZX1BaVFRHU1Z4bnI4ZVlKamt1dUEyR1JLMG9jcTVNSjR3NXRaYmJ3c1J1WFJ1Uzl5ZGFJY2ZYVXRoTVF3d3VSTXRXb2NlblFIN1NHRXF5ZU9Mejc4QmRERUNzbUxTQjFkSnRMRmwxTUwyQzF3NV9JbU5jQmc3QjkzRzU0UzJIb190ZDhCcGNMUmhWMkZOaFB6cEtZMDBzRjFzQnZGSVFCdXlz?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-15T07:26:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "İstanbul'daki Gastronomi Fuarında Yabancı Şefler 'Osmaniye Pilavı' İçin Yarıştı - Hasret Gazetesi",
+      "title_fa": ""
     },
     "9fe8b4ede41388ef": {
       "cat": "رستوران و کافه در استانبول",
@@ -5202,6 +5219,23 @@
       "title": "Jun Hyun-moo faces backlash for recommending restaurant he never visited - 미디어파인",
       "title_fa": "واکنش به معرفی رستوران"
     },
+    "b9361b2b750931c4": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "id": "b9361b2b750931c4",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTzBRMUhJa19vU2pZNlQ4ZmhXOVpBZzgzMzlJa19KNjg3emFZZ0FIYWdDRGdNbDRJc1hmcFFQWjA1OHgwVHhxRkdoT0NVeVpkVkVTWnhqNXRzXzRLRmFHcUJiWVRMaC1weXpTZUNIWkxfQ3FEMDlrenowaXNEdTV1c3d3em9LekI1RnV5elZac2x3TVBZOE9wcUoyZjBWRGpBQi03MzI4YkZpMlVWN2pyVUl30gG0AUFVX3lxTE05TEY3ZF9OSUVsNnI3TGtsSEJhRkRObUkwUmJjNHlTVGpkdkNYeXdLTmhpZlhrdHNOV1lpQ1JKTW43TXJBVmNjREpnMDJMeDBNcWRVUG8zWTJ6LW91dVJLSFBDX05RcFZBdGNJbVUwTXpYcF9yNnkxZzNXaHFrcVVrVzZCOVF3cmRJbTVIdk80Qk5GZ0x6YkRQMnRfQ3kta1VRdW85MnBYcXN5eEZMa3dtdVZOdQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-15T09:53:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İstanbul'da restorana silahlı saldırı! Arkadaşlarının yanında vuruldu - AKŞAM",
+      "title_fa": ""
+    },
     "ba215474f92e7aa9": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
@@ -5235,23 +5269,6 @@
       "summary_fa": "یک زنجیره فست فود معروف ۳۹ رستوران را بست و ۹۷ رستوران را فروخت.",
       "title": "Dünyaca ünlü fast food zincirinde iflas krizi: 39 restoran kapandı, 97'si satıldı - Gazete Pencere",
       "title_fa": "بستن ۳۹ رستوران"
-    },
-    "bf1d0d3381dc0f08": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T16:40:52.342662+00:00",
-      "id": "bf1d0d3381dc0f08",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVW54cnY0ZFJZMW02cnhwOU90TDFfb1djeEhRNWFua09RV2pHbklsU25JQzd4YmE3OUhFTkQweE00VzdWN0ktV19aMkZNTlR3MFRERG42WU1CeWRRUjFsOXZwd2h0d0w2U05WcXJHUWpSZ0NMMG9UeFh4T2ZlMzU4S2NvUmRiczBlZGh0TU8tOXQ2ajNqdkp6d2w1TUl5dDFFaXVaNEhnNlNDekNfeExnWjduZ0ZkMHBnM1kxSGlvcjdNeldnek1oUmZJX0VHQlhXYzI0?oc=5",
-      "message_id": 23,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-17T10:46:30.186502+00:00",
-      "published": "2026-10-04T14:56:29+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "فستیوال مسیر فرهنگ در استانبول بیش از ۲۰۰ ایستگاه غذایی از حلالی‌سازان تا ماهی‌فروشان را در بر می‌گیرد.",
-      "title": "İstanbul'un lezzet haritası çıkarıldı: Kültür Yolu Festivali'nde muhallebiciden balıkçıya 200’den fazla durak - Notbir",
-      "title_fa": "نقشه طعم استانبول در فستیوال مسیر فرهنگ"
     },
     "bf3e275396f5f3d7": {
       "cat": "رستوران و کافه در استانبول",
@@ -5338,22 +5355,22 @@
       "title": "İstanbul Taksim'de Malatya Gastronomi Gecesi'nde Başkan Sami Er konuştu. - Mersin Haber",
       "title_fa": "شب گاسترونومی ملطیه در تکسیم"
     },
-    "c1de7c5e5412b5a7": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": null,
-      "first_seen": "2026-10-16T16:40:52.342662+00:00",
-      "id": "c1de7c5e5412b5a7",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcDU5QUx2cnBNMVlUS3ZGYWJrZHZpdDYwc3ZUOS15dGFETFlYa1VZSmhGV3B1T2loTXp5NXNTTHhxRUIycGo1X3pqWWpzaWxLZTZxN0p6dVVOWVdpREJjT2V5ZnBDeWFqQVVVdWxpWnpSNFNVNHhTYy1WdkdJWG0wWF9sa3cwOVBhQV9VTVBUVDJKRVZoUF9ETWlDVWU5WHY2bG40M2tZQWpDclR3ekx2cDk2N0IyTWs?oc=5",
+    "c21d428d631e9019": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "pollinations",
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "id": "c21d428d631e9019",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY2dYVnI1NEliZG1yVXc4S2lnbXVZLUxlZkJDcFhHZjFyVExBVUJlSXVUcGswNmRUTEIxaE9icFlnUDVzMl94UnJjS1VyN2lweFNrbkV5dkp6QVBxTzhubDQwcU16eWlSa1ZtNi03aWo4WXNlNzd5SDR2bjIxRllFY2NvXzVpTDJsTkJ0NXdpbWhJQXJkUllSNw?oc=5",
       "message_id": null,
-      "post": null,
+      "post": true,
       "posted": false,
       "posted_at": null,
-      "published": "2026-10-15T13:32:14+00:00",
-      "score": null,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "R&B sanatçısı Kelis MIX Festival kapsamında İstanbul’da müzikseverlerle buluşacak - Canlı Gaste",
-      "title_fa": ""
+      "published": "2026-11-15T13:17:07+00:00",
+      "score": 6,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "خبر دربارهٔ رستوران ایبریهام اوزل میز در استانبول و قیمت‌های فعلی منوی او است که برای علاقه‌مندان به اخبار صنعت رستوران‌های استانبول جالب است.",
+      "title": "İbrahim Üzülmez’in restoranı ve menü fiyatları - Hey Haber",
+      "title_fa": "رستوران ایبریهام اوزل میز و قیمت‌های منوی او"
     },
     "c2eb12fa4c6e0964": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -5593,23 +5610,6 @@
       "title": "\"Sehven oldu\" dedi ama mahkeme yemedi! IBAN oyununa kalkan restoran müdürüne emsal tokat | Toplum Haberleri - GZT",
       "title_fa": ""
     },
-    "cce145d47770d313": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T16:40:52.342662+00:00",
-      "id": "cce145d47770d313",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQb2Zud19IRHJSVXNtWXlnck9xOURMam9CYkZCeWZVNXowZXhFZnNFX1ZHOXJiNWxuSTQzVUZnUHFqTzdMUTBSS3R5SUZ3UHdpMzZjLU4tTTV5OV9oMjVES0FLR2RBVC1uU3VzYUR3bjdWZG4xR1plYm9PbEhTQ0RtWWk3YmM1WlY3eXBxRlRNdmE4VTg1ZjQtckNQb095anZaMUdmQjIyU1dQV3F5SEpv0gGsAUFVX3lxTE40RUNBVjJHWmtyUDA2TW5aMmJ0WUNwWDk4SEdWaFZYNlVYN1hBQlRHS0VrTVQtblRHNEtvTmZLenJoQ0xxVlY1VHF2WHNwdTRJTGlMSndPLXVtN0F5aGhZQmVDWDJlU2ZzT3RmckVKLVNBbENhZFVaMUc3RzNMMVhQcDJQTlN0OEFVS2s1TE1rNnd2cXdqWTdfNTBzQWViT0xsRTczd21qVmw2TzI?oc=5",
-      "message_id": null,
-      "post": true,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-16T13:26:00+00:00",
-      "score": 6,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "رستوران KÜN، الهام‌گرفته از طعم‌های ترکی، به‌عنوان یکی از غذاهای بین‌المللی در رادار جهانی غذاشناسی معرفی شد.",
-      "title": "Türk mutfağından ilham alan KÜN dünya gastronomisinin radarına girdi - Turizm Ajansı",
-      "title_fa": "KÜN در رادار جهانی غذاشناسی"
-    },
     "cd785b558e4b4c5f": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -5646,20 +5646,20 @@
     },
     "cebd59dcc5d08dec": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": null,
-      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
       "id": "cebd59dcc5d08dec",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUHJTSHhWaDdXeXBoeTFCQzdmVEo5M05NeURfOHZ4NlJjdm9GVlUxdUtya2tSN2daQkc4enpyQWtucTl5Vk5BM3RCZmx5Qm5xZ1ZENUFTUFB3b2lQRzhNNUxoRUFaSnJEbjRTTXdOdGVrMTc5ZEhPZGZKU2d6M3VEcFJIRFo?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
+      "message_id": 111,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-11-15T18:52:11.802265+00:00",
       "published": "2026-11-13T11:08:58+00:00",
-      "score": null,
+      "score": 9,
       "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
+      "summary_fa": "فستیوال جهانی غذا WorldFood در استانبول به تازگی آغاز شد، میزبان طراحان غذا، کارگاه‌های آشپزی و محافل بین‌المللی.",
       "title": "WorldFood İstanbul’da yeni dönem - gastronomiturkey.com",
-      "title_fa": ""
+      "title_fa": "WorldFood در استانبول برگشته"
     },
     "d1e3d687ee4f8e67": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -5848,23 +5848,6 @@
       "title": "Restoran alevlere teslim oldu: İçeridekiler son anda çıktı - Yeni Alanya",
       "title_fa": "آتش‌سوزی در رستورانی"
     },
-    "d695258e6896eb13": {
-      "cat": "خبرهای بین‌المللی غذا و رستوران",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T16:40:52.342662+00:00",
-      "id": "d695258e6896eb13",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9iMTdaWFBoYjVDcnVsUFB3WEJmYXI3dXU5aENwTXZGSWV2enFxcml0cUNzcEUwNU1WWjctRThQZjdqNkNFajhRYjRXNzg2bHU0N05NTTMyOTBDV281S2llUlVFd2VuWms?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-16T04:53:34+00:00",
-      "score": 0,
-      "source": "Google News — Istanbul food",
-      "summary_fa": "هکرها یخچال‌های سوپرمارکت فرانسوی را گرم کرده، باعث حریق و فساد مواد غذایی شد.",
-      "title": "Hackers heat French supermarket fridges, sparking fires and spoiling food - Reuters",
-      "title_fa": "حمله هکری به یخچال‌های سوپرمارکت فرانسوی"
-    },
     "d73e562ce952a7f2": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "cloudflare",
@@ -5969,20 +5952,20 @@
     },
     "d9e8496ca650e385": {
       "cat": "رستوران و کافه در استانبول",
-      "engine": null,
-      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "engine": "pollinations",
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
       "id": "d9e8496ca650e385",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNamlpT0xGQzRjak5obEFwSEw2aWEzRnJjSWlEN3ZtaVBOcUxxUXA2MDZrd0N2OGU0UDNCWW1USjk4NkEwWE5LM3RwcXNiM2xDQk9KcFMxM2NGWUUxbXJXeW42ZVE0XzQ4ODNfcGtISnhOaEEySHg4eG5jOURxUGxWNlZ4TngzOGVxRHg2TjRteWJENEdq?oc=5",
       "message_id": null,
-      "post": null,
+      "post": false,
       "posted": false,
       "posted_at": null,
       "published": "2026-11-14T00:33:37+00:00",
-      "score": null,
+      "score": 0,
       "source": "Google News — İstanbul restoran",
-      "summary_fa": "",
+      "summary_fa": "فاطیه تریم برای پرداخت 83 هزار تومر در رستوران، روشی غیرمعمول را انتخاب کرده بود.",
       "title": "Fatih Terim’in 83 bin TL’lik restoran hesabını ödeme yöntemi şaşırttı! - TR724",
-      "title_fa": ""
+      "title_fa": "پرداخت عجیب حساب رستوران توسط فاطیه تریم"
     },
     "da1c66e2a32b2b7b": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -6528,6 +6511,23 @@
       "title": "Kilis’te festival alanı farklı kentlerden gelen ziyaretçileri ağırlıyor - Kenthaber27",
       "title_fa": "جشنواره در کیلیس"
     },
+    "edf824e3128ec5b3": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "id": "edf824e3128ec5b3",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZThDM1J3LW5oLXd2ejJzblVSMTQ5SzB1MGRTX2oxY0wxaDJUbWJjS1F2NVdUejRVdFRhVm9rLUtVcW9ZNzFMam1wdjdvNFlpZTc3cnAzVWVGbm1XSGpINkhGTnRiRWwtOTlxZlFEZGFRSXl1THZRdUdUNHB6cXZibXFZRGFMdWRLZGtWN0kzSDhZLUtPRUpPeGhDWkFvanMzRmNqeE1FcUo5LW11eTJMSktLRk1JQ1FVTTgtMlJiTnc?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-15T08:54:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Çocuklar için sanat İstanbul'un iki yakasına yayılıyor: Atta Festival 10. kez başlıyor - T24",
+      "title_fa": ""
+    },
     "ee08e9782a64a301": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-17T15:36:59.605473+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-17T20:45:01.972726+00:00",
       "feeds": 6,
@@ -7161,6 +7155,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 2
+    },
+    {
+      "at": "2026-11-15T18:52:11.802265+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 1
     }
   ]
 }
