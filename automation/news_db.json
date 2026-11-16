@@ -204,6 +204,23 @@
       "title": "İstanbul’da Gastronomi Buluşması: 340 Yarışmacı, 28 Kategoride Yarışacak - Turizm Günlüğü",
       "title_fa": "جشنواره گاسترونومی استانبول"
     },
+    "057bef94ef8652fc": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "pollinations",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
+      "id": "057bef94ef8652fc",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlpQYVcyeXZWbnBrSG1xMUdDQ01lLUtNdGZQdUs4MXBBc1BvNjh6Wnk4YW8zRGFuUjk3NXlnNFd5ZW9zbjJTeTlvVEZWSjJwdkxobDBrN1lqem9mV3dlV2RNYVpSU2RvLUk4R0o0V21LX0d3VTN4MUFTVXJHdnBGQklfTTVPM1FuZTI2RWt6OUVpSnpyYjZJRUJWZ1JCRW5qQ2gtbA?oc=5",
+      "message_id": 112,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-11-16T06:31:49.022517+00:00",
+      "published": "2026-11-15T19:57:53+00:00",
+      "score": 7,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "کارلو پیترینی، بنیان‌گذار جنبش Slow Food، در استانبول مراسمی برگزار می‌کند تا به یاد ایشان افتخار شود و حضور مهمانان ویژه‌ای را انتظار دارد.",
+      "title": "Slow Food’un Kurucusu Carlo Petrini, İstanbul’da anılacak - gastronomiturkey.com",
+      "title_fa": "کارلو پیترینی، بنیان‌گذار Slow Food، در استانبول یاد می‌شود"
+    },
     "05a540d2b18c243f": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -458,6 +475,23 @@
       "summary_fa": "این رستوران در Coventry، انگلستان، بخشی از تاریخ شهر را با حفظ دستورات قدیمی و نسل به نسل منتقل می‌کند.",
       "title": "The Coventry restaurant that's part of city's history with recipes passed down through generations - Coventry Telegraph",
       "title_fa": "رستوران Coventry که بخشی از تاریخ شهر است و دستورهای نسل به نسل منتقل می‌شود"
+    },
+    "0b652ace5a44ccaf": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
+      "id": "0b652ace5a44ccaf",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNG1QTmtjTUd3U0N1a0tXNnZ5R2pEdFZ6TkFmM3ROM3Vid3owSlFfclhFNnRKMFNWODJrQW05U1lKUWRSb2RLcEJVcWdnV29ZYVBkTnVDaXNtWnhGVFRDZEJfRmt4bTBYZTVTWEZyWWZmRTJWbnpJUUNMMGVXb08xYUQzLUZucl9HdzRZYkhaZ2lKVkExWGVj?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-12T11:38:18+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Ölü Arının İğnesi Filminin Festival Yolculuğu Sürüyor - Dosya Haber",
+      "title_fa": ""
     },
     "0c25b4bb2809972d": {
       "cat": "رستوران و کافه در استانبول",
@@ -1771,7 +1805,7 @@
     "40f8fb44b066809c": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "40f8fb44b066809c",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9lX1lsQ0doRjRWLThUYnNPYkUxQXJrZ2FsdDlna3hseHdwaGE3b05JWXM2S1BSUHNRQnNKTlVZZk15bWFFaERoQV9nbWY0aXlwSFUzc1U2ZFY0Smd2NVIxUFAwSjBfeVdybmtvZ19YN1hCU0taSUk4?oc=5",
       "message_id": null,
@@ -2298,7 +2332,7 @@
     "4f52836ab00d0834": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "4f52836ab00d0834",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSHJSMmJSR0lybzl0MHAxcV9neWwyODNOakhQWEI4R1VNdmtqVDBkYW8wZkJncUtkVEE0SE1FX0M3TnpuV25LVzlYeVlQXzlreVM1eVdaUDF0WHBIem9WenlZcmtzdXpUM3E4X3RCVmk2d1dFcFQtd3ZwcElHc3dmVENvYVhrM3ZsNjdzY2dmMEtoaGRlMEllRS1NaExoMk1vR2hZelFqN3F2a0pCcGZuRGtfeENaSTAybS11WTVn?oc=5",
       "message_id": null,
@@ -3179,23 +3213,6 @@
       "title": "İsveç’ten gelip Çorum’un köyünde açtılar: Şakayla karışık başladı, çok büyüdü - Milliyet",
       "title_fa": "رستورانی در Köy"
     },
-    "71ca77c0df13476e": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": null,
-      "first_seen": "2026-10-16T21:10:44.731044+00:00",
-      "id": "71ca77c0df13476e",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaS1wdk92bTRQb3Z5OFNZU04yREk2QUJkc2QzMXpGTTZZUG1feGhuQnplUFBZRXUtb0h0MDhsVVFNU3ptMDh3OTFjWFZsZFJ3Y3BjZmd6VnBmRFlaalktdzJlVFdJRHVFZ1A0aWR5UE5EaUZGamxBZ1lFeHlwZGlsNmR6c25aT1RvZEsxelZLQndmc3JGNkpSZ2Q3Z2R1NS15ellrLXBKN09uLV9WTmdNYWVBdlAyb3pMc0R6cXV0RmQ?oc=5",
-      "message_id": null,
-      "post": null,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-04T07:00:00+00:00",
-      "score": null,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "İstanbul’da çocuklu ailelere ücretsiz festival! 6 Ekim’e kadar devam edecek - TRHaber",
-      "title_fa": ""
-    },
     "723e4449261a48eb": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -3369,7 +3386,7 @@
     "78986189094a840a": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "78986189094a840a",
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3VWMFZSczU2QzdWLU9iUmt0NlJUcUYxNnZWamdaXy1XUVF6eWYxaG9pa29tTFc1TzdFMlkyT0JIZUc3QXRFSkVOcEtnZEVYaE11UnNmM01hczBCUDVyNks5dU1YWWNmM2dPQlNXb21TX01jSG12X2Q5aU5EZ05GR1M3Snc5ZWpRNG5abWJlTWRISkFXQUQxYnpGaDBoTXFQZTl3QW5hQ3FZdGFrb2hNbU1sR3NWWEh0VlZzZHVnNA?oc=5",
       "message_id": null,
@@ -3964,7 +3981,7 @@
     "89adf428ff9bf5ec": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "89adf428ff9bf5ec",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSVhWZGY3Rmo0ME8yNWRBNWlfRmZlSmp2bmhzMTVPSktRc01qQkFwUzlfUVBJbzdLakQ3eTZ2MFBYSmZ4dm5FS0V1SVc1WFVsd1dMRGFQWnp1Xzh1OFpGQlM3VnNmY0FCdHhnRjRvRDVXMjJ1RHZGMjRqeDl2R2I4azhmSThJdw?oc=5",
       "message_id": null,
@@ -4100,7 +4117,7 @@
     "8d647914b6cb5371": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "8d647914b6cb5371",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SdIBV0FVX3lxTE1DbHphWnR1V2hxV2JmbmMwdzZEOGt1eC0wSmM4bTdGM3gtRUk3VGN5ckVOOTlwQU5PMEpUN2owdDI5VGpBc0M2TDNpSjZkakRfX0FqYTV5SQ?oc=5",
       "message_id": null,
@@ -4471,23 +4488,6 @@
       "title": "Nina Garcia’s Insider Guide to Istanbul: Where to Eat, Shop, and Stay - ELLE",
       "title_fa": ""
     },
-    "9cc5edd28c0eed49": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "pollinations",
-      "first_seen": "2026-10-16T21:10:44.731044+00:00",
-      "id": "9cc5edd28c0eed49",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRU5DamFrN0JBekFEYThhbDk3Q20yTVRROHdJemtNMHRMUTBNb1NYOGxIbWdOOWdyaEVTbm5icW1CYlRNa3RjZ3E0cW1SODVwMmd6THpPbzdObU1CejNQTGc0cnRpT2xnYWRvT1ZneTBsaUllbVVxXzBGQmhYM1pYYUJRMTk4SUFPYzJhaWlMbUlQUFdfbnNxTndOR0FlQdIBmgFBVV95cUxQOVJfSDVsUmVPN1A4a2tERFZJVXZReHpXel8zcHlLUVlYclhfb0ZuSkRad2hiajNtR2g5d3pqRFZmbFNOZFBmVXlsbTVoUnhSdFliRFJOV1QtRDhJbkx3SVBRRTdlbTgtM1RpaU0xWkdNRDd5dWVXRFVnUWVybDE3NDFSTk5ONkpLeU83ckM2aFNjZVBaRUZ6Mmln?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-16T19:23:30+00:00",
-      "score": 0,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "خبر دربارهٔ فستیوال فیلم دیجیتال است و به غذا یا گاسترونومی مرتبط نیست",
-      "title": "4. Uluslararası Digital Film Festival İstanbul, 27 ülkeden başvuruyla AKM'de açıldı - Haberler",
-      "title_fa": "فیلم‌فستیوال دیجیتال در استانبول"
-    },
     "9d5b5e9b26a5013d": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
@@ -4542,7 +4542,7 @@
     "9fb7b2861f3315c9": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "9fb7b2861f3315c9",
       "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOEZVRG5ZX1BaVFRHU1Z4bnI4ZVlKamt1dUEyR1JLMG9jcTVNSjR3NXRaYmJ3c1J1WFJ1Uzl5ZGFJY2ZYVXRoTVF3d3VSTXRXb2NlblFIN1NHRXF5ZU9Mejc4QmRERUNzbUxTQjFkSnRMRmwxTUwyQzF3NV9JbU5jQmc3QjkzRzU0UzJIb190ZDhCcGNMUmhWMkZOaFB6cEtZMDBzRjFzQnZGSVFCdXlz?oc=5",
       "message_id": null,
@@ -5222,7 +5222,7 @@
     "b9361b2b750931c4": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "b9361b2b750931c4",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTzBRMUhJa19vU2pZNlQ4ZmhXOVpBZzgzMzlJa19KNjg3emFZZ0FIYWdDRGdNbDRJc1hmcFFQWjA1OHgwVHhxRkdoT0NVeVpkVkVTWnhqNXRzXzRLRmFHcUJiWVRMaC1weXpTZUNIWkxfQ3FEMDlrenowaXNEdTV1c3d3em9LekI1RnV5elZac2x3TVBZOE9wcUoyZjBWRGpBQi03MzI4YkZpMlVWN2pyVUl30gG0AUFVX3lxTE05TEY3ZF9OSUVsNnI3TGtsSEJhRkRObUkwUmJjNHlTVGpkdkNYeXdLTmhpZlhrdHNOV1lpQ1JKTW43TXJBVmNjREpnMDJMeDBNcWRVUG8zWTJ6LW91dVJLSFBDX05RcFZBdGNJbVUwTXpYcF9yNnkxZzNXaHFrcVVrVzZCOVF3cmRJbTVIdk80Qk5GZ0x6YkRQMnRfQ3kta1VRdW85MnBYcXN5eEZMa3dtdVZOdQ?oc=5",
       "message_id": null,
@@ -6514,7 +6514,7 @@
     "edf824e3128ec5b3": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-15T18:52:11.802265+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "edf824e3128ec5b3",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZThDM1J3LW5oLXd2ejJzblVSMTQ5SzB1MGRTX2oxY0wxaDJUbWJjS1F2NVdUejRVdFRhVm9rLUtVcW9ZNzFMam1wdjdvNFlpZTc3cnAzVWVGbm1XSGpINkhGTnRiRWwtOTlxZlFEZGFRSXl1THZRdUdUNHB6cXZibXFZRGFMdWRLZGtWN0kzSDhZLUtPRUpPeGhDWkFvanMzRmNqeE1FcUo5LW11eTJMSktLRk1JQ1FVTTgtMlJiTnc?oc=5",
       "message_id": null,
@@ -6548,7 +6548,7 @@
     "eeacc99a7c49d720": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-15T06:37:03.377350+00:00",
+      "first_seen": "2026-11-16T06:31:49.022517+00:00",
       "id": "eeacc99a7c49d720",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcy03SFVqWk1EQlNOSXB3YWdjQkN3cnFlNkhTdndmc3EwYThOeVk5UlM0MTZreloyQWxfZVJtVmlDRF8tR0tCcFZ3eUsxYXhTTEFuS2d2UzRJQlBfeDRweWN5Z3NsN3dnTThsMEctZWFmaXJlMEl4TGlzMllvV1pXeFlWQlpJSUxZOEtoVw?oc=5",
       "message_id": null,
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-17T20:45:01.972726+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-18T04:36:05.248214+00:00",
       "feeds": 6,
@@ -7158,6 +7152,12 @@
     },
     {
       "at": "2026-11-15T18:52:11.802265+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 1
+    },
+    {
+      "at": "2026-11-16T06:31:49.022517+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 1
