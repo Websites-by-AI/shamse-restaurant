@@ -173,7 +173,7 @@
     "046dc32d562db89c": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": null,
-      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
       "id": "046dc32d562db89c",
       "link": "https://yabangee.com/istanbul-wonder-village-atakoy-marina-arena/",
       "message_id": null,
@@ -305,6 +305,23 @@
       "summary_fa": "",
       "title": "2026 yılı için dünyanın en iyi restoranı belli oldu - Time Out Worldwide",
       "title_fa": ""
+    },
+    "07f03646efea8010": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "pollinations",
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
+      "id": "07f03646efea8010",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYjVYWTJtNk9NanpFWk9HN19ERkNRUjMzQlNRYWRLRWY1a1o3U1ZTVFdZbmwwM1F5Ukh2M2I5RkZTaUdoWDhueVVFSzlOQmZFSHlYcVM3R1RKZ25DRDFfYzB5czBmdnFhNlZmWnZfLWhfT1dFUzNiQktqeWs4QUk2VV9Mdw?oc=5",
+      "message_id": 122,
+      "post": true,
+      "posted": true,
+      "posted_at": "2026-11-26T21:33:36.711583+00:00",
+      "published": "2026-11-26T13:03:23+00:00",
+      "score": 8,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "مجموعه‌ای از چهره‌های برجستهٔ صنعت غذا در استانبول ملاقات کردند و به بحث‌های نوآورانه و شبکه‌سازی در حوزهٔ گاسترونومی پرداختند.",
+      "title": "Gastronomi Dünyasının Önemli İsimleri İstanbul’da Buluştu - Tek Haber Ajansı",
+      "title_fa": "مهم‌ترین نام‌های دنیای گاسترونومی در استانبول گرد هم آمد"
     },
     "086bfc45a468f109": {
       "cat": "رستوران و کافه در استانبول",
@@ -662,23 +679,6 @@
       "summary_fa": "",
       "title": "İstanbul'da boşanma aşamasındaki eşine ürün satmaya çalışan kasabı öldürdü - Ensonhaber",
       "title_fa": ""
-    },
-    "16c7eada0b98fdb3": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "16c7eada0b98fdb3",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNLTR2aTh1ZTBoZlBqcHpDdURBZ3NieFNYLTNIZnl3eWVCY3U3NUE0UGxjbENXd2xRd0x4X2JtMjIzUGdFTXlfTFN4TmdTT1lKNkQyczNYWEpmWWlzS0pfc2xRYmVnaXBqSTJoMjNOZ3pVWWNodS1iUUw5eWI5M1VhajFxd3Bpd1JPVzZsbGs3eHdETkRNYmFRb0VqUXZZM3MyMXhnN01tTQ?oc=5",
-      "message_id": 88,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-11-03T00:59:01.360532+00:00",
-      "published": "2026-10-26T15:50:33+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "رستوران‌های زنجیره‌ای بورس، از تصمیم ۶۱۵% خود عقب‌نشینی کردند.",
-      "title": "Borsadaki restoran zincirinden yüzde 615 bedelsiz kararında geri adım - CNBC-e",
-      "title_fa": "geri adım در تصمیم ۶۱۵%"
     },
     "16e05f47ef43d20b": {
       "cat": "رستوران و کافه در استانبول",
@@ -1275,6 +1275,23 @@
       "title": "Bilal Erdoğan'ın ortağı olduğu tavuk zinciri büyüyor: Küçükyalı'da yeni şube, sırada Ankara var - Gıda Bülteni",
       "title_fa": ""
     },
+    "27c985d2b4ade816": {
+      "cat": "رویدادها و فراخوان‌های شهر استانبول",
+      "engine": null,
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
+      "id": "27c985d2b4ade816",
+      "link": "https://yabangee.com/sofra-the-board-game/",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-26T08:26:59+00:00",
+      "score": null,
+      "source": "Yabangee Istanbul (رویدادها)",
+      "summary_fa": "",
+      "title": "In Conversation with Baylee Wilcox and Berrin Güç, Creators of Sofra the Game",
+      "title_fa": ""
+    },
     "27fc7b63d7e1bff6": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
@@ -1664,6 +1681,23 @@
       "source": "Google News — Istanbul food",
       "summary_fa": "",
       "title": "My Europe Trip 2026 in Points, Miles, and Dollars - Sethisfy",
+      "title_fa": ""
+    },
+    "3b0ad814cff590c9": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
+      "id": "3b0ad814cff590c9",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGotT1otUkJVTi1uUU1sX3NELVZKSlo5LVBLMl81bUZkcFhTOGdPckFONVQ5T01peUM3UUN5Z0MtZ3ljS1ZCQUc4NTdCWE1tR2d6VW4zT3Vmb2xuTnBzQW5Rc29IeGNRMG5Bak1ZUFhtOG1YOExYdGFFSFgtU01lMEFYUmFVTXhxNk9mYjBIVVdkZ1NnWHFXS19VbUNmUDctaWoxMHhONXFxdHlxbFE?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-26T05:02:42+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Doğuş Grubu 23 restoranıyla İncili Gastronomi 2027'de ödül aldı - Haber Ege",
       "title_fa": ""
     },
     "3c0731d186ba2f6a": {
@@ -2516,23 +2550,6 @@
       "title": "Bath ethnic food retailer fined over £17K after selling alcohol to children - Food Manufacture",
       "title_fa": ""
     },
-    "5efab3c6b62973aa": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "5efab3c6b62973aa",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWGpjMzRTRTZ6TF92RTFsR0c2di14Y0dtTVBoX2w0U0VKenBRZWNEVlhfaDdiNzQ3T01EaEhwdmVSeFNhZ3FXNDR1Z0l2VndtVkw1VUJWSy1kUWljc3NTc1A5LUhpNGVUNk14eFQzamM0em5WZ0lqT3BzdW5aTDd3VktQMUMtUzNxNGl2a1JyOEJweEdBU2ZiV01kcXJDSC13MVdGa0l3UQ?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-26T07:28:12+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "56 فیلم به صورت رایگان نمایش داده می شود",
-      "title": "6. Korkut Ata Türk Dünyası Film Festivali İstanbul’da başlıyor: 56 film ücretsiz gösterilecek! - Takvim",
-      "title_fa": "فستیوال فیلم ترک"
-    },
     "5f5fcccd598e39bf": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "pollinations",
@@ -2583,23 +2600,6 @@
       "summary_fa": "",
       "title": "İstanbul Havalimanı 8 yılda 487 milyonu aşkın yolcuya hizmet verdi - DHA | Demirören Haber Ajansı",
       "title_fa": ""
-    },
-    "608250550b453126": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "608250550b453126",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYlNKYWFEbEtla29fSVcteUZWcWQ2OTJjQnRETGYweTREcEVrMlN2aHdQYUlHbW1aMmhOd0w4QkdadFhPcVBqMm1JQkFCN1l5UEctN3pWWkR5aWozUXA1TDQ5NTludmlXeWgwMklOOTBYWU05M21wa2RjMkRiUHJwU2RKR2cwVEhUOXBHSk4xVl92WEllQTBkeWF2T185eVBxekFZak4tc0YwUnlvTzd4bWxTd2s?oc=5",
-      "message_id": 86,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-11-02T15:56:19.689194+00:00",
-      "published": "2026-10-26T12:57:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "افتتاح ۷ مدرسهٔ خصوصی برای آموزش گاسترونومی در ۷ منطقه",
-      "title": "Gastronomi eğitiminde yeni dönem: 7 bölgede özel liseler kurulacak - TRHaber",
-      "title_fa": "جشنواره گاسترونومی"
     },
     "610f55e66da7f008": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -3043,23 +3043,6 @@
       "title": "Korkut Ata Türk Dünyası Film Festivali 3-7 Kasım 2026'da İstanbul'da Gerçekleşecek. - Mersin Haber",
       "title_fa": "فستیوال فیلم ترک"
     },
-    "70752a85520ef52e": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "70752a85520ef52e",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRUg3VGZuNmVjaTlkSDhHU3lSRW9GXzVqWEJDLUxtZnkyQVFxa3ZUTDZ3LVNKVWNzQWpyX0pUQUJ5RFowQ2ZOcGVlOGptcXVMUE5Sem1oWVZTMEdkTHg2TjdMaUFIWGRSSkltZENQVDBvWUR6TDF6UklzeUNFUU9mYnBVVEJSVjdUTEQybTJHazIzWDMzZ3BPNHZxWkFBcFNscXc?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-26T09:47:59+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "پروژهٔ گاسترونومی در ارزروم آغاز شد",
-      "title": "Gastronomi Liseleri Projesi’nin ilk adımı Erzurum’da atılıyor - https://www.ensondakika.com.tr/",
-      "title_fa": "پروژهٔ گاسترونومی"
-    },
     "70b82a9d6aecbea0": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
@@ -3301,7 +3284,7 @@
     "7bb780aebb2c8e56": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
-      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
       "id": "7bb780aebb2c8e56",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbHVWdDRxZXRSUlpFZWZTV3FLeU1STHBWQzVtZ1ltN2Q4ZURFeUkzSldzSVJtZHNqNFcxSnNCZWJKNkpaZ2swMmtEenV0ZjFBZFhUOEF4RE5EMnBvemlLWXR1MHg2ZTNjSUxQZnBiR1FicjdEekg0R1F1RUdiTUM2VWtINHVnOXFoOHc?oc=5",
       "message_id": null,
@@ -3654,23 +3637,6 @@
       "summary_fa": "در HOSTECH، تأمین‌کنندگان هتل و رستوران در استانبول به هم نشستند تا در مورد همکاری‌ها و بازارهای آینده بحث کنند.",
       "title": "HOSTECH’TE OTEL VE RESTORAN TEDARİKÇİLERİ İSTANBUL’DA BULUŞTU - Türkiye Turizm",
       "title_fa": "ملاقات تأمین‌کنندگان هتل و رستوران در استانبول"
-    },
-    "87fcbadb6a0c2e93": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "87fcbadb6a0c2e93",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMWZIU1Q2bHFPUVlVSGRaTk8zeE40WW93aVJVRnNGY2FPM2U5Sk9lWHhYVWVzSENjNlNsNmRQc2Y2Rml6TGg5RnJlLVVKeW56TFg1aXhScGRGNUN2ZUpodUNjVkNGX0Q3MDVUSkhXSVFKMTc1eFJXbFF0UmtBa2ZZSlBEVFJPTmNEZ1hoZlJnT05oN3M0MURQSlBBZjVVVzVm?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-26T07:49:44+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "برگزاری فستیوال فیلم ترک در استانبول",
-      "title": "Korkut Ata Türk Dünyası Film Festivali, İstanbul'da yapılacak - DHA | Demirören Haber Ajansı",
-      "title_fa": "فستیوال فیلم ترک"
     },
     "883f2482a6da1d14": {
       "cat": "رستوران و کافه در استانبول",
@@ -4028,6 +3994,23 @@
       "summary_fa": "در این هفته، جشنواره فیلم کورتا آتا در استانبول آغاز شد و ۵۶ فیلم در مدت زمان خاصی به صورت رایگان نمایش داده خواهد شد.",
       "title": "İstanbul'da 56 film ücretsiz izlenecek, Korkut Ata Film Festivali açıldı - Son Dakika",
       "title_fa": "جشنواره فیلم کورتا آتا: ۵۶ فیلم رایگان در استانبول"
+    },
+    "9203e5e63f818e12": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
+      "id": "9203e5e63f818e12",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWXZQVVFyb0M0WGo5cUQ0QjBxMU5yYl8teEx2X05aWVRKbDRQZG9ENlhibDVLTkUxNFNUSXNLdThYU2hZSW1nZDVaM2hQQW1DQ1N0b1RMNHY4VUlFenVBMndXWnlRQVRpSnpCSUlYYXpNZDFwVnd5MWtoM3RBZFluSVIybHhQdzczX3dnbVZ5X21vVC1OMDlsWl9zVXBFMHdKZEtSRnlLR0J3LXgybFlKXzdNczdGT0lXclVIT1dlONIBV0FVX3lxTE5od2tRaGliWUdDM2JneFJMWGUxanZJUmFxUS1FbEJfNHhWRXhyZ2JkaXJnSDd2NFpVbVMzYmhuS0s5UWZva3M3aFRMWGoyM05zRzlYMjlUUQ?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-26T12:38:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Sunar Un, İstanbul'daki Gastromasa Uluslararası Gastronomi Konferansı'na Katıldı - Mersin Haber",
+      "title_fa": ""
     },
     "92271bfb88aff4bc": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
@@ -5426,7 +5409,7 @@
     "c86d4b039011ebd7": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
       "id": "c86d4b039011ebd7",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYzhEU2xtZjUzalI5UHhxbmpJbl9hZ3lMWTVwa0ZSbDdneXpQemVGek4wYXU0Vlp1ODBXQ3dCT1pBSVlTNTUxakpJdnF2TUV6SnZPcXVPTzEzMmE2eTg3UG02YmI2NHM3WDdPbWowV0hBRDFiME9CT2FYYkNlSHpGRy1NR1F0eldJMGNoOVA4NFdXRjNLQ1VpajdEdWJMTDdWa3p3bmZzOGo?oc=5",
       "message_id": null,
@@ -5766,7 +5749,7 @@
     "d7a37a4d74883ec8": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
       "id": "d7a37a4d74883ec8",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM01aanMwbDVrYUNCTFpCdHFweVI3VWhCZk94bHQwS1VHYU1SMndWQVhBNFNwSUZzRDBfcVBuQnA4SFhCSnk3UUlWSTk2TWY2OEpNNnJCSnh2T1lBVGIydklEMHdha1p4dXJLVVllTFlwaGdQUUxKRW9fUDgyTjRVOWNn?oc=5",
       "message_id": null,
@@ -5778,6 +5761,23 @@
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "İstanbul’un yeni lezzet adresi - gastronomiturkey.com",
+      "title_fa": ""
+    },
+    "d7ad5ddc4d38f70f": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
+      "id": "d7ad5ddc4d38f70f",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOS2s0Mk5NSUg0TFdlRFp1MDRZYUZWNnp1VElHS0JNQnVrRmJxdE9fVWYxV3RZdExWc3FJWEVLbUNqSnFiNXRLQmFXOEdCeGdYQWFsY2R1b0hoUFdPZEpEX0NEWFFLRmFUWmU5Zll1Z1g1YU9ZZ0R5ZjZMcUVBel9wMUZRYXVoUWxvckQ1b0hmWGxOSHlMTWlnY2NlRlFGM3dHR3laMEgwUUViLUEtRkwtUi1faw?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-26T09:14:26+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "11. Gastromasa İstanbul Uluslararası Gastronomi Konferansı ve Fuarı başladı - manisahaberler.com.tr",
       "title_fa": ""
     },
     "d83035ffbd6e77e7": {
@@ -6497,7 +6497,7 @@
     "ef1d499319bea294": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
       "id": "ef1d499319bea294",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaVFOV2lvZ1dMWmlTbV9XSm54MU9fOEo3M0xoX3hBR1R3ZUJtQk5qaWZQTUdJdFVGZGtmVkRpODVDY2hrazd5T0xfcmFYSlVYTXR1QXhITEdyRFRHOG1MMlQyOUpxV1JRZk1tTGhBR29iZ240Yy1kSGR0b3BEcTBZNncxbW9BY2lTUDVGSVBnRi1YQW5FNDk1R0g3RnFhMTA?oc=5",
       "message_id": null,
@@ -6701,7 +6701,7 @@
     "f8990dd782c93e54": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
-      "first_seen": "2026-11-25T21:42:48.125391+00:00",
+      "first_seen": "2026-11-26T21:33:36.711583+00:00",
       "id": "f8990dd782c93e54",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU292cENFamlTb240M1J0SWxsVEFkcnRJTDFQZFNUVzRlSmVlWjJaczBVRENWV3lwaUtqcWwyOGttRV9DNWtHRFpMZXBnNUtRX1pwNXdnc05QWjRIVW9rWm1abXRWaVRmQnlzMG5ESHNJa3BIYXpyakxGbVVvd2J5WGJxcDJBSFZNRHMxYl94VEdRYU5qcldkeXMzUHJRNzZqZndlclJR?oc=5",
       "message_id": null,
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-30T22:22:07.422741+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-31T05:43:39.852351+00:00",
       "feeds": 6,
@@ -7161,6 +7155,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 0
+    },
+    {
+      "at": "2026-11-26T21:33:36.711583+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 1
     }
   ]
 }
