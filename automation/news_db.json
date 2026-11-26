@@ -173,7 +173,7 @@
     "046dc32d562db89c": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": null,
-      "first_seen": "2026-11-25T21:42:48.125391+00:00",
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
       "id": "046dc32d562db89c",
       "link": "https://yabangee.com/istanbul-wonder-village-atakoy-marina-arena/",
       "message_id": null,
@@ -832,6 +832,23 @@
       "summary_fa": "",
       "title": "Yeni Yıl Kasabası 2026 @ KuçukÇiftlik Park",
       "title_fa": ""
+    },
+    "1b73752302d9e765": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": "pollinations",
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "id": "1b73752302d9e765",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQXRuMENUei00Z2hpQzRFUlhGanJFRF9FTlJUUnFJSkp0Tk11eDhFMzNuazd5ZEtlWWdZd2VYeUc0QndoVENCd2pmdlRfSzVJM0RUYl8wcmxNMnpHdEh2MWZXWjdXYUNvMzFhSWhwd01PaDJseVF1ZDlFbXVvRnFxU01iU0hrUmJyRmpYenVIUTRsRUwtcDdoOVNwem5BX2ZuQ0Znb2QtTG9kcGVUamc?oc=5",
+      "message_id": null,
+      "post": true,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-26T04:32:56+00:00",
+      "score": 6,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "گروه دوگوش با 23 رستوران در جشنواره گاسترونومی 2027، جایزه‌ای را به دست آورد. این خبر به تازگی در استانبول گاسترونومی مطرح شد.",
+      "title": "Doğuş Grubu 23 Restoranıyla İncili Gastronomi 2027'de Ödül Aldı - Haber Ege",
+      "title_fa": "دوران جوایز گاسترونومی 2027: گروه دوگوش با 23 رستوران، برنده جایزه"
     },
     "1bd68bf232886890": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -1737,7 +1754,7 @@
     "40cc313aac832101": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-25T21:42:48.125391+00:00",
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
       "id": "40cc313aac832101",
       "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnRoTGxXb1BvY05wWVNESWpDSjhZS2J1QnZpZHBHSEoydktVRUdxTm0xZnBVTFZtS010dVhzNENHZGNNZU0yVDhGdG1IaTVTTEx4MjZETFU0MTM3R2NGa19BWC1BazdZd21ibmhrMjBuVUpKamxfTEJKOTNTS2FSMWNoSzZUUmhkbWtGdk5qOGFPR09hNEs4cUtUYW1rbFNVQXhYdkdGdTR1R1pUMzhkQzFBblBLMktPY3dLNUJ3dTB6SS1HdG51eQ?oc=5",
       "message_id": null,
@@ -2434,7 +2451,7 @@
     "59b765728ba2faa3": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-25T21:42:48.125391+00:00",
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
       "id": "59b765728ba2faa3",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQa0pXcm9pbjBKMXpJa2d0aERGeFF4bzZPV1NteEFIQXRDUTdDQjlPa0xSV3AwODRZWUJXNXBnMUc2Z2lVTE9VZVZFMEVRaUdpYWNmWFV0VnVRcGZleVpPeHhJT1h0WGRWbzQ0bXYxeEg4dUg0NlE2S2pmWDd2ZFRHaUVycTM5OGNjSXM4UktqSGRKN3BpLS1pemdrNnZhalcxV2JOVjEydUJUcWxSb1M5dTMta2xkT1k?oc=5",
       "message_id": null,
@@ -2621,7 +2638,7 @@
     "6201ea30107171e4": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-25T21:42:48.125391+00:00",
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
       "id": "6201ea30107171e4",
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQlZJUThSeUhtMTBfYzA5d3F3dE1tZ1hYR1ZRa2xRWDRCUE5EcDhxaW0yZVhraXc2ZE4zOGg3Z1pTMm00SFNtSFFYeUxfRmtidmtxOXVpSFpUaXVBNU1YQXZQSjdKWUdqUTM4a2tZckRqNGNwbHdoY0hOZVd5Wk5sTlVlaEVfY3NhX1F2SmJUamt6Z0pFeVpSZU9COTlTdFl5RWdkaXczcjM2VnhnWUtpWGVGZlQ4TlVMbTJycm9MZ1dBRTdhRlE?oc=5",
       "message_id": null,
@@ -3284,14 +3301,14 @@
     "7bb780aebb2c8e56": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
-      "first_seen": "2026-11-25T21:42:48.125391+00:00",
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
       "id": "7bb780aebb2c8e56",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbHVWdDRxZXRSUlpFZWZTV3FLeU1STHBWQzVtZ1ltN2Q4ZURFeUkzSldzSVJtZHNqNFcxSnNCZWJKNkpaZ2swMmtEenV0ZjFBZFhUOEF4RE5EMnBvemlLWXR1MHg2ZTNjSUxQZnBiR1FicjdEekg0R1F1RUdiTUM2VWtINHVnOXFoOHc?oc=5",
       "message_id": null,
       "post": null,
       "posted": false,
       "posted_at": null,
-      "published": "2026-11-25T18:11:15+00:00",
+      "published": "2026-11-25T18:13:45+00:00",
       "score": null,
       "source": "Google News — Istanbul food",
       "summary_fa": "",
@@ -3672,23 +3689,6 @@
       "title": "Etiler'in kalbinde gece yarısı dehşeti: Restoran küle döndü - Havadis",
       "title_fa": "اتش‌سوزی در رستوران"
     },
-    "8859288e0575b2f2": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "8859288e0575b2f2",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUFRCay1CYktvU2ZKWk1SaVFubWNGVUstYWpUT2l0VDdoZEVqVEZMV3FJbDhDelFqRG9jaHpQWkZYcEFDVGR2dEZuanZiQ3Ryb2hKQ0VKNXdMWkVuWkhkUDl0b185bnNrYUxzQ0R5WGxlSVBkd3FmZjVHeXZkMzVYQzc0NGlKR1RZTjU0NHlXbEpfZng1?oc=5",
-      "message_id": 86,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-11-02T15:56:19.689194+00:00",
-      "published": "2026-10-26T13:08:44+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "داستان вкус استانبول از لندن تا استانبول",
-      "title": "Londra’dan İstanbul’a uzanan bir lezzet hikayesi - Ekonomist",
-      "title_fa": "داستان вкус استانبول"
-    },
     "88d994307d6feccd": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
@@ -4061,23 +4061,6 @@
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "Hong Kong lezzetleri Nobu Istanbul’da - gastronomiturkey.com",
-      "title_fa": ""
-    },
-    "94fd8e5742cc0345": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "94fd8e5742cc0345",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbVFIRmZVMmlqQzVHT3AwQWNaQ1BSSU5tVnpVS2dDLThhWU1jZ3ppOGNZeXVnZVdYSlowaVNVQUthbUxkYm00ejltY0Q4SE4xR0lfaTJfZnkyOUNKTzBtaHphMkNISmU4SlN6Umxkcl94MklVNjh0ZWtBMm1lX0Nhd0Z1NDBWcnNQeEZlX00tTEpXdU9WbzJ4OWVB?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-26T14:00:48+00:00",
-      "score": 0,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "",
-      "title": "4. Digital Film Festival İstanbul tamamlandı - www.milliyetsanat.com",
       "title_fa": ""
     },
     "95c6b9fa583e55d6": {
@@ -5423,23 +5406,6 @@
       "title": "DoubleTree By Hilton İstanbul Maçka, Perran Ocakbaşı İle Gastronomi Sahnesine Giriyor - Turizm Gazetesi",
       "title_fa": ""
     },
-    "c5895ff0823c177c": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "c5895ff0823c177c",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ245NGEtUGl6OVJnOTFhQXJqNm9qaXJJc2czYU9lVmxSRzJ3b3dCTkc2SjgzeFlsZ1NIaUtNdEVaampMa3FUVExNRW5OMXRZNnR5SnZUSC02WlJIdXE0Sk9aVW1BRGJnTkw1cjV4bjRjcUExNGlNY1NWV3JjY2p4dW4tWUtRSXhJMlVacjRRc1RnMkVoZmNr?oc=5",
-      "message_id": null,
-      "post": false,
-      "posted": false,
-      "posted_at": null,
-      "published": "2026-10-26T07:29:50+00:00",
-      "score": 2,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "ششمین دوره فستیوال فیلم ترک در استانبول برگزار می‌شود",
-      "title": "Korkut Ata Türk Dünyası Film Festivali 6. yılında İstanbul’a dönüyor - hibya.com",
-      "title_fa": "فستیوال فیلم ترک"
-    },
     "c5da07a1cf22bb66": {
       "cat": "رستوران و کافه در استانبول",
       "engine": "pollinations",
@@ -5457,22 +5423,22 @@
       "title": "Etiler'de restoran alev alev yandı - Yeniçağ Gazetesi",
       "title_fa": "رستوران در Etiler آتش گرفت"
     },
-    "c7cc07939b4ee7b7": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-26T22:41:08.966905+00:00",
-      "id": "c7cc07939b4ee7b7",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVXVabmNHbkd5RXIxUGRoSUR3N0tYRFkzVlpLZXdTS2RmMVNwZWtzdGF5TVdJNHYtRzA0WjVVeGlZd0wzcFVNQUFIOXFqLVZoUUg2Y3RfdDFzVVpKZTNQVHNJazdyeVVmRHpUZGpJNWYyMW1qb1NxWE1GMWtZX0l6Z2ZUaXliaTY4cmRBNnBIeS1Pa2NRSHVGRHpNRkVMbVk?oc=5",
-      "message_id": 88,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-11-03T00:59:01.360532+00:00",
-      "published": "2026-10-26T17:05:06+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "برند ALL Accor شب خاصی با غذا و موسیقی برگزار می‌کند",
-      "title": "ALL Accor’dan Gastronomi ve Müziği Buluşturan Özel Gece - Turizm Gazetesi",
-      "title_fa": "شب غذا و موسیقی"
+    "c86d4b039011ebd7": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "id": "c86d4b039011ebd7",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYzhEU2xtZjUzalI5UHhxbmpJbl9hZ3lMWTVwa0ZSbDdneXpQemVGek4wYXU0Vlp1ODBXQ3dCT1pBSVlTNTUxakpJdnF2TUV6SnZPcXVPTzEzMmE2eTg3UG02YmI2NHM3WDdPbWowV0hBRDFiME9CT2FYYkNlSHpGRy1NR1F0eldJMGNoOVA4NFdXRjNLQ1VpajdEdWJMTDdWa3p3bmZzOGo?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-25T21:34:29+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "İncili Gastronomi Rehberi 2026-2027 Ödülleri Sahiplerini Buldu - Turizm Gazetesi",
+      "title_fa": ""
     },
     "c93784ce94d705ca": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -5800,14 +5766,14 @@
     "d7a37a4d74883ec8": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-25T21:42:48.125391+00:00",
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
       "id": "d7a37a4d74883ec8",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM01aanMwbDVrYUNCTFpCdHFweVI3VWhCZk94bHQwS1VHYU1SMndWQVhBNFNwSUZzRDBfcVBuQnA4SFhCSnk3UUlWSTk2TWY2OEpNNnJCSnh2T1lBVGIydklEMHdha1p4dXJLVVllTFlwaGdQUUxKRW9fUDgyTjRVOWNn?oc=5",
       "message_id": null,
       "post": null,
       "posted": false,
       "posted_at": null,
-      "published": "2026-11-25T16:27:10+00:00",
+      "published": "2026-11-25T17:53:52+00:00",
       "score": null,
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
@@ -5863,6 +5829,23 @@
       "source": "Google News — Istanbul food",
       "summary_fa": "",
       "title": "Istanbul Grill Catering Adds Event Venue Booking to Online Ordering - The Detroit News",
+      "title_fa": ""
+    },
+    "d94fe18c58e4d8f2": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "id": "d94fe18c58e4d8f2",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1lenR6elF5WE1NVTM1azRiMHVURDI3Z2VqWXpjNzF2RHEtR190MTFNUnNmMXlMUVoxZ1UybzlCMkRVZ3hCZGZlMG1TMlhEaVFWTzE3a3QtRWhVSVRhel9FMUpqLTFXME54RUZ0cA?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-26T02:29:13+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "İncili Gastronomi Rehberi 2026-2027 Ödül Töreni: Lezzet Dünyasının Yeni İnci Sahipleri Açıklandı - Oggusto",
       "title_fa": ""
     },
     "d9e8496ca650e385": {
@@ -6511,6 +6494,23 @@
       "title": "Things to do in Istanbul: Best attractions for Aston Villa fans - Football Ground Guide",
       "title_fa": ""
     },
+    "ef1d499319bea294": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-26T08:20:19.170170+00:00",
+      "id": "ef1d499319bea294",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaVFOV2lvZ1dMWmlTbV9XSm54MU9fOEo3M0xoX3hBR1R3ZUJtQk5qaWZQTUdJdFVGZGtmVkRpODVDY2hrazd5T0xfcmFYSlVYTXR1QXhITEdyRFRHOG1MMlQyOUpxV1JRZk1tTGhBR29iZ240Yy1kSGR0b3BEcTBZNncxbW9BY2lTUDVGSVBnRi1YQW5FNDk1R0g3RnFhMTA?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-25T19:23:01+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "İstanbul’da Şefika Kutluer Festivali 30 Kasım’da başlayacak - https://www.ensondakika.com.tr/",
+      "title_fa": ""
+    },
     "f34f240f5381df06": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -6802,12 +6802,6 @@
     }
   },
   "runs": [
-    {
-      "at": "2026-10-30T12:57:58.422049+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-10-30T22:22:07.422741+00:00",
       "feeds": 6,
@@ -7158,6 +7152,12 @@
     },
     {
       "at": "2026-11-25T21:42:48.125391+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 0
+    },
+    {
+      "at": "2026-11-26T08:20:19.170170+00:00",
       "feeds": 6,
       "new": 12,
       "posted": 0
