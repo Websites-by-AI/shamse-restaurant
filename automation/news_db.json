@@ -1360,23 +1360,6 @@
       "title": "İstanbul'da Otel ve Restoran Sektörünün Devleri HOSTECH by TUSİD'de Buluşuyor - İşçi Haber",
       "title_fa": ""
     },
-    "2c2bf309eb5e2df3": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-27T12:13:52.992881+00:00",
-      "id": "2c2bf309eb5e2df3",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQc2xkazk5YlltQmhrMkNIYXVxOFc0aGU1MldLckpFT3E1TkltczFQNnluc2Jlajg1c3hHdDFiX2FwTVMtYk1jdnU2djExOTFVVnJzNUJPbFVyTDl4Y2lraDNOYXRhWFFSTUlLaVZiaTdsUWhPRU5PTTFUOEtNdW8tc1p5MzNqb01nazBBRTVsU0JQMlNLdmU0T01vdmfSAaIBQVVfeXFMTlBWMmNKYVdsazlYMV9tOGhHUmtxRW5xUTdQc28zNnNPNm1UM2lfTXZrd3dQN2hPVllneVlIaUNNdHhrb09NdVNQLTg5cmxZV2NZSXdtQV9KTUV4cTIxblYtOURwZUZYQlBTU3A4TFl5V0hDcVBmZEtKOHRnWndkNV8yMWU3Q3kwZU9NYzRiTFFFRzl0VVBHY0ZUcS1hb0NpMER3?oc=5",
-      "message_id": 81,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-31T21:36:21.834925+00:00",
-      "published": "2026-10-23T06:48:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "شفرستوران ترک در استانبول درگذشت",
-      "title": "Kaynarcalı Sezen Şef Hayatını Kaybetti! Sezen Altın'a Veda - NetGaste",
-      "title_fa": "درگذشت شеф ترک"
-    },
     "2d07b0afc68e415a": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
@@ -1683,10 +1666,27 @@
       "title": "Boğaz’ın Lacivert’inde lezzet hikâyesi - Türkiye İş Dünyası Haberleri",
       "title_fa": ""
     },
+    "3c242222bfe08f2b": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": "pollinations",
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
+      "id": "3c242222bfe08f2b",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUmkxV1JVWHJISG9JcEdBNlFtbmQ5VUpyQzNwNUdqdXZKSktnbTlad0FjbVhKVDRVMWliWlJ6emdGTjMtMFNfZHhtbmZrbHdlOHNaV2JlV0JtQnhjc2Y3UGIwcENrOWtjUDJjbTYwc2ZDcGRDY2FOVm1jTXU3LTNPMTEwZ3NxeWVydklieUZXSE5qUXE0VHI5b0QzTUxpVHhX?oc=5",
+      "message_id": null,
+      "post": false,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-28T12:42:09+00:00",
+      "score": 1,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "این خبر دربارهٔ حادثه‌ای محلی در ارزروم است و با موضوعات مرتبط با استانبول، غذا و فرهنگ تناسب ندارد.",
+      "title": "Erzurum’da restoran çatısındaki yangın kontrol altına alındı - https://www.ensondakika.com.tr/",
+      "title_fa": "آتش‌سوزی در سقف رستورانی در ارزروم مهار شد"
+    },
     "3d6464333384a8c2": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-28T07:51:32.053158+00:00",
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
       "id": "3d6464333384a8c2",
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUXNOM0V2dHZhdlRSYnRXa1FCZTA1ZU9KTXpiZWF0RlItaGlKb1lncmstVHlPazdxcEpOMVhObWtwcXd4QVBiT0tvQ01KRWtvSWpoYmZhN3ZBemUzN2xRUXQyQm90Wko0a2NXbE4wc1UtZE52ak83aGdHdjh6WlF0WnhTSVRjMnMwOFV2MlJGZVRxbm8yZWhZaEJ3NXJxNzliRUtPZjVCZmFKMU8wSU91VF95b21Qd1FMc3cweHcwMktSNXJVaWo1LTZ3M1ZzeHNSS3NrZWpPTVZKUQ?oc=5",
       "message_id": null,
@@ -1818,6 +1818,23 @@
       "summary_fa": "کارابوغدای سینوپ به رستوران‌های استانبول می‌آید",
       "title": "Sinop’un Toprağından Beykoz’un Sofrasına Karabuğday Yolculuğu - Beykoz Gündem",
       "title_fa": "کارابوغدای سینوپ در استانبول"
+    },
+    "42e18253041f6be5": {
+      "cat": "رستوران و کافه در استانبول",
+      "engine": null,
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
+      "id": "42e18253041f6be5",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE83dVNSSXV5eEcwOTJQUnVzSVYxajRjdUZWbDdZOGhESXhjQl81T1ZnUnNmUGZ4NF9NTnlqNVJ2Y0h0bXZ4V2xYcXU1NXJRQ19zQzc5VzVhVkp5eWFqX2NRbjcyeUpGZjVROXdrMUhrYUVpd0lub2FR0gF8QVVfeXFMUE0yaXJ3MW9CLWdoYXZGeHdTOVlPMmJadjIxUEZiMnQ4OENXbnFXRTktMFpuMF9sOERZU0RLNW9CcXVkQlo0UklPc0R5a3kzSTJXUGQ1TWRZREtyaDBkaWJXdXh3NS1oaWU4NG9xLVE3ZzZlZWM5S0JRZnUtQg?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-27T11:43:20+00:00",
+      "score": null,
+      "source": "Google News — İstanbul restoran",
+      "summary_fa": "",
+      "title": "Restoran Menülerinde Yeni Dönem - Gazete Anadolu",
+      "title_fa": ""
     },
     "43135557887ac29f": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -2264,7 +2281,7 @@
     "52956e6b92ea7a43": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-28T07:51:32.053158+00:00",
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
       "id": "52956e6b92ea7a43",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNN1pselJDaGpQMzNXQWNmWDFENnBndGpsbkJvbDlQaEtOODJCaXladE56Rkpfc1RudmdveVpvWndaSld1Z0lSd1BaQ3hRUEg2ZGJNUmVkUi0wUVl4ZF84dG9icnBjMjVoRnYwTEt6YWZtWEhBcHR2MnZrUUxmeEpWQngtekZIbTROUmJJazlyM1R2WmcwSmlxZ3p6Y0c2U1VpUl81Ul9yamlleUNTLU96TWIzTWdtZDdoWkVvTWN5ZmpqVjhWNFZRQUtiS09JbUFKRXo0?oc=5",
       "message_id": null,
@@ -2992,23 +3009,6 @@
       "title": "Vegan Restaurants in Istanbul — 14 Spots Worth Your Time - ListeList",
       "title_fa": "رستوران‌های وگان در استانبول – 14 جایگاه که حتماً باید امتحان کنید"
     },
-    "6ec7790d055936a6": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-27T12:13:52.992881+00:00",
-      "id": "6ec7790d055936a6",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNR3BOM2dzbTdLMHNGV2ZEQmVhQXpaRWNBMk1XRHFiRkh2b295NDQ2blBXV0FaV0xud09lTTFremJKalI4SmhsTFJ3UjdHTVhaUnV1RDk2X0kwNVBabll5UmVlQ2d2OWphWlpYTnpWVmljZi1XSExFbHNKOVVZVnc5NzJmRFdHamFPcW5yUVI5eVY4c1ZxbExweWRnczNiaTdyVXFfb0x5VTlRYTFV0gGsAUFVX3lxTE1HcE4zZ3NtN0swc0ZXZkRCZWFBelpFY0EyTVdEcWJGSHZvb3k0NDZuUFdXQVpXTG53T2VNMWt6YkpqUjhKaGxMUndSN0dNWFpSdXVEOTZfSTA1UFpuWXlSZWVDZ3Y5amFaWlhOelZWaWNmLVdITEVsc0o5VVlWdzk3MmZEV0dqYU9xbnJRUjl5VjhzVnFsTHB5ZGdzM2JpN3JVcV9vTHlVOVFhMVU?oc=5",
-      "message_id": 81,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-31T21:36:21.834925+00:00",
-      "published": "2026-10-23T06:55:00+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "استارباکس در ترکیه رستوران جدیدی باز کرده، یک غذای آن ۷۵۰ لیر ترکیه است",
-      "title": "Starbucks Türkiye'de restoran açtı: Bir tabak makarna 750 TL! - Haber Hürriyeti",
-      "title_fa": "استارباکس رستوران گران‌قیمت"
-    },
     "6f2baf8bde38e277": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -3366,6 +3366,23 @@
       "title": "Gastronomi Turizmi: Gösterişten Kırsala geçiyor - Türkiye Turizm",
       "title_fa": ""
     },
+    "7e7bd116a90c6253": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
+      "id": "7e7bd116a90c6253",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSFUwM0tkUS1OaUwyNHp0ZHBmSjFoVWRrSjJDMUJncDNIQklWcGYxRDQxVGJvbDlscWw3clhva2xvYTMxb0gzeGRYbEI2OU1lUWxkeFZ4UmFQTTNEWDE5LThVbUdBX1E5TXozRTZZSHZhb2FqYjB2ckhNOWhGWFlxUi1qaUdmS3RPVVBvNmJvdGFvazNzQW9sZzB3MA?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-28T03:24:49+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "World-renowned chefs gather in Istanbul for Gastromasa - Hürriyet Daily News",
+      "title_fa": ""
+    },
     "810009e9e12509b9": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": "cloudflare",
@@ -3502,23 +3519,6 @@
       "title": "Etiler'de restoran alev alev yandı - İstanbul Gazetesi",
       "title_fa": "آتش‌سوزی در رستوران"
     },
-    "84a266ce5660e834": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-27T12:13:52.992881+00:00",
-      "id": "84a266ce5660e834",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB0VkZpYW1kLV9vWkNYcnRaZGxzaV8wb29nMHFxNC1wTUNfSEx2QnFlUlJvTEpqNjlMVnJSY05CVkgtYjJGMlhlT2tPR2RVaXgzZzJBeGZGSXZBdS1BTlVDajJKc2FtYjVXTlVV0gFwQVVfeXFMTW9nTE0tQW9kMldvVTBsd2tPMURJYjIya2VNa0lnazJRYkUzZVY4M2g0cTF2RldwWE5hRjBPaEJJWUJMR1RmX1RjdTRUTVZadVR2U1Q1T2hySHZ4MUF1OFZEU0xkanU0OWc3LXNERzd2cg?oc=5",
-      "message_id": 79,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-31T05:43:39.852351+00:00",
-      "published": "2026-10-21T09:00:25+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "آشنایی با نوترین رستوران‌های استانبول",
-      "title": "İstanbul’un en yeni restoranları - Uplifers",
-      "title_fa": "نوترین رستوران‌های استانبول"
-    },
     "84cfc37a5801cfdf": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
@@ -3603,23 +3603,6 @@
       "summary_fa": "در HOSTECH، تأمین‌کنندگان هتل و رستوران در استانبول به هم نشستند تا در مورد همکاری‌ها و بازارهای آینده بحث کنند.",
       "title": "HOSTECH’TE OTEL VE RESTORAN TEDARİKÇİLERİ İSTANBUL’DA BULUŞTU - Türkiye Turizm",
       "title_fa": "ملاقات تأمین‌کنندگان هتل و رستوران در استانبول"
-    },
-    "883f2482a6da1d14": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-27T12:13:52.992881+00:00",
-      "id": "883f2482a6da1d14",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSUVIWFY3V051OWI4TDRZaktuZk5wSWpDTG1lUWlMOGgzaFp5ZW85NDcyRVVYaWl4Zm1kWThGaWNWTTVDNjFOdFlzUmY2VjFheWZUT3o1cjQtTlBLQ0RCV2w4THdxVmRwWnZRYjRSLVRPSm42Q1Z6MEEwWGN6X002Wk5seWY2SDNVcUxOSVFoTG00RXJ0RmRpWkxpNjFfRGRTaWE2NzlSTQ?oc=5",
-      "message_id": 79,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-31T05:43:39.852351+00:00",
-      "published": "2026-10-20T21:25:07+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "رستوران در قلب اتیلر استانبول دچار حریق شد.",
-      "title": "Etiler'in kalbinde gece yarısı dehşeti: Restoran küle döndü - Havadis",
-      "title_fa": "اتش‌سوزی در رستوران"
     },
     "88d994307d6feccd": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
@@ -3808,23 +3791,6 @@
       "title": "Yemeksepeti, \"Lezzetin Efsaneleri\" ile restoran iş ortaklarının başarısını ödüllendirecek - İSTANBUL - Mersin Haber",
       "title_fa": ""
     },
-    "8df18590a0e2ab53": {
-      "cat": "گاسترونومی و جشنواره‌های غذا",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-27T12:13:52.992881+00:00",
-      "id": "8df18590a0e2ab53",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOGxsOFFzOUYtb25NMExVdUlITWJ4RVBzMFcwUzdiZm9PcTVVWElaTG1WTVQxY2NkMXZFMW54eC1FUjg5RUdzdnNLek5uSTFzcnB2NUhid0p2dWc4QW1SeVBqeHdESGNkSXVWRWhpMEd5MGJ6Zk9mYlYwT0lmc3pwa2FpUFljczE4M2FMX2RFbnNLMXJ0UjJwQzRyX0xiaUdUVWlF?oc=5",
-      "message_id": 78,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-30T22:22:07.422741+00:00",
-      "published": "2026-10-20T18:06:03+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul gastronomi",
-      "summary_fa": "باغ هوکباز در استانبول با غذاهای خوشمزه باز شده است",
-      "title": "HuQQabaz Garden, İstanbul boğazı’nda yeni bir sayfa açtı - gastronomiturkey.com",
-      "title_fa": "باغ هوکباز در استانبول"
-    },
     "8f5cd87804bf7d33": {
       "cat": "خبرهای بین‌المللی غذا و رستوران",
       "engine": null,
@@ -4012,23 +3978,6 @@
       "title": "Zekeriyaköy Mekanları: Öne Çıkan En İyi15 Restoran ve Kafe - Oggusto",
       "title_fa": ""
     },
-    "95c8cd9d41962a4e": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-27T12:13:52.992881+00:00",
-      "id": "95c8cd9d41962a4e",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPa2JqSEo0SEhFRVMzbEg4RlZTT1RxVjRzcEtkMGF6Y0tzZjVwdjc4U21rell5dVhCZ01hS2pFMzViVFc4MXBVZl9ZNlJWaVNpdjd1UVFaeGJUQVpGWWd2QWdYV3FDcTA5S0t0Zk5zODBBeW9CeVVrTmc4dXJMM1lCOHBzUlRGU00?oc=5",
-      "message_id": 80,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-31T12:33:14.920057+00:00",
-      "published": "2026-10-21T17:48:26+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "وولفگانگ پاک، سرآشپه اسکار، در استانبول lahmacun پخت.",
-      "title": "Oscar şefi Wolfgang Puck İstanbul'da Mahir Lokantası'nda fırın başına geçip lahmacun yaptı - Odatv",
-      "title_fa": "وولفگانگ پاک lahmacun می‌پزد"
-    },
     "963020b6740d2a21": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -4049,7 +3998,7 @@
     "97309b917c048182": {
       "cat": "رستوران و کافه در استانبول",
       "engine": null,
-      "first_seen": "2026-11-28T07:51:32.053158+00:00",
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
       "id": "97309b917c048182",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVUpfeHd5WWFVMVRFLVp3dzVSNlhhLTQ2c2NlUFhNZkRsTnlVb2VFQTkwZGpDNnE2X0tyaWZaUlNSM25hOUxvTV9rekplN0JvVHB2TlE1T3I4TFVDV1I1RG5vY1hNZk1xb0xzOFJBU3ZyZjAxR3FuNW1KOEJoRFo2YzJXTjlTOS1BeDNjRFkwazE0Qms2MFlOUHBxQXdKSHdiMVBPcURTUWpxQXBu?oc=5",
       "message_id": null,
@@ -4130,23 +4079,6 @@
       "summary_fa": "",
       "title": "Carlo Petrini’nin mirası İstanbul’da yaşatıldı - gastronomiturkey.com",
       "title_fa": ""
-    },
-    "9917c6067a8027e9": {
-      "cat": "رستوران و کافه در استانبول",
-      "engine": "cloudflare",
-      "first_seen": "2026-10-27T12:13:52.992881+00:00",
-      "id": "9917c6067a8027e9",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRHItZUk0NEFvSkpNa08yNlgtTVFaanhEUFVnNVlqUTZZemtoLXkwMU5PLXJKNVZiZkFzaHV2dXc3WE9ETldvUEdWUHRIOVZtczVCcU5Fczk4bTJ3cjFYREVoNXBRN1pzdjBsRm5QX0JNRWVBdFpwWE40MU5pNkc1OHlnVzIzRF9aejA2WFZ1R0hUbHlyV0hlZEhZT1BaYjlaYzZZODdZUHFJU0UwQ1FobE01SHhpQ3paUUZNUzhR?oc=5",
-      "message_id": 79,
-      "post": true,
-      "posted": true,
-      "posted_at": "2026-10-31T05:43:39.852351+00:00",
-      "published": "2026-10-21T08:17:29+00:00",
-      "score": 8,
-      "source": "Google News — İstanbul restoran",
-      "summary_fa": "کمسیون ۶۰۰۰ رستوران استانبول صفر شد",
-      "title": "Yemeksepeti’nden sel desteği: 3 ilde yaklaşık 6 bin restoranın komisyonu sıfırlandı - Odatv",
-      "title_fa": "رستوران‌های استانبول"
     },
     "9929d21df3180182": {
       "cat": "رستوران و کافه در استانبول",
@@ -5579,7 +5511,7 @@
     "cf15289931e31ad1": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": null,
-      "first_seen": "2026-11-28T07:51:32.053158+00:00",
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
       "id": "cf15289931e31ad1",
       "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUkFEWERHYjZaR3FCU1IwblB3a3VISW8zYXM1a0ZScjVrZ2k2UTlhY0twVXBUMm5wMS02ZDlyQ1dibzBjTXFISjZURHVUckhBUGc5RDU5QVBWVzJLRnZhVFNnVUNYMjR6NXJYRVYwOHV5S2ZadmFkQXB3UXJZdUt2UEZPdUNjbkdtZ091eGxNM1RWZ2U0eUpJMXNacGRWTl9kSVhTdzA1SjJOR0xOTXV1YVZYRklEOFhtSU9vbkk5QzU1cXdmdDFSclhfNHdkcFVuaXVUcUZB?oc=5",
       "message_id": null,
@@ -6137,6 +6069,23 @@
       "title": "Fairmont Quasar Istanbul’un ödüllü restoranı Aıla’ya İncili Gastronomi Rehberi’nden 4 İnci - Tourism Today",
       "title_fa": "اعطای ۴ مروارید به رستوران آیلا در راهنمای گاسترونومی"
     },
+    "e23028ead528037e": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
+      "id": "e23028ead528037e",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNelpGVFd6TkVzLXE1RXV5NmZyZmlBYWNIX2tIUjZlSnY4OVR4WXhEeEFNY2JpWmhnbE82Tm8wd1FXYjZESUFGOEFDQ0p5OE1IdzJDb0pHTDh6azJsNkcyZVhhU0tjQzNiUDZSZUhhXzR4X3Q1MUZJMlFuQVZZTW1WN3R6LUNuUGdGdG1WRlZMQ2FuUHhhbW1zVnZWYmNxeVJlOVFabG1QRlRWeEhBc2fSAVdBVV95cUxNSDRHVFh1WEFzLTRKTldPLVB0aEpoSXdCYm5WSDNhakhpdWdhbEV4WGhIUXJORDl2TS16eVYyMXE2bHRRT1NuQnVLcTdSc01ZTmhmQjZlb00?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-28T08:26:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Ayvalık Balıkesir'de Düzenlenen Gastronomi Fuarı'nda Ürünler Tanıtıldı - Mersin Haber",
+      "title_fa": ""
+    },
     "e29e13c8ca67b711": {
       "cat": "گاسترونومی و جشنواره‌های غذا",
       "engine": "cloudflare",
@@ -6208,7 +6157,7 @@
     "e533e60ac305e6e2": {
       "cat": "رویدادها و فراخوان‌های شهر استانبول",
       "engine": null,
-      "first_seen": "2026-11-28T07:51:32.053158+00:00",
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
       "id": "e533e60ac305e6e2",
       "link": "https://yabangee.com/ground-zero-festival-paribu-art/",
       "message_id": null,
@@ -6271,6 +6220,23 @@
       "source": "Google News — İstanbul restoran",
       "summary_fa": "",
       "title": "İstanbul’un En Lezzetli Street Food Restoranları - Oggusto",
+      "title_fa": ""
+    },
+    "e601f667608ea1df": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
+      "id": "e601f667608ea1df",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRW5lLWZWZEhnR2JlWWh4LW9tbndnYzRSQ25TSTlDbDFxV3FLQnBTdGlGOHh6a2NFaklsenoyb3N3ME9KTGxvc1lZckNIek9hZGhRM09WNEtPSGVrYWF3Wmg3cFlGblROMHhQSjVLZGh5ZkdxT1BwNHNuNG80RDdGM0xpVHNQY3FNcEtVenc3aThrcmh5eVFHa2IzTDF6cnZZYTRnLU1UVnRkSnJ5Z0VzQ0RxOTN0YmNUbzVuUmFDWS01TXpSdTlScGFqU2xZTTdweU5RMUhsemc?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-28T08:54:00+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "11. Gastromasa İstanbul Uluslararası Gastronomi Konferansı ve Fuarı - Türkistan'dan - Haber - TRT Avaz",
       "title_fa": ""
     },
     "e68f112f08c7c345": {
@@ -6390,6 +6356,23 @@
       "source": "Google News — İstanbul gastronomi",
       "summary_fa": "",
       "title": "Kahramanmaraş’ın Şairler Tepesi’ne Gastronomi Dünyasından ödül! - Maraş Gündem",
+      "title_fa": ""
+    },
+    "eabdd56a33038326": {
+      "cat": "گاسترونومی و جشنواره‌های غذا",
+      "engine": null,
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
+      "id": "eabdd56a33038326",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdEFJVXNKalB4OUljMXZEZnhpNDhpRC1qa0szcFIyS215aXJrM1hNQ1hNNG9fSE1JdVl2MFlVdVJDa0pROTRSMUMzVFpaenhYT3FNeUJEeGpRWlRaQnlOVzRmckRYNHkzd1RmcTVvRVd3VjQ5d1hZaWNTZVFITFZXbndvVVZ2ajd4c2c?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-28T08:43:13+00:00",
+      "score": null,
+      "source": "Google News — İstanbul gastronomi",
+      "summary_fa": "",
+      "title": "Ayvalık’ın ürünleri Gastronomi Fuarı’nda - Balıkesir Haberci Gazetesi",
       "title_fa": ""
     },
     "eb4c8f52d4addda1": {
@@ -6799,15 +6782,26 @@
       "summary_fa": "",
       "title": "İtalyan mutfağının eşsiz lezzetleri İstanbul’da buluşuyor - Son Dakika",
       "title_fa": ""
+    },
+    "ff1c9d56c55f3deb": {
+      "cat": "خبرهای بین‌المللی غذا و رستوران",
+      "engine": null,
+      "first_seen": "2026-11-28T20:08:42.032932+00:00",
+      "id": "ff1c9d56c55f3deb",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVmU1R2tCdFF4VkV4V2hadEJQU3YybWt3d1lLS1YzeUlGZG14b0wxOFhuTW9FVThnS1p1TFNpRUFHLWhBMVRGbWJZOTc3WWJJWXdEVDM1ZlNPbGVkbU5NbXpQRkZqRGdCd3RUa0VTdmliLVdHd3FMWHhHT2JRMDZ1WkpZWFMxeXl5eWpDbldkdEwxUzJURDM1WU9tZEhiazYxNUZfWUN3QXA0REZkOW55NzRna1g3Rzg1dGpRRW44MDBHMEtL?oc=5",
+      "message_id": null,
+      "post": null,
+      "posted": false,
+      "posted_at": null,
+      "published": "2026-11-28T12:01:02+00:00",
+      "score": null,
+      "source": "Google News — Istanbul food",
+      "summary_fa": "",
+      "title": "Qatar Chamber Wraps Up Istanbul Halal Summit Participation - News and Statistics - IndexBox",
+      "title_fa": ""
     }
   },
   "runs": [
-    {
-      "at": "2026-11-01T06:08:03.693621+00:00",
-      "feeds": 6,
-      "new": 12,
-      "posted": 3
-    },
     {
       "at": "2026-11-01T13:26:50.560924+00:00",
       "feeds": 6,
@@ -7161,6 +7155,12 @@
       "feeds": 6,
       "new": 12,
       "posted": 1
+    },
+    {
+      "at": "2026-11-28T20:08:42.032932+00:00",
+      "feeds": 6,
+      "new": 12,
+      "posted": 0
     }
   ]
 }
